@@ -1,0 +1,26 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: http://blog.andycroll.com
+title: andycroll.com
+author: Andy Croll
+description: "Writings of Andy Croll, designer & developer from the UK living in Singapore"
+
+subscribe_rss: /rss
+subscribe_email:
+
+email: andycroll@me.com
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+permalink: /:year/:month/:day/:title/
+source: _source
+destination: public
+
+markdown: rdiscount
+
+rdiscount:
+  extensions: [smart]

@@ -1,0 +1,16 @@
+{% include head.html %}
+<body>
+  <header role="banner">
+    {% include header.html %}
+  </header>
+
+  <div role="main">
+    {{ content | expand_urls: root_url }}
+  </div>
+
+  <footer role="contentinfo">{% include footer.html %}</footer>
+
+  {% include javascripts.html %}
+
+</body>
+</html>
