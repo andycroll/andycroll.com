@@ -17,8 +17,6 @@ email: andycroll@me.com
 # ----------------------- #
 
 permalink: /:year/:month/:day/:title/
-source: _source
-destination: public
 
 markdown: rdiscount
 
