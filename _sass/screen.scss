@@ -220,6 +220,7 @@ h2 {
   font-style: none;
   color: rgb(50,50,50);
   padding: 5px 0 7px 0;
+  margin: 0;
 }
 
 h3 {
@@ -350,7 +351,7 @@ footer .elsewhere { display : none; }
   li span {
     color: rgb(150,150,150);
     font-size: 12px;
-    width: 8%;
+    width: 12%;
     display: inline-block;
   }
 }
@@ -361,7 +362,7 @@ footer .elsewhere { display : none; }
   }
 }
 
-@media screen and (min-width: 701px) and (max-width: 900px) {
+@media screen and (min-width: 601px) and (max-width: 800px) {
   header[role=banner] {
     width : 20%;
   }
@@ -381,7 +382,7 @@ footer .elsewhere { display : none; }
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   header[role=banner] {
     width : 90%;
     position: static;
@@ -404,13 +405,13 @@ footer .elsewhere { display : none; }
     }
   }
   [role=main] {
-    width : auto;
+    width : 100%;
   }
   header .elsewhere { display : none; }
   footer .elsewhere { display : block; }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   #branding {
     padding : 0;
 
@@ -421,6 +422,19 @@ footer .elsewhere { display : none; }
     }
     #job {
       font-size: 18px;
+    }
+  }
+  #home {
+    li {
+      span {
+        width: 20%;
+        display: block;
+        float: left;
+      }
+      a {
+        margin-left: 20%;
+        display: block;
+      }
     }
   }
 }

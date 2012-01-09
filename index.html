@@ -3,9 +3,22 @@ layout: default
 ---
 
 <div id="home">
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>&nbsp;{{ post.date | date: "%d %b" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+  {% assign year = true %}
+
+  {% for post in site.posts %}
+    {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% if year == true %}
+      <h2>{{ post_year }}</h2>
+      <ul class="posts">
+      {% assign year = post_year %}
+    {% endif %}
+    {% if year > post_year %}
+      </ul>
+      <h2>{{ post_year }}</h2>
+      <ul class="posts">
+      {% assign year = post_year %}
+    {% endif %}
+    <li><span>{{ post.date | date: "%d %b" }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
   </ul>
 </div>
