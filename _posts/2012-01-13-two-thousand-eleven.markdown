@@ -15,9 +15,9 @@ Razmig and the team are definitely onto something and they have a real shot at b
 
 Starting as [equal partners in March](http://e27.sg/2011/02/16/eduardo-saverins-anideo-adds-new-partners/), I was ousted suddenly one July lunchtime after an SMS to bring me to the nearest Starbucks. It got a little bit unfortunately legalistic, as I had to fight my corner. Let that be a lesson: protect yourself, even if your instinct is to trust people, all business is reliant to a certain extent on the egos involved.
 
-I ended up ok financially, as if I'd been hired on contract, but when I think about the time I'm still extremely sad. Removing my 'presence' as requested the morning after is among the more melancholic experiences I've had. I'm still proud of the work we did, but it's coloured by the shock of the exit.
+I ended up ok financially, as if I'd been hired on contract, but when I think about the time I'm still extremely sad. Removing my 'presence' as requested the morning after is among the more melancholic experiences I've had. I'm still proud of the work we did, but it's coloured by the shock of the exit and the speed of my erasure.
 
-I felt like I'd put a lot of love and effort into the products that we shipped and that we were on a great learning experience together. I was wrong. Whatever drove the ousting, I suspect I will never know.
+I felt like I'd put a lot of love and effort into the products that we shipped and that we were on a great learning experience together. I was wrong. Whatever drove the ousting, I suspect I will never know. They still have a couple of very talented technical guys, so I guess more power to them.
 
 Most importantly I lost a friend, someone who I'd looked out for and learned a lot from, from whom I have had no contact since the fateful silent latte as the other partner told me to leave.
 
