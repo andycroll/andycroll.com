@@ -2,13 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://blog.andycroll.com
-title: andycroll.com
+url: http://andycroll.com
+title: Andy Croll
 author: Andy Croll
 description: "Writings of Andy Croll, designer & developer from the UK living in Singapore"
-
-subscribe_rss: /rss
-subscribe_email:
 
 email: andycroll@me.com
 
