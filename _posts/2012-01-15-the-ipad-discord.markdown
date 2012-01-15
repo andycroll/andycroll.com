@@ -1,5 +1,5 @@
 ---
-title: The iPad Discord: Thoughts on iPad disruption of the PC Market
+title: "The iPad Discord: Thoughts on iPad disruption of the PC Market"
 layout: post
 ---
 
