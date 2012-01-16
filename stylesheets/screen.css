@@ -420,7 +420,7 @@ header[role=banner] {
   width: 58%;
   position: relative; }
   [role=main] img {
-    max-width: 60%; }
+    max-width: 90%; }
 
 footer .elsewhere {
   display: none; }
