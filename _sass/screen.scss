@@ -219,15 +219,24 @@ h2 {
   font-size : 18px; line-height : 22px;
   font-style: none;
   color: rgb(50,50,50);
-  padding: 5px 0 7px 0;
+  padding: 5px 0 6px 0;
   margin: 0;
 }
 
 h3 {
-  font-size : 16px; line-height : 22px;
-  font-style: italic;
-  font-weight: normal;
+  font-size : 15px; line-height : 22px;
+  font-weight: bold;
   color: rgb(50,50,50);
+  padding: 6px 0 5px 0;
+  margin: 0;
+}
+
+h4 {
+  font-size : 13px; line-height : 22px;
+  font-weight: bold;
+  color: rgb(80,80,80);
+  padding: 8px 0 3px 0;
+  margin: 0;
 }
 
 h5 {
@@ -258,6 +267,8 @@ blockquote {
   background-color : rgb(230,230,230);
   border-left: 11px solid rgb(220,220,220);
 }
+
+pre, code, kbd, samp { font-size: 12px; line-height: 22px; }
 
 cite {
   display : block;
