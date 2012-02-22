@@ -158,4 +158,4 @@ We have awesome international speakers lined up and there will be developers fro
 
 I hope you found this worthwhile. If so you should [follow me on twitter at @andycroll](http://twitter.com/andycroll).
 
-If not, never fear, you need need hear from me again. I wish you the best of luck in your search for work. _Good luck._
+If not, never fear, you need never hear from me again. I wish you the best of luck in your search for work. _Good luck._
