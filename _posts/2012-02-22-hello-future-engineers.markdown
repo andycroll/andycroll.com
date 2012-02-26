@@ -148,7 +148,7 @@ Also... if you are serious about web development (of most sorts), you'll want to
 
 **[RedDotRubyConf 2012, May 18th-19th](http://reddotrubyconf.com)**
 
-If you're interested in a career as a Ruby developer, you could do worse than come to the conference on the 18th & 19th of May.
+If you're interested in working as a developer (particularly with Ruby) you could do worse than come to the conference on the 18th & 19th of May.
 
 Note: I organise this event, Singapore's biggest programmer conference, so I'd love to sell more tickets, thus I have an ulterior motive in raising it here.
 
