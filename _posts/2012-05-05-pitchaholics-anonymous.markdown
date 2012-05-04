@@ -21,7 +21,7 @@ You need to stop talking to other potential entrepreneurs, start pitching to roo
 
 *Sidenote: Pitching at incubator demo days is worth it, if they are rammed with real investors.*
 
-Pitching to a room is an easy thing to do physcologically because when someone disagrees with you, it's because they dont understand. Plus you can pretend that all the preparation proves that you're moving towards your goal. Right?
+Pitching to a room is an easy thing to do psychologically because when someone disagrees with you, it's because they dont understand. Plus you can pretend that all the preparation proves that you're moving towards your goal. Right?
 
 If you go out to the market and try and sell your idea and no customers come & pay, that probably proves that its not gonna work. But that's good, because then you can work on the next thing. But then you can't call yourself a founder anymore. Not good. Unless you want to actually *do* the tough leg work of trying to start a company.
 
