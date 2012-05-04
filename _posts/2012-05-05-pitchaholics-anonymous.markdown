@@ -19,8 +19,11 @@ I know this is endemic to the startup world but in particular South East Asia ha
 
 You need to stop talking to other potential entrepreneurs, start pitching to rooms full of your clients and future customers. At [ImpulseFlyer](http://impulseflyer.com), we pitch to hotels and to groups of our target audience of customers, *not* to other startups.
 
+*Sidenote: Pitching at incubator demo days is worth it, if they are rammed with real investors.*
+
 Pitching to a room is an easy thing to do physcologically because when someone disagrees with you, it's because they dont understand. Plus you can pretend that all the preparation proves that you're moving towards your goal. Right?
 
 If you go out to the market and try and sell your idea and no customers come & pay, that probably proves that its not gonna work. But that's good, because then you can work on the next thing. But then you can't call yourself a founder anymore. Not good. Unless you want to actually *do* the tough leg work of trying to start a company.
 
 Even with a functional business model this stuff is hard enough, so don't waste your time pitching at every goddamn event: spend your time finding out whether your concept, with you at the helm, can ever make money. Else it is just a lot of talk and the simulcrum of action.
+
