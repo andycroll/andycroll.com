@@ -27,3 +27,4 @@ If you go out to the market and try and sell your idea and no customers come & p
 
 Even with a functional business model this stuff is hard enough, so don't waste your time pitching at every goddamn event: spend your time finding out whether your concept, with you at the helm, can ever make money. Else it is just a lot of talk and the simulcrum of action.
 
+*Thanks to [Derrick Ko](http://derrickko.com) for reading a draft of this.*
