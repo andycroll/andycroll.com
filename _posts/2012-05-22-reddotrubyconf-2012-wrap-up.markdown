@@ -46,7 +46,7 @@ _I'll add missing decks as they become availible._
 
 ![Attendee Nationality](/images/2012/rdrc-2012-nationality.png)
 
-#### Nationality
+#### Nationality of those coming from Singapore
 
 An interesting one this... Singapore really is a global city.
 
