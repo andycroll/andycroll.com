@@ -27,8 +27,8 @@ _I'll add missing decks as they become availible._
 
 ### Day Two
 
-* **Obie Fernandez** _to come_
-* **Zach Holman** _to come_
+* **Obie Fernandez** [Redis on Rails](http://blog.obiefernandez.com/content/2012/05/redis-on-rails-reddotrubyconf-2012.html)
+* **Zach Holman** [Git+Github Secrets](http://zachholman.com/talk/git-github-secrets)
 * **Terence Lee** [Bundle Y U So Slow?](http://bundle-y-u-so-slow-rdrc2012.herokuapp.com)
 * **Carl Coryell-Martin** _to come_
 * **Sebastian Burkhard** [Run Ruby Run](http://hasclass.com/post/23470271622/slides-from-my-talk-at-reddotrubyconf-2012)
