@@ -32,7 +32,7 @@ _I'll add missing decks as they become availible._
 * **Terence Lee** [Bundle Y U So Slow?](http://bundle-y-u-so-slow-rdrc2012.herokuapp.com)
 * **Carl Coryell-Martin** _to come_
 * **Sebastian Burkhard** [Run Ruby Run](http://hasclass.com/post/23470271622/slides-from-my-talk-at-reddotrubyconf-2012)
-* **Gabe Hollome** [Level up with Coffeescript](http://avantbard.com/talks/rdrc12/)
+* **Gabe Hollombe** [Level up with Coffeescript](http://avantbard.com/talks/rdrc12/)
 * **Darcy Laycock** [API Driven Applications](https://speakerdeck.com/u/sutto/p/api-driven-applications)
 * **Michael Koziarski** [Lessons from the Other Side](https://speakerdeck.com/u/nzkoz/p/lessons-from-the-other-side-effectively-contributing-to-open-source)
 
