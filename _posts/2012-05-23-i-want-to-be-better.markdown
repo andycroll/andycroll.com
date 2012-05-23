@@ -1,5 +1,5 @@
 ---
-title: "I Want to be Better"
+title: "I Want To Be Better"
 layout: post
 ---
 
