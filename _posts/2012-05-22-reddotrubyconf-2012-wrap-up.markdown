@@ -18,7 +18,7 @@ _I'll add missing decks as they become availible._
 * **Richard Schneeman** [The 12 factor app](https://speakerdeck.com/u/schneems/p/12-factor-app-red-dot-ruby-conf)
 * **Thorben Schroder** _to come_
 * **Andras Kristof** _to come_
-* **Danish Khan** _to come_
+* **Danish Khan** [Ruby Community](https://speakerdeck.com/u/danishkhan/p/ruby-community)
 * **Sau Sheong Chang** [Ruby, Rock & Roll](http://www.slideshare.net/sausheong/ruby-rock-roll)
 * **Winston Teo** [CSS Can be Tested Too](https://speakerdeck.com/u/winston/p/wah-lau-css-can-be-tested-too)
 * **Hemant Kumar** [Dive Inside Ruby 1.9](http://hemant-rdrc2012.herokuapp.com/)
