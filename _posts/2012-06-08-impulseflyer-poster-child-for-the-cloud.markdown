@@ -3,7 +3,7 @@ title: "ImpulseFlyer: Poster Child for 'The Cloud'"
 layout: post
 ---
 
-I thought it'd be interesting to share the tools and services we use to run ImpulseFlyer. A lot of these are personal preferences as I'm in charge of the technology/design side of things. And we pay _real money_ to most of these people, the biggest endorsement I can offer.
+I thought it'd be interesting to share the tools and services we use to run [ImpulseFlyer](http://impulseflyer.com/welcome/andy). A lot of these are personal preferences as I'm in charge of the technology/design side of things. And we pay _real money_ to most of these people, the biggest endorsement I can offer.
 
 ## Heroku
 
