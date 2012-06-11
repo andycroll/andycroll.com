@@ -3,7 +3,7 @@ title: 'Echelon 2012: Day One'
 layout: post
 ---
 
-My fourth year at the [big startup event](http://echelon.e27.sg/SG2012/), courtesey this year of new email hotness [THE LIST](http://eepurl.com/mcYbj) by [Kristine Lauria](http://twitter.com/krissymo). You sign up to get it.
+My fourth year at the [big startup event](http://echelon.e27.sg/SG2012/), courtesey this year of new email hotness [THE LIST](http://eepurl.com/mcYbj) by [Kristine Lauria](http://twitter.com/krissymo). You should sign up to get a dose of fresh events every week.
 
 Registration, as always, was a bit of an admin timesuck. Which is why I got there early and coded quietly whilst the queues extended.
 
