@@ -3,7 +3,7 @@ title: 'Echelon 2012: Day One'
 layout: post
 ---
 
-My fourth year at the [big startup event](http://echelon.e27.sg/SG2012/), courtesey this year of new email hotness [THE LIST](http://eepurl.com/mcYbj) by [Kristine Lauria](http://twitter.com/krissymo). You should sign up to get a dose of fresh events every week.
+My fourth year at the [big startup event](http://echelon.e27.sg/SG2012/), courtesy this year of new email hotness [THE LIST](http://eepurl.com/mcYbj) by [Kristine Lauria](http://twitter.com/krissymo). You should sign up to get a dose of fresh events every week.
 
 Registration, as always, was a bit of an admin timesuck. Which is why I got there early and coded quietly whilst the queues extended.
 
@@ -18,7 +18,7 @@ Anyhow, on to the content...
 
 Did marvelously well to skate smoothly over the technological obliteration of his slides. The talk showed off some basic UX techniques, Personas and Use Cases, useful to those who haven't had any design education.
 
-David breezed through some analysis of use cases with ragard to the twitter iPad app, am sure the audience enjoyed the "designer's walkthrough". Didn't really cover that fact that the best way to get use cases is to ask your users what they want, post-launch, something some SG startups could do with help on.
+David breezed through some analysis of use cases with regard to the twitter iPad app, am sure the audience enjoyed the "designer's walkthrough". Didn't really cover that fact that the best way to get use cases is to ask your users what they want, post-launch, something some SG startups could do with help on.
 
 I thought the analysis of the San Francisco as a mind-expanding and creativity-fuelling city influencing the Valley mindset was an thought-provoking point and particularly apt given the recent local events involving [#stickerlady](http://www.guardian.co.uk/world/2012/jun/10/sticker-lady-strict-singapore-divided).
 
@@ -52,7 +52,7 @@ _on hiring..._
 
 **(JF)** Working at a startup is hard, you should expect to be up late. Often.
 
-_NB: I don't necessarily agree that this should be an everyday occurence. For emergencies sure, but not a regular pattern of behaviour. It's not maintainable._
+_NB: I don't necessarily agree that this should be an everyday occurrence. For emergencies sure, but not a regular pattern of behaviour. It's not maintainable._
 
 **(BM)** Look for employees in other places, everyone hired for community people came from users!
 
@@ -62,7 +62,7 @@ _when things go wrong..._
 
 **(JF)** Payment gateways a huge problem in SEA.
 
-**(BM)** They broke their SEO wihtout realising, which was their biggest source of traffic. Learn how your biggest source of traffic works. Don't be dumb.
+**(BM)** They broke their SEO without realising, which was their biggest source of traffic. Learn how your biggest source of traffic works. Don't be dumb.
 
 ## Panel: Speed & Execution
 
@@ -99,7 +99,7 @@ _on quality or shipping..._
 **(BM)** Pre-launch send a few Adwords or launch your app in a small market.
 AllMusic relaunch in parallel enabled user feedback and the shock to feed into the 'real launch'
 
-**(DK)** Very rearely regretted shipping
+**(DK)** Very rarely regretted shipping
 
 **(DW)** Reframe the question. Could anyone use this? If so then you're holding your amazing thing back from the world.
 
