@@ -18,7 +18,7 @@ Anyhow, on to the content...
 
 Did marvelously well to skate smoothly over the technological obliteration of his slides. The talk showed off some basic UX techniques, Personas and Use Cases, useful to those who haven't had any design education.
 
-David breezed through some analysis of use cases with regard to the twitter iPad app, am sure the audience enjoyed the "designer's walkthrough". Didn't really cover that fact that the best way to get use cases is to ask your users what they want, post-launch, something some SG startups could do with help on.
+David breezed through some analysis of use cases with regard to the twitter iPad app, am sure the audience enjoyed the "designer's walkthrough". He didn't cover that often the best way to get use cases is to ask your users what they want after launch, something many startups could do with doing.
 
 I thought the analysis of the San Francisco as a mind-expanding and creativity-fuelling city influencing the Valley mindset was an thought-provoking point and particularly apt given the recent local events involving [#stickerlady](http://www.guardian.co.uk/world/2012/jun/10/sticker-lady-strict-singapore-divided).
 
