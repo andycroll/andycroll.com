@@ -1,6 +1,6 @@
 ---
-title: Echelon 2012: Day One
-type: post
+title: 'Echelon 2012: Day One'
+layout: post
 ---
 
 My fourth year at the [big startup event](http://echelon.e27.sg/SG2012/), courtesey this year of new email hotness [THE LIST](http://eepurl.com/mcYbj) by [Kristine Lauria](http://twitter.com/krissymo). You sign up to get it.
@@ -9,8 +9,8 @@ Registration, as always, was a bit of an admin timesuck. Which is why I got ther
 
 My two semi-regular bugbears reared their heads.
 
-# **Bad Badges:** Bigger names! No need for so much conference branding, I know where I am.
-# **Dreadful Hired MCs:** Do not know the industry and mispronounce speaker & company names. _Someone from e27 should do this job._
+* **Bad Badges:** Bigger names! No need for so much conference branding, I know where I am.
+* **Dreadful Hired MCs:** Do not know the industry and mispronounce speaker & company names. _Someone from e27 should do this job._
 
 Anyhow, on to the content...
 
@@ -129,9 +129,9 @@ _one last thing..._
 
 **(DK)** Balance with the long view.
 
-## How can I hire the best talent? Carl Coryell-Martin ([@carlcoryell](http://twitter.com/carlcoryell))
+## Carl Coryell-Martin [@carlcoryell](http://twitter.com/carlcoryell)
 
-A really solid talk about building organizations rather than simply hiring. Speaks volumes about why {new context} Singapore is such a great work environment.
+A really insightful talk about building organizations rather than simply hiring. Speaks volumes about why {new context} Singapore is such a great work environment.
 
 You're hiring minds, not hands. Creative people with initiative. Hiring *people* not talent. A human is not a **resource**.
 
@@ -155,10 +155,10 @@ Invest in people, think about doing some "resume arbitrage" - compromise on expe
 
 The question to ask yourself is "How can people who want to help find me?"
 
-# Work on something interesting
-# Tell people about it. e.g. [Etsy's Blog](http://codeascraft.etsy.com/)
-# Let people figure stuff on their own - less management
-# **Don't hire assholes**
+1. Work on something interesting
+2. Tell people about it. e.g. [Etsy's Blog](http://codeascraft.etsy.com/)
+3. Let people figure stuff on their own: less management is good management
+4. **Don't hire assholes**
 
 Takes time to do this stuff. Not easy.
 
