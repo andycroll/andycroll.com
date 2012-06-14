@@ -23,11 +23,13 @@ This panel should not have existed in the first place. The very act of putting t
 
 The issues between the sexes are a wider historical, societal and systemic ones, a result of hundreds of years of patriarcal 'rule' where physical strength was the eventual signifier of power. Hopefully now we're moving past that era of civilization.
 
-So what can we do? My advice is to start focussing on your own behaviour. This [article by Matt Gemmell is awesome](http://mattgemmell.com/2012/04/20/misogyny/). If you are 'in startups' mentor everyone, evangelise because its the right thing to do. It's important that we share the love for our work with those who we might think enjoy doing the same stuff that we do.
+So what can we do? My advice is to start focussing on your own behaviour. This [article by Matt Gemmell is awesome](http://mattgemmell.com/2012/04/20/misogyny/). If you are 'in startups' mentor everyone, evangelise because its the right thing to do and examine your own prejudices. It's important that we share the love for our work with those who might enjoy doing the same stuff that we do. Make this a welcoming industry for all.
 
-There are some fine organisations advocating for women, with whom I've come into contact. [Girls in Tech](http://girlsintech.org), [SG Geek Girls](http://sggeekgirls.com), [RailsGirls](http://railsgirls.com), [RailsBridge](http://railsbridge.org/en) and [DevChix](http://devchix.com/). We do need to get a better balance of personalities in startups and the workplace in general, but emphasising the differences is not the way to do it.
+There are some fine organisations advocating for women, with whom I've come into contact. [Girls in Tech](http://girlsintech.org), [SG Geek Girls](http://sggeekgirls.com), [RailsGirls](http://railsgirls.com), [RailsBridge](http://railsbridge.org/en) and [DevChix](http://devchix.com/). Join up, help out, do what you can.
 
-## Anyway... back to the event
+We do need to get a better balance of personalities in startups and the workplace in general, but emphasising the differences is not the way to do it.
+
+## Anyway... back to the event which was mostly great
 
 Echelon was much improved from last year, I felt the speakers were of generally higher quality and most of the panels, that I saw, were full of interesting & opinionated people. Better to have intesting stuff to disagree with than platitudes!
 
