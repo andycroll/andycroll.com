@@ -1,3 +1,6 @@
+---
+---
+
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -198,9 +201,8 @@ td { vertical-align: top; }
 body {
   width : 90%;
   margin : 22px auto;
-  font-size : 14px; line-height : 22px;
-  font-family : "myriad-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  // font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size : 16px; line-height : 24px;
+  font-family : Georgia, "Times New Roman", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -209,30 +211,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-family: 'atrament-web';
+  font-family: 'atrament-web', Helvetica, Arial, sans-serif;
   letter-spacing : -1px;
-  font-size : 36px; line-height : 44px;
+  font-size : 38px; line-height : 48px;
   margin: 0;
 }
 
 h2 {
-  font-size : 18px; line-height : 22px;
+  font-family: 'atrament-web', Helvetica, Arial, sans-serif;
+  font-size : 24px; line-height : 24px;
   font-style: none;
   color: rgb(50,50,50);
-  padding: 5px 0 6px 0;
+  padding: 7px 0 5px 0;
   margin: 0;
 }
 
 h3 {
-  font-size : 15px; line-height : 22px;
+  font-family: 'atrament-web', Helvetica, Arial, sans-serif;
+  font-size : 20px; line-height : 24px;
   font-weight: bold;
   color: rgb(50,50,50);
-  padding: 6px 0 5px 0;
+  padding: 9px 0 3px 0;
   margin: 0;
 }
 
 h4 {
-  font-size : 13px; line-height : 22px;
+  font-size : 16px; line-height : 24px;
   font-weight: bold;
   color: rgb(80,80,80);
   padding: 8px 0 3px 0;
@@ -240,7 +244,7 @@ h4 {
 }
 
 h5 {
-  font-size : 12px; line-height : 22px;
+  font-size : 12px; line-height : 24px;
   text-transform : uppercase;
   font-style: none;
   color: rgb(150,150,150);
@@ -288,7 +292,7 @@ header[role=banner] {
 
   h1 {
     font-size : 72px; line-height : 72px;
-    margin-bottom: -8px;
+//    margin-bottom: -6px;
     letter-spacing : -2px;
     text-transform : uppercase;
     font-style: none;
@@ -301,13 +305,13 @@ header[role=banner] {
 
   #job {
     font-family: 'atrament-web';
-    font-size : 20px; line-height : 22px;
+    font-size : 24px; line-height : 24px;
     font-weight : bold;
     text-transform : uppercase;
   }
 
   p {
-    margin: 0 0 11px 0;
+    margin: 0 0 12px 0;
   }
 
   .amp {
@@ -316,17 +320,18 @@ header[role=banner] {
     font-weight : normal; font-style: italic;
     display : inline-block;
     font-size : 32px;
+    line-height: 24px;
     margin : 0 -2px;
   }
 
   .extra {
-    margin-top: 44px;
+    margin-top: 48px;
   }
 }
 
 .elsewhere {
   h2 {
-    font-size : 12px; line-height : 22px;
+    font-size : 16px; line-height : 24px;
     text-transform : uppercase;
     font-style: none;
     color: rgb(125,25,20);
@@ -334,7 +339,7 @@ header[role=banner] {
   }
   p {
     font-family: 'atrament-web', Helvetica, Arial, sans-serif;
-    font-size : 20px; line-height : 22px;
+    font-size : 20px; line-height : 24px;
     font-weight : bold;
     text-transform : uppercase;
   }
@@ -356,7 +361,12 @@ header[role=banner] {
   padding: 23px 24px 24px 24px;
   background: #eee;
   border-top: 1px solid #ccc;
-  margin-bottom: 24px;
+  margin: 24px 0;
+}
+
+.date {
+  color: rgb(150,150,150);
+  font-size: 12px;
 }
 
 footer .elsewhere { display : none; }
@@ -366,11 +376,16 @@ footer .elsewhere { display : none; }
     list-style: none;
     padding: 0;
   }
-  li span {
-    color: rgb(150,150,150);
-    font-size: 12px;
-    width: 12%;
-    display: inline-block;
+  li {
+    span {
+      width: 15%;
+      display: block;
+      float: left;
+    }
+    a {
+      margin-left: 15%;
+      display: block;
+    }
   }
 }
 
@@ -382,27 +397,24 @@ footer .elsewhere { display : none; }
 
 @media screen and (min-width: 601px) and (max-width: 800px) {
   header[role=banner] {
-    width : 23%;
+    width : 25%;
   }
   #branding {
-    padding : 22px 0; right: 44px;
+    padding : 24px 0; right: 24px;
 
-    h1 {
-      line-height : 69px;
-      margin-bottom: 0;
-      font-size : 62px; line-height : 55px;
-
-    }
     .extra {
-      margin-top: 22px;
+      margin-top: 24px;
     }
   }
   [role=main] {
-    width : 72%;
+    width : 65%;
   }
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
   header[role=banner] {
     width : 90%;
     position: static;
@@ -412,9 +424,9 @@ footer .elsewhere { display : none; }
     padding : 0;
 
     h1 {
-      margin: 0 22px 0 0;
+      margin: 0 24px 0 0;
       letter-spacing : -1px;
-      font-size : 44px; line-height : 44px;
+      font-size : 48px; line-height : 48px;
       margin-bottom: -4px;
     }
     #job {

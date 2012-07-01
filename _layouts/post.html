@@ -4,7 +4,7 @@ layout: default
 <article>
   <header>
     <h1 class="entry-title">{{ page.title | titlecase }}</h1>
-    <h5>&nbsp;&raquo; {{ page.date | date_to_string }}</h5>
+    <p><span class="date">&nbsp;&raquo; {{ page.date | date: "%d %b %Y" }}</span></p>
   </header>
   <div class="entry-content">{{ content }}</div>
 </article>
