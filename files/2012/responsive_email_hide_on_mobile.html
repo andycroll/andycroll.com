@@ -1,0 +1,164 @@
+<html>
+<head>
+<title></title>
+<style>
+
+tr, td, th {
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 480px) {
+
+table[class=w640], td[class=w640], img[class=w640] { width:300px !important; }
+table[class=w10], td[class=w10], img[class=w10] { width:10px !important; }
+table[class=w280], td[class=w280], img[class=w280] { width:280px !important; }
+table[class=w300], td[class=w300], img[class=w300] { width:300px !important; }
+table[class=w135], td[class=w135], img[class=w135] { width:135px !important; }
+table[class=w70], td[class=w70], img[class=w70] { width:70px !important; }
+table[class=w200], td[class=w200], img[class=w200] { width:200px !important; }
+
+table[class=h0], td[class=h0] { height: 0 !important; }
+table[class=h15], td[class=h15] { height: 15px !important; }
+
+div[class=webonly], td[class=webonly], span[class=webonly], .webonly { display: none !important; }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<table width="100%" bgcolor="#dddddd" cellpadding="0" cellspacing="0" border="0" id="backgroundtable">
+  <tbody>
+    <tr>
+      <td align="center">
+
+        <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" id="wraptable">
+          <tbody>
+
+            <!-- each table inside it's own row -->
+
+            <tr>
+              <td bgcolor="#ffffff" class="w640" width="640">
+
+                <!-- resizing table on mobile -->
+
+                <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                  <tbody>
+                    <tr>
+
+                      <td class="w10" width="20"></td>
+                      <td class="w135" width="290">
+                        <div>
+                          <h1>Main Content</h1>
+                          <p>Goes in here</p>
+                        </div>
+                      </td>
+                      <td class="w10" width="20"></td>
+                      <td class="w135" width="290">
+                        <div>
+                          <h1>Main Content</h1>
+                          <p>Goes in here</p>
+                        </div>
+                      </td>
+                      <td class="w10" width="20"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </td>
+            </tr>
+
+
+            <tr>
+              <td bgcolor="#ffffff" class="w640" width="640">
+
+                <!-- hiding suplementary content on mobile -->
+
+                <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                  <tbody>
+                    <tr>
+
+                      <td class="w10" width="20"></td>
+                      <td class="w140" width="290">
+                        <div>
+                          <h1>Main Content</h1>
+                          <p>Goes in here</p>
+                        </div>
+                      </td>
+                      <td class="webonly" width="20"></td>
+                      <td class="webonly" width="290">
+                        <div>
+                          <h1>Supplementary Content</h1>
+                          <p>Goes in here</p>
+                        </div>
+                      </td>
+                      <td class="w10" width="20"></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </td>
+            </tr>
+
+
+            <tr>
+              <td bgcolor="#ffffff" class="w640" width="640">
+
+                <!-- reordering content on mobile by aligning tables -->
+
+                <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                  <tbody>
+                    <tr>
+
+                      <td class="w300" width="640">
+
+                        <table align="left" class="w300" width="310" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td class="w10" width="20"></td>
+                              <td class="w280" width="290">
+                                <div>
+                                  <h1>Main Content</h1>
+                                  <p>Goes in here</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table align="right" class="w300" width="310" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr>
+                              <td class="w10" width="0"></td>
+                              <td class="w280" width="290">
+                                <div>
+                                  <h1>Main Content</h1>
+                                  <p>Goes in here</p>
+                                </div>
+                              </td>
+                              <td class="w10" width="20"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
