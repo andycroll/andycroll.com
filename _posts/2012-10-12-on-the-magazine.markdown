@@ -53,7 +53,7 @@ The download speed is excellent, something nearly all other Newsstand publicatio
 
 There's also backdoor for sending full articles to Instapaper, which is a nice complement to his existing app. Effectively giving his own 'read later' service exclusive content!
 
-The typography is in general pretty nice, particularly on the body text on a Retina display. Although in landscape on iPad the line length is way to long to be read comfortably. I'm also not a fan of the way the subtitle looks.
+The typography is in general pretty nice, particularly on the body text on a Retina display. Although in landscape on iPad the line length is way too long to be read comfortably. I'm also not a fan of the way the subtitle looks.
 
 My other 'rough edge' is the controls for text size. They are on the menu and there's a strange 'jump' back to the article when you change the size up or down, but I guess you only set that once. It's still pretty jarring though.
 
