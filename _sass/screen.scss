@@ -123,7 +123,23 @@ form { margin: 0; }
 fieldset { border: 0; margin: 0; padding: 0; }
 
 /* Indicate that 'label' will shift focus to the associated form element */
-label { cursor: pointer; }
+label {
+  margin-top: 6px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #444;
+  line-height: 1;
+  cursor: pointer;
+}
+.actions {
+  margin-top: 6px;
+  .elsewhere.extra & {
+    margin-bottom: 18px;
+  }
+}
 
 /*
  * 1. Correct color not inheriting in IE6/7/8/9
@@ -454,4 +470,24 @@ footer .elsewhere { display : none; }
   }
   header .elsewhere { display : none; }
   footer .elsewhere { display : block; }
+}
+
+input[type=submit] {
+  clear: both;
+  background: rgb(125,25,20);
+  background: -moz-linear-gradient(top,rgb(125,25,20) 0%,darken(rgb(125,25,20), 5%) 100%);
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgb(125,25,20)),color-stop(100%,darken(rgb(125,25,20), 5%)));
+  background: -webkit-linear-gradient(top,rgb(125,25,20) 0%,darken(rgb(125,25,20), 5%) 100%);
+  background: -o-linear-gradient(top,rgb(125,25,20) 0%,darken(rgb(125,25,20), 5%) 100%);
+  background: -ms-linear-gradient(top,rgb(125,25,20) 0%,darken(rgb(125,25,20), 5%) 100%);
+  background: linear-gradient(top,rgb(125,25,20) 0%,darken(rgb(125,25,20), 5%) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgb(125,25,20)',endColorstr='darken(rgb(125,25,20), 5%)',GradientType=0);
+  padding: 8px 13px;
+  color: #fff;
+  font-family: 'Helvetica Neue',sans-serif;
+  font-size: 17px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border: 1px solid darken(rgb(125,25,20), 20%)
 }
