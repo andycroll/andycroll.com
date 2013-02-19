@@ -3,9 +3,9 @@ title: Setup DLink ShareCenter DNS-320 on Mac OS X Lion
 layout: post
 ---
 
-[NAS]: http://sharecenter.dlink.com/products/DNS-320
+[NAS]: http://www.amazon.co.uk/gp/product/B004AIWOXY/ref=as_li_ss_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B004AIWOXY&linkCode=as2&tag=deepcalmcom
 
-I'd finally had enough of my Drobo's bizarre behaviour (strange slow performance, patchy connection, running *very* hot, previous data loss) and dreadful desktop software. As it started acting up again in recent weeks I plumped for a 'proper' NAS: [a DLink DNS-320][http://www.amazon.co.uk/gp/product/B004AIWOXY/ref=as_li_ss_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B004AIWOXY&linkCode=as2&tag=deepcalmcom].
+I'd finally had enough of my Drobo's bizarre behaviour (strange slow performance, patchy connection, running *very* hot, previous data loss) and dreadful desktop software. As it started acting up again in recent weeks I plumped for a 'proper' NAS: [a DLink DNS-320][NAS].
 
 The in-box manuals for it are terrible though, and you only get a Windows Install CD. Here's how to set it up on Mac using the web interface.
 
