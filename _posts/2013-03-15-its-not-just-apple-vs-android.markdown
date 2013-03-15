@@ -7,7 +7,7 @@ I read [Gruber's latest piece](http://daringfireball.net/2013/03/ceding_the_crow
 
 The whole narrative around tech companies is typically forced into a cookie-cutter narrative. Company X smashes Company Y. Samsung good, Apple bad. Google open, Apple closed. *Not true.*
 
-The truth is more nuanced than that. At it's most basic level we should appreciate it's not the zero-sum game that the media pretend it is.
+The truth is more nuanced than that. At its most basic level we should appreciate it's not the zero-sum game that the media pretend it is.
 
 It's not a straight battle. There will be no 'winner'. Companies are engaging on multiple vectors. There are participants in the market that don't get the press because their logos are buried deep inside the phone in your pocket.
 
