@@ -5,15 +5,13 @@ layout: "post"
 
 I read [Gruber's latest piece](http://daringfireball.net/2013/03/ceding_the_crown) nodding. While many may find him to be an Apple cheerleader (I don't) his approach to the industry is much more insightful than the broad-brush approach of most of 'mainstream' tech journalism. 
 
-His appreciation of the complexity and analysis of smaller stories feed into the wider narrative and tell more us about what the various parties are thinking and behaving.
-
 The whole narrative around tech companies is typically forced into a cookie-cutter narrative. Company X smashes Company Y. Samsung good, Apple bad. Google open, Apple closed. *Not true.*
 
-The truth is more nuanced than that. At it's most basic level we should appreciated its not the zero-sum game that the media pretend it is.
+The truth is more nuanced than that. At it's most basic level we should appreciate it's not the zero-sum game that the media pretend it is.
 
-It's not a straight battle. There will be no 'winner'. There are people engaging on multiple vectors. There are participants in the market that don't get the press because their logos are buried deep inside the phone in your pocket.
+It's not a straight battle. There will be no 'winner'. Companies are engaging on multiple vectors. There are participants in the market that don't get the press because their logos are buried deep inside the phone in your pocket.
 
-There is an ongoing series of improvements as multiple companies work on improving their version of the 'tiny connected computer in your pocket'. Mostly better stuff for us, yay.
+There is an ongoing series of improvements all these groups of people work on improving their version of the 'tiny connected computer in your pocket'. Mostly better stuff for us, yay!
 
 - Apple make incredibly high-end (but single-option) hardware and supplement with great global content and simple, friendly software.
 - Samsung make a variety of great hardware which often fill customer needs an iPhone does not serve, are friendlier to carriers and offer huge marketing muscle. Various other Android-based companies attempt to do similar - but mostly lose money.
