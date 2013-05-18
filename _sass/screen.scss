@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size : 2em; line-height: 1.125em;
+  font-size : 2em; line-height: 1em;
   letter-spacing : -1px;
   margin: 0;
 }
@@ -301,11 +301,11 @@ img { -ms-interpolation-mode:bicubic; }
     #job {
       font-size : 1em; line-height: 1.5;
       font-weight: normal;
-      /*color: rgb(150,150,150);*/
+      color: rgb(150,150,150);
     }
 
     a, a:link, a:visited, a:hover, a:active, a:focus {
-      color: rgb(20,20,20);
+      color: rgb(60,60,60);
       text-decoration: none;
     }
 
@@ -327,13 +327,13 @@ img { -ms-interpolation-mode:bicubic; }
   }
 }
 
-.elsewhere {
+[role="contentinfo"] {
   p {
     color: rgb(180,180,180);
-    text-transform : uppercase;
+    text-transform : lowercase;
   }
   a, a:link, a:visited, a:hover, a:active, a:focus {
-    color: rgb(20,20,20);
+    color: rgb(150,150,150);
   }
 }
 
@@ -373,7 +373,7 @@ img { -ms-interpolation-mode:bicubic; }
   }
 
   [role='banner'], [role='main'], [role='contentinfo'] {
-    padding: 1.5em 1.5em 0 1.5em;
+    padding: 1em 1em 0 1em;
   }
 
   [role='banner'], [role='contentinfo'] {
@@ -388,13 +388,16 @@ img { -ms-interpolation-mode:bicubic; }
 
   #branding {
     #site-title {
+      border-top: 1px solid rgb(240,240,240);
+      padding-top: 1em;
+
       p {
-        font-size: 2em; line-height: 1.25;
+        font-size: 1.5em; line-height: 1;
         letter-spacing : -1px;
       }
 
       #job {
-        font-size: 1.5em; line-height: 1.125;
+        font-size: 1.25em; line-height: 1.125;
       }
     }
   }
@@ -402,12 +405,12 @@ img { -ms-interpolation-mode:bicubic; }
 
 @media screen and (min-width: 52em) {
   body {
-    font-size: 24px;
+    font-size: 21px;
     max-width: 55em;
   }
 
   [role='main'] {
-    padding: 1.5em 3em 0 3em;
+    padding: 1em 3em 0 3em;
   }
 
 }

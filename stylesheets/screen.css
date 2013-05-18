@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2em;
-  line-height: 1.125em;
+  line-height: 1em;
   letter-spacing: -1px;
   margin: 0; }
 
@@ -377,9 +377,9 @@ img {
     font-size: 1em;
     line-height: 1.5;
     font-weight: normal;
-    /*color: rgb(150,150,150);*/ }
+    color: #969696; }
   #branding #site-title a, #branding #site-title a:link, #branding #site-title a:visited, #branding #site-title a:hover, #branding #site-title a:active, #branding #site-title a:focus {
-    color: #141414;
+    color: #3c3c3c;
     text-decoration: none; }
 #branding .amp {
   font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
@@ -392,11 +392,11 @@ img {
 #branding .extra {
   display: none; }
 
-.elsewhere p {
+[role="contentinfo"] p {
   color: #b4b4b4;
-  text-transform: uppercase; }
-.elsewhere a, .elsewhere a:link, .elsewhere a:visited, .elsewhere a:hover, .elsewhere a:active, .elsewhere a:focus {
-  color: #141414; }
+  text-transform: lowercase; }
+[role="contentinfo"] a, [role="contentinfo"] a:link, [role="contentinfo"] a:visited, [role="contentinfo"] a:hover, [role="contentinfo"] a:active, [role="contentinfo"] a:focus {
+  color: #969696; }
 
 #followme {
   border-top: 1px solid #f0f0f0;
@@ -425,7 +425,7 @@ img {
     margin: 0 auto; }
 
   [role='banner'], [role='main'], [role='contentinfo'] {
-    padding: 1.5em 1.5em 0 1.5em; }
+    padding: 1em 1em 0 1em; }
 
   [role='banner'], [role='contentinfo'] {
     float: right;
@@ -435,20 +435,23 @@ img {
     float: left;
     width: 70%; }
 
-  #branding #site-title p {
-    font-size: 2em;
-    line-height: 1.25;
-    letter-spacing: -1px; }
-  #branding #site-title #job {
-    font-size: 1.5em;
-    line-height: 1.125; } }
+  #branding #site-title {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 1em; }
+    #branding #site-title p {
+      font-size: 1.5em;
+      line-height: 1;
+      letter-spacing: -1px; }
+    #branding #site-title #job {
+      font-size: 1.25em;
+      line-height: 1.125; } }
 @media screen and (min-width: 52em) {
   body {
-    font-size: 24px;
+    font-size: 21px;
     max-width: 55em; }
 
   [role='main'] {
-    padding: 1.5em 3em 0 3em; } }
+    padding: 1em 3em 0 3em; } }
 input[type=submit] {
   clear: both;
   background: #7d1914;
