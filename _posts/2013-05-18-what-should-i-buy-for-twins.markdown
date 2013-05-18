@@ -27,7 +27,7 @@ Ours are still sharing a cot, now at either end, and it won’t be long before t
 
 A surprise, these, recommended by our health visitor. For a little while, propped up on their fronts on these was the only way our two would stop raging. Obviously given SIDS this was a ‘while someone is in the room’ thing, but it really helped.
 
-[GaGa Bean Bag](http://www.amazon.co.uk/dp/B00CPPFL8E/ref=nosim?tag=deepcalmcom)
+* [GaGa Bean Bag](http://www.amazon.co.uk/dp/B00CPPFL8E/ref=nosim?tag=deepcalmcom)
 
 ## Vibrating Chairs
 
@@ -37,18 +37,18 @@ The vibration proved useful ‘moving things along downstairs’ and also for se
 
 The tunes are not too annoying.
 
-[Woodsy Friends](http://www.amazon.co.uk/dp/B00717LDCE/ref=nosim?tag=deepcalmcom)
-[Jungle Friends](http://www.amazon.co.uk/dp/B001L092JI/ref=nosim?tag=deepcalmcom)
+* [Woodsy Friends](http://www.amazon.co.uk/dp/B00717LDCE/ref=nosim?tag=deepcalmcom)
+* [Jungle Friends](http://www.amazon.co.uk/dp/B001L092JI/ref=nosim?tag=deepcalmcom)
 
 We were also recommended the Baby Bjorn bouncers by a couple of other twin mums. Ours haven’t taken to them yet, but I think once they’re more aware then they’ll come into their own.
 
-[Baby Bjorn Bouncer](http://www.amazon.co.uk/dp/B001ET6P7I/ref=nosim?tag=deepcalmcom)
+* [Baby Bjorn Bouncer](http://www.amazon.co.uk/dp/B001ET6P7I/ref=nosim?tag=deepcalmcom)
 
 ## Carrying
 
 We have a couple of Baby Bjorn carriers, which are pretty useful if you have to do stuff and keep a single twin happy who only wants to be ‘on’.
 
-[Baby Bjorn Bouncer](http://www.amazon.co.uk/dp/B0000AQVG5/ref=nosim?tag=deepcalmcom)
+* [Baby Bjorn Carrier](http://www.amazon.co.uk/dp/B0000AQVG5/ref=nosim?tag=deepcalmcom)
 
 ## Nappy Bins
 
@@ -56,11 +56,11 @@ Now this might seem incredibly superfluous, but with two you’ll be getting thr
 
 Also don’t bother with the third party refills, just buy a load of official ones, they hold the smell in and don’t take a half hour to put together: you’ll have better things to do with your time.
 
-[Nappy Bins](http://www.amazon.co.uk/dp/B000UODTXG/ref=nosim?tag=deepcalmcom)
-[Refill cartridges](http://www.amazon.co.uk/dp/B00143XJ7I/ref=nosim?tag=deepcalmcom)
+* [Nappy Bins](http://www.amazon.co.uk/dp/B000UODTXG/ref=nosim?tag=deepcalmcom)
+* [Refill cartridges](http://www.amazon.co.uk/dp/B00143XJ7I/ref=nosim?tag=deepcalmcom)
 
-As for the nappies themselves: Pampers: good, Huggies: rubbish (they dont seem to fit well) and Sainsbury’s own brand: just as good and half the price.
+As for the nappies themselves: Pampers: good, Huggies: rubbish (they don't seem to fit well) and Sainsbury’s own brand: just as good and half the price.
 
 ——
 
-Good Luck. You’ll need it.
+Good Luck. You’ll need it. I'd love to hear of anything that worked for you. Email me at [andycroll@deepcalm.com](mailto:andycroll@deepcalm.com)
