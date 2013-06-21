@@ -3,7 +3,7 @@ title: "xip.io Doesn't Work on BT, Fix It"
 layout: post
 ---
 
-I use [pow](http://pow.cx) and xip.io for my local device testing when running Rails apps and ran into a curious issue: it didn't work at my parent's home. I was getting a 'cannot open the page because the server cannot be found' error.
+I use [pow](http://pow.cx) and [xip.io](http://xip.io) for my local device testing when running Rails apps and ran into a curious issue: it didn't work at my parent's home. I was getting a 'cannot open the page because the server cannot be found' error.
 
 This is something to do with their network using the BT HomeHub DNS which has locked down the wildcard DNS method that xip.io uses to redirect to your local machine. This might be a feature on other telco-provided ADSL routers.
 
