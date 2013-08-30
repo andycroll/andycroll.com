@@ -53,7 +53,7 @@ It is worth baring in mind that having at least an undergraduate degree helps ge
 
 Your CV should be pretty straight-forward, there are a million websites telling you how to write a compelling resume, but in my experience keep it to two pages maximum, list your qualifications briefly and concentrate on work experience relevant to your new venture and don't be afraid cull the rest to a sentence or less. The person reviewing your application does not care much about your passion for stamp collection.
 
-I've included a slightly homogenised version of my [business plan](http://andycroll.com/file_download/1/business-plan-homogenised.pdf) as an example; although if you are unable to describe the why and how of your business and throw in a few quick 'how much I want to earn' projections together into a coherent document you've got more problems with your start-up than governmental form-filling.
+I've included a slightly homogenised version of my [business plan](http://andycroll.com/files/2009/business-plan-homogenised.pdf) as an example; although if you are unable to describe the why and how of your business and throw in a few quick 'how much I want to earn' projections together into a coherent document you've got more problems with your start-up than governmental form-filling.
 
 ### Banker's Guarantee
 
