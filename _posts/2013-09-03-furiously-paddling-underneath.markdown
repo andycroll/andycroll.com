@@ -3,7 +3,7 @@ title: 'Furiously Paddling Underneath'
 layout: post
 ---
 
-In the wake of it's [successful acquisition by Ratuken](http://sgentrepreneurs.com/2013/09/02/rakuten-acquires-streaming-video-site-viki-for-reported-usd-200m/), I went back and skimmed the coverage of Viki in the local blogs and even its coverage in the wider tech sphere.
+In the wake of it's [successful acquisition by Rakuten](http://sgentrepreneurs.com/2013/09/02/rakuten-acquires-streaming-video-site-viki-for-reported-usd-200m/), I went back and skimmed the coverage of Viki in the local blogs and even its coverage in the wider tech sphere.
 
 You might think it'd been a smooth, straight path to success. Raise money -> raise more money -> raise a surprising amount of money -> sell to large Japanese company.
 
