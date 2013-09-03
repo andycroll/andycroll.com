@@ -27,4 +27,4 @@ It's a shame you won't hear these stories in anything other than mis-remembered 
 
 But that's the thing, you're not meant to see that.
 
-Remember as you see a swan paddling gracefully along the surface of the water, _you can't see the feet furiously paddling underneath_.
+Remember as you see a swan gliding gracefully along the surface of the water, _you can't see the feet furiously paddling underneath_.
