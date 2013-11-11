@@ -282,7 +282,7 @@ cite {
   margin-right : 20px;
 }
 
-img { -ms-interpolation-mode:bicubic; }
+img { -ms-interpolation-mode:bicubic; max-width: 100% }
 
 [role='banner'], [role='main'], [role='contentinfo'] {
   padding: 1em 1em 0 1em;
