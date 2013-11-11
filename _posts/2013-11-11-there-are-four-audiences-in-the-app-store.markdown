@@ -7,7 +7,7 @@ There's been a significant amount of chat about how the traditional 'sell someth
 
 _NB: [Tweetbot is an outlier](http://www.cultofmac.com/251366/tweetbot-3-now-top-paid-app-in-35-countries-less-than-24-hours-after-release/)._
 
-With Apple's recent touting of 'free' being a good price for their iLife and iWork suites it's clear that the software complement to their hardware business is being commoditized. Shame as that's where we attempt to earn our living.
+With Apple's recent touting of 'free' being a good price for their iLife and iWork suites it's clear that the software complement to their hardware business is being commoditized. Shame, as that's where a lot of us attempt to earn our living.
 
 I believe that these days there are four main audiences that behave in similar ways across app stores (maybe a bonus fifth). It's important, when launching your next project, to know who you're aiming at and how you're going to make money. _As always._
 
