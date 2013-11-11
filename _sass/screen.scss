@@ -268,10 +268,13 @@ p, ul, ol {
 }
 
 blockquote {
-  margin : 11px;
-  padding : 10px 11px 1px 11px;
-  background-color : rgb(230,230,230);
-  border-left: 11px solid rgb(220,220,220);
+  margin : 11px 21px 20px;
+  padding : 10px 11px 10px 21px;
+  border-left: 1px solid rgb(220,220,220);
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 pre, code, kbd, samp { font-size: 12px; line-height: 22px; }
