@@ -5,9 +5,9 @@ layout: post
 
 I'm a big fan of using a [fluid app](http://fluidapp.com) for the more 'app-like' websites I keep open all day and the main tool that gets used like this in my life is [Pivotal Tracker](http://pivotaltracker.com).
 
-And they changed their logo over the weekend. And then my Mac OS X icon OCD kicked in.
+They changed their logo over the weekend and my Mac OS X icon OCD kicked in.
 
-They dont provide a large enough version on their site, so I quickly rebuilt it using [Sketch](http://www.bohemiancoding.com/sketch/) (which is totally awesome).
+They don't provide a large enough version on their site, so I quickly rebuilt it using [Sketch](http://www.bohemiancoding.com/sketch/) (which is totally awesome).
 
 [![Pivotal Tracker 2013: Fluid Icon](/images/2013/pivotal-tracker-fluid-icon-2013.png)](/images/2013/pivotal-tracker-fluid-icon-2013.png)
 
