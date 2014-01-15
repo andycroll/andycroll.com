@@ -277,7 +277,8 @@ blockquote {
   }
 }
 
-pre, code, kbd, samp { font-size: 12px; line-height: 22px; }
+pre, code, kbd, samp { font-size: 12px; line-height: 18px; }
+pre { padding: 18px; background-color: #f5f5f5; }
 
 cite {
   display : block;
@@ -389,6 +390,9 @@ img { -ms-interpolation-mode:bicubic; max-width: 100% }
     width: 70%;
   }
 
+  pre, code, kbd, samp { font-size: 16px; line-height: 20px; }
+  pre { padding: 20px; }
+
   #branding {
     #site-title {
       border-top: 1px solid rgb(240,240,240);
@@ -411,6 +415,9 @@ img { -ms-interpolation-mode:bicubic; max-width: 100% }
     font-size: 21px;
     max-width: 55em;
   }
+
+  pre, code, kbd, samp { font-size: 18px; line-height: 22px; }
+  pre { padding: 22px; }
 
   [role='main'] {
     padding: 1em 3em 0 3em;
