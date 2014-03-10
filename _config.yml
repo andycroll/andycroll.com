@@ -7,13 +7,13 @@ title: Andy Croll
 author: Andy Croll
 description: "Writings of Andy Croll, designer & developer from the UK"
 
-email: andycroll@deepcalm.com
+email: andy@goodscary.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-exclude:  [ Gemfile, Gemfile.lock ]
+exclude:  [ Gemfile, Gemfile.lock, CNAME ]
 
 permalink: /:year/:month/:day/:title/
 
