@@ -1,0 +1,15 @@
+/* humanstxt.org */
+
+/* TEAM */
+  Your title: Andy Croll
+  Site: andy@goodscary.com
+  Twitter: @andycroll
+  Location: Brighton, UK.
+
+/* THANKS */
+
+  Name: Bootstrap, http://getbootstrap.com
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Software: Atom, Git, Pixelmator
