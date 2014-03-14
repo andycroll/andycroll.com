@@ -112,4 +112,3 @@ And then type:
 I do have a few scripts that I try and keep maintained that let me quickly setup a development machine.
 
 [andycroll/macsetup on github](https://github.com/andycroll/macsetup) if you're interested.
-
