@@ -138,6 +138,11 @@ img { -ms-interpolation-mode:bicubic; max-width: 100% }
   a, a:link, a:visited, a:hover, a:active, a:focus {
     color: rgb(150,150,150);
   }
+  .highlight {
+    a, a:link, a:visited, a:hover, a:active, a:focus {
+      color: rgb(10,10,10);
+    }
+  }
 }
 
 #followme {
