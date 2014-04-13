@@ -7,7 +7,7 @@ With the [aquisition of Mark Boulton Design by Monotype](http://markboulton.co.u
 
 The website died with it, so should you want to buy these fonts of knowledge where should you go?
 
-Authors are doing a variety of things with their books, some are freeing the content, some liking with distributors, some (like me) are selling them direct.
+Authors are doing a variety of things with their books, some are freeing the content, some linking with distributors, some (like me) are selling them direct.
 
 Here's the list.
 
