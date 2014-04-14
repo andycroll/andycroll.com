@@ -24,7 +24,7 @@ A Practical Guide to Designing the Invisible _by [Robert Mills](http://twitter.c
 
 A Practical Guide to Managing Web Projects _by [Brendan Knowlton](http://twitter.com/bfk)_
 
-A Practical Guide to Web App Success _by [Dan Zambonini](http://twitter.com/zambonini)_
+[A Practical Guide to Web App Success](http://webappsuccess.com/) _by [Dan Zambonini](http://twitter.com/zambonini)_
 
 ## Specials
 
