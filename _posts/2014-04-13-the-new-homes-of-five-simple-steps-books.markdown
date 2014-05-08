@@ -3,6 +3,14 @@ title: 'The New Homes of Five Simple Steps Books'
 layout: post
 ---
 
+## Update
+
+Turns out [Five Simple Steps](http://www.fivesimplesteps.com/) are [back in business](http://www.fivesimplesteps.com/blogs/five-simple-steps-blog/14067261-back-in-business)!
+
+**Yay**. You can buy most of the original catalogue from them.
+
+-----
+
 With the [aquisition of Mark Boulton Design by Monotype](http://markboulton.co.uk/journal/mbd-and-monotype), its publishing operation, Five Simple Steps, shut down and returned all the book rights to their respective authors.
 
 The website died with it, so should you want to buy these fonts of knowledge where should you go?
