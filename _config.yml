@@ -21,3 +21,6 @@ markdown: rdiscount
 
 rdiscount:
   extensions: [smart]
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
