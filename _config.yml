@@ -19,12 +19,8 @@ markdown: kramdown
 
 kramdown:
   input: GFM
-  use_coderay: true
 
-  coderay_line_numbers: nil
-  # coderay_tab_width:    2
-  coderay_css:          class
-
+highlighter: pygments
 
 gems:
   - jekyll-redirect-from
