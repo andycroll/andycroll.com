@@ -1,6 +1,11 @@
 ---
 title: 'The Long Hours Fetish'
 layout: post
+category:
+  - startups
+  - bootstrapping
+redirect_from:
+  - /2012/07/01/the-long-hours-fetish/
 ---
 
 [Brian Wong](http://brianwong.me), during a panel at [Echelon 2012](http://echelon.e27.sg) uttered the unfortunate phrase "Don't hire people with kids". I glossed over this comment in my [day one wrap]() because he quickly backtracked to a less extreme/quotable position when challenged.

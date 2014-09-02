@@ -1,6 +1,10 @@
 ---
 title: "There Are Four (+1) Audiences in the App Store"
 layout: post
+category:
+  - ios
+redirect_from:
+  - /2013/11/11/there-are-four-audiences-in-the-app-store/
 ---
 
 There's been a significant amount of chat about how the traditional 'sell something for money' model [no longer really works](http://www.marco.org/2013/09/28/underscore-price-dynamics) in the iOS App Store (and likely never has in the Android/Google Play stores).

@@ -1,6 +1,10 @@
 ---
 title: "Ubud, Bali"
 layout: post
+category:
+  - travel
+redirect_from:
+  - /2012/11/26/ubud-bali/
 ---
 
 Ubud is probably our favourite place in Asia. We've been at least 5 times in six years.
@@ -42,4 +46,3 @@ _Jl. Kajeng_ • [ladybamboo.com](http://ladybamboo.com)
 We always stay at Lady Bamboo, it's owned by a friendly German/Balinese couple. Very central, few rooms and tucked away from the madness on the edge of a river.
 
 Nice pool, good food and they've even got a little spa now.
-

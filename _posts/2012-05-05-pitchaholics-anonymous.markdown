@@ -1,6 +1,10 @@
 ---
 title: "Pitchaholics Anonymous"
 layout: post
+category:
+  - startups
+redirect_from:
+  - /2012/05/05/pitchaholics-anonymous/
 ---
 
 Hello, I'm the startup scene and I am a Pitchaholic

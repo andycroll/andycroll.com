@@ -1,6 +1,11 @@
 ---
 title: "Pivotal Tracker Fluid Icon"
 layout: post
+category:
+  - design
+  - mac
+redirect_from:
+  - /2013/11/18/pivotal-tracker-fluid-icon/
 ---
 
 I'm a big fan of using a [fluid app](http://fluidapp.com) for the more 'app-like' websites I keep open all day and the main tool that gets used like this in my life is [Pivotal Tracker](http://pivotaltracker.com).

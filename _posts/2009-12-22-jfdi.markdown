@@ -1,13 +1,19 @@
 ---
 title: "J.F.D.I."
 layout: post
+categories:
+  - startups
+  - bootstrapping
+  - singapore
+redirect_from:
+  - /2009/12/22/jfdi/
 ---
 
 I've been away this weekend and able to step away from my laptop and the incessent compulsion to twitter or work. It's given me a change to decompress and also to read a couple of books and think about Singapore's web & technology entreprenurial scene.
 
 I left the [Neoteny NSC1 conference](http://nsc1.neotenylabs.com/) last week both energised and disappointed by what I had heard and seen. Conflicting emotions.
 
-Energised by the appearence of [Joi Ito](http://joi.ito.com) and his clear vision of Singapore as a hub for innovation and exciting companies. Energised by the large group of rubyists who turned up at short notice on a Monday night to learn how the [Pivotal Labs guys](http://pivotallabs.com/) who are producing better software throught the use of agile techniques and the cloud. Energised by the appearance of the [Hackerspace](http://hackerspace.sg/) in the last couple of months, a sense of a growing and coalescing community of independant but co-operating voices.
+Energised by the appearence of [Joi Ito](http://joi.ito.com) and his clear vision of Singapore as a hub for innovation and exciting companies. Energised by the large group of Rubyists who turned up at short notice on a Monday night to learn how the [Pivotal Labs guys](http://pivotallabs.com/) who are producing better software throught the use of agile techniques and the cloud. Energised by the appearance of the [Hackerspace](http://hackerspace.sg/) in the last couple of months, a sense of a growing and coalescing community of independent but co-operating voices.
 
 All developments that make me proud to be part of the tech scene in Singapore and pleased at mine and my wife's decision to stay and for me to attempt my startup in the blazing sun of Singapore rather than my home country of the UK.
 
@@ -15,7 +21,7 @@ However the thing that bothered me most about the conference was the negativity 
 
 "There aren't enough good developers in Singapore"
 
-"Asians are too scard of losing face to create an entreprenuerial hub in Singapore"
+"Asians are too scard of losing face to create an entrepreneurial hub in Singapore"
 
 "Fusion Garage have ruined it for Singapore"
 
@@ -39,13 +45,10 @@ Tribes is about leadership, being a genuine and passionate leader of a tribe, ju
 
 You have to have put the effort in, you have to make the decision to start doing, to learn a programming language, to leave a stable job, to take a pay cut.
 
-Joi Ito became a hero of mine the moment, during yet another person saying it was impossible to change Singapore, he stood up and pointed out it would only take one or two percent of people to believe and then execute.
+Joi Ito won my respect for pointing out, during yet another person saying it was impossible to change Singapore, it would only take one or two percent of people to believe and then execute.
 
 The irony was the very country in which they apparently couldn't change anything. The very country in which one man, Lee Kuan Yew, led from independence to the 5th wealthiest country in the world; a place in which now more than a quarter of the population _choose_ to be there at any one time. As he himself wrote, [From Third World to First](http://en.wikipedia.org/wiki/LKY#Memoirs).
 
 There may be things about Singapore or its path through history you disagree with. And of course there is always room for improvement, but if nothing else see it for an example of what is possible if you are prepared to lead people in something you believe in. The trick is to stop pretending that you can't, that's just you stoping yourself from starting, so just fucking do it.
 
-If you truely have a brilliant and unique idea (which you probably don't, but that's another rant about NDAs) and it's bursting to get out you'll find a way to make it happen. If you simply go to conferences and complain about a lack of developers/funding/help, you're only proving you don't really want to start.
-
-So I've been working my nuts off doing client work, reading, absorbing and sharpening my skills for the last 12 months to prepare financially and mentally for what comes next year. Watch this space.
-
+If you truly have a brilliant and unique idea (which you probably don't, but that's another rant about NDAs) and it's bursting to get out you'll find a way to make it happen. If you simply go to conferences and complain about a lack of developers/funding/help, you're only proving you don't really want to start.

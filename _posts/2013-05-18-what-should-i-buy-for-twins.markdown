@@ -1,6 +1,10 @@
 ---
 title: "What Should I Buy for Twins?"
-layout: "post"
+layout: post
+category:
+  - life
+redirect_from:
+  - /2013/05/18/what-should-i-buy-for-twins/
 ---
 
 The glib answer to this is two of everything! But in truth there are a few things that are specific to getting set up for impending multiples.

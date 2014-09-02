@@ -1,9 +1,13 @@
 ---
 title: "It's Not Just Apple vs Android"
-layout: "post"
+layout: post
+category:
+  - ios
+redirect_from:
+  - /2013/03/15/its-not-just-apple-vs-android/
 ---
 
-I read [Gruber's latest piece](http://daringfireball.net/2013/03/ceding_the_crown) nodding. While many may find him to be an Apple cheerleader (I don't) his approach to the industry is much more insightful than the broad-brush approach of most of 'mainstream' tech journalism. 
+I read [Gruber's latest piece](http://daringfireball.net/2013/03/ceding_the_crown) nodding. While many may find him to be an Apple cheerleader (I don't) his approach to the industry is much more insightful than the broad-brush approach of most of 'mainstream' tech journalism.
 
 The whole narrative around tech companies is typically forced into a cookie-cutter narrative. Company X smashes Company Y. Samsung good, Apple bad. Google open, Apple closed. *Not true.*
 

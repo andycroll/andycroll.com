@@ -1,6 +1,11 @@
 ---
 title: "Hello Future Engineers"
 layout: post
+category:
+  - ruby
+  - careers
+redirect_from:
+  - /2012/02/22/hello-future-engineers/
 ---
 
 As part of our future plans, I spent two days at the university career fairs in Singapore as a guest of Infocomm Investments.

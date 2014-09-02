@@ -1,6 +1,11 @@
 ---
 title: "xip.io Doesn't Work on BT, Fix It"
 layout: post
+category:
+  - mac
+  - ruby
+redirect_from:
+  - /2013/06/21/xip-io-doesnt-work-on-bt/
 ---
 
 I use [pow](http://pow.cx) and [xip.io](http://xip.io) for my local device testing when running Rails apps and ran into a curious issue: it didn't work at my parent's home. I was getting a 'cannot open the page because the server cannot be found' error.
@@ -15,4 +20,4 @@ It'd be great to use a global fix for all devices connected to the wifi network,
 
 If you're using the standard ADSL broadband, you'll need to buy a replacement for the home hub. I'm using the simple [ZyXEL](http://www.amazon.co.uk/dp/B000LE1LXK/ref=nosim?tag=deepcalmcom) and linking an [Apple Time Capsule](http://www.amazon.co.uk/dp/B0058IGPKI/ref=nosim?tag=deepcalmcom) to it to provide the wireless network.
 
-If you're using BT Infinity (the fibre broadband) you can just user any wifi access point and connect that directly to the BT Openreach box and configure the DNS on that. I'd use an [Apple Time Capsule](http://www.amazon.co.uk/dp/B0058IGPKI/ref=nosim?tag=deepcalmcom) or [Airport Express](http://www.amazon.co.uk/dp/B008BEYP26/ref=nosim?tag=deepcalmcom).
+If you're using BT Infinity (the fibre broadband) you can just use any wifi access point and connect that directly to the BT Openreach box and configure the DNS on that. I'd use an [Apple Time Capsule](http://www.amazon.co.uk/dp/B0058IGPKI/ref=nosim?tag=deepcalmcom) or [Airport Express](http://www.amazon.co.uk/dp/B008BEYP26/ref=nosim?tag=deepcalmcom).

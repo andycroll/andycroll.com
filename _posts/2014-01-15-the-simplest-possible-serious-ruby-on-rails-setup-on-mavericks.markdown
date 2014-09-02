@@ -1,6 +1,11 @@
 ---
 title: 'The Simplest Possible (Serious) Ruby/Rails Setup on OS X Mavericks'
 layout: post
+category:
+  - mac
+  - ruby
+redirect_from:
+  - /2014/01/15/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
 ---
 
 I try and keep my development environment as 'light' as possible, so with that in mind here's my serious (in that I make a living from coding) but simple Ruby and Rails setup for a Mac.

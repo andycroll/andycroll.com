@@ -1,6 +1,10 @@
 ---
 title: "South Africa: Mala Mala & Cape Town"
 layout: post
+category:
+  - travel
+redirect_from:
+  - /2012/04/02/south-africa-mala-mala-cape-town/
 ---
 
 Just a post to summarise the amazing trip I just had, so I can point people to 'stuff to do' in South Africa.

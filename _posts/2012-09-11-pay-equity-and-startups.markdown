@@ -1,6 +1,10 @@
 ---
 title: 'Pay, Equity and Startups'
 layout: post
+category:
+  - startups
+redirect_from:
+  - /2012/09/11/pay-equity-and-startups/
 ---
 
 I've had the question about 'what should I do about this offer of equity' several times in the past few weeks.

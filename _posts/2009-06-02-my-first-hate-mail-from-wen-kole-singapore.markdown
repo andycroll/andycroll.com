@@ -1,6 +1,11 @@
 ---
 title: My First Hate Mail from Wen Kole, Singapore
 layout: post
+categories:
+  - life
+  - singapore
+redirect_from:
+  - /2009/06/02/my-first-hate-mail-from-wen-kole-singapore/
 ---
 
 Today brought my first piece of hate mail since I arrived in Singapore. I can't say I was expecting it, as Singaporeans of all ethnicities are extremely nice to foreigners.

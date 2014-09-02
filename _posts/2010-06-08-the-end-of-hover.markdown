@@ -1,6 +1,10 @@
 ---
 title: "The end of :hover?"
 layout: post
+category:
+  - design
+redirect_from:
+  - /2010/06/08/the-end-of-hover/
 ---
 
 I've just attended [echelon](http://echelon2010.com) where several of the international visitors were sat in the audiences cradling and poking at their iPads.

@@ -1,6 +1,10 @@
 ---
 title: "On 'The Magazine'"
 layout: post
+category:
+  - ios
+redirect_from:
+  - /2012/10/12/on-the-magazine/
 ---
 
 There's several things to think about with the launch of the iOS-only [The Magazine](http://the-magazine.org) from Marco Arment.

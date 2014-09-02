@@ -1,6 +1,10 @@
 ---
 title: So What Now?
 layout: post
+category:
+  - life
+redirect_from:
+  - /2011/07/11/so-what-now/
 ---
 
 As it has become apparent from the Anideo website, and if you've met me in person in the last week, I'm no longer a part of that enterprise. It was a bit of a surprise and there's a few adminstration issues to resolve, but the end result is that I'm solo again.
@@ -44,5 +48,3 @@ I'm putting together a couple of things along the lines of [RedDotRubyConf](http
 I'll also be running RedDotRubyConf again next year.
 
 So keep an ear out for those events: you should follow me on twitter [here](http://twitter.com/andycroll). If you need someone to help with your product, design or technology perhaps you'd like to have a coffee? [Email me](mailto:andycroll@deepcalm.com).
-
-

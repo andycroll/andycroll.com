@@ -1,6 +1,10 @@
 ---
 title: "Simplifying TV"
 layout: post
+category:
+  - design
+redirect_from:
+  - /2010/03/19/simplifying-tv/
 ---
 
 The recent write up of [Avner Ronan's chat with Mark Cuban](http://blog.boxee.tv/2010/03/18/the-future-of-tv/) has pushed me to shine up and publish this article. I'm coming at it from the perspective of a frustrated user and 'consumer', but my focus is on the equipment used to view the TV & movies that I watch. Obviously there are huge infrastructure and international challenges in the way that TV is currently distributed and that is probably another article, this is more a device 'wishing' piece.
@@ -17,7 +21,8 @@ There are currently several ways to consume TV and movies:
 
 * **Removable media:**
 
-  DVD, Blu-ray, VCD (?) & the late HD DVD
+  DVD, Blu-ray, VCD (?) & the late HD-DVD
+
 * **Storage / PVR:**
 
   Suspiciously downloaded TV, External recorder (DVD, hard disk or VHS), a built in hard-disk based recorder to a cable or satellite system (e.g. Sky+)

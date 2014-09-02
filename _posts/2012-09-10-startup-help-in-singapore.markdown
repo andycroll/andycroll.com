@@ -1,7 +1,16 @@
 ---
 title: 'Startup Help in Singapore'
 layout: post
+category:
+  - startups
+  - singapore
+redirect_from:
+  - /2012/09/10/startup-help-in-singapore/
 ---
+
+_I left Singapore in late 2012, this information is from then and may decay._
+
+--
 
 I’ve set up a couple of comapnies in Singapore, including [ImpulseFlyer](http://impulseflyer.com/welcome/andy) and have gradually formed a group of companies and people who I rely on to do the stuff that isn’t ‘making websites awesome’.
 

@@ -1,6 +1,11 @@
 ---
 title: 'New Babies, Remote Working & Startups'
 layout: post
+category:
+  - business
+  - startups
+redirect_from:
+  - /2013/07/29/new-babies-remote-working-and-startups/
 ---
 
 [ImpulseFlyer](http://impulseflyer.com/?referrer=pawodukomi) had been going (for me) a about a year when Jo fell pregnant and we found out very early on that there were two little individuals growing in there.

@@ -1,6 +1,10 @@
 ---
 title: "Pivotal Labs & EMC: The Future?"
 layout: post
+category:
+  - business
+redirect_from:
+  - /2012/03/18/pivotal-labs-and-emc-the-future/
 ---
 
 A quick disclaimer: I know of the Pivotal guys only through working alongside the Singapore crew (including several imported SF Pivots) before they moved to [{new context}](http://newcontext.com). _This is my personal uninformed opinion._

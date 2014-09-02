@@ -1,6 +1,10 @@
 ---
 title: Two Thousand Eleven
 layout: post
+category:
+  - life
+redirect_from:
+  - /2012/01/13/two-thousand-eleven/
 ---
 
 Well, that was a year. Starting out with a plan and then only four different jobs and conference later here we are.

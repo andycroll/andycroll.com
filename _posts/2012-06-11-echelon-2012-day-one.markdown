@@ -1,6 +1,11 @@
 ---
 title: 'Echelon 2012: Day One'
 layout: post
+category:
+  - startups
+  - singapore
+redirect_from:
+  - /2012/06/11/echelon-2012-day-one/
 ---
 
 My fourth year at the [big startup event](http://echelon.e27.sg/SG2012/), courtesy this year of new email hotness [THE LIST](http://eepurl.com/mcYbj) by [Kristine Lauria](http://twitter.com/krissymo). You should sign up to get a dose of fresh events every week.

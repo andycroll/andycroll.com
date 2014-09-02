@@ -1,6 +1,11 @@
 ---
 title: "F*ck the Real World, DHH"
 layout: post
+categories:
+  - business
+  - bootstrapping
+redirect_from:
+  - /2009/05/17/fck-the-real-world-dhh/
 ---
 
 There seems to be a trend to publish a lot of information in video format these days, which is great but it's by no means the best method to receive information. Watching video cannot be skimmed like text or easily bookmarked, plus it simply takes a lot of time and the functionality of the various flash players can leave a lot to be desired.
@@ -80,4 +85,3 @@ A mediocre idea with great execution is a great business. So _stick with it_. Ba
 Invest in something until it's great. Stick around until something is great. Most of todays success stories were sold long before they were profitable, and some remain that way. Flickr, YouTube, Facebook. Terrible businesses, but it seems there will always be more VC money.
 
 Invest in yourself and bet on execution, bet on sticking around and don't listen to the 'real world' too much. And you'll be fine.
-

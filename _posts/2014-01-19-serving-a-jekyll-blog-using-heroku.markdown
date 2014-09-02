@@ -1,6 +1,10 @@
 ---
 title: Serving a Jekyll Blog using Heroku
 layout: post
+category:
+  - ruby
+redirect_from:
+  - /2014/01/19/serving-a-jekyll-blog-using-heroku/
 ---
 
 I've put up a few simple sites recently, for [upcoming][apibook] [books][herokubook] and a [bootstrapping mailing list][bootstrappingio], and these I've either used a *very* simple Sintra app, or in the case of a the more blogg-y sites, [Jekyll][jekyll], the simple Ruby blogging system.
@@ -19,32 +23,42 @@ You need to download and install the [Heroku Toolbelt][toolbelt]. On a Mac I use
 [toolbelt]:http://toolbelt.heroku.com
 [homebrew]:http://brew.sh
 
-    brew install heroku-toolbelt
+```Shell
+brew install heroku-toolbelt
+```
 
 You'll also need Jekyll and bundler installed locally.
 
-    gem install jekyll bundler
+```Shell
+gem install jekyll bundler
+```
 
 ## Make your blog
 
 Using the `jekyll` command
 
-    jekyll new nameofyourblog
-    cd nameofyourblog
+```Shell
+jekyll new nameofyourblog
+cd nameofyourblog
+```
 
 ## Bundler
 
 Create a file named `Gemfile` in the root of your new Jekyll project.
 
-    source 'https://rubygems.org'
-    ruby '2.1.0'
-    gem 'bundler'
-    gem 'jekyll'
-    gem 'rack-jekyll'
+```ruby
+source 'https://rubygems.org'
+ruby '2.1.0'
+gem 'bundler'
+gem 'jekyll'
+gem 'rack-jekyll'
+```
 
 Now generate your bundle:
 
-    bundle
+```Shell
+bundle
+```
 
 ## Ignoring
 
@@ -52,11 +66,15 @@ You don't want to have to generate your site and check it in before you deploy, 
 
 Create a `.gitignore` file with the following line, stopping your locally generated site from being committed.
 
-    _site
+```
+_site
+```
 
 You also need to add the following line to the end of your `_config.yml` file to stop Jekyll including your configuration in it's generated site.
 
-    exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+```yaml
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+```
 
 ## Serving the Site
 
@@ -64,8 +82,10 @@ This gem serves your app on Heroku using [RackJekyll][]. Create a file named `co
 
 [rackjekyll]:https://github.com/adaoraul/rack-jekyll
 
-    require 'rack/jekyll'
-    run Rack::Jekyll.new
+```ruby
+require 'rack/jekyll'
+run Rack::Jekyll.new
+```
 
 Because we're not committing the `_site` directory, it needs to be generated. So we use one of Heroku's splendid features... a Custom Build Pack
 
@@ -75,17 +95,19 @@ I've added the (very simple) commands to generate the `_site` directory on top o
 
 So generate your new Heroku app...
 
-    heroku create nameofyourblog --buildpack https://github.com/andycroll/heroku-buildpack-jekyll.git
+```Shell
+heroku create nameofyourblog --buildpack https://github.com/andycroll/heroku-buildpack-jekyll.git
+```
 
 Then commit, and then push it up!
 
-    git add .
-    git commit -m 'first commit'
-    git push heroku master
-    heroku open
+```Shell
+git add .
+git commit -m 'first commit'
+git push heroku master
+heroku open
+```
 
 Nice. Now you might want to dive into the [Jekyll documentation][jekyll].
-
-----
 
 If you liked this article you might be interested in [my book on running ruby apps on Heroku][herokubook]. Go and [sign up][herokubook] to my mailing list to hear when I launch and to get a special discount.

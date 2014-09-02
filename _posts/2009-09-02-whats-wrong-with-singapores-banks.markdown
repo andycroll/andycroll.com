@@ -1,6 +1,11 @@
 ---
 title: "What's Wrong with Singapore's Banks?"
 layout: post
+categories:
+  - business
+  - singapore
+redirect_from:
+  - /2009/09/02/whats-wrong-with-singapores-banks/
 ---
 
 The short answer to this question is "lots", but I'm going to dwell only on a few specifics.
@@ -54,4 +59,3 @@ It should be noted, I [ranted about DBS on twitter](http://twitter.com/andycroll
 ## Further Reading
 
 A great article by Matt 'creator of WordPress' Mullenweg on a [new bank he'd like to see](http://ma.tt/2009/08/starting-a-bank/) - hell I'd settle for one that wasn't basically stupid.
-

@@ -1,6 +1,10 @@
 ---
 title: Twitter Bootstrap & Kaminari Pagination
 layout: post
+category:
+  - ruby
+redirect_from:
+  - /2011/12/07/twitter-bootstrap-and-kaminari-pagination/
 ---
 
 In the process of putting together the first of many internal tools for ImpulseFlyer I've utilised the marvelousness of Twitter Bootstrap.

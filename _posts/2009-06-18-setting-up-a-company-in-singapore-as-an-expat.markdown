@@ -1,6 +1,11 @@
 ---
 title: "Setting up a Company in Singapore as an Expat"
 layout: post
+category:
+  - business
+  - singapore
+redirect_from:
+  - /2009/06/18/setting-up-a-company-in-singapore-as-an-expat/
 ---
 
 There is an entire cottage industry of expatriate Accountants running company incorporation and employment pass services to other new-to-the-island expatriates. It's a lucrative business, upwards of $4,000 SGD a go, if you include company secretarial, bank account setup etc.
@@ -104,4 +109,3 @@ But eventually I'm all set up.
 It's straightforward in theory but a bit rubbish in practise because you're dealing with government processes and a surprisingly inefficient consumer banking industry, but not worth $5,000 of your money to pay someone to do it for you. Of course if you do want to pay someone, I'll happily take your money...
 
 If you have any questions I'm happy to provide ad hoc advice on the proviso that I know very little, but I have an idea as I've just done it! Drop me an [email](mailto:andycroll@deepcalm.com), I might even be able to help you with the [website for your new Singaporean business](http://deepcalm.com)!
-
