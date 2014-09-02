@@ -15,9 +15,9 @@ The in-box manuals for it are terrible though, and you only get a Windows Instal
 
 Discovered on [Macworld](http://www.macworld.com/article/53277/2006/10/pingfind.html) I used the `arp` command to find the IP of the newly connected NAS, by listing all the IPs of devices on your network.
 
-```Shell
+{% highlight bash %}
 arp -a
-```
+{% endhighlight %}
 
 …then try the last IP address in the list in you web browser. It looks like 10.0.1.xx or 192.168.0.xx. If you keep working your way up the list of IP addresses you'll eventually hit on the web interface for the ShareCenter. There's currently no password to the default 'admin' user name so log in and format your drives.
 
