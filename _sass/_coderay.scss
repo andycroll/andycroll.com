@@ -1,0 +1,109 @@
+$very-light-gray: #c5c8c6;
+$light-gray: #969896;
+$gray: #373b41;
+$dark-gray: #282a2e;
+$very-dark-gray: #1d1f21;
+
+$cyan: #8abeb7;
+$blue: #81a2be;
+$purple: #b294bb;
+$green: #b5bd68;
+$red: #cc6666;
+$dark-red: #a3685a;
+$orange: #de935f;
+$light-orange: #f0c674;
+$bright-orange: #FF8000;
+
+.CodeRay {
+  background-color: $very-dark-gray;
+  color: $very-light-gray;
+  max-width: 49em;
+  border-radius: 2px;
+  font-size: 0.75em;
+}
+
+.CodeRay pre {
+  padding: 0.5em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+// .CodeRay .debug { color: white !important; background: blue !important; }
+
+// .CodeRay .annotation {  }
+// .CodeRay .attribute-name {  }
+// .CodeRay .attribute-value {  }
+// .CodeRay .binary {  }
+// .CodeRay .binary .char {  }
+// .CodeRay .binary .delimiter {  }
+// .CodeRay .char {  }
+// .CodeRay .char .content {  }
+// .CodeRay .char .delimiter {  }
+.CodeRay .class { color: $orange; }
+// .CodeRay .class-variable {  }
+// .CodeRay .color {  }
+.CodeRay .comment { color: $light-gray; }
+.CodeRay .comment .char { color: $light-gray; }
+.CodeRay .comment .delimiter { color: $light-gray; }
+.CodeRay .constant { color: $orange; }
+// .CodeRay .decorator {  }
+// .CodeRay .definition {  }
+// .CodeRay .delimiter {  }
+// .CodeRay .directive {  }
+// .CodeRay .docstring {  }
+// .CodeRay .doctype {  }
+// .CodeRay .done {  }
+.CodeRay .entity { color: $light-orange; text-decoration: underline; }
+// .CodeRay .error {  }
+// .CodeRay .escape {  }
+// .CodeRay .exception {  }
+.CodeRay .float { color: $orange; }
+// .CodeRay .function {  }
+// .CodeRay .function .delimiter {  }
+// .CodeRay .global-variable {  }
+.CodeRay .hex { color: $orange; }
+// .CodeRay .id {  }
+// .CodeRay .include {  }
+// .CodeRay .inline {  }
+// .CodeRay .inline-delimiter {  }
+.CodeRay .instance-variable { color: $red; }
+.CodeRay .integer { color: $orange; }
+// .CodeRay .imaginary {  }
+// .CodeRay .important {  }
+.CodeRay .key { color: $purple; }
+.CodeRay .key .char { color: $very-light-gray; }
+// .CodeRay .key .delimiter {  }
+.CodeRay .keyword { color: $purple; }
+// .CodeRay .label {  }
+// .CodeRay .local-variable {  }
+// .CodeRay .map .content {  }
+// .CodeRay .map .delimiter {  }
+// .CodeRay .map {  }
+// .CodeRay .namespace {  }
+.CodeRay .octal { color: $orange; }
+// .CodeRay .operator {  }
+// .CodeRay .predefined {  }
+.CodeRay .predefined-constant { color: $orange; }
+// .CodeRay .predefined-type {  }
+// .CodeRay .preprocessor {  }
+// .CodeRay .pseudo-class {  }
+.CodeRay .regexp { color: $cyan; }
+.CodeRay .regexp .content { color: $cyan; }
+.CodeRay .regexp .delimiter { color: $cyan; }
+.CodeRay .regexp .modifier { color: $cyan; }
+.CodeRay .reserved { color: $blue; }
+// .CodeRay .shell {  }
+// .CodeRay .shell .content {  }
+// .CodeRay .shell .delimiter {  }
+.CodeRay .string { color: $green; }
+.CodeRay .string .char { color: $green; }
+.CodeRay .string .content { color: $green; }
+.CodeRay .string .delimiter { color: $green; }
+// .CodeRay .string .modifier {  }
+.CodeRay .symbol { color: $green; }
+.CodeRay .symbol .content { color: $green; }
+.CodeRay .symbol .delimiter { color: $orange; }
+// .CodeRay .tag {  }
+// .CodeRay .type {  }
+// .CodeRay .value {  }
+.CodeRay .variable { color: $red; }
