@@ -14,13 +14,18 @@ email: andy@goodscary.com
 # ----------------------- #
 
 exclude:  [ Gemfile, Gemfile.lock, CNAME ]
+permalink: /:categories/:title/
+markdown: kramdown
 
-permalink: /:year/:month/:day/:title/
+kramdown:
+  input: GFM
+  use_coderay: true
 
-markdown: rdiscount
+  coderay_line_numbers: nil
+  # coderay_tab_width:    2
+  coderay_css:          class
 
-rdiscount:
-  extensions: [smart]
+
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
