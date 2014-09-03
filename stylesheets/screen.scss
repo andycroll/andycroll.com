@@ -11,7 +11,7 @@ $color-secondary: rgb(186,186,186);
 $color-tertiary: rgb(226,226,226);
 $color-highlight: rgb(155,55,50);
 
-$mini: 480px;
+$mini: 400px;
 $medi: 700px;
 $maxi: 1000px;
 
@@ -193,13 +193,26 @@ hr {
 
   width: 50%;
 
-  .thumbnail {
-    float: left;
-    width: 80px;
-    margin-bottom: 1em;
+  padding-right: 0.5em;
+
+  + .book {
+    padding-right: 0;
+    padding-left: 0.5em;
   }
 
-  p {
-    padding: 1em 0 0 96px;
+  @media screen and (min-width: $mini) {
+    + .book {
+      padding-left: 0;
+    }
+
+    .thumbnail {
+      float: left;
+      width: 80px;
+      margin-bottom: 1em;
+    }
+
+    p {
+      padding: 1em 0 0 96px;
+    }
   }
 }
