@@ -49,6 +49,16 @@ h2 {
   }
 }
 
+h3 {
+  font-size: (1em * 20/16);
+  font-style: italic;
+  margin-bottom: (1em * 8/20);
+
+  * + & {
+    margin-top: (1em * 16/24);
+  }
+}
+
 p, li {
   font-size: (1em * 18/16);
   line-height: (1em * 26/18);
