@@ -12,7 +12,7 @@ $color-tertiary: rgb(226,226,226);
 $color-highlight: rgb(155,55,50);
 
 $mini: 480px;
-$medi: 620px;
+$medi: 700px;
 $maxi: 1000px;
 
 *, *:before, *:after {
@@ -51,7 +51,7 @@ h2 {
 
 p, li {
   font-size: (1em * 18/16);
-  line-height: (1em * 24/18);
+  line-height: (1em * 26/18);
   margin-top: 0;
   margin-bottom: (1em * 8/18);
 }
@@ -99,36 +99,20 @@ hr {
 
 #branding {
   position: fixed;
-  bottom: 0;
+  top: 1em;
   left: 0;
 
-  width: 100%;
+  width: 304px;
   padding: 1em;
   line-height: 1;
 
   color: $color-background;
   background: $color-primary;
-
-  @media screen and (min-width: $medi) {
-    position: static;
-    width: 25%;
-    float: right;
-  }
 }
 
 #site-title {
   color: $color-background;
   background: none;
-
-  @media screen and (min-width: $mini) {
-    float: left;
-    margin-right: 1em;
-  }
-
-  @media screen and (min-width: $medi) {
-    float: none;
-    margin-right: 0;
-  }
 }
 
 #job {
@@ -147,16 +131,13 @@ hr {
 }
 
 .main {
-  @media screen and (min-width: $medi) {
-    display: block;
-    float: left;
-
-    width: 67.5%;
-  }
-}
-
-article {
+  margin-top: 5em;
   max-width: $medi;
+
+  @media screen and (min-width: $medi) {
+    width: 67.5%;
+    margin: 5em auto 0;
+  }
 }
 
 [role="contentinfo"] {
@@ -184,11 +165,10 @@ article {
   }
 
   @media screen and (min-width: $medi) {
-    position: static;
-    float: right;
+    width: 67.5%;
+    margin: 0 auto;
 
-    width: 25%;
-
+    padding-top: 6em;
     padding-bottom: 0;
   }
 }
