@@ -6,8 +6,6 @@ redirect_from:
   - /2014/04/13/the-new-homes-of-five-simple-steps-books/
 ---
 
-## Update
-
 Turns out [Five Simple Steps](http://www.fivesimplesteps.com/) are [back in business](http://www.fivesimplesteps.com/blogs/five-simple-steps-blog/14067261-back-in-business)!
 
 **Yay**. You can buy most of the original catalogue from them.
