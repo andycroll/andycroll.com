@@ -9,8 +9,8 @@ redirect_from:
 
 I've put up a few simple sites recently, for [upcoming][apibook] [books][herokubook] and a [bootstrapping mailing list][bootstrappingio], and these I've either used a *very* simple Sintra app, or in the case of a the more blogg-y sites, [Jekyll][jekyll], the simple Ruby blogging system.
 
-[apibook]:http://buildingapisonrailsbook.com
-[herokubook]:http://railsonherokubook.com
+[apibook]:/building-apis-on-rails
+[herokubook]:/ultimate-guide-to-rails-on-heroku
 [bootstrappingio]:http://bootstrapping.io
 [jekyll]:http://jekyllrb.com
 
