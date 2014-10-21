@@ -63,7 +63,27 @@ p, li {
   font-size: (1em * 18/16);
   line-height: (1em * 26/18);
   margin-top: 0;
-  margin-bottom: (1em * 8/18);
+  margin-bottom: (1em * 12/18);
+
+  @media screen and (min-width: $mini) {
+    margin-bottom: 1em;
+  }
+
+  code {
+    font-size: (100% * 17/18);
+  }
+}
+
+code {
+  font-family: Menlo, Monaco, monospace;
+}
+
+pre {
+  font-family: Menlo, Monaco, monospace;
+
+  @media screen and (min-width: $mini) {
+    margin-bottom: 1.3333em;
+  }
 }
 
 a, a:link, a:visited {
@@ -111,6 +131,29 @@ hr {
   border: 0;
   border-top: 1px solid $color-secondary;
 }
+
+table {
+  font-size: 1em;
+  line-height: (1em * 26/16);
+  width: 100%;
+  max-width: 36.65em;
+  margin-bottom: 1em;
+}
+
+table .numeric {
+  text-align: right;
+}
+
+@media screen and (max-width: $mini) {
+  table .notonphone {
+    display: none;
+  }
+}
+
+th, td {
+  text-align: left;
+}
+
 
 #branding {
   position: fixed;
