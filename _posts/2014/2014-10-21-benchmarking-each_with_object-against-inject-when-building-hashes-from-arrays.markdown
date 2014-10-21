@@ -61,11 +61,28 @@ end
 
 The results were interesting.
 
-**assign&return** - 3136.7 (±8.2%) i/s
-**merge** - 5.9 (±0.0%) i/s
-**merge!** - 1168.0 (±28.3%) i/s
-**map with tuples** - 2400.8 (±23.0%) i/s
-**each_with_object** - 3220.8 (±3.3%) i/s
+<table>
+<tr>
+  <th>assign&return</th>
+  <td class="numeric">3136.7</td><td class="numeric"><small>(±8.2%) i/s</small></td>
+</tr>
+<tr>
+  <th>merge</th>
+  <td class="numeric">5.9</td><td class="numeric"><small>(±0.0%) i/s</small></td>
+</tr>
+<tr>
+  <th>merge!</th>
+  <td class="numeric">1168.0</td><td class="numeric"><small>(±28.3%) i/s</small></td>
+</tr>
+<tr>
+  <th>map with tuples</th>
+  <td class="numeric">2400.8</td><td class="numeric"><small>(±23.0%) i/s</small></td>
+</tr>
+<tr>
+  <th>each_with_object</th>
+  <td class="numeric">3220.8</td><td class="numeric"><small>(±3.3%) i/s</small></td>
+</tr>
+</table>
 
 Turns out the most idiomatic code is _also_ the fastest. Followed surprisingly closely by the 'do the simplest thing' variant, but not by a huge amount.
 
