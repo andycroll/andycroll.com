@@ -11,15 +11,20 @@ I'd long known that using Ruby's `Hash#merge!` rather than `Hash#merge` was much
 
 What a fool I've been.
 
-Rather than use code like...
+Rather than use code like either of these...
 
 {% highlight ruby %}
+array_of_stuff.inject({}) do |result, element|
+  result[element.id] = element.value
+  result
+end
+
 array_of_stuff.inject({}) do |result, element|
   result.merge!(element.id => element.value)
 end
 {% endhighlight %}
 
-It's much more idiomatic Ruby to use `each_with_object`.
+...it's much more idiomatic Ruby to use `each_with_object`.
 
 {% highlight ruby %}
 array_of_stuff.each_with_object({}) do |element, result|
@@ -27,85 +32,41 @@ array_of_stuff.each_with_object({}) do |element, result|
 end
 {% endhighlight %}
 
-I was interested to see how this idiomatic Ruby performed. I put together a little script to test the various ways of generating a Hash from an array of _simple_ `Struct`-based objects.
-
-The code creates a simple `Hash` from a thousand element `Array` of `User` objects. And does it 100 times.
+I was interested to see how this idiomatic Ruby performed. I put together a little script to test the various ways of generating a Hash from an decent-sized array of _simple_ `Struct`-based objects. I used the [benchmark-ips](https://github.com/evanphx/benchmark-ips) gem.
 
 {% highlight ruby %}
-require 'benchmark'
+require 'benchmark/ips'
 
-User = Struct.new(:id, :count)
-a = Array.new(1000) { |i| User.new(i, count: rand(1000)) }
-n = 100
+User = Struct.new(:id, :stuff)
+a = Array.new(1000) { |i| User.new(i, stuff: rand(1000)) }
 
-Benchmark.bmbm do |x|
+Benchmark.ips do |x|
   x.report('assign&return') do
-    n.times do
-      a.inject({}) { |memo, i| memo[i.id] = i.count; memo }
-    end
+    a.inject({}) { |memo, i| memo[i.id] = i.stuff; memo }
   end
   x.report('merge') do
-    n.times do
-      a.inject({}) { |memo, i| memo.merge(i.id => i.count) }
-    end
+    a.inject({}) { |memo, i| memo.merge(i.id => i.stuff) }
   end
   x.report('merge!') do
-    n.times do
-      a.inject({}) { |memo, i| memo.merge!(i.id => i.count) }
-    end
+    a.inject({}) { |memo, i| memo.merge!(i.id => i.stuff) }
+  end
+  x.report('map with tuples') do
+    a.map { |i| [i.id, i.stuff] }.to_h
   end
   x.report('each_with_object') do
-    n.times do
-      a.each_with_object({}) { |i, memo| memo[i.id] = i.count }
-    end
+    a.each_with_object({}) { |i, memo| memo[i.id] = i.stuff }
   end
 end
 {% endhighlight %}
 
-The results were interesting (rounded to three decimal places).
+The results were interesting.
 
-<table>
-<thead>
-<tr>
-  <th></th>
-  <th class="numeric notonphone">user</th>
-  <th class="numeric notonphone">system</th>
-  <th class="numeric notonphone">total</th>
-  <th class="numeric">real</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <th>assign&return</th>
-  <td class="numeric notonphone">0.030</td>
-  <td class="numeric notonphone">0.000</td>
-  <td class="numeric notonphone">0.030</td>
-  <th class="numeric">(0.029)</th>
-</tr>
-<tr>
-  <th>merge</th>
-  <td class="numeric notonphone">21.800</td>
-  <td class="numeric notonphone">0.950</td>
-  <td class="numeric notonphone">22.750</td>
-  <th class="numeric">(22.771)</th>
-</tr>
-<tr>
-  <th>merge!</th>
-  <td class="numeric notonphone">0.070</td>
-  <td class="numeric notonphone">0.000</td>
-  <td class="numeric notonphone">0.070</td>
-  <th class="numeric">(0.062)</th>
-</tr>
-<tr>
-  <th>each_with_object</th>
-  <td class="numeric notonphone">0.040</td>
-  <td class="numeric notonphone">0.000</td>
-  <td class="numeric notonphone">0.040</td>
-  <th class="numeric">(0.035)</th>
-</tr>
-</tbody>
-</table>
+**assign&return** - 3136.7 (±8.2%) i/s
+**merge** - 5.9 (±0.0%) i/s
+**merge!** - 1168.0 (±28.3%) i/s
+**map with tuples** - 2400.8 (±23.0%) i/s
+**each_with_object** - 3220.8 (±3.3%) i/s
 
-Turns out the 'ugliest' code is the fastest: `inject` then assign a new key to an existing hash and return the hash from the block. It's marginally faster than the `each_with_index` variant, but not by a huge amount.
+Turns out the most idiomatic code is _also_ the fastest. Followed surprisingly closely by the 'do the simplest thing' variant, but not by a huge amount.
 
-Although if you're using `merge` without the `!`... _just don't_.
+PS If you're using `merge` without the `!`... _just don't_.
