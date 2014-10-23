@@ -86,4 +86,4 @@ The results were interesting.
 
 Turns out the most idiomatic code is _also_ the fastest. Followed surprisingly closely by the 'do the simplest thing' variant, but not by a huge amount.
 
-PS If you're using `merge` without the `!`... _just don't_.
+PS If you're using `merge` without the `!` inside loops like this... _just don't_.
