@@ -8,6 +8,24 @@ layout: default
   </header>
   <div class="entry-content">{{ content }}</div>
 
+  {% if page.categories contains 'ruby' %}
+  <hr/>
+
+  <div class="callout">
+    <p>
+      If you liked this article you might be interested in my forthcoming Ruby writing:
+    </p>
+    <ul>
+      <li><a href="/building-ruby-gems/">Building Ruby Gems</a></li>
+      <li><a href="/building-apis-on-rails/">Building APIs on Rails</a></li>
+      <li><a href="/ultimate-guide-to-rails-on-heroku/">The Ultimate Guide to Running Rails on Heroku</a></li>
+    </ul>
+    <p>
+    Go and sign up to my mailing list to hear when I launch and to get a special discount.
+    </p>
+  </div>
+  {% endif %}
+
   <hr />
   <footer>
     <p><span class="date">{{ page.date | date: "%Y" }}</span></p>

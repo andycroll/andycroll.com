@@ -109,5 +109,3 @@ heroku open
 {% endhighlight %}
 
 Nice. Now you might want to dive into the [Jekyll documentation][jekyll].
-
-If you liked this article you might be interested in [my book on running ruby apps on Heroku][herokubook]. Go and [sign up][herokubook] to my mailing list to hear when I launch and to get a special discount.

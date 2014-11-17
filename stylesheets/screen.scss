@@ -74,6 +74,14 @@ p, li {
   }
 }
 
+li {
+  margin-bottom: (1em * 12/18);
+
+  @media screen and (min-width: $mini) {
+    margin-bottom: 0.5em;
+  }
+}
+
 code {
   font-family: Menlo, Monaco, monospace;
 }
@@ -213,6 +221,31 @@ th, td {
   *:last-child { margin: 0 }
 }
 
+.callout {
+  color: $color-tertiary;
+  background: $color-highlight;
+
+  padding: 1em;
+
+  *:last-child { margin: 0 }
+
+  a, a:link, a:visited {
+  color: $color-tertiary;
+
+    background-image: -moz-linear-gradient(top, $color-tertiary 50%, transparentize($color-tertiary, 0.8) 50%);
+    background-image: -webkit-linear-gradient(top, $color-tertiary 50%, transparentize($color-tertiary, 0.8) 50%);
+    background-image: -o-linear-gradient(top, $color-tertiary 50%, transparentize($color-tertiary, 0.8) 50%);
+    background-image: linear-gradient(to bottom, $color-tertiary 50%, transparentize($color-tertiary, 0.8) 50%);
+  }
+
+  a:hover, a:focus, a:active {
+    background-image: -moz-linear-gradient(top, $color-tertiary 75%, transparentize($color-tertiary, 0.8) 75%);
+    background-image: -webkit-linear-gradient(top, $color-tertiary 75%, transparentize($color-tertiary, 0.8) 75%);
+    background-image: -o-linear-gradient(top, $color-tertiary 75%, transparentize($color-tertiary, 0.8) 75%);
+    background-image: linear-gradient(to bottom, $color-tertiary 75%, transparentize($color-tertiary, 0.8) 75%);
+  }
+}
+
 #footer {
   font-size: 0.8em;
 
@@ -220,7 +253,7 @@ th, td {
   background: $color-primary;
 
   a, a:link, a:visited {
-  color: darken($color-secondary, 20%);
+   color: darken($color-secondary, 20%);
 
     background-image: -moz-linear-gradient(top, darken($color-secondary, 35%) 50%, transparentize(darken($color-secondary, 35%), 0.8) 50%);
     background-image: -webkit-linear-gradient(top, darken($color-secondary, 35%) 50%, transparentize(darken($color-secondary, 35%), 0.8) 50%);
