@@ -17,6 +17,9 @@ exclude:  [ Gemfile, Gemfile.lock, CNAME ]
 permalink: /:categories/:title/
 markdown: kramdown
 
+sass:
+ style: 'compressed'
+
 kramdown:
   input: GFM
 
