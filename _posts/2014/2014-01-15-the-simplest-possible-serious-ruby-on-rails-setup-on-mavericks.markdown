@@ -54,7 +54,7 @@ Add the following lines to your `~/.bash_profile` as described in the chruby rea
 
     source /usr/local/share/chruby/chruby.sh
     source /usr/local/share/chruby/auto.sh
-    chruby ruby 2.1
+    chruby ruby-2.1
 
 First line enables chruby, second line auto-switches rubies for each project you have based on a `.ruby-version` (a cross ruby installer convention) and the third line selects your default ruby.
 
