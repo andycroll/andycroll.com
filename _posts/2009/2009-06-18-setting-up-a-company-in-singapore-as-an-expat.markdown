@@ -8,6 +8,8 @@ redirect_from:
   - /2009/06/18/setting-up-a-company-in-singapore-as-an-expat/
 ---
 
+_I left Singapore in late 2012, this information is from then and may decay._
+
 There is an entire cottage industry of expatriate Accountants running company incorporation and employment pass services to other new-to-the-island expatriates. It's a lucrative business, upwards of $4,000 SGD a go, if you include company secretarial, bank account setup etc.
 
 But here's the big secret, _it's easy_. You have to have a little patience and have to battle some incompentance both on- and off-line, but it's actually a pretty straightforward procedure. To save others the cash I have here's a not-so-quick guide.
@@ -40,11 +42,11 @@ Once you have obtained an EntrePass you can remain in the country and apply to A
 
 ## EntrePass & The Ministry of Manpower
 
-**Note: As of 2010 this pass now has some strange conditions, and is a pain to get**
+**Note: As of 2010 this pass now has some strong conditions, and is a pain to get. You probably need to get help from an accountant.**
 
 The process and forms for obtaining your EntrePass are lengthy but straightforward and require some [extra written documentation](http://www.mom.gov.sg/publish/momportal/en/communities/work_pass/other_passes/EntrePass/documents_required.html.) Timescales quoted on the site indicate processing can take up to fourteen days, but in my case it took under a week before I got an _In Principle Approval Letter_ in the post.
 
-Other anecdotal evidence from colleagues suggests it can take up to the specified two weeks, but it's dependent on what your company does. Starting a web design firm in a country obsessed with technology and 'the future' I guess is quite an easy sell. Beware government bureaucracy here, a friend of mine had to battle to point out that although he had no 'cleaning experience' running a [green cleaning business](http://greencleaners.asia) meant he wasn't exactly going to be pulling on the biodegradable marigolds himself.
+Other anecdotal evidence from colleagues suggests it can take up to the specified two weeks, but it's dependent on what your company does. Starting a web design firm in a country obsessed with technology and 'the future' I guess is quite an easy sell. Beware government bureaucracy here, a friend of mine had to battle to point out that although he had no 'cleaning experience' running a green cleaning business meant he wasn't exactly going to be pulling on the biodegradable marigolds himself.
 
 The form itself is straightforward, the only slight stumbling point is the requirement of a guarantor, to ensure you do not abscond the country without paying your tax. Whilst you can ask a friend or business associate to monetarily guarantee you it seemed simpler to sort my self out. More on that later.
 
@@ -106,6 +108,6 @@ But eventually I'm all set up.
 
 ## In Summary
 
-It's straightforward in theory but a bit rubbish in practise because you're dealing with government processes and a surprisingly inefficient consumer banking industry, but not worth $5,000 of your money to pay someone to do it for you. Of course if you do want to pay someone, I'll happily take your money...
+It's straightforward in theory but a bit rubbish in practice because you're dealing with government processes and a surprisingly inefficient consumer banking industry, but perhaps not worth $5,000 of your money to pay someone to do it for you.
 
-If you have any questions I'm happy to provide ad hoc advice on the proviso that I know very little, but I have an idea as I've just done it! Drop me an [email](mailto:andycroll@deepcalm.com), I might even be able to help you with the [website for your new Singaporean business](http://deepcalm.com)!
+However if you are not already resident you're probably going to have to get in touch with an accountant. I recommend [these people](/startups/singapore/startup-help-in-singapore/) for some startup help.
