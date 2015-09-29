@@ -110,4 +110,4 @@ But eventually I'm all set up.
 
 It's straightforward in theory but a bit rubbish in practice because you're dealing with government processes and a surprisingly inefficient consumer banking industry, but perhaps not worth $5,000 of your money to pay someone to do it for you.
 
-However if you are not already resident you're probably going to have to get in touch with an accountant. I recommend [these people](/startups/singapore/startup-help-in-singapore/) for some startup help.
+However if you are not already resident you're probably going to have to get in touch with an accountant. I recommend [this book](http://www.amazon.co.uk/gp/product/B00HMNP8IM/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00HMNP8IM&linkCode=as2&tag=deepcalmcom) for some startup help.
