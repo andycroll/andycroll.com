@@ -12,4 +12,4 @@ Doing a very small amount of Ruby/Rails contract work via [Good Scary](http://go
 
 Trying to finish up [Building Ruby Gems](/building-ruby-gems/), I'm about 75% done. [Go and sign up](/building-ruby-gems/) to my mailing list to hear when I launch and to get a special discount.
 
-Recently spoke at RubyConf 2015 & RailsConf 2015.
+Recently spoke at [RubyConf 2015](http://confreaks.tv/videos/rubyconf2015-your-own-images-as-a-service) and was [on a game show](http://confreaks.tv/videos/rubyconf2015-just-a-ruby-minute) & [RailsConf 2015](http://confreaks.tv/videos/railsconf2015-activejob-a-service-oriented-architecture).
