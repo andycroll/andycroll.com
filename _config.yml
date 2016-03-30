@@ -13,15 +13,7 @@ email: andy@goodscary.com
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-exclude:  [ Gemfile, Gemfile.lock, CNAME ]
 permalink: /:categories/:title/
-markdown: kramdown
-
-sass:
- style: 'compressed'
-
-kramdown:
-  input: GFM
 
 gems:
   - jekyll-redirect-from
