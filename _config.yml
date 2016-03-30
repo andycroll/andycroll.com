@@ -23,8 +23,6 @@ sass:
 kramdown:
   input: GFM
 
-highlighter: pygments
-
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
