@@ -22,7 +22,6 @@ end
 array_of_stuff.inject({}) do |result, element|
   result.merge!(element.id => element.value)
 end
-
 ```
 
 ...it's much more idiomatic Ruby to use `each_with_object`.

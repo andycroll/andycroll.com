@@ -94,12 +94,25 @@ code {
   font-family: Menlo, Monaco, monospace;
 }
 
-pre {
-  font-family: Menlo, Monaco, monospace;
+.highlighter-rouge {
+  background: #fcfcfc;
+  color: #1d1f21;
+  max-width: 49em;
+  border-radius: 2px;
+  font-size: 0.75em;
+  padding: 0.5em;
 
   @media screen and (min-width: $mini) {
     margin-bottom: 1.3333em;
   }
+}
+.highlighter {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+pre {
+  font-family: Menlo, Monaco, monospace;
 }
 
 a, a:link, a:visited {
