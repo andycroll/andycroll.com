@@ -1,10 +1,11 @@
 ---
-title: 'The Simplest Possible (Serious) Ruby/Rails Setup on OS X Mavericks'
+title: 'Simplest (Serious) Ruby/Rails Setup on MacOS'
 layout: post
 category:
   - mac
   - ruby
 redirect_from:
+  - /mac/ruby/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
   - /2014/01/15/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
 ---
 
@@ -16,13 +17,16 @@ The reason for writing this? Managed to nuke my machine's install and thus had a
 
 [Homebrew](http://brew.sh) is better than Macports in nearly every way. Open source recipes to manage stuff you used to have install yourself.
 
-    ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 You'll want to install some dependancies. You'll also need gcc on Mavericks to install rubies younger than 2.0.
 
-    brew install gdbm libffi libyaml openssl readline
-    brew install gcc48
+```
+brew install gdbm libffi libyaml openssl readline
+brew install gcc48
+```
 
 This then makes installing the rest, super easy.
 
@@ -32,7 +36,9 @@ This then makes installing the rest, super easy.
 
 I'm a bit fan of the simplest thing that can possibly work. This library is the latest in a line from rvm through rbenv to easily manage multiple ruby versions on your development machine.
 
-    brew install chruby
+```
+brew install chruby
+```
 
 So good it caused the authors of other 'simple ruby managers' to retire their projects.
 
@@ -40,15 +46,22 @@ So good it caused the authors of other 'simple ruby managers' to retire their pr
 
 [ruby-install](https://github.com/postmodern/ruby-install) is used for installing your Rubies. Good name, no?
 
-    brew install ruby-install
+```
+brew install ruby-install
+```
 
 ### Install some Rubies
 
-You might have some old 1.9 projects hanging around, but it's worth upgrading given support for 1.9.3 is ending next year.
+```
+ruby-install ruby 2.2
+ruby-install ruby 2.3
+```
 
-    ruby-install ruby 1.9 -- CC=gcc48
-    ruby-install ruby 2.0
-    ruby-install ruby 2.1
+You might have some old 1.9 projects hanging around, but it's worth upgrading given support for 1.9.3 is long gone.
+
+```
+ruby-install ruby 1.9 -- CC=gcc48
+```
 
 Add the following lines to your `~/.bash_profile` as described in the chruby readme.
 
@@ -62,32 +75,42 @@ First line enables chruby, second line auto-switches rubies for each project you
 
 I'm all about the Heroku deployment, so I use PostgreSQL locally as well. It's good practice to use the same DB in development as you do in production.
 
-    brew install postgres
+```
+brew install postgres
+```
 
 ## Rails itself
 
 You'll want bundler and rails as a bare minimum.
 
-    gem install bundler
-    gem install rails
+```
+gem install bundler
+gem install rails
+```
 
 ## Let's Roll
 
 Now to get going you can:
 
-    rails new yourapplicationname -d postgres
-    cd yourapplicationname
+```
+rails new yourapplicationname -d postgres
+cd yourapplicationname
+```
 
 It is good practice to include a `.ruby-version` file in the root of your app. It'll look like this if you're on the latest version of ruby.
 
-    2.1.0-p0
+```
+2.3.1
+```
 
 But otherwise, job done.
 
-    bundle
-    bundle exec rails server
+```
+bundle
+bundle exec rails server
+```
 
-And navigate to http://localhost:3000.
+And navigate to [http://localhost:3000](http://localhost:3000).
 
 -----
 
@@ -97,18 +120,24 @@ And navigate to http://localhost:3000.
 
 I also like pow to auto-serve my apps in a low maintenance way. It also lets you use [xip.io](http://xip.io) to test your other devices with your local webserver.
 
-    gem install powder
-    powder install
+```
+gem install powder
+powder install
+```
 
 In every app you want to add (your zero-configuration web server) pow... you need to configure (!) a .powrc file with the following contents [as detailed in the chruby wiki](https://github.com/postmodern/chruby/wiki/Pow). You can also check it into source control.
 
-    source /usr/local/share/chruby/chruby.sh
-    chruby $(cat .ruby-version)
+```
+source /usr/local/share/chruby/chruby.sh
+chruby $(cat .ruby-version)
+```
 
 And then type:
 
-    powder link
-    powder open
+```
+powder link
+powder open
+```
 
 ... in the directory of the app.
 
