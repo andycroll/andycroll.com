@@ -17,13 +17,13 @@ The reason for writing this? Managed to nuke my machine's install and thus had a
 
 [Homebrew](http://brew.sh) is better than Macports in nearly every way. Open source recipes to manage stuff you used to have install yourself.
 
-```
+```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 You'll want to install some dependancies. You'll also need gcc on Mavericks to install rubies younger than 2.0.
 
-```
+```shell
 brew install gdbm libffi libyaml openssl readline
 brew install gcc48
 ```
@@ -36,7 +36,7 @@ This then makes installing the rest, super easy.
 
 I'm a bit fan of the simplest thing that can possibly work. This library is the latest in a line from rvm through rbenv to easily manage multiple ruby versions on your development machine.
 
-```
+```shell
 brew install chruby
 ```
 
@@ -46,24 +46,18 @@ So good it caused the authors of other 'simple ruby managers' to retire their pr
 
 [ruby-install](https://github.com/postmodern/ruby-install) is used for installing your Rubies. Good name, no?
 
-```
+```shell
 brew install ruby-install
 ```
 
 ### Install some Rubies
 
-```
+```shell
 ruby-install ruby 2.2
 ruby-install ruby 2.3
 ```
 
-You might have some old 1.9 projects hanging around, but it's worth upgrading given support for 1.9.3 is long gone.
-
-```
-ruby-install ruby 1.9 -- CC=gcc48
-```
-
-Add the following lines to your `~/.bash_profile` as described in the chruby readme.
+shellAdd the following lines to your `~/.bash_profile` as described in the chruby readme.
 
     source /usr/local/share/chruby/chruby.sh
     source /usr/local/share/chruby/auto.sh
@@ -75,7 +69,7 @@ First line enables chruby, second line auto-switches rubies for each project you
 
 I'm all about the Heroku deployment, so I use PostgreSQL locally as well. It's good practice to use the same DB in development as you do in production.
 
-```
+```shell
 brew install postgres
 ```
 
@@ -83,7 +77,7 @@ brew install postgres
 
 You'll want bundler and rails as a bare minimum.
 
-```
+```shell
 gem install bundler
 gem install rails
 ```
@@ -92,20 +86,20 @@ gem install rails
 
 Now to get going you can:
 
-```
+```shell
 rails new yourapplicationname -d postgres
 cd yourapplicationname
 ```
 
 It is good practice to include a `.ruby-version` file in the root of your app. It'll look like this if you're on the latest version of ruby.
 
-```
+```ruby
 2.3.1
 ```
 
 But otherwise, job done.
 
-```
+```shell
 bundle
 bundle exec rails server
 ```
@@ -120,21 +114,21 @@ And navigate to [http://localhost:3000](http://localhost:3000).
 
 I also like pow to auto-serve my apps in a low maintenance way. It also lets you use [xip.io](http://xip.io) to test your other devices with your local webserver.
 
-```
+```shell
 gem install powder
 powder install
 ```
 
 In every app you want to add (your zero-configuration web server) pow... you need to configure (!) a .powrc file with the following contents [as detailed in the chruby wiki](https://github.com/postmodern/chruby/wiki/Pow). You can also check it into source control.
 
-```
+```shell
 source /usr/local/share/chruby/chruby.sh
 chruby $(cat .ruby-version)
 ```
 
 And then type:
 
-```
+```shell
 powder link
 powder open
 ```

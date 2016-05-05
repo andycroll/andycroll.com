@@ -3,10 +3,13 @@
   color: #1d1f21;
   max-width: 49em;
   border-radius: 2px;
-  padding: 0.5em;
   font-size: 0.75em;
 }
-
+.highlighter {
+  padding: 0.5em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
 /*
 
     Name:       Base16 Tomorrow Dark

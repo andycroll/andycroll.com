@@ -13,7 +13,7 @@ What a fool I've been.
 
 Rather than use code like either of these...
 
-```
+```ruby
 array_of_stuff.inject({}) do |result, element|
   result[element.id] = element.value
   result
@@ -27,7 +27,7 @@ end
 
 ...it's much more idiomatic Ruby to use `each_with_object`.
 
-```
+```ruby
 array_of_stuff.each_with_object({}) do |element, result|
   result[element.id] = element.value
 end
@@ -35,7 +35,7 @@ end
 
 I was interested to see how this idiomatic Ruby performed. I put together a little script to test the various ways of generating a Hash from an decent-sized array of _simple_ `Struct`-based objects. I used the [benchmark-ips](https://github.com/evanphx/benchmark-ips) gem.
 
-```
+```ruby
 require 'benchmark/ips'
 
 User = Struct.new(:id, :stuff)
