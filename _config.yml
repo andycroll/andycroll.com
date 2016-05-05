@@ -5,7 +5,7 @@
 url: http://andycroll.com
 title: Andy Croll
 author: Andy Croll
-description: "Andy Croll, designer & ruby developer from the UK"
+description: "Andy Croll, contract CTO, designer & Ruby developer from the UK"
 
 email: andy@goodscary.com
 
@@ -13,8 +13,7 @@ email: andy@goodscary.com
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-permalink: /:categories/:title/
-
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap
+permalink: /:categories/:title/
