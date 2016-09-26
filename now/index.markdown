@@ -1,14 +1,16 @@
 ---
 layout: 'page'
 title: "What I'm Doing Now"
-date: '2016-01-04'
+date: '2016-09-26'
 ---
 
-Currently working four days a week at [HouseTrip](https://housetrip.com).
+Currently working four days a week at [Realla](https://realla.co).
 
 Running the 'little Ruby conference that could', on the south coast of the UK at [Brighton Ruby](http://brightonruby.com) and co-running the Brighton Ruby User Group, [sign up at meetup](http://www.meetup.com/Brighton-Ruby-Group/).
 
-Doing a very small amount of Ruby/Rails contract work via [Good Scary](http://goodscary.com).
+Also ran [Life.Time.Value.](http://ltvconf.com), a conference for people looking to make the leap into internet-focussed product businesses.
+
+Doing a very small amount of interim CTO and Ruby/Rails work via [Good Scary](http://goodscary.com).
 
 Trying to finish up [Building Ruby Gems](/building-ruby-gems/), I'm about 75% done. [Go and sign up](/building-ruby-gems/) to my mailing list to hear when I launch and to get a special discount.
 
