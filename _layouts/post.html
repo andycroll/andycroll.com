@@ -1,33 +1,55 @@
 ---
 layout: default
 ---
-<article class="column">
-  <header>
-    <h1 class="entry-title">{{ page.title | titlecase }}</h1>
-    <hr />
-  </header>
-  <div class="entry-content">{{ content }}</div>
+<div class="container-fluid">
+  <div class="row">
+    <article>
+      <div class="col-sm-11">
+        <header>
+          <h1 class="h2">{{ page.title | titlecase }}</h1>
+        </header>
+      </div>
 
-  {% if page.categories contains 'ruby' %}
-  <hr/>
+      <div class="col-sm-10 col-md-8 col-lg-7">
+        {{ content }}
+        {% if page.categories contains 'ruby' %}
+        <hr/>
 
-  <div class="callout">
-    <p>
-      If you liked this article you might be interested in my forthcoming Ruby writing:
-    </p>
-    <ul>
-      <li><a href="/building-ruby-gems/">Building Ruby Gems</a></li>
-      <li><a href="/building-apis-on-rails/">Building APIs on Rails</a></li>
-      <li><a href="/ultimate-guide-to-rails-on-heroku/">The Ultimate Guide to Running Rails on Heroku</a></li>
-    </ul>
-    <p>
-    Go and sign up to my mailing list to hear when I launch and to get a special discount.
-    </p>
+        <p>
+          If you liked this article you might be interested in my forthcoming Ruby writing:
+        </p>
+        <ul>
+          <li><a href="/building-ruby-gems/">Building Ruby Gems</a></li>
+          <li><a href="/ultimate-guide-to-rails-on-heroku/">The Ultimate Guide to Running Rails on Heroku</a></li>
+        </ul>
+        <p>
+        Go and sign up to my mailing list to hear when I launch and to get a special discount.
+        </p>
+        {% endif %}
+
+        <hr />
+
+        <footer>
+          <p><span class="date">{{ page.date | date: "%Y" }}</span></p>
+        </footer>
+      </div>
+    </article>
+
+    <div class="col-sm-2 hidden-xs-down hidden-md-up">
+      <a href="#more-info" class="block-link">&#9660;</a>
+    </div>
+
+    <aside id="more-info" class="col-md-4 col-offset-lg-1 col-lg-4 text-muted">
+      <h6><a href="http://twitter.com/andycroll">@andycroll</a></h6>
+
+      <hr>
+
+      <p>{% include bio.html %}</p>
+      <p>{% include sell.html %}</p>
+
+      <hr>
+
+      {% include books.html %}
+    </aside>
   </div>
-  {% endif %}
-
-  <hr />
-  <footer>
-    <p><span class="date">{{ page.date | date: "%Y" }}</span></p>
-  </footer>
-</article>
+</div>

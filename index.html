@@ -2,58 +2,72 @@
 layout: default
 ---
 
-<div class="column">
-  <h2>Designer, Rails/iOS Developer, contract-CTO, Conference Organizer, Author, Speaker, Bootstrapper <span class="amp">&amp;</span> Parent of Twins</i>.</h2>
-  <h3>I'm tired a lot. <a href="/now">What I&rsquo;m doing now</a>.</h3>
-</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-9">
+      <h1 class="h3">{% include bio.html %}</h1>
+    </div>
+  </div>
 
-<div class="column">
-  <h2>Design <span class="amp">&amp;</span> Development</h2>
+  <hr>
 
-  <ul class="article-list">
-  {% for post in site.posts %}
-  {% if post.categories contains 'development' or post.categories contains 'mac' or post.categories contains 'ios' or post.categories contains 'ruby' or post.categories contains 'design' %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-    </li>
-  {% endif %}
-  {% endfor %}
-  </ul>
+  <div class="row">
+    <div class="col-md-6">
+      <p>{% include sell.html %}</p>
+      <p>You should follow me on Twitter, <a href="http://twitter.com/andycroll">@andycroll</a></p>
+    </div>
 
-  <h2>Bootstrapping <span class="amp">&amp;</span> Startups</h2>
-  <ul class="article-list">
-  {% for post in site.posts %}
-  {% if post.categories contains 'startups' or post.categories contains 'bootstrapping' or post.categories contains 'business' %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-    </li>
-  {% endif %}
-  {% endfor %}
-  </ul>
+    <div class="col-md-6">
+      <h2 class="h4">Design <span class="amp">&amp;</span> Development</h2>
 
-  <hr />
+      <ul class="list-unstyled">
+      {% for post in site.posts %}
+      {% if post.categories contains 'development' or post.categories contains 'mac' or post.categories contains 'ios' or post.categories contains 'ruby' or post.categories contains 'design' %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
 
-  <h2>Updates</h2>
-  <ul class="article-list">
-  {% for post in site.posts %}
-  {% if post.categories contains 'life' %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-      <small>{{ post.date | date: "%Y" }}</small>
-    </li>
-  {% endif %}
-  {% endfor %}
-  </ul>
+    <div class="col-md-6">
+      <h2 class="h4">Bootstrapping <span class="amp">&amp;</span> Startups</h2>
+      <ul class="list-unstyled">
+      {% for post in site.posts %}
+      {% if post.categories contains 'startups' or post.categories contains 'bootstrapping' or post.categories contains 'business' %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
 
-  <h2>Travel</h2>
-  <ul class="article-list">
-  {% for post in site.posts %}
-  {% if post.categories contains 'travel' %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-      <small>{{ post.date | date: "%Y" }}</small>
-    </li>
-  {% endif %}
-  {% endfor %}
-  </ul>
+    <div class="col-md-6">
+      <h2 class="h4">Other Stuff</h2>
+      <ul class="list-unstyled">
+      {% for post in site.posts %}
+      {% if post.categories contains 'life' %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
+          <small>{{ post.date | date: "%Y" }}</small>
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+
+      <h2 class="h4">Travel</h2>
+      <ul class="list-unstyled">
+      {% for post in site.posts %}
+      {% if post.categories contains 'travel' %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
+          <small>{{ post.date | date: "%Y" }}</small>
+        </li>
+      {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>

@@ -1,17 +1,23 @@
 ---
 layout: 'page'
 title: "What I'm Doing Now"
-date: '2016-09-26'
+date: '2016-10-13'
 ---
 
-Currently working four days a week at [Realla](https://realla.co).
+Helping teams with their products and software engineering practises with [Good Scary](http://goodscary.com).
+
+Finishing [Building Ruby Gems](/building-ruby-gems/), I'm about 75% done. [Go and sign up](/building-ruby-gems/) to my mailing list to hear when I launch and to get a special discount.
+
+Currently working lots with [Realla](https://realla.co).
+
+### Events
 
 Running the 'little Ruby conference that could', on the south coast of the UK at [Brighton Ruby](http://brightonruby.com) and co-running the Brighton Ruby User Group, [sign up at meetup](http://www.meetup.com/Brighton-Ruby-Group/).
 
 Also ran [Life.Time.Value.](http://ltvconf.com), a conference for people looking to make the leap into internet-focussed product businesses.
 
-Doing a very small amount of interim CTO and Ruby/Rails work via [Good Scary](http://goodscary.com).
+### Speaking
 
-Trying to finish up [Building Ruby Gems](/building-ruby-gems/), I'm about 75% done. [Go and sign up](/building-ruby-gems/) to my mailing list to hear when I launch and to get a special discount.
-
-Recently spoke at [RubyConf 2015](http://confreaks.tv/videos/rubyconf2015-your-own-images-as-a-service) and was [on a game show](http://confreaks.tv/videos/rubyconf2015-just-a-ruby-minute) & [RailsConf 2015](http://confreaks.tv/videos/railsconf2015-activejob-a-service-oriented-architecture).
+* [Your Own Images as a Service](http://confreaks.tv/videos/rubyconf2015-your-own-images-as-a-service) at RubyConf 2015
+* [Just a Minute](http://confreaks.tv/videos/rubyconf2015-just-a-ruby-minute) at RubyConf 2015
+* [Active Job: A Service Oriented Architecture](http://confreaks.tv/videos/railsconf2015-activejob-a-service-oriented-architecture) at RailsConf 2015

@@ -1,144 +1,73 @@
 ---
 ---
-@import 'normalize';
-@import 'syntax';
+@import "bootstrap/variables";
 
-$font-family: Georgia, "Times New Roman", serif;
-$color-background: rgb(250,250,250);
-$color-primary: rgb(38,38,38);
-$color-primary-heading: rgb(8,8,8);
-$color-secondary: rgb(186,186,186);
-$color-tertiary: rgb(226,226,226);
-$color-highlight: rgb(155,55,50);
+$enable-rounded: false;
 
-$mini: 380px;
-$medi: 700px;
-$maxi: 1000px;
+$gray-dark: rgb(8,8,8);
+$gray: rgb(38,38,38);
+$gray-lightest: rgb(245,245,245);
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+$body-bg: rgb(250,250,250);
+$brand-primary: rgb(155,55,50);
+
+$headings-font-weight: normal;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 380px,
+  md: 600px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Core variables and mixins
+@import "bootstrap/custom";
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+@import "bootstrap/print";
+
+// Core CSS
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+
+// Components
+@import "bootstrap/responsive-embed";
+
+// Utility classes
+@import "bootstrap/utilities";
 
 body {
-  font-family: $font-family;
-  font-size: 16px;
-  color: $color-primary;
-
-  @media screen and (min-width: $mini) {
-    font-size: 18px;
-  }
-
-  @media screen and (min-width: $medi) {
-    font-size: 20px;
-  }
+  max-width: 1400px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family;
-  font-weight: normal;
-  color: $color-primary-heading;
-
-  margin-top: 0;
-}
-
-h1 {
-  font-size: (1em * 32/16);
-  margin-bottom: (1em * 8/32);
-}
-
-h2 {
-  font-size: (1em * 24/16);
-  margin-bottom: (1em * 8/24);
-
-  * + & {
-    margin-top: (1em * 16/24);
-  }
-}
-
-h3 {
-  font-size: (1em * 20/16);
-  font-style: italic;
-  margin-bottom: (1em * 8/20);
-
-  * + & {
-    margin-top: (1em * 16/24);
-  }
-}
-
-p, li {
-  font-size: 1em;
-  line-height: 1em * 1.5;
-  margin-top: 0;
-  margin-bottom: (1em * 12/18);
-
-  @media screen and (min-width: $mini) {
-    margin-bottom: 1em;
-  }
-
-  code {
-    font-size: (100% * 17/18);
-  }
-}
-
-li {
-  margin-bottom: (1em * 12/18);
-
-  @media screen and (min-width: $mini) {
-    margin-bottom: 0.5em;
-  }
-}
-
-code {
+code, pre {
   font-family: Menlo, Monaco, monospace;
+}
+
+blockquote {
+  @extend .blockquote;
 }
 
 .highlighter-rouge {
   background: #fcfcfc;
   color: #1d1f21;
-  max-width: 49em;
   border-radius: 2px;
+}
+
+.highlight {
+  max-width: 49em;
   font-size: 0.75em;
   padding: 0.5em;
-
-  @media screen and (min-width: $mini) {
-    margin-bottom: 1.3333em;
-  }
-}
-.highlighter {
+  margin: 0 -0.5em 1em;
   overflow-x: scroll;
   overflow-y: hidden;
-}
-
-pre {
-  font-family: Menlo, Monaco, monospace;
-  margin: 0;
-}
-
-a, a:link, a:visited {
-  text-decoration: none;
-  color: $color-primary;
-
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.8) 75%);
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.8) 75%);
-  background-image: -o-linear-gradient(top, rgba(0,0,0,0) 75%, rgba(0,0,0,0.8) 75%);
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 75%, rgba(0,0,0,0.8) 75%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 95%;
-}
-
-a:hover, a:focus, a:active {
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 50%);
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 50%);
-  background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 50%);
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.8) 50%);
-}
-
-small {
-  font-size: 75%;
-  color: $color-secondary;
 }
 
 img {
@@ -148,18 +77,18 @@ img {
 
 .amp {
   font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
-  color: $color-highlight;
+  color: $brand-primary;
   font-weight: normal; font-style: italic;
   display: inline-block;
   font-size: 125%;
-  margin: -0.2em 0 0 -0.02em;
+  margin: -0.3em 0 0 -0.02em;
 }
 
 hr {
   margin-top: 1em;
   margin-bottom: 1em;
   border: 0;
-  border-top: 1px solid $color-secondary;
+  border-top: 1px solid $gray-lightest;
 }
 
 table {
@@ -174,99 +103,21 @@ table .numeric {
   text-align: right;
 }
 
-@media screen and (max-width: $mini) {
-  table .notonphone {
-    display: none;
-  }
+.block-link, .block-link:link, .block-link:hover, .block-link:visited, , .block-link:active {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.75rem;
+  color: $gray-dark;
+  background: $gray-lightest;
 }
 
-th, td {
-  text-align: left;
-}
-
-
-#branding {
-  position: fixed;
-  top: 1em;
-  left: 0;
-
-  width: 304px;
-  padding: 1em;
-  line-height: 1;
-
-  color: $color-background;
-  background: $color-primary;
-}
-
-#site-title {
-  color: $color-background;
-  background: none;
-}
-
-#job {
-  // display: none;
-  color: $color-secondary;
-  font-size: 0.8em;
-}
-
-.column {
-  padding: 1em;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.article-list {
-  padding: 0;
-  list-style: none;
+#root {
+  color: $body-bg;
+  background: $gray-dark;
 }
 
 .main {
-  margin-top: 5em;
-  max-width: $medi;
-
-  @media screen and (min-width: $medi) {
-    width: 67.5%;
-    margin: 5em auto 0;
-  }
-
-  @media screen and (min-width: $maxi) {
-    width: 55%;
-    margin: 5em auto 0;
-  }
+  // margin: 3.5em 1em 1em 0;
 }
 
-#books {
-  clear: both;
-}
-
-.book {
-  display: block;
-  float: left;
-
-  width: 50%;
-
-  padding-right: 0.5em;
-
-  + .book {
-    padding-right: 0;
-    padding-left: 0.5em;
-  }
-
-  @media screen and (min-width: $mini) {
-    + .book {
-      padding-left: 0;
-    }
-
-    .thumbnail {
-      float: left;
-      width: 80px;
-      margin-bottom: 1em;
-    }
-
-    p {
-      padding: 1em 0 0 96px;
-    }
-  }
-}
+@import 'syntax';

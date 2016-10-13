@@ -1,16 +1,19 @@
 {% include head.html %}
 <body>
-  <header role="banner">
-    {% include header.html %}
+  <header role="banner" class="p-a-1">
+    <a href="/" id="root" class="small block-link">Andy Croll</a><a href="/now" class="small block-link">work with me</a>
   </header>
 
   <div role="main" class="main">
     {{ content | expand_urls: root_url }}
-
-    <footer role="contentinfo">{% include footer.html %}</footer>
   </div>
 
-  {% include javascripts.html %}
+  <footer role="contentinfo">
+    <div class="container-fluid">
+      {% include footer.html %}
+    </div>
+  </footer>
 
+  {% include javascripts.html %}
 </body>
 </html>
