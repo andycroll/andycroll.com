@@ -3,9 +3,6 @@ title: 'AMP Project Pages on Ruby on Rails'
 layout: post
 category:
   - ruby
-redirect_from:
-  - /mac/ruby/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
-  - /2014/01/15/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
 ---
 
 Google’s [AMP Project](http://ampproject.com) is set to become _a thing_.
