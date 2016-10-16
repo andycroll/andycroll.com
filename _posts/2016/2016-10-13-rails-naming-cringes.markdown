@@ -79,3 +79,5 @@ Visual noise and naming confusion are major roadblocks to building a mental mode
 This is why naming is so important. I recommend reading section 4.2 of [99 bottles of OOP] by Sandi Metz & Katrina Owen where they give multiple strategies to get to “good names” for things. There is a terrific example of Katrina’s passion for naming in her talk [Succession](http://www.confreaks.tv/videos/railsconf2016-succession) from RailsConf 2016.
 
 Naming is _the most important thing_ for newcomers to your codebase and also future you — the you that's forgotten all of the context. It’s worth spending a little time to get it ‘right’ the first time and always re-examine when you touch the code again.
+
+_Thanks to [Nadia](https://twitter.com/nodunayo) for feedback on drafts of this article._
