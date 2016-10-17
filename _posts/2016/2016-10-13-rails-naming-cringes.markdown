@@ -61,7 +61,7 @@ There are lots of examples, some will break, some will give you weird side effec
 
 ## Not changing “legacy” field names
 
-On a vacation rentals project I worked on we had a bunch of boolean fields that acted as ‘tags’ on a room object. Coupe of these fields were `non_smoking` & `non_smoking_2` which meant respectively: a non smoking room and _a smoking room_.
+On a vacation rentals project I worked on we had a bunch of boolean fields that acted as ‘tags’ on a room object. A couple of these fields were `non_smoking` & `non_smoking_2` which meant respectively: a non smoking room and _a smoking room_.
 
 Every time I came up against this I had to remember what _exactly_ was going on. Every time someone new came to this part of the code they were confused and baffled.
 
