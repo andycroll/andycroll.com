@@ -74,13 +74,13 @@ Seven days later I head into town and pick up my letter. Utterly backwards.
 
 You can then head to the Ministry of Manpower in person to hand in your passport, letter and guarantee. Three hours later you return to collect a tiny green card for a nominal fee, then the fun can really begin. You have a month to send them the details of your newly incorporated company.
 
-##Company Setup & ACRA
+## Company Setup & ACRA
 
 In Singapore you can _only_ submit an application for a new business online using [Bizfile](http://www.bizfile.gov.sg) which in principle is a fine idea, but in practice can be quite painful. Even if you go to the [ACRA](http://www.acra.gov.sg) offices you are confronted with a load of ageing Windows machines with which you can submit your application to their website!
 
 Here's the trick, in order to use the website you need a [SingPass](http://www.singpass.gov.sg,) an all purpose login for multiple government sites. In order to get one you must first wait _five_ days, for the data to migrate from the Ministry of Manpower into the systems of the SingPass people. Why this takes so long is beyond me. Then you can apply online, and few days later you get your SingPass and PIN in the post.
 
-You can then log into the [BizFile](http://www.business.gov.sg) system and begin your registration, there's a [useful guide on EnterpriseOne](http://www.business.gov.sg/EN/HowToGuide/regbiz_co_how.htm) with link to PDFs and suchlike. I didn't know of the site at the time and still managed to successfully bumble through the dreadful bizfile user interface myself.
+You can then log into the [BizFile](http://www.business.gov.sg) system and begin your registration, there's a [whole website from SPRING](https://www.smeportal.sg/) with link to PDFs and suchlike. I didn't know of the site at the time and still managed to successfully bumble through the dreadful bizfile user interface myself.
 
 You'll need to nominate a Singapore-resident secretary for the company during the process, anyone with their own SingPass will do; including employment pass holders, PRs and native Singaporeans. They don't need any shares, so you can retain complete control of you company, don't panic. You can use a local accountancy firm to provide company secretarial services for a few hundred bucks, but as long as you have ready access your secretary's signature I wouldn't bother. My wife is my company secretary. If you're a massive corporation there are serious requirements of this role, but we're talking about a new small business.
 
