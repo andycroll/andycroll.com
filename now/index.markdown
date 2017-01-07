@@ -1,14 +1,14 @@
 ---
 layout: 'page'
 title: "What I'm Doing Now"
-date: '2016-10-13'
+date: '2017-01-07'
 ---
 
 Helping teams with their products and software engineering practises with [Good Scary](http://goodscary.com).
 
 Finishing [Building Ruby Gems](/building-ruby-gems/), I'm about 75% done. [Go and sign up](/building-ruby-gems/) to my mailing list to hear when I launch and to get a special discount.
 
-Currently working lots with [Realla](https://realla.co).
+Currently working with [CoverageBook](https://coveragebook.com) on process and code improvement projects & [Datanauts](http://datanauts.co.uk) on a Rails 3–4 upgrade.
 
 ### Events
 
