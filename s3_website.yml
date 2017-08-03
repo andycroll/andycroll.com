@@ -23,6 +23,7 @@ cloudfront_wildcard_invalidation: true
 cloudfront_distribution_config:
   default_cache_behavior:
     min_ttl: <%= 60 * 60 * 24 %>
+  http_version: http2
   aliases:
     quantity: 1
     items:
