@@ -3,4 +3,4 @@ set -ev # halt script on error
 
 bundle
 bundle exec jekyll build
-s3_website push
+bundle exec s3_website push
