@@ -20,4 +20,4 @@ They don't provide a large enough version on their site, so I quickly rebuilt it
 
 It's 1024x1024 so it'll even look nice on your retina screens, if you're lucky enough to have one.
 
-> If you're into Tracker you might be into Rails so you might be interested in a couple of books I'm writing... [Building APIs in Rails](/building-apis-on-rails) and [The Ultimate Guide to Running Rails on Heroku](/ultimate-guide-to-rails-on-heroku). Head over and sign up to hear when they are released.
+> If you're into Tracker you might be into Rails so you might be interested in a couple of books I'm writing... [Building Ruby Gems](/building-ruby-gems) and [The Ultimate Guide to Running Rails on Heroku](/ultimate-guide-to-rails-on-heroku). Head over and sign up to hear when they are released.

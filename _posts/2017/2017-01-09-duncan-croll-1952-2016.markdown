@@ -4,6 +4,7 @@ layout: post
 category:
   - life
 image: '2017/duncan-croll'
+imagealt: 'Dad and me'
 ---
 
 People have always told me I remind them of my Dad.

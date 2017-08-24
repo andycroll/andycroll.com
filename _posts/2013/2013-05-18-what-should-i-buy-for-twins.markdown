@@ -17,7 +17,7 @@ We've done a mixture of second hand, borrowed, gifts, off ebay and (nicest!) buy
 
 ## Buggy / Travel System
 
-This is enough of a topic that I've separated it off. [Which Buggy should I buy for twins?](/2013/05/16/what-buggy-travel-system-should-i-buy-for-twins)
+This is enough of a topic that I've separated it off. [Which Buggy should I buy for twins?](/life/what-buggy-travel-system-should-i-buy-for-twins)
 
 ## Sleeping
 

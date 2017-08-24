@@ -6,10 +6,11 @@ layout: default
     <article>
       {% if page.image %}
       <!-- <div class="col-sm-12"> -->
-        <img src="/images/{{ page.image }}-blur.jpg"
+        <img alt="{{ page.imagealt }}"
+             src="/images/{{ page.image }}-blur.jpg"
              srcset="/images/{{ page.image }}-1000.jpg 1000w,
                      /images/{{ page.image }}-2000.jpg 2000w"
-             class="m-b-1"/>
+             class="m-b-1" />
       <!-- </div> -->
       {% endif %}
 
