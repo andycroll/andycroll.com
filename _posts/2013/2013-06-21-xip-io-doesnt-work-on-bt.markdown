@@ -1,11 +1,12 @@
 ---
 title: "xip.io Doesn't Work on BT, Fix It"
 layout: post
-category:
-  - mac
-  - ruby
+category: development
 redirect_from:
   - /2013/06/21/xip-io-doesnt-work-on-bt/
+  - /mac/ruby/xip-io-doesnt-work-on-bt/
+image: '2013/xip-io-doesnt-work-on-bt'
+imagealt: 'xip.io logo'
 ---
 
 I use [pow](http://pow.cx) and [xip.io](http://xip.io) for my local device testing when running Rails apps and ran into a curious issue: it didn't work at my parent's home. I was getting a 'cannot open the page because the server cannot be found' error.

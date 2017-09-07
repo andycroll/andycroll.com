@@ -1,8 +1,9 @@
 ---
 title: 'Duncan Croll, 1952—2016'
 layout: post
-category:
-  - life
+category: other
+redirect_from:
+  - /life/duncan-croll-1952-2016/
 image: '2017/duncan-croll'
 imagealt: 'Dad and me'
 ---

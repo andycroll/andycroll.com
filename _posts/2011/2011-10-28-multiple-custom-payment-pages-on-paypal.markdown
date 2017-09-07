@@ -1,15 +1,15 @@
 ---
 title: Multiple Custom Payment Pages on Paypal
 layout: post
-category:
-  - ruby
+category: development
 redirect_from:
   - /2011/10/28/multiple-custom-payment-pages-on-paypal/
+  - /ruby/multiple-custom-payment-pages-on-paypal/
+image: '2011/multiple-custom-payment-pages-on-paypal'
+imagealt: 'Paypal'
 ---
 
-[ImpulseFlyer]: http://impulseflyer.com
-
-Paypal allows merchants to customize it's payment pages by adding logos and changing colors. We use this at [ImpulseFlyer][] for our partnership with WSJ Asia.
+Paypal allows merchants to customize it's payment pages by adding logos and changing colors. We use this at ImpulseFlyer for our partnership with WSJ Asia.
 
 To do this you pass a "page_style" variable with a value matching the name of your custom style in the standard Website Payments Standard form/button. It says so in [the documentation](https://www.paypal.com/cgi-bin/webscr?cmd=p/mer/cowp_summary-outside).
 

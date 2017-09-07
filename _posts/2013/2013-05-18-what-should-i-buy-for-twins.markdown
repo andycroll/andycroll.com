@@ -1,19 +1,21 @@
 ---
 title: "What Should I Buy for Twins?"
 layout: post
-category:
-  - life
+category: other
 redirect_from:
   - /2013/05/18/what-should-i-buy-for-twins/
+  - /life/what-should-i-buy-for-twins/
+image: '2013/what-should-i-buy-for-twins'
+imagealt: 'Twins'
 ---
 
 The glib answer to this is two of everything! But in truth there are a few things that are specific to getting set up for impending multiples.
 
-As I write this our twins are just 8 weeks and finally beginning to stabalise into a routine (of sorts).
+As I write this our twins are just 8 weeks and finally beginning to stabilise into a routine (of sorts).
 
 Mrs C and I have spent the last two months not sleeping and rapidly road-testing various things that we've bought for our two.
 
-We've done a mixture of second hand, borrowed, gifts, off ebay and (nicest!) buying new. With twins you need to economise wherever you can. I've included some links to thing on amazon below.
+We've done a mixture of second hand, borrowed, gifts, off eBay and buying new. With twins you need to economise wherever you can. I've included some links to useful things on Amazon below.
 
 ## Buggy / Travel System
 
@@ -63,8 +65,8 @@ Also don’t bother with the third party refills, just buy a load of official on
 * [Nappy Bins](http://www.amazon.co.uk/dp/B000UODTXG/ref=nosim?tag=deepcalmcom)
 * [Refill cartridges](http://www.amazon.co.uk/dp/B00143XJ7I/ref=nosim?tag=deepcalmcom)
 
-As for the nappies themselves: Pampers: good, Huggies: rubbish (they don't seem to fit well) and Sainsbury’s own brand: just as good and half the price.
+As for the nappies themselves: Pampers - good, Huggies - didn't seem to fit well and Sainsbury’s own brand - just as good and half the price.
 
 ——
 
-Good Luck. You’ll need it. I'd love to hear of anything that worked for you. Email me at [andycroll@deepcalm.com](mailto:andycroll@deepcalm.com)
+Good luck. You’ll need it.

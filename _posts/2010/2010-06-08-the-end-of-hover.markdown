@@ -1,15 +1,16 @@
 ---
 title: "The end of :hover?"
 layout: post
-category:
-  - design
+category: development
 redirect_from:
   - /2010/06/08/the-end-of-hover/
+  - /design/the-end-of-hover/
+image: '2010/the-end-of-hover'
+imagealt: 'Hummingbird'
+imagecaption: 'Photo by [Bill Williams](https://unsplash.com/photos/ozwiCDVCeiw) on Unsplash'
 ---
 
-I've just attended [echelon](http://echelon2010.com) where several of the international visitors were sat in the audiences cradling and poking at their iPads.
-
-When I sat down to a redesign of the [Gameplan](http://gameplanapp.com) admin interface I suddenly came to a realisation, `:hover` doesn't work. It's entirely possible I'd skim read this somewhere, but somehow the implications for my design work had passed me by until I saw an iPad in use.
+When I sat down to a redesign of the Gameplan admin interface I suddenly came to a realisation, `:hover` doesn't work. It's entirely possible I'd skim read this somewhere, but somehow the implications for my design work had passed me by until I saw an iPad in use.
 
 As so eloquently pointed out in [this article](http://www.roughlydrafted.com/2010/02/20/an-adobe-flash-developer-on-why-the-ipad-cant-use-flash/) this lack of hover (along with the technical and performance issues) is one of the reasons making the iPad run flash is not something Apple are keen on.
 

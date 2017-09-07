@@ -1,17 +1,17 @@
 ---
 title: "Ubud, Bali"
 layout: post
-category:
-  - travel
+category: other
 redirect_from:
   - /2012/11/26/ubud-bali/
+  - /travel/ubud-bali/
 ---
 
 Ubud is probably our favourite place in Asia. We've been at least 5 times in six years.
 
 Our last visit seemed to coincide with some serious changes as the tourist accommodation seems to be encroaching (unpleasantly) on the rice fields to the north and the market has been pulled down. Plus an entirely unnecessary Starbucks appeared on the main road a couple of years ago.
 
-The pavements are better than before, but I hope that the clear improvement in tourism doesn't lead to a spoiling Kuta-ifiction. The tragic standard lament of the tourist. :-)
+The pavements are better than before, but I hope that the clear improvement in tourism doesn't lead to a spoiling Kuta-ifiction. The tragic standard lament of the tourist.
 
 ## Eat
 

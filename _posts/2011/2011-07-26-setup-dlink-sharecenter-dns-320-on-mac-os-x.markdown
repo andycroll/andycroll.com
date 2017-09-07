@@ -1,15 +1,15 @@
 ---
 title: Setup DLink ShareCenter DNS-320 on Mac OS X
 layout: post
-category:
-  - mac
+category: other
 redirect_from:
   - /2011/07/26/setup-dlink-sharecenter-dns-320-on-mac-os-x-lion/
+  - /mac/setup-dlink-sharecenter-dns-320-on-mac-os-x/
+image: '2011/setup-dlink-sharecenter-dns-320-on-mac-os-x'
+imagecredit: 'Photo by [Patrick Lindenberg](https://unsplash.com/photos/1iVKwElWrPA) on Unsplash'
 ---
 
-[NAS]: http://www.amazon.co.uk/gp/product/B004AIWOXY/ref=as_li_ss_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B004AIWOXY&linkCode=as2&tag=deepcalmcom
-
-I'd finally had enough of my Drobo's bizarre behaviour (strange slow performance, patchy connection, running *very* hot, previous data loss) and dreadful desktop software. As it started acting up again in recent weeks I plumped for a 'proper' NAS: [a DLink DNS-320][NAS].
+I'd finally had enough of my Drobo's bizarre behaviour (strange slow performance, patchy connection, running *very* hot, previous data loss) and dreadful desktop software. As it started acting up again in recent weeks I plumped for a 'proper' NAS: [a DLink DNS-320][http://amzn.to/2wM2Ukd].
 
 The in-box manuals for it are terrible though, and you only get a Windows Install CD. Here's how to set it up on Mac using the web interface.
 
@@ -23,9 +23,9 @@ arp -a
 
 Once all sorted (you might have to log back in due to aggressive timeouts), run the wizard to set your admin password and change the name of the device.
 
-Then you probably want to head get the latest firmware from your local DLink site… mine is [Singapore](http://www.dlink.com.sg/support/support_detail.asp?idProduct=477) but you might be in the [US](http://www.dlink.com/products/default.aspx?pid=DNS-320&tab=3) or somewhere else.
+Then you probably want to head get the latest firmware from your local DLink site… mine is [Singapore](http://www.dlink.com.sg/dns-320/) but you might be in the [UK](http://www.dlink.com/uk/en/support/product/dns-320-2-bay-sharecenter-network-storage-enclosure) or somewhere else.
 
-There are dire warnings about installing the correct geographical version, how much of that is true I don't know, best to be safe though. You might want to grab the [updated manual too](http://www.dlink.com.sg/support/Support_download.asp?idsupport=1066). You need to find the *Maintenance > Firmware Upgrade* page.
+There are dire warnings about installing the correct geographical version, how much of that is true I don't know, best to be safe though. You might want to grab the [updated manual too](http://www.dlink.com/uk/en/support/product/dns-320-2-bay-sharecenter-network-storage-enclosure?revision=deu_revb#downloads). You need to find the *Maintenance > Firmware Upgrade* page.
 
 Then once you've uploaded, rebooted and signed in (using your new password) you can do important stuff like turn on AFP (apple native networking) in *Management > Application Management*.
 

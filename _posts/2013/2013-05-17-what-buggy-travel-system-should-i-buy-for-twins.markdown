@@ -1,10 +1,12 @@
 ---
 title: "What Buggy/Travel System Should I Buy For Twins?"
 layout: post
-category:
-  - life
+category: other
 redirect_from:
   - /2013/05/17/what-buggy-travel-system-should-i-buy-for-twins/
+  - /life/what-buggy-travel-system-should-i-buy-for-twins/
+image: '2013/what-buggy-travel-system-should-i-buy-for-twins'
+imagealt: 'Twins'
 ---
 
 There's some simple advice for getting a twin buggy. Keep it narrow so that doors are not a problem. And you'll probably replace it later on as the kids get hardier, heavier and you want something that folds up a bit smaller.
@@ -31,7 +33,7 @@ Very similar in style, size and weight to the iCandy.
 
 It looks like these are only good for a year or so, more experienced twin mums have suggested that you later on you can move to multiple buggies. Lightweight, off-road etc... depending on the activities you sue them for.
 
-The benefit is the travl systems hold their value pretty well and your local TABMA association, twins group or NCT chapter are all good places to sell a buggy you're not using any more.
+The benefit is the travel systems hold their value pretty well and your local TABMA association, twins group or NCT chapter are all good places to sell a buggy you're not using any more.
 
 # Car Seats
 

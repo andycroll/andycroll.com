@@ -1,10 +1,13 @@
 ---
 title: 'Pay, Equity and Startups'
 layout: post
-category:
-  - startups
+category: other
 redirect_from:
   - /2012/09/11/pay-equity-and-startups/
+  - /startups/pay-equity-and-startups/
+image: '2012/pay-equity-and-startups'
+imagealt: 'Laptop stats'
+imagecredit: 'Photo by [Fabian Blank](https://unsplash.com/photos/pElSkGRA2NU) on Unsplash'
 ---
 
 I've had the question about 'what should I do about this offer of equity' several times in the past few weeks.
@@ -13,7 +16,7 @@ The answer depends on who you are. And what you want.
 
 I'm gonna talk about this in terms of the 'self-interested' individual. This is *your* life and *your* career.
 
-This is merely my take and how my brain works, other opinions are availabile.
+This is merely my take and how my brain works, other opinions are available.
 
 ## Founders
 
@@ -35,7 +38,7 @@ Your equity may be worth nothing. Do not bank on it. This of course is more pres
 
 Founders also genuinely believe that on the occasion of an ‘exit’ you will become genuinely rich. They are likely wrong unless you are Facebook.
 
-Considering the general likelyhood of failure (of all startups) and the small chance of an exit in Singapore, I’ll make some high-end assumptions...
+Considering the general likelihood of failure (of all startups) and the small chance of an exit in Singapore, I’ll make some high-end assumptions...
 
 If you get an offer of 2% over four years and the company sells for $30m you end up with $600k. Which is a lovely outcome. At this point we’re talking life changing money... as in, you’ll mostly be able to buy property and ease your day to day. However, the yacht will have to wait.
 
@@ -43,7 +46,7 @@ More likely given Singapore’s recent exits (Tencube, HGW) you’re more likely
 
 Taking a thousand dollar haircut in salary over four years is $48k, nearly half of the potential equity payout, but guaranteed if you took it as salary.
 
-This comes accross as super-negative, but that’s not how I feel. It is definitely good to have some personal stake in any business, both for employee and employer. But... be aware of the numbers before you agree to a trade.
+This comes across as super-negative, but that’s not how I feel. It is definitely good to have some personal stake in any business, both for employee and employer. But... be aware of the numbers before you agree to a trade.
 
 It’s also perfectly fine, to take a pay cut to do work you want to do, or to work with people you love or to learn. All I advise is to know *why* it is you are taking the pay cut in exchange for equity.
 
@@ -57,7 +60,7 @@ If the startup is profitable, it’s actually a small-to-medium business and you
 
 ## All Employees
 
-The best time to negociate salary is before you sign, just like in a large company.
+The best time to negotiate salary is before you sign, just like in a large company.
 
 Small companies are even worse than large companies at offering pay increases. Pre-revenue startups even more so. Not necessarily through malice, more through disorganisation.
 

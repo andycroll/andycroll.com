@@ -2,16 +2,20 @@
 title: "Founder Shares & Dilution at Tumblr: How Much Did The Founders Make?"
 layout: post
 category:
-  - startups
+  - other
 redirect_from:
   - /2013/05/20/tumblr-founder-shares-and-dilution/
+  - /startups/tumblr-founder-shares-and-dilution/
+image: '2013/tumblr-founder-shares-and-dilution'
+imagealt: 'One dollar'
+imagecredit: Photo by [NeONBRAND](https://unsplash.com/photos/8fDhgAN5zG0) on Unsplash
 ---
 
 _Disclaimer: There is a __lot__ of supposition, and then extrapolation on top, in this article. It's pinch of salt time._
 
 So Tumblr is [worth $1.1b dollars](http://online.wsj.com/article/SB10001424127887324787004578493130789235150.html?mod=WSJ_hps_LEFTTopStories) _in cash_. My god.
 
-The outcome for Tumblr is amazing, they closed a cash sale even though they were unable to produce significant revenue from their enormous userbase and with a large [team of 175](http://en.wikipedia.org/wiki/Tumblr). All this with the money [potentially running out in a few months](http://techcrunch.com/2013/05/17/tumblr-is-not-impressed/).
+The outcome for Tumblr is amazing, they closed a cash sale even though they were unable to produce significant revenue from their enormous number of users and had a large [team of 175](http://en.wikipedia.org/wiki/Tumblr) as at the date of sale. All this with the money [potentially running out in a few months](http://techcrunch.com/2013/05/17/tumblr-is-not-impressed/).
 
 Now whether it is or it isn't a good deal, or a sign of the SV apocalypse, is immaterial to this next exercise. Let's undertake in some relatively wild guesswork to see how the founders made out and explore dilution on the way.
 
@@ -89,7 +93,7 @@ _26 Nov 2011_
 
 [Tumblr Raises $85m](http://betabeat.com/2011/09/tumblr-raises-an-85-million-series-e/)
 
-The shear size of Tumblr means it's on it's way to either IPO or seek acquisition in short order, particularly as it is [still not generating any real revenue](http://www.daniellemorrill.com/2013/05/the-3b-exit-tumblr-could-have-had/).
+The size of Tumblr means it's on it's way to either IPO or seek acquisition in short order, particularly as it is [still not generating any real revenue](http://www.daniellemorrill.com/2013/05/the-3b-exit-tumblr-could-have-had/).
 
 2,600,000 × 85/800 = 276,250 new shares issued
 
@@ -111,7 +115,7 @@ So assuming a 3x preference at Series E and a 2x at Series D...
 
 1,100m - 255m (3 x 85) for the 276,250 shares at Series E leaves $845m.
 
-$845m x 1 / 2.6 = $325 for the founders
+$845m x 1 / 2.6 = $325m for the founders
 
 _This presumes that the 2x preference at Series D doesn't need to be invoked due to the increase in valuation._
 
@@ -123,13 +127,13 @@ The founders, if, _big if,_ they held on to all their shares during this process
 
 Incidentally, co-founder [Marco Arment](http://www.marco.org), [left Tumblr in September of 2010](http://www.marco.org/2010/09/21/job-transition) having likely completed his (standard) 4 year vesting period, but according to his [own answer on Quora](http://www.quora.com/Does-Marco-Arment-still-have-a-financial-stake-in-Tumblr) he still has a financial stake.
 
-Yet [tweets from Marco show that he was just an employee](https://twitter.com/marcoarment/status/335483318311194624), meaning David Karp will hold the vast majority, if not all, of the founding shares: thus the $300m. Marco will have some proportion of the Employee Options and thus won't have made a huge lump of cash. [Aside: technical people know your value!](/2012/09/11/pay-equity-and-startups/)
+Yet [tweets from Marco show that he was just an employee](https://twitter.com/marcoarment/status/335483318311194624), meaning David Karp will hold the vast majority, if not all, of the founding shares: thus the $300m. Marco will have some proportion of the Employee Options or possibly some special side deal, and thus despite his contribution and risk taking won't see the same upside. Aside: [technical people know your value!](/2012/09/11/pay-equity-and-startups/)
 
 ## Newsflash for budding entrepreneurs
 
 Firstly, a lot of this is supposition.
 
-Secondly, Tumblr (and previously Instagram) are the complete outliers in 'financial success by acquisition', so I'm sorry young padawan entrepreneurs, this isn't going to be your life. But it's interesting to have a look though right?
+Secondly, Tumblr (and previously Instagram) are the complete outliers in 'financial success by acquisition', so I'm sorry, this isn't going to be your life. But it's interesting to have a look though right?
 
 -----
 
