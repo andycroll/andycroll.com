@@ -5,6 +5,8 @@ category:
   - ruby
 redirect_from:
   - /2014/01/19/serving-a-jekyll-blog-using-heroku/
+image: '2014/serving-a-jekyll-blog-using-heroku'
+imagealt: 'Purple tinged Jekyll'
 ---
 
 I've put up a few simple sites recently, for [upcoming][gembook] [books][herokubook] and a [bootstrapping mailing list][bootstrappingio], and these I've either used a *very* simple Sintra app, or in the case of a the more blogg-y sites, [Jekyll][jekyll], the simple Ruby blogging system.

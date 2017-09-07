@@ -1,10 +1,12 @@
 ---
 title: "Backing Up Mysql Databases Remotely Using cron & ssh"
 layout: post
-category:
-  - development
+category: development
 redirect_from:
   - /2008/03/12/backing-up-mysql-databases-remotely-using-dreamhosts-cron-and-ssh/
+image: '2008/backing-up-mysql-databases-remotely-using-dreamhosts-cron-and-ssh'
+imagealt: 'Jesus Saves'
+imagecredit: 'Photo by [Jason Betz](https://unsplash.com/photos/P9X327-3UyI) on Unsplash'
 ---
 
 [Dreamhost](http://www.dreamhost.com/r.cgi?134796) can be a great place keep automatic backups of MySQL databases. You are backing up your databases right?

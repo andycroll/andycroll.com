@@ -3,6 +3,8 @@ title: 'Benchmarking each_with_object Against inject when building Hashes from A
 layout: post
 category:
   - ruby
+image: '2014/benchmarking-each_with_object-against-inject-when-building-hashes-from-arrays'
+imagealt: Stopwatch
 ---
 
 I read [Better Hash Injection using each_with_object](http://technology.customink.com/blog/2014/10/14/better-hash-injection-using-each-with-object/) with interest.

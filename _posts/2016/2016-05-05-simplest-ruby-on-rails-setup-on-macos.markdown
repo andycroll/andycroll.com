@@ -1,12 +1,13 @@
 ---
-title: 'Simplest (Serious) Ruby/Rails Setup on MacOS'
+title: 'Simple Ruby/Rails Setup on MacOS'
 layout: post
-category:
-  - mac
-  - ruby
+category: ruby
 redirect_from:
   - /mac/ruby/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
   - /2014/01/15/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
+  - /mac/ruby/simplest-ruby-on-rails-setup-on-macos/
+image: '2016/simplest-ruby-on-rails-setup-on-macos'
+imagecredit: 'Photo by [chuttersnap](https://unsplash.com/photos/alCEnNmzhPE) on Unsplash'
 ---
 
 I try and keep my development environment as 'light' as possible, so with that in mind here's my serious (in that I make a living from coding) but simple Ruby and Rails setup for a Mac.
@@ -53,24 +54,25 @@ brew install ruby-install
 ### Install some Rubies
 
 ```shell
-ruby-install ruby 2.2
 ruby-install ruby 2.3
+ruby-install ruby 2.4
 ```
 
 shellAdd the following lines to your `~/.bash_profile` as described in the chruby readme.
 
     source /usr/local/share/chruby/chruby.sh
     source /usr/local/share/chruby/auto.sh
-    chruby ruby-2.1
+    chruby ruby-2.4
 
 First line enables chruby, second line auto-switches rubies for each project you have based on a `.ruby-version` (a cross ruby installer convention) and the third line selects your default ruby.
 
 ## Local Database
 
-I'm all about the Heroku deployment, so I use PostgreSQL locally as well. It's good practice to use the same DB in development as you do in production.
+I'm all about the Heroku deployment, so I use PostgreSQL locally as well. It's good practice to use the same DB type and version in development as you do in production.
 
 ```shell
 brew install postgres
+brew services start postgresql
 ```
 
 ## Rails itself
@@ -94,7 +96,7 @@ cd yourapplicationname
 It is good practice to include a `.ruby-version` file in the root of your app. It'll look like this if you're on the latest version of ruby.
 
 ```ruby
-2.3.1
+2.4.1
 ```
 
 But otherwise, job done.
@@ -107,33 +109,6 @@ bundle exec rails server
 And navigate to [http://localhost:3000](http://localhost:3000).
 
 -----
-
-## One last extra... still aiming at simple
-
-### Pow
-
-I also like pow to auto-serve my apps in a low maintenance way. It also lets you use [xip.io](http://xip.io) to test your other devices with your local webserver.
-
-```shell
-gem install powder
-powder install
-```
-
-In every app you want to add (your zero-configuration web server) pow... you need to configure (!) a .powrc file with the following contents [as detailed in the chruby wiki](https://github.com/postmodern/chruby/wiki/Pow). You can also check it into source control.
-
-```shell
-source /usr/local/share/chruby/chruby.sh
-chruby $(cat .ruby-version)
-```
-
-And then type:
-
-```shell
-powder link
-powder open
-```
-
-... in the directory of the app.
 
 ### There's a script for that?
 

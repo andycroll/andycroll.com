@@ -22,7 +22,7 @@ layout: default
 
       <ul class="list-unstyled">
       {% for post in site.posts %}
-      {% if post.categories contains 'development' or post.categories contains 'mac' or post.categories contains 'ios' or post.categories contains 'ruby' or post.categories contains 'design' %}
+      {% if post.categories contains 'development' or post.categories contains 'ruby' %}
         <li>
           <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
         </li>
@@ -32,40 +32,15 @@ layout: default
     </div>
 
     <div class="col-md-6 col-lg-4">
-      <h2 class="h4">Bootstrapping <span class="amp">&amp;</span> Startups</h2>
+      <h2 class="h4">Other</h2>
       <ul class="list-unstyled">
       {% for post in site.posts %}
-      {% if post.categories contains 'startups' or post.categories contains 'bootstrapping' or post.categories contains 'business' %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-        </li>
-      {% endif %}
-      {% endfor %}
-      </ul>
-    </div>
-
-    <div class="col-md-6">
-      <h2 class="h4">Other Stuff</h2>
-      <ul class="list-unstyled">
-      {% for post in site.posts %}
-      {% if post.categories contains 'life' %}
+      {% unless post.categories contains 'development' or post.categories contains 'ruby' %}
         <li>
           <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
           <small>{{ post.date | date: "%Y" }}</small>
         </li>
-      {% endif %}
-      {% endfor %}
-      </ul>
-
-      <h2 class="h4">Travel</h2>
-      <ul class="list-unstyled">
-      {% for post in site.posts %}
-      {% if post.categories contains 'travel' %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title | titlecase }}</a>
-          <small>{{ post.date | date: "%Y" }}</small>
-        </li>
-      {% endif %}
+      {% endunless %}
       {% endfor %}
       </ul>
     </div>

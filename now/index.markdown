@@ -1,14 +1,25 @@
 ---
 layout: 'page'
 title: "What I'm Doing Now"
-date: '2017-01-07'
+date: '2017-09-07'
+redirect_from:
+ - /2010/10/01/negative/
+ - /startups/singapore/singapore-startup-negativity/
+ - /2009/12/22/jfdi/
+ - /startups/bootstrapping/singapore/jfdi/
+ - /2011/07/11/so-what-now/
+ - /life/so-what-now/
+ - /2012/01/13/two-thousand-eleven/
+ - /life/two-thousand-eleven/
 ---
+
+Running a fortnightly Ruby techniques newsletter: One Ruby Thing. [Sign up](http://eepurl.com/c06Fw5)
 
 Helping teams with their products and software engineering practises with [Good Scary](http://goodscary.com).
 
 Finishing [Building Ruby Gems](/building-ruby-gems/), I'm about 75% done. [Go and sign up](/building-ruby-gems/) to my mailing list to hear when I launch and to get a special discount.
 
-Currently working with [CoverageBook](https://coveragebook.com) on process and code improvement projects & [Datanauts](http://datanauts.co.uk) on a Rails 3–4 upgrade.
+Currently working with [CoverageBook](https://coveragebook.com) on process and code improvement projects.
 
 ### Events
 

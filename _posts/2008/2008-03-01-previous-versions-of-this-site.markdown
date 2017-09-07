@@ -1,10 +1,14 @@
 ---
+title: 'A little history: pre-2008 versions of this site'
 layout: post
 category: design
 redirect_from:
   - /2008/03/01/seems-to-be-the-season/
   - /2009/04/28/redesign-redirect/
   - /2010/07/06/responsive-redesign/
+image: '2008/previous-versions-of-this-site'
+imagealt: 'Natural History Museum'
+imagecredit: 'Photo by [Joshua K. Jackson](https://unsplash.com/photos/qaoNLVMb4lw) on Unsplash'
 ---
 
 ## 2008

@@ -4,15 +4,16 @@ layout: post
 category: development
 redirect_from:
   - /2009/05/04/some-textpattern-htaccess-goodness/
+image: '2009/some-textpattern-htaccess-goodness'
+imagealt: 'Matrix Code'
+imagecredit: 'Photo by [Markus Spiske](https://unsplash.com/photos/68ZlATaVYIo) on Unsplash'
 ---
-
-One of my key things for giving a site the best SEO I can is to reduce the number of URLs that point to the same content.
 
 I've made a note of the little `.htaccess` niceties I've used in the setting up sites.
 
 ## No-www
 
-My personal preference is to remove www from URLs, which is a simple rule seen all over the internet.
+One of my key things for SEO is to reduce the number of URLs that point to the same content. My personal preference is to remove www from URLs, which is a simple rule seen all over the internet.
 
 ```
 RewriteCond %{HTTP_HOST} ^www\\.(.*) [NC]

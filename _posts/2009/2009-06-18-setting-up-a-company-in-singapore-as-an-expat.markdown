@@ -1,18 +1,20 @@
 ---
 title: "Setting up a Company in Singapore as an Expat"
 layout: post
-category:
-  - business
-  - singapore
+category: other
 redirect_from:
   - /2009/06/18/setting-up-a-company-in-singapore-as-an-expat/
+  - /business/singapore/setting-up-a-company-in-singapore-as-an-expat/
+image: '2009/setting-up-a-company-in-singapore-as-an-expat'
+imagealt: Singapore
+imagecredit: Photo by [Peter Nguyen](https://unsplash.com/photos/CQhgno3yhv8) on Unsplash
 ---
 
-_I left Singapore in late 2012, this information is from then and may decay._
+_I left Singapore in late 2012, this information is likely more and more out of date._
 
 There is an entire cottage industry of expatriate Accountants running company incorporation and employment pass services to other new-to-the-island expatriates. It's a lucrative business, upwards of $4,000 SGD a go, if you include company secretarial, bank account setup etc.
 
-But here's the big secret, _it's easy_. You have to have a little patience and have to battle some incompentance both on- and off-line, but it's actually a pretty straightforward procedure. To save others the cash I have here's a not-so-quick guide.
+But here's the big secret, _it's easy_. You have to have a little patience and have to battle some incompetence both on- and off-line, but it's actually a pretty straightforward procedure. To save others the cash I have here's a not-so-quick guide.
 
 My experience is that the wheels of Government turn slowly, so you're not even going to be able to rush through an application even using one of these companies. Of course normal caveats apply and this isn't qualified advice, merely my own experience. Your milage may vary.
 
@@ -22,7 +24,7 @@ Firstly I'm a Brit, so having an excellent passport helps, no need to apply for 
 
 I had been in Singapore for about two years, mostly on a dependants pass from my wife's employment pass. Any work I was doing was on a freelance basis, mainly into the UK, or locally (accepted with a permission letter from my wife's company to the Ministry of Manpower).
 
-I'd also spent 6 months on a 'standard' employment pass work for [Wego](http://wego.com) who at that point were named Bezurk.
+I'd also spent 6 months on a 'standard' employment pass work for a local startup.
 
 So I was already allowed to be in the country, which does make things a bit easier and less time-pressured. If you're outside the country that's your first hiccup, however the standard tourist visa is 30 days, which is within the maximum processing time for a single application. Possibly even a second, anyway if you overrun a short hop over the bridge to Malaysia, or the cheap ferry to Bintan will refresh your visa.
 
@@ -110,4 +112,4 @@ But eventually I'm all set up.
 
 It's straightforward in theory but a bit rubbish in practice because you're dealing with government processes and a surprisingly inefficient consumer banking industry, but perhaps not worth $5,000 of your money to pay someone to do it for you.
 
-However if you are not already resident you're probably going to have to get in touch with an accountant. I recommend [this book](http://www.amazon.co.uk/gp/product/B00HMNP8IM/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B00HMNP8IM&linkCode=as2&tag=deepcalmcom) for some startup help.
+However if you are not already resident you're probably going to have to get in touch with an accountant. I recommend [this book](http://www.amazon.co.uk/gp/product/B00HMNP8IM?tag=deepcalmcom) for some startup help.
