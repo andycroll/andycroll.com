@@ -12,12 +12,7 @@ layout: default
   <hr>
 
   <div class="row">
-    <div class="col-md-6 col-lg-4">
-      <p>{% include sell.html %}</p>
-      <p>You should follow me on Twitter, <a href="http://twitter.com/andycroll">@andycroll</a></p>
-    </div>
-
-    <div class="col-md-6">
+    <div class="col-md-12">
       <h2 class="h4">Design <span class="amp">&amp;</span> Development</h2>
 
       <ul class="list-unstyled">
@@ -31,7 +26,12 @@ layout: default
       </ul>
     </div>
 
-    <div class="col-md-6 col-lg-4">
+    <div class="col-md-12">
+      <p>{% include sell.html %}</p>
+      <p>You should follow me on Twitter, <a href="http://twitter.com/andycroll">@andycroll</a></p>
+    </div>
+
+    <div class="col-sm-12">
       <h2 class="h4">Other</h2>
       <ul class="list-unstyled">
       {% for post in site.posts %}
