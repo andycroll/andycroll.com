@@ -5,6 +5,7 @@ category: ruby
 redirect_from:
   - /2012/06/08/impulseflyer-poster-child-for-the-cloud
 image: '2012/web-services-impulseflyer'
+imagealt: Wiring
 imagecredit: 'Photo by [Khara Woods](https://unsplash.com/photos/n4Lw7zArIk) on Unsplash'
 ---
 

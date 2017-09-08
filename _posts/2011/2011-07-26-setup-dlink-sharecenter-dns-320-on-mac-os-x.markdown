@@ -6,6 +6,7 @@ redirect_from:
   - /2011/07/26/setup-dlink-sharecenter-dns-320-on-mac-os-x-lion/
   - /mac/setup-dlink-sharecenter-dns-320-on-mac-os-x/
 image: '2011/setup-dlink-sharecenter-dns-320-on-mac-os-x'
+imagealt: 'The long forgotten innards of spinning discs'
 imagecredit: 'Photo by [Patrick Lindenberg](https://unsplash.com/photos/1iVKwElWrPA) on Unsplash'
 ---
 

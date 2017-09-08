@@ -7,6 +7,7 @@ redirect_from:
   - /2013/11/18/pivotal-tracker-fluid-icon/
   - /design/mac/pivotal-tracker-fluid-icon/
 image: '2013/pivotal-tracker-fluid-icon'
+imagealt: 'New Pivotal Tracker icon'
 ---
 
 _Updated for Yosemite's Icon Grid on 29th October._
