@@ -1,6 +1,6 @@
 ---
 title: "Pivotal Labs & EMC: The Future?"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2012/03/18/pivotal-labs-and-emc-the-future/

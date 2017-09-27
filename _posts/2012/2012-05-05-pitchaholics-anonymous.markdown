@@ -1,6 +1,6 @@
 ---
 title: "Pitchaholics Anonymous"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2012/05/05/pitchaholics-anonymous/

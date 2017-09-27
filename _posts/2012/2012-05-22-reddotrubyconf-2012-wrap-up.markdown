@@ -1,6 +1,6 @@
 ---
 title: "RedDotRubyConf 2012: Wrap up"
-layout: post
+layout: article
 category: ruby
 redirect_from:
   - /2012/05/23/i-want-to-be-better/

@@ -1,6 +1,6 @@
 ---
 title: "What Buggy/Travel System Should I Buy For Twins?"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2013/05/17/what-buggy-travel-system-should-i-buy-for-twins/

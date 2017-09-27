@@ -1,6 +1,6 @@
 ---
 title: My First Hate Mail from Wen Kole, Singapore
-layout: post
+layout: article
 categories: other
 redirect_from:
   - /2009/06/02/my-first-hate-mail-from-wen-kole-singapore/

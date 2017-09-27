@@ -1,6 +1,6 @@
 ---
 title: "Web Services used at ImpulseFlyer"
-layout: post
+layout: article
 category: ruby
 redirect_from:
   - /2012/06/08/impulseflyer-poster-child-for-the-cloud

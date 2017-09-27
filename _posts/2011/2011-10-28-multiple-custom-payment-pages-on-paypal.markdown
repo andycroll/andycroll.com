@@ -1,6 +1,6 @@
 ---
 title: Multiple Custom Payment Pages on Paypal
-layout: post
+layout: article
 category: development
 redirect_from:
   - /2011/10/28/multiple-custom-payment-pages-on-paypal/

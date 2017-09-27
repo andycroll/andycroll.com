@@ -1,6 +1,6 @@
 ---
 title: "Founder Shares & Dilution at Tumblr: How Much Did The Founders Make?"
-layout: post
+layout: article
 category:
   - other
 redirect_from:

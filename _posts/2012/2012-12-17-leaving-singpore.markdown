@@ -1,6 +1,6 @@
 ---
 title: "Leaving Singapore"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2012/12/17/leaving/

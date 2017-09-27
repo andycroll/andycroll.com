@@ -1,6 +1,6 @@
 ---
 title: 'Benchmarking each_with_object Against inject when building Hashes from Arrays'
-layout: post
+layout: article
 category:
   - ruby
 image: '2014/benchmarking-each_with_object-against-inject-when-building-hashes-from-arrays'

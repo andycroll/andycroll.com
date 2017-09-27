@@ -1,6 +1,6 @@
 ---
 title: "xip.io Doesn't Work on BT, Fix It"
-layout: post
+layout: article
 category: development
 redirect_from:
   - /2013/06/21/xip-io-doesnt-work-on-bt/

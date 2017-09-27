@@ -1,6 +1,6 @@
 ---
 title: "Pivotal Tracker Fluid Icon"
-layout: post
+layout: article
 category:
   - other
 redirect_from:

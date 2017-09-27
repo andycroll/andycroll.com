@@ -1,6 +1,6 @@
 ---
 title: "What Should I Buy for Twins?"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2013/05/18/what-should-i-buy-for-twins/

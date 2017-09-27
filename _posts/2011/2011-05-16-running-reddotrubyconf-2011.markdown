@@ -1,6 +1,6 @@
 ---
 title: Running RedDotRubyConf 2011
-layout: post
+layout: article
 category:
   - ruby
   - singapore

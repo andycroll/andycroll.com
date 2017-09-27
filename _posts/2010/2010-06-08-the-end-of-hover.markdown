@@ -1,6 +1,6 @@
 ---
 title: "The end of :hover?"
-layout: post
+layout: article
 category: development
 redirect_from:
   - /2010/06/08/the-end-of-hover/

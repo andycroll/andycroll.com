@@ -1,6 +1,6 @@
 ---
 title: Serving a Jekyll Blog using Heroku
-layout: post
+layout: article
 category:
   - ruby
 redirect_from:

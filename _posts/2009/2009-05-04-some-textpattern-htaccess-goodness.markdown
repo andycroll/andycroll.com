@@ -1,6 +1,6 @@
 ---
 title: "Some TextPattern .htaccess Goodness"
-layout: post
+layout: article
 category: development
 redirect_from:
   - /2009/05/04/some-textpattern-htaccess-goodness/

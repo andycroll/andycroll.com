@@ -1,6 +1,6 @@
 ---
 title: 'The New Homes of Five Simple Steps Books'
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2014/04/13/the-new-homes-of-five-simple-steps-books/

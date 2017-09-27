@@ -1,6 +1,6 @@
 ---
 title: 'Pay, Equity and Startups'
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2012/09/11/pay-equity-and-startups/

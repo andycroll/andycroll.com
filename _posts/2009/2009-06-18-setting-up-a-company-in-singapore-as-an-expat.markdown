@@ -1,6 +1,6 @@
 ---
 title: "Setting up a Company in Singapore as an Expat"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2009/06/18/setting-up-a-company-in-singapore-as-an-expat/
