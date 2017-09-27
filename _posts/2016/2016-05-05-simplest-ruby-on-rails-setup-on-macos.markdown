@@ -1,6 +1,6 @@
 ---
 title: 'Simple Ruby/Rails Setup on MacOS'
-layout: post
+layout: article
 category: ruby
 redirect_from:
   - /mac/ruby/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/

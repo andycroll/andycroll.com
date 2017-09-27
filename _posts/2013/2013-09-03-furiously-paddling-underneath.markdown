@@ -1,6 +1,6 @@
 ---
 title: 'Furiously Paddling Underneath'
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2013/09/03/furiously-paddling-underneath/

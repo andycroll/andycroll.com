@@ -1,6 +1,6 @@
 ---
 title: 'AMP Project Pages on Ruby on Rails'
-layout: post
+layout: article
 category: ruby
 image: '2016/amp-project-pages-ruby-on-rails'
 imagealt: Lightning

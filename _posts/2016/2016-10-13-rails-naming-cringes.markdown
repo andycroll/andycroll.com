@@ -1,6 +1,6 @@
 ---
 title: 'Rails Naming Cringes'
-layout: post
+layout: article
 category:
   - ruby
 ---

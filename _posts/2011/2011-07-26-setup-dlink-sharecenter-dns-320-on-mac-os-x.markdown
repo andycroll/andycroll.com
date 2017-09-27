@@ -1,6 +1,6 @@
 ---
 title: Setup DLink ShareCenter DNS-320 on Mac OS X
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2011/07/26/setup-dlink-sharecenter-dns-320-on-mac-os-x-lion/

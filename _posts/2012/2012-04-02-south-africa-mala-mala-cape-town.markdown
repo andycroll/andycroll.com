@@ -1,6 +1,6 @@
 ---
 title: "South Africa: Mala Mala & Cape Town"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2012/04/02/south-africa-mala-mala-cape-town/

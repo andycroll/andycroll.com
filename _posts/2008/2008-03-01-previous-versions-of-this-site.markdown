@@ -1,6 +1,6 @@
 ---
 title: 'A little history: pre-2008 versions of this site'
-layout: post
+layout: article
 category: design
 redirect_from:
   - /2008/03/01/seems-to-be-the-season/

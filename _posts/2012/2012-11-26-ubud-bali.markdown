@@ -1,6 +1,6 @@
 ---
 title: "Ubud, Bali"
-layout: post
+layout: article
 category: other
 redirect_from:
   - /2012/11/26/ubud-bali/

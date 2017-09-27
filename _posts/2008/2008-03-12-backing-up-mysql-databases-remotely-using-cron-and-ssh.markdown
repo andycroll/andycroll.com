@@ -1,6 +1,6 @@
 ---
 title: "Backing Up Mysql Databases Remotely Using cron & ssh"
-layout: post
+layout: article
 category: development
 redirect_from:
   - /2008/03/12/backing-up-mysql-databases-remotely-using-dreamhosts-cron-and-ssh/
