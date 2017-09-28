@@ -1,8 +1,7 @@
 ---
 title: Serving a Jekyll Blog using Heroku
 layout: article
-category:
-  - ruby
+category: ruby
 redirect_from:
   - /2014/01/19/serving-a-jekyll-blog-using-heroku/
 image: '2014/serving-a-jekyll-blog-using-heroku'

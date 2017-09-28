@@ -1,8 +1,7 @@
 ---
 title: "Founder Shares & Dilution at Tumblr: How Much Did The Founders Make?"
 layout: article
-category:
-  - other
+category: other
 redirect_from:
   - /2013/05/20/tumblr-founder-shares-and-dilution/
   - /startups/tumblr-founder-shares-and-dilution/

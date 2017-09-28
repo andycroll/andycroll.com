@@ -1,9 +1,7 @@
 ---
 title: Running RedDotRubyConf 2011
 layout: article
-category:
-  - ruby
-  - singapore
+category: other
 redirect_from:
   - /2011/05/19/reddotrubyconf-2011-stats/
   - /2011/05/16/running-reddotrubyconf-2011/

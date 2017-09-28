@@ -1,19 +1,22 @@
 {% include head.html %}
 <body>
-  <header role="banner" class="p-a-1">
-    <a href="/" id="root" class="small block-link">Andy Croll</a><a href="/now" class="small block-link">work with me</a>
-  </header>
+  <div class="container pt-3 pb-2">
+    <div class="row">
+      <!-- <div class="col-sm-1 d-none d-sm-block">&nbsp;</div> -->
+      <div class="col-6">
+        <a href="/" class="btn btn-dark h2">Andy Croll</a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="/now" class="btn btn-outline btn-outline-dark h2">Now</a>
+      </div>
+    </div>
+  </div>
 
   <div role="main" class="main">
     {{ content | expand_urls: root_url }}
   </div>
 
-  <footer role="contentinfo">
-    <div class="container-fluid">
-      {% include footer.html %}
-    </div>
-  </footer>
-
+  {% include footer.html %}
   {% include javascripts.html %}
 </body>
 </html>

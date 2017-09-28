@@ -1,125 +1,87 @@
 ---
 ---
+@import "bootstrap/functions";
 @import "bootstrap/variables";
 
-$enable-rounded: false;
-
-$gray-dark: rgb(8,8,8);
-$gray: rgb(38,38,38);
-$gray-lightest: rgb(245,245,245);
-
-$body-bg: rgb(250,250,250);
-$brand-primary: rgb(155,55,50);
-
-$headings-font-weight: normal;
-
-$line-height-base: 1.625;
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 380px,
-  md: 600px,
-  lg: 992px,
-  xl: 1200px
-);
-
 // Core variables and mixins
-@import "bootstrap/custom";
 @import "bootstrap/mixins";
-
-// Reset and dependencies
-@import "bootstrap/normalize";
 @import "bootstrap/print";
-
-// Core CSS
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
 @import "bootstrap/code";
 @import "bootstrap/grid";
 @import "bootstrap/tables";
-
-// Components
-@import "bootstrap/responsive-embed";
-
-// Utility classes
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/input-group";
+@import "bootstrap/custom-forms";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/jumbotron";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/media";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
 @import "bootstrap/utilities";
 
-body {
-  max-width: 1200px;
-}
-
-code, pre {
-  font-family: Menlo, Monaco, monospace;
-}
+@import 'syntax';
 
 blockquote {
   @extend .blockquote;
 }
 
-.highlighter-rouge {
-  background: #fcfcfc;
-  color: #1d1f21;
-  border-radius: 2px;
-}
-
-.highlight {
-  max-width: 49em;
-  font-size: 0.75em;
+pre {
   padding: 0.5em;
-  margin: 0 -0.5em 1em;
-  overflow-x: scroll;
-  overflow-y: hidden;
 }
-
-img {
-  width: 100%;
-  height: auto;
-}
+// .highlight {
+//   max-width: 49em;
+//   font-size: 0.75em;
+//   padding: 0.5em;
+//   margin: 0 -0.5em 1em;
+//   overflow-x: scroll;
+//   overflow-y: hidden;
+// }
 
 .amp {
   font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
-  color: $brand-primary;
+  color: $red;
   font-weight: normal; font-style: italic;
   display: inline-block;
   font-size: 125%;
   margin: -0.3em 0 0 -0.02em;
 }
 
-hr {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border: 0;
-  border-top: 1px solid $gray-lightest;
-}
+// table {
+//   font-size: 1em;
+//   line-height: (1em * 26/16);
+//   width: 100%;
+//   max-width: 36.65em;
+//   margin-bottom: 1em;
+// }
+//
+// table .numeric {
+//   text-align: right;
+// }
+//
+// .block-link, .block-link:link, .block-link:hover, .block-link:visited, , .block-link:active {
+//   display: inline-block;
+//   text-decoration: none;
+//   padding: 0.75rem;
+//   color: $gray-dark;
+//   background: $gray-lightest;
+// }
 
-table {
-  font-size: 1em;
-  line-height: (1em * 26/16);
-  width: 100%;
-  max-width: 36.65em;
-  margin-bottom: 1em;
-}
-
-table .numeric {
-  text-align: right;
-}
-
-.block-link, .block-link:link, .block-link:hover, .block-link:visited, , .block-link:active {
-  display: inline-block;
-  text-decoration: none;
-  padding: 0.75rem;
-  color: $gray-dark;
-  background: $gray-lightest;
-}
-
-#root {
-  color: $body-bg;
-  background: $gray-dark;
-}
-
-.main {
-  // margin: 3.5em 1em 1em 0;
-}
-
-@import 'syntax';
+.logo-footer { width: 50px; height: 50px; fill: #FFF; }
