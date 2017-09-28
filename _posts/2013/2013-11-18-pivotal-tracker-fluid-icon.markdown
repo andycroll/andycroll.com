@@ -1,8 +1,7 @@
 ---
 title: "Pivotal Tracker Fluid Icon"
 layout: article
-category:
-  - other
+category: other
 redirect_from:
   - /2013/11/18/pivotal-tracker-fluid-icon/
   - /design/mac/pivotal-tracker-fluid-icon/

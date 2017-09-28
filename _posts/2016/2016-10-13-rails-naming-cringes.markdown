@@ -1,8 +1,7 @@
 ---
 title: 'Rails Naming Cringes'
 layout: article
-category:
-  - ruby
+category: ruby
 ---
 
 Rails has a number of naming conventions that are as deeply ingrained as the `/app` directory or `belongs_to`. However even experienced developers (including me) forget the that one of the finest things Rails ever did was to give us a ‘way things should be named’ and a place for them to go.
@@ -10,7 +9,7 @@ Rails has a number of naming conventions that are as deeply ingrained as the `/a
 Here are a couple of things that make my ‘naming spidey sense’ tingle when I see them in a codebase.
 
 <blockquote class="blockquote">
-  <p class="m-b-0">Programs must be written for people to read, and only incidentally for machines to execute.</p>
+  <p class="mb-0">Programs must be written for people to read, and only incidentally for machines to execute.</p>
   <footer class="blockquote-footer">Harold Abelson <cite title="Source Title">Structure and Interpretation of Computer Programs</cite></footer>
 </blockquote>
 
