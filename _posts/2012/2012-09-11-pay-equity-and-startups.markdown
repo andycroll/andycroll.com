@@ -6,9 +6,11 @@ category: other
 redirect_from:
   - /2012/09/11/pay-equity-and-startups/
   - /startups/pay-equity-and-startups/
-image: '2012/pay-equity-and-startups'
-imagealt: 'Laptop stats'
-imagecredit: 'Photo by [Fabian Blank](https://unsplash.com/photos/pElSkGRA2NU) on Unsplash'
+image:
+  base: '2012/pay-equity-and-startups'
+  alt: 'Laptop stats'
+  credit: 'Fabian Blank'
+  source: 'https://unsplash.com/photos/pElSkGRA2NU'
 ---
 
 I've had the question about 'what should I do about this offer of equity' several times in the past few weeks.

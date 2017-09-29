@@ -6,9 +6,11 @@ category: other
 redirect_from:
   - /2009/06/18/setting-up-a-company-in-singapore-as-an-expat/
   - /business/singapore/setting-up-a-company-in-singapore-as-an-expat/
-image: '2009/setting-up-a-company-in-singapore-as-an-expat'
-imagealt: Singapore
-imagecredit: Photo by [Peter Nguyen](https://unsplash.com/photos/CQhgno3yhv8) on Unsplash
+image:
+  base: '2009/setting-up-a-company-in-singapore-as-an-expat'
+  alt: Singapore
+  credit: 'Peter Nguyen'
+  source: 'https://unsplash.com/photos/CQhgno3yhv8'
 ---
 
 _I left Singapore in late 2012, this information is likely more and more out of date._

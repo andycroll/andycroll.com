@@ -7,9 +7,11 @@ redirect_from:
   - /2008/03/01/seems-to-be-the-season/
   - /2009/04/28/redesign-redirect/
   - /2010/07/06/responsive-redesign/
-image: '2008/previous-versions-of-this-site'
-imagealt: 'Natural History Museum'
-imagecredit: 'Photo by [Joshua K. Jackson](https://unsplash.com/photos/qaoNLVMb4lw) on Unsplash'
+image:
+  base: '2008/previous-versions-of-this-site'
+  alt: 'Natural History Museum'
+  credit: 'Joshua K. Jackson'
+  source: 'https://unsplash.com/photos/qaoNLVMb4lw'
 ---
 
 ## 2008

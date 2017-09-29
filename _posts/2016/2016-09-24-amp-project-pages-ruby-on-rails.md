@@ -3,9 +3,11 @@ title: 'AMP Project Pages on Ruby on Rails'
 description: 'AMP pages can provide a enhanced SEO, and can be delivered easily from Rails.'
 layout: article
 category: ruby
-image: '2016/amp-project-pages-ruby-on-rails'
-imagealt: Lightning
-image_credit: 'Photo by [Breno Machado](https://unsplash.com/photos/in9-n0JwgZ0)'
+image:
+  base: '2016/amp-project-pages-ruby-on-rails'
+  alt: Lightning
+  credit: 'Breno Machado'
+  source: 'https://unsplash.com/photos/in9-n0JwgZ0'
 ---
 
 Google’s [AMP Project](http://ampproject.com) is set to become _a thing_.

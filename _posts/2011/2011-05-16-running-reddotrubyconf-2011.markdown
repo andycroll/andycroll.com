@@ -7,8 +7,9 @@ redirect_from:
   - /2011/05/19/reddotrubyconf-2011-stats/
   - /2011/05/16/running-reddotrubyconf-2011/
   - /ruby/singapore/running-reddotrubyconf-2011/
-image: '2011/running-reddotrubyconf-2011'
-imagealt: 'Final slide from RDRC'
+image:
+  base: '2011/running-reddotrubyconf-2011'
+  alt: 'Final slide from RDRC'
 ---
 
 [github]: http://github.com

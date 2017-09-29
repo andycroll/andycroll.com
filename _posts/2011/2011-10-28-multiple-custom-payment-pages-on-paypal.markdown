@@ -6,8 +6,9 @@ category: development
 redirect_from:
   - /2011/10/28/multiple-custom-payment-pages-on-paypal/
   - /ruby/multiple-custom-payment-pages-on-paypal/
-image: '2011/multiple-custom-payment-pages-on-paypal'
-imagealt: 'Paypal'
+image:
+  base: '2011/multiple-custom-payment-pages-on-paypal'
+  alt: 'Paypal'
 ---
 
 Paypal allows merchants to customize it's payment pages by adding logos and changing colors. We use this at ImpulseFlyer for our partnership with WSJ Asia.

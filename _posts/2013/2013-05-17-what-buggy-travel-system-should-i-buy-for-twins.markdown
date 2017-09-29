@@ -6,8 +6,9 @@ category: other
 redirect_from:
   - /2013/05/17/what-buggy-travel-system-should-i-buy-for-twins/
   - /life/what-buggy-travel-system-should-i-buy-for-twins/
-image: '2013/what-buggy-travel-system-should-i-buy-for-twins'
-imagealt: 'Twins'
+image:
+  base: '2013/what-buggy-travel-system-should-i-buy-for-twins'
+  alt: 'Twins'
 ---
 
 There's some simple advice for getting a twin buggy. Keep it narrow so that doors are not a problem. And you'll probably replace it later on as the kids get hardier, heavier and you want something that folds up a bit smaller.

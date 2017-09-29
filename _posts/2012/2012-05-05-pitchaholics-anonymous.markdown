@@ -6,9 +6,11 @@ category: other
 redirect_from:
   - /2012/05/05/pitchaholics-anonymous/
   - /startups/pitchaholics-anonymous/
-image: '2012/pitchaholics-anonymous'
-imagealt: 'Empty cinema chairs'
-imagecredit: 'Photo by [Felix Mooneeram](https://unsplash.com/photos/evlkOfkQ5rE) on Unsplash'
+image:
+  base: '2012/pitchaholics-anonymous'
+  alt: 'Empty cinema chairs'
+  credit: 'Felix Mooneeram'
+  source: 'https://unsplash.com/photos/evlkOfkQ5rE'
 ---
 
 Hello, I'm a startup founder and I am a Pitchaholic

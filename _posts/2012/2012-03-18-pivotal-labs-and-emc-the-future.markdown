@@ -6,8 +6,9 @@ category: other
 redirect_from:
   - /2012/03/18/pivotal-labs-and-emc-the-future/
   - /business/pivotal-labs-and-emc-the-future/
-image: '2012/pivotal-labs-and-emc-the-future'
-imagealt: 'Pivotal Labs logo'
+image:
+  base: '2012/pivotal-labs-and-emc-the-future'
+  alt: 'Pivotal Labs logo'
 ---
 
 A quick disclaimer: I know of the Pivotal guys only through working alongside the Singapore crew (including several imported SF Pivots) before they moved to [{new context}](http://newcontext.com). _This is my personal uninformed opinion._

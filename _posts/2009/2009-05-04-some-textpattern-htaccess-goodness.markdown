@@ -5,9 +5,11 @@ layout: article
 category: development
 redirect_from:
   - /2009/05/04/some-textpattern-htaccess-goodness/
-image: '2009/some-textpattern-htaccess-goodness'
-imagealt: 'Matrix Code'
-imagecredit: 'Photo by [Markus Spiske](https://unsplash.com/photos/68ZlATaVYIo) on Unsplash'
+image:
+  base: '2009/some-textpattern-htaccess-goodness'
+  alt: 'Matrix Code'
+  credit: 'Markus Spiske'
+  source: 'https://unsplash.com/photos/68ZlATaVYIo'
 ---
 
 I've made a note of the little `.htaccess` niceties I've used in the setting up sites.

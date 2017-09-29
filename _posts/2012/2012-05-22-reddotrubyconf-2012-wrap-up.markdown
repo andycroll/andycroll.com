@@ -7,8 +7,9 @@ redirect_from:
   - /2012/05/23/i-want-to-be-better/
   - /2012/05/22/reddotrubyconf-2012-wrap-up/
   - /singapore/ruby/reddotrubyconf-2012-wrap-up/
-image: '2012/reddotrubyconf-2012-wrap-up'
-imagealt: 'My back'
+image:
+  base: '2012/reddotrubyconf-2012-wrap-up'
+  alt: 'My back'
 ---
 
 Thanks to all who came, and all who spoke. The feedback I've had has been mostly lovely and for that I'm really grateful.

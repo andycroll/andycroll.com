@@ -6,9 +6,11 @@ category: other
 redirect_from:
   - /2012/12/17/leaving/
   - /life/leaving-singapore/
-image: '2012/leaving-singapore'
-imagealt: Singapore on a globe
-imagecredit: 'Photo by [chuttersnap](https://unsplash.com/photos/QkPb5g9p338) on Unsplash'
+image:
+  base: '2012/leaving-singapore'
+  alt: Singapore on a globe
+  credit: 'chuttersnap'
+  source: 'https://unsplash.com/photos/QkPb5g9p338'
 ---
 
 I've been struck by a multitude of feelings in the last few months. Joy at finding out I'm going to be a father, concern about providing for twins on a startup founder's salary, the worry of fundraising and the everyday frustration & adrenaline of startups during their early stages.

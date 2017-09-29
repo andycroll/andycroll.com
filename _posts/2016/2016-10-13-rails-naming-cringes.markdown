@@ -3,6 +3,11 @@ title: 'Rails Naming Cringes'
 description: 'God model naming expansion, laziness & reserved words.'
 layout: article
 category: ruby
+image:
+  alt: 'print letters'
+  base: '2016/rails-naming-cringes'
+  credit: 'Amador Loureiro'
+  source: 'https://unsplash.com/photos/BVyNlchWqzs'
 ---
 
 Rails has a number of naming conventions that are as deeply ingrained as the `/app` directory or `belongs_to`. However even experienced developers (including me) forget the that one of the finest things Rails ever did was to give us a ‘way things should be named’ and a place for them to go.

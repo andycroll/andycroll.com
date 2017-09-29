@@ -6,6 +6,11 @@ category: other
 redirect_from:
   - /2012/11/26/ubud-bali/
   - /travel/ubud-bali/
+image:
+  base: '2012/ubud-bali'
+  alt: 'Temple Monkey'
+  credit: 'Jared Rice'
+  source: 'https://unsplash.com/photos/O6DUoIl6NWA'
 ---
 
 Ubud is probably our favourite place in Asia. We've been at least 5 times in six years.

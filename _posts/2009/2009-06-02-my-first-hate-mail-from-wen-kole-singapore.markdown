@@ -6,9 +6,11 @@ categories: other
 redirect_from:
   - /2009/06/02/my-first-hate-mail-from-wen-kole-singapore/
   - /life/singapore/my-first-hate-mail-from-wen-kole-singapore/
-image: '2009/my-first-hate-mail-from-wen-kole-singapore'
-imagealt: 'Pen and paper'
-imagecredit: 'Photo by [Álvaro Serrano](https://unsplash.com/photos/hjwKMkehBco) on Unsplash'
+image:
+  base: '2009/my-first-hate-mail-from-wen-kole-singapore'
+  alt: 'Pen and paper'
+  credit: 'Álvaro Serrano'
+  source: 'https://unsplash.com/photos/hjwKMkehBco'
 ---
 
 Today brought my first piece of hate mail since I arrived in Singapore. I can’t say I was expecting it, as Singaporeans of all ethnicities are extremely nice to foreigners.

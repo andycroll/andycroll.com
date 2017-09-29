@@ -6,9 +6,11 @@ category: development
 redirect_from:
   - /2010/06/08/the-end-of-hover/
   - /design/the-end-of-hover/
-image: '2010/the-end-of-hover'
-imagealt: 'Hummingbird'
-imagecaption: 'Photo by [Bill Williams](https://unsplash.com/photos/ozwiCDVCeiw) on Unsplash'
+image:
+  base: '2010/the-end-of-hover'
+  alt: 'Hummingbird'
+  credit: 'Bill Williams'
+  source: 'https://unsplash.com/photos/ozwiCDVCeiw'
 ---
 
 When I sat down to a redesign of the Gameplan admin interface I suddenly came to a realisation, `:hover` doesn’t work. It's entirely possible I'd skim read this somewhere, but somehow the implications for my design work had passed me by until I saw an iPad in use.

@@ -6,8 +6,9 @@ category: other
 redirect_from:
   - /2013/05/18/what-should-i-buy-for-twins/
   - /life/what-should-i-buy-for-twins/
-image: '2013/what-should-i-buy-for-twins'
-imagealt: 'Twins'
+image:
+  base: '2013/what-should-i-buy-for-twins'
+  alt: 'Twins'
 ---
 
 The glib answer to this is two of everything! But in truth there are a few things that are specific to getting set up for impending multiples.

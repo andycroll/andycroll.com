@@ -11,8 +11,10 @@ redirect_from:
  - /life/so-what-now/
  - /2012/01/13/two-thousand-eleven/
  - /life/two-thousand-eleven/
-image: 'now'
-imagealt: 'red'
+image:
+  base: 'now'
+  alt: 'red'
+description: 'The current work of Andy Croll'
 ---
 
 Running a fortnightly Ruby techniques newsletter: One Ruby Thing.

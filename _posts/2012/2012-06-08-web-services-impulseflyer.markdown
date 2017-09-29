@@ -5,9 +5,11 @@ layout: article
 category: ruby
 redirect_from:
   - /2012/06/08/impulseflyer-poster-child-for-the-cloud
-image: '2012/web-services-impulseflyer'
-imagealt: Wiring
-imagecredit: 'Photo by [Khara Woods](https://unsplash.com/photos/n4Lw7zArIk) on Unsplash'
+image:
+  base: '2012/web-services-impulseflyer'
+  alt: Wiring
+  credit: 'Khara Woods'
+  source: 'https://unsplash.com/photos/n4Lw7zArIk'
 ---
 
 I thought it'd be interesting to share the tools and services we use to run ImpulseFlyer. A lot of these are personal preferences as I'm in charge of the technology/design side of things. And we pay _real money_ to most of these people, the biggest endorsement I can offer.

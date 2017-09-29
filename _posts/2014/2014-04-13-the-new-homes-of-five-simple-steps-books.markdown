@@ -6,8 +6,9 @@ category: other
 redirect_from:
   - /2014/04/13/the-new-homes-of-five-simple-steps-books/
   - /design/the-new-homes-of-five-simple-steps-books/
-image: '2014/the-new-homes-of-five-simple-steps-books'
-imagealt: 'Five Simple Steps texture'
+image:
+  base: '2014/the-new-homes-of-five-simple-steps-books'
+  alt: 'Five Simple Steps texture'
 ---
 
 With the [aquisition of Mark Boulton Design by Monotype](http://markboulton.co.uk/journal/mbd-and-monotype), its publishing operation, Five Simple Steps, shut down and returned all the book rights to their respective authors. And then it was run for a little longer, by [Craig](http://craiglockwood.co.uk) & [Amy](https://twitter.com/AmieNLockwood), but then... sadly no more.

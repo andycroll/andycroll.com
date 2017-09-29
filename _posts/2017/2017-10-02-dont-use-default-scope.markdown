@@ -3,15 +3,19 @@ title: "Don’t use default_scope. Ever."
 description: 'Using `default_scope` will lead to many hours of bug hunting. Don’t do it to yourself.'
 layout: article
 category: ruby
-image: '2017/dont-use-default-scope'
-imagealt: 'default_scope code'
-description: ''
-
+image:
+  base: '2017/dont-use-default-scope'
+  alt: 'default_scope code'
 ---
+
+You have a blog system with posts that can be set to be hidden, for when you are writing a draft.
 
 ## Instead of…
 
+...`default_scope`.
+
 ```ruby
+# app/models/post.rb
 class Post < ActiveRecord::Base
   default_scope { where(hidden: false) }
 end
@@ -19,17 +23,16 @@ end
 
 ## Use…
 
-Explicit scopes.
-
-### `app/models/post.rb`
+...explicit scopes.
 
 ```ruby
+# app/models/post.rb
 class Post < ActiveRecord::Base
   scope, :published -> { where(hidden: false) }
 end
 ```
 
-### then use like…
+...and use like…
 
 ```ruby
 Post.published

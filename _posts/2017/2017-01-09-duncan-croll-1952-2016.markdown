@@ -5,8 +5,9 @@ layout: article
 category: other
 redirect_from:
   - /life/duncan-croll-1952-2016/
-image: '2017/duncan-croll'
-imagealt: 'Dad and me'
+image:
+  base: '2017/duncan-croll'
+  alt: 'Dad and me'
 ---
 
 People have always told me I remind them of my Dad.

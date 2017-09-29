@@ -6,9 +6,11 @@ category: other
 redirect_from:
   - /2012/04/02/south-africa-mala-mala-cape-town/
   - /travel/south-africa-mala-mala-cape-town/
-image: '2012/south-africa-mala-mala-cape-town'
-imagealt: Cape Town
-imagecredit: 'Photo by [Carolinie Cavalli](https://unsplash.com/photos/fymPCbDLGj8) on Unsplash'
+image:
+  base: '2012/south-africa-mala-mala-cape-town'
+  alt: Cape Town
+  credit: 'Carolinie Cavalli'
+  source: 'https://unsplash.com/photos/fymPCbDLGj8'
 ---
 
 Just a post to summarise the amazing trip I just had, so I can point people to 'stuff to do' in South Africa.

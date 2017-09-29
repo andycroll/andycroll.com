@@ -6,9 +6,11 @@ category: other
 redirect_from:
   - /2013/05/20/tumblr-founder-shares-and-dilution/
   - /startups/tumblr-founder-shares-and-dilution/
-image: '2013/tumblr-founder-shares-and-dilution'
-imagealt: 'One dollar'
-imagecredit: Photo by [NeONBRAND](https://unsplash.com/photos/8fDhgAN5zG0) on Unsplash
+image:
+  base: '2013/tumblr-founder-shares-and-dilution'
+  alt: 'One dollar'
+  credit: 'NeONBRAND'
+  source: 'https://unsplash.com/photos/8fDhgAN5zG0'
 ---
 
 _Disclaimer: There is a __lot__ of supposition, and then extrapolation on top, in this article. It's pinch of salt time._

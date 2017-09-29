@@ -3,8 +3,11 @@ title: 'Benchmarking each_with_object Against inject when building Hashes from A
 description: 'Building hashes in Ruby in multiple ways. What’s fastest?'
 layout: article
 category: ruby
-image: '2014/benchmarking-each_with_object-against-inject-when-building-hashes-from-arrays'
-imagealt: Stopwatch
+image:
+  base: '2014/benchmarking-each_with_object-against-inject-when-building-hashes-from-arrays'
+  alt: Stopwatch
+  credit: 'Sabri Tuzcu'
+  source: 'https://unsplash.com/photos/r1EwRkllP1I'
 ---
 
 I read [Better Hash Injection using each_with_object](http://technology.customink.com/blog/2014/10/14/better-hash-injection-using-each-with-object/) with interest.

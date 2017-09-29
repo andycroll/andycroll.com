@@ -7,9 +7,11 @@ redirect_from:
   - /mac/ruby/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
   - /2014/01/15/the-simplest-possible-serious-ruby-on-rails-setup-on-mavericks/
   - /mac/ruby/simplest-ruby-on-rails-setup-on-macos/
-image: '2016/simplest-ruby-on-rails-setup-on-macos'
-imagealt: 'Mac laptop'
-imagecredit: 'Photo by [chuttersnap](https://unsplash.com/photos/alCEnNmzhPE) on Unsplash'
+image:
+  base: '2016/simplest-ruby-on-rails-setup-on-macos'
+  alt: 'Mac laptop'
+  credit: 'chuttersnap'
+  source: 'https://unsplash.com/photos/alCEnNmzhPE'
 ---
 
 I try and keep my development environment as 'light' as possible, so with that in mind here's my serious (in that I make a living from coding) but simple Ruby and Rails setup for a Mac.
