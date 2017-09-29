@@ -13,18 +13,6 @@ Here are a couple of things that make my ‘naming spidey sense’ tingle when I
   <footer class="blockquote-footer">Harold Abelson <cite title="Source Title">Structure and Interpretation of Computer Programs</cite></footer>
 </blockquote>
 
-
-## Not using `_at` & `_on` for times and dates
-
-Often diving into a `schema.rb` reveals `something_date` as a field name. And it’s a `datetime`.
-
-Rails’ own timestamps are `updated_at` and `created_at` and it’s a good idea to suffix times in the same way. A `due_on` field lets you know to expect a date and gives instant feedback to readers of your code about the expected data stored in the database.
-
-I do allow myself the occasional `_until` if it makes the variable easier to read.
-
-For me, it also _makes me think harder_ about the right name. (Spoilers: this is the secret point of this article)
-
-
 ## God model naming expansion
 
 God models, the bane of many apps. Giant, unwieldy, immobile mountains of code clustered around the main concepts of your application attracting quasi-related code.
