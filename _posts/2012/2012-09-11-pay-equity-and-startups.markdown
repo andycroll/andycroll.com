@@ -71,6 +71,6 @@ It is also worth asking what the founders plans really are for the business. How
 
 ## In Summary
 
-Hoping that other people will look out for you, if they aren't related or married to you is possible, but mostly unlikely, in a work context. So be smart.
+Hoping that other people will look out for you, if they aren’t related or married to you is possible, but mostly unlikely, in a work context. So be smart.
 
 Make sure you know the maths of your salary vs equity and most importantly: know why you are signing up.

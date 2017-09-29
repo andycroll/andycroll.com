@@ -90,6 +90,6 @@ Then you can just ship it, Google'll start indexing your AMP pages in a jiffy.
 
 ## Further information
 
-The details for further validity of AMP files can be found in more detail in [their documentation](https://www.ampproject.org/docs/guides/validate.html). Note that AMP _needs_ validation to be indexed by Google. You can't "get away with it" like you can with vanilla HTML.
+The details for further validity of AMP files can be found in more detail in [their documentation](https://www.ampproject.org/docs/guides/validate.html). Note that AMP _needs_ validation to be indexed by Google. You can’t "get away with it" like you can with vanilla HTML.
 
 For further "what can I do with AMP" questions, refer to [the AMP documentation](https://www.ampproject.org/docs/get_started/create.html).

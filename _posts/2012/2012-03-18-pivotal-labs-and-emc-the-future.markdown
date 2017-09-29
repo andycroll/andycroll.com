@@ -30,9 +30,9 @@ There is of course the _chance_ that Pivotal will be absorbed, dissipate and cea
 
 ## The Dirty Truth
 
-I worked at Accenture for four years, although I wasn't part of any engineering teams while I was exposed to the multi-million dollar engineering contracts.
+I worked at Accenture for four years, although I wasn’t part of any engineering teams while I was exposed to the multi-million dollar engineering contracts.
 
-The truth of the enterprise software development world is that they outsource to either low-cost locations and/or low-skilled/paid workers. Any investment is done by wrapping the engineering functions in a professional wrapper of project managers. This keeps the client somewhat happy, but results in mostly crappy software and a demotivated engineering team. They often don't even use version control.
+The truth of the enterprise software development world is that they outsource to either low-cost locations and/or low-skilled/paid workers. Any investment is done by wrapping the engineering functions in a professional wrapper of project managers. This keeps the client somewhat happy, but results in mostly crappy software and a demotivated engineering team. They often don’t even use version control.
 
 This is the opposite of Pivotal Labs. Their process is rock solid and focussed on deliverable, well-engineered software delivered in an iterative manner. All delivered by strong engineers with good communication skills.
 

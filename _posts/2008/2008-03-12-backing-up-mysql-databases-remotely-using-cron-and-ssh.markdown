@@ -48,7 +48,7 @@ ssh serveradmin%mt_domain.com@sXXXX.gridserver.com
 mt_domain.com@cl01:~$
 ```
 
-If if doesn't connect you'll need to login to the (mt) Control Panel for your primary domain and ensure that the SSH option within 'Server Administrator' is set to be enabled.
+If if doesn’t connect you'll need to login to the (mt) Control Panel for your primary domain and ensure that the SSH option within 'Server Administrator' is set to be enabled.
 
 If it works? Well done you've connected to the database (mediatemple) server through the backup (Dreamhost) server. Now type...
 
@@ -80,7 +80,7 @@ With that done it's time to put the public key on the database (mt) server...
 scp .ssh/id_dsa.pub serveradmin%mt_domain.com@sXXXX.gridserver.com:
 ```
 
-*Don't forget the trailing colon*. And you'll still need to type your password at this stage. Then ssh to you database (mt) server...
+*Don’t forget the trailing colon*. And you'll still need to type your password at this stage. Then ssh to you database (mt) server...
 
 ```
 ssh serveradmin%mt_domain.com@sXXXX.gridserver.com

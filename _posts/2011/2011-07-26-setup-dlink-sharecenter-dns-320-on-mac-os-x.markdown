@@ -27,7 +27,7 @@ Once all sorted (you might have to log back in due to aggressive timeouts), run 
 
 Then you probably want to head get the latest firmware from your local DLink site… mine is [Singapore](http://www.dlink.com.sg/dns-320/) but you might be in the [UK](http://www.dlink.com/uk/en/support/product/dns-320-2-bay-sharecenter-network-storage-enclosure) or somewhere else.
 
-There are dire warnings about installing the correct geographical version, how much of that is true I don't know, best to be safe though. You might want to grab the [updated manual too](http://www.dlink.com/uk/en/support/product/dns-320-2-bay-sharecenter-network-storage-enclosure?revision=deu_revb#downloads). You need to find the *Maintenance > Firmware Upgrade* page.
+There are dire warnings about installing the correct geographical version, how much of that is true I don’t know, best to be safe though. You might want to grab the [updated manual too](http://www.dlink.com/uk/en/support/product/dns-320-2-bay-sharecenter-network-storage-enclosure?revision=deu_revb#downloads). You need to find the *Maintenance > Firmware Upgrade* page.
 
 Then once you've uploaded, rebooted and signed in (using your new password) you can do important stuff like turn on AFP (apple native networking) in *Management > Application Management*.
 

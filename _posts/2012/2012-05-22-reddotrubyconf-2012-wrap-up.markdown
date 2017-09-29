@@ -70,7 +70,7 @@ I need to:
 * Label veggie options
 * Perhaps provide some fruit in the breaks
 
-Wifi remained a hot topic. Some loved that they couldn't distract themselves, some felt like they'd lost a limb. Pot-a-to, Po-ta-toe.
+Wifi remained a hot topic. Some loved that they couldn’t distract themselves, some felt like they'd lost a limb. Pot-a-to, Po-ta-toe.
 
 Potentially do an hour of lightening talks at some stage, I'll be looking for volunteers to run this!
 
@@ -92,7 +92,7 @@ I want to think about the [stuff that no-one else is](http://twitter.com/winston
 And I want to build a [musical robot](http://twitter.com/sausheong) that will, one day, rule us all.
 
 I want to [understand how my software works](http://twitter.com/gnufied). Or why [it's slow](http://twitter.com/hone02).
-I want to do things in [ways you wouldn't think of](http://twitter.com/hasclass). Or prepare for [other people to use my work](http://twitter.com/sutto) in new and interesting ways.
+I want to do things in [ways you wouldn’t think of](http://twitter.com/hasclass). Or prepare for [other people to use my work](http://twitter.com/sutto) in new and interesting ways.
 I want the world to know [what I'm *fucking* doing](http://twitter.com/walski).
 And I [want to pair](http://twitter.com/luweidewei) with my Jedi Masters and my best friend.
 

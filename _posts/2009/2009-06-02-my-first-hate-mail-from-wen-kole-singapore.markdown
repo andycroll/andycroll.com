@@ -11,7 +11,7 @@ imagealt: 'Pen and paper'
 imagecredit: 'Photo by [Álvaro Serrano](https://unsplash.com/photos/hjwKMkehBco) on Unsplash'
 ---
 
-Today brought my first piece of hate mail since I arrived in Singapore. I can't say I was expecting it, as Singaporeans of all ethnicities are extremely nice to foreigners.
+Today brought my first piece of hate mail since I arrived in Singapore. I can’t say I was expecting it, as Singaporeans of all ethnicities are extremely nice to foreigners.
 
 A quick [google search for our racist pal](http://www.google.com.sg/search?q=wen+kole) threw up one previously aired [racist epithet from Wen Kole](http://singaporeelection.blogspot.com/2006/10/mp-wee-siew-kim-offers-no-apology.html#comment-116189010590853955) from 2006.
 
@@ -42,7 +42,7 @@ Firstly, Africa is not in Asia, and I suspect any geographically accurate map of
 
 Secondly, population demographics by their very nature are an empirical measure of who is living in the country, and there are white people walking about. I've seen them. FYI, when it comes to form-filling I usually tick 'Other' because I'm not one of the three offered ethnicities, that's probably what they mean by 'Other'.
 
-Now to the issue of your rather curious nationalistic 'anyone but the white guy' racism, I don't know quite where to begin!
+Now to the issue of your rather curious nationalistic 'anyone but the white guy' racism, I don’t know quite where to begin!
 
 Singapore is a country built on trade; the coming and going of outsiders, their goods and skills providing benefits to each other and those who live here. In fact the father of Singapore has been [recognized for his promotion of international trade and industry](http://www.imperial.ac.uk/P3736.htm) and co-operation with the UK on education initiatives.
 
@@ -67,9 +67,9 @@ Pleasingly (for me) you're in a crazy minority of your own, the racial fairness 
 > Based on justice and equality
 > So as to achieve happiness, prosperity & progress for our nation
 
-I don't see anything in there about telling 'white people' to go home.
+I don’t see anything in there about telling 'white people' to go home.
 
 Perhaps you'd like to discuss, in person, over coffee or a beer? I'm buying, but I reserve the right to think that you are an ignorant racist pillock.
 
 Andy
-"pro-everyone who isn't an an arsehole"
+"pro-everyone who isn’t an an arsehole"

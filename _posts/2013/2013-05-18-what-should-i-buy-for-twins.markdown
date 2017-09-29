@@ -20,7 +20,7 @@ We've done a mixture of second hand, borrowed, gifts, off eBay and buying new. W
 
 ## Buggy / Travel System
 
-This is enough of a topic that I've separated it off. [Which Buggy should I buy for twins?](/life/what-buggy-travel-system-should-i-buy-for-twins)
+This is enough of a topic that I've separated it off. [Which Buggy should I buy for twins?](/other/what-buggy-travel-system-should-i-buy-for-twins)
 
 ## Sleeping
 
@@ -66,7 +66,7 @@ Also don’t bother with the third party refills, just buy a load of official on
 * [Nappy Bins](http://www.amazon.co.uk/dp/B000UODTXG/ref=nosim?tag=deepcalmcom)
 * [Refill cartridges](http://www.amazon.co.uk/dp/B00143XJ7I/ref=nosim?tag=deepcalmcom)
 
-As for the nappies themselves: Pampers - good, Huggies - didn't seem to fit well and Sainsbury’s own brand - just as good and half the price.
+As for the nappies themselves: Pampers - good, Huggies - didn’t seem to fit well and Sainsbury’s own brand - just as good and half the price.
 
 ——
 

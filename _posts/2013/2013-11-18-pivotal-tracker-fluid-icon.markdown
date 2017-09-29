@@ -14,7 +14,7 @@ _Updated for Yosemite's Icon Grid on 29th October._
 
 I prefer to use a [fluid app](http://fluidapp.com) for the more 'app-like' websites I keep open all day and the main tool that gets used like this in my life is [Pivotal Tracker](http://pivotaltracker.com).
 
-They changed their logo over the weekend and I needed a Mac OS X icon. They don't provide a large enough version on their site, so I quickly rebuilt it using [Sketch](http://www.bohemiancoding.com/sketch/).
+They changed their logo over the weekend and I needed a Mac OS X icon. They don’t provide a large enough version on their site, so I quickly rebuilt it using [Sketch](http://www.bohemiancoding.com/sketch/).
 
 [![Pivotal Tracker 2013: Fluid Icon](/images/2013/pivotal-tracker-fluid-icon-2013.png)](/images/2013/pivotal-tracker-fluid-icon-2013.png)
 

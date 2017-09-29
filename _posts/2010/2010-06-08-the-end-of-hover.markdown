@@ -11,11 +11,11 @@ imagealt: 'Hummingbird'
 imagecaption: 'Photo by [Bill Williams](https://unsplash.com/photos/ozwiCDVCeiw) on Unsplash'
 ---
 
-When I sat down to a redesign of the Gameplan admin interface I suddenly came to a realisation, `:hover` doesn't work. It's entirely possible I'd skim read this somewhere, but somehow the implications for my design work had passed me by until I saw an iPad in use.
+When I sat down to a redesign of the Gameplan admin interface I suddenly came to a realisation, `:hover` doesn’t work. It's entirely possible I'd skim read this somewhere, but somehow the implications for my design work had passed me by until I saw an iPad in use.
 
 As so eloquently pointed out in [this article](http://www.roughlydrafted.com/2010/02/20/an-adobe-flash-developer-on-why-the-ipad-cant-use-flash/) this lack of hover (along with the technical and performance issues) is one of the reasons making the iPad run flash is not something Apple are keen on.
 
-Apple's own notes even suggest that [javascript onmouseover over and CSS hover events maybe unreliable](http://developer.apple.com/safari/library/technotes/tn2010/tn2262/index.html#//apple_ref/doc/uid/DTS40009577-CH1-DontLinkElementID_6). I did also discover an article that suggests the iPad does in some cases support the [javascript method](http://billhiggins.us/blog/2010/04/05/the-ipad-and-onmouseover/) , but as I don't have an iPad (due to Singapore's 3rd tier release status) I can't tell you.
+Apple's own notes even suggest that [javascript onmouseover over and CSS hover events maybe unreliable](http://developer.apple.com/safari/library/technotes/tn2010/tn2262/index.html#//apple_ref/doc/uid/DTS40009577-CH1-DontLinkElementID_6). I did also discover an article that suggests the iPad does in some cases support the [javascript method](http://billhiggins.us/blog/2010/04/05/the-ipad-and-onmouseover/) , but as I don’t have an iPad (due to Singapore's 3rd tier release status) I can’t tell you.
 
 So my proposition is this: `:hover` as an web interface design tool going forward is going to be less and less important.
 

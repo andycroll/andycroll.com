@@ -25,7 +25,7 @@ If you prefer, have the 'www' I'm no fascist, it's more of a tidiness thing. But
 
 ## Removing the trailing slash
 
-When using a CMS such as textpattern, that uses URL rewriting, you can often get the same url with a trailing slash, I've found a way to remove that. Note the two lines that single out the `mint` (analytics) and `rpc` (connection for desktop blogging software) directories, if these aren't in there the respective service will not function. This works for any directory, just copy the line and replace the name.
+When using a CMS such as textpattern, that uses URL rewriting, you can often get the same url with a trailing slash, I've found a way to remove that. Note the two lines that single out the `mint` (analytics) and `rpc` (connection for desktop blogging software) directories, if these aren’t in there the respective service will not function. This works for any directory, just copy the line and replace the name.
 
 ```
 RewriteCond %{REQUEST_FILENAME} !-f

@@ -38,7 +38,7 @@ The benefit is the travel systems hold their value pretty well and your local TA
 
 # Car Seats
 
-You'll want the Maxi-Cosi Pebble, which seems to be the de-facto car seat of choice in the UK. It's not recommended to get second hand car seats, in the same way you shouldn't get second hand bike helmets, you'll want to know they are undamaged.
+You'll want the Maxi-Cosi Pebble, which seems to be the de-facto car seat of choice in the UK. It's not recommended to get second hand car seats, in the same way you shouldn’t get second hand bike helmets, you'll want to know they are undamaged.
 
 * [Maxi Cosi Pebble](http://www.amazon.co.uk/dp/B001ET6P7I/ref=nosim?tag=deepcalmcom)
 

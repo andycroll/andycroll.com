@@ -44,7 +44,7 @@ In this case `body` would be a better choice.
 
 This is simply naming something the same as a reserved word in Ruby or Rails: `request`, `action`, `require`, `display`, `type`.
 
-There are lots of examples, some will break, some will give you weird side effects. They tend to be quite generic, which is probably a sign you haven't probably thought about your naming enough.
+There are lots of examples, some will break, some will give you weird side effects. They tend to be quite generic, which is probably a sign you haven’t probably thought about your naming enough.
 
 
 ## Not changing “legacy” field names

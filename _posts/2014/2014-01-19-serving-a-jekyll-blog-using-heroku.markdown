@@ -64,7 +64,7 @@ bundle
 
 ## Ignoring
 
-You don't want to have to generate your site and check it in before you deploy, let's remove our error-prone-selves from the process...
+You don’t want to have to generate your site and check it in before you deploy, let's remove our error-prone-selves from the process...
 
 Create a `.gitignore` file with the following line, stopping your locally generated site from being committed.
 

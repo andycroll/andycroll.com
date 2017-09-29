@@ -49,11 +49,11 @@ My principles for the conference were pretty simple.
 
 <span class="run-in">Single track.</span> I personally *hate* multiple tracks; you always feel like you're missing out on the 'good stuff' and people tend to drift in and out of the sessions. Plus it's easier to control the quality of the content if there is less of it.
 
-My solution to a potential lack of variety was to opt for short talks, of 20 minutes, in the afternoon. This had the benefit of adapting to the shorter after lunch attention span of the audience as well as protecting against individual topics being poorly presented or simply not holding the interest of a section of the audience. Thankfully this wasn't the case, even though some of the afternoon speakers were doing so for the first time.
+My solution to a potential lack of variety was to opt for short talks, of 20 minutes, in the afternoon. This had the benefit of adapting to the shorter after lunch attention span of the audience as well as protecting against individual topics being poorly presented or simply not holding the interest of a section of the audience. Thankfully this wasn’t the case, even though some of the afternoon speakers were doing so for the first time.
 
-<span class="run-in">Badges.</span> Conference badges are to let other people know your name when you are the 40th person they have met that morning, not for reminding you where you are. Most conference badges forget this, I made sure I didn't.
+<span class="run-in">Badges.</span> Conference badges are to let other people know your name when you are the 40th person they have met that morning, not for reminding you where you are. Most conference badges forget this, I made sure I didn’t.
 
-I also wanted the badge to contain critical information like the schedule, printing a load of booklets that nobody wants or needs was time I didn't want to invest.
+I also wanted the badge to contain critical information like the schedule, printing a load of booklets that nobody wants or needs was time I didn’t want to invest.
 
 <span class="run-in">Caffeine is important, as is food.</span> I hate the big vats of coffee that sit and stew unappetisingly for the whole day, so I stole an idea from SchnitzelConf which was to run Nespresso-esque coffee machines and let the engineers figure it out. _I am the best customer ever at the Bras Basah branch of Coffee Bean & Tea Leaf_. Plus I was able to gift the machines to the guys who helped me out the most during the two days.
 
@@ -61,7 +61,7 @@ We are also the only Ruby conference ever to provide Asian Red Bull as a mid-aft
 
 250 people drink a lot. Jason and I filled a family sedan with bottled water and Coke Zero from a local hypermarket. Twice. I chose those particular drinks because I knew that I would eventually drink anything that was left over, but there was hardly anything left.
 
-The caterer was excellent. As we didn't have time to do a lot of testing and tasting, we truly got lucky on this one.
+The caterer was excellent. As we didn’t have time to do a lot of testing and tasting, we truly got lucky on this one.
 
 <span class="run-in">Be pessimistic.</span> My initial estimate for the conference was about 100-120 attendees on a single day. This was my first conference so I wanted to minimize my risk and amount of work! I was encouraged to aim a bit bigger, in particular by Chris, who always had the vision that this could be a bigger event. But I designed the event so we could grow to accommodate more people if the demand was there.
 
@@ -76,11 +76,11 @@ Without their early commitment I could not have made this event happen, they pro
 [viki]: http://viki.com
 [rubify]: http://rubify.com
 
-<span class="run-in">Swag that isn’t rubbish.</span> I wanted to make sure that whatever was in the conference goodie bag was useful. I shipped a load of high-quality Field Notes notebooks from the US and hand stamped each one: custom printed was more expensive and only availible in black. For t-shirts my mission was simple, don't make them so hideous that no-one will wear them afterwards. I hope I succeeded. The real trick was in trying not to order too many or too few, and in the right sizes.
+<span class="run-in">Swag that isn’t rubbish.</span> I wanted to make sure that whatever was in the conference goodie bag was useful. I shipped a load of high-quality Field Notes notebooks from the US and hand stamped each one: custom printed was more expensive and only availible in black. For t-shirts my mission was simple, don’t make them so hideous that no-one will wear them afterwards. I hope I succeeded. The real trick was in trying not to order too many or too few, and in the right sizes.
 
 <span class="run-in">Don’t be afraid of deep-dive topics.</span> Initially I probably erred on the side of less technical topics, but as the tickets sold and the audience became clearer I encouraged the morning sessions to up their technical quotient, I was also able to pick more technical talks for the afternoon slots. In retrospect we could perhaps have gone further.
 
-I did try and group rough themes together but didn't have an overall premise for the two days. Talks tended to coalesce naturally into themes as the conference goes on and speakers react to earlier talks. I think I'd feel a bit more comfortable to curate the topics a little more in future.
+I did try and group rough themes together but didn’t have an overall premise for the two days. Talks tended to coalesce naturally into themes as the conference goes on and speakers react to earlier talks. I think I'd feel a bit more comfortable to curate the topics a little more in future.
 
 ### Suppliers
 
@@ -188,6 +188,6 @@ Once again unsurprising to see the vast majority of attendees were full-time rub
 
 ### T-shirt sizes
 
-Finally a chart that might be of use to organizers of other geek conferences. Ordering the right number of T-shirts is a tricky job, the lead times are pretty long and you want everyone to get one they can wear and you don't want to have to order too many! I think my sample size is pretty typical of a geek event, feel free to apply these percentages to your own event!
+Finally a chart that might be of use to organizers of other geek conferences. Ordering the right number of T-shirts is a tricky job, the lead times are pretty long and you want everyone to get one they can wear and you don’t want to have to order too many! I think my sample size is pretty typical of a geek event, feel free to apply these percentages to your own event!
 
 ![T-shirt sizes](/images/2011/rdrc2011-tshirt-size.png)

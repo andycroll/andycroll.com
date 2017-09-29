@@ -24,7 +24,7 @@ The reason for writing this? Managed to nuke my machine's install and thus had a
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-You'll want to install some dependancies. You'll also need gcc on Mavericks to install rubies younger than 2.0.
+You'll want to install some dependancies. You'll also need gcc on modern macOS to install rubies younger than 2.0.
 
 ```shell
 brew install gdbm libffi libyaml openssl readline
@@ -98,7 +98,7 @@ cd yourapplicationname
 It is good practice to include a `.ruby-version` file in the root of your app. It'll look like this if you're on the latest version of ruby.
 
 ```ruby
-2.4.1
+2.4.2
 ```
 
 But otherwise, job done.
