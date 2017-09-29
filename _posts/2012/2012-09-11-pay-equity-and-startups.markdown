@@ -1,5 +1,6 @@
 ---
 title: 'Pay, Equity and Startups'
+description: 'Advice for when you’re asked to take a pay cut because it’s a startup."
 layout: article
 category: other
 redirect_from:

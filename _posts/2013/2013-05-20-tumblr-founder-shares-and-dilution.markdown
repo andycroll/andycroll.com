@@ -1,5 +1,6 @@
 ---
 title: "Founder Shares & Dilution at Tumblr: How Much Did The Founders Make?"
+description: 'Supposition, guesses and enormous amounts of money.'
 layout: article
 category: other
 redirect_from:

@@ -1,5 +1,6 @@
 ---
 title: 'Furiously Paddling Underneath'
+description: 'Thoughts on Viki’s success'
 layout: article
 category: other
 redirect_from:

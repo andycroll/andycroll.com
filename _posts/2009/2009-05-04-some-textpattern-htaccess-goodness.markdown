@@ -1,5 +1,6 @@
 ---
-title: "Some TextPattern .htaccess Goodness"
+title: 'Some TextPattern .htaccess Goodness'
+description: 'Basics.'
 layout: article
 category: development
 redirect_from:

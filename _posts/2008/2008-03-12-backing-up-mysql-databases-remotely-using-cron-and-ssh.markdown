@@ -1,5 +1,6 @@
 ---
 title: "Backing Up Mysql Databases Remotely Using cron & ssh"
+description: 'Detailed bash scripts included.'
 layout: article
 category: development
 redirect_from:

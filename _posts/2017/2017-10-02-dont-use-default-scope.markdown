@@ -1,5 +1,6 @@
 ---
 title: "Don’t use default_scope. Ever."
+description: 'Using `default_scope` will lead to many hours of bug hunting. Don’t do it to yourself.'
 layout: article
 category: ruby
 image: '2017/dont-use-default-scope'

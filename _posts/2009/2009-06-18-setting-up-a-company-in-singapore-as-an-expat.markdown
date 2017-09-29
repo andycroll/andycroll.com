@@ -1,5 +1,6 @@
 ---
 title: "Setting up a Company in Singapore as an Expat"
+description: 'Diving around the bureaucracy.'
 layout: article
 category: other
 redirect_from:

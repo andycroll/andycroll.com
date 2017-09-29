@@ -1,5 +1,6 @@
 ---
 title: Running RedDotRubyConf 2011
+description: 'Details of the first year.'
 layout: article
 category: other
 redirect_from:

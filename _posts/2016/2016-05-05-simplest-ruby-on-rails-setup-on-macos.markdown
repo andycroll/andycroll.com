@@ -1,5 +1,6 @@
 ---
-title: 'Simple Ruby/Rails Setup on MacOS'
+title: 'Simple Ruby/Rails Setup on macOS'
+description: 'A super-light Rails setup for modern macOS'
 layout: article
 category: ruby
 redirect_from:

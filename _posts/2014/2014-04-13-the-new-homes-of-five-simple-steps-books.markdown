@@ -1,5 +1,6 @@
 ---
 title: 'The New Homes of Five Simple Steps Books'
+description: 'Five Simple Steps is gone. But the books live on.'
 layout: article
 category: other
 redirect_from:

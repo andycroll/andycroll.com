@@ -1,5 +1,6 @@
 ---
 title: "What Buggy/Travel System Should I Buy For Twins?"
+description: 'The best way to push two around at once.'
 layout: article
 category: other
 redirect_from:

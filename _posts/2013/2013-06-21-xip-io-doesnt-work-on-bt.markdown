@@ -1,5 +1,6 @@
 ---
-title: "xip.io Doesn't Work on BT, Fix It"
+title: "xip.io Doesn’t Work on BT, Fix It"
+description: 'Telecom provider modems and routers are terrible for web development.'
 layout: article
 category: development
 redirect_from:

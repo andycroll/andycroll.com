@@ -1,5 +1,6 @@
 ---
-title: "South Africa: Mala Mala & Cape Town"
+title: 'South Africa: Mala Mala & Cape Town'
+description: 'Recommendations.'
 layout: article
 category: other
 redirect_from:

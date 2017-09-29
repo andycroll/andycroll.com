@@ -1,5 +1,6 @@
 ---
 title: My First Hate Mail from Wen Kole, Singapore
+description: 'And a response.'
 layout: article
 categories: other
 redirect_from:

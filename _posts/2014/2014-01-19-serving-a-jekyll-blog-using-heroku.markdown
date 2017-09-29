@@ -1,5 +1,6 @@
 ---
 title: Serving a Jekyll Blog using Heroku
+description: 'Jekyll + Heroku = 💜'
 layout: article
 category: ruby
 redirect_from:

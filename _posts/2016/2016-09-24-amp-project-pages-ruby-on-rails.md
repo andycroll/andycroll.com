@@ -1,5 +1,6 @@
 ---
 title: 'AMP Project Pages on Ruby on Rails'
+description: 'AMP pages can provide a enhanced SEO, and can be delivered easily from Rails.'
 layout: article
 category: ruby
 image: '2016/amp-project-pages-ruby-on-rails'

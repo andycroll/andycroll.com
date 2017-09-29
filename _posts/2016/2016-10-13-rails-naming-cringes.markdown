@@ -1,5 +1,6 @@
 ---
 title: 'Rails Naming Cringes'
+description: 'God model naming expansion, laziness & reserved words.'
 layout: article
 category: ruby
 ---

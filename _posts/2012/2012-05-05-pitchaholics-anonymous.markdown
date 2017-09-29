@@ -1,5 +1,6 @@
 ---
-title: "Pitchaholics Anonymous"
+title: 'Pitchaholics Anonymous'
+description: 'Make things for customers, do not constantly pitch.'
 layout: article
 category: other
 redirect_from:

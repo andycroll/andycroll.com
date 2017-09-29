@@ -1,5 +1,6 @@
 ---
 title: "The end of :hover?"
+description: 'As we move to fingers as a primary input device.'
 layout: article
 category: development
 redirect_from:

@@ -1,5 +1,6 @@
 ---
 title: 'Duncan Croll, 1952—2016'
+description: 'People have always told me I remind them of my Dad.'
 layout: article
 category: other
 redirect_from:

@@ -1,5 +1,6 @@
 ---
 title: "RedDotRubyConf 2012: Wrap up"
+description: 'Those were the days my friends.'
 layout: article
 category: ruby
 redirect_from:

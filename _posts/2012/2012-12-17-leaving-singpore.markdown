@@ -1,5 +1,6 @@
 ---
 title: "Leaving Singapore"
+description: '...after six years.'
 layout: article
 category: other
 redirect_from:

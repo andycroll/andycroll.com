@@ -1,5 +1,6 @@
 ---
 title: Multiple Custom Payment Pages on Paypal
+description: 'Why is it so hard?'
 layout: article
 category: development
 redirect_from:

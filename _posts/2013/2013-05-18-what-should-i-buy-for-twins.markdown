@@ -1,5 +1,6 @@
 ---
 title: "What Should I Buy for Twins?"
+description: 'Good things for two at once.'
 layout: article
 category: other
 redirect_from:

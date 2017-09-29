@@ -1,5 +1,6 @@
 ---
 title: "Pivotal Labs & EMC: The Future?"
+description: 'What happens when agile hits the enterprise?'
 layout: article
 category: other
 redirect_from:

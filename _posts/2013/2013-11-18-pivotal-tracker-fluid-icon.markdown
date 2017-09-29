@@ -1,5 +1,6 @@
 ---
 title: "Pivotal Tracker Fluid Icon"
+description: 'A giant wheel on which to hang your tasks'
 layout: article
 category: other
 redirect_from:

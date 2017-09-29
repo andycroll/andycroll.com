@@ -1,5 +1,6 @@
 ---
 title: Setup DLink ShareCenter DNS-320 on Mac OS X
+description: 'NAS setup on macOS.'
 layout: article
 category: other
 redirect_from:

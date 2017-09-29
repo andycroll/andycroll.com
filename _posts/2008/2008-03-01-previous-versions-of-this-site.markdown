@@ -1,5 +1,6 @@
 ---
 title: 'A little history: pre-2008 versions of this site'
+description: 'Old versions.'
 layout: article
 category: design
 redirect_from:
