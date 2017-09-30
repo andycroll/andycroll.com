@@ -1,5 +1,4 @@
 ---
-title: 'Andy Croll'
 layout: default
 description: "Freelance CTO, Rubyist, Conference Organizer, Author, Speaker, Bootstrapper & Parent of Twins."
 ---
@@ -32,20 +31,22 @@ description: "Freelance CTO, Rubyist, Conference Organizer, Author, Speaker, Boo
               every two weeks. It’s deliberately brief, focussed <span class="amp text-white">&amp;</span>
               opinionated.
             </p>
+            <hr class="d-md-none">
           </div>
         </div>
       </div>
       <div class="col-11 col-md-6">
         <ul class="list-unstyled">
-          {% for post in site.posts %}
+          {% for post in site.posts limit:3 %}
           {% if post.categories contains 'ruby' %}
           <li>
             <a href="{{ post.url }}" class="text-white">{{ post.title | titlecase }}</a>
           </li>
           {% endif %}
           {% endfor %}
+          <hr>
           <li>
-            <a href="/ruby" class="text-white">more&hellip;</a>
+            <a href="/ruby" class="text-white">more ruby articles&hellip;</a>
           </li>
         </ul>
       </div>
