@@ -8,7 +8,7 @@ image:
   alt: 'default_scope code'
 ---
 
-A `default_scope` can be applied to a model, if you would like that scope to be applied across all queries on the model. See more in the  [ActiveRecord Query Guide](http://guides.rubyonrails.org/active_record_querying.html#applying-a-default-scope) and [Rails docs](http://api.rubyonrails.org/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope).
+When you would like a scope to be applied across all queries on a model, you can use `default_scope`. See more in the [ActiveRecord Query Guide](http://guides.rubyonrails.org/active_record_querying.html#applying-a-default-scope) and [Rails docs](http://api.rubyonrails.org/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope).
 
 -----
 
@@ -36,7 +36,7 @@ class Post < ActiveRecord::Base
 end
 ```
 
-...and use like…
+...then you can do…
 
 ```ruby
 Post.published
@@ -44,15 +44,15 @@ Post.published
 
 ## But why?
 
-Two reasons. Both to do with later confusion and bug hunting.
+Two reasons. Both to do with avoiding later confusion and bug hunting.
 
-Adding a default scope _also_ affects your model initialization. If you have a default scope (as in the example), your `Post.new` is defaulted to `hidden = false` whether you were expecting it or not.
+Adding a default scope affects your model initialization. In the example, `Post.new` is defaulted to `hidden = false` whether you are expecting it or not.
 
 Trying _not_ to use your defined default scope is a pain. To remove the `default_scope` when you don't need it you have to use the `unscoped` scope (!) which removes _all_ applied conditions including associations.
 
 i.e. `Post.first.comments.unscoped` would return every comment in your database, not just those for the first `Post`.
 
-The explicit use of named scopes is a clearer solution than a `default_scope` that might lead to confusion or complexity at a later date. Using `default_scope` will lead to many hours of bug hunting. Don’t do it to yourself.
+The explicit use of named scopes is a clearer solution. Using `default_scope` will lead to many hours of bug hunting. Don’t do it to yourself.
 
 
 ### Where might I use it?
