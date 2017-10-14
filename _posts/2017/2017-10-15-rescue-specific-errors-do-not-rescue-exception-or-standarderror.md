@@ -1,5 +1,5 @@
 ---
-title: 'Rescue specific errors. Don’t rescue Exception or StandardError'
+title: 'Rescue specific errors. Avoid rescuing Standard Error. Don’t rescue Exception.'
 description: 'Rescuing all the things is bad.'
 layout: article
 category: ruby
@@ -8,7 +8,7 @@ image:
   alt: 'David Hasslehoff. Smouldering.'
 ---
 
-There are many built-in error classes in Ruby & Rails. Most of these errors are subclasses of Ruby’s StandardError. [Ruby docs](http://ruby-doc.org/core-2.4.2/StandardError.html) are here.
+There are many built-in error classes in Ruby and Rails. Most of these errors are subclasses of Ruby’s StandardError. You can find more information in the relevant [Ruby docs](http://ruby-doc.org/core-2.4.2/StandardError.html).
 
 ## Instead of…
 
@@ -18,19 +18,19 @@ There are many built-in error classes in Ruby & Rails. Most of these errors are 
 def your_method
   # do something
 rescue Exception => e
-  # saved it
+  # saved ALL THE THINGS
 end
 ```
 
-## Use…
+## Or…
 
-…an implicit `rescue` that rescues `StandardError`.
+…a non-specific `rescue` that implicitly rescues `StandardError`.
 
 ```ruby
 def your_method
   # do something
-rescue => e # actually StandardError
-  # saved it
+rescue => e
+  # saved StandardError and all subclasses
 end
 ```
 
@@ -42,7 +42,9 @@ end
 def your_method
   # do something
 rescue SpecificProblemError => e
-  # saved it
+  # saved only what you meant to
+rescue AnotherProblemError => e
+  # saved a different kind of error
 end
 ```
 
@@ -50,12 +52,12 @@ end
 
 Ruby’s `Exception` is the parent class to _all_ errors. “Great” you might say, “I want to catch all errors”. But you don’t.
 
-`Exception` includes the class of errors that can occur outside your application. Things like memory errors, or `SignalException::Interrupt` (sent when you manually quit your application by hitting control-c).
+`Exception` includes the class of errors that can occur outside your application. Things like memory errors, or `SignalException::Interrupt` (sent when you manually quit your application by hitting Control-C). These are errors you _don't_ want to catch in your application as they are generally serious and related to external factors. Rescuing `Exception` can cause very unexpected behaviour.
 
-So don’t rescue `Exception`.
+`StandardError` is the parent of most Ruby and Rails errors. If you catch `StandardError` you’re doing better than catching `Exception`, but still not great. Rescuing all application-level errors might cover up unrelated bugs you don’t know about.
 
-`StandardError` is the parent of most Ruby and Rails errors. If you catch `StandardError` you’re doing much better.
+The safest approach is to rescue the error (or errors) you are expecting and deal with the consequences of that error inside the `rescue` block.
 
-The clearest approach is to only rescue the errors you are expecting. It is likely you will want to _know_ that an unusual error has occurred. So rescuing all application-level errors (via `StandardError`) might cover up bugs you don’t know about.
+In the event of an unexpected error in your application you want to know that a new error has occurred and deal with the consequences of _that_ new error inside it's own `rescue` block.
 
-Be specific to avoid nasty surprises for your users & bug hunting for you.
+Being specific with `rescue` means your code doesn't accidently swallow new errors, avoiding subtle 'swallowed' errors that lead to unexpected behaviour for your users and bug hunting for you.
