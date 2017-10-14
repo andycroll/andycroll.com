@@ -1,10 +1,10 @@
 ---
-title: 'Rescue specific errors. Avoid rescuing Standard Error. Don’t rescue Exception.'
+title: 'Rescue specific errors. Avoid rescuing StandardError. Don’t rescue Exception.'
 description: 'Rescuing all the things is bad.'
 layout: article
 category: ruby
 image:
-  base: '2017/rescue-specific-errors-do-not-rescue-exception-or-standarderror'
+  base: '2017/rescue-specific-errors-avoid-standarderror-do-not-rescue-exception'
   alt: 'David Hasslehoff. Smouldering.'
 ---
 
