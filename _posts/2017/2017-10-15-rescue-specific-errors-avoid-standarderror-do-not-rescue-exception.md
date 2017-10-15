@@ -34,9 +34,9 @@ rescue => e
 end
 ```
 
-### Or, much better…
+### Use…
 
-…rescue a specific named error.
+…`rescue` on a specific named error.
 
 ```ruby
 def your_method
@@ -54,10 +54,10 @@ Ruby’s `Exception` is the parent class to _all_ errors. “Great” you might 
 
 `Exception` includes the class of errors that can occur outside your application. Things like memory errors, or `SignalException::Interrupt` (sent when you manually quit your application by hitting Control-C). These are errors you _don't_ want to catch in your application as they are generally serious and related to external factors. Rescuing `Exception` can cause very unexpected behaviour.
 
-`StandardError` is the parent of most Ruby and Rails errors. If you catch `StandardError` you’re doing better than catching `Exception`, but still not great. Rescuing all application-level errors might cover up unrelated bugs you don’t know about.
+`StandardError` is the parent of most Ruby and Rails errors. If you catch `StandardError` you’re not introducing the problems of rescuing `Exception`, but it is not a great idea. Rescuing _all_ application-level errors might cover up unrelated bugs you don’t know about.
 
 The safest approach is to rescue the error (or errors) you are expecting and deal with the consequences of that error inside the `rescue` block.
 
-In the event of an unexpected error in your application you want to know that a new error has occurred and deal with the consequences of _that_ new error inside it's own `rescue` block.
+In the event of an unexpected error in your application you want to know that a new error has occurred and deal with the consequences of _that_ new error inside its own `rescue` block.
 
-Being specific with `rescue` means your code doesn't accidently swallow new errors, avoiding subtle 'swallowed' errors that lead to unexpected behaviour for your users and bug hunting for you.
+Being specific with `rescue` means your code doesn't accidentally swallow new errors. You avoid subtle hidden errors that lead to unexpected behaviour for your users and bug hunting for you.
