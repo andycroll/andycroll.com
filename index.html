@@ -37,7 +37,7 @@ description: "Freelance CTO, Rubyist, Conference Organizer, Author, Speaker, Boo
       </div>
       <div class="col-11 col-md-6">
         <ul class="list-unstyled">
-          {% for post in site.posts limit:5 %}
+          {% for post in site.categories['ruby'] limit:5 %}
           {% if post.categories contains 'ruby' %}
           <li>
             <a href="{{ post.url }}" class="text-white">{{ post.title | titlecase }}</a>
