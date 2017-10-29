@@ -60,7 +60,7 @@ Exploring the generated HTML reports (available in `coverage/index.html`) is a g
 
 It's important to note that measuring your test coverage of your application’s code is a blunt instrument. In fact, aiming for 100% coverage is not a noble aim, or even useful.
 
-<blockquote class="blockquote">
+<blockquote class="blockquote pl-3">
   <p class="mb-0">Some codebases with 100% test coverage will still have bugs, and some codebases with much lower coverage will not.</p>
   <footer class="blockquote-footer">@sarahmei <cite title="Source Title"><a href="https://twitter.com/sarahmei/status/819270166576058369">11 Jan 2017</a></cite></footer>
 </blockquote>
