@@ -10,11 +10,11 @@ image:
   source: 'https://unsplash.com/photos/Q8FHN3qSq2w'
 ---
 
-Pull Requests are the primary place where you explain your work. The audience for a Pull Request can be your immediate co-workers, other interested parties or even your future self.
+If you're submitting work for review, pull requests are a great way to group related changes and discuss approaches and improvements. The audience for a pull request can be your immediate co-workers, other interested parties or even your future self.
 
-It should describe the ‘what’, ‘why’ & high-level ‘how’ of the changes in your branch. It is important the description is detailed and gives the right level of contextual detail.
+It should describe the ‘what’, ‘why’ and high-level ‘how’ of the changes in your branch. It is important the description is detailed and sets the context for the changes you have made .
 
-Github offers the ability to define issue and pull request templates. See [GitHub’s documentation on Pull Request templates](https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/).
+Github offers the ability to define pull request templates. See [GitHub’s documentation on pull request templates](https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/).
 
 ## Instead of…
 
@@ -48,20 +48,18 @@ Github offers the ability to define issue and pull request templates. See [GitHu
 #### New ENV variables
 ```
 
-Each time anyone opens a Pull Request the description box is pre-filled with the markdown from this file.
+Each time anyone opens a pull request the description box is pre-filled with the markdown from this file.
 
 
 ## But why?
 
-Anything you do over and over works better if you systemise. Having a template is a solid way to help you write useful Pull Request descriptions.
+Anything you do over and over works more efficiently if you have a repeatable process to systemise it. Having a template is a solid way to help you write useful pull request descriptions, it helps you pause and answer the questions posed by the default headings in the template.
 
-This is often one of my first additions when I join a project. It helps by making me pause and answer the questions posed by the default headings in the template.
+It may well be that some pull requests don’t need all of the sections, but you can always just delete the irrelevant parts. Using this template _will_ mean you’ve thought about the information in each section, even it was only to say “nah, don’t need it”.
 
-It may well be that some Pull Requests don’t need all of the sections, but you can always just delete the irrelevant parts.
-
-Using this template _will_ mean you’ve thought about the information in each section, even it was only to say “nah, don’t need it”.
+Adding a pull request template is often one of my first additions when I join a project.
 
 
 ## Why not?
 
-You want to make life harder for everyone. Including yourself.
+This feels like a no-brainer to me, it doesn't stop you deleting the pre-filled description and writing your own. I've never regretted it.
