@@ -1,5 +1,5 @@
 ---
-title: 'Choose UUIDs for model ids in Rails'
+title: 'Choose UUIDs for model IDs in Rails'
 description: 'A little more complexity, a little more security'
 layout: article
 category: ruby
@@ -8,21 +8,22 @@ image:
   alt: 'Rainbow UUIDs'
 ---
 
-Ruby on Rails has had the [ability](https://github.com/rails/rails/pull/21762) to use UUIDs ([Universally Unique IDentifiers](https://en.wikipedia.org/wiki/Universally_unique_identifier)) for ActiveRecord models since version 5.0.
+A [universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) (UUID) is a 128-bit number used to identify information in computer systems. You might also hear ‘globally unique identifier’.
 
-These are a native column type in PostgreSQL, there's more details on native Postgres types in the [Rails Guides](http://guides.rubyonrails.org/active_record_postgresql.html).
+These are a native column type in PostgreSQL. You can find more details on native Postgres types in the [Rails Guides](http://guides.rubyonrails.org/active_record_postgresql.html).
+
 
 ## Instead of…
 
-…using Rails default incrementing integer IDs.
+…using Rails’ default incrementing integer `id`.
 
 
 ## Use…
 
-…PostgreSQL’s UUID support.
+…PostgreSQL’s UUID support. Ruby on Rails has had the [ability](https://github.com/rails/rails/pull/21762) to use UUIDs as the `id` for ActiveRecord models since version 5.0.
 
 
-### Enable extension
+### Enable the PostgreSQL extension
 
 `bin/rails g migration enable_extension_for_uuid`
 
@@ -34,18 +35,16 @@ class EnableExtensionForUuid < ActiveRecord::Migration[5.1]
 end
 ```
 
-Change the default column type for primary keys
 
-Configure your migration generator to set id: :uuid for new tables:
-
-
-### `config/initializers/generators.rb`
+### Create `config/initializers/generators.rb`
 
 ```ruby
 Rails.application.config.generators do |g|
   g.orm :active_record, primary_key_type: :uuid
 end
 ```
+
+This changes the default column type for primary keys, configuring your migration generator to set `id: :uuid` for new tables.
 
 
 ### In future migrations
@@ -65,19 +64,19 @@ end
 
 ## But why?
 
-This is a case where you are making a choice toward a little more complexity, but for good reasons.
+Using UUIDs as the `id` in your Rails models instead of incrementing integers helps you avoid collisions. The UUIDs are _globally_ unique meaning you can know that different models cannot possibly have the same `id` and you can even assign them client-side or in other systems.
 
-UUIDs allow you to assign model IDs in distributed systems without worrying about collisions. e.g. If you’re using a client-side JavaScript application.
+With an incrementing integer `id` the size of your data can be inferred from the outside i.e. `id` 5 is the fifth record created. With UUIDs no-one can guess the size of your database tables, which might be information you are keen to keep secret. You _can_ get round this by generating ‘public ids’ or 'slugs' for exposed URLs… but then, why not use a built-in tool.
 
-With an incrementing integer ids you can see the growth of data from outside i.e. ID 5 is the fifth record created. With UUIDs no-one can guess the size of your database tables, which might be information you are keen to keep secret. You _can_ get round this by generating ‘public ids’ or 'slugs' for exposed URLs… but then, why not use a built-in tool.
+From a security perspective, using UUIDs prevents the situation where a malicious attacker could attempt to gain access to data by guessing a model `id` in your URLs. UUIDs are extremely hard to guess.
 
-From a security perspective using UUIDs prevents the situation where a malicious attacker could attempt to gain access to data based on guessing IDs in your URLs. UUIDs are extremely hard to guess.
+This _is_ a case where you are making a choice toward a little more complexity, but for good reasons.
 
 
 ### Why not?
 
-If you’re using PostgreSQL, this is a straightforward change and has little performance cost. MySQL is a more complicated proposition.
+If you’re using PostgreSQL this is a straightforward change and has little performance cost. MySQL is a more complicated proposition and I wouldn't bother.
 
 ActiveRecord’s `first` and `last` scopes work in an unexpected way with UUID ids. You can no longer assume the ‘highest’ `id` is the most recent, which could be confusing for new developers to your codebase.
 
-Transferring to non-integer IDs in a running production system is fiddly and fraught with opportunities to shoot yourself in the foot. This might be something to do for brand new projects unless you have a good reason.
+Using UUIDs is an good idea in brand new projects, but it might be wise to avoid transferring to UUIDs in an running production system unless you have a good reason to do so.
