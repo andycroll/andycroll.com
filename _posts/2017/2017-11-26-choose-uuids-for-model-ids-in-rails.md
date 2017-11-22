@@ -8,7 +8,7 @@ image:
   alt: 'Rainbow UUIDs'
 ---
 
-A [universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) (UUID) is a 128-bit number used to identify information in computer systems. You might also hear ‘globally unique identifier’.
+A [universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) (UUID) is a 128-bit number used to identify information in computer systems. Sometimes it is referred to as a ‘globally unique identifier’.
 
 These are a native column type in PostgreSQL. You can find more details on native Postgres types in the [Rails Guides](http://guides.rubyonrails.org/active_record_postgresql.html).
 
@@ -66,7 +66,7 @@ end
 
 Using UUIDs as the `id` in your Rails models instead of incrementing integers helps you avoid collisions. The UUIDs are _globally_ unique meaning you can know that different models cannot possibly have the same `id` and you can even assign them client-side or in other systems.
 
-With an incrementing integer `id` the size of your data can be inferred from the outside i.e. `id` 5 is the fifth record created. With UUIDs no-one can guess the size of your database tables, which might be information you are keen to keep secret. You _can_ get round this by generating ‘public ids’ or 'slugs' for exposed URLs… but then, why not use a built-in tool.
+With an incrementing integer `id` the size of your data can be inferred from the outside i.e. `id` 5 is the fifth record created. With UUIDs no-one can guess the size of your database tables, which might be information you are keen to keep secret. You _can_ get round this by generating ‘public ids’ or 'slugs' for exposed URLs… but then, why not use a built-in tool?
 
 From a security perspective, using UUIDs prevents the situation where a malicious attacker could attempt to gain access to data by guessing a model `id` in your URLs. UUIDs are extremely hard to guess.
 
