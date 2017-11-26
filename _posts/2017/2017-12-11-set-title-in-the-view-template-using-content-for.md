@@ -10,11 +10,11 @@ image:
   source: 'https://unsplash.com/photos/-9vMBjrU-RA'
 ---
 
-Rails has `content_for` as it’s primary way to store content in one place for use in other views, layouts or helpers. See `content_for` in the Rails documentation at [in the ActionView helpers](http://api.rubyonrails.org/v5.1.3/classes/ActionView/Helpers/CaptureHelper.html#method-i-content_for).
+Rails uses `content_for` as its primary way to store content in one place for use in other views, layouts or helpers. Find out more about `content_for` in the Rails documentation in the [ActionView helpers](http://api.rubyonrails.org/v5.1.3/classes/ActionView/Helpers/CaptureHelper.html#method-i-content_for) section.
 
 ## Instead of…
 
-...using an instance variable in the controller.
+...using an instance variable in the controller...
 
 ### `things_controller.rb`
 
@@ -57,13 +57,11 @@ In the `<head>`.
 
 ## But why?
 
-Using `content_for` in this way keeps information about how to render the page inside the relevant view template. It also avoids cluttering the controller with non-business logic.
+Using `content_for` keeps information about how to render the page inside the relevant view template, it avoids cluttering the controller with non-business logic.
 
-You also avoid creating yet another 'magic' instance variable that gets automatically revealed to the view by Rails.
+You avoid creating yet another 'magic' instance variable that gets automatically passed to the view by Rails.
 
-Another heuristic for using this technique is that when rendering JSON and/or AJAX from the same restful action, those versions don't need a page title, indicating it belongs in the HTML view template.
-
-You _can_ also use the `content_for` in multiple places in your views and the values are concatenated when they are `yield`ed in the layout. Not so useful in this case... but good to know.
+Here's another way you know I'm right about how you should set your page titles. Rendering JSON or AJAX from the same RESTful controller action doesn't require adding a page title. Therefore, it's clear that this information should live with the relevant HTML view template.
 
 
 ## Why not?
