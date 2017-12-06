@@ -57,13 +57,13 @@ In the `<head>`.
 
 ## But why?
 
-Using `content_for` keeps information about how to render the page inside the relevant view template, it avoids cluttering the controller with non-business logic.
+Using `content_for` keeps information about how to render the HTML inside the relevant view template, avoiding cluttering the controller with non-business logic.
 
 You avoid creating yet another 'magic' instance variable that gets automatically passed to the view by Rails.
 
-Here's another way you know I'm right about how you should set your page titles. Rendering JSON or AJAX from the same RESTful controller action doesn't require adding a page title. Therefore, it's clear that this information should live with the relevant HTML view template.
+The content for the `<title>` is not referenced or referred to when rendering JSON or AJAX from the same controller action. Only the rendered HTML ever accesses that information. Therefore, there’s no need to expose this information in an instance variable: it belongs solely in the `html.erb` view template.
 
 
 ## Why not?
 
-You're fighting the framework if you use the instance variable approach, even though it _does_ work.
+You _are_ ignoring the framework's tools if you use the instance variable approach, but it _does_ work.
