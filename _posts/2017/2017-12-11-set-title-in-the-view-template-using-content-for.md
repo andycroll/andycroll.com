@@ -51,7 +51,7 @@ I like to put the title at the top of the individual view file.
 In the `<head>`.
 
 ```erb
-<title><%= content_for?(:html_title) ? yield(:page_title) : "Default" %></title>
+<title><%= content_for?(:html_title) ? yield(:html_title) : "Default" %></title>
 ```
 
 
