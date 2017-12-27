@@ -10,7 +10,7 @@ image:
   credit: 'Jarrod Fitzgearlds'
 ---
 
-Ruby’s conditional syntax is ‘truthy’, meaning that anything that is `nil` is also considered to be `false` and anything not-`nil` can be considered to be `true`.
+Ruby’s conditional syntax is ‘truthy’, meaning that any statement in a conditional that evaluates to `nil` is considered to be equivalent to `false` and anything not-`nil` can be considered to be `true`.
 
 
 ## Instead of…
@@ -47,11 +47,13 @@ end
 
 ## But why?
 
-Performing a `#nil?` check in a negative conditional, as in the first two examples, is often redundant as any non-`nil` value is `true`. You can remove the `nil?` check and substitute the `unless` for an `if` or remove the `!` and end up with clearer code that means the same thing.
+Performing a `#nil?` check as part of a statement in a negative conditional, as in the first two examples (`unless` or `if !`), is often redundant. Any non-`nil` value is considered to be ‘truthy’.
+
+Remove the `nil?` check and substitute the `unless` for an `if` (example 1) or remove the `!` (example 2) and end up with clearer code that means the same thing.
 
 The syntax of `!!`, in the third example, is shorthand for turning any value (either ‘truthy’ or ‘falsey’) into the _actual boolean values_ `true` or `false`. However, given Ruby's ‘truthy’ conditionals performing this conversion is redundant.
 
 
 ## Why not?
 
-This comes down to understandability. If you _really_ are checking for `nil`, then by all means explicitly use the check.
+This comes down to understandability. If you _really_ are checking for `nil`, perhaps you're dealing differently with an empty array and `nil`, then by all means explicitly use the check.

@@ -63,4 +63,4 @@ A complex `if` condition might well be an opportunity to extract the conditional
 
 ## Why not?
 
-I’m definitely not saying don't use `unless`, but it's important to remember it is _sugar_ and thus its important only to use it where it makes the resulting code clearer.
+I’m definitely not saying don't use `unless`, but it's important to remember it is _sugar_ and thus important only to use it where it makes the resulting code clearer.
