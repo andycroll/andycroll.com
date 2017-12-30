@@ -39,7 +39,7 @@ end
 
 ```ruby
 # Example 1
-if !something
+if !something?
   # do other thing
 else
   # do something

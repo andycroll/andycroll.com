@@ -56,4 +56,4 @@ The syntax of `!!`, in the third example, is shorthand for turning any value (ei
 
 ## Why not?
 
-This comes down to understandability. If you _really_ are checking for `nil` — perhaps you’re treating an empty array and `nil` in different ways — then by all means explicitly use the check.
+This comes down to understandability. If you _really_ are checking for `nil` — perhaps you’re treating an empty array and `nil` in different ways — then, by all means, explicitly use the check.
