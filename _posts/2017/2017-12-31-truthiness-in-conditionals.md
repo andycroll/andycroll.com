@@ -47,7 +47,7 @@ end
 
 ## But why?
 
-Performing a `#nil?` check as part of a statement in a negative conditional, as in the first two examples (`unless` or `if !`), is often redundant. Any non-`nil` value is considered to be ‘truthy’.
+Performing a `#nil?` check as part of a statement in a negative conditional, as in the first two examples (`unless` or `if !`), is often redundant. Any `nil` value is ‘falsey’, so you can achieve the same result with a positive conditional and no `#nil?` check.
 
 Remove the `nil?` check and substitute the `unless` for an `if` (example 1) or remove the `!` (example 2) and end up with clearer code that means the same thing.
 
@@ -56,4 +56,4 @@ The syntax of `!!`, in the third example, is shorthand for turning any value (ei
 
 ## Why not?
 
-This comes down to understandability. If you _really_ are checking for `nil`, perhaps you're dealing differently with an empty array and `nil`, then by all means explicitly use the check.
+This comes down to understandability. If you _really_ are checking for `nil` — perhaps you’re treating an empty array and `nil` in different ways — then by all means explicitly use the check.

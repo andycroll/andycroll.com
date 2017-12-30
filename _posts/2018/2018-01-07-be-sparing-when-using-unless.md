@@ -54,7 +54,7 @@ end
 
 ## But why?
 
-Avoid using an `else` block with an `unless`. This structure is hard to reason about because the `else` block is a double negative: it is "not not" the specified condition. Instead, replace the `unless` with an `if` while refactoring the condition and swap around the blocks of code in the main and `else` branches.
+Avoid using an `else` block with an `unless`. This structure is hard to reason about because the `else` block is a double negative: it is "not not" the specified condition. Instead, replace the `unless` with an `if`, taking care to refactor the condition statement as needed, then swap around the blocks of code in the main and `else` branches.
 
 It is _much_ harder to understand the code when using an `unless` conditional with boolean algebra (`&&` or `||`). It is an easy way to confuse yourself! The conditional `unless one && two` is equivalent to `if !one || !two`. Although the logic looks messier the positive version is easier to reason about.
 
