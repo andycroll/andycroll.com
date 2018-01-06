@@ -80,3 +80,8 @@ If you’re using PostgreSQL this is a straightforward change and has little per
 ActiveRecord’s `first` and `last` scopes work in an unexpected way with UUID ids. You can no longer assume the ‘highest’ `id` is the most recent, which could be confusing for new developers to your codebase.
 
 Using UUIDs is a good idea in brand new projects, but it might be wise to avoid transferring to UUIDs in a running production system unless you have a good reason to do so.
+
+
+-----
+
+Translated into Japanese [here](https://techracho.bpsinc.jp/hachi8833/2018_01_04/50565)
