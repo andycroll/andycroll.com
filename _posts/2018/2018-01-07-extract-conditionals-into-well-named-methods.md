@@ -10,7 +10,7 @@ image:
   credit: 'Hans-Peter Gauster'
 ---
 
-One of the simplest (and most effective) ways to refactor is to [extract a method](https://refactoring.com/catalog/extractMethod.html). The naming of an extracted method, can be especially good for communicating about thinking behind the code.
+One of the simplest (and most effective) ways to refactor is to [extract a method](https://refactoring.com/catalog/extractMethod.html). The naming of an extracted method is a great tool for communicating the thinking behind the code.
 
 ## Instead of…
 
@@ -35,12 +35,12 @@ class BrightonCoffeeShop
 end
 ```
 
-This implementation explicitly returns `false` if the `name` is unknown. This is the only way to guarantee a decent coffee shop experience.
+This implementation explicitly returns `false` if the `name` is unknown. The only way to guarantee a decent coffee shop experience is to rule out places you’ve never heard of.
 
 
 ## Use…
 
-...the extract method refactoring to name the concept and move it to a `private` method.
+...the Extract Method refactoring to move the logic into a `private` method, giving that method a name that clearly explains the concept of the code.
 
 ```ruby
 class BrightonCoffeeShop
@@ -76,22 +76,26 @@ class BrightonCoffeeShop
 end
 ```
 
-We've also refactored to use `Array#include?` for the lists of names.
+As part of our refactoring, we’re now using `Array#include?` for the lists of names.
 
 
 ## But why?
 
-Here, by extracting and naming methods, we have better described what exactly makes a good coffee shop. The private methods act as clear documentation for the class. Before all we really had was a list of 'good' and 'bad' names. You can tell what makes a good coffee shop without even referring to the content of the private methods.
+By extracting a method you, by definition, name it. Our method clearly states the specific criteria for a good coffee shop. These private methods act as clear documentation for the class.
 
-A naive refactoring of this class might have just stuffed all the good and bad names in `GOOD` and `BAD` arrays and checked the `name` against them. In that case we would have lost the reasoning behind _why_ the places were good or bad. And the _why_ is the important part.
+Before, all we really had was a list of 'good' and 'bad' coffee shops. We had no knowledge of how those lists were developed.
 
-In this case I've even named the negative concepts like `#clean?` and `#local?` to avoid using the negative versions of the private methods in the public `#good?` method. This may be overkill in some cases, but adds useful context here as the logic of the conditional is quite specific as to what makes a decent coffee shop.
+A naive refactoring of this class might have just stuffed all the good and bad names in arrays named `GOOD` and `BAD` and checked the coffee shop `name` against them. We would have lost the reasoning behind _why_ the places were good or bad. And the _why_ is the most important part.
 
-Before I attempted to refactor I'd want good test coverage of the initial implementation. This will help prevent accidental changes in functionality during the code changes.
+In this case I've also extracted the negative concepts of `filthy?` and `national_chain?` alongside the positive concepts like `#clean?` and `#local?`. This avoids using the negative versions of the private methods in the `#good?` method. This may be overkill in some cases, but here it adds useful context as this class is heavily geared towards what makes a decent coffee shop.
+
+In my final refactoring, I've even wrapped negative concepts of filthy? and national_chain? with the positive concepts of clean? and local?. This way I can avoid using the negative versions of the private methods...in some cases, but it adds useful context here since the logic/phrasing of the conditional is heavily geared towards what makes a decent coffee shop, as opposed to what you're trying to avoid.
+
+Before any refactoring I'd want good test coverage of the initial implementation. This will help prevent accidental changes in functionality during any changes.
 
 
 ## Why not?
 
-In a simpler case I might leave the statement in place, but for this example it is a nice documentation technique as well as clarifying the logic in the conditional.
+In a simpler example, I might not bother with the refactoring. In this case the refactoring serves as a nice documentation technique and clarifies the logic in the conditional.
 
-In a more complex case, where a coffee shop had much more functionality, you could have further refactoring of the different coffee shops to their own subclasses.
+In a more complex case, where a coffee shop had much more functionality, you might have further refactoring of the different coffee shops to their own subclasses.
