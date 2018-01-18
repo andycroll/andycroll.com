@@ -4,13 +4,19 @@ layout: default
 <div class="row">
   <div class="col-12" style="min-height: 40px">
     {% if page.image %}
-    <!-- <div class="col-sm-12"> -->
-      <img alt="{{ page.image.alt }}"
+    <picture>
+	    <source sizes="100vw"
+              srcset="/images/{{ page.image.base }}-initial.webp 512w,
+                      /images/{{ page.image.base }}-1024.webp 1024w,
+                      /images/{{ page.image.base }}-2048.webp 2048w"
+		          type="image/webp">
+      <img sizes="100vw"
+           alt="{{ page.image.alt }}"
            src="/images/{{ page.image.base }}-initial.jpg"
            srcset="/images/{{ page.image.base }}-1024.jpg 1024w,
                    /images/{{ page.image.base }}-2048.jpg 2048w"
            class="img-fluid" />
-    <!-- </div> -->
+    </picture>
     {% endif %}
   </div>
 </div>
