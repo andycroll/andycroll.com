@@ -85,13 +85,13 @@ Before, all we really had was a list of 'good' and 'bad' coffee shops. We had no
 
 A naive refactoring of this class might have just stuffed all the good and bad names in arrays named `GOOD` and `BAD` and checked the coffee shop `name` against them. We would have lost the reasoning behind _why_ the places were good or bad. And the _why_ is the most important part.
 
-In this case I've also extracted the negative concepts of `filthy?` and `national_chain?` alongside the positive concepts like `#clean?` and `#local?`. This avoids using the negative versions of the private methods in the `#good?` method. This may be overkill in some cases, but here it adds useful context as this class is heavily geared towards the positive qualities of a decent coffee shop.
+In this case I've extracted the negative concepts of `#filthy?` and `#national_chain?` as well as the positive concepts like `#clean?` and `#local?`. This avoids using the negative versions of the private methods in the `#good?` method, making that method more readable. You could consider this overkill in some cases, but here it adds useful context as this class is heavily geared towards the positive qualities of a decent coffee shop.
 
 Before any refactoring it is important to ensure good test coverage of the initial implementation to prevent accidental changes in functionality.
 
 
 ## Why not?
 
-In a simpler example, I might not bother with the refactoring. In this case the refactoring serves as a nice documentation technique and clarifies the logic in the conditional.
+In a simpler example, I might not even bother with this kind of refactoring, but here it serves as a nice documentation technique and clarifies the logic in the conditional.
 
-In a more complex case, where a coffee shop had much more functionality, you might have further refactoring of the different coffee shops into their own subclasses.
+In a more complex case, where a coffee shop had much more functionality (more than just being good) you might further refactor each of the different coffee shops into subclasses.
