@@ -79,7 +79,7 @@ end
 
 ## But why?
 
-By extracting a method you, by definition, name it. Our `#good?` method clearly states the specific criteria for a good coffee shop. The new private methods act as clear documentation for the class.
+By extracting a method you, by definition, name it. Our `#good?` method states the specific criteria for a good coffee shop. The new private methods act as documentation for the class.
 
 Before, all we really had was a list of 'good' and 'bad' coffee shops. We had no knowledge of how those lists were developed.
 
@@ -94,4 +94,4 @@ Before any refactoring it is important to ensure good test coverage of the initi
 
 In a simpler example, I might not even bother with this kind of refactoring, but here it serves as a nice documentation technique and clarifies the logic in the conditional.
 
-In a more complex case, where a coffee shop had much more functionality (more than just being good) you might further refactor each of the different coffee shops into subclasses.
+In a more complex case, where a coffee shop has much more functionality (more than just being good or not) you might further refactor each of the different coffee shops into subclasses.
