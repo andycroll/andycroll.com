@@ -33,8 +33,8 @@ total
 ...your deep love of one of Ruby’s `Enumerable` methods, and implement using `#inject`.
 
 ```ruby
-[1, 3, 5, 7].inject(0) do |num, result|
-  result += num
+[1, 3, 5, 7].inject(0) do |total, number|
+  total += number
 end
 ```
 
