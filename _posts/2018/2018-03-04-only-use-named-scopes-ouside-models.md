@@ -59,7 +59,7 @@ Secondly: you have _one_ place to look for all of this. If you define scopes out
 
 For scopes involving `#limit`, simple `#order`s or pagination (if you're doing that) there's very little point in bothering to create specific scopes.
 
-Naming non-`#where` scopes often does not enhance understanding. There's no real clarity benefit as the APIs for those classes are pretty straightforward.
+Naming non-`#where` scopes often does not enhance understanding. There's no real clarity benefit as the straightforward use of the existing methods gain nothing from wrapping them in a scope.
 
 ```ruby
 scope :by_title, -> { sort(:title) } # no benefit?
