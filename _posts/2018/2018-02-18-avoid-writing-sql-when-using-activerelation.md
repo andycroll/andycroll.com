@@ -42,13 +42,15 @@ Person.where(name: params[:name], hidden_at: nil)
 
 ## Why?
 
-The first two versions, where you manually write SQL, were the _only_ way before ActiveRelation was merged into Rails (in version 3.0). However, the “hash style” gives you more flexibility and safety.
+The first two versions, where you manually write SQL, were the _only_ way to specify database queries before ActiveRelation was merged into Rails (in version 3.0). However, the “hash style” gives you more flexibility and safety.
 
-The first example is **very** dangerous. It uses direct interpolation of the string, in this case from user passed parameters. **Do not use this style**. It opens you up to SQL injection attacks: where bad people from the Internet can try and run destructive/exciting statements against your database.
+The first example is **very** dangerous. It uses direct interpolation of the string, in this case from user-passed parameters. **Do not use this style**. It opens you up to SQL injection attacks: where bad people from the Internet can try and run destructive/exciting statements against your database.
 
-The second example, the ‘array style’, does sanitize passed data, so is a better way to write “string style” `#where` methods. However you're still left to write SQL yourself, when `ActiveRelation` is more than happy to generate perfect SQL while you keep writing Ruby.
+The second example, the ‘array style’, does sanitize passed data, so is a better way to write “string style” `#where` methods. However you're still left to write SQL yourself. Why do it when `ActiveRelation` is more than happy to generate perfect SQL while you keep writing delightful Ruby.
 
-The final example, with the “hash style” syntax, is shorter, clearer and likely better highlighted in your editor. Code is made to be read more than written.
+The final example, with the “hash style” syntax, is shorter, clearer, and likely better highlighted in your editor. Code is made to be read more than written.
+
+When passing strings to `#where` the resulting SQL includes the exact string you pass in, so no table names _and_ all your typos.
 
 ```ruby
 # Hash style
@@ -62,15 +64,13 @@ The final example, with the “hash style” syntax, is shorter, clearer and lik
 
 When the “hash style” syntax evaluates, it includes the database table names and the SQL is more precise, which can help reduce errors when joining and querying multiple models.
 
-When passing strings to `#where` the resulting SQL includes the exact string you pass in, so no table names _and_ all your typos.
-
-Using the hash style also, as an extra convenience, is portable between database adapters.
+Using the hash style also provides extra convenience in that the SQL generated is portable between database adapters.
 
 
 ## Why not?
 
-When string conditionals you can introduce dependancies on your database's particular flavour of SQL. However this is only a problem when you use more esoteric database-specific SQL, basic SQL `SELECT` syntax as seen in the above examples is not an issue.
+When using string conditionals you can introduce dependencies on your database's particular flavour of SQL. However this is only a problem when you use more esoteric database-specific SQL, perhaps search or geographic queries. Straightforward SQL `SELECT` syntax as seen in the above examples is not an issue.
 
-Also, no-one _really_ moves their database between Postgres and MySQL once they’re in production. Not unless they adore pain.
+Also, no-one _really_ moves their database between PostgreSQL and MySQL once they’re in production. Not unless they adore pain.
 
 This is also a very simple example. There are times when you might need to use a string argument to `#where` that is specific to your database, and that’s totally fine. But if there’s an option, why not build some flexibility and clarity into your scopes?
