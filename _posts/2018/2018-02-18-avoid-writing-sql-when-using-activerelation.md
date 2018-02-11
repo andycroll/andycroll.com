@@ -42,15 +42,15 @@ Person.where(name: params[:name], hidden_at: nil)
 
 ## Why?
 
-The first two versions, where you manually write SQL, were the _only_ way to specify database queries before ActiveRelation was merged into Rails (in version 3.0). However, the “hash style” gives you more flexibility and safety.
+The first two versions, where you manually write SQL, were the _only_ ways to specify database queries before ActiveRelation was merged into Rails (in version 3.0). However, the “hash style” gives you more flexibility and safety.
 
 The first example is **very** dangerous. It uses direct interpolation of the string, in this case from user-passed parameters. **Do not use this style**. It opens you up to SQL injection attacks: where bad people from the Internet can try and run destructive/exciting statements against your database.
 
-The second example, the ‘array style’, does sanitize passed data, so is a better way to write “string style” `#where` methods. However you're still left to write SQL yourself. Why do it when `ActiveRelation` is more than happy to generate perfect SQL while you keep writing delightful Ruby.
+The second example, the ‘array style’, does sanitize passed data, so is a better way to write “string style” `#where` methods. However you're still left to write SQL yourself. Why do it when `ActiveRelation` is more than happy to generate perfect SQL while you keep writing delightful Ruby?
 
 The final example, with the “hash style” syntax, is shorter, clearer, and likely better highlighted in your editor. Code is made to be read more than written.
 
-When passing strings to `#where` the resulting SQL includes the exact string you pass in, so no table names _and_ all your typos.
+When passing strings to `#where`, the resulting SQL includes the exact string you pass in, so no table names _and_ all your typos.
 
 ```ruby
 # Hash style
