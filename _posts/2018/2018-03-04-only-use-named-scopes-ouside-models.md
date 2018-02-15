@@ -35,7 +35,7 @@ class Post < ApplicationRecord
 end
 ```
 
-And then use it like so:
+And then use them so:
 
 ```ruby
 class PostsController < ApplicationController
@@ -57,15 +57,16 @@ Secondly: you have _one_ place to look for all of this. If you define scopes out
 
 ## Why not?
 
-For scopes involving `#limit`, simple `#order`s or pagination (if you're doing that) there's very little point in bothering to create specific scopes.
+For scopes involving `#limit`, simple `#order`s or pagination, there's very little point in bothering to create specific scopes.
 
-Often, wrapping non-`#where` queries does not enhance understanding. There’s no extra clarity from wrapping simple `ActiveRelation` methods inside a scope.
+Naming scopes is only beneficial when you gain extra clarity. Sometimes, with non-`#where` queries, there is no enhanced understanding from wrapping simple `ActiveRelation` methods inside a scope.
 
 ```ruby
 scope :by_title, -> { sort(:title) } # no benefit?
-scope :recently_updated, -> { sort(updated_at: :desc) } # worth doing
+scope :by_updated_at, -> { sort(:updated_at) } # terrible name
+scope :recently_updated, -> { sort(updated_at: :desc) } # probably worth doing
 ```
 
 It's worth bearing in mind that a named scope might still be a good choice for complex ordering or if the sorting is closely related to the conditions specified in a `#where` method.
 
-A good heuristic to creating a named scope with ordering or limits is... can I easily name the concept? Is that better than the existing `ActiveRelation` methods?
+A good heuristic to creating a named scope with ordering or limits is: can I easily name the concept? Is the result better than the existing `ActiveRelation` methods?
