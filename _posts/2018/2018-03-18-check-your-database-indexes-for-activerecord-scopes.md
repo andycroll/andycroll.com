@@ -12,6 +12,8 @@ image:
 
 It is alleged that Ruby is slow. However, whether you're using Ruby, Elixir or Go, the 'benchmarked' speed of a language is irrelevant if your web application eventually hits an unoptimised database.
 
+Indexes allow your database to quickly find and sort records in a table, by keeping pre-organised copies of your data. Conceptually they’re like the index of a book.
+
 
 ## Instead of…
 
@@ -28,8 +30,8 @@ class AddRecommendedIndexes < ActiveRecord::Migration[5.1]
     add_index :model_with_foreign_key, :user_id
     add_index :polymorphic_model, [:polymorphic_id, :polymorphic_type]
     add_index :model_found_by_other_field, :slug
+    # or if you're using multiple fields to find & order
     add_index :model_with_complex_queries, [:slug, :title, :score, :updated_at]
-    # if you're using multiple fields to find & order
   end
 end
 ```
@@ -41,7 +43,7 @@ Nobody has ever used a website and thought: “I wish this site loaded slower”
 
 Modern SQL databases can be incredibly quick and powerful, but you still need to do some tuning.
 
-Without indexes on often-queried fields on tables, the database does a sequential scan (or in the case of more complex queries, multiple scans). A sequential scan can take many times longer to execute as you add more records. While there might be less difference on tens of records, scans over thousands of records without an index can be very slow.
+Without indexes on often-queried fields on tables, the database does a sequential scan (or in the case of more complex queries, multiple scans). A sequential scan can take many times longer to execute as you add more records. While there might not be much difference on tens of records, scans over thousands of records without an index can be very slow.
 
 I like this heuristic: any individual SQL query in production should take between 1-10ms. If it's taking longer than that, particularly on an action that is used a lot, you should find out why.
 
