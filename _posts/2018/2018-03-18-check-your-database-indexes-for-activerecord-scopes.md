@@ -10,9 +10,9 @@ image:
   credit: '贝莉儿 NG'
 ---
 
-It is alleged that Ruby is slow. However, whether you're using Ruby, Elixir or Go, the 'benchmarked' speed of a language is irrelevant if your web application eventually hits an unoptimised database.
+It is alleged that Ruby is slow. However, whether you're using Ruby, Elixir, or Go, the 'benchmarked' speed of a language is irrelevant if your web application eventually hits an unoptimised database.
 
-Indexes allow your database to quickly find and sort records in a table, by keeping pre-organised copies of your data. Conceptually they’re like the index of a book.
+Indexes allow your database to quickly find and sort records in a table by keeping pre-organised copies of your data. Conceptually, they’re like the index of a book.
 
 
 ## Instead of…
@@ -27,10 +27,13 @@ Indexes allow your database to quickly find and sort records in a table, by keep
 ```ruby
 class AddRecommendedIndexes < ActiveRecord::Migration[5.1]
   def change
+    # where user_id is a foreign key
     add_index :model_with_foreign_key, :user_id
+    # or the model’s foreign key is polymorphic
     add_index :polymorphic_model, [:polymorphic_id, :polymorphic_type]
-    add_index :model_found_by_other_field, :slug
-    # or if you're using multiple fields to find & order
+    # or you are using .find_by(slug: 'SOMETHING')
+    add_index :model_found_using_a_field, :slug
+    # or using multiple fields to find & order
     add_index :model_with_complex_queries, [:slug, :title, :score, :updated_at]
   end
 end
@@ -43,7 +46,7 @@ Nobody has ever used a website and thought: “I wish this site loaded slower”
 
 Modern SQL databases can be incredibly quick and powerful, but you still need to do some tuning.
 
-Without indexes on often-queried fields on tables, the database does a sequential scan (or in the case of more complex queries, multiple scans). A sequential scan can take many times longer to execute as you add more records. While there might not be much difference on tens of records, scans over thousands of records without an index can be very slow.
+Without indexes on oft-queried fields on tables, the database does a sequential scan (or in the case of more complex queries, multiple scans). A sequential scan can take many times longer to execute as you add more records. While there might not be much difference on tens of records, scans over thousands of records without an index can be very slow.
 
 I like this heuristic: any individual SQL query in production should take between 1-10ms. If it's taking longer than that, particularly on an action that is used a lot, you should find out why.
 
@@ -58,4 +61,4 @@ Your database pays a performance penalty for every index you have on a table. Wh
 
 If the broader usage patterns of your application are write-heavy rather than read-heavy, you should definitely be thinking carefully about adding any indexes. They may cause more problems than they solve.
 
-Additionally, when trying to improve the performance of your site you have to _measure it_. Use a monitoring tool like [Skylight](https://skylight.io), [New Relic](https://newrelic.com), [AppSignal](https://appsignal.com) or [Scout](https://scoutapp.com). This way you’ll know which parts of your site performance to actually work on. It might not even be the database that is causing issues.
+Additionally, when trying to improve the performance of your site you have to _measure it_. Use a monitoring tool like [Skylight](https://skylight.io), [New Relic](https://newrelic.com), [AppSignal](https://appsignal.com), or [Scout](https://scoutapp.com). This way you’ll know which parts of your site performance to actually work on. It might not even be the database that is causing issues.
