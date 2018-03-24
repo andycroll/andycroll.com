@@ -74,13 +74,17 @@ One of my sites gets hit by many more crawlers, that aren't included by default 
 ### `config/initializers/is_crawler.rb`
 
 ```ruby
-Crawler::CUSTOM << Crawler.new(:apple, 'Applebot')
-Crawler::CUSTOM << Crawler.new(:arefs, 'AhrefsBot')
-Crawler::CUSTOM << Crawler.new(:blexbot, 'BLEXBot')
-Crawler::CUSTOM << Crawler.new(:dotbot, 'DotBot')
-Crawler::CUSTOM << Crawler.new(:mailru, 'Mail.RU_Bot')
-Crawler::CUSTOM << Crawler.new(:magestic12, 'MJ12bot')
-Crawler::CUSTOM << Crawler.new(:seznam, 'SeznamBot')
+{
+  apple: 'Applebot',
+  arefs: 'AhrefsBot',
+  blexbot: 'BLEXBot',
+  dotbot: 'DotBot',
+  mailru: 'Mail.RU_Bot',
+  magestic12: 'MJ12bot',
+  seznam: 'SeznamBot'  
+}.each |internal_name, agent_string| do
+  Crawler::CUSTOM << Crawler.new(internal_name, agent_string)
+end
 ```
 
 
