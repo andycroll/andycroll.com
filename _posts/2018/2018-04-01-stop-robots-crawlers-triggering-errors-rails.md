@@ -12,15 +12,15 @@ image:
 
 When a Rails application can't find a record, it throws a 404 error. This is a standard HTTP code for browsers (and other clients) meaning 'not found'.
 
-When you have a Internet-facing site various search engines will be crawling your site. As you change things certain URLs might no longer work and the search engines can start generating a lot of errors by hitting all the links that used to exist.
+When you have an Internet-facing site various search engines will be crawling your site. As you change things certain URLs might no longer work and the search engines can start generating a lot of ‘not found’ errors in your application by hitting all the links that used to exist.
 
 
 ## Instead of…
 
-Getting a bunch of unhelpful, distracting noise when Google (or another web crawler) hits deleted public pages…
+...getting a bunch of unhelpful, distracting noise in your monitoring setup, or errors in your logs, when Google (or another web crawler) hits deleted public pages…
 
 
-### Or
+### Or...
 
 ...naively swallowing all your 404 errors.
 
@@ -41,7 +41,9 @@ end
 
 ## Use…
 
-A combination of the [`is_crawler`](https://github.com/ccashwell/is_crawler) gem and logic in your `application_controller.rb`.
+...the [`is_crawler`](https://github.com/ccashwell/is_crawler) gem and the configure it like so:
+
+### `application_controller.rb`
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -67,7 +69,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-One of my sites gets hit by many more crawlers, that aren't included by default in the gem. So I add to the list of crawlers in an initializer.
+One of my sites gets hit by many more crawlers, that aren't included by default in the gem. So I add to the list of crawlers in an initializer:
 
 ### `config/initializers/is_crawler.rb`
 
@@ -84,15 +86,17 @@ Crawler::CUSTOM << Crawler.new(:seznam, 'SeznamBot')
 
 ## But why?
 
-If you’re trying to make your app easier to maintain, it’s important to stay on top of your errors. You have probably wired your application up to an error reporting tool similar to [Rollbar](https://rollbar.com), [Honeybadger](https://honeybadger.io), [Bugsnag](https://bugsnag.com) or [Sentry](https://getsentry.com).
+If you’re trying to make your app easier to maintain, it’s important to stay on top of your errors. You have probably wired up your application to an error monitoring tool similar to [Rollbar](https://rollbar.com), [Honeybadger](https://honeybadger.io), [Bugsnag](https://bugsnag.com), or [Sentry](https://getsentry.com).
 
-If you don’t know what are the real issues that your visitors are having and which are ‘noise’ from search engines you cannot focus and fix them. This approach means all the errors in your error provider should be _real_ and cleared out as much as possible - but that’s another article!
+It is possible to just ‘swallow’ or ignore all 404 errors. However you want the know when real users receive 404 pages, as it might indicate something important is broken.
 
-You likely don’t want to burn up all your credits with the tracking service, which you might if you’re receiving a large volume of errors.
+If you cannot distinguish between the genuine issues that your visitors are having and the ‘noise’ from search engines you cannot focus and fix _real_ problems.
 
-It is possible to just ‘swallow’ all 404 errors, you most likely want the know when real users receive 404 pages, as it might indicate something important is broken.
+Eradicating these ‘robot errors’ should make fixing user-facing errors more straightforward. It's good to close and fix issues as they show up in your monitoring setup, but that’s another article!
+
+Whether you’re paying for your tracking service or not, you’ll burn through your credits if you’re receiving a large volume of unnecessary errors.
 
 
 ## Why not?
 
-This might not be applicable to your domain. If most of your site is behind a sign in, this isn’t worth the extra effort.
+If most of your site lives behind a sign in, making this change may not be worth the extra effort.
