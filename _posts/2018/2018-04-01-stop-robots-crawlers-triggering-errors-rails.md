@@ -12,7 +12,7 @@ image:
 
 When a Rails application can't find a record, it throws a 404 error. This is a standard HTTP code for browsers meaning 'not found'.
 
-When you have an Internet-facing site various search engines will be crawling it. As you change things, certain URLs might change or cease to exist. This means search engines/crawlers can start generating a lot of ‘not found’ errors by trying to load pages that used to exist.
+When you have an Internet-facing site various search engines will be crawling it to index your pages. As you change things, certain URLs might change or cease to exist. This means search engines/crawlers can start generating a lot of ‘not found’ errors by trying to load pages that used to exist.
 
 
 ## Instead of…
@@ -41,7 +41,7 @@ end
 
 ## Use…
 
-...the [`is_crawler`](https://github.com/ccashwell/is_crawler) gem and the configure it like so:
+...the [`is_crawler`](https://github.com/ccashwell/is_crawler) gem and configure it like so:
 
 ### `application_controller.rb`
 
@@ -69,7 +69,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-One of my sites gets hit by many more crawlers that aren't included by default in the gem. So I add these to the list of crawlers in an initializer:
+One of my sites gets hit by many crawlers that aren't included by default in the gem. So I add these to the list of crawlers in an initializer:
 
 ### `config/initializers/is_crawler.rb`
 
