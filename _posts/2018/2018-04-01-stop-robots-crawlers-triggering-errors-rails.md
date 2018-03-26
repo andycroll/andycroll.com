@@ -10,9 +10,9 @@ image:
   credit: 'Joseph Chan'
 ---
 
-When a Rails application can't find a record, it throws a 404 error. This is a standard HTTP code for browsers (and other clients) meaning 'not found'.
+When a Rails application can't find a record, it throws a 404 error. This is a standard HTTP code for browsers meaning 'not found'.
 
-When you have an Internet-facing site various search engines will be crawling your site. As you change things certain URLs might no longer work and the search engines can start generating a lot of ‘not found’ errors in your application by hitting all the links that used to exist.
+When you have an Internet-facing site various search engines will be crawling it. As you change things, certain URLs might change or cease to exist. This means search engines/crawlers can start generating a lot of ‘not found’ errors by trying to load pages that used to exist.
 
 
 ## Instead of…
@@ -69,7 +69,7 @@ class ApplicationController < ActionController::Base
 end
 ```
 
-One of my sites gets hit by many more crawlers, that aren't included by default in the gem. So I add to the list of crawlers in an initializer:
+One of my sites gets hit by many more crawlers that aren't included by default in the gem. So I add these to the list of crawlers in an initializer:
 
 ### `config/initializers/is_crawler.rb`
 
@@ -92,11 +92,9 @@ end
 
 If you’re trying to make your app easier to maintain, it’s important to stay on top of your errors. You have probably wired up your application to an error monitoring tool similar to [Rollbar](https://rollbar.com), [Honeybadger](https://honeybadger.io), [Bugsnag](https://bugsnag.com), or [Sentry](https://getsentry.com).
 
-It is possible to just ‘swallow’ or ignore all 404 errors. However you want the know when real users receive 404 pages, as it might indicate something important is broken.
+It is tempting to just ignore all 404 errors. However you want to know when real users receive 404 pages, as it might indicate something important is broken.
 
-If you cannot distinguish between the genuine issues that your visitors are having and the ‘noise’ from search engines you cannot focus and fix _real_ problems.
-
-Eradicating these ‘robot errors’ should make fixing user-facing errors more straightforward. It's good to close and fix issues as they show up in your monitoring setup, but that’s another article!
+If you cannot distinguish between the genuine issues that your visitors are having and the ‘noise’ from search engines you cannot focus on fixing _real_ problems.
 
 Whether you’re paying for your tracking service or not, you’ll burn through your credits if you’re receiving a large volume of unnecessary errors.
 
