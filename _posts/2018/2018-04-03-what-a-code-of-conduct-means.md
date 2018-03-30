@@ -28,7 +28,7 @@ This article lays out the process and principles that I currently use to maintai
 
 I am a British, white, middle-class and (increasingly) middle-aged man. This means I cannot necessarily accurately understand the experiences of people who do not share my in-built societal privilege.
 
-I do my best as a ‘very visible for one day’ member of our community to empathise and ‘do right’ by individuals form groups who aren’t represented in our community in the same numbers as people who look like me.
+I do my best as a ‘very visible for one day’ member of our community to empathise and ‘do right’ by individuals from groups who aren’t represented in our community in the same numbers as people who look like me.
 
 This means that I will trust individuals to accurately report their understanding of other’s behaviour as it effects them. And I will err on the side of trusting the opinion of those offended, rather than trying to judge solely from my perspective.
 
