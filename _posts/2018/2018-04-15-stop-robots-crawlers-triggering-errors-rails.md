@@ -82,7 +82,7 @@ One of my sites gets hit by many crawlers that aren't included by default in the
   mailru: 'Mail.RU_Bot',
   magestic12: 'MJ12bot',
   seznam: 'SeznamBot'  
-}.each |internal_name, agent_string| do
+}.each do |internal_name, agent_string|
   Crawler::CUSTOM << Crawler.new(internal_name, agent_string)
 end
 ```
