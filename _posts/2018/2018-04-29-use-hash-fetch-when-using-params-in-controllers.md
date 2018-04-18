@@ -10,9 +10,11 @@ image:
   credit: 'Mitchell Orr'
 ---
 
-We often need to access a parameter from the URL that isn't part of the regular rails routes. Something passed after
+We often need to access a parameter from the URL that isn't part of the regular rails routes. Perhaps a query parameter such as `/search?q=term`.
 
-A ruby `Hash` is typically accessed using square brackets, like `hash[key]`, but you can also use the method `fetch`, like `hash.fetch(key)`.
+The parameters for a Rails action are stored in an `ActionController::Parameters` object which behaves quite a bit like a standard ruby hash.
+
+A ruby hash is typically accessed using square brackets, like `hash[key]`, but you can also use the method `fetch`, like `hash.fetch(key)`.
 
 
 ## Instead of…
@@ -51,21 +53,25 @@ end
 
 ## But why?
 
-If you access an item from the `params` hash directly or have built this sort of private method it implies that the hash contains a required value for the correct functioning of your action.
+When you access an item from the `params` like I am above it implies that the value is pretty important for the correct functioning of your action.
 
-Using `fetch` means the Hash will not return `nil` and stop you getting a misleading `NilClass` error somewhere else. You _want_ the code to raise an exception, a `KeyError`, if the params are missing the value you need.
+If you access using the `#[]` method with a missing key, ruby will return `nil`. This might lead to a `NilClass` errors.
 
-Or you might be doing a `nil` check when later using this parameter in your controller action.
+Using `#fetch` means the hash will not return `nil` in the case of a missing key, instead it'll raise a `KeyError`. You _want_ the code to raise an exception where the error happens, the missing key.
 
-NB: This is different from Rails’ [Strong Parameters]. (Which are also a separate, but good idea).
+NB: This is different from Rails’ [Strong Parameters](http://guides.rubyonrails.org/action_controller_overview.html#strong-parameters) which are to do with whitelisting model attributes in a controller action. (Which are also a separate, but good idea).
 
 
 ##  Why not?
 
-You might take a view that the increased visual complexity and possible errors are not worth it.
+You might take a view that you simply like the look of the regular `#[]` hash syntax, it is shorter. And you're willing to deal with the errors.
 
-If the value isn’t required or you fall back to default you might want to use the `#fetch` syntax with a block.
+If you're using a parameter in this way you might also consider changing the route to include it.
+
+Note that you can use `#fetch` to provide a default value:
 
 ```ruby
-params.fetch[:important_and_required] { 'default' }
+params.fetch(:important) { 'default' }
 ```
+
+This would also help avoid lots of checking for `nil` in the code where you use the value.
