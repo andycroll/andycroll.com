@@ -10,11 +10,11 @@ image:
   credit: 'Mitchell Orr'
 ---
 
-We often need to access a parameter from the URL that isn't part of the regular rails routes. Perhaps a query parameter such as `/search?q=term`.
+We often need to access a parameter from the URL that isn't part of the regular Rails routes. For example, the query parameter in `/search?q=term`.
 
-The parameters for a Rails action are stored in an `ActionController::Parameters` object which behaves quite a bit like a standard ruby hash.
+The parameters for a Rails action are stored in an `ActionController::Parameters` object which behaves quite a bit like a standard Ruby hash.
 
-A ruby hash is typically accessed using square brackets, like `hash[key]`, but you can also use the method `fetch`, like `hash.fetch(key)`.
+A Ruby hash is typically accessed using square brackets, like `hash[key]`, but you can also use the method `fetch`, like `hash.fetch(key)`.
 
 
 ## Instead of…
@@ -53,20 +53,18 @@ end
 
 ## But why?
 
-When you access an item from the `params` like I am above it implies that the value is pretty important for the correct functioning of your action.
+Needing to access an item from the `params` object implies that the value is important for the correct functioning of your action.
 
-If you access using the `#[]` method with a missing key, ruby will return `nil`. This might lead to a `NilClass` errors.
+If you attempt to access a value using the `#[]` method and the relevant key is missing, Ruby will return `nil`. This might lead to `NilClass` errors if you try and use the result later on.
 
-Using `#fetch` means the hash will not return `nil` in the case of a missing key, instead it'll raise a `KeyError`. You _want_ the code to raise an exception where the error happens, the missing key.
-
-NB: This is different from Rails’ [Strong Parameters](http://guides.rubyonrails.org/action_controller_overview.html#strong-parameters) which are to do with whitelisting model attributes in a controller action. (Which are also a separate, but good idea).
+Using `#fetch` means the hash will not return `nil` in the case of a missing key. Instead it'll raise a `KeyError`. You _want_ the code to raise an exception where the error happens, at the point where the data is missing.
 
 
 ##  Why not?
 
-You might take a view that you simply like the look of the regular `#[]` hash syntax, it is shorter. And you're willing to deal with the errors.
+You might take a view that you simply like the look of the regular `#[]` hash syntax. After all, it is shorter. But you must be willing to deal with the errors.
 
-If you're using a parameter in this way you might also consider changing the route to include it.
+If you're using a parameter in this way you might also consider changing the route to include it. You _could_ make your search route `/search/term` rather than `/search?q=term`.
 
 Note that you can use `#fetch` to provide a default value:
 
