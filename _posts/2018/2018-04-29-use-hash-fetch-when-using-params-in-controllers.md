@@ -10,7 +10,7 @@ image:
   credit: 'Mitchell Orr'
 ---
 
-We often need to access a parameter from the URL that isn't part of the regular Rails routes. For example, the query parameter in `/search?q=term`.
+In a URL, we often need to access parameters that aren't part of the regular Rails routes. For example, the query parameter in `/search?q=term`.
 
 The parameters for a Rails action are stored in an `ActionController::Parameters` object which behaves quite a bit like a standard Ruby hash.
 
@@ -55,9 +55,9 @@ end
 
 Needing to access an item from the `params` object implies that the value is important for the correct functioning of your action.
 
-If you attempt to access a value using the `#[]` method and the relevant key is missing, Ruby will return `nil`. This might lead to `NilClass` errors if you try and use the result later on.
+If you attempt to access a value using the `#[]` method and the relevant key is missing, Ruby will return `nil`. This might lead to confusing `NilClass` errors if you try and use the result later on.
 
-Using `#fetch` means the hash will not return `nil` in the case of a missing key. Instead it'll raise a `KeyError`. You _want_ the code to raise an exception where the error happens, at the point where the data is missing.
+Using `#fetch` means the hash will not return `nil` in the case of a missing key. Instead it'll raise a `KeyError`. You _want_ the code to raise an exception at the point where the data is found to be missing, not when that value is used.
 
 
 ##  Why not?
