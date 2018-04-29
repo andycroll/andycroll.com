@@ -1,6 +1,6 @@
 ---
 title: 'Use Hash#fetch when using Rails params in controllers'
-description: ''
+description: 'Control the location of your errors'
 layout: article
 category: ruby
 image:
