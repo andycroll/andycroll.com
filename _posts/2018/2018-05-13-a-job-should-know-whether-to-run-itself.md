@@ -10,13 +10,13 @@ image:
   credit: 'Hal Gatewood'
 ---
 
-It is a good idea to do as much of the ‘work’ of an application in asynchronous jobs as it means doing less work in each controller action. Rails includes `ActiveJob` as a way to implement this pattern in your application.
+It is a good idea to do as much of the ‘work’ of an application as possible in asynchronous jobs as it means doing less work in each controller action. Rails includes `ActiveJob` as a way to implement this pattern in your application.
 
-Each `ActiveJob` comes with a selection of callbacks that are run at different points in its lifecycle.
+Each `ActiveJob` comes with a selection of callbacks that are run at different points in in a job’s lifecycle.
 
-A list of the available callbacks are in the [ActiveJob Rails Guide](http://guides.rubyonrails.org/active_job_basics.html#callbacks).
+A list of the available callbacks are in the [Active Job Rails Guide](http://guides.rubyonrails.org/active_job_basics.html#callbacks).
 
-When a job doesn't always need to be run, we can use these callbacks to save writing conditional logic every time we enqueue one.
+When a job doesn't always need to be run, we can use these callbacks to save writing conditional logic in every location in the code we enqueue the job.
 
 
 ## Instead of…
@@ -76,19 +76,23 @@ SendNotificationJob.perform_later(user, message)
 
 ## But why?
 
-It generally aids comprehension to keep the logic about _when_ to do something near to the code that actually does the thing.
+It generally aids comprehension to keep the logic about _when_ to do something near to the code that actually does the thing. The code enqueuing the job doesn’t need to care whether the work of the job needs to be done or not.
 
-Use the 'early return' style when the property might change before the job runs, For example, if you scheduled a job to run in the future and the property of the object the job affects might change.
+The job can encapsulate the 'whether it should happen' alongside the 'how/what', this will make the code easier to understand when you come back to it later.
 
-Use the 'callback and throw' style when the enqueuing should be based on a condition that is unlikely to change.
+A job happens an unspecified period of time after it is enqueued. It's possible the answer to 'should this job be run?' could change between the enqueuing and the execution. This is a good candidate for the first, 'early return', style.
 
-In both cases the code the code for the enqueuing is clearer without the conditional. The enqueuing code doesn’t need to concern itself with whether the work the job needs to be done or not, the job itself can decide.
+The second, 'use throw in a callback', style is logically closer to the initial condition as the job is never enqueued.
+
+In both cases the code for the enqueuing is clearer without the external conditional at the point of enqueuing.
 
 
 ##  Why not?
 
+The code for the ‘use throw in a callback’ style is slightly more complex than an external conditional when you enqueue.
+
+Also it's only worth encapsulating the 'should the job be run' logic if the condition is always applied to the job.
+
 There may be a slight performance cost of enqueuing (and then dequeuing) jobs when using the 'early return' style. You might be filling your queue with lots of jobs that don’t do anything.
 
-There are also subtle logical & timing differences between the three approaches for 'not running a job'. It requires careful consideration of these factors to establish which choice to make.
-
-This is one of those cases where all three are valid approaches and you might even use them together for different conditions.
+This is one of those cases where both ‘not enqueuing at all’ and ‘returning early’ are valid approaches and you _might_ even use them together for different conditions.
