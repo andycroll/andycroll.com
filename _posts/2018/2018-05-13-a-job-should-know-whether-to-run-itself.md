@@ -80,7 +80,7 @@ The code enqueuing the job doesn’t need to care whether the work of the job ne
 
 A job happens an unspecified period of time after it is enqueued. It's possible the answer to 'should this job be run?' could change between the enqueuing and the execution. This is a good candidate for the first, 'early return', style.
 
-The second, 'use throw in a callback', style is logically closer to the initial condition as the job is never enqueued. It is sensible to use this style when the condition for running a job is very unlikely to change between enqueuing and execution.
+You should use the second, 'use throw in a callback', style when the condition for running a job is very unlikely to change between enqueuing and execution. This is because, with this style, the job is never enqueued if the initial condition isn't met. This is the exact same logic as the original example.
 
 In both cases the code for the enqueuing is clearer without the external conditional at the point of enqueuing.
 
