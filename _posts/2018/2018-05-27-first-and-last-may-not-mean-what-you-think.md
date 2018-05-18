@@ -10,7 +10,7 @@ image:
   credit: 'Austris Augusts'
 ---
 
-Each ActiveRecord model comes with the well used ‘get me a single record’ scopes; `.first` & `.last`.
+Each Active Record model comes with the well-used ‘get me a single record’ scopes: `.first` and `.last`.
 
 ## Instead of…
 
@@ -42,15 +42,17 @@ User.most_recently_created
 
 ## But why?
 
-I’ll admit, this is a subtle one. My argument is mostly about making the code more explicit.
+This is mostly about making the code more explicit.
 
-If you’re using the bare `.first` and `.last` methods on an bare ActiveRecord model scope you are relying heavily on the Rails convention of an incrementing integer ID.
+The `.first` and `.last` methods, when called on a bare Active Record model scope, are colloquially used to mean ‘created first’ and ‘created most recently’.
 
-Those methods are thus colloquially used to mean ‘created first’ and ‘created most recently’. It's only an accident of Rails default design that sorting by ascending `id` is same order as the ascending `created_at` timestamp.
+It’s only an accident of Rails default design that sorting by ascending `id` is the same order as the ascending `created_at` timestamp.
 
-You might remember I advocated [using UUIDs for primary keys](/2017/choose-uuids-for-model-ids-in-rails) in a previous article, this pairs up nicely don’t you think?
+Using these scopes with no explicit order means you are relying heavily on the Rails convention of an incrementing integer `id`.
+
+You might remember I advocated [using UUIDs for primary keys](/2017/choose-uuids-for-model-ids-in-rails) in a previous article. This pairs up nicely don’t you think?
 
 
 ### Why not?
 
-It’s more code and Rail’s conventions on this are long standing. You might not feel this is worth it.
+Implementing this leads to more code and Rails’ conventions on this are long-standing. You might not feel this is worth it.
