@@ -44,13 +44,13 @@ User.most_recently_created
 
 This is mostly about making the code more explicit.
 
-The `.first` and `.last` methods, when called on a bare Active Record model scope, are colloquially used to mean ‘created first’ and ‘created most recently’.
+The `.first` and `.last` methods, when called on a bare Active Record model scope, mean the 'lowest `id`' and the 'highest `id`'. However we colloquially use them to mean ‘created first’ and ‘created most recently’.
 
-It’s only an accident of Rails default design that sorting by ascending `id` is the same order as the ascending `created_at` timestamp.
+Objects in the database are created, by default, with an incrementing integer `id`. This means that sorting by ascending `id` is the same order as the ascending `created_at` timestamp.
 
-Using these scopes with no explicit order means you are relying heavily on the Rails convention of an incrementing integer `id`.
+Using these scopes with no explicit order means you are ordering by `id`, not by recency.
 
-You might remember I advocated [using UUIDs for primary keys](/2017/choose-uuids-for-model-ids-in-rails) in a previous article. This pairs up nicely don’t you think?
+If you took my advice from a previous article about [using UUIDs for primary keys](/2017/choose-uuids-for-model-ids-in-rails) the result of calling `.first` and `.last` might surprise you, because the default ordering is still on an object’s `id` and that `id` is now random.
 
 
 ### Why not?
