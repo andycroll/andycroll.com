@@ -52,7 +52,7 @@ Objects in the database are created, by default, with an incrementing integer `i
 
 But using these scopes with no explicit order means you are ordering by '`id` assigned by the database', not by recency.
 
-If you took my advice from a previous article about [using UUIDs for primary keys](/2017/choose-uuids-for-model-ids-in-rails) the result of calling `.first` and `.last` might surprise you.
+If you took my advice from a previous article about [using UUIDs for primary keys](/ruby/choose-uuids-for-model-ids-in-rails) the result of calling `.first` and `.last` might surprise you.
 
 The default ordering is still on an Active Record object’s `id` which is now random. So when you create a `User` it is not automatically available as `User.last`.
 
