@@ -60,3 +60,5 @@ The default ordering is still on an Active Record object’s `id` which is now r
 ### Why not?
 
 Implementing this leads to more code and Rails’ conventions on this are long-standing. You might not feel this is worth it.
+
+You’ll probably also need to add an index to `created_at` so you can keep your new scopes snappy.
