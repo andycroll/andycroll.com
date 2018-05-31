@@ -13,7 +13,7 @@ email: andy@goodscary.com
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 permalink: /:categories/:title/
