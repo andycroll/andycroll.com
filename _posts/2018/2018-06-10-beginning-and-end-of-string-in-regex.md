@@ -57,9 +57,7 @@ e.g.
 => false
 ```
 
-The string above, with it's potentially harmful JavaScript does
-
-You certainly don’t want to let that sort of thing through your validations.
+The string above, with its potentially harmful JavaScript, gets through the looser validation of `^` and `$`. You certainly don’t want to let that sort of thing through your validations.
 
 
 ## Why not?
