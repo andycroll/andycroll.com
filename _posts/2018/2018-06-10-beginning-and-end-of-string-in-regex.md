@@ -47,7 +47,7 @@ The characters `^` and `$` match the beginning and end of a _line_, not the begi
 
 If your validations are not precise you could allow potentially dangerous user input to be permitted.
 
-e.g.
+For example:
 
 ```ruby
 > "word\n<script>run_naughty_script();</script>".match?(/^[a-z]+$/)
@@ -57,7 +57,7 @@ e.g.
 => false
 ```
 
-The string above, with its potentially harmful JavaScript, gets through the looser validation of `^` and `$`. You certainly don’t want to let that sort of thing through your validations.
+The string above, with its potentially harmful JavaScript, gets through the looser validation of `^` and `$`. You certainly don’t want to let that sort of code to potentially run on your site.
 
 
 ## Why not?
