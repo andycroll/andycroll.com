@@ -16,6 +16,7 @@ Sometimes these errors are for pages like `/wp_login.php` or other PHP files. If
 
 These bots are indiscriminate in their targeting (hence looking for php files in our Rails applications!) and are often installed as malware distributed around the internet.
 
+
 ## Instead of…
 
 ...cluttering your logs and potentially slowing your application with bots trying to hack WordPress.
@@ -23,7 +24,7 @@ These bots are indiscriminate in their targeting (hence looking for php files in
 
 ## Use…
 
-...ban their IP addresses with `Rack::Attack`.
+...`Rack::Attack` to ignore their requests and ban them.
 
 #### `Gemfile`
 
@@ -54,13 +55,13 @@ end if Rail.env.production?
 
 ## But why?
 
-WordPress is great. Genuinely. And powers an enormous proportion of the world’s websites. However, its longevity and ubiquity mean it is a target for automated attacks against non-updated installations that have security weaknesses.
+WordPress is great. Genuinely. And powers an enormous proportion of the world’s websites. However, its longevity and ubiquity mean it is a target for automated attacks. There are a lot of non-updated installations with known security weaknesses.
 
-Simply rejecting these requests before you even hit your application and then banning the bot’s IP address protects your app against high volumes of these requests. Leaving you with better performance, less useless noise in your logs and fewer exceptions.
+Simply rejecting these requests before you even hit your application and then banning the bot’s IP address protects your app against high volumes of these requests. This leaves you with better performance, less useless noise in your logs and fewer exceptions.
 
-With Rails `Rack::Attack` uses `Rails.cache` by default to store information about requests and block lists. So in production you'll want to configure Redis, or something similar, if you haven’t already.
+With Rails, `Rack::Attack` uses `Rails.cache` by default to store its information about requests and block lists. So in production you'll want to configure Redis, or something similar, if you haven’t already.
 
-This is just one use for the kind of access control that Rack::Attack provides, it’s a terrific tool.
+This is just one use for the kind of access control that Rack::Attack provides, it’s a terrific tool for protecting your application.
 
 
 ### Why not?
