@@ -30,12 +30,12 @@ However, we should beware.
 
 ## Use…
 
-…`\A` and `\Z`.
+…`\A` and `\z`.
 
 ```ruby
 # A regular expression matching a
 # string of lowercase letters
-/\A[a-z]+\Z/
+/\A[a-z]+\z/
 ```
 
 
