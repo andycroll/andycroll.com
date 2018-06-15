@@ -10,7 +10,7 @@ image:
   credit: 'Jehyun Sung'
 ---
 
-If your site becomes popular, or even just long-lasting you might see a bunch of 404 errors in your logs.
+If your site has been around for a long time or starts getting popular, you might see a bunch of 404 errors in your logs.
 
 Sometimes these errors are for pages like `/wp_login.php` or other PHP files. If you see these, it's likely automated bots scanning the internet for security vulnerabilities in WordPress.
 
@@ -55,17 +55,19 @@ end if Rail.env.production?
 
 ## But why?
 
-WordPress is great. Genuinely. And powers an enormous proportion of the world’s websites. However, its longevity and ubiquity mean it is a target for automated attacks. There are a lot of non-updated installations with known security weaknesses.
+WordPress is great. Genuinely. And it powers an enormous proportion of the world’s websites. However, its longevity and ubiquity mean it is a target for automated attacks. There are a lot of non-updated installations with known security weaknesses.
 
-Simply rejecting these requests before you even hit your application and then banning the bot’s IP address protects your app against high volumes of these requests. This leaves you with better performance, less useless noise in your logs and fewer exceptions.
+Rejecting these requests before they even hit your application, then banning the bot’s IP address, leaves you with better performance, less distracting noise in your logs and fewer exceptions raised.
 
 With Rails, `Rack::Attack` uses `Rails.cache` by default to store its information about requests and block lists. So in production you'll want to configure Redis, or something similar, if you haven’t already.
 
-This is just one use for the kind of access control that Rack::Attack provides, it’s a terrific tool for protecting your application.
+This is just one use for the kind of access control that Rack::Attack provides. It is a terrific tool for protecting your application.
 
 
 ### Why not?
 
-Setting up `Rack::Attack` and its cache, is another dependancy and complication for your app and you might not be seeing these errors yet.
+Adding `Rack::Attack` and its cache as another dependency increases the complexity of your application and its infrastructure.
+
+You might not be seeing these errors yet, so in that case it may not be worth it.
 
 The solution above could, _in theory_, block legitimate users. But this is highly unlikely.
