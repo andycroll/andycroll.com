@@ -16,7 +16,7 @@ In many cases you may want to surface a public method on a associated object as 
 
 The two main ways to do this are:
 
- * the `Forwardable` functionality in the the Ruby Standard Library, [documentation here](http://ruby-doc.org/stdlib-2.5.1/libdoc/forwardable/rdoc/Forwardable.html#method-i-def_delegator).
+ * the `Forwardable` functionality in the the Ruby Standard Library, [documentation here](https://ruby-doc.org/stdlib-2.5.1/libdoc/forwardable/rdoc/Forwardable.html#method-i-def_delegator).
  * the `delegate` method, an Active Support core extension (available if you’re using Rails) [documentation here](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/module/delegation.rb).
 
 ## Instead of…
@@ -87,4 +87,4 @@ As is typical, the Rails version is syntactically neater and provides greater fl
 
 When using the method there is no clarity improvement in `workspace.user_email` over `workspace.user.email`. However if you’re changing the method name, for example `workspace.owner_email`, to better show your intent, there may be a benefit.
 
-There are other more involved delegation techniques available using Ruby's `Delegator` library ([documentation here](http://ruby-doc.org/stdlib-2.5.1/libdoc/delegate/rdoc/Delegator.html)) but those are more useful when wrapping entire classes in additional functionality, rather than passing a handful of methods.
+There are other more involved delegation techniques available using Ruby's `Delegator` library ([documentation here](https://ruby-doc.org/stdlib-2.5.1/libdoc/delegate/rdoc/Delegator.html)) but those are more useful when wrapping entire classes in additional functionality, rather than passing a handful of methods.
