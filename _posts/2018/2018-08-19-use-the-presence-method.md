@@ -10,11 +10,13 @@ image:
   credit: 'Stefano Pollio'
 ---
 
-Active Support takes a lot flak for the magic it adds to core Ruby libraries including patching a lot of functionality into Ruby's `Object`.
+Active Support takes a lot flak for because it adds methods to core Ruby libraries, most notably patching a lot of functionality into Ruby's `Object` class.
 
-The documentation can be found [here](https://api.rubyonrails.org/classes/Object.html#method-i-presence).
+Every object in Ruby is a subclass of `Object`, thus if you add methods to it, you're adding them to _every_ object in your code.
 
-For me, a lot of the delight in Rails comes from the shortcuts it adds. Some features even eventually make their way into Ruby core.
+Have a look at the documentation [for the enhancements in Active Support](https://api.rubyonrails.org/classes/Object.html#method-i-presence) to find out more.
+
+One of these methods is `#presence`, which I don't see used as much as the more familiar `#blank?` and `#present?`.
 
 
 ## Instead of…
@@ -60,21 +62,21 @@ end
 
 ## But why?
 
-This is a method I don't see used as much as the more familiar `#blank?` and `#present?`.
+Use of the `#presence` method provides a very convenient shortcut to return either the object (if it exists) or `nil`.
 
-It provides a very convenient shortcut to return either the object (if it exists) or `nil`.
+It is the equivalent of writing `object.present? ? object : nil`, which is a pattern you often see in views in Rails where data may or may not exist.
 
-It is the equivalent of writing `object.present? ? object : nil` which is pattern you often see in Ruby code, where `nil` must often be dealt with.
+It's also a nice solution when you have an empty string or array, in those cases `#presence` returns `nil`.
 
 
 ### Why not?
 
-This `#presence` method is only available in Rails, if you're just using standard Ruby you might not want to include Active Support just for this.
+This `#presence` method is only available in Rails. If you're only using Ruby it's probably not worth including Active Support just for this.
 
 Even when using Rails there can be understandable resistance to Rails' habit of extending standard Ruby classes.
 
-Altering standard classes in your own code, by 'monkey patching', can cause bugs when the standard Ruby classes begin to behave in unexpected ways.
+Altering standard classes in your own code, by [monkey patching](https://en.wikipedia.org/wiki/Monkey_patch), often causes bugs when the standard Ruby classes begin to behave in unexpected ways. This is the main source of the concern about this style of coding.
 
-Your level of aversion to side-effects might be enough to avoid this particular piece of Rails' magic.
+Your level of concern about the pitfalls of monkey patching _might_ be strong enough to avoid it even when Rails does it.
 
-That said... I consider all of Rails, as a diligently maintained and widely used set of libraries, to be fair game for use if it makes the resulting code clearer.
+Given Rails is a diligently maintained and widely used set of libraries, I consider all and any of it to be safe to use if it makes the resulting code clearer.
