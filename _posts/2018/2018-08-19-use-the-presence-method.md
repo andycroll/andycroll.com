@@ -10,11 +10,11 @@ image:
   credit: 'Stefano Pollio'
 ---
 
-Active Support takes a lot flak for because it adds methods to core Ruby libraries, most notably patching a lot of functionality into Ruby's `Object` class.
+Active Support takes a lot flak because it adds methods to core Ruby libraries, most notably patching a lot of functionality into Ruby's `Object` class.
 
 Every object in Ruby is a subclass of `Object`, thus if you add methods to it, you're adding them to _every_ object in your code.
 
-Have a look at the documentation [for the enhancements in Active Support](https://api.rubyonrails.org/classes/Object.html#method-i-presence) to find out more.
+Have a look at [the documentation for the enhancements in Active Support](https://api.rubyonrails.org/classes/Object.html#method-i-presence) to find out more.
 
 One of these methods is `#presence`, which I don't see used as much as the more familiar `#blank?` and `#present?`.
 
@@ -27,7 +27,7 @@ One of these methods is `#presence`, which I don't see used as much as the more 
 class User < ApplicationRecord
   validates :email, presence: true
 
-  def full_name
+  def friendly_name
     if nickname.present?
       nickname
     elsif given_name.present?
@@ -48,7 +48,7 @@ end
 class User < ApplicationRecord
   validates :email, presence: true
 
-  def full_name
+  def friendly_name
     nickname.presence || given_name.presence || email_local_part
   end
 
@@ -66,7 +66,7 @@ Use of the `#presence` method provides a very convenient shortcut to return eith
 
 It is the equivalent of writing `object.present? ? object : nil`, which is a pattern you often see in views in Rails where data may or may not exist.
 
-It's also a nice solution when you have an empty string or array, in those cases `#presence` returns `nil`.
+It's also a nice solution when you have an empty string or array. In those cases `#presence` returns `nil`.
 
 
 ### Why not?
