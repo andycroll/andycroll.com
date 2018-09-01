@@ -54,9 +54,7 @@ You _could_ even monkey-patch the default behaviour of `#present?` on Active Rel
 
 ### Why not?
 
-Using `#any?` _is_ an extra SQL query, over using `#present?`, and the performance of your app might not benefit from the change in approach.
-
-Additionally the preloading of records might be more efficient if you then go on to use them.
+Using `#any?` _is_ an extra SQL query, over using `#present?`, and the performance of your app might not benefit from the change in approach. The preloading of records might be more efficient if you then go on to use them.
 
 A similar “fix” to that in the `attendance` gem, changing how `#present?` works on an Active Relation, has been [merged](https://github.com/rails/rails/pull/10539) and then [reverted](https://github.com/rails/rails/commit/2b763131eacaae5bff9ffb5015fbf367d594dc64) from Rails in favour of the existing behaviour, where you have to be more specific and choose to use `#any?`.
 
