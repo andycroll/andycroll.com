@@ -10,14 +10,14 @@ image:
   credit: 'Tobias Fischer'
 ---
 
-We’re trained when using Rails to use `#present?` all over the place. For example, you might use it before trying to loop through an array in a view.
+When using Rails, we tend to use `#present?` in many places as it is added to _all_ Ruby objects by Rails. For example, you might use it in a view to check if an array has some elements before trying to loop through it and display some data.
 
 However using `#present?` on models with large datasets can create unforeseen problems.
 
 
 ## Instead of…
 
-...using `#present?` on an Active Relation (a uninstantiated scope on an Active Record class)
+...using `#present?` on an Active Relation (a scope on an Active Record class)
 
 ```ruby
 books = Book.recently_released
@@ -41,21 +41,23 @@ end
 
 ## But why?
 
-When you call `#present?` it instantiates the models in an array in memory before checking whether that array is empty or not. In most cases this will be fine but in extreme cases, say complex models, or a large dataset you might see large memory usage and slowdowns.
+When you call `#present?` it instantiates the objects into an array in memory before checking whether that array is empty or not. In most cases this will be fine but in extreme cases, say complex models or when using a large dataset, you might see very high memory usage and slow performing requests.
 
-If you use `#any?` a different, simpler SQL command is run that doesn't build a large array of Active Record objects.
+If you use `#any?`, a different, simpler SQL command is run that doesn't build a large array of Active Record objects in memory.
 
-There’s also no penalty to using it if the records are already loaded.
+If the relation has already been used, meaning the objects are loaded into memory, there’s no penalty to using `#present?` as it uses the existing array rather than loading a new one.
 
-As always with changes to how your application uses the database, you’ll definitely want to monitor how the changes affect the real-life performance characteristics of _your_ application.
+As always with changes to how your application uses the database, you’ll definitely want to monitor how the changes affect the real-life performance characteristics of _your_ application. You need to make sure the extra SQL request from the call to `#any?` isn't a worse performing solution than using `#present?` for your data.
 
-You _could_ even monkey-patch the default behaviour of `#present?` on Active Relations in Rails by using the [`attendance` gem](https://github.com/schneems/attendance). This is a bit of a blunt instrument though and you’ll want to watch the performance of your app very closely if you take the plunge.
+You _could_ even monkey-patch the default behaviour of `#present?` on Active Relations in Rails, to always use `#any?`, by using the [`attendance` gem](https://github.com/schneems/attendance). This is a bit of a blunt instrument though and you’ll want to watch the performance of your app very closely if you take the plunge.
 
 
 ### Why not?
 
-Using `#any?` _is_ an extra SQL query, and the performance of your app might not benefit from the change in approach.
+Using `#any?` _is_ an extra SQL query, over using `#present?`, and the performance of your app might not benefit from the change in approach.
 
-Additionally the preloading of records might actually be more efficient if you then go on to use them.
+Additionally the preloading of records might be more efficient if you then go on to use them.
 
-A similar “fix” to that in the `attendance` gem, changing how `#present?` works on an Active Relation, has been [merged](https://github.com/rails/rails/pull/10539) and then [reverted](https://github.com/rails/rails/commit/2b763131eacaae5bff9ffb5015fbf367d594dc64) from Rails in favour of the existing behaviour. So there are definite performance subtleties to checking the presence of records.
+A similar “fix” to that in the `attendance` gem, changing how `#present?` works on an Active Relation, has been [merged](https://github.com/rails/rails/pull/10539) and then [reverted](https://github.com/rails/rails/commit/2b763131eacaae5bff9ffb5015fbf367d594dc64) from Rails in favour of the existing behaviour, where you have to be more specific and choose to use `#any?`.
+
+This shows that there are definite performance subtleties in this technique. What might seem to be an obvious performance improvement may not be for your application.
