@@ -14,7 +14,7 @@ Getting as much of the slow or non-essential work of your application into async
 
 ## Instead of…
 
-...doing jobs that iterate over a group of objects, doing work on each one.
+...doing a single job that iterates over a group of objects and does some work on each one:
 
 ```ruby
 class DoABunchOfTranslationsJob < ApplicationJob
@@ -29,7 +29,7 @@ end
 
 ## Use…
 
-...a job to enqueue a series of jobs that acts on every object individually.
+...an initial ‘enqueuing’ job to create many small, independent jobs that act on each object individually.
 
 ```ruby
 class DoABunchOfTranslationsJob < ApplicationJob
@@ -48,13 +48,17 @@ end
 
 ## But why?
 
-Jobs should ideally run as quickly as possible and make use of the concurrency of your asynchronous workers.
+Jobs should ideally run as quickly as possible and make use of the concurrency of your background workers.
 
-A single job doing 'lots' will run for a long time and thus is much more likely to encounter issues. These issues can be within the job itself, an error inside the loop or excessive memory use, or outside the job, if the the server needs to reboot.
+Jobs can fail for multiple reasons: errors raised within the job itself or errors _external_ to the job, related to the environment (a reboot, some sort of system error).
 
-If a long running job encounters an error, you have two problems, the ‘task’ is left in an inconsistent state and the long-running job will have to be run again from the beginning.
+If your job is long-running the change of the job being interrupted 'mid flow' increase. You also might see large memory usage in long running tasks.
 
-By breaking the work down into tiny repeatable pieces you increase the resilience of both the individual jobs and the wider ‘task’ as a whole. You also can make use of concurrency rather than running all the activity in a single thread.
+If a long-running job encounters an error, you have two problems: the work it is doing is left in an inconsistent state and the long-running job will have to be run again from the beginning meaning work already done has to be performed again.
+
+By breaking the work down into tiny repeatable pieces you increase the resilience of both the individual jobs and the wider ‘task’ as a whole.
+
+This style also has the benefit of making your code finish more quickly. With lots of small 'chunks' you can make use of concurrency, running many jobs at the same time, rather than running all the activity sequentially.
 
 
 ### Why not?
