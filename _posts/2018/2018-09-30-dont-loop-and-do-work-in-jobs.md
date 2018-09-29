@@ -50,19 +50,19 @@ end
 
 Jobs should ideally run as quickly as possible and make use of the concurrency of your background workers.
 
-Jobs can fail for multiple reasons: errors raised within the job itself or errors _external_ to the job, related to the environment (a reboot, some sort of system error).
+Jobs can fail for multiple reasons: errors raised within the job itself or errors _external_ to the job related to the environment (a reboot, some sort of system error).
 
-If your job is long-running the change of the job being interrupted 'mid flow' increase. You also might see large memory usage in long running tasks.
+If your job is long-running the chance of the job being interrupted 'mid flow' increase. You might also see large memory usage in such tasks.
 
-If a long-running job encounters an error, you have two problems: the work it is doing is left in an inconsistent state and the long-running job will have to be run again from the beginning meaning work already done has to be performed again.
+If a long-running job encounters an error, you have two problems: the work it is doing is left in an inconsistent state and the long-running job will have to be run again from the beginning. This means some work will be repeated, perhaps multiple times if the job fails. It might, in some circumstances, never finish.
 
 By breaking the work down into tiny repeatable pieces you increase the resilience of both the individual jobs and the wider ‘task’ as a whole.
 
-This style also has the benefit of making your code finish more quickly. With lots of small 'chunks' you can make use of concurrency, running many jobs at the same time, rather than running all the activity sequentially.
+This style also has the benefit of making your code finish more quickly. With lots of small 'chunks' you can make use of concurrency and run many jobs at the same time, rather than running all the activity sequentially.
 
 
 ### Why not?
 
-There's an extra level of indirection; you end up making `BulkWhatever` jobs to enqueue the `Whatever` tasks.
+There's an extra level of indirection; you double up and create a `BulkWhatever` job for every task to enqueue all the `Whatever` jobs. This means the code is more complex and perhaps be more confusing when you come back to it later.
 
-For short-running loops this pattern might be overkill.
+For short-running loops this extra complexity might be overkill.
