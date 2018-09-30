@@ -50,9 +50,9 @@ end
 
 Jobs should ideally run as quickly as possible and make use of the concurrency of your background workers.
 
-Jobs can fail for multiple reasons: errors raised within the job itself or errors _external_ to the job related to the environment (a reboot, some sort of system error).
+Jobs can fail for multiple reasons: errors raised within the job itself or errors _external_ to the job related to the environment (e.g. a reboot, some sort of system error etc.).
 
-If your job is long-running the chance of the job being interrupted 'mid flow' increase. You might also see large memory usage in such tasks.
+If your job is long-running the chance of the job being interrupted 'mid flow' increases. You might also see large memory usage in such tasks.
 
 If a long-running job encounters an error, you have two problems: the work it is doing is left in an inconsistent state and the long-running job will have to be run again from the beginning. This means some work will be repeated, perhaps multiple times if the job fails. It might, in some circumstances, never finish.
 
@@ -63,6 +63,6 @@ This style also has the benefit of making your code finish more quickly. With lo
 
 ### Why not?
 
-There's an extra level of indirection; you double up and create a `BulkWhatever` job for every task to enqueue all the `Whatever` jobs. This means the code is more complex and perhaps be more confusing when you come back to it later.
+There's an extra level of indirection; you end up creating a `BulkWhatever` job for every task to enqueue all the `Whatever` jobs. This means the code is more complex and will perhaps be more confusing when you come back to it later.
 
 For short-running loops this extra complexity might be overkill.
