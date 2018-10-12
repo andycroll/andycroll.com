@@ -10,9 +10,9 @@ image:
   credit: 'Laurenz Kleinheider'
 ---
 
-The more you can stay on the ‘rails’ when coding Ruby on Rails application the easier you life will be when maintaining the apps you’re building.
+The more you can stay on the ‘rails’ when coding Ruby on Rails applications the easier your life will be when maintaining the apps you’re building.
 
-A good way of doing this is to try and stick to the patterns set out in the standard Rails APIs.
+A good way of doing this is to try and stick to the patterns set out in the standard Rails APIs. One of the patterns you can use is to encompass regularly used queries as [scopes](https://guides.rubyonrails.org/active_record_querying.html#scopes).
 
 ## Instead of…
 
@@ -29,7 +29,7 @@ end
 
 ## Always…
 
-...return an `ActiveRelation` from a scope.
+...return an `ActiveRelation` from a named scope.
 
 ```ruby
 class Message < ActiveRecord
@@ -45,11 +45,13 @@ end
 
 ## But why?
 
-This is more a case of code organisation rather than any change in how you’ll actual use your models.
+This change improves the organisation of your code, rather than changing how you’ll use your models
 
-When you call `.where` or `.order` it returns an Active Relation ‘scope’ that can be chained together with further scopes. You encourage flexibility and reuse if you maintain this behaviour where your own named scopes are able to be chained with others.
+When you call `.where` or `.order` it returns an Active Relation ‘scope’ that can be chained together with further scopes. You encourage flexibility and reuse if you maintain this behaviour where all of your own named scopes are able to be chained with others.
 
 
 ### Why not?
 
-This is just a helpful heuristic to organise your code. If you don't feel the organisational benefit, simply don’t use it.
+You _can_ get by by just being careful which scopes you use together, there is no “rule” against using `.first` or `.last` inside a scope.
+
+This is just a helpful heuristic to organise your code to guide your, or your co-workers, future use of the scopes you create.
