@@ -36,7 +36,7 @@ class Message < ActiveRecord
   scope :sent, -> { where.not(sent_at: nil) }
   scope :recently_sent, -> { sent.order(sent_at: :desc) }
 
-  def most_recently_sent
+  def self.most_recently_sent
     recently_sent.first
   end
 end
@@ -49,9 +49,11 @@ This change improves the organisation of your code, rather than changing how you
 
 When you call `.where` or `.order` it returns an Active Relation ‘scope’ that can be chained together with further scopes. You encourage flexibility and reuse if you maintain this behaviour where all of your own named scopes are able to be chained with others.
 
+The [principle of least surprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment) is a solid heuristic with which to organise your code.
+
 
 ### Why not?
 
 You _can_ get by by just being careful which scopes you use together, there is no “rule” against using `.first` or `.last` inside a scope.
 
-This is just a helpful heuristic to organise your code to guide your, or your co-workers, future use of the scopes you create.
+Why not use this helpful heuristic to organise your code to guide your, or your co-workers, future use of the scopes you create.
