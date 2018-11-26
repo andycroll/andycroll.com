@@ -10,13 +10,13 @@ image:
   credit: 'Steve Johnson'
 ---
 
-There’s multiple ways to write strings in Ruby, but if you are using or generating longer or multi-line strings the `HEREDOC` (or 'Here document') is your friend.
+There’s multiple ways to generate `String` literals in Ruby. If you are creating long, or multi-line, strings, the `HEREDOC` (or 'Here document') is your friend.
 
-Ruby’s documentation for Strings can be [found here](http://ruby-doc.org/core-2.5.3/doc/syntax/literals_rdoc.html#label-Strings).
+Details of the many ways to create String literals can be found in [Ruby’s documentation for Strings](http://ruby-doc.org/core-2.5.3/doc/syntax/literals_rdoc.html#label-Strings).
 
 ## Instead of…
 
-...running strings over multiple lines and including new line characters.
+...running strings over multiple lines and including newline characters:
 
 ```ruby
 hamilton = "I am not throwing away my shot!\n" \
@@ -40,7 +40,7 @@ burr += "If you talk, you’re gonna get shot!\n"
 ... a `HEREDOC`.
 
 ```ruby
-hamilton = <<ANGELICA
+angelica = <<ANGELICA
 I’m a girl in a world in which
 My only job is to marry rich
 My father has no sons so I’m the one
@@ -52,7 +52,7 @@ ANGELICA
 ... or even better a ‘wiggly’ `HEREDOC` (since Ruby 2.3).
 
 ```ruby
-hamilton = <<~ANGELICA
+angelica = <<~ANGELICA
   So I’m the oldest and the wittiest and the gossip in
   New York #{city} is insidious
   And Alexander is penniless
@@ -67,7 +67,7 @@ For multi-line strings, the `HEREDOC` is absolutely the right choice. You get th
 
 You can interpolate variables into your strings just like you can with quoted syntax.
 
-The “wiggly” variant of the `HEREDOC` removes the same amount of spacing from every line as is used on the first line. The following two versions produce the same output.
+The “wiggly” variant of the `HEREDOC` removes the initial spacing from every line, as much as it is used on the first line of the `HERDOC`. The following two statements produce the same output.
 
 ```ruby
 throwing_away = <<THROW
@@ -86,4 +86,4 @@ THROW
 
 ### Why not?
 
-If you’re using multi-line strings for any reason, there’s no reason you wouldn’t use the `HEREDOC`. Stick with the wiggly
+If you’re using multi-line strings for any reason, there’s no reason you wouldn’t use the `HEREDOC`. Stick with the wiggly.
