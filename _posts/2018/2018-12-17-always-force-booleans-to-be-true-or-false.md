@@ -67,6 +67,6 @@ Character.where(satisfied: false)
 
 If you’re starting from scratch, just do this.
 
-If you already have this issue, and heaven knows I’ve done it, you will have to put together a careful migration strategy. This might also be true of adding these sorts of columns to existing tables, depending on your underlying database.
+If you already have this issue — and heaven knows I’ve fallen into the trap — you will have to put together a careful migration strategy. This might also be true of adding these sorts of columns to existing tables, depending on your underlying database.
 
 Setting defaults and constraints on existing tables to avoid downtime or long running migrations needs careful thought.
