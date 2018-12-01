@@ -67,7 +67,7 @@ For multi-line strings, the `HEREDOC` is absolutely the right choice. You get th
 
 You can interpolate variables into your strings just like you can with quoted syntax.
 
-The “wiggly” variant of the `HEREDOC` removes the initial spacing from every line, as much as it is used on the first line of the `HERDOC`. The following two statements produce the same output.
+With the “wiggly” variant of the `HEREDOC`, if there is any spacing between the beginning of the first line and the first word in the first line, that amount spacing of spacing is removed from every line. The following two statements produce the same output:
 
 ```ruby
 throwing_away = <<THROW
