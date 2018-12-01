@@ -14,7 +14,7 @@
   </author>
   <generator uri="http://jekyllrb.com/">Jekyll</generator>
 
-  {% for post in site.posts limit: 5 %}
+  {% for post in site.posts limit: 15 %}
   <entry>
     <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
     <link href="{{ site.url }}{{ post.url }}"/>
