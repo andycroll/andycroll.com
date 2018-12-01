@@ -45,7 +45,7 @@ end
 
 This is a known issue called the tri-state problem. Ideally you don't want a boolean (which by definition should be `true` or `false`) to ever equal `nil`.
 
-Although `nil` behaves a lot like `false` in Ruby it isn't quite the same. Having a third state that you can think of as “a bit like `false`” really complicates the logic of your application.
+Although `nil` behaves a lot like `false`, in Ruby they are not quite the same. Having a third state that you can think of as “a bit like `false`” really complicates the logic of your application.
 
 Having `NULL` values in your database means you have to consider how they should behave and also complicates your scopes.
 
