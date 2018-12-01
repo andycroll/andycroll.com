@@ -10,11 +10,11 @@ image:
   credit: 'William Bout'
 ---
 
-Last time we discussed using the hash-style syntax in your `#where` methods but in my examples I did something I wouldn't do in my real-life code...
+Last time we discussed using the hash-style syntax in your `#where` methods but in my examples I did something I wouldn't do in my real-life code…
 
 ## Instead of…
 
-...using `#where` scopes in your controllers or views.
+…using `#where` scopes in your controllers or views.
 
 ```ruby
 class PostsController < ApplicationController
@@ -27,7 +27,7 @@ end
 
 ## Use…
 
-...only named scopes that you define in your model.
+…only named scopes that you define in your model.
 
 ```ruby
 class Post < ApplicationRecord

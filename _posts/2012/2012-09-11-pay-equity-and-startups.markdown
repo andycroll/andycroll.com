@@ -41,15 +41,15 @@ Your equity may be worth nothing. Do not bank on it. This of course is more pres
 
 Founders also genuinely believe that on the occasion of an ‘exit’ you will become genuinely rich. They are likely wrong unless you are Facebook.
 
-Considering the general likelihood of failure (of all startups) and the small chance of an exit in Singapore, I’ll make some high-end assumptions...
+Considering the general likelihood of failure (of all startups) and the small chance of an exit in Singapore, I’ll make some high-end assumptions…
 
-If you get an offer of 2% over four years and the company sells for $30m you end up with $600k. Which is a lovely outcome. At this point we’re talking life changing money... as in, you’ll mostly be able to buy property and ease your day to day. However, the yacht will have to wait.
+If you get an offer of 2% over four years and the company sells for $30m you end up with $600k. Which is a lovely outcome. At this point we’re talking life changing money… as in, you’ll mostly be able to buy property and ease your day to day. However, the yacht will have to wait.
 
 More likely given Singapore’s recent exits (Tencube, HGW) you’re more likely to get 0.5% at $10-15m after four years. This is 120k, which still seems like a lot of money, until you factor in any pay reduction you’re expected to take over four years.
 
 Taking a thousand dollar haircut in salary over four years is $48k, nearly half of the potential equity payout, but guaranteed if you took it as salary.
 
-This comes across as super-negative, but that’s not how I feel. It is definitely good to have some personal stake in any business, both for employee and employer. But... be aware of the numbers before you agree to a trade.
+This comes across as super-negative, but that’s not how I feel. It is definitely good to have some personal stake in any business, both for employee and employer. But… be aware of the numbers before you agree to a trade.
 
 It’s also perfectly fine, to take a pay cut to do work you want to do, or to work with people you love or to learn. All I advise is to know *why* it is you are taking the pay cut in exchange for equity.
 

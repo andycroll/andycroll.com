@@ -15,7 +15,7 @@ Ruby’s conditional syntax is ‘truthy’, meaning that any statement in a con
 
 ## Instead of…
 
-...overcomplicating your conditions.
+…overcomplicating your conditions.
 
 ```ruby
 # Example 1

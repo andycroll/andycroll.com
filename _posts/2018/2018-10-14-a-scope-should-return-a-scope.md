@@ -16,7 +16,7 @@ A good way of doing this is to try and stick to the patterns set out in the stan
 
 ## Instead of…
 
-...using methods inside your scopes that return an object.
+…using methods inside your scopes that return an object.
 
 ```ruby
 class Message < ActiveRecord
@@ -29,7 +29,7 @@ end
 
 ## Always…
 
-...return an `ActiveRelation` from a named scope.
+…return an `ActiveRelation` from a named scope.
 
 ```ruby
 class Message < ActiveRecord

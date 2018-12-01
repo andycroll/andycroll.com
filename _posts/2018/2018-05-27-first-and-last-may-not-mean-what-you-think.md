@@ -14,7 +14,7 @@ Each Active Record model comes with the well-used ‘get me a single record’ s
 
 ## Instead of…
 
-...using the methods directly on the base ActiveRecord class.
+…using the methods directly on the base ActiveRecord class.
 
 ```ruby
 User.first
@@ -24,7 +24,7 @@ User.last
 
 ## Use…
 
-...them only with ordered scopes. Ideally with named concepts.
+…them only with ordered scopes. Ideally with named concepts.
 
 ### `app/models/user.rb`
 
@@ -33,7 +33,7 @@ class User < ActiveRecord::Base
   scope :by_created, -> { order(created_at: :asc) }
   scope :earliest_created, -> { by_created.first }
   scope :most_recently_created, -> { by_created.last }
-  # ...
+  # …
 end
 
 User.most_recently_created

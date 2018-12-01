@@ -16,7 +16,7 @@ Where you have a blog system with posts that can be set to be hidden, for when y
 
 ## Instead of…
 
-...`default_scope`.
+…`default_scope`.
 
 ```ruby
 # app/models/post.rb
@@ -27,7 +27,7 @@ end
 
 ## Use…
 
-...explicit scopes.
+…explicit scopes.
 
 ```ruby
 # app/models/post.rb
@@ -36,7 +36,7 @@ class Post < ActiveRecord::Base
 end
 ```
 
-...then you can do…
+…then you can do…
 
 ```ruby
 Post.published

@@ -19,12 +19,12 @@ These bots are indiscriminate in their targeting, hence looking for PHP files in
 
 ## Instead of…
 
-...your logs becoming cluttered and these automated bots potentially slowing your application.
+…your logs becoming cluttered and these automated bots potentially slowing your application.
 
 
 ## Use…
 
-...`Rack::Attack` to block their requests and ban the offending IP addresses.
+…`Rack::Attack` to block their requests and ban the offending IP addresses.
 
 #### `Gemfile`
 

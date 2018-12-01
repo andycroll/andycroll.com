@@ -16,7 +16,7 @@ If you only need to use a single field on an Active Record model, for example, t
 
 ## Instead of…
 
-...iterating over objects fully loaded into memory.
+…iterating over objects fully loaded into memory.
 
 ```ruby
 Book.paperbacks.map { |book| book.title }
@@ -28,7 +28,7 @@ Book.paperbacks.map(&:title)
 
 ## Use…
 
-...the `ActiveRelation#pluck` method to pull the required fields directly from the database.
+…the `ActiveRelation#pluck` method to pull the required fields directly from the database.
 
 ```ruby
 Book.paperbacks.pluck(:title)

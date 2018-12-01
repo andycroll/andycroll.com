@@ -14,7 +14,7 @@ Getting as much of the slow or non-essential work of your application into async
 
 ## Instead of…
 
-...doing a single job that iterates over a group of objects and does some work on each one:
+…doing a single job that iterates over a group of objects and does some work on each one:
 
 ```ruby
 class DoABunchOfTranslationsJob < ApplicationJob
@@ -29,7 +29,7 @@ end
 
 ## Use…
 
-...an initial ‘enqueuing’ job to create many small, independent jobs that act on each object individually.
+…an initial ‘enqueuing’ job to create many small, independent jobs that act on each object individually.
 
 ```ruby
 class DoABunchOfTranslationsJob < ApplicationJob

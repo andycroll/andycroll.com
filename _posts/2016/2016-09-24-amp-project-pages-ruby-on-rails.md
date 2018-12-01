@@ -16,7 +16,7 @@ Google’s [AMP Project](http://ampproject.com) is set to become _a thing_.
 
 In short it’s a special ‘version’ of HTML with some Google-specified JS that enables features that make pages super-fast to load. Whatever the politics of this ‘initiative’ it may well help with SEO and we can certainly learn from some of the techniques to improve page load speed.
 
-I'm not going to recommend it from a business perspective as it has some [unfortunate side effects](https://www.alexkras.com/google-may-be-stealing-your-mobile-traffic/), but if you _do_ need to build it... here's how.
+I'm not going to recommend it from a business perspective as it has some [unfortunate side effects](https://www.alexkras.com/google-may-be-stealing-your-mobile-traffic/), but if you _do_ need to build it… here's how.
 
 At the moment there’s [limited support](https://www.ampproject.org/docs/reference/spec.html) for some HTML features, for example the full gamut of `<form>` related elements, but the spec is moving [at speed](https://www.ampproject.org/roadmap/).
 

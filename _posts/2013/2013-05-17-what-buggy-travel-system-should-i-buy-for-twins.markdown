@@ -33,7 +33,7 @@ Very similar in style, size and weight to the iCandy.
 
 ## The Future
 
-It looks like these are only good for a year or so, more experienced twin mums have suggested that you later on you can move to multiple buggies. Lightweight, off-road etc... depending on the activities you sue them for.
+It looks like these are only good for a year or so, more experienced twin mums have suggested that you later on you can move to multiple buggies. Lightweight, off-road etc… depending on the activities you sue them for.
 
 The benefit is the travel systems hold their value pretty well and your local TABMA association, twins group or NCT chapter are all good places to sell a buggy you're not using any more.
 

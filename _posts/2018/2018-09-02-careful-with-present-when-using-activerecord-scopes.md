@@ -17,7 +17,7 @@ However, using `#present?` on scopes can create unforeseen performance problems.
 
 ## Instead of…
 
-...using `#present?` on an Active Relation (a scope on an Active Record class)
+…using `#present?` on an Active Relation (a scope on an Active Record class)
 
 ```ruby
 books = Book.recently_released
@@ -29,7 +29,7 @@ end
 
 ## Use…
 
-...`#any?` or `#exists?`
+…`#any?` or `#exists?`
 
 ```ruby
 books = Book.recently_released

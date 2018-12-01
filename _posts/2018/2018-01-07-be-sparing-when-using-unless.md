@@ -16,7 +16,7 @@ However, given the flexibility of Ruby's syntax, it is easy to make code harder 
 
 ## Instead of…
 
-...using `unless` in ways that makes your brain hurt.
+…using `unless` in ways that makes your brain hurt.
 
 ```ruby
 # Example 1
@@ -35,7 +35,7 @@ end
 
 ## Use…
 
-...`if` where it makes the code clearer.
+…`if` where it makes the code clearer.
 
 ```ruby
 # Example 1

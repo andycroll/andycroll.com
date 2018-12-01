@@ -23,7 +23,7 @@ Rather than reply directly I figured I'd pen an open letter and point him back h
 >
 > To the white who works in or owns this co:
 >
-> Kindly cease working or setting up your biz in Singapore and go back to your own white man country. White people are here only to take away jobs from Singaporeans. Besides, Singapore is an Asian country and meant for Asians...namely Malays, Chinese and Indians (including Africans, Vietnamese, Middle-Easterners).
+> Kindly cease working or setting up your biz in Singapore and go back to your own white man country. White people are here only to take away jobs from Singaporeans. Besides, Singapore is an Asian country and meant for Asians…namely Malays, Chinese and Indians (including Africans, Vietnamese, Middle-Easterners).
 >
 > In our ICs, one is either classed as Malay, Chinese, Indian or Other.  whites do not figure in the demographics of Singapore.
 >

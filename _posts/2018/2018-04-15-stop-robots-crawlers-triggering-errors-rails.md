@@ -17,12 +17,12 @@ When you have an Internet-facing site various search engines will be crawling it
 
 ## Instead of…
 
-...getting a bunch of unhelpful, distracting noise in your monitoring setup, or errors in your logs, when Google (or another web crawler) hits deleted public pages…
+…getting a bunch of unhelpful, distracting noise in your monitoring setup, or errors in your logs, when Google (or another web crawler) hits deleted public pages…
 
 
-### Or...
+### Or…
 
-...naively swallowing all your 404 errors.
+…naively swallowing all your 404 errors.
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -41,7 +41,7 @@ end
 
 ## Use…
 
-...the [`is_crawler`](https://github.com/ccashwell/is_crawler) gem and configure it like so:
+…the [`is_crawler`](https://github.com/ccashwell/is_crawler) gem and configure it like so:
 
 ### `application_controller.rb`
 

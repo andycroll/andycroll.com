@@ -14,7 +14,7 @@ Rails uses `content_for` as its primary way to store content in one place for us
 
 ## Instead of…
 
-...using an instance variable in the controller...
+…using an instance variable in the controller…
 
 ### `things_controller.rb`
 
@@ -36,7 +36,7 @@ In the `<head>`.
 
 ## Use…
 
-...`content_for` and `yield`.
+…`content_for` and `yield`.
 
 ### `things/show.html.erb`
 

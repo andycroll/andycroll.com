@@ -17,7 +17,7 @@ However, on many applications, diving into a `schema.rb` or migration often reve
 
 ## Instead of…
 
-...including the words `date` or `time` in your database columns:
+…including the words `date` or `time` in your database columns:
 
 ```ruby
 class NaughtyMigration < ActiveRecord::Migration[5.1]
@@ -29,7 +29,7 @@ end
 
 ## Use…
 
-...the suffix `at` for times and `on` for dates.
+…the suffix `at` for times and `on` for dates.
 
 ```ruby
 class AwesomeMigration < ActiveRecord::Migration[5.1]

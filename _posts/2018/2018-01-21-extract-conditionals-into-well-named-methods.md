@@ -14,7 +14,7 @@ One of the simplest (and most effective) ways to refactor is to [extract a metho
 
 ## Instead of…
 
-...using slightly complex statements in your conditionals.
+…using slightly complex statements in your conditionals.
 
 ```ruby
 class BrightonCoffeeShop
@@ -40,7 +40,7 @@ This implementation explicitly returns `false` if the `name` is unknown. The onl
 
 ## Use…
 
-...the Extract Method refactoring to move the logic into a `private` method, giving that method a name that clearly explains the concept of the code.
+…the Extract Method refactoring to move the logic into a `private` method, giving that method a name that clearly explains the concept of the code.
 
 ```ruby
 class BrightonCoffeeShop

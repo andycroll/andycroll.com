@@ -16,7 +16,7 @@ I'd long known that using Ruby's `Hash#merge!` rather than `Hash#merge` was much
 
 What a fool I've been.
 
-Rather than use code like either of these...
+Rather than use code like either of these…
 
 ```ruby
 array_of_stuff.inject({}) do |result, element|
@@ -29,7 +29,7 @@ array_of_stuff.inject({}) do |result, element|
 end
 ```
 
-...it's much more idiomatic Ruby to use `each_with_object`.
+…it's much more idiomatic Ruby to use `each_with_object`.
 
 ```ruby
 array_of_stuff.each_with_object({}) do |element, result|
@@ -91,4 +91,4 @@ The results were interesting.
 
 Turns out the most idiomatic code is _also_ the fastest. Followed surprisingly closely by the 'do the simplest thing' variant, but not by a huge amount.
 
-PS If you're using `merge` without the `!` inside loops like this... _just don’t_.
+PS If you're using `merge` without the `!` inside loops like this… _just don’t_.

@@ -19,11 +19,11 @@ A Ruby hash is typically accessed using square brackets, like `hash[key]`, but y
 
 ## Instead of…
 
-...accessing required parameters from the `params` hash using the typical `#[]` method...
+…accessing required parameters from the `params` hash using the typical `#[]` method…
 
 ```ruby
 class ThingController < ApplicationController
-  # ... actions
+  # … actions
 
   private
 
@@ -36,11 +36,11 @@ end
 
 ## Use…
 
-...the `#fetch` method to raise an error if the required parameter is missing.
+…the `#fetch` method to raise an error if the required parameter is missing.
 
 ```ruby
 class ThingController < ApplicationController
-  # ... actions
+  # … actions
 
   private
 

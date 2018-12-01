@@ -13,27 +13,27 @@ image:
 ActiveRelation, which powers the searching and querying engine of ActiveRecord, is a powerful and flexible tool.
 
 
-## Instead of...
+## Instead of…
 
-...writing literal SQL strings with direct string interpolation inside an ActiveRelation `#where` method.
+…writing literal SQL strings with direct string interpolation inside an ActiveRelation `#where` method.
 
 ```ruby
 Person.where("name = #{ params[:name] } AND hidden_at IS NULL")
 ```
 
 
-## Or...
+## Or…
 
-...writing literal SQL strings and using the ‘array style’ to safely interpolate user input.
+…writing literal SQL strings and using the ‘array style’ to safely interpolate user input.
 
 ```ruby
 Person.where('name = ? AND hidden_at IS NULL', params[:name])
 ```
 
 
-## Use...
+## Use…
 
-...the ‘hash style’ syntax.
+…the ‘hash style’ syntax.
 
 ```ruby
 Person.where(name: params[:name], hidden_at: nil)

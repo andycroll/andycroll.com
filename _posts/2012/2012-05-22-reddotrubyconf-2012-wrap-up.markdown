@@ -57,7 +57,7 @@ _I'll add missing decks as they become availible._
 
 #### Nationality of those coming from Singapore
 
-An interesting one this... Singapore really is a global city.
+An interesting one this… Singapore really is a global city.
 
 ![Attendee Nationality](/images/2012/rdrc-2012-nationality-singapore.png)
 
@@ -75,7 +75,7 @@ Wifi remained a hot topic. Some loved that they couldn’t distract themselves, 
 
 Potentially do an hour of lightening talks at some stage, I'll be looking for volunteers to run this!
 
-Some feedback for you... I'd really appreciate it if you could all buy your tickets a bit earlier next year so I'm not freaking out with a month to go next time. :-)
+Some feedback for you… I'd really appreciate it if you could all buy your tickets a bit earlier next year so I'm not freaking out with a month to go next time. :-)
 
 See you next year. Ideas, comment, adoration, critique to [andycroll@deepcalm.com](mailto:anycroll@deepcalm.com)
 

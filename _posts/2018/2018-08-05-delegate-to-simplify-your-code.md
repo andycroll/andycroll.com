@@ -21,7 +21,7 @@ The two main ways to do this are:
 
 ## Instead of…
 
-... creating new methods to call directly to associated objects.
+… creating new methods to call directly to associated objects.
 
 ```ruby
 # Plain Ruby
@@ -50,7 +50,7 @@ end
 
 ## Use…
 
-...the `Forwardable` functionality or `delegate` method..
+…the `Forwardable` functionality or `delegate` method..
 
 ```ruby
 # Plain Ruby

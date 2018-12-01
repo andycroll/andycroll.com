@@ -113,7 +113,7 @@ $1,100m x 1 / 2.87625 = $382m
 
 This is unlikely however as the Series E round is likely to have a 2-3x liquidation preference, and potentially the Series D round as well, meaning they get their money back twice or three times before the cash is split amongst the founders.
 
-So assuming a 3x preference at Series E and a 2x at Series D...
+So assuming a 3x preference at Series E and a 2x at Series D…
 
 1,100m - 255m (3 x 85) for the 276,250 shares at Series E leaves $845m.
 

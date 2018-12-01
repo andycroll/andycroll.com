@@ -17,7 +17,7 @@ A class representing a collection, such as `Array`, `Set` or `Hash`, has the met
 
 ## Instead of…
 
-...using a C-style loop with a temporary variable, which would be fine in many other languages.
+…using a C-style loop with a temporary variable, which would be fine in many other languages.
 
 ```ruby
 total = 0
@@ -30,7 +30,7 @@ total
 
 ## Use…
 
-...your deep love of one of Ruby’s `Enumerable` methods, and implement using `#inject`.
+…your deep love of one of Ruby’s `Enumerable` methods, and implement using `#inject`.
 
 ```ruby
 [1, 3, 5, 7].inject(0) do |total, number|
@@ -39,9 +39,9 @@ end
 ```
 
 
-## Or better...
+## Or better…
 
-...there’s a convenient `#sum` method in `Enumerable`.
+…there’s a convenient `#sum` method in `Enumerable`.
 
 ```ruby
 [1, 3, 5, 7].sum

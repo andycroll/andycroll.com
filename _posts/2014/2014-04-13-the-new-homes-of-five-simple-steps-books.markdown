@@ -11,7 +11,7 @@ image:
   alt: 'Five Simple Steps texture'
 ---
 
-With the [aquisition of Mark Boulton Design by Monotype](http://markboulton.co.uk/journal/mbd-and-monotype), its publishing operation, Five Simple Steps, shut down and returned all the book rights to their respective authors. And then it was run for a little longer, by [Craig](http://craiglockwood.co.uk) & [Amy](https://twitter.com/AmieNLockwood), but then... sadly no more.
+With the [aquisition of Mark Boulton Design by Monotype](http://markboulton.co.uk/journal/mbd-and-monotype), its publishing operation, Five Simple Steps, shut down and returned all the book rights to their respective authors. And then it was run for a little longer, by [Craig](http://craiglockwood.co.uk) & [Amy](https://twitter.com/AmieNLockwood), but then… sadly no more.
 
 So should you want to buy these fonts of knowledge where should you go?
 
@@ -76,6 +76,6 @@ Design evolution _by [Josh Long](http://twitter.com/joshlong)_
 
 -----
 
-As I write, authors are frantically sorting themselves out, so if more books appear... let me know [@andycroll](http://twitter.com/andycroll).
+As I write, authors are frantically sorting themselves out, so if more books appear… let me know [@andycroll](http://twitter.com/andycroll).
 
-An aside, we're trying to get google-juice-friendly redirects sorted from the old URLs to the new ones, for now... this'll have to do.
+An aside, we're trying to get google-juice-friendly redirects sorted from the old URLs to the new ones, for now… this'll have to do.

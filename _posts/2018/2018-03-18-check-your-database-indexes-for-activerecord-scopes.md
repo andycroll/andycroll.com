@@ -17,12 +17,12 @@ Indexes allow your database to quickly find and sort records in a table by keepi
 
 ## Instead of…
 
-...having your database do more work than it needs to.
+…having your database do more work than it needs to.
 
 
 ## Use…
 
-...database indexes when you query on foreign keys and for queries over multiple fields.
+…database indexes when you query on foreign keys and for queries over multiple fields.
 
 ```ruby
 class AddRecommendedIndexes < ActiveRecord::Migration[5.1]

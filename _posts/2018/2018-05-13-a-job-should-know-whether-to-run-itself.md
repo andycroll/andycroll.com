@@ -21,7 +21,7 @@ When a job doesn't always need to be run, we can use these callbacks to save wri
 
 ## Instead of…
 
-...checking whether a job should be enqueued when you enqueue it...
+…checking whether a job should be enqueued when you enqueue it…
 
 ```ruby
 class SendNotificationJob < ApplicationJob
@@ -38,7 +38,7 @@ end
 
 ## Use…
 
-...use an early `return` to do nothing at the point the job is executed.
+…use an early `return` to do nothing at the point the job is executed.
 
 ```ruby
 class SendNotificationJob < ApplicationJob
@@ -53,9 +53,9 @@ SendNotificationJob.perform_later(user, message)
 ```
 
 
-# Or...
+# Or…
 
-...throw the symbol `:abort` in a callback so a job does not enqueue itself.
+…throw the symbol `:abort` in a callback so a job does not enqueue itself.
 
 ```ruby
 class SendNotificationJob < ApplicationJob

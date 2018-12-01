@@ -21,7 +21,7 @@ One of these methods is `#presence`, which I don't see used as much as the more 
 
 ## Instead of…
 
-...using long-winded conditionals to display the value of a variable.
+…using long-winded conditionals to display the value of a variable.
 
 ```ruby
 class User < ApplicationRecord
@@ -42,7 +42,7 @@ end
 
 ## Use…
 
-...the `#presence` method from Active Support.
+…the `#presence` method from Active Support.
 
 ```ruby
 class User < ApplicationRecord

@@ -21,7 +21,7 @@ A lot of startup events are pitching related. There's a few reasons for this.
 2. They pad out the schedule of a larger conference
 3. There are people who believe that an investor sitting in the audience will be immediately convinced and meet them off the stage with a massive check.
 4. There are people who believe that one of the world's great developers is sitting in the audience and will meet them off the stage with an offer to build the site for nothing.
-5. The expert panel has no prep (just say the first thing that comes out of your head!) which is ideal for busy people so you can always fill it up. I've played this role... it's fun to have opinions.
+5. The expert panel has no prep (just say the first thing that comes out of your head!) which is ideal for busy people so you can always fill it up. I've played this role… it's fun to have opinions.
 
 I know this is endemic to the startup world but in particular South East Asia has a bad case of over-pitching.
 
