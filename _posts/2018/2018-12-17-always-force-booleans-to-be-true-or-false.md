@@ -12,7 +12,7 @@ image:
 
 Migrations, in common with much of Rails, are ‘[sharp knives](https://rubyonrails.org/doctrine/#provide-sharp-knives)’ — easy to use but potentially dangerous and you can cut yourself.
 
-One way a migration can ‘cut’ you is by letting you make quick decisions about your database structure without considering the consequences!
+One way a migration can ‘cut’ you is by letting you make quick decisions about your database structure without considering the consequences. In this case we'll examine the case of `NULL` in a boolen field your SQL (converted to `nil` when you use it in Ruby).
 
 
 ## Instead of…
@@ -30,7 +30,7 @@ end
 
 ## Always…
 
-...use constraints that prevent values from being `nil` that should be only `true` or `false`.
+...use constraints in your database that prevent values that should be only `true` or `false` from being `NULL`.
 
 ```ruby
 class AddRecommendedIndexes < ActiveRecord::Migration[5.1]
@@ -43,7 +43,7 @@ end
 
 ## But why?
 
-This is a known issue called the tri-state problem. Ideally you don't want a boolean (which by definition should be `true` or `false`) to ever equal `nil`.
+This is a known issue called the tri-state problem. Ideally you don't want a boolean (which by definition should be `true` or `false`) to ever be `NULL` (or `nil` when it is converted from SQL to Ruby).
 
 Although `nil` behaves a lot like `false`, in Ruby they are not quite the same. Having a third state that you can think of as “a bit like `false`” really complicates the logic of your application.
 
@@ -67,6 +67,6 @@ Character.where(satisfied: false)
 
 If you’re starting from scratch, just do this.
 
-If you already have this issue — and heaven knows I’ve fallen into the trap — you will have to put together a careful migration strategy. This might also be true of adding these sorts of columns to existing tables, depending on your underlying database.
+If you already have this issue — and heaven knows I’ve fallen into the trap — you will have to put together a careful migration strategy.
 
-Setting defaults and constraints on existing tables to avoid downtime or long running migrations needs careful thought.
+When changing/adding columns or default values to an existing table many databases will lock the table while they write to every row. This means you’ll have to consider downtime or perhaps multiple smaller migrations to ensure you minimise the impact on your application.
