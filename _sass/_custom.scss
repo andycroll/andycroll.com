@@ -1,0 +1,42 @@
+$red: rgb(174,22,22);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 380px,
+  md: 600px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$grid-gutter-width: 20px;
+
+$font-family-serif: Merriweather, serif;
+$font-size-base: 1rem;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base;
+
+$headings-font-family: $font-family-serif;
+$headings-line-height: 1;
+
+
+
+h2, h3 { margin-top: 1.6rem; }
+
+pre {
+  padding: 0.5em;
+}
+
+.amp {
+  font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
+  color: $red;
+  font-weight: normal; font-style: italic;
+  display: inline-block;
+  font-size: 125%;
+  margin: -0.3em 0 0 -0.02em;
+}
+
+.logo-footer { width: 50px; height: 50px; fill: #FFF; }

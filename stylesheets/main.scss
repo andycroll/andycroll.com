@@ -1,5 +1,7 @@
 ---
 ---
+@import "custom";
+
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 
@@ -39,20 +41,3 @@
 @import "bootstrap/utilities";
 
 @import 'syntax';
-
-h2, h3 { margin-top: 1.6rem; }
-
-pre {
-  padding: 0.5em;
-}
-
-.amp {
-  font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
-  color: $red;
-  font-weight: normal; font-style: italic;
-  display: inline-block;
-  font-size: 125%;
-  margin: -0.3em 0 0 -0.02em;
-}
-
-.logo-footer { width: 50px; height: 50px; fill: #FFF; }
