@@ -1,6 +1,6 @@
 ---
 title: Write long strings with wiggly HEREDOCs
-description: "If you’re"
+description: "<<~HEREDOC"
 layout: article
 category: ruby
 image:
