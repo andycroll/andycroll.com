@@ -10,7 +10,7 @@ image:
   credit: 'Obi Onyeador'
 ---
 
-Migrations, in common with much of Rails, are ‘[sharp knives](https://rubyonrails.org/doctrine/#provide-sharp-knives)’ — easy to use but potentially dangerous and you can cut yourself.
+Migrations, in common with much of Rails, are ‘[sharp knives](https://rubyonrails.org/doctrine/#provide-sharp-knives)’ — easy to use, but potentially dangerous, and you can end up cutting yourself.
 
 One way a migration can ‘cut’ you is by letting you make quick decisions about your database structure without considering the consequences. In this case we'll examine the case of `NULL` in a boolen field your SQL (converted to `nil` when you use it in Ruby).
 
