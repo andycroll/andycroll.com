@@ -12,7 +12,7 @@ image:
 
 Migrations, in common with much of Rails, are ‘[sharp knives](https://rubyonrails.org/doctrine/#provide-sharp-knives)’ — easy to use, but potentially dangerous, and you can end up cutting yourself.
 
-One way a migration can ‘cut’ you is by letting you make quick decisions about your database structure without considering the consequences. In this case we'll examine the case of `NULL` in a boolen field your SQL (converted to `nil` when you use it in Ruby).
+One way a migration can ‘cut’ you is by letting you make quick decisions about your database structure without considering the consequences. In this case we'll examine the case of `NULL` in a boolean field your SQL. This is converted to `nil` when you use it in Ruby.
 
 
 ## Instead of…
@@ -43,13 +43,9 @@ end
 
 ## But why?
 
-This is a known issue called the tri-state problem. Ideally you don't want a boolean (which by definition should be `true` or `false`) to ever be `NULL` (or `nil` when it is converted from SQL to Ruby).
+This is a known issue called the Tri-state problem. Although `nil` behaves a lot like `false` in Ruby, they are not quite the same. Having a third state really complicates the logic of your application as you have to consider how `nil` should be treated.
 
-Although `nil` behaves a lot like `false`, in Ruby they are not quite the same. Having a third state that you can think of as “a bit like `false`” really complicates the logic of your application.
-
-Having `NULL` values in your database means you have to consider how they should behave and also complicates your scopes.
-
-If you think of `nil` as `false` you'd have to use scopes like:
+It also complicates your scopes. If you think of `nil` as `false` you'd have to use scopes like:
 
 ```ruby
 Character.where(satisfied: false).or(Character.where(satisfied: nil))
@@ -65,8 +61,10 @@ Character.where(satisfied: false)
 
 ### Why not?
 
-If you’re starting from scratch, just do this.
+If you’re starting from scratch, **just do this**.
 
-If you already have this issue — and heaven knows I’ve fallen into the trap — you will have to put together a careful migration strategy.
+If you already have this issue — and heaven knows I’ve fallen into the trap — you will have to put together a migration strategy.
 
-When changing/adding columns or default values to an existing table many databases will lock the table while they write to every row. This means you’ll have to consider downtime or perhaps multiple smaller migrations to ensure you minimise the impact on your application.
+Changing or adding columns or default values to an existing table will lock the table in many databases, while it writes to every row. This isn’t a problem unique to this issue, but it _is_ a problem when ‘fixing’ it.
+
+This means you’ll have to consider downtime or perhaps multiple smaller migrations to ensure you minimise the impact on your application.
