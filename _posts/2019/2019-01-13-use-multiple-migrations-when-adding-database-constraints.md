@@ -4,7 +4,7 @@ description: You need to avoid a long table rebuild and a write-lock
 layout: article
 category: ruby
 image:
-  base: '2018/use-multiple-migrations-when-adding-database-constraints'
+  base: '2019/use-multiple-migrations-when-adding-database-constraints'
   alt: 'Locks'
   source: 'https://unsplash.com/photos/8_NI1WTqCGY'
   credit: 'Marcos Mayer'
