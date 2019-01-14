@@ -10,14 +10,14 @@ image:
   credit: 'Marcos Mayer'
 ---
 
-Adding constraints to your application at the database layer is a good idea as it provides an extra layer of quality control on top of the data powering your application.
+Adding constraints to your application at the database level is a good idea as it provides an extra layer of quality control on top of the data powering your application.
 
-One way to do that is to add default values or constraints (like making sure a field can’t be blank), this is easy to do with Rails’ migrations. But beware...
+One way to do that is to add default values or constraints—like making sure a field can’t be blank. This is easy to do with Rails’ migrations. But beware...
 
 
 ## Instead of…
 
-…adding a column and stipulating a default non-null value all in one go.
+…adding a column and stipulating a default non-null value all in one go:
 
 ```ruby
 class AddComposerToSongs < ActiveRecord::Migration[5.2]
@@ -30,7 +30,7 @@ end
 
 ## Use…
 
-…a multiple migration strategy to add a field with a constraint to your databases
+…a ‘multiple migration’ strategy to add a field with a constraint to your databases.
 
 
 ### Add a column
@@ -44,7 +44,7 @@ end
 ```
 
 
-### Deploy code that sets default, in Ruby
+### Deploy code that sets default, in your application
 
 ```ruby
 class Song < ApplicationRecord
@@ -56,8 +56,12 @@ class Song < ApplicationRecord
 end
 ```
 
+This will catch any code that writes to the database during this intermediate stage.
+
 
 ### Update records with nil values
+
+Using a `rake` task or using `rails console`.
 
 ```ruby
 Song.where(composer: nil).update_all(composer: "Lin-Manuel Miranda")
@@ -81,7 +85,7 @@ end
 
 If you take the “all in one” approach you run the risk of significant downtime for your application.
 
-If you set `null: false` in your migration Active Record will rewrite the whole table, locking it whilst doing so. This may take a significant amount of time, depending on how much data you already have stored. Locking your database’s table will likely cause write timeouts for any users trying to write to your database at the same time.
+If you set `null: false` in your migration, Active Record will rewrite the whole table, locking it whilst doing so. This may take a significant amount of time, depending on how much data you already have stored. Locking your database’s table will likely cause write timeouts for any users trying to write to your database at the same time.
 
 The multi-stage deployment is a bit of a pain, but it enables you to keep the application available for your users during any migration of data tables.
 
