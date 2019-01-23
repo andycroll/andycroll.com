@@ -64,7 +64,9 @@ This will catch any code that writes to the database during this intermediate st
 Using a `rake` task or using `rails console`.
 
 ```ruby
-Song.where(composer: nil).update_all(composer: "Lin-Manuel Miranda")
+Song.where(composer: nil).find_each do |song|
+  song.update(composer: "Lin-Manuel Miranda")
+end
 ```
 
 
@@ -85,7 +87,7 @@ end
 
 If you take the “all in one” approach you run the risk of significant downtime for your application.
 
-If you set `null: false` in your migration, Active Record will rewrite the whole table, locking it whilst doing so. This may take a significant amount of time, depending on how much data you already have stored. Locking your database’s table will likely cause write timeouts for any users trying to write to your database at the same time.
+If you set `null: false` in your migration, the database will rewrite the whole table, locking it whilst doing so. This may take a significant amount of time, depending on how much data you already have stored. Locking your database’s table will likely cause write timeouts for any users trying to write to your database at the same time.
 
 The multi-stage deployment is a bit of a pain, but it enables you to keep the application available for your users during any migration of data tables.
 
