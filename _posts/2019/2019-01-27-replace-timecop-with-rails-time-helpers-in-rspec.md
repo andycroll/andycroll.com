@@ -6,8 +6,6 @@ category: ruby
 image:
   base: '2019/replace-timecop-with-rails-time-helpers-in-rspec'
   alt: 'Jean-Claude Van Damme as Max Walker'
-  source: ''
-  credit: ''
 ---
 
 Time-sensitive tests can be a pain.
