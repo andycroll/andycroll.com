@@ -49,7 +49,7 @@ class Rack::Attack
   Rack::Attack.blocklist('bad-robots') do |req|
     req.ip if /\S+\.php/.match?(req.path)
   end
-end if Rail.env.production?
+end if Rails.env.production?
 ```
 
 
@@ -61,7 +61,7 @@ Rejecting these requests before they even hit your application, then banning the
 
 With Rails, `Rack::Attack` uses `Rails.cache` by default to store its information about requests and block lists. By default this uses a memory store, but in production you'll want to use something like Redis to a provide more resilient cache.
 
-This is just one use case for the kind of access control that Rack::Attack provides. It is a terrific tool for protecting your application.
+This is just one use case for the kind of access control that `Rack::Attack` provides. It is a terrific tool for protecting your application.
 
 
 ### Why not?
