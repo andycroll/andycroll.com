@@ -14,7 +14,7 @@ Most of the time, when building relationships between models, you typically use 
 
 However, the behaviour of `has_one` has some quirks that make it a little trickier to deal with.
 
-When you assign a new model to the ‘parent’ model (the `has_one`) the existing model is removed from the association. This happens whether the new model is valid or not, the assignation causes a permanent change in the database.
+When you assign a new instance of a “contained” model to the `has_one` model the existing “contained” model is removed from the association and _causes a permanent change to be written to the database_. This happens whether the new model is valid or not.
 
 Read about this side-effect of the generated `#association=` method [in the Rails documentation](https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-has_one).
 
