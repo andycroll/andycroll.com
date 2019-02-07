@@ -38,18 +38,20 @@ person = Person.create(name: "Andy Croll")
 => #<Person id: 1, name: "Andy Croll" ...>
 person.create_biography(text: "Writes emails")
 => #<Biography id: 1, person_id: 1, text: "Writes emails" ...>
-person.biography = Biography.new
-=> #<Biography id: nil, person_id: 1, text: nil ...>
-person.reload.biography
-=> nil
+person.biography = Biography.new("Looks handsome")
+=> #<Biography id: 2, person_id: 1, text: "Looks handsome" ...>
+Biography.count
+=> 2
+Biography.first
+=> #<Biography id: 1, person_id: nil, text: "Looks handsome" ...>
 ```
 
-Oh my.
+But I didn't call save?
 
 
 ## Use…
 
-…a transaction to make sure the existing object is deleted only if the new object is valid.
+…a transaction to make sure the existing object is deleted if the new object is valid.
 
 ```ruby
 class Biography < ApplicationRecord
@@ -75,10 +77,10 @@ person = Person.create(name: "Andy Croll")
 => #<Person id: 1, name: "Andy Croll" ...>
 person.create_biography(text: "Writes emails")
 => #<Biography id: 1, person_id: 1, text: "Writes emails" ...>
-person.replace_biography
-=> #<Biography id: nil, person_id: 1, text: nil ...>
-person.reload.biography
-=> #<Biography id: 1, person_id: 1, text: "Writes emails" ...>
+person.replace_biography(text: "Looks handsome")
+=> #<Biography id: 2, person_id: 1, text: Looks handsome ...>
+Biography.count
+=> 1
 ```
 
 Boom.
@@ -86,11 +88,15 @@ Boom.
 
 ## But why?
 
-The first example demonstrates that the assignment (in this case via `#biography=`) to the `has_one` attribute removes the previously associated model and writes to the database, _even if_ the newly assigned model isn't valid and will not save.
+The first example demonstrates that the assignment (in this case via `#biography=`) to the `has_one` attribute removes the previously associated model and writes to the database.
 
-Normally when making assignments to an Active Record model, via a `#whatever=` method, the changes are not persisted to the database until you call `#save`. In this case, however, the change to the previously assigned model is written _at the point of assignment_.
+In Rails prior to 5.2.1 there is a bug that _even if_ the newly assigned model was invalid and would not save the existing record would still be changed.
 
-The method I’ve created in the second solution uses the `!` variants of the `create` and `destroy` methods inside a transaction to raise exceptions and rollback both the unassignment of the existing model and assignment of the new one if either fails. This prevents subtle bugs and the unusual behaviour of implicit writing to the database.
+Normally when making assignments to the attributes of an Active Record model, via a `#whatever=` method, the changes are not persisted to the database until you call `#save`. In this association case, however, the change to the previously assigned model is written _at the point of assignment_.
+
+The method I’ve created in the second solution uses the `!` variants of the `create` and `destroy` methods inside a transaction to raise exceptions and rollback both the unassignment of the existing model and assignment of the new one if either fails.
+
+This prevents subtle bugs and the unusual behaviour of implicit writing to the database without calling `#save`.
 
 
 ### In Modern Rails (after 5.0)
@@ -99,7 +105,7 @@ In Rails 5.0, if you attempt to set the `person_id` attribute to `nil`, as the a
 
 The model being removed from the association is no longer valid because `belongs_to` relationships now have an [implied presence validation](https://guides.rubyonrails.org/5_0_release_notes.html#active-record-notable-changes). The change in Rails’ behaviour happened in [this pull request](https://github.com/rails/rails/pull/18937).
 
-I used the `optional: true` argument, in my example, to make the `Person` class behave like pre-5.0 Rails.
+I used the `optional: true` argument, in my example, to make the `Person` class behave more like pre-5.0 Rails.
 
 The solution I’ve proposed would also work in this more strict `belongs_to` relationship.
 
@@ -108,7 +114,15 @@ The solution I’ve proposed would also work in this more strict `belongs_to` re
 
 You can manage the `has_one` relationship in multiple other ways that do not wrap the whole task in a `replace_whatever`-style method such as I’ve suggested.
 
-You could avoiding calling the `#whatever=` method in your code or allow assignment only when the association is empty... but you will need to manage it somehow.
+In fact this [bug fix in Rails 5.2.1](https://github.com/rails/rails/pull/32796) ([commit](https://github.com/rails/rails/commit/c87b3346ca6e1d21a6bccb29ccedf0b95fda7abc)) means the `#whatever=` method does now rollback the changes as my solution would.
+
+You could:
+
+  * Avoid calling the `#whatever=` method in your code and use the clearer `#create_whatever!()` instead
+  * Allow assignment only when the association is empty
+  * Declare your association with `autosave: true/false` to make the behaviour explicit in your code
+
+...but you will need to manage it somehow.
 
 There is a reasonable argument that using `has_one` leads to more edge cases than the more typical `has_many` relationship. One approach would be to engineer the logic of your application to use that relationship, which might make for more predictable behaviour.
 
