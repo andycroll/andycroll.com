@@ -1,6 +1,6 @@
 ---
 title: Be Careful Assigning to has_one Relations
-description: Strange Think
+description: But... but... I didn't call save?
 layout: article
 category: ruby
 image:
