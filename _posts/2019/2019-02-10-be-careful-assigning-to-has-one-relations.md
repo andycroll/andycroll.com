@@ -18,6 +18,8 @@ When you assign a new instance of an associated model to its `has_one` model the
 
 Read about this side effect of the generated `#association=` method [in the Rails documentation](https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-has_one).
 
+**Short story: be aware of the peculiarities of `has_one` relationships, should you choose to use one.**
+
 
 ## Instead of…
 
