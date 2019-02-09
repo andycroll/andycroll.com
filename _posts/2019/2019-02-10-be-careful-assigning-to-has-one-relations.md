@@ -18,8 +18,6 @@ When you assign a new instance of an associated model to its `has_one` model the
 
 Read about this side effect of the generated `#association=` method [in the Rails documentation](https://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html#method-i-has_one).
 
-**Short story: be aware of the peculiarities of `has_one` relationships, should you choose to use one.**
-
 
 ## Instead of…
 
@@ -127,6 +125,8 @@ You could:
   * Declare your association with `autosave: true/false` to make the behaviour explicit in your code
 
 …but you will need to manage it somehow.
+
+**The main thing to be aware of is the peculiarities of `has_one` relationships, should you choose to use one.**
 
 There is a reasonable argument that using `has_one` leads to more edge cases than the more typical `has_many` relationship. One approach would be to engineer the logic of your application to use that relationship, which might make for more predictable behaviour.
 
