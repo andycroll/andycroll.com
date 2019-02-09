@@ -129,6 +129,6 @@ You could:
 There is a reasonable argument that using `has_one` leads to more edge cases than the more typical `has_many` relationship. One approach would be to engineer the logic of your application to use that relationship, which might make for more predictable behaviour.
 
 
-### Thanks..
+### Thanks…
 
-..to [Sean Griffin](https://twitter.com/sgrif), Rails Committer [#11](https://contributors.rubyonrails.org), for a sense check of this approach.
+…to [Sean Griffin](https://twitter.com/sgrif), Rails Committer [#11](https://contributors.rubyonrails.org), for a sense check of this approach.
