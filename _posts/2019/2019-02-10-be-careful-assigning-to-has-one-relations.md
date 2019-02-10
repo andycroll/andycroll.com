@@ -126,7 +126,7 @@ You could:
 
 …but you will need to manage it somehow.
 
-**The main thing to be aware of is the peculiarities of `has_one` relationships, should you choose to use one.**
+**The main thing to be aware of are the peculiarities of `has_one` relationships, should you choose to use one.**
 
 There is a reasonable argument that using `has_one` leads to more edge cases than the more typical `has_many` relationship. One approach would be to engineer the logic of your application to use that relationship, which might make for more predictable behaviour.
 
