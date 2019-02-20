@@ -22,7 +22,7 @@ It’s important to make sure that only people inside your organisation can use 
 
 ## Use…
 
-…the basic HTTP authentication in Rails to secure the whole application from non-authorised users.
+…the basic HTTP authentication in Rails to secure the whole application from non-authorised users…
 
 ```ruby
 class ApplicationController < ActionController::Base
@@ -39,7 +39,7 @@ end
 
 Giving people access to your staging environment is a bad idea. It might contain unreleased or bug-ridden features. Furthermore, it might even allow free access to normally paid-for functionality in your application, since staging environments are often linked up to sandboxed versions of payment processors for testing.
 
-Using HTTP authentication is the simplest way to block access to your entire site, plus its brutal "no entry" approach means there is less chance to introduce bugs.
+Using HTTP authentication is the simplest way to block access to your entire site. The logic for the change also sits mostly outside your application so there is less chance to introduce a “staging only” bug.
 
 
 ## Why not?
@@ -48,9 +48,11 @@ You might choose security through obscurity—where you simply hope that no-one 
 
 You could set up a more sophisticated solution by using a combination of HTTP authorisation and some sort of admin user privileges, or even limiting access by location or via a VPN.
 
-However, basic HTTP authentication is a fast, simple way to limit access and while maintaining parity of behaviour between your staging and production environments.
+You could also implement a similar approach at the `rack` middleware level which sits fully outside of your Rails code.
+
+However, basic HTTP authentication in the `ApplicationController` is a fast, simple way to limit access while maintaining parity of behaviour between your staging and production environments.
 
 
 ### Thanks…
 
-…to [Dan](https://twitter.com/dannyguk) for the succinct syntax used in this issue, I’d been using something slightly more long-winded.
+…to [Dan](https://twitter.com/dannyguk) for the succinct syntax used in this issue. I’d been using something slightly more long-winded.
