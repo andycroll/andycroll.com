@@ -48,7 +48,7 @@ You might choose security through obscurity—where you simply hope that no-one 
 
 You could set up a more sophisticated solution by using a combination of HTTP authorisation and some sort of admin user privileges, or even limiting access by location or via a VPN.
 
-You could also implement a similar approach at the `rack` middleware level which sits fully outside of your Rails code.
+You could also implement a similar approach at the `rack` middleware level (using [`Rack::Auth::Basic`](https://github.com/rack/rack/blob/master/lib/rack/auth/basic.rb)) which sits fully outside of your Rails code. See [an example of this](https://github.com/rack/rack/blob/master/example/protectedlobster.rb) from the Rack source code.
 
 However, basic HTTP authentication in the `ApplicationController` is a fast, simple way to limit access while maintaining parity of behaviour between your staging and production environments.
 
