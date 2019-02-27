@@ -41,6 +41,8 @@ Giving people access to your staging environment is a bad idea. It might contain
 
 Using HTTP authentication is the simplest way to block access to your entire site. The logic for the change also sits mostly outside your application so there is less chance to introduce a “staging only” bug.
 
+Another reason to prevent your staging environments from being open to the Internet is that search engines might somehow discover it, crawl it and then you have your staging environment appearing in search results. This increases the chances of users finding and using your non-production application and also possible penalties to your search engine ranking due to “duplicate content”. 
+
 
 ## Why not?
 
