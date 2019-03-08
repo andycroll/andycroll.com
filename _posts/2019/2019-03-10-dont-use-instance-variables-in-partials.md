@@ -97,7 +97,7 @@ grep -rEHn "\@\w+" --include "_*.erb" app/views
 
 ## Why not?
 
-This is generally good practice. It might feel easier to leave any instance variables in place and also can feel redundant to write the additional code to define the partial’s variables in the call to `render`. But it will bite you in the end.
+It might feel easier to leave any instance variables in place and it can also feel redundant to write the additional code needed in order to define the partial’s variables in the call to `render`. However, not making these changes will bite you in the end.
 
 It's certainly _never_ a good idea to create an instance variable to share it between partials.
 
