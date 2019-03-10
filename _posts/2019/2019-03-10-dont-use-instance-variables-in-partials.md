@@ -10,7 +10,7 @@ image:
   credit: "Mark Tegethoff"
 ---
 
-Rails’ view architecture is a flexible and magical place. Perhaps too much so.
+Rails’ view architecture is a flexible and magical place. Perhaps too much so. Some examples of ‘view magic’ include:
 
 * Instance variables defined in controllers are magically available in view templates.
 * Inferred template names.
