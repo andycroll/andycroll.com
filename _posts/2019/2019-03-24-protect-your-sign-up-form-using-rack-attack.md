@@ -10,11 +10,11 @@ image:
   credit: "Eco Warrior Princess"
 ---
 
-When your application becomes popular, in may attract the attention of hackers, who’ll try and find ways to exploit the weaknesses in your site to use it for nefarious means!
+When your application becomes popular it may attract the attention of hackers, who’ll try and find ways to exploit the weaknesses in your site to use it for nefarious means!
 
-They’ll nearly always explore your site manually, signing up and testing attack vectors, before attempting to automate the weaknesses they’ve established.
+They’ll nearly always explore your site manually, signing up and testing attack vectors, before attempting to automate the weaknesses they’ve discovered.
 
-During an attack the hacker’s bots will typically perform “sign up with a random email then do something bad” hundreds of times a minute from a relatively small number of computers.
+During an attack, the hacker’s bots will typically sign up with a random email then do something bad, hundreds of times a minute, from a relatively small number of computers.
 
 
 ## Instead of…
@@ -58,9 +58,9 @@ end if Rails.env.production?
 
 The judicious use of endpoint-based request restriction can prevent your site from being an attractive target for spammers and hackers. It can also reduce the size of any successful bot attack by limiting the amount of possible signups.
 
-In this example they can only add three users every quarter of an hour. You _could_ likely increase the `period` as well without hitting any false positives.
+In this example, hackers can only add up to three users every quarter of an hour. You _could_ also likely increase the `period` duration to twenty or thirty minutes without accidentally blocking any legitimate users.
 
 
 ### Why not?
 
-The solution above could, _in theory_, block legitimate sign ups from potential, but it is highly unlikely that a user might incorrectly try and sign up three times in relatively quick succession.
+The solution above could, _in theory_, block legitimate sign ups, but it is highly unlikely that a user would incorrectly attempt to sign up three times in relatively quick succession.
