@@ -19,7 +19,7 @@ During an attack, the hacker’s bots will typically sign up with a random email
 
 ## Instead of…
 
-…allowing unlimited sign up attempts.
+…allowing unlimited sign up attempts…
 
 
 ## Use…
@@ -58,7 +58,7 @@ end if Rails.env.production?
 
 The judicious use of endpoint-based request restriction can prevent your site from being an attractive target for spammers and hackers. It can also reduce the size of any successful bot attack by limiting the amount of possible signups.
 
-In this example, hackers can only add up to three users every quarter of an hour. You _could_ also likely increase the `period` duration to twenty or thirty minutes without accidentally blocking any legitimate users.
+In this example, hackers can only add up to three users every quarter of an hour. If you think 15 minutes seems too brief you _could_ probably increase the `period` duration to twenty or thirty minutes without accidentally blocking any legitimate sign ups.
 
 
 ### Why not?
