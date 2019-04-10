@@ -73,7 +73,7 @@ end
 
 This isn’t an obvious issue, but definitely one spammers have worked out. If your application allows sending of any email before requesting payment, you are a target.
 
-While protecting browsers from user-generated HTML and JavaScript has been a part of Rails’ rendering since the beginning this issue of email clients automatically linking website-ish, non-HTML, text happens beyond our application’s boundaries.
+While protecting browsers from user-generated HTML and JavaScript has been a part of Rails’ rendering since the beginning, email clients automatically linking website-ish, non-HTML, text happens beyond our application’s boundaries.
 
 If you validate your user-entered text, you’ll be less of a target for spammers.
 
