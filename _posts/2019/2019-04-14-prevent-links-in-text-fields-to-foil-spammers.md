@@ -91,4 +91,4 @@ Instead of rejecting the text with a validation, and sending an error message to
 #=> "like. this"
 ```
 
-Additionally you might want to find another way to restrict text input or features until your users have become paying customers—a credit card is often a good barrier to spammers.
+Additionally you might want to find another way to restrict text input or features until your users have become paying customers—the requirement of a credit card is often a good barrier to spammers.
