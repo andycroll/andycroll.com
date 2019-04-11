@@ -10,7 +10,7 @@ image:
   credit: "Mike Mozart"
 ---
 
-Your application most likely sends email even if that is not a primary function of the product: invites, messages & forgot password reminders.
+Your application most likely sends email—in the form of invites, notifications, or forgotten password reminders—even if that is not a primary function of the product.
 
 As soon as you allow user-generated content in those emails, your application becomes an interesting target for email spammers. This is due to these nefarious people, and their robot armies, abusing the free text you allow legitimate users to enter.
 
