@@ -14,7 +14,7 @@ Your application most likely sends email—in the form of invites, notifications
 
 As soon as you allow user-generated content in those emails, your application becomes an interesting target for email spammers. This is due to these nefarious people, and their robot armies, abusing the free text you allow legitimate users to enter.
 
-Email clients like Apple Mail and Gmail automatically highlight strings of text that look like web addresses. So by simply inserting strings that resemble web addresses they can use text fields to direct users to nefarious websites. They don't even have to inject HTML.
+Email clients like Apple Mail and Gmail automatically highlight strings of text that look like web addresses, so by simply inserting strings that resemble web addresses, hackers can use text fields to direct users to nefarious websites. They don't even have to inject HTML.
 
 
 ## Instead of…
