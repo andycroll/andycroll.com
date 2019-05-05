@@ -51,3 +51,8 @@ This is because the SQL result of a `where.not` scope is SQL’s `!=` operator, 
 ## Why not?
 
 In some cases this isn’t the logic you want. So in that case... I guess, don’t use it? :-)
+
+
+### Thanks
+
+Thanks to Youri van der Lans for pointing out the alternative array-based syntax.
