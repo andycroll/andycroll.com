@@ -32,6 +32,12 @@ non_oat_options = Coffee.where.not(milk: "Oatly")
 non_oat_options = Coffee.where.not(milk: "Oatly").or(Coffee.where(milk: nil))
 ```
 
+…alternatively you can pass an array of options to the (negated) `where` scope that includes a `nil` value.
+
+```ruby
+non_oat_options_2 = Coffee.where.not(milk: [nil, "Oatly"])
+```
+
 
 ## But why?
 
