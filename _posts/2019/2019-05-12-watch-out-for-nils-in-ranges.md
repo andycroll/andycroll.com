@@ -10,7 +10,7 @@ image:
 
 Ruby 2.6 enhanced the syntax for ranges to allow for infinite values at either end. The new syntax is described in the [Ruby documentation for `Range`](http://ruby-doc.org/core-2.6.3/Range.html#class-Range-label-Endless+Ranges).
 
-This is great for representing concepts that require that, for example date ranges between a date and into the future, but the new “sugared” syntax changes existing behaviour.
+This is great for representing concepts such as date ranges between some date and one anytime the future, but this new “sugared” syntax changes existing behaviour.
 
 
 ## Instead of…
