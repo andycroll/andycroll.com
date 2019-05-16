@@ -8,14 +8,14 @@ image:
   alt: 'Buzz Lightyear'
 ---
 
-Ruby 2.6 enhanced the syntax for ranges to allow for infinite values at either end. The new syntax is described in the [Ruby documentation for `Range`](http://ruby-doc.org/core-2.6.3/Range.html#class-Range-label-Endless+Ranges).
+Ruby 2.6 enhanced the syntax for `Range`s to allow for infinite values at either end allowing them to be "endless". The new syntax is described in the [Ruby documentation for `Range`](http://ruby-doc.org/core-2.6.3/Range.html#class-Range-label-Endless+Ranges).
 
 This is great for representing concepts such as date ranges between some date and one anytime the future, but this new “sugared” syntax changes existing behaviour.
 
 
-## Instead of…
+## Ruby used to…
 
-…raising an `ArgumentError` when a `nil` is passed into a range…
+…raise an `ArgumentError` when a `nil` was passed into a range…
 
 ```ruby
 end_of_range = nil
@@ -24,9 +24,9 @@ end_of_range = nil
 ```
 
 
-## Beware…
+## But now…
 
-…that a `Range` ending in `nil` no longer throws an error, but represents an _endless_ range.
+…beware that a `Range` ending in `nil` no longer throws an error, but represents an _endless_ range.
 
 ```ruby
 end_of_range = nil
@@ -35,15 +35,15 @@ end_of_range = nil
 ```
 
 
-## But why?
+## Why be careful?
 
-Ruby 2.5, and earlier, already had the ability to create endless ranges, but only by using special constants—such as `Float::INFINITY` in the `Range`s.
+Ruby 2.5, and earlier, already had the ability to create endless ranges, but only by using special _explicit_ constants—such as `Float::INFINITY` in the `Range`s.
 
-But allowing `nil` to represent, in a language where the result of methods can often _be_ `nil` definitely gaves us another place to make mistakes.
+By allowing `nil` to be considered a valid input to a range, in a language where the result of methods can often _be_ `nil` definitely gives us another place to make mistakes.
 
 
 ## Why not?
 
-You don't really have a choice here, it’s a part of the language.
+You don't really have a choice here—it’s a part of the language.
 
-But, you can protect yourself by ensuring that you check any value you pass into a `Range`. It isn’t “good practice” to scatter `nil` checks in your code, but Ruby has never been about purity in its approach to object-oriented programming.
+But, you can protect yourself by ensuring that you check any value you pass into a `Range`. It isn’t seen as “good practice” to scatter `nil` checks in your code, but Ruby has never been about purity in its approach to object-oriented programming.
