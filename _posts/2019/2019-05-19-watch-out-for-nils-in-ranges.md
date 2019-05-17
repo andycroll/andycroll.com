@@ -8,7 +8,7 @@ image:
   alt: 'Buzz Lightyear'
 ---
 
-Ruby 2.6 enhanced the syntax for `Range`s to allow for infinite values at either end allowing them to be "endless". The new syntax is described in the [Ruby documentation for `Range`](http://ruby-doc.org/core-2.6.3/Range.html#class-Range-label-Endless+Ranges).
+Ruby 2.6 enhanced the syntax for `Range` to allow for infinite values at either end, therefore allowing them to be "endless". The new syntax is described in the [Ruby documentation](http://ruby-doc.org/core-2.6.3/Range.html#class-Range-label-Endless+Ranges).
 
 This is great for representing concepts such as date ranges between some date and one anytime the future, but this new “sugared” syntax changes existing behaviour.
 
