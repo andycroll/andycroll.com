@@ -37,7 +37,7 @@ end_of_range = nil
 
 ## Why be careful?
 
-Ruby 2.5, and earlier, already had the ability to create endless ranges, but only by using special _explicit_ constants—such as `Float::INFINITY` in the `Range`s.
+Ruby 2.5, and earlier, already had the ability to create endless ranges, but only by using special _explicit_ constants—such as `Float::INFINITY`.
 
 By allowing `nil` to be considered a valid input to a range, in a language where the result of methods can often _be_ `nil` definitely gives us another place to make mistakes.
 
