@@ -64,7 +64,7 @@ I find it clearer to have a simple, procedural, 'list of things to do' inside my
 
 ## Why not?
 
-Technically this could be considered “the Rails Way” given examples like this have always been part of the documentation. There’s no _real_ harm in this simple case, but the pain of this approach often only become apparent later.
+Using callbacks in models to send email could be considered “the Rails Way”, given examples like this have always been part of the documentation. There’s no _real_ harm in this simple case, but the pain of this approach often only becomes apparent later.
 
 There’s an often heard argument for “fat models, thin controllers” but this is more about keeping against complexity in the controller method rather than advocating for callbacks. I’d also argue that sending an email isn’t that complex.
 
