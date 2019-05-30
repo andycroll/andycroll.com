@@ -38,7 +38,7 @@ end
 
 ## Use…
 
-…the controller to send your email separately from the model.
+…the controller to send your email.
 
 ```ruby
 class CommentsController < ApplicationController
