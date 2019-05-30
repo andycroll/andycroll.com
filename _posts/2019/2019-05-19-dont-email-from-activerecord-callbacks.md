@@ -55,7 +55,7 @@ end
 
 ## Why?
 
-This boils down, for me, to clarity and preventing unintended side effects.
+This is all about clarity and preventing unintended side effects.
 
 Invariably at some point you’ll need to create a comment without emailing the author; perhaps in the `rails console` or in another action. You probably don’t want to send email in those cases. You _can_ use methods that [skip callbacks](https://guides.rubyonrails.org/active_record_callbacks.html#skipping-callbacks), but then you’re into a whole new world of complexity.
 
