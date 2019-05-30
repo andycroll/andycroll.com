@@ -11,7 +11,7 @@ image:
 
 ---
 
-Among the first things you often want to do with your Rails application is send email.
+One of the first things you often want to do within your Rails application is send email.
 
 A frequent pattern is that an email is often sent after a change to, or creation of, one of your models.
 
