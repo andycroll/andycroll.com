@@ -57,7 +57,7 @@ end
 
 This is all about clarity and preventing unintended side effects.
 
-Invariably at some point you’ll need to create a comment without emailing the author; perhaps in the `rails console` or in another action. You probably don’t want to send email in those cases. You _can_ use methods that [skip callbacks](https://guides.rubyonrails.org/active_record_callbacks.html#skipping-callbacks), but then you’re into a whole new world of complexity.
+At some point, you’ll likely need to create a comment without emailing the author; perhaps in the `rails console` or in another action. You _can_ use methods that [skip callbacks](https://guides.rubyonrails.org/active_record_callbacks.html#skipping-callbacks), but then you’re into a whole new world of complexity.
 
 I find it clearer to have a simple, procedural, 'list of things to do' inside my controller actions. I also find that debugging side-effects through a model’s callbacks to be much more cognitively difficult.
 
