@@ -13,7 +13,7 @@ image:
 
 One of the first things you often want to do within your Rails application is send email.
 
-A frequent pattern is that an email is often sent after a change to, or creation of, one of your models.
+A frequent pattern is that an email is sent after a change to, or creation of, an instance of one of your models.
 
 
 ## Instead of…
