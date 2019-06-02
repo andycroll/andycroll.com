@@ -18,7 +18,7 @@ A frequent pattern is that an email is sent after a change to, or creation of, a
 
 ## Instead of…
 
-…sending email inside a callback in your model.
+…sending email inside a callback in your model:
 
 ```ruby
 class Comment < ApplicationRecord
