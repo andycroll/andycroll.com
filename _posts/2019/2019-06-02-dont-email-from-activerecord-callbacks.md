@@ -21,7 +21,7 @@ A frequent pattern is that an email is sent after a change to, or creation of, a
 …sending email inside a callback in your model:
 
 ```ruby
-class Comment < ApplicationRecord
+class BookReview < ApplicationRecord
   after_create :send_email_to_author
 
   private
@@ -29,7 +29,7 @@ class Comment < ApplicationRecord
   def send_email_to_author
     AuthorMailer.
       with(author: author).
-      comment_notification.
+      review_notification.
       deliver_now
   end
 end
@@ -41,12 +41,12 @@ end
 …the controller to send your email.
 
 ```ruby
-class CommentsController < ApplicationController
+class BookReviewsController < ApplicationController
   def create
-    Comment.create(comment_params)
+    BookReview.create(comment_params)
     AuthorMailer.
       with(author: author).
-      comment_notification.
+      review_notification.
       deliver_now
   end
 end
@@ -55,19 +55,23 @@ end
 
 ## Why?
 
-This is all about clarity and preventing unintended side effects.
+This is all about clarity and preventing surprises when you come back to the code.
 
-At some point, you’ll likely need to create a comment without emailing the author; perhaps in the `rails console` or in another action. You _can_ use methods that [skip callbacks](https://guides.rubyonrails.org/active_record_callbacks.html#skipping-callbacks), but then you’re into a whole new world of complexity.
+Let's consider the example above. Creating a review doesn’t _always_ need to send an email to author of the book. In the first example, the email sending happens as a side effect of creating a new book review.
 
-It’s clearer to have a simple, procedural, 'list of things to do' inside controller actions that you can read through from A to Z. Also, debugging side-effects through a model’s callbacks is much more cognitively difficult, as you have to keep more context—from more files—in your head.
+At some point, you’ll likely need to create one without emailing the author; perhaps in the `rails console` or in another action. You _can_ use methods that [skip callbacks](https://guides.rubyonrails.org/active_record_callbacks.html#skipping-callbacks), but then you’re into a whole new world of complexity.
+
+It’s clearer to have a simple, procedural, 'list of things to do' inside controller actions that you can read through from A to Z. In this case, having the email sending be a separate _thing_ that happens after the creation of the review makes things much more obvious when you come back to the code later.
+
+In addition, debugging tangential functionality through a model’s callbacks is much more cognitively difficult, as you have to keep more context—from more files—in your head.
 
 
 ## Why not?
 
-Using callbacks in models to send email could be considered “the Rails Way”, given examples like this have always been part of the documentation. There’s no _real_ harm in this simple case, but the pain of this approach often only becomes apparent later.
+Using callbacks in models to send email could be considered “the Rails Way” given examples like this have always been part of the documentation. And there’s no _real_ harm in this simple case, but the pain of this approach often only becomes apparent later as the complexity of your application increases.
 
-There’s a frequently stated opinion preferring “fat models & thin controllers”; pushing as much functionality as you can into your model layer.
+There’s a frequently stated colloquial recommendation that we should prefer “fat models & thin controllers”, pushing as much functionality as you can into your model layer. This is generally good advice. But, it is more about keeping complexity out of the controller layer, by making the activities of your application clear, rather than advocating for more use of side effect generating callbacks.
 
-This is more about keeping complexity out of the controller layer, rather than advocating for more use of callbacks creating side-effects. I’d also argue that sending an email, in addition to the model change, isn’t complex.
+I’d also argue that sending an email alongside a model change, is not complex enough to merit this confusing callback-based abstraction. It is important enough, to users of your application, to clearly surface that both things will happen when this controller action is called.
 
 In situations where controller methods _do_ become complex, I prefer to move the functionality into a plain Ruby “service object”, rather than move it into callbacks.
