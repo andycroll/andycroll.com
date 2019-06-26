@@ -51,7 +51,7 @@ By using a method with confusing and complex arguments in your views you’re se
 
 The main benefit for setting up global application date and time formats is for the developers who come after you. The result is a small number of consistent and pre-determined ways to present time through out your application, plus future developers can be spared building their own complicated formats!
 
-Users benefit from this consistency too, if dates and times are presented in repeated ways it takes less time for them to understand. i.e. Ensuring you always say “Jun 11” rather than “11 Jun”. A small thing, but worth sweating the details.
+Users benefit from this consistency too. If dates and times are always presented in the same way, it takes less time for them to parse. I.e. Ensuring you always say “Jun 11” rather than “11 Jun”; It's a small thing, but worth sweating the details.
 
 You can also use Ruby’s `proc`s to further enhance date and time formatting where basic `strftime` usage wouldn’t be enough. See the [code for the `long_ordinal` format](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/conversions.rb#L15-L18) for an example.
 
