@@ -15,7 +15,7 @@ The `strftime` method appears in many languages, [all the way back to C](https:/
 
 The syntax of the (mostly impenetrable) time formatting arguments haven’t changed that much in years and are comprehensively covered in the [Ruby documentation for strftime](https://ruby-doc.org/core-2.6.3/Time.html#method-i-strftime). They're remarkably consistent across languages!
 
-However when `strftime` is used in your views it’s a possible location for confusion and inconsistency.
+However when `strftime` is used in your views, there's a high chance it will lead to confusion and inconsistency.
 
 
 ## Instead of…
