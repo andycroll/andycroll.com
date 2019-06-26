@@ -29,7 +29,7 @@ However when `strftime` is used in your views, there's a high chance it will lea
 
 ## Use…
 
-…the built in Rails time and date formats. Or add to them.
+…the built in Rails time and date formats. Or add to them, like I do here, creating my own `:stamp` format for `Date` and `Time`.
 
 ### `config/initializers/time_formats.rb`
 
@@ -47,21 +47,19 @@ Time::DATE_FORMATS[:stamp] = "%Y%m%d%H%M%S" # YYYYMMDDHHMMSS
 
 ## Why?
 
-By using a method with confusing and complex arguments in your views you’re setting yourself up for inconsistency.
+By using a method with confusing and complex arguments in your views, you’re setting yourself up for inconsistency.
 
-The main benefit for setting up global application date and time formats is for the developers who come after you. The result is a small number of consistent and pre-determined ways to present time through out your application, plus future developers can be spared building their own complicated formats!
+The main benefit for setting up global application date and time formats is for the developers who come after you, including _future_ you. The result is a small number of consistent and pre-determined ways to present time throughout your application, and future developers can be spared building their own formats!
 
 Users benefit from this consistency too. If dates and times are always presented in the same way, it takes less time for them to parse. I.e. Ensuring you always say “Jun 11” rather than “11 Jun”; It's a small thing, but worth sweating the details.
 
-You can also use Ruby’s `proc`s to further enhance date and time formatting where basic `strftime` usage wouldn’t be enough. See the [code for the `long_ordinal` format](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/time/conversions.rb#L15-L18) for an example.
-
-There’s a couple of useful sites that can help you get exactly the date formatting you prefer.
+There’s a couple of useful sites that can help you get exactly the date formatting you prefer:
 
 [For A Good Strftime](https://www.foragoodstrftime.com) contains a visually pleasant reference for `strftime` formatting strings and lets you build a live date format you can use application-wide.
 
 [Strftimer](http://strftimer.com) lets you paste in a real string representation of a date of time and returns the `strftime` date format string that would produce that formatting.
 
-Rails also includes some defaults and there’s a site that spells out the [Rails Date and Time formats](https://railsdatetimeformats.com). Because I could never remember them and they were hard to find in the documentation.
+I can never remember the `Date` and `Time` formats that are provided by default, plus they were hard to find in the documents, so _I_ built a site that spells out the [Rails Date and Time formats](https://railsdatetimeformats.com).
 
 
 ## Why not?
