@@ -57,7 +57,7 @@ You can also use Ruby’s `proc`s to further enhance date and time formatting wh
 
 There’s a couple of useful sites that can help you get exactly the date formatting you prefer.
 
-[For A Good Strftime](https://www.foragoodstrftime.com) contains a visually pleasant reference for `strftime` formatting strings and lets you build a live date format you can use to create new application-wide time formats.
+[For A Good Strftime](https://www.foragoodstrftime.com) contains a visually pleasant reference for `strftime` formatting strings and lets you build a live date format you can use application-wide.
 
 [Strftimer](http://strftimer.com) lets you paste in a real string representation of a date of time and returns the `strftime` date format string that would produce that formatting.
 
