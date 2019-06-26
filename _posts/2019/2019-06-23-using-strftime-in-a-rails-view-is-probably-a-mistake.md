@@ -66,4 +66,4 @@ Rails also includes some defaults and there’s a site that spells out the [Rail
 
 ## Why not?
 
-There’s no real performance harm in calling `strftime` in views. It’s more about organisation and consistency.
+There’s no real performance harm in calling `strftime` in views. This is about about organisation and consistency.
