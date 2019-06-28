@@ -53,7 +53,7 @@ The main benefit for setting up global application date and time formats is for 
 
 Users benefit from this consistency too. If dates and times are always presented in the same way, it takes less time for them to parse. I.e. Ensuring you always say “Jun 11” rather than “11 Jun”; It's a small thing, but worth sweating the details.
 
-There’s a couple of useful sites that can help you get exactly the date formatting you prefer:
+Here's a couple of useful sites that can help you get to exactly the date formatting you prefer:
 
 [For A Good Strftime](https://www.foragoodstrftime.com) contains a visually pleasant reference for `strftime` formatting strings and lets you build a live date format you can use application-wide.
 
