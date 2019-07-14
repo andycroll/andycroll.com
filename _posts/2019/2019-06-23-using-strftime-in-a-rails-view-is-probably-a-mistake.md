@@ -11,9 +11,9 @@ image:
 
 ---
 
-The `strftime` method appears in many languages, [all the way back to C](https://en.wikipedia.org/wiki/C_date_and_time_functions#strftime)!
+The `strftime` method appears in many languages, [all the way back to C](https://en.wikipedia.org/wiki/C_date_and_time_functions#strftime). The syntax of the (mostly impenetrable) formatting arguments haven’t changed that much in years and they're remarkably consistent across languages.
 
-The syntax of the (mostly impenetrable) time formatting arguments haven’t changed that much in years and are comprehensively covered in the [Ruby documentation for strftime](https://ruby-doc.org/core-2.6.3/Time.html#method-i-strftime). They're remarkably consistent across languages!
+Ruby’s version is comprehensively [documented in the Time class](https://ruby-doc.org/core-2.6.3/Time.html#method-i-strftime).
 
 However when `strftime` is used in your views, there's a high chance it will lead to confusion and inconsistency.
 
@@ -38,7 +38,7 @@ Date::DATE_FORMATS[:stamp] = "%Y%m%d" # YYYYMMDD
 Time::DATE_FORMATS[:stamp] = "%Y%m%d%H%M%S" # YYYYMMDDHHMMSS
 ```
 
-…then in the views.
+Then in the views.
 
 ```erb
 <%= @user.last_signed_in_at.to_s(:stamp) %>
@@ -49,7 +49,7 @@ Time::DATE_FORMATS[:stamp] = "%Y%m%d%H%M%S" # YYYYMMDDHHMMSS
 
 By using a method with confusing and complex arguments in your views, you’re setting yourself up for inconsistency.
 
-The main benefit for setting up global application date and time formats is for the developers who come after you, including _future_ you. The result is a small number of consistent and pre-determined ways to present time throughout your application, and future developers can be spared building their own formats!
+The main benefit to defining global application date and time formats is for the developers who come after you, including _future_ you. The result is a small number of consistent and pre-determined ways to present time throughout your application, and future developers can be spared building their own formats!
 
 Users benefit from this consistency too. If dates and times are always presented in the same way, it takes less time for them to parse. I.e. Ensuring you always say “Jun 11” rather than “11 Jun”; It's a small thing, but worth sweating the details.
 
@@ -57,11 +57,11 @@ Here's a couple of useful sites that can help you get to exactly the date format
 
 [For A Good Strftime](https://www.foragoodstrftime.com) contains a visually pleasant reference for `strftime` formatting strings and lets you build a live date format you can use application-wide.
 
-[Strftimer](http://strftimer.com) lets you paste in a real string representation of a date of time and returns the `strftime` date format string that would produce that formatting.
+[Strftimer](http://strftimer.com) lets you paste in a real string representation of a date or time and returns the `strftime` date format string that would produce that formatting.
 
 I can never remember the `Date` and `Time` formats that are provided by default, plus they were hard to find in the documents, so _I_ built a site that spells out the [Rails Date and Time formats](https://railsdatetimeformats.com).
 
 
 ## Why not?
 
-There’s no real performance harm in calling `strftime` in views. This is about about organisation and consistency.
+There’s no real performance harm in calling `strftime` in views. This is about organisation and consistency.
