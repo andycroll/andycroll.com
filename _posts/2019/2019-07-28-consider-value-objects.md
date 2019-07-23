@@ -11,16 +11,15 @@ image:
 
 ---
 
-Often we use simple concepts in our app, that don't start out as objects.
+You’ll often find yourself doing creating multiple view helpers around the same concept, creating complex calculation methods, or passing a value (or several) around multiple methods.
 
-You'll often find yourself creating multiple view helpers or passing a value (or several) around several methods, or within a model.
+When this happens it is possible a simple object, smaller than an Active Record model, is trying to reveal itself.
 
-This loose concept can be refactored into a “Value Object”.
-
+In these cases, consider refactoring the functionality into a “Value Object”.
 
 ## Instead of...
 
-...just using a helper.
+...just using a helper:
 
 ```ruby
 def css_color(r, g, b)
@@ -39,10 +38,6 @@ class RGBColor
     @green = [[0, green].max], 255].min
     @blue = [[0, blue].max], 255].min      
   end
-  #
-  # def self.from_hex(hex)
-  #   new(hex[0, 2], hex[2, 2], hex[4, 2])
-  # end
 
   def to_hex
     [@red, @green, @blue].each_with_object("") do |part, to_hex|
@@ -71,15 +66,13 @@ Martin Fowler [defines a Value Object](https://martinfowler.com/eaaCatalog/value
 
 Refactoring into a value object has several benefits as you isolate the code for this concept. You might hear this referred to as ‘separation of concerns’.
 
-Your can test the behaviour of your concept in isolation. Thus more comprehensively and efficiently.
+Your can test the behaviour of your concept in isolation, leading to more comprehensive and efficient tests.
 
-The improved understanding and organisation of your code improves your understanding and you gain the benefits of reuse as well as a place for extensions to the concept you've created.
+This improved organisation of your code will clarify your understanding. The code is also easier to reuse and you have a clear place for extending the functionality of the object.
 
 
 ## Why not?
 
-It might be too complex, too soon.
-
 Finding the correct time to extract a concept into a value object can be difficult. Too early leads to unnecessary complication and potentially increased confusion; too late and you’re already coding in a mess!
 
-For implementation you could use a `Struct` or even `OpenStruct` rather than the class definition approach shown in the example, but they are mutable objects (you can change their values) which can add complication rather than help to simplify.
+For implementation you could use a `Struct` or even `OpenStruct` rather than the class definition approach shown in the example, but these are mutable objects (you can change their properties) which can add complication rather than to simplify.
