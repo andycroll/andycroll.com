@@ -69,7 +69,7 @@ Martin Fowler [defines a Value Object](https://martinfowler.com/eaaCatalog/value
 
 > A small simple object, like money or a date range, whose equality isn’t based on identity.
 
-Refactoring into an object has several benefits as you isolate and separate the code for this concept. You might hear this referred to as ‘separation of concerns’.
+Refactoring into a value object has several benefits as you isolate the code for this concept. You might hear this referred to as ‘separation of concerns’.
 
 Your can test the behaviour of your concept in isolation. Thus more comprehensively and efficiently.
 
