@@ -80,6 +80,6 @@ The improved understanding and organisation of your code improves your understan
 
 It might be too complex, too soon.
 
-Finding the correct time to extract a concept can be difficult. Too early leads to over-complication and confusion, too late and you’re already coding in a mess!
+Finding the correct time to extract a concept into a value object can be difficult. Too early leads to unnecessary complication and potentially increased confusion; too late and you’re already coding in a mess!
 
 For implementation you could use a `Struct` or even `OpenStruct` rather than the class definition approach shown in the example, but they are mutable objects (you can change their values) which can add complication rather than help to simplify.
