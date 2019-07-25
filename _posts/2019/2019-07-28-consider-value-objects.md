@@ -15,7 +15,10 @@ In your applications, you’ll often find yourself creating multiple view helper
 
 When this happens it is possible a simple object, smaller than an Active Record model, is trying to reveal itself.
 
-In these cases, consider refactoring the functionality into a “Value Object”.
+In these cases, consider refactoring the functionality into a “Value Object”, as [described by Martin Fowler](https://martinfowler.com/eaaCatalog/valueObject.html):
+
+> A small simple object, like money or a date range, whose equality isn’t based on identity.
+
 
 ## Instead of...
 
@@ -60,19 +63,13 @@ end
 
 Just because a concept in our app isn't saved to the database doesn't mean it shouldn’t be an object in our app.
 
-Martin Fowler [defines a Value Object](https://martinfowler.com/eaaCatalog/valueObject.html) as:
+Refactoring into a value object has several benefits since you isolate the code for this concept. You might hear this referred to as ‘separation of concerns’. You can also test the behaviour of your concept in isolation, leading to more comprehensive and efficient tests.
 
-> A small simple object, like money or a date range, whose equality isn’t based on identity.
-
-Refactoring into a value object has several benefits as you isolate the code for this concept. You might hear this referred to as ‘separation of concerns’.
-
-Your can test the behaviour of your concept in isolation, leading to more comprehensive and efficient tests.
-
-This improved organisation of your code will clarify your understanding. The code is also easier to reuse and you have a clear place for extending the functionality of the object.
+This improved organisation of your code will clarify your understanding. The code/concept is also easier to reuse and you gain a clear place for extending the functionality of the object.
 
 
 ## Why not?
 
-Finding the correct time to extract a concept into a value object can be difficult. Too early leads to unnecessary complication and potentially increased confusion; too late and you’re already coding in a mess!
+It might be too soon. Finding the correct time to extract a concept into a value object can be difficult. Too early leads to unnecessary complication and potentially increased confusion; too late and you’re already coding in a mess!
 
-For implementation you could use a `Struct` or even `OpenStruct` rather than the class definition approach shown in the example, but these are mutable objects (you can change their properties) which can add complication rather than to simplify.
+For implementation you could use a `Struct` or even `OpenStruct` rather than the class definition approach shown in the example, but these are mutable objects (you can change their properties) which can add complication, rather than simplify your code.
