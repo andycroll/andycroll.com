@@ -13,7 +13,7 @@ image:
 
 In your applications, you’ll often find yourself creating a range of view helpers around the same concept, constructing complex calculation methods, or passing a value (or several) around multiple methods.
 
-When this happens it is possible a simple object, smaller than an Active Record model, is trying to reveal itself.
+When this happens a simple object, smaller than an Active Record model, is trying to reveal itself.
 
 In these cases, consider refactoring the functionality into a “Value Object”, as [described by Martin Fowler](https://martinfowler.com/eaaCatalog/valueObject.html):
 
