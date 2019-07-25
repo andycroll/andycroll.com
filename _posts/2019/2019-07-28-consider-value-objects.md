@@ -11,7 +11,7 @@ image:
 
 ---
 
-You’ll often find yourself doing creating multiple view helpers around the same concept, creating complex calculation methods, or passing a value (or several) around multiple methods.
+In your applications, you’ll often find yourself creating multiple view helpers around the same concept, constructing complex calculation methods, or passing a value (or several) around multiple methods.
 
 When this happens it is possible a simple object, smaller than an Active Record model, is trying to reveal itself.
 
