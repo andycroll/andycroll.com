@@ -34,3 +34,8 @@ fathom('set', 'siteId', 'HUFOLVIQ');
 fathom('trackPageview');
 </script>
 <!-- / Fathom -->
+<!-- Mailchimp -->
+{% if page.category == 'ruby' %}
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us1.list-manage.com","uuid":"8978f575757c4b55d2a353a62","lid":"aac2114710","uniqueMethods":true}) })</script>
+{% endif %}
+<!-- / Mailchimp -->
