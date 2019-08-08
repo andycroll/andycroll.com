@@ -11,7 +11,7 @@ image:
 
 ---
 
-In [last week’s article](/ruby/consider-value-objects), I was constraining an integer to a minimum and maximum value. As of Ruby 2.4 there's a nice method for that: `#clamp`. The [documentation for the method is in the Comparable module](http://ruby-doc.org/core-2.6.3/Comparable.html#method-i-clamp).
+In [my article on value objects](/ruby/consider-value-objects), the example involved constraining an integer to a minimum and maximum value in the `#initialize` method. As of Ruby 2.4, there's a handy method for that: `#clamp`. The [documentation for the method](http://ruby-doc.org/core-2.6.3/Comparable.html#method-i-clamp) is in the Comparable module.
 
 
 ## Instead of...
@@ -30,7 +30,7 @@ value = -100
 
 ## Use...
 
-...Ruby’s .
+...Ruby’s `#clamp` method.
 
 ```ruby
 value = 1000
@@ -47,7 +47,7 @@ value.clamp(0, 255)
 
 The standard library is deliberately expansive and elegant.
 
-This is the exact use case for the problem I was trying to solve.
+This is the exact use case for the problem I was trying to solve, so why use more verbose syntax?
 
 
 ## Why not?
