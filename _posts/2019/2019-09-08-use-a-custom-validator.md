@@ -59,7 +59,7 @@ Now you can test that logic in isolation and, at the point of use, it’s easier
 
 ## Why not?
 
-For email validation in particular, there's a little trick I've used in the past which is succinct and doesn't need a validator, but you need to be using `devise` for your application's authentication:
+For email validation in particular, there's a little trick I've used in the past, which is succinct and doesn't need a validator, but you need to be using `devise` for your application's authentication:
 
 ```ruby
 class Invite
