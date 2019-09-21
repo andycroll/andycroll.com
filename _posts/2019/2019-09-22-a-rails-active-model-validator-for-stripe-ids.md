@@ -57,7 +57,7 @@ class StripeValidator < ActiveModel::EachValidator
 end
 ```
 
-...then used in models like so:
+...then use it in models like so:
 
 ```ruby
 class Subscription < ActiveRecord
@@ -80,4 +80,6 @@ This extra structure in your code can improve the clarity of understanding when 
 
 ## Why not?
 
-You could use a specific regex for each model’s validation, but you’d lose the extra expressiveness from naming and extracting the validator.
+You could use a specific regex for each model’s validation, but you’d lose the extra expressiveness in the model from naming and extracting the validator.
+
+“This field must be a stripe id with the prefix ‘in’” is clearer to read and understand than “This field must match a confusing regular expression”.
