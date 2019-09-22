@@ -13,11 +13,11 @@ image:
 
 In [my article on using validators](/ruby/use-a-custom-validator), the example was pretty simple.
 
-This is an example of real production use of a more complex validator extracted from the billing code in [AnswerThePublic](https://answerthepublic.com). We use [Stripe](https://stripe.com) exclusively for billing in our applications.
+In this example, we discuss the real production use of a more complex validator extracted from the billing code in [AnswerThePublic](https://answerthepublic.com). We use [Stripe](https://stripe.com) exclusively for billing in our applications.
 
-Every object on Stripe—a transaction, an invoice, a customer—has a unique and similarly-patterned identifier. We often need to store those `id`s locally in our application to interact with Stripe so we can collect payments from customers.
+Every object on Stripe—a transaction, an invoice, a customer—has a unique and similarly-patterned identifier. We often need to store these `id`s locally in our application to interact with Stripe so that they can interact with Stripe and we can collect payments from customers.
 
-We want to make sure we don’t store incorrectly formatted stripe `id`s in our application’s database or we’ll potentially introduce errors in our eventual API calls.
+We want to make sure we don’t store incorrectly-formatted Stripe `id`s in our application’s database or we might introduce errors in our eventual API calls.
 
 
 ## Instead of...
@@ -73,9 +73,9 @@ end
 
 I wanted to provide a useful, concrete example where extracting a validator (in this case for a popular and well-used service) can help keep your code clear and concise.
 
-This validator can be reused across multiple models in our own domain, that have records on Stripe accessible via their API, reducing potential errors and ensuring our application data matches up to our data on Stripe.
+This validator can be reused across multiple models in our own domain that have records on Stripe accessible via their API, reducing potential errors, and ensuring our application data matches up to our data on Stripe.
 
-This extra structure in your code can improve the clarity of understanding when you, or another developer, come back to it. There’s now one place in our app to validate the format of all our Stripe identifiers.
+The extra structure improves the clarity of your code when you, or another developer, come back to it. There’s now one place in our app to validate the format of all our Stripe identifiers.
 
 
 ## Why not?
