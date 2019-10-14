@@ -11,9 +11,9 @@ image:
 
 ---
 
-When authors of open source libraries change major functionality, or are removing features they often adhere to something called [semantic versioning](https://semver.org) and don't remove things until a major version is released.
+When authors of open source libraries change major functionality they often adhere to something called [semantic versioning](https://semver.org). At its simplest you can think of it as a rule meaning features aren’t removed until a major version is released.
 
-Before the big changes it’s a good idea to add messages to users of the software to mention forthcoming changes in a harmless but visible way. This is often done by sending messages to the logs when code runs.
+Before any big changes it’s a good idea to send messages to users of the software in a harmless, but visible, way. This is often done via the logs output when the code runs.
 
 You might have seen these when your tests run or in your live application logs.
 
@@ -21,9 +21,9 @@ You might have seen these when your tests run or in your live application logs.
 blah/blah/file.rb:34: warning: constant ::Fixnum is deprecated
 ```
 
-Although in our private codebases we’re often not making big releases that could impact hundreds of other unseen developers, it's still a good idea to help those in your team (including yourself) when functionality changes.
+Although in our private codebases our changes do not impact hundreds of other unseen developers, it’s still a good idea to communicate with your team when functionality changes.
 
-The Rails framework does this enough that it has [a standard depreciation approach baked into Active Support](https://api.rubyonrails.org/classes/ActiveSupport/Deprecation/Reporting.html), and in _our_ code we can piggyback off the feature they use to deprecate internal features.
+The Rails framework goes through this enough that it has [a standard depreciation approach baked into Active Support](https://api.rubyonrails.org/classes/ActiveSupport/Deprecation/Reporting.html), and in _our_ code we can piggyback off the feature they use to deprecate internal features.
 
 
 ## Instead of...
@@ -35,7 +35,7 @@ class Coffee
   def make
     put_instant_in_cup
     add_hot_water
-    puts "We should be using an Aeropress"
+    puts "We should #make_properly with an Aeropress"
   end
 
   def make_properly
@@ -58,7 +58,8 @@ class Coffee
   def make
     put_instant_in_cup
     add_hot_water
-    ActiveSupport::Deprecation.warn("We should be using an Aeropress")
+    ActiveSupport::Deprecation.warn(
+      "We should #make_properly with an Aeropress")
   end
 
   def make_properly
@@ -74,18 +75,21 @@ end
 When you of your co-workers call `Coffee.new.make` you’ll see...
 
 ```
-DEPRECATION WARNING: We should be using an Aeropress (called from coffee.rb:4)
+DEPRECATION WARNING: We should #make_properly with an Aeropress
+(called from coffee.rb:4)
 ```
 
 ... in your logs.
 
 ## Why?
 
-Firstly, instant coffee is horrible and you _just shouldn’t_.
+First, instant coffee is horrible and you _just shouldn’t_.
 
-Secondly, this is a relatively lightweight way to 'soft protect' old ways of doing things in favour of new code.
+Second, this is a relatively lightweight way to 'soft protect' old ways of doing things in favour of new code.
 
-It's useful in two ways. One as a way to discover places in the code that use your existing method, it might be called in places you don’t expect. Another is to prevent your coworkers from adding new uses of the deprecated method, when they do, they’ll see your message.
+This is useful in two ways. One as a way to discover places in the code that use your existing method. It might be called in places you don’t expect.
+
+Another is to prevent your coworkers from adding new uses of the deprecated method because, when they attempt to, they’ll see the deprecation message.
 
 Another way to use Rails' deprecation functionality is within scopes. You'd do this when you want to maintain existing logic, but discourage further use.
 
@@ -103,8 +107,8 @@ end
 
 ## Why not?
 
-If you’re working on your own, or in the early “messy” stages of an application this is probably overkill.
+If you’re working on your own, or in the early, “messy”, stages of an application, this is probably overkill.
 
-In a non-Rails app, importing the whole of Active Support might also be a lot of library, for a sliver of its functionality.
+In a non-Rails app, importing the whole of Active Support might also be a lot of library for a sliver of its functionality.
 
-The principle of deprecation over time is still a good idea though, if you're working with other folks.
+The principle of deprecation over time is still a good idea though if you're working with other folks.
