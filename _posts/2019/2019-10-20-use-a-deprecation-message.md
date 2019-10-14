@@ -87,7 +87,7 @@ Secondly, this is a relatively lightweight way to 'soft protect' old ways of doi
 
 It's useful in two ways. One as a way to discover places in the code that use your existing method, it might be called in places you don’t expect. Another is to prevent your coworkers from adding new uses of the deprecated method, when they do, they’ll see your message.
 
-A good example of how you might use it in your application might be to use it in scopes, where you want to maintain existing logic, but discourage use.
+Another way to use Rails' deprecation functionality is within scopes. You'd do this when you want to maintain existing logic, but discourage further use.
 
 ```ruby
 class TakeawayCoffeeCup < ApplicationRecord
