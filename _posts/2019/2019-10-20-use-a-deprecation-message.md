@@ -28,7 +28,7 @@ The Rails framework goes through this enough that it has [a standard depreciatio
 
 ## Instead of...
 
-...just logging
+...just logging:
 
 ```ruby
 class Coffee
@@ -72,7 +72,7 @@ class Coffee
 end
 ```
 
-When you of your co-workers call `Coffee.new.make` you’ll see...
+When you or one of your co-workers calls `Coffee.new.make`, you’ll see...
 
 ```
 DEPRECATION WARNING: We should #make_properly with an Aeropress
@@ -87,9 +87,11 @@ First, instant coffee is horrible and you _just shouldn’t_.
 
 Second, this is a relatively lightweight way to 'soft protect' old ways of doing things in favour of new code.
 
-This is useful in two ways. One as a way to discover places in the code that use your existing method. It might be called in places you don’t expect.
+This is useful in two ways.
 
-Another is to prevent your coworkers from adding new uses of the deprecated method because, when they attempt to, they’ll see the deprecation message.
+One is as a way to discover places in the code that use your existing method. It might be called in places you don’t expect.
+
+Another is to prevent your coworkers from adding new uses of the deprecated method since, when they attempt to, they’ll see the deprecation message.
 
 Another way to use Rails' deprecation functionality is within scopes. You'd do this when you want to maintain existing logic, but discourage further use.
 
@@ -111,4 +113,4 @@ If you’re working on your own, or in the early, “messy”, stages of an appl
 
 In a non-Rails app, importing the whole of Active Support might also be a lot of library for a sliver of its functionality.
 
-The principle of deprecation over time is still a good idea though if you're working with other folks.
+The principle of deprecation over time is still a good idea though, if you're working with other folks.
