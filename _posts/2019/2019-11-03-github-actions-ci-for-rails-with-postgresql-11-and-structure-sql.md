@@ -8,7 +8,7 @@ image:
   alt: 'Green Octocat testing'
 ---
 
-Follow up to [Using GitHub Actions for Rails CI with Postgres](github-actions-ci-for-rails-with-postgresql).
+This article is a follow up to [Using GitHub Actions for Rails CI with Postgres](/ruby/github-actions-ci-for-rails-with-postgresql).
 
 A little extra configuration is required to run your tests against PostgreSQL 11 if you dump your [database schema as SQL](https://edgeguides.rubyonrails.org/active_record_migrations.html#types-of-schema-dumps) i.e. use `structure.sql` rather than `schema.rb`
 
@@ -25,7 +25,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     services:

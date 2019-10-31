@@ -9,13 +9,13 @@ image:
 
 ---
 
-Writing tests when writing software is strongly recommended, it helps you protect against bugs and inadvertent changes, reduce the fear of scary deploys and can even help you make better software in
+Writing tests alongside writing software is strongly recommended. It helps you protect against bugs, reduce the fear of scary deploys and, can even help you write better software.
 
 The Ruby and Rails community have always had a strong focus on testing. Typically that means having some sort of “continuous integration” system constantly running your test suite.
 
-There’s a bunch of good choices, but recently GitHub launched [Actions](https://github.com/features/actions) (in beta) which lets you run arbitrary workflows, including tests, when certain things happen to your git repository.
+There’s a bunch of good choices, but recently GitHub launched [Actions](https://github.com/features/actions) (in beta), which lets you run arbitrary workflows, including tests, after certain things happen to your git repository.
 
-It does need a little extra configuration to run your tests using PostgreSQL (my SQL database of choice).
+It does need a little extra configuration to run your tests using PostgreSQL (my SQL database of choice), if you use `structure.sql` database dumps [you’ll need a slightly different configuration](/ruby/github-actions-ci-for-rails-with-postgresql-11-and-structure-sql).
 
 
 ## Instead of...
@@ -40,7 +40,6 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     services:
@@ -88,19 +87,23 @@ If you use SQL dumps—you have a `db/structure.sql` file rather than a `db/sche
 
 ## Why?
 
-There is a benefit to your tests being in the ‘same place’ as your code. There is no separate account to maintain, no separate service to bill, no seperate ‘team member management’.
+There is a benefit to your tests being in the ‘same place’ as your code. There is no separate account to maintain, no separate service to bill, and no separate ‘team member management’.
 
-For limited usage it is _free_, even for private repositories, and pretty economical after that. And completely free for public, open source, repositories.
+It's completely free for public, open source, repositories. There’s also a pretty generous free usage tier for private repositories, and pretty economical after that.
 
-Github Actions can also be configured to do many tasks other than just running your tests. Automatic image compression, other code checks, notifications to other systems, adding comments, making assignments, doing deployments and more. All you have to do is fight with the configuration. :-)
+Github Actions can also be configured to do many tasks other than just running your tests: automatic image compression, other code checks, notifications to other systems, adding comments, making assignments, doing deployments, and more. All you have to do is fight with the configuration. :-)
 
 
 ## Why not?
 
-Your testing infrastructure should, as much as possible, reflect your production environment to help catch subtle bugs. For me, at [work](https://coveragebook.com), that means using Heroku’s [pipelines, CI and review apps](https://www.heroku.com/flow), meaning our testing and QA infrastructure is as similar as we can make it to production.
+Your testing infrastructure should, as much as possible, reflect your production environment to help catch subtle bugs. For me, at work for [CoverageBook](https://coveragebook.com) & [AnswerThePublic](https://answerthepublic.com), that means using Heroku’s [pipelines, CI and review apps](https://www.heroku.com/flow).
 
-You might also feel the idea of further centralisation of your development infrastructure with one company to be a risk. Or a different CI provider might offer you higher levels of service or configurability if you have specific needs.
+You might think that increased centralisation of your development infrastructure at one company is a risk, or that a different CI provider might offer higher levels of service or configurability if you have specific needs.
 
-If you have a testing infrastructure already set up somewhere else, potentially wound into a working system for deployment, it probably isn’t worth the effort to move.
+If you have a testing infrastructure that’s working well somewhere else, it probably isn’t worth the effort to move, although you could set up a parallel CI on GitHub to compare with your existing provider.
 
-There’s also a current issue with staying on the latest version of Ruby.
+### Specific Ruby versions
+
+There’s an current issue with with the provided versions of Ruby. GitHub only provides certain versions [in their architecture](https://help.github.com/en/github/automating-your-workflow-with-github-actions/software-in-virtual-environments-for-github-actions#ubuntu-1804-lts) (scroll down for compatible versions) and it seems, from [this comment](https://github.com/actions/setup-ruby/issues/14#issuecomment-524020179), that releasing new CI images when Ruby is updated isn’t a priority.
+
+You can manually install Ruby versions, but that’s yet another piece of configuration I haven’t got to yet...
