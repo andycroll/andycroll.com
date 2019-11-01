@@ -87,7 +87,7 @@ If you use SQL dumps—you have a `db/structure.sql` file rather than a `db/sche
 
 There is a benefit to your tests being in the ‘same place’ as your code. There is no separate account to maintain, no separate service to bill, and no separate team member administration.
 
-GitHub completely free for public, open source, repositories. There’s also a pretty generous free tier for private repositories, and it is pretty economical after that.
+GitHub Actions is completely free for public, open source, repositories. There’s also a pretty generous free tier for private repositories, and it is pretty economical after that.
 
 It can also be configured to do many tasks other than just running your tests: automatic image compression, other code checks, notifications to other systems, adding comments, making assignments, doing deployments, and more. All you have to do is fight with the configuration. :-)
 
