@@ -1,6 +1,6 @@
 ---
-title: "Use GitHub Actions for Rails CI with Postgres 11 & structure.sql"
-description: "More config required for SQL"
+title: "Use GitHub Actions for Rails CI with specific Ruby versions"
+description: "You have to build from source or use a specific container"
 layout: article
 category: ruby
 image:
@@ -10,12 +10,15 @@ image:
 
 This article is a follow-up to [Using GitHub Actions for Rails CI with Postgres](/ruby/github-actions-ci-for-rails-with-postgresql).
 
-A little extra configuration is required to run your tests against PostgreSQL 11 if you dump your [database schema as SQL](https://edgeguides.rubyonrails.org/active_record_migrations.html#types-of-schema-dumps), i.e. use `structure.sql` rather than `schema.rb`
+You’ll need to add extra steps to test against versions of Ruby not supported natively by GitHub Actions. This template uses [`rvm`](https://rvm.io) to install the version of Ruby specified in your `.ruby-version` file.
+
+I'm indebted to the [rubygems repository](https://github.com/rubygems/rubygems/blob/master/.github/workflows/ubuntu-rvm.yml) for showing the simplest way to do this.
+
 
 ### `.github/workflows/tests.yml`
 
 ```yml
-name: Rails Tests using structure.sql
+name: Rails Tests with custom Ruby version
 
 on:
   pull_request:
@@ -36,18 +39,19 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
-      with:
-        ruby-version: 2.6.x
-
-    - name: Install PostgreSQL 11 client required for loading structure.sql
+    - name: Set up RVM
       run: |
-        sudo apt update
-        sudo bash -c "echo deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main >> /etc/apt/sources.list.d/pgdg.list"
-        wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
-        sudo apt-get update
-        sudo apt-get -yqq install libpq-dev postgresql-client-11
+        curl -sSL https://get.rvm.io | bash
+
+    - name: Set up Ruby from .ruby-version
+      run: |
+        source $HOME/.rvm/scripts/rvm
+        rvm install $(cat .ruby-version) --binary
+        rvm --default use $(cat .ruby-version)
+
+    - name: Install PostgreSQL 11 client
+      run: |
+        sudo apt-get -yqq install libpq-dev
 
     - name: Build App
       env:
@@ -55,6 +59,7 @@ jobs:
         PGUSER: postgres
         RAILS_ENV: test
       run: |
+        source $HOME/.rvm/scripts/rvm
         gem install bundler
         bundle install --jobs 4 --retry 3
         bin/rails db:setup
@@ -65,6 +70,7 @@ jobs:
         PGUSER: postgres
         RAILS_ENV: test
       run: |
+        source $HOME/.rvm/scripts/rvm
         bundle exec rake test
         bundle exec rake test:system
         # or Rspec
