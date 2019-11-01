@@ -98,7 +98,7 @@ Your testing infrastructure should, as much as possible, reflect your production
 
 You might think that increased centralisation of your development infrastructure at one company is a risk, or that a different CI provider might offer higher levels of service or configurability if you have specific needs.
 
-If you have a testing infrastructure that’s working well somewhere else, it probably isn’t worth the effort to move, although you could set up a parallel CI on GitHub to compare with your existing provider.
+If you have a testing infrastructure that’s working well somewhere else, it probably isn’t worth the effort to move, although you could set up a parallel CI on GitHub to compare against your existing provider.
 
 
 ### Specific Ruby versions
