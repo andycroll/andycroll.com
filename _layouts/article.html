@@ -39,21 +39,44 @@ layout: default
 
   <div class="row">
     <div class="col-12 offset-sm-1 col-sm-10 col-md-9 col-lg-8 pb-3">
-      {{ content }}
+      <div id="main" class="">
+        {{ content }}
+      </div>
 
       <hr class="mt-5" />
       <p class="small">originally posted on <span class="date">{{ page.date | date: "%d %b %Y" }}</span> by <a href="http://twitter.com/andycroll">@andycroll</a></p>
     </div>
-    {% if page.image.credit %}
     <div class="offset-sm-1 offset-md-0 col-md-2 col-lg-3">
+      {% if page.image.credit %}
       <p class="small text-muted">
         <small>
           photo&nbsp;by<br class="d-none d-md-block d-lg-block"/>
           <a href="{{ page.image.source }}" class="text-muted">{{ page.image.credit }}</a>
         </small>
       </p>
+      {% endif %}
+      <div id="codefund" class="my-3"></div>
+      <style>
+        .cf-img-wrapper {
+          display: block;
+        }
+        .cf-img-wrapper img {
+          max-width: 100%;
+          height: auto;
+        }
+        .cf-wrapper a {
+          font-size: 12px;
+          color: #6c757d !important;
+        }
+        .cf-text > * {
+          display: block;
+        }
+        .cf-powered-by {
+          font-size: 11px !important;
+        }
+      </style>
+      <script src="https://codefund.io/properties/557/funder.js" async="async"></script>
     </div>
-    {% endif %}
   </div>
 </div>
 
