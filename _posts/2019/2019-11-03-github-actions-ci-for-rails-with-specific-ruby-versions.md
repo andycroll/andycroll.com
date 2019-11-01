@@ -12,7 +12,7 @@ This article is a follow-up to [Using GitHub Actions for Rails CI with Postgres]
 
 You’ll need to add extra steps to test against versions of Ruby not supported natively by GitHub Actions. This template uses [`rvm`](https://rvm.io) to install the version of Ruby specified in your `.ruby-version` file.
 
-I'm indebted to the [rubygems repository](https://github.com/rubygems/rubygems/blob/master/.github/workflows/ubuntu-rvm.yml) for showing the simplest way to do this.
+I'm indebted to the [rubygems repository](https://github.com/rubygems/rubygems/blob/master/.github/workflows/ubuntu-rvm.yml) for demonstrating the simplest way to do this.
 
 
 ### `.github/workflows/tests.yml`
