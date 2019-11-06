@@ -19,9 +19,11 @@ name: Rails Tests using structure.sql
 
 on:
   pull_request:
-    - 'master'
+    branches:
+      - 'master'
   push:
-    - 'master'
+    branches:
+      - 'master'
 
 jobs:
   build:

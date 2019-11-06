@@ -32,9 +32,11 @@ name: Rails Tests
 
 on:
   pull_request:
-    - 'master'
+    branches:
+      - 'master'
   push:
-    - 'master'
+    branches:
+      - 'master'
 
 jobs:
   build:

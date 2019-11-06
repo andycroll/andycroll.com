@@ -22,9 +22,11 @@ name: Rails Tests with custom Ruby version
 
 on:
   pull_request:
-    - 'master'
+    branches:
+      - 'master'
   push:
-    - 'master'
+    branches:
+      - 'master'
 
 jobs:
   build:
