@@ -52,5 +52,5 @@ jobs:
         RAILS_ENV: test
       run: |
         source $HOME/.rvm/scripts/rvm
-        bundle exec jekyll build
+        bundle exec jekyll build --verbose
         bundle exec htmlproofer ./_site --disable-external
