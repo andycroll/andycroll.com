@@ -82,7 +82,7 @@ jobs:
       # bundle exec rspec
 ```
 
-If you use SQL dumps—you have a `db/structure.sql` file rather than a `db/schema.rb` file in your application—you’ll need to use [this slightly altered workflow](github-actions-ci-for-rails-with-postgresql-11-and-structure-sql).
+If you use SQL dumps—you have a `db/structure.sql` file rather than a `db/schema.rb` file in your application—you’ll need to use [this slightly altered workflow](/ruby/github-actions-ci-for-rails-with-postgresql-11-and-structure-sql).
 
 
 ## Why?
