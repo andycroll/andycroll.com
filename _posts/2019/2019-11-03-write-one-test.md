@@ -18,7 +18,7 @@ But perhaps you’ve never really ‘got it’ or ever seen the benefits of an e
 
 ## Instead of...
 
-...not having any tests
+...not having any tests:
 
 
 ## Perhaps...
