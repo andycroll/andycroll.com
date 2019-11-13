@@ -54,4 +54,4 @@ For me, it’s a case of: why stop here? Once you have this basic smoke test, yo
 
 These sorts of simple, but full system, tests will give you a surprising amount of benefit for very little ongoing effort.
 
-These kinds of system tests rarely allow you to test all the permutations of sophisticated logic within your application, those sorts of things are better tested in unit tests. For general “is my application mostly working”-type concerns you'll get a lot of milage (and coverage) out of these broad smoke tests.
+These kinds of system tests rarely allow you to test all the permutations of sophisticated logic within your application. Those sorts of things are better tested in unit tests. For general “is my application mostly working”-type concerns, you'll get a lot of milage (and coverage) out of these broad smoke tests.
