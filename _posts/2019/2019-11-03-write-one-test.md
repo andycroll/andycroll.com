@@ -50,7 +50,7 @@ Two, now you’ve taken your first step into testing, you can take more.
 
 ## Why not?
 
-For me, it is a case of “why stop here”. Once you have this basic smoke test, you can add a simple test to check that sign up of new users works. Or that signing in an existing user works.
+For me, it’s a case of: why stop here? Once you have this basic smoke test, you can add a simple test to check that sign up of new users works. Or that signing in an existing user works.
 
 These sorts of simple, but full system, tests will give you a surprising amount of benefit for very little ongoing effort.
 
