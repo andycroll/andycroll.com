@@ -11,16 +11,18 @@ image:
 
 ---
 
-Caching is a hugely powerful tool in maintaining performance of often requested pages and partials in your application.
+Caching is a hugely powerful tool in maintaining the performance of often requested pages and partials in your application.
 
-It can also be a cause of confusing behaviours (mostly “stuff not updating on the page”) when you test your app in a production environment.
+It can also cause confusing behaviour (mostly “stuff not updating on the page”) when you test your app in a production environment.
 
-Rails has great built-in support for view fragment caching. The framework includes an elegant way of invoking and busting the cache based on the model `id`, it’s `updated_at` timestamp and an automatically generated digest of the specific view template. You can find more details in the [Rails guide on caching](https://guides.rubyonrails.org/caching_with_rails.html#fragment-caching).
+Rails has great built-in support for many types of caching, in particular the “view fragment caching”. This stores the resulting text  of parts your views in very fast storage, say Redis or Memcache, saving your application building the views every time a page is rendered.
+
+The framework includes an elegant way of using the cache based on using the model `id`, it’s `updated_at` timestamp and an automatically generated digest of the specific view template. You can find more details in the [Rails guide on caching](https://guides.rubyonrails.org/caching_with_rails.html#fragment-caching).
 
 
 ## Instead of...
 
-...just using the modal key in your key:
+...just using a single modal in your key, for a complex view
 
 ```ruby
 class Event < ApplicationRecord
@@ -58,7 +60,7 @@ end
 
 ## Use
 
-...a combined key, including the parent object
+...multiple relevant models, including the parent object.
 
 ```ruby
 class Event < ApplicationRecord
@@ -96,15 +98,15 @@ end
 
 This is a ‘powerful tools enabling subtle bugs’ problem.
 
-Models that `belong_to` other models can often have a context. When we use the data from any “parent” model in a view-cached partial, you need to include that model in the cache key, or the view will not update with changes to that model.
+When we use the data from any “parent” model in a view-cached partial, you need to include that model in the cache key, or the view will not update with changes to that parent.
 
-Additionally also be aware of nested models. If a model `has_many` objects and you neglect to use `touch: true` in the declaration of the “child” model’s `belongs_to` relationship then the cache key won’t change and you’ll see out of date information.
+You also need to be aware of nested models. If a model `has_many` objects and you neglect to use `touch: true` in the declaration of the “child” model’s `belongs_to` relationship then again the cache key won’t be “busted” and your view will show out of date information.
 
 
 ## Why not?
 
-It’s always worth checking whether you need caching at all. It is best to understand the performance improvements versus the possibility of maddeningly hard to find bugs.
+It’s always worth checking whether you need caching at all. It is best to understand the performance improvements versus the possibility of maddeningly-hard-to-find bugs.
 
-Caching bugs aren't apparent in the normal places we look for bugs; the code, the logs and in error reporting. Also your tests are unlikely to discover them as caching is typically turned off in development and test environments.
+Caching bugs aren't apparent in the normal places we look for bugs; the code, the logs or in error reporting. Also your tests are unlikely to discover them as caching is typically turned off in development and test environments.
 
-I’m definitely not saying “don’t cache” I'm just saying “be careful”.
+I’m definitely not saying “don’t cache”. I'm just saying “be careful”.
