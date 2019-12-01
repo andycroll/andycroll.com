@@ -22,7 +22,7 @@ The framework includes an elegant way of using the cache based on using a model�
 
 ## Instead of...
 
-...only using the main model in your cache key, for view fragments using multiple models
+...only using the main model in your cache key, for view fragments using multiple models:
 
 ```ruby
 class Event < ApplicationRecord
@@ -107,6 +107,6 @@ You also need to be aware of nested models. If a model `has_many` objects and yo
 
 It’s always worth checking whether you need caching at all. It is best to understand the performance improvements versus the possibility of maddeningly-hard-to-find bugs.
 
-Caching bugs aren't apparent in the normal places we look for bugs; the code, the logs or in error reporting. Also your tests are unlikely to discover them as caching is typically turned off in development and test environments.
+Caching bugs aren't apparent in the normal places we look for bugs; the code, the logs, or in error reporting. Also your tests are unlikely to discover them as caching is typically turned off in development and test environments.
 
 I’m definitely not saying “don’t cache”. I'm just saying “be very careful”.
