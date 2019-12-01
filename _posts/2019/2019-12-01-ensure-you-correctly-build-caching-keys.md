@@ -15,7 +15,7 @@ Caching is a hugely powerful tool in maintaining the performance of often reques
 
 It can also cause confusing behaviour (mostly “stuff not updating on the page”) when you test your app in a production environment.
 
-Rails has great built-in support for many types of caching, in particular the “view fragment caching”. This stores the resulting text  of parts your views in very fast storage, say Redis or Memcache, saving your application building the views every time a page is rendered.
+Rails has great built-in support for many types of caching, in particular its “view fragment caching”. This stores the resulting text of parts of your views in very fast storage, say Redis or Memcache, saving your application building the views every time a page is rendered.
 
 The framework includes an elegant way of using the cache based on using the model `id`, it’s `updated_at` timestamp and an automatically generated digest of the specific view template. You can find more details in the [Rails guide on caching](https://guides.rubyonrails.org/caching_with_rails.html#fragment-caching).
 
