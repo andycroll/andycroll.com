@@ -17,12 +17,12 @@ It can also cause confusing behaviour (mostly “stuff not updating on the page�
 
 Rails has great built-in support for many types of caching, in particular its “view fragment caching”. This stores the resulting text of parts of your views in very fast storage, say Redis or Memcache, saving your application building the views every time a page is rendered.
 
-The framework includes an elegant way of using the cache based on using the model `id`, it’s `updated_at` timestamp and an automatically generated digest of the specific view template. You can find more details in the [Rails guide on caching](https://guides.rubyonrails.org/caching_with_rails.html#fragment-caching).
+The framework includes an elegant way of using the cache based on using a model’s `id`, its `updated_at` timestamp, and an automatically-generated digest of the specific view template. You can find more details in the [Rails guide on caching](https://guides.rubyonrails.org/caching_with_rails.html#fragment-caching).
 
 
 ## Instead of...
 
-...just using a single modal in your key, for a complex view
+...only using the main model in your cache key, for view fragments using multiple models
 
 ```ruby
 class Event < ApplicationRecord
@@ -98,7 +98,7 @@ end
 
 This is to mitigate against a ‘powerful tools enabling subtle bugs’ problem.
 
-When we use the data from any “parent” model in a view-cached partial, you need to include that model in the cache key, or the view will not update with changes to that parent.
+When we use the data from any model in a view-cached partial, you need to include that model in the cache key, or the view will not update with changes to that model.
 
 You also need to be aware of nested models. If a model `has_many` objects and you neglect to use `touch: true` in the declaration of the “child” model’s `belongs_to` relationship then, if there are changes to the child model, the cache key won’t be “busted”, and your view will show out-of-date information.
 
