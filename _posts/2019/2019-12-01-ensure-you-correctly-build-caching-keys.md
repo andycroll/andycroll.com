@@ -100,7 +100,7 @@ This is to mitigate against a ‘powerful tools enabling subtle bugs’ problem.
 
 When we use the data from any “parent” model in a view-cached partial, you need to include that model in the cache key, or the view will not update with changes to that parent.
 
-You also need to be aware of nested models. If a model `has_many` objects and you neglect to use `touch: true` in the declaration of the “child” model’s `belongs_to` relationship then again the cache key won’t be “busted” and your view will show out of date information.
+You also need to be aware of nested models. If a model `has_many` objects and you neglect to use `touch: true` in the declaration of the “child” model’s `belongs_to` relationship then, if there are changes to the child model, the cache key won’t be “busted”, and your view will show out-of-date information.
 
 
 ## Why not?
