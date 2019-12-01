@@ -96,7 +96,7 @@ end
 
 ## Why?
 
-This is a ‘powerful tools enabling subtle bugs’ problem.
+This is to mitigate against a ‘powerful tools enabling subtle bugs’ problem.
 
 When we use the data from any “parent” model in a view-cached partial, you need to include that model in the cache key, or the view will not update with changes to that parent.
 
