@@ -109,4 +109,4 @@ It’s always worth checking whether you need caching at all. It is best to unde
 
 Caching bugs aren't apparent in the normal places we look for bugs; the code, the logs or in error reporting. Also your tests are unlikely to discover them as caching is typically turned off in development and test environments.
 
-I’m definitely not saying “don’t cache”. I'm just saying “be careful”.
+I’m definitely not saying “don’t cache”. I'm just saying “be very careful”.
