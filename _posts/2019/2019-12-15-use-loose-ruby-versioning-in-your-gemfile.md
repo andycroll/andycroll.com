@@ -57,17 +57,15 @@ ruby "~> 2.6"
 
 ## Why?
 
-This comes down to a preference for ‘just enough’ flexibility in the `Gemfile`.
+I’ve found that having a flexible `Gemfile` Ruby has helped when deploying to environments that pre-build specific patches of Ruby and might not be as completely up to date with the latest patch versions of Ruby as soon as they are released.
+
+Examples of services this have a delayed approach to the availability of new Ruby versions include Github Actions and Netlify.
 
 You can generally upgrade between 2.6.3 and 2.6.5 without expecting any changes to how your programme works.
 
-I’ve found that having a flexible `Gemfile` Ruby has helped when deploying to environments that pre-build specific patches of Ruby and might not be as completely up to date with the latest patch versions of Ruby as soon as they are released.
-
-Examples of this behaviour are Github Actions or Netlify.
-
 The flexible constraint in the `Gemfile` prevents you from having to interrupt your deployment or CI process, whilst being able to upgrade your local Ruby versions.
 
-You also only have to update your specific version in one place when you do make a change.
+You also only have to update your _specific_ version in one place when you do make a change.
 
 Additionally, with the flexible constraint, when there is a more secure patch-level version, your deployment environment will automatically upgrade your Ruby on the next deploy.
 
@@ -75,3 +73,5 @@ Additionally, with the flexible constraint, when there is a more secure patch-le
 ## Why not?
 
 It's totally fine to specify the full version. This is a micro-optimisation for most use cases.
+
+I have a preference for ‘just enough’ flexibility in the `Gemfile`, you may not.
