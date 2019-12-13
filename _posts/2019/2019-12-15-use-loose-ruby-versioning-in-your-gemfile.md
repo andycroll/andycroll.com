@@ -69,7 +69,7 @@ The flexible constraint in the `Gemfile` prevents you from having to interrupt y
 
 You also only have to update your specific version in one place when you do make a change.
 
-Additionally, with the flexible constraint, your deployment environment will automatically upgrade your Ruby version, on the next deploy, as it provides a more secure patch-level version.
+Additionally, with the flexible constraint, when there is a more secure patch-level version, your deployment environment will automatically upgrade your Ruby on the next deploy.
 
 
 ## Why not?
