@@ -22,7 +22,7 @@ You can also [specify your Ruby version in your Gemfile](https://bundler.io/v1.1
 
 ## Instead of...
 
-...specifying your exact ruby version in two places and potentially generating conflicts.
+...specifying your exact ruby version in two places and potentially generating conflicts:
 
 ```ruby
 # Gemfile
