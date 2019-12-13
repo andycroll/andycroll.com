@@ -42,7 +42,7 @@ Your Ruby version is 2.6.5, but your Gemfile specified 2.6.3
 
 ## Use
 
-...use loose versioning in the `Gemfile`:
+...loose versioning in the `Gemfile`:
 
 ```ruby
 # Gemfile
