@@ -15,7 +15,7 @@ Patch level versions (e.g. 2.6.**3**) of Ruby are compatible with each other and
 
 Many developers ensure their application uses a specific version in development by using a “Ruby version manager”, like [rvm](https://rvm.io) or, my preferred choice, [chruby](https://github.com/postmodern/chruby).
 
-These version managers look for a [file](https://gist.github.com/fnichol/1912050) in the root directory of each app called `.ruby-version`. The file specifies the correct version of Ruby for this application and then switches the local environment, switching between multiple installed versions of Ruby automatically.
+These version managers look for a [file](https://gist.github.com/fnichol/1912050) in the root directory of each app called `.ruby-version`. The file specifies the correct version of Ruby for this application and then automatically switches the local environment to the required version.
 
 You can also [specify your Ruby version in your Gemfile](https://bundler.io/v1.12/gemfile_ruby.html) using bundler, which is more often used in your deployment environment.
 
