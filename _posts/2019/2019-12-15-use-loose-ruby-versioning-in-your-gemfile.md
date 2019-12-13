@@ -59,7 +59,7 @@ ruby "~> 2.6"
 
 Having a flexible `Gemfile` Ruby helps when deploying to environments that pre-build specific patches of Ruby and might not be as completely up to date with the latest patch versions of Ruby as soon as they are released.
 
-Examples of services this have a delayed approach to the availability of new Ruby versions include Github Actions and Netlify.
+Examples of services where the availability of new Ruby versions are delayed include Github Actions and Netlify.
 
 You can generally upgrade between 2.6.3 and 2.6.5 without expecting any changes to how your programme works.
 
