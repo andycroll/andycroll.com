@@ -57,7 +57,7 @@ ruby "~> 2.6"
 
 ## Why?
 
-I’ve found that having a flexible `Gemfile` Ruby has helped when deploying to environments that pre-build specific patches of Ruby and might not be as completely up to date with the latest patch versions of Ruby as soon as they are released.
+Having a flexible `Gemfile` Ruby helps when deploying to environments that pre-build specific patches of Ruby and might not be as completely up to date with the latest patch versions of Ruby as soon as they are released.
 
 Examples of services this have a delayed approach to the availability of new Ruby versions include Github Actions and Netlify.
 
