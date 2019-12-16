@@ -46,7 +46,7 @@ Your Ruby version is 2.6.5, but your Gemfile specified 2.6.3
 
 ```ruby
 # Gemfile
-ruby "~> 2.6"
+ruby "~> 2.6.0"
 ```
 
 ```ruby
