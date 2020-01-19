@@ -94,7 +94,7 @@ For example it might be putting a `role` attribute on the `User`  in this exampl
 
 ## Why not?
 
-There’s extra manual work to be done when you can’t simply create “has and belongs to”-style joins, as you have to create the joining model yourself.
+There’s extra manual work to be done as you have to create the joining model yourself.
 
 ```ruby
 # has_and_belongs_to_many
