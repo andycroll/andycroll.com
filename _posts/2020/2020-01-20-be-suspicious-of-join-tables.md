@@ -11,7 +11,7 @@ image:
 
 ---
 
-We often have to represent many-to-many relationships between models in our applications. Rails provides a method in the migrations to generate a table in your database to support this. You can see the documentation in the [Rails guide for ActiveRecord migrations](https://guides.rubyonrails.org/active_record_migrations.html#creating-a-join-table).
+We often have to represent many-to-many relationships between models in our applications. Rails provides a built-in method to generate a table in your database to support this. You can see the documentation in the [Rails guide for ActiveRecord migrations](https://guides.rubyonrails.org/active_record_migrations.html#creating-a-join-table).
 
 However these “pure” join tables often obscure a useful concept in your application that might be better represented as a named model.
 
