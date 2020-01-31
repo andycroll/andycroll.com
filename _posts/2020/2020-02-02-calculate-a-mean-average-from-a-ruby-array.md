@@ -53,7 +53,7 @@ Benchmark.ips do |x|
 end
 ```
 
-The results (on my laptop) show a 50× speed improvement when using the native `#sum` in the implementation. This is due to it being written into the language to provide exactly this sort of performance improvement.
+The results (on my laptop) show a 50× speed improvement when using the native `#sum`. This method was built into the language to provide exactly this sort of performance improvement.
 
 ```
 Calculating -------------------------------------
