@@ -34,7 +34,7 @@ This approach using [the `#sum` method from `Array`](https://ruby-doc.org/core-2
 
 The `#sum` method was added to `Array` in Ruby 2.4, which is why you might see alternative implementations in other places on the Internet.
 
-In order to see the speed of the different implementations we can use the `benchmark-ips` gem, which compares the performance of different bits of code.
+In order to compare the performance of the different implementations we can use the `benchmark-ips` gem.
 
 ```ruby
 require "benchmark/ips"
