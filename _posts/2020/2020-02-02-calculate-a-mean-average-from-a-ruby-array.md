@@ -11,7 +11,7 @@ image:
 
 ---
 
-Ruby doesn’t provide a native method to generate an average (mean) value from an array of integers. Its built-in [math](https://ruby-doc.org/core-2.7.0/Math.html) library deals with more complex calculations than that and there's no native `#average` or `#mean` method on `Array`.
+Ruby doesn’t provide a native method to generate an average (mean) value from an array of integers. Its built-in [math](https://ruby-doc.org/core-2.7.0/Math.html) library focuses on more complex calculations and there's no built-in `#average` or `#mean` method on `Array`.
 
 This leaves us free to create our own implementation, with opportunities to shoot ourselves in the foot.
 
