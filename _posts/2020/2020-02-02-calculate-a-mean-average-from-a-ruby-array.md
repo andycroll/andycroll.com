@@ -65,7 +65,7 @@ Comparison:
 inject(0.0) / size:  13512.7 i/s - 50.35x  slower
 ```
 
-Although there are variations using `#sum` and then `#size` that perform similarly, the most important difference is clearly the use of the native `#sum` method.
+Although there are variations of using `#sum` and then `#size` that perform similarly, the biggest performance win is choosing to use the native `#sum` method in the first place.
 
 The benchmarking code for a wider variety of implementations...
 
