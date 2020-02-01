@@ -30,7 +30,7 @@ a.sum(0.0) / a.size
 
 ## Why?
 
-This approach using [the `#sum` method from `Array`](https://ruby-doc.org/core-2.7.0/Array.html#method-i-sum) is many, many times faster than using an alternative approach using `inject`.
+Using [the `#sum` method from `Array`](https://ruby-doc.org/core-2.7.0/Array.html#method-i-sum) is many, many times faster than using the alternative, `inject`.
 
 The `#sum` method was added to `Array` in Ruby 2.4, which is why you might see alternative implementations in other places on the Internet.
 
