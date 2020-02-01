@@ -13,7 +13,7 @@ image:
 
 Ruby doesn’t provide a native method to generate an average (mean) value from an array of integers. Its built-in [`Math`](https://ruby-doc.org/core-2.7.0/Math.html) library focuses on more complex calculations and there's no built-in `#average` or `#mean` method on `Array`.
 
-This leaves us free to create our own implementation, bringing the opportunity to shoot ourselves in the foot.
+This leaves us free to create our own implementation, introducing the opportunity to shoot ourselves in the foot.
 
 
 ## Ensure you use...
