@@ -127,4 +127,4 @@ inject(0.0, :+) / size:  30823.6 i/s - 21.68x slower
 
 Rails’ Active Record does include an [`#average` method](https://api.rubyonrails.org/classes/ActiveRecord/Calculations.html#method-i-average). It’s used to perform calculations on numerical columns in the database directly in SQL.
 
-If that is your specific use case, you should definitely use that method. Creating Active Record models and then iterating over them in ruby will nearly always be slower.
+If that is your specific use case, you should definitely use that method. Instantiating Active Record models and subsequently iterating over the Array in Ruby will nearly always be slower.
