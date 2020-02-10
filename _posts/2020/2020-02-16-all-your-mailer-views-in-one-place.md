@@ -45,7 +45,7 @@ Then move the files from `app/views/user_mailer` to `app/views/mailers/user_mail
 
 ## Why?
 
-Mailers and Controllers, in Rails, share similar kinds of functionality: reading variables from passed parameters, loading data and rendering output. The Rails codebase reflects this as they both inherit parts of their behaviour from `AbstractController` ([documentation](https://api.rubyonrails.org/classes/AbstractController/Base.html)).
+Mailers and Controllers in Rails, share similar kinds of functionality: reading variables from passed parameters, loading data, and rendering output. The Rails codebase reflects this as both Mailers and Controllers inherit parts of their behaviour from `AbstractController` ([documentation](https://api.rubyonrails.org/classes/AbstractController/Base.html)).
 
 The separation of the mailer views, even if only to a subdirectory within `app/views`, feels more in line with the separation of the mailers (`app/mailers`) from controllers (`app/controllers`).
 
