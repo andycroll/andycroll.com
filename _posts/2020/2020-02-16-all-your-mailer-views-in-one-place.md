@@ -54,6 +54,6 @@ I find it much easier to find the email templates when I make this small change.
 
 ## Why not?
 
-The default is fine, and this is a [pernickety](https://www.collinsdictionary.com/dictionary/english/pernickety) organisational opinion.
+This is a [pernickety](https://www.collinsdictionary.com/dictionary/english/pernickety) organisational opinion. The default is ok.
 
 It isn’t the default. It could be said you’re making it harder to understand for newcomers to the project. Plus modern IDEs allow fuzzy file lookup so the location of files isn’t that important.
