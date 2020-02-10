@@ -58,4 +58,4 @@ This is a [pernickety](https://www.collinsdictionary.com/dictionary/english/pern
 
 Modern IDEs allow fuzzy-file lookup so the location of files isn’t that important.
 
-You are changing your codebase from reasonable defaults, which is normally no ideal. However in this case the change is small, well defined and improves separation and organisation from the standard locations.
+You are changing your codebase from reasonable Rails defaults, which is normally not ideal. However the change is small, well defined and improves separation and organisation from the standard locations—I'd argue this should be the Rails default..
