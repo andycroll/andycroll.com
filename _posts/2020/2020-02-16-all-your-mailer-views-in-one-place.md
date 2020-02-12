@@ -60,4 +60,4 @@ This is a [pernickety](https://www.collinsdictionary.com/dictionary/english/pern
 
 Modern IDEs allow fuzzy-file lookup so the location of files isn’t that important.
 
-You are changing your codebase from reasonable Rails defaults, which is normally not ideal. However the change is small, well-defined and improves upon the separation and organisation implied by the standard locations—I'd argue _this_ should be the Rails default.
+You are changing your codebase from reasonable Rails defaults, which is normally not ideal. However the change is small, well-defined, and improves upon the separation and organisation implied by the standard locations—I'd argue _this_ should be the Rails default.
