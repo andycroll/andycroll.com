@@ -12,7 +12,9 @@ image:
 
 One of the greatest things that Rails provides to developers is a sensible set of defaults for _where stuff goes_ in the file hierarchy. The standard approach to `app/models`, `app/mailers`, `app/views`, `config`, etc.,  allows us to arrive at a Rails project and quickly understand where existing code is and where to place our new code.
 
-I’m therefore loathe to deviate much from the defaults, but I make one exception: email view templates. They live in the same part of the folder hierarchy as the web views, e.g. `app/views/whatever_mailer`, even though Mailers are in a different location to Controllers. Even after a decade of Rails I still struggle to find them.
+I’m therefore loathe to deviate from the defaults, but I do make one exception: email view templates. They live in the same part of the folder hierarchy as the web views tied to Controllers, e.g. the views for `whatever_mailer` are found in `app/views/whatever_mailer`, even though your application's Mailers are in a different location to your Controllers. 
+
+I don't know about you but, after a decade of Rails I still struggle to find mailer views.
 
 
 ## Instead of...
