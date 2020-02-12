@@ -17,7 +17,7 @@ I’m therefore loathe to deviate much from the defaults, but I make one excepti
 
 ## Instead of...
 
-...storing your mailer templates in their default location.
+...storing your mailer templates in their default location:
 
 e.g. for `UserMailer`, the mailer is in `app/mailers/user_mailer.rb` and the view templates are in `app/views/user_mailer`.
 
