@@ -51,7 +51,7 @@ Mailers and Controllers in Rails, share similar kinds of functionality: reading 
 
 The separation of the mailer views, even if only to a subdirectory within `app/views`, feels more in line with the separation of the mailers (`app/mailers`) from controllers (`app/controllers`).
 
-I find it much easier to find the email templates when I make this small change.
+Making this small change will make it much easier to find email templates in your application.
 
 
 ## Why not?
