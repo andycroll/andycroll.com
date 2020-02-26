@@ -12,7 +12,7 @@ image:
 
 [Using UUIDs as primary keys](/ruby/choose-uuids-for-model-ids-in-rails) has many benefits. However, it causes issues with Rails's implicit ordering.
 
-I proposed a method for rectifying that by [using named scopes alongside `first` and `last`](/ruby/first-and-last-may-not-mean-what-you-think), but since that article there is an easier way to re-enable the default behaviour of Active Record.
+In a previous article, I suggested [using named scopes alongside `first` and `last`](/ruby/first-and-last-may-not-mean-what-you-think), but there is now an easier way to re-enable the default behaviour of Active Record.
 
 
 ## Instead of...
