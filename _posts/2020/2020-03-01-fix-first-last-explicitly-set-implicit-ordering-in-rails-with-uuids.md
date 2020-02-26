@@ -33,7 +33,7 @@ end
 
 ## Why?
 
-The tradeoff when using UUIDs in your database remains a major benefit: uniqueness, assignability & security.
+There are major benefits to using UUIDs in your database: uniqueness, assignability, and security.
 
 With this one-line change you also retain the benefits of Rails’ predictability of `.first` and `.last`, provided you assign to the `created_at` timestamp.
 
