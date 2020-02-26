@@ -42,7 +42,9 @@ My friend [Tekin](https://tekin.co.uk) came up with the idea and [implemented it
 
 ## Why not?
 
-This is a Rails 6 feature. Prior versions of Rails still require the [explicit ordering implementation](/ruby/first-and-last-may-not-mean-what-you-think) I previously explained. You may prefer using the explicit ordering approach for improved clarity.
+This is a Rails 6 feature. Prior versions of Rails still require the [explicit ordering implementation](/ruby/first-and-last-may-not-mean-what-you-think) previously explained.
+
+You may still prefer using the explicit ordering approach for greater clarity.
 
 If you still do not use UUIDs in your data model, perhaps your database doesn’t support them, there’s little point in using this.
 
