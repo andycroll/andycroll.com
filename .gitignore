@@ -2,3 +2,4 @@
 _site/*
 .DS_Store
 .env
+.jekyll-cache/**/*
