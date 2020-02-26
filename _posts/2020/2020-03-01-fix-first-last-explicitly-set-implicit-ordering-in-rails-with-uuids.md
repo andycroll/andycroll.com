@@ -35,7 +35,7 @@ end
 
 There are major benefits to using UUIDs in your database: uniqueness, assignability, and security.
 
-With this one-line change you also retain the benefits of Rails’ predictability of `.first` and `.last`, provided you assign to the `created_at` timestamp.
+With this one-line change you also retain the benefits of Rails’ `.first` and `.last` helper methods, provided you assign the `implicit_order_column` to the `created_at` timestamp.
 
 My friend [Tekin](https://tekin.co.uk) came up with the idea and [implemented it in Rails](https://github.com/rails/rails/pull/34480)!
 
