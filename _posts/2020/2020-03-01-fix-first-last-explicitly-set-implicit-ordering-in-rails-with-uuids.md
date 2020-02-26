@@ -37,8 +37,6 @@ There are major benefits to using UUIDs in your database: uniqueness, assignabil
 
 With this one-line change you also retain the benefits of Rails’ `.first` and `.last` helper methods, provided you assign the `implicit_order_column` to the `created_at` timestamp.
 
-My friend [Tekin](https://tekin.co.uk) came up with the idea and [implemented it in Rails](https://github.com/rails/rails/pull/34480)!
-
 
 ## Why not?
 
@@ -49,3 +47,8 @@ You may still prefer using the explicit ordering approach for greater clarity.
 If you do not use UUIDs in your data model, there’s little point in using this.
 
 If the specified column isn’t unique you cannot predict the order of the results that share the same value in the implicitly ordered column. The results will however remain in the same order as there has been an [enhancement to the implementation](https://github.com/rails/rails/pull/37626).
+
+
+## Hat tip
+
+My friend [Tekin](https://twitter.com/tekin) came up with the idea and [implemented it in Rails](https://github.com/rails/rails/pull/34480).
