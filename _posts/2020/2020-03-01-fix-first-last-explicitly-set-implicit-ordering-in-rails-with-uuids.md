@@ -54,3 +54,5 @@ Another issue is that, by default, `created_at` does not have a database index, 
 ## Hat tip
 
 My friend [Tekin](https://twitter.com/tekin) came up with the idea and [implemented it in Rails](https://github.com/rails/rails/pull/34480).
+
+Benjamin Alexander for making the point about needing a database index on `created_at`.
