@@ -48,6 +48,8 @@ If you do not use UUIDs in your data model, there’s little point in using this
 
 Note that if two records are created at _exactly_ the same time, the order of the results for those records will be based on the order of their primary key.
 
+Another issue is that, by default, `created_at` does not have a database index, unlike the `id` primary key. Running the query without the index could take a while if the dataset is very large. You should add an database index on the `created_at` field.
+
 
 ## Hat tip
 
