@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "What I'm Doing Now"
-date: '2017-09-27'
+date: '2020-04-26'
 redirect_from:
  - /2010/10/01/negative/
  - /startups/singapore/singapore-startup-negativity/
@@ -12,10 +12,16 @@ redirect_from:
  - /2012/01/13/two-thousand-eleven/
  - /life/two-thousand-eleven/
 image:
-  base: 'now'
-  alt: 'red'
+  base: '2020/alt-brighton-ruby'
+  alt: "Alt::BrightonRuby logo"
 description: 'The current work of Andy Croll'
 ---
+
+I was running the 'little Ruby conference that could', on the south coast of the UK at [Brighton Ruby](http://brightonruby.com) but now there’s [Alt::BrightonRuby](https://alt.brightonruby.com)—A slightly odd, quasi-conference for strange times.
+
+<a href="https://andycroll.podia.com/alt-brightonruby-2020" class="btn btn-lg btn-outline-danger">Buy Now!</a>
+
+----
 
 Running a fortnightly Ruby techniques newsletter: One Ruby Thing.
 
@@ -23,11 +29,9 @@ Running a fortnightly Ruby techniques newsletter: One Ruby Thing.
 
 -----
 
-I'm VP Engineering at [CoverageBook](https://coveragebook.com) a software subsidiary of the marvellous group of humans that make up [Propellernet](https://www.propellernet.co.uk).
+I'm CTO at [CoverageBook](https://coveragebook.com) & [AnswerThePublic](https://answerthepublic.com), made by the software subsidiary of the marvellous group of humans that make up [Propellernet](https://www.propellernet.co.uk).
 
-Still helping out [Emphasis](https://writing-skills.com) with an internal operations tool, a custom-built Rails app.
-
-Running the 'little Ruby conference that could', on the south coast of the UK at [Brighton Ruby](http://brightonruby.com) and running (haphazardly!) the Brighton Ruby User Group, [sign up at meetup](http://www.meetup.com/Brighton-Ruby-Group/).
+The Brighton Ruby User Group is currently furloughed, it’ll be back.
 
 ### Speaking
 
@@ -37,7 +41,7 @@ Running the 'little Ruby conference that could', on the south coast of the UK at
 * [Just a Minute](http://confreaks.tv/videos/rubyconf2015-just-a-ruby-minute) at RubyConf 2015
 * [Active Job: A Service Oriented Architecture](http://confreaks.tv/videos/railsconf2015-activejob-a-service-oriented-architecture) at RailsConf 2015
 
-### On the side
+### Before...
 
 Also ran, than sold, [Life.Time.Value.](http://ltvconf.com), a conference for people looking to make the leap into internet-focussed product or Software as a Software businesses.
 
