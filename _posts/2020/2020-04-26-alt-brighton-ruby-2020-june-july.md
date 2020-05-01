@@ -8,7 +8,7 @@ image:
   alt: "Alt::BrightonRuby logo"
 ---
 
-[Brighton Ruby](https://brightonruby.com) was a single-track, single-day conference held in July in Brighton in the UK. And I was happily plodding along in February when I started to here about this virus... then organizing events got much, much weirder. So in mid-March I cancelled the in person event.
+[Brighton Ruby](https://brightonruby.com) was a single-track, single-day conference held in July in Brighton in the UK. And I was happily plodding along in February when I started to hear about this virus... then organizing events got much, much weirder. So in mid-March I cancelled the in person event.
 
 Many of us organiser-types are changing our plans on the fly with scary financial _things_ hovering over our heads￼. However, I’ve been very fortunate have a great support from my main sponsors [Cookpad](https://cookpadteam.com) and [FreeAgent](https://freeagent.com/careers) which means I’m able to try a new and interesting thing.￼
 
