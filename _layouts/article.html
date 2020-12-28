@@ -13,10 +13,10 @@ layout: default
 		          type="image/webp">
       <img sizes="100vw"
            alt="{{ page.image.alt }}"
-           src="/images/{{ page.image.base }}-initial.jpg"
-           srcset="/images/{{ page.image.base }}-1024.jpg 1024w,
-                   /images/{{ page.image.base }}-1536.jpg 1536w,
-                   /images/{{ page.image.base }}-2048.jpg 2048w"
+           src="//andycroll-img.b-cdn.net/images/{{ page.image.base }}.jpg?blur=80&quality=40"
+           srcset="//andycroll-img.b-cdn.net/images/{{ page.image.base }}.jpg?width=1024.jpg 1024w,
+                   //andycroll-img.b-cdn.net/images/{{ page.image.base }}.jpg?width=1536 1536w,
+                   //andycroll-img.b-cdn.net/images/{{ page.image.base }}.jpg?width=2048 2048w"
            class="img-fluid" />
     </picture>
     {% endif %}
