@@ -5,12 +5,6 @@ layout: default
   <div class="col-12" style="min-height: 40px">
     {% if page.image %}
     <picture>
-	    <source sizes="100vw"
-              srcset="/images/{{ page.image.base }}-initial.webp 512w,
-                      /images/{{ page.image.base }}-1024.webp 1024w,
-                      /images/{{ page.image.base }}-1536.webp 1536w,
-                      /images/{{ page.image.base }}-2048.webp 2048w"
-		          type="image/webp">
       <img sizes="100vw"
            alt="{{ page.image.alt }}"
            src="//andycroll-img.b-cdn.net/images/{{ page.image.base }}.jpg?blur=80&quality=40"
