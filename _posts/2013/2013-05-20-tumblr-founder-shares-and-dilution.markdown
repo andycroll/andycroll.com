@@ -129,7 +129,7 @@ The founders, if, _big if,_ they held on to all their shares during this process
 
 Incidentally, co-founder [Marco Arment](http://www.marco.org), [left Tumblr in September of 2010](http://www.marco.org/2010/09/21/job-transition) having likely completed his (standard) 4 year vesting period, but according to his [own answer on Quora](http://www.quora.com/Does-Marco-Arment-still-have-a-financial-stake-in-Tumblr) he still has a financial stake.
 
-Yet [tweets from Marco show that he was just an employee](https://twitter.com/marcoarment/status/335483318311194624), meaning David Karp will hold the vast majority, if not all, of the founding shares: thus the $300m. Marco will have some proportion of the Employee Options or possibly some special side deal, and thus despite his contribution and risk taking won’t see the same upside. Aside: [technical people know your value!](/2012/09/11/pay-equity-and-startups/)
+Yet [tweets from Marco show that he was just an employee](https://twitter.com/marcoarment/status/335483318311194624), meaning David Karp will hold the vast majority, if not all, of the founding shares: thus the $300m. Marco will have some proportion of the Employee Options or possibly some special side deal, and thus despite his contribution and risk taking won’t see the same upside. Aside: [technical people know your value!](/other/pay-equity-and-startups/)
 
 ## Newsflash for budding entrepreneurs
 

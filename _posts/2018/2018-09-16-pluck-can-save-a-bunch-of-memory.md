@@ -1,6 +1,6 @@
 ---
 title: Using pluck can save a bunch of memory
-description: ''
+description: 'If you only need to use a single field on an Active Record model, for example, the ids, then Rails has your back.'
 layout: article
 category: ruby
 image:
