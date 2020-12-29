@@ -12,7 +12,7 @@ image:
 
 There’s multiple ways to generate `String` literals in Ruby. If you are creating long, or multi-line, strings, the `HEREDOC` (or 'Here document') is your friend.
 
-Details of the many ways to create String literals can be found in [Ruby’s documentation for Strings](http://ruby-doc.org/core-2.5.3/doc/syntax/literals_rdoc.html#label-Strings).
+Details of the many ways to create String literals can be found in [Ruby’s documentation for Strings](https://ruby-doc.org/core-2.5.3/doc/syntax/literals_rdoc.html#label-Strings).
 
 ## Instead of…
 

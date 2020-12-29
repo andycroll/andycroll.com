@@ -10,7 +10,7 @@ image:
   source: 'https://unsplash.com/photos/r1EwRkllP1I'
 ---
 
-I read [Better Hash Injection using each_with_object](http://technology.customink.com/blog/2014/10/14/better-hash-injection-using-each-with-object/) with interest.
+I read [Better Hash Injection using each_with_object](https://technology.customink.com/blog/2014/10/14/better-hash-injection-using-each-with-object/) with interest.
 
 I'd long known that using Ruby's `Hash#merge!` rather than `Hash#merge` was much faster: merge hash in place in memory, don’t copy and assign. I'd never come across `each_with_index` in the wild, _at least and remembered_.
 

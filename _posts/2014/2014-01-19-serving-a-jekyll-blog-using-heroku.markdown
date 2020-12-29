@@ -10,21 +10,18 @@ image:
   alt: 'Purple tinged Jekyll'
 ---
 
-I've put up a few simple sites recently, for [upcoming][gembook] [books][herokubook] and a [bootstrapping mailing list][bootstrappingio], and these I've either used a *very* simple Sintra app, or in the case of a the more blogg-y sites, [Jekyll][jekyll], the simple Ruby blogging system.
+I've put up a few simple sites recently and a bootstrapping mailing list, and these I've either used a *very* simple Sintra app, or in the case of a the more blogg-y sites, [Jekyll][jekyll], the simple Ruby blogging system.
 
-[gembook]:/building-ruby-gems
-[herokubook]:/ultimate-guide-to-rails-on-heroku
-[bootstrappingio]:http://bootstrapping.io
-[jekyll]:http://jekyllrb.com
+[jekyll]:https://jekyllrb.com
 
 I am unabashed in my love for Heroku for deploying Ruby. So how to get your Jekyll based blog onto Heroku? The are a few a few simple things. I'm all about doing the least to get something working. So in 10 lines of code (in 3 files) and 10 typed shell commands…
 
 ## Install the required gems
 
-You need to download and install the [Heroku Toolbelt][toolbelt]. On a Mac I use [Homebrew] to install from the command line.
+You need to download and install the [Heroku CLI][herokucli]. On a Mac I use [Homebrew] to install from the command line.
 
-[toolbelt]:http://toolbelt.heroku.com
-[homebrew]:http://brew.sh
+[herokucli]:https://devcenter.heroku.com/articles/heroku-cli
+[homebrew]:https://brew.sh
 
 ```
 brew install heroku-toolbelt

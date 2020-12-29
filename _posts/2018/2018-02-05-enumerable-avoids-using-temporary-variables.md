@@ -10,7 +10,7 @@ image:
   credit: 'David Streit'
 ---
 
-Some of my favourite Ruby features are to be found in the `Enumerable` module. You can read more about it in the [Ruby documentation](http://ruby-doc.org/core-2.5.0/Enumerable.html).
+Some of my favourite Ruby features are to be found in the `Enumerable` module. You can read more about it in the [Ruby documentation](https://ruby-doc.org/core-2.5.0/Enumerable.html).
 
 A class representing a collection, such as `Array`, `Set` or `Hash`, has the methods and features of `Enumerable` included. These methods allow you to loop through the members of that group and take an action using each member of the collection as an input.
 

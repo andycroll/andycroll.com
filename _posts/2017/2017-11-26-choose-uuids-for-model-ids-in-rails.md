@@ -10,7 +10,7 @@ image:
 
 A [universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) (UUID) is a 128-bit number used to identify information in computer systems. Sometimes it is referred to as a ‘globally unique identifier’.
 
-These are a native column type in PostgreSQL. You can find more details on native Postgres types in the [Rails Guides](http://guides.rubyonrails.org/active_record_postgresql.html).
+These are a native column type in PostgreSQL. You can find more details on native Postgres types in the [Rails Guides](https://guides.rubyonrails.org/active_record_postgresql.html).
 
 
 ## Instead of…

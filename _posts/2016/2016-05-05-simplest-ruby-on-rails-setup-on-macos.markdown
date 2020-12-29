@@ -20,7 +20,7 @@ The reason for writing this? Managed to nuke my machine's install and thus had a
 
 ## Homebrew
 
-[Homebrew](http://brew.sh) is better than Macports in nearly every way. Open source recipes to manage stuff you used to have install yourself.
+[Homebrew](https://brew.sh) is better than Macports in nearly every way. Open source recipes to manage stuff you used to have install yourself.
 
 ```shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -110,7 +110,7 @@ bundle
 bundle exec rails server
 ```
 
-And navigate to [http://localhost:3000](http://localhost:3000).
+And navigate to `localhost:3000`.
 
 -----
 

@@ -10,8 +10,7 @@ redirect_from:
 image:
   base: '2008/previous-versions-of-this-site'
   alt: 'Natural History Museum'
-  credit: 'Joshua K. Jackson'
-  source: 'https://unsplash.com/photos/qaoNLVMb4lw'
+  credit: 'Joshua K. Jackson (unsplash qaoNLVMb4lw)'
 ---
 
 ## 2008
@@ -26,4 +25,4 @@ andycroll.com - business card
 
 ![2009-era andycroll.com](/images/2009/business-card-site.png)
 
-Featured in a few collection posts and the book [Web Designers Idea Book 2](http://thewebdesignersideabook.com/books/volume-2/)
+Featured in a few collection posts and the book Web Designers Idea Book 2 (dead)

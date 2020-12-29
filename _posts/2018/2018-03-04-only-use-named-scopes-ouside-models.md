@@ -6,8 +6,7 @@ category: ruby
 image:
   base: '2018/only-use-named-scopes-outside-models'
   alt: 'San Francisco Museum of Modern Art'
-  source: 'https://unsplash.com/photos/RkJF2BMrLJc'
-  credit: 'William Bout'
+  credit: 'William Bout (unsplash RkJF2BMrLJc)'
 ---
 
 Last time we discussed using the hash-style syntax in your `#where` methods but in my examples I did something I wouldn't do in my real-life code…

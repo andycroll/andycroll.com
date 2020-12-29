@@ -57,7 +57,7 @@ Here's a couple of useful sites that can help you get to exactly the date format
 
 [For A Good Strftime](https://www.foragoodstrftime.com) contains a visually pleasant reference for `strftime` formatting strings and lets you build a live date format you can use application-wide.
 
-[Strftimer](http://strftimer.com) lets you paste in a real string representation of a date or time and returns the `strftime` date format string that would produce that formatting.
+[Strftimer](https://strftimer.com) lets you paste in a real string representation of a date or time and returns the `strftime` date format string that would produce that formatting.
 
 I can never remember the `Date` and `Time` formats that are provided by default, plus they were hard to find in the documents, so _I_ built a site that spells out the [Rails Date and Time formats](https://railsdatetimeformats.com).
 

@@ -8,7 +8,7 @@ image:
   alt: 'default_scope code'
 ---
 
-When you would like a scope to be applied across all queries on a model, you can use `default_scope`. See more in the [ActiveRecord Query Guide](http://guides.rubyonrails.org/active_record_querying.html#applying-a-default-scope) and [Rails docs](http://api.rubyonrails.org/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope).
+When you would like a scope to be applied across all queries on a model, you can use `default_scope`. See more in the [ActiveRecord Query Guide](https://guides.rubyonrails.org/active_record_querying.html#applying-a-default-scope) and [Rails docs](https://api.rubyonrails.org/classes/ActiveRecord/Scoping/Default/ClassMethods.html#method-i-default_scope).
 
 -----
 

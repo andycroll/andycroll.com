@@ -6,8 +6,7 @@ category: ruby
 image:
   base: '2019/be-aware-of-nil-values-when-using-where-not'
   alt: 'Half-finished painted wall'
-  source: "https://unsplash.com/photos/oBb-Y26PJgg"
-  credit: "Samuel Zeller"
+  credit: "Samuel Zeller (unsplash oBb-Y26PJgg)"
 ---
 
 The use of `where.not` when building Active Record scopes can help you to elegantly specify scopes for cases where an attribute does not have a specific value.

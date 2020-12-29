@@ -14,7 +14,7 @@ It is a good idea to do as much of the ‘work’ of an application as possible 
 
 Each `ActiveJob` comes with a selection of callbacks that are run at different points in a job’s lifecycle.
 
-A list of the available callbacks are in the [Active Job Rails Guide](http://guides.rubyonrails.org/active_job_basics.html#callbacks).
+A list of the available callbacks are in the [Active Job Rails Guide](https://guides.rubyonrails.org/active_job_basics.html#callbacks).
 
 When a job doesn't always need to be run, we can use these callbacks to save writing conditional logic in every location in the code where we enqueue the job.
 

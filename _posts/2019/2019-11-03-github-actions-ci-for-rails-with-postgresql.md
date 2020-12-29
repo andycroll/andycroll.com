@@ -105,6 +105,6 @@ If you have a testing infrastructure that’s working well somewhere else, it pr
 
 ### Specific Ruby versions
 
-There’s an issue with with the provided versions of Ruby. GitHub only provides certain versions [in their architecture](https://help.github.com/en/github/automating-your-workflow-with-github-actions/software-in-virtual-environments-for-github-actions#ubuntu-1804-lts) (scroll down for compatible versions) and it seems, from [this comment](https://github.com/actions/setup-ruby/issues/14#issuecomment-524020179), that releasing new CI images when Ruby is updated isn’t a priority.
+There’s an issue with with the provided versions of Ruby. GitHub only provides certain versions [in their architecture](https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners#supported-software) (scroll down for compatible versions) and it seems, from [this comment](https://github.com/actions/setup-ruby/issues/14#issuecomment-524020179), that releasing new CI images when Ruby is updated isn’t a priority.
 
 Here is a [version to manually install any Ruby version](/ruby/github-actions-ci-for-rails-with-specific-ruby-versions) using `rvm`.

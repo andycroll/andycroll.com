@@ -8,7 +8,7 @@ image:
   alt: 'David Hasslehoff. Smouldering.'
 ---
 
-There are many built-in error classes in Ruby and Rails. Most of these errors are subclasses of Ruby’s StandardError. You can find more information in the relevant [Ruby docs](http://ruby-doc.org/core-2.4.2/StandardError.html).
+There are many built-in error classes in Ruby and Rails. Most of these errors are subclasses of Ruby’s StandardError. You can find more information in the relevant [Ruby docs](https://ruby-doc.org/core-2.4.2/StandardError.html).
 
 ## Instead of…
 

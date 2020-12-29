@@ -12,17 +12,16 @@ image:
   alt: 'Final slide from RDRC'
 ---
 
-[github]: http://github.com
+[github]: https://github.com
 
 When I was getting progressively more drunk at the after-party (thank you [Github][]) Sarah Mei compared my agreeing to run RDRC to pregnancy… you start off with a small commitment and by the time the date arrives it’s this huge thing you never could have imagined: an apt metaphor I think.
 
 This is not my writeup of the conference, other people have written better and more detailed reports than I could. This is the thoughts, deeds and friends who helped make it happen.
 
-The most tiring week of my life, but also one of the most satisfying. And I didn’t do it alone, [Carl][] & [Jason][], the sponsors, [my co-workers][Anideo], the speakers and the attendees all helped make rdrc2011 one of the things I’ve done in my life of which I’m the most proud.
+The most tiring week of my life, but also one of the most satisfying. And I didn’t do it alone, [Carl][] & [Jason][], the sponsors, my co-workers, the speakers and the attendees all helped make rdrc2011 one of the things I’ve done in my life of which I’m the most proud.
 
-[carl]: http://twitter.com/carlcoryell
-[jason]: http://twitter.com/jasonong
-[anideo]: http://anideo.com
+[carl]: https://twitter.com/carlcoryell
+[jason]: https://twitter.com/jasonong
 
 ## Initial Preparation
 
@@ -44,19 +43,19 @@ I knocked the responsive [website][rdrc] together over the Christmas holiday per
 
 My principles for the conference were pretty simple.
 
-<span class="run-in">Cost.</span> We should not be giving away tickets, and in fact should price them at a reasonable level: enough so that the experience would not be cheap enough to write off to avoid no-shows. The conference should be an investment for the attendees. This obviously left the conundrum of trying to attract Rubyists from neighbouring nations where $250 is a lot of money (even without the high travel and hotel costs). I hope to be able to do something to fix these issues next year.
+**Cost.** We should not be giving away tickets, and in fact should price them at a reasonable level: enough so that the experience would not be cheap enough to write off to avoid no-shows. The conference should be an investment for the attendees. This obviously left the conundrum of trying to attract Rubyists from neighbouring nations where $250 is a lot of money (even without the high travel and hotel costs). I hope to be able to do something to fix these issues next year.
 
-<span class="run-in">Time facism.</span> Conferences that run over are badly run. It's important to encourage speakers to be succinct and for the audience to afford them the respect of their punctuality. Conferences are tiring social occasions, the least you can do for everyone is to be organisaed and finish on time.
+**Time facism.** Conferences that run over are badly run. It's important to encourage speakers to be succinct and for the audience to afford them the respect of their punctuality. Conferences are tiring social occasions, the least you can do for everyone is to be organisaed and finish on time.
 
-<span class="run-in">Single track.</span> I personally *hate* multiple tracks; you always feel like you're missing out on the 'good stuff' and people tend to drift in and out of the sessions. Plus it's easier to control the quality of the content if there is less of it.
+**Single track.** I personally *hate* multiple tracks; you always feel like you're missing out on the 'good stuff' and people tend to drift in and out of the sessions. Plus it's easier to control the quality of the content if there is less of it.
 
 My solution to a potential lack of variety was to opt for short talks, of 20 minutes, in the afternoon. This had the benefit of adapting to the shorter after lunch attention span of the audience as well as protecting against individual topics being poorly presented or simply not holding the interest of a section of the audience. Thankfully this wasn’t the case, even though some of the afternoon speakers were doing so for the first time.
 
-<span class="run-in">Badges.</span> Conference badges are to let other people know your name when you are the 40th person they have met that morning, not for reminding you where you are. Most conference badges forget this, I made sure I didn’t.
+**Badges.** Conference badges are to let other people know your name when you are the 40th person they have met that morning, not for reminding you where you are. Most conference badges forget this, I made sure I didn’t.
 
 I also wanted the badge to contain critical information like the schedule, printing a load of booklets that nobody wants or needs was time I didn’t want to invest.
 
-<span class="run-in">Caffeine is important, as is food.</span> I hate the big vats of coffee that sit and stew unappetisingly for the whole day, so I stole an idea from SchnitzelConf which was to run Nespresso-esque coffee machines and let the engineers figure it out. _I am the best customer ever at the Bras Basah branch of Coffee Bean & Tea Leaf_. Plus I was able to gift the machines to the guys who helped me out the most during the two days.
+**Caffeine is important, as is food.** I hate the big vats of coffee that sit and stew unappetisingly for the whole day, so I stole an idea from SchnitzelConf which was to run Nespresso-esque coffee machines and let the engineers figure it out. _I am the best customer ever at the Bras Basah branch of Coffee Bean & Tea Leaf_. Plus I was able to gift the machines to the guys who helped me out the most during the two days.
 
 We are also the only Ruby conference ever to provide Asian Red Bull as a mid-afternoon pick me up. It's serious stuff.
 
@@ -64,22 +63,21 @@ We are also the only Ruby conference ever to provide Asian Red Bull as a mid-aft
 
 The caterer was excellent. As we didn’t have time to do a lot of testing and tasting, we truly got lucky on this one.
 
-<span class="run-in">Be pessimistic.</span> My initial estimate for the conference was about 100-120 attendees on a single day. This was my first conference so I wanted to minimize my risk and amount of work! I was encouraged to aim a bit bigger, in particular by Chris, who always had the vision that this could be a bigger event. But I designed the event so we could grow to accommodate more people if the demand was there.
+**Be pessimistic.** My initial estimate for the conference was about 100-120 attendees on a single day. This was my first conference so I wanted to minimize my risk and amount of work! I was encouraged to aim a bit bigger, in particular by Chris, who always had the vision that this could be a bigger event. But I designed the event so we could grow to accommodate more people if the demand was there.
 
 My initial estimates of costs meant a minimum of 150 attendees and a few sponsors would mean I would break even. I remained pessimistic about attendance and kept costs low wherever I could. For example, we bought video cameras and taped the talks ourselves rather than pay several thousand dollars for a pro-AV crew.
 
-<span class="run-in">Limit the Sponsors.</span> Conferences in Asia tend to have about 4,000 sponsors at several levels of Platinum, Diamond, Gold sponsorship. I'm not really into that. I wanted four or five sponsors that would put up a significant (a few thousand dollars) amount and also be committed to sending paid attendees.
+**Limit the Sponsors.** Conferences in Asia tend to have about 4,000 sponsors at several levels of Platinum, Diamond, Gold sponsorship. I'm not really into that. I wanted four or five sponsors that would put up a significant (a few thousand dollars) amount and also be committed to sending paid attendees.
 
-Without their early commitment I could not have made this event happen, they provided the financial cushion that made this possible. Thanks again to [HP Labs][], [Pivotal][], [ViKi][], [Rubify][] and [Github][].
+Without their early commitment I could not have made this event happen, they provided the financial cushion that made this possible. Thanks again to [HP Labs][], Pivotal Labs, [ViKi][], [Rubify][] and [Github][].
 
-[hp labs]: http://hp.com
-[pivotal]: http://pivotallabs.com
-[viki]: http://viki.com
-[rubify]: http://rubify.com
+[hp labs]: https://hp.com
+[viki]: https://viki.com
+[rubify]: https://rubify.com
 
-<span class="run-in">Swag that isn’t rubbish.</span> I wanted to make sure that whatever was in the conference goodie bag was useful. I shipped a load of high-quality Field Notes notebooks from the US and hand stamped each one: custom printed was more expensive and only availible in black. For t-shirts my mission was simple, don’t make them so hideous that no-one will wear them afterwards. I hope I succeeded. The real trick was in trying not to order too many or too few, and in the right sizes.
+**Swag that isn’t rubbish.** I wanted to make sure that whatever was in the conference goodie bag was useful. I shipped a load of high-quality Field Notes notebooks from the US and hand stamped each one: custom printed was more expensive and only availible in black. For t-shirts my mission was simple, don’t make them so hideous that no-one will wear them afterwards. I hope I succeeded. The real trick was in trying not to order too many or too few, and in the right sizes.
 
-<span class="run-in">Don’t be afraid of deep-dive topics.</span> Initially I probably erred on the side of less technical topics, but as the tickets sold and the audience became clearer I encouraged the morning sessions to up their technical quotient, I was also able to pick more technical talks for the afternoon slots. In retrospect we could perhaps have gone further.
+**Don’t be afraid of deep-dive topics.** Initially I probably erred on the side of less technical topics, but as the tickets sold and the audience became clearer I encouraged the morning sessions to up their technical quotient, I was also able to pick more technical talks for the afternoon slots. In retrospect we could perhaps have gone further.
 
 I did try and group rough themes together but didn’t have an overall premise for the two days. Talks tended to coalesce naturally into themes as the conference goes on and speakers react to earlier talks. I think I'd feel a bit more comfortable to curate the topics a little more in future.
 
@@ -87,19 +85,16 @@ I did try and group rough themes together but didn’t have an overall premise f
 
 * **Venue:** Mary Ho at [SMU][smu]
 * **T-shirts:** Simon at [Accl Pte Ltd][accl]
-* **Printing:** [Colors Alive][colors]
+* **Printing:** Colors Alive (dead)
 * **Booklets:** [Field Notes][fnotes]
 * **Coffee:** Machines from [Coffee Bean & Tea Leaf][cbtl]
-* **Drinks:** Bought at [Carrefour] and moved by hand
-* **Food:** [Orchid Thai Catering][orchidthai]
+* **Drinks:** Bought at Carrefour and moved by hand
+* **Food:** Orchid Thai Catering (dead)
 
-[smu]: http://www.smu.edu.sg/leasing/facilities_booking/index.asp
+[smu]: https://www.smu.edu.sg/campus-life/facilities-booking
 [accl]: http://twear.com.sg
-[colors]: http://colorsalive.com.sg
-[fnotes]: http://fieldnotesbrand.com
-[cbtl]: http://cbtl.com.sg
-[carrefour]: http://carrefour.com.sg
-[orchidthai]: http://orchidthaicatering.com.sg
+[fnotes]: https://fieldnotesbrand.com
+[cbtl]: https://www.coffeebean.com.sg/order-online/cbtl-system/machines
 
 ## Mistakes
 
@@ -155,7 +150,7 @@ So profitable? Yes. Wildly? No. Was that the plan? Also no. Primary motivation w
 
 The video's are currently in production and will shortly be appearing on [ViKi][] and on a mini-site within [Pivotal's talks][pivotaltalks] website; they've continued to sponsor the conference by getting them professionally edited and they are looking really good.
 
-[pivotaltalks]: http://pivotallabs.com/talks
+[pivotaltalks]: https://tanzu.vmware.com/labs
 
 I'm slowing coming around to the idea of next year as the 'conference lag' recedes. I'll know better what to do in the weeks before and on the day I think it'll be a little less stressful, now I've run a large event.
 
@@ -163,7 +158,7 @@ I did make some money off the back of the conference, which I'll be plowing into
 
 ## Stats
 
-I had to prepare a report as part of the post conference administrivia for sponsors, but mainly for the financial support of the [iDA](http://ida.gov.sg). There are a lot of forms and dreadful ASP websites too. So I thought it'd be interesting to share some of the charts produced.
+I had to prepare a report as part of the post conference administrivia for sponsors, but mainly for the financial support of the iDA. There are a lot of forms and dreadful ASP websites too. So I thought it'd be interesting to share some of the charts produced.
 
 ### Attendees by Country
 

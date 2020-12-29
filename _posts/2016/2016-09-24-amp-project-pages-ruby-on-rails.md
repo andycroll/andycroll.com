@@ -10,7 +10,7 @@ image:
   source: 'https://unsplash.com/photos/in9-n0JwgZ0'
 ---
 
-Google’s [AMP Project](http://ampproject.com) is set to become _a thing_.
+Google’s [AMP Project](https://ampproject.com) is set to become _a thing_.
 
 > The Accelerated Mobile Pages (AMP) Project is an open source initiative that embodies the vision that publishers can create mobile optimized content once and have it load instantly everywhere.
 
@@ -31,9 +31,9 @@ Mime::Type.register_alias 'text/html', :amp
 Then adjust the `respond` block in your controller action to read:
 
 ```ruby
-class ThingsController < ApplicationController 
+class ThingsController < ApplicationController
   def show
-    @thing = Thing.find(params[:id]) 
+    @thing = Thing.find(params[:id])
     respond_to do |format|
       format.html.amp
       format.html.none

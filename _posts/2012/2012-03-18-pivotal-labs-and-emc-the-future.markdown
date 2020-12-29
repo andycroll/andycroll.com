@@ -11,9 +11,9 @@ image:
   alt: 'Pivotal Labs logo'
 ---
 
-A quick disclaimer: I know of the Pivotal guys only through working alongside the Singapore crew (including several imported SF Pivots) before they moved to [{new context}](http://newcontext.com). _This is my personal uninformed opinion._
+A quick disclaimer: I know of the Pivotal guys only through working alongside the Singapore crew (including several imported SF Pivots) before they moved to [{new context}](https://newcontext.com). _This is my personal uninformed opinion._
 
-The news broke late last week about the [acquisition of Pivotal Labs by EMC](http://gigaom.com/cloud/exclusive-emc-buys-pivotal-labs/). A chorus of **wtf** echoed around the internet.
+The news broke late last week about the [acquisition of Pivotal Labs by EMC](https://gigaom.com/cloud/exclusive-emc-buys-pivotal-labs/). A chorus of **wtf** echoed around the internet.
 
 The standard worries broke out:
 

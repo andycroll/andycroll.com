@@ -12,9 +12,9 @@ image:
   source: 'https://unsplash.com/photos/P9X327-3UyI'
 ---
 
-[Dreamhost](http://www.dreamhost.com/r.cgi?134796) can be a great place keep automatic backups of MySQL databases. You are backing up your databases right?
+[Dreamhost](https://www.dreamhost.com/) can be a great place keep automatic backups of MySQL databases. You are backing up your databases right?
 
-In today's world of database driven blogs ands CMSs like [ExpressionEngine](http://expressionengine.com/index.php?affiliate=deepcalm) losing the the database means losing not only the content but sometimes the design too! Best you keep it backed up hey? Plus it'd be rubbish to lose all those latest thrilling articles.
+In today's world of database driven blogs ands CMSs like [ExpressionEngine](https://expressionengine.com/) losing the the database means losing not only the content but sometimes the design too! Best you keep it backed up hey? Plus it'd be rubbish to lose all those latest thrilling articles.
 
 In my example I'm backing up databases from mediatemple (gs) to Dreamhost. Strictly speaking this method can work for any pair of servers as long as you can run cron jobs on the 'backup' server and ssh to the 'database' server. Cron and ssh? Yes, ladies and gentlemen, we're headed for the command-line. Be brave.
 
@@ -24,7 +24,7 @@ There's three steps to setting this up:
 
 ## Set up SSH keys between your servers
 
-You'll need to [set up a new user in the DH Panel](https://panel.dreamhost.com/index.cgi?tree=users.users) and make sure they've got 'shell' access. Let's call them 'mybackup' and give them a good password, the other defaults are fine. You'll also want to note down what server they are on.
+You'll need to set up a new user in the DH Panel and make sure they've got 'shell' access. Let's call them 'mybackup' and give them a good password, the other defaults are fine. You'll also want to note down what server they are on.
 
 Then fire up Terminal in Mac OS X and type…
 
@@ -168,13 +168,13 @@ Then the dumped files are deleted from the database server and the 5 day old fil
 
 ## Setting up cron
 
-You must uploaded your modified shell script file to the FTP account of your backup user. You'll also need to set the permissions on the script to be executable using your FTP software (I like [Transmit](http://panic.com/transmit)) or you can type…
+You must uploaded your modified shell script file to the FTP account of your backup user. You'll also need to set the permissions on the script to be executable using your FTP software (I like [Transmit](https://panic.com/transmit)) or you can type…
 
 ```
 ssh mybackup@server_name.dreamhost.com chmod 744 ./backupsql.sh
 ```
 
-You'll need to head to the [Cron Jobs section of the Dreamhost Panel](https://panel.dreamhost.com/index.cgi?tree=goodies.cron), and add a new Cron Job, and in the following screen select your backup user, give the job a title, leave the email blank and type…
+You'll need to head to the Cron Jobs section of the Dreamhost Panel, and add a new Cron Job, and in the following screen select your backup user, give the job a title, leave the email blank and type…
 
 ```
 ~/backupmt.sh

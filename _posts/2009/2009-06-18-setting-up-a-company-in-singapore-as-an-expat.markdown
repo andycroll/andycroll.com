@@ -49,7 +49,7 @@ Once you have obtained an EntrePass you can remain in the country and apply to A
 
 **Note: As of 2010 this pass now has some strong conditions, and is a pain to get. You probably need to get help from an accountant.**
 
-The process and forms for obtaining your EntrePass are lengthy but straightforward and require some [extra written documentation](http://www.mom.gov.sg/publish/momportal/en/communities/work_pass/other_passes/EntrePass/documents_required.html.) Timescales quoted on the site indicate processing can take up to fourteen days, but in my case it took under a week before I got an _In Principle Approval Letter_ in the post.
+The process and forms for obtaining your EntrePass are lengthy but straightforward and require some [extra written documentation](https://www.mom.gov.sg/passes-and-permits/entrepass/documents-required) Timescales quoted on the site indicate processing can take up to fourteen days, but in my case it took under a week before I got an _In Principle Approval Letter_ in the post.
 
 Other anecdotal evidence from colleagues suggests it can take up to the specified two weeks, but it's dependent on what your company does. Starting a web design firm in a country obsessed with technology and 'the future' I guess is quite an easy sell. Beware government bureaucracy here, a friend of mine had to battle to point out that although he had no 'cleaning experience' running a green cleaning business meant he wasn’t exactly going to be pulling on the biodegradable marigolds himself.
 
@@ -69,7 +69,7 @@ I've included a slightly homogenised version of my [business plan](/files/2009/b
 
 ### Banker's Guarantee
 
-I used [DBS](http://dbs.com.sg) for mine. You simply take a check for $3,000, payable to yourself (full passport name!) and your passport into a branch and set up a fixed-term savings account.
+I used [DBS](https://dbs.com.sg) for mine. You simply take a check for $3,000, payable to yourself (full passport name!) and your passport into a branch and set up a fixed-term savings account.
 
 This isn’t actually needed until you pick up your pass but it's worth getting the process underway as production of the letter took _seven_ days and can only be picked up at one DBS branch in the CBD.
 
@@ -81,15 +81,15 @@ You can then head to the Ministry of Manpower in person to hand in your passport
 
 ## Company Setup & ACRA
 
-In Singapore you can _only_ submit an application for a new business online using [Bizfile](http://www.bizfile.gov.sg) which in principle is a fine idea, but in practice can be quite painful. Even if you go to the [ACRA](http://www.acra.gov.sg) offices you are confronted with a load of ageing Windows machines with which you can submit your application to their website!
+In Singapore you can _only_ submit an application for a new business online using [Bizfile](https://www.bizfile.gov.sg) which in principle is a fine idea, but in practice can be quite painful. Even if you go to the [ACRA](https://www.acra.gov.sg) offices you are confronted with a load of ageing Windows machines with which you can submit your application to their website!
 
-Here's the trick, in order to use the website you need a [SingPass](http://www.singpass.gov.sg,) an all purpose login for multiple government sites. In order to get one you must first wait _five_ days, for the data to migrate from the Ministry of Manpower into the systems of the SingPass people. Why this takes so long is beyond me. Then you can apply online, and few days later you get your SingPass and PIN in the post.
+Here's the trick, in order to use the website you need a [SingPass](https://www.singpass.gov.sg) an all purpose login for multiple government sites. In order to get one you must first wait _five_ days, for the data to migrate from the Ministry of Manpower into the systems of the SingPass people. Why this takes so long is beyond me. Then you can apply online, and few days later you get your SingPass and PIN in the post.
 
-You can then log into the [BizFile](http://www.business.gov.sg) system and begin your registration, there's a [whole website from SPRING](https://www.smeportal.sg/) with link to PDFs and suchlike. I didn’t know of the site at the time and still managed to successfully bumble through the dreadful bizfile user interface myself.
+You can then log into the [BizFile](https://www.bizfile.gov.sg) system and begin your registration, there's a [whole website](https://govassist.gobusiness.gov.sg) with link to PDFs and suchlike. I didn’t know of the site at the time and still managed to successfully bumble through the dreadful bizfile user interface myself.
 
 You'll need to nominate a Singapore-resident secretary for the company during the process, anyone with their own SingPass will do; including employment pass holders, PRs and native Singaporeans. They don’t need any shares, so you can retain complete control of you company, don’t panic. You can use a local accountancy firm to provide company secretarial services for a few hundred bucks, but as long as you have ready access your secretary's signature I wouldn’t bother. My wife is my company secretary. If you're a massive corporation there are serious requirements of this role, but we're talking about a new small business.
 
-I used the standard memorandum they give you during the process and [although you can make share structures quite complicated](http://en.wikipedia.org/wiki/Stock) I simply went for a single shareholder (me) holding 500 ordinary shares at 1 dollar each. I am aiming for simplicity with a little flexibility.
+I used the standard memorandum they give you during the process and [although you can make share structures quite complicated](https://en.wikipedia.org/wiki/Stock) I simply went for a single shareholder (me) holding 500 ordinary shares at 1 dollar each. I am aiming for simplicity with a little flexibility.
 
 **Note: Actually if you are looking to raise money this can be a pain. Make each share have the value of a single cent, this gives more flexibility later on.**
 
@@ -99,7 +99,7 @@ To 'activate' your company every director, company secretary and shareholder nee
 
 You can run a very small business from your personal account, but don’t. Having a good separation between work money and personal money is very important come 'working out tax' time.
 
-Having had poor experiences with Standard Chartered and pretty rubbish personal online banking with UOB I chose to go with [DBS](http://www.dbs.com.sg). I've also heard good things about HSBC.
+Having had poor experiences with Standard Chartered and pretty rubbish personal online banking with UOB I chose to go with [DBS](https://www.dbs.com.sg). I've also heard good things about HSBC.
 
 DBS provide a Visa Debit by default and they have (comparatively) reasonable online banking. They do levy a ridiculous charge ($30/month) if you want to make payments, as opposed to just view transactions. It must surely cost them more money in staff costs to process all the cheques I'll write, but nevermind. They also didn’t impress with the length of time it took to actually get my Visa card, and phoning the _help_line was next to useless as apparently they cannot talk to the card application department.
 
@@ -115,4 +115,4 @@ But eventually I'm all set up.
 
 It's straightforward in theory but a bit rubbish in practice because you're dealing with government processes and a surprisingly inefficient consumer banking industry, but perhaps not worth $5,000 of your money to pay someone to do it for you.
 
-However if you are not already resident you're probably going to have to get in touch with an accountant. I recommend [this book](http://www.amazon.co.uk/gp/product/B00HMNP8IM?tag=deepcalmcom) for some startup help.
+However if you are not already resident you're probably going to have to get in touch with an accountant.
