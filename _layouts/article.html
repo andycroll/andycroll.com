@@ -1,16 +1,22 @@
 ---
 layout: default
 ---
+{% if jekyll.environment == "production" %}
+  {% capture image_url_root %}{{ site.image_url }}/images/{% endcapture %}
+{% else %}
+  {% assign image_url_root = "/images/" %}
+{% endif %}
+
 <div class="row">
   <div class="col-12" style="min-height: 40px">
     {% if page.image %}
     <picture>
       <img sizes="100vw"
            alt="{{ page.image.alt }}"
-           src="//images.andycroll.com/images/{{ page.image.base }}.jpg?blur=80&quality=40"
-           srcset="//images.andycroll.com/images/{{ page.image.base }}.jpg?width=1024.jpg 1024w,
-                   //images.andycroll.com/images/{{ page.image.base }}.jpg?width=1536 1536w,
-                   //images.andycroll.com/images/{{ page.image.base }}.jpg?width=2048 2048w"
+           src="{{ image_url_root }}{{ page.image.base }}.jpg?blur=80&quality=40"
+           srcset="{{ image_url_root }}{{ page.image.base }}.jpg?width=1024.jpg 1024w,
+                   {{ image_url_root }}{{ page.image.base }}.jpg?width=1536 1536w,
+                   {{ image_url_root }}{{ page.image.base }}.jpg?width=2048 2048w"
            class="img-fluid" />
     </picture>
     {% endif %}
