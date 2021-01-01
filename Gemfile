@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.6.0'
-gem 'bundler'
+ruby File.read(".ruby-version").strip
+
 gem 'dotenv'
 gem 'html-proofer'
 gem 'jekyll'
