@@ -1,12 +1,14 @@
 ---
 title: "Use GitHub Actions for Rails CI with Postgres"
-description: "So many commits to get here"
+description: "Updated for 2021: So many commits to get here"
 layout: article
 category: ruby
 image:
   base: '2019/github-actions-ci-for-rails-with-postgresql'
   alt: 'Green Octocat testing'
-
+redirect:
+  - ruby/github-actions-ci-for-rails-with-specific-ruby-versions
+  - ruby/github-actions-ci-for-rails-with-postgresql-11-and-structure-sql
 ---
 
 Writing tests alongside your software is strongly recommended. It helps you protect against bugs, reduces the fear of scary deploys, and can even help you develop better software.
@@ -28,15 +30,15 @@ There’s a bunch of good choices, but recently GitHub launched [Actions](https:
 ### `.github/workflows/tests.yml`
 
 ```yml
-name: Rails Tests
+name: Tests
 
 on:
   pull_request:
     branches:
-      - 'master'
+      - 'main'
   push:
     branches:
-      - 'master'
+      - 'main'
 
 jobs:
   build:
@@ -44,19 +46,26 @@ jobs:
 
     services:
       postgres:
-        image: postgres:11.5
-        ports: ["5432:5432"]
-        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+        image: postgres
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
-    - name: Set up Ruby 2.6
-      uses: actions/setup-ruby@v1
+    - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 2.6.x
+        bundler-cache: true
 
-    - name: Install PostgreSQL 11 client
+    - name: Install PostgreSQL client
       run: |
         sudo apt-get -yqq install libpq-dev
 
@@ -64,25 +73,23 @@ jobs:
       env:
         PGHOST: localhost
         PGUSER: postgres
+        PGPASSWORD: postgres
         RAILS_ENV: test
       run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
         bin/rails db:setup
 
     - name: Run Tests
       env:
         PGHOST: localhost
         PGUSER: postgres
+        PGPASSWORD: postgres
         RAILS_ENV: test
       run: |
-      bundle exec rake test
-      bundle exec rake test:system
-      # or Rspec
-      # bundle exec rspec
+        bundle exec rake test
+        bundle exec rake test:system
+        # or Rspec
+        # bundle exec rspec
 ```
-
-If you use SQL dumps—you have a `db/structure.sql` file rather than a `db/schema.rb` file in your application—you’ll need to use [this slightly altered workflow](/ruby/github-actions-ci-for-rails-with-postgresql-11-and-structure-sql).
 
 
 ## Why?
@@ -105,6 +112,4 @@ If you have a testing infrastructure that’s working well somewhere else, it pr
 
 ### Specific Ruby versions
 
-There’s an issue with with the provided versions of Ruby. GitHub only provides certain versions [in their architecture](https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners#supported-software) (scroll down for compatible versions) and it seems, from [this comment](https://github.com/actions/setup-ruby/issues/14#issuecomment-524020179), that releasing new CI images when Ruby is updated isn’t a priority.
-
-Here is a [version to manually install any Ruby version](/ruby/github-actions-ci-for-rails-with-specific-ruby-versions) using `rvm`.
+Before [the `ruby/setup-ruby` action appeared](https://github.com/ruby/setup-ruby)you had to use `rvm` as GitHub only provides certain (sometimes outdated) versions of Ruby [in their architecture](https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners#supported-software) (scroll down for compatible versions) and it seems, from [this comment](https://github.com/actions/setup-ruby/issues/14#issuecomment-524020179), that releasing new CI images when Ruby is updated isn’t a priority.
