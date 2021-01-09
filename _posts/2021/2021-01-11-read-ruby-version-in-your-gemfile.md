@@ -36,7 +36,7 @@ ruby "2.7.2"
 3.0.0
 ```
 
-This results in an error, as bundler checks the current version of Ruby.
+This results in an error, as bundler checks the current version of Ruby specified in the `Gemfile`.
 
 ```
 Your Ruby version is 3.0.0, but your Gemfile specified 2.7.2
