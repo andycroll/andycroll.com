@@ -19,7 +19,7 @@ Ruby version managers (such as [chruby](https://github.com/postmodern/chruby)) e
 
 The file specifies the required version of Ruby for the application and the manager automatically switches the environment to use the specified version.
 
-[The version can also be specified in your Gemfile](https://bundler.io/gemfile_ruby.html) using bundler, which is more often used in a deployed environment.
+[The version can also be specified in your Gemfile](https://bundler.io/gemfile_ruby.html) using bundler, which is more often used to define the version of Ruby to use in a deployed application.
 
 
 ## Instead of...
