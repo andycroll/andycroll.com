@@ -11,7 +11,7 @@ image:
 
 ---
 
-Previously I recommended [using a loose version ruby version constraint in your Gemfile](/ruby/use-loose-ruby-versioning-in-your-gemfile/). This is still a valuable technique, but here’s another useful variation that's good for most of us, most of the time.
+Previously I recommended [using a loose version ruby version constraint in your Gemfile](/ruby/use-loose-ruby-versioning-in-your-gemfile/). This is still a valuable technique, but here’s another useful variation that's works well for most of us, most of the time.
 
 Hat tip to [Emma](https://twitter.com/EmmaBeynon) for the this one-liner.
 
