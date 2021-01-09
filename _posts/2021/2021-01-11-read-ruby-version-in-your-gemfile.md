@@ -59,7 +59,7 @@ ruby File.read(".ruby-version").strip
 
 ## Why?
 
-This means that when you upgrade Ruby you can make the change once, in the `.ruby-version` file.
+This means that when you upgrade Ruby you only need to update in one place: the `.ruby-version` file.
 
 Most of us, most of the time, are happy to specify a version of Ruby for all environments and this is a cool micro-improvement that reminds us that the `Gemfile` is just another ruby script!
 
