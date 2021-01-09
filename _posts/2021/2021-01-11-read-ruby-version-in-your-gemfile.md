@@ -66,4 +66,4 @@ Most of us, most of the time, are happy to specify a version of Ruby for all env
 
 ## Why not?
 
-There are still services where the availability of new Ruby versions are delayed so the prevous [loose ruby version constraint](/ruby/use-loose-ruby-versioning-in-your-gemfile/) might be a better fit for your project.
+There are still services where the availability of new Ruby versions are delayed so the prevous [loose ruby version technique](/ruby/use-loose-ruby-versioning-in-your-gemfile/) might be a better fit for your project.
