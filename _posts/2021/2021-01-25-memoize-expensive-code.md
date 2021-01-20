@@ -39,7 +39,6 @@ end
 
 ```ruby
 class OldTimeySweetShop
-`
   # leave the same
 
   def sweet_count
