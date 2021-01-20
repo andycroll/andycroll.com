@@ -10,7 +10,7 @@ image:
   source: "https://unsplash.com/photos/t0SlmanfFcg"
 ---
 
-Memoization is a performance optimization where the result of a slow or non-performant piece of code is stored and when the expensive code is called again, the stored value is returned.
+Memoization is a performance optimization where the result of a slow or non-performant piece of code is temporarily stored and when the expensive code is called again, the stored value is returned.
 
 It is a specific form of caching that is relatively elegant to read and implement in Ruby.
 
