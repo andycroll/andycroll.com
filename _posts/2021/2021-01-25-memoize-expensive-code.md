@@ -68,6 +68,6 @@ In typical Rails applications, I've found this pattern to be most useful to opti
 
 A piece of code can be memoized _only if_ calling the code again would have the same output as replacing that function call with its return value.
 
-If you're looking at method calls with parameters, you can create a memoized lookup table, but it's more complex than the examples in this article.
+If you're looking at method calls with parameters, you can create a memoized lookup table, but that's more complex than the examples in this article.
 
 Memoizing results of repeated database queries isn't strictly necessary as Rails does it's own caching at the SQL level.
