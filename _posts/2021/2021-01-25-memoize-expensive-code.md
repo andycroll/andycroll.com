@@ -66,7 +66,7 @@ In typical Rails applications, I've found this pattern to be most useful to opti
 
 ## Why not?
 
-A piece of code can only be memoized _only if_ calling the code again would have the same output as replacing that function call with its return value.
+A piece of code can be memoized _only if_ calling the code again would have the same output as replacing that function call with its return value.
 
 If you're looking at method calls with parameters, you can create a memoized lookup table, but it's more complex than the examples in this article.
 
