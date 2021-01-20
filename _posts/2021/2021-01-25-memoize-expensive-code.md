@@ -1,6 +1,6 @@
 ---
 title: "Memoize Expensive Code"
-description: ""
+description: "The ||= operator can provide significant performance improvements"
 layout: article
 category: ruby
 image:
