@@ -61,7 +61,7 @@ Primarily this is a performance optimization. The first call of the method store
 
 When the method is called again the stored instance value is used and the expensive calculation is avoided.
 
-In typical Rails applications, I've found this patten to be most useful to optimize expensive database calls and to temporarily cache API requests to external services.
+In typical Rails applications, I've found this pattern to be most useful to optimize expensive database calls and to temporarily cache API requests to external services.
 
 
 ## Why not?
