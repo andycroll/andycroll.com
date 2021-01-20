@@ -57,9 +57,7 @@ shop.sweet_count
 
 ## Why?
 
-Primarily this is a performance optimization. The first call of the method stores the result of an expensive operation in an instance variable that is then returned.
-
-When the method is called again the stored instance value is used and the expensive calculation is avoided.
+Primarily this is a performance optimization that has only a small impact on the readability of your code.
 
 In typical Rails applications, I've found this pattern to be most useful to optimize expensive database calls and to temporarily cache API requests to external services.
 
