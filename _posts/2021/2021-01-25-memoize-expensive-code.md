@@ -70,4 +70,4 @@ A piece of code can be memoized _only if_ calling the code again would have the 
 
 If you're looking at method calls with parameters, you can create a memoized lookup table, but that's more complex than the examples in this article.
 
-Memoizing results of repeated database queries isn't strictly necessary as Rails does it's own caching at the SQL level.
+Memoizing results of repeated database queries isn't strictly necessary as Rails does its own caching at the SQL level.
