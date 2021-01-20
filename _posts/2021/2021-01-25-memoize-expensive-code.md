@@ -52,6 +52,8 @@ shop.sweet_count
 #=> 4000003
 shop.sweet_count
 #=> 4000003 # this one will be super quick!
+shop.average_sweets_per_jar
+#=> 8000 # this uses the cached sweet_count
 ```
 
 
