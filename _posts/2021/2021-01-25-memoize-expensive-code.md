@@ -21,7 +21,6 @@ It is a specific form of caching that is relatively elegant to read and implemen
 
 ```ruby
 class OldTimeySweetShop
-
   def average_sweets_per_jar
     sweet_count / glass_jars.count
   end
