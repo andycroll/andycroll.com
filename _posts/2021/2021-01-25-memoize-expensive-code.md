@@ -10,10 +10,7 @@ image:
   source: "https://unsplash.com/photos/t0SlmanfFcg"
 ---
 
-Memoization is a performance optimization where the result of a slow or non-performant piece of code is temporarily stored and when the expensive code is called again, the stored value is returned.
-
-It is a specific form of caching that is relatively elegant to read and implement in Ruby due to the use of the `||=` (or equals) operator.
-
+Memoization is a performance optimization where the result of a slow or non-performant piece of code is temporarily stored, and when the expensive code is called again, the stored value is returned.
 
 ## Instead of ...
 
@@ -36,9 +33,14 @@ end
 
 ## Instead...
 
+...use the `||=` (or equals) operator to store expensive computations in an instance variable.
+
+
 ```ruby
 class OldTimeySweetShop
-  # leave the same
+  def average_sweets_per_jar
+    sweet_count / glass_jars.count
+  end
 
   def sweet_count
     @sweet_count ||= glass_jars.sum do |jar|
@@ -59,9 +61,9 @@ shop.average_sweets_per_jar
 
 ## Why?
 
-Primarily this is a performance optimization that has only a small impact on the readability of your code.
-
 In typical Rails applications, I've found this pattern to be most useful to optimize expensive database calls and to temporarily cache API requests to external services.
+
+The succinctness of the `||=` operator means there is only a small impact on the readability of your code.
 
 
 ## Why not?
