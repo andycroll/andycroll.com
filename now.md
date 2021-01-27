@@ -15,12 +15,14 @@ redirect_from:
  - /ruby-books-thanks/
  - /ultimate-guide-to-rails-on-heroku/
 image:
-  base: '2020/alt-brighton-ruby'
-  alt: "Alt::BrightonRuby logo"
+  base: '2020/now'
+  alt: "West Pier"
+  source: "https://unsplash.com/photos/iy4evPNLvxg"
+  credit: "Rhys Kentish"
 description: 'The current work of Andy Croll'
 ---
 
-Running a fortnightly Ruby techniques newsletter: One Ruby Thing. Restarting for 2021.
+Running a fortnightly Ruby techniques newsletter: One Ruby Thing. Restarted for 2021.
 
 <a href="https://onerubything.com" class="btn btn-outline-danger">Sign up</a>
 
@@ -45,6 +47,6 @@ The Brighton Ruby User Group is currently furloughed, it’ll be back.
 
 ### Before...
 
-Also ran, than sold, [Life.Time.Value.](https://ltvconf.com), a conference for people looking to make the leap into internet-focussed product or Software as a Software businesses.
+Also ran, then sold, [Life.Time.Value.](https://ltvconf.com), a conference for people looking to make the leap into internet-focussed product or Software as a Software businesses.
 
 Helping teams with their products and software engineering practises with [Good Scary](https://goodscary.com).
