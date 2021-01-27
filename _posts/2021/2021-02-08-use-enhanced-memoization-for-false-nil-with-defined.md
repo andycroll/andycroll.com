@@ -8,7 +8,7 @@ image:
   alt: "true, false & nil word cloud"
 ---
 
-One straightforward performance optimization we discussed using was [memoization using the `||=` operator](ruby/memoize-expensive-operations) however this isn't a solution in all cases.
+One straightforward performance optimisation I have demonstrated was [memoization using the `||=` operator](ruby/memoize-expensive-operations) however this isn't a suitable solution for cases when the expensive operation might result in `false` or `nil`.
 
 
 ## Instead of ...
@@ -34,7 +34,7 @@ end
 class OldTimeySweetShop
   def any_jars_nearly_empty?
     return @any_jars_nearly_empty if defined?(@any_jars_nearly_empty)
-  
+
     @any_jars_nearly_empty = glass_jars.any? do |jar|
       jar.count_each_sweet_by_hand < 10
     end
@@ -53,11 +53,11 @@ The `||=` (or equals) operator literally means:
 a || a = possibly_expensive_computation
 ```
 
-A consequence of this is that if `a` is "false-y", meaning set to `nil` or `false`, then right-hand side of the `||` is executed. This is a big issue if the expensive computation can return false, it will be run every time the method is used, completely circumventing the improvement we are attempting.
+A consequence of this is that if `a` is "false-y", meaning set to `nil` or `false`, then right-hand side of the `||` is executed. This is a potentially a big issue as if the expensive computation can return `false`, it will be run every time the method is used, completely circumventing the improvement we are attempting.
 
-I've used `Enumerable#any?` deliberately above to illustrate that this technique can be useful in the output of methods that loop over large datasets and return a boolean or `nil` result.
+I've used `Enumerable#any?` above to illustrate that this `defined?`-based technique can be useful to improve performance for methods that loop over large datasets and return a boolean or `nil` result.
 
 
 ## Why not?
 
-Often, a memoized result won't be `nil` or `false` and in that case this style is undoubtably less attractive to read when you come back to it.
+Often, a memoized result won't be `nil` or `false` and in that case this style is undoubtably less attractive to read (and possibly understand?) when you return to it later on.
