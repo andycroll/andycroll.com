@@ -1,2 +1,2 @@
 [context.deploy-preview]
-  command = "jekyll build --future"
+  command = "JEKYLL_ENV=development jekyll build --future"
