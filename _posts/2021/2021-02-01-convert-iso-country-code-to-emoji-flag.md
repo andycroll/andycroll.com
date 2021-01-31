@@ -27,7 +27,7 @@ end
 
 ## How does this work?
 
-The first two lines are defensive code that makes the method more resilient against different kinds of input.
+The first two lines can be classed as 'defensive code', which makes the method more resilient against different kinds of input.
 
 ```ruby
 cc = country_code.to_s.upcase
