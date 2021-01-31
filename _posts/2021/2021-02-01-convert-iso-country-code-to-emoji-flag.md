@@ -58,7 +58,7 @@ An emoji flag is constructed, by the text rendering of your operating system, fr
 
 The Unicode table of characters has these regional indicators 127,397 characters ahead of the standard `A` to `Z` characters (codepoints 65-90). We use this magic number in our translation method.
 
-The main functionality of the code relies on breaking up the two character string and converting each character to its numerical representation in the ASCII/UTF-8 character table using the [`#codepoints` method](https://ruby-doc.org/core-3.0.0/String.html#codepoints-method). Then add 127,397 to each codepoint then convert this new reference back to a UTF-8 encoded character. Finally we `#join` the two regional indicator characters back together into a `String`.
+The main functionality of the code relies on breaking up the two-character string and converting each character into its numerical representation, found in the ASCII/UTF-8 character table via the [`#codepoints` method](https://ruby-doc.org/core-3.0.0/String.html#codepoints-method). Then add 127,397 to each codepoint then convert this new reference back to a UTF-8 encoded character. Finally we `#join` the two regional indicator characters back together into a `String`.
 
 If we were to explore this process step-by-step for France...
 
