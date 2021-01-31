@@ -8,7 +8,7 @@ image:
   alt: "Emoji flags"
 ---
 
-We often store countries in our applications as a two-letter code in line with the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) standard, for example "GB" for the United Kingdom or "US" for the United States.
+We often store references to countries in our applications as a two-letter code inline using the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) standard. For example, "GB" for the United Kingdom or "US" for the United States.
 
 But the people demand emoji and who are we to deny them?
 
