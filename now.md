@@ -15,7 +15,7 @@ redirect_from:
  - /ruby-books-thanks/
  - /ultimate-guide-to-rails-on-heroku/
 image:
-  base: '2020/now'
+  base: 'now'
   alt: "West Pier"
   source: "https://unsplash.com/photos/iy4evPNLvxg"
   credit: "Rhys Kentish"
