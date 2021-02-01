@@ -41,7 +41,7 @@ return unless cc =~ /\A[A-Z]{2}\z/
 
 ...provides an early return of `nil` when the passed string isn't two captial letters.
 
-You could make an argument to return `""` rather than `nil` to ensure the method always returns a string but although it can be a pain it's quite "ruby-ish" to return `nil`.
+You could make an argument and say we should return `""` rather than `nil` to ensure the method always returns a string, but although it can be a pain, it's more "ruby-ish" to return `nil`.
 
 ### The clever bit, explained
 
