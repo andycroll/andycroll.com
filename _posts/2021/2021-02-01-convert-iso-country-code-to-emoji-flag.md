@@ -56,7 +56,9 @@ An emoji flag is constructed by the text rendering of your operating system usin
 => ["🇪", "🇺"]
 ```
 
-The Unicode table of characters has these regional indicators 127,397 characters ahead of the standard `A` to `Z` characters (codepoints 65-90). We use this magic number in our translation method.
+The Unicode table of characters contains both these regional indicators and the standard capital letter characters.
+
+The character `A` is at codepoint 65, its corresponding `🇦` is at codepoint 127,462. There's a consistent difference of 127,397 between each capital and its matching regional indicator. This "magic" number is the key to the translation method.
 
 The main functionality of the code relies on breaking up the two-character string and converting each character into its numerical representation, found in the ASCII/UTF-8 character table via the [`#codepoints` method](https://ruby-doc.org/core-3.0.0/String.html#codepoints-method). Then add 127,397 to each codepoint then convert this new reference back to a UTF-8 encoded character. Finally we `#join` the two regional indicator characters back together into a `String`.
 
