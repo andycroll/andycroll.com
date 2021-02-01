@@ -49,7 +49,7 @@ Every country (and some previously existing countries) has a [unique two-charact
 
 There is a [unique Unicode character for every capital letter](https://en.wikipedia.org/wiki/Enclosed_Alphanumeric_Supplement) and within that there are 26 sequential [regional indicator symbols](https://en.wikipedia.org/wiki/Regional_indicator_symbol). This means `A` has a corresponding `🇦` regional indicator.
 
-An emoji flag is constructed, by the text rendering of your operating system, from two of these unicode indicator characters. For example the 🇪🇺 character displayed on your screen is made up from a UTF-8 string containing the `🇪` and `🇺` characters consecutively.
+An emoji flag is constructed by the text rendering of your operating system using two of these unicode indicator characters. For example, the 🇪🇺  character displayed on your screen is made up from a UTF-8 string containing the `🇪` and `🇺` characters consecutively.
 
 ```ruby
 "🇪🇺".chars
