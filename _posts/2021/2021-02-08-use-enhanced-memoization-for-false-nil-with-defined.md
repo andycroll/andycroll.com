@@ -55,7 +55,7 @@ a || a = possibly_expensive_computation
 
 A consequence of this is that if `a` is "false-y", meaning set to `nil` or `false`, then the right-hand side of the `||` is executed. This is a potentially a big issue, since if the expensive computation is legitimately returning `false`, it will be run every time the method is used, completely circumventing the improvement we are attempting.
 
-I've used `Enumerable#any?` above to illustrate that this `defined?`-based technique can be useful to improve performance for methods that loop over large datasets and return a boolean or `nil` result.
+I've used `Enumerable#any?` above to illustrate that this `defined?`-based technique can be useful to improve performance for methods that loop over large datasets and might return a boolean or `nil` result.
 
 
 ## Why not?
