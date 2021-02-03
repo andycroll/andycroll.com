@@ -73,3 +73,12 @@ A piece of code can be memoized _only if_ calling the code again would have the 
 If you're looking at method calls with parameters, you can create a memoized lookup table, but that's more complex than the examples in this article.
 
 Memoizing results of repeated database queries isn't strictly necessary as Rails does its own caching at the SQL level.
+
+### Beware Threads!
+
+You should be careful when using memoization in a high-throughput, threaded Ruby environment. You probably are; `sidekiq` is threaded and many Ruby web servers are as well.
+
+When your code is reaching _outside_ of the Ruby interpreter (e.g. reusable database connections, file handling, writing to a data store, manually creating background threads) it is possible to introduce race conditions if your code is called by multiple threads at the same time. However… you’re unlikely to be doing this in the course of day to day application, but it is a possible source of bugs. So be aware.
+
+Hat tip to Ivo on this one, he's resolved [bugs in open source projects](https://github.com/DataDog/dd-trace-rb/pull/1329) that demonstrate this issue. You can see his recorded talk on [spotting unsafe ruby patterns](https://ivoanjo.me/blog/2018/10/13/spotting-unsafe-ruby-patterns/) which dives into the details.
+
