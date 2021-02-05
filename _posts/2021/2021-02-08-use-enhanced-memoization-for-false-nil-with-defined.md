@@ -8,7 +8,7 @@ image:
   alt: "true, false & nil word cloud"
 ---
 
-[Memoization using the `||=` operator](ruby/memoize-expensive-operations) is a useful and straightforward performance optimisation. However this isn't a suitable solution for cases when the expensive operation might result in `false` or `nil`.
+[Memoization using the `||=` operator](ruby/memoize-expensive-operations) is a useful and straightforward performance optimisation. However, this isn't a suitable solution for cases when the expensive operation might result in `false` or `nil`.
 
 
 ## Instead of ...
