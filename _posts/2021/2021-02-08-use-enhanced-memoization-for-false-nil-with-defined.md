@@ -64,7 +64,7 @@ Often, a memoized result won't be `nil` or `false`, and in that case this style 
 
 ### Beware Threads!
 
-You should be careful when using memoization in a high-throughput, threaded Ruby environment. You probably are; `sidekiq` is threaded and many Ruby web servers are as well.
+You should be careful when using memoization in a high-throughput, threaded Ruby environment. You probably are. `sidekiq` is threaded and many Ruby web servers are as well.
 
 When your code is reaching _outside_ of the Ruby interpreter (e.g. reusable database connections, file handling, writing to a data store, manually creating background threads) it is possible to introduce race conditions if your code is called by multiple threads at the same time. However, you’re unlikely to be doing this in the course of a day-to-day application. Still, it is a possible source of bugs, so be aware!
 
