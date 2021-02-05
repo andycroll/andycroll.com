@@ -60,7 +60,7 @@ I've used `Enumerable#any?` above to illustrate that this `defined?`-based techn
 
 ## Why not?
 
-Often, a memoized result won't be `nil` or `false`, and in that case this style is undoubtably more visually noisy to read and possibly trickier to understand when you come back to it later on.
+Often, a memoized result won't be `nil` or `false`, and in that case this style is undoubtably more visually noisy to read, and possibly trickier to understand, when you come back to it later on.
 
 ### Beware Threads!
 
