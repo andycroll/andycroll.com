@@ -1,0 +1,89 @@
+---
+title: "Use Rails URL helpers outside view and controllers"
+description: "Sometimes useful to have in a job or model"
+layout: article
+category: ruby
+image:
+  base: "2021/url-helpers-outside-views-controllers"
+  alt: "Abstract greyscale roads"
+  source: "https://unsplash.com/photos/36b7JBzhfF4"
+  credit: "Bogdan Karlenko"
+---
+
+Occasionally you'll need to generate a URL for your own application outside of the normal places; views or controllers.
+
+
+## Instead of ...
+
+...hard coding a URL:
+
+```ruby
+class RequestUserCallBackJob < ApplicationJob
+  def perform(user)
+    Net::HTTP.post(
+      "http://userinfoapi.com/",
+      body: {callback_to: "https://myapp.com/user/#{user.id}"})
+  end
+end
+```
+
+
+## Include...
+
+...the route helpers that Rails includes automatically in controllers.
+
+```ruby
+class RequestUserCallBackJob < ApplicationJob
+  include Rails.application.routes.url_helpers
+
+  def perform(user)
+    Net::HTTP.post(
+      "http://userinfoapi.com/",
+      body: {callback_to: user_url(user, host: "myapp.com")})
+  end
+end
+```
+
+You'll need to ensure you specify a `host` for any URLs you generate as the URL helpers are expecting the context of an HTTP request (which is always available in the views and controllers) which sets that option.
+
+An enhanced version of this pattern is to use a concern and piggyback on the (probably) already set Action Mailer url options.
+
+```ruby
+module Routing
+  extend ActiveSupport::Concern
+
+  included do
+    include Rails.application.routes.url_helpers
+  end
+
+  def default_url_options
+    Rails.application.config.action_mailer.default_url_options
+  end
+end
+
+class RequestUserCallBackJob < ApplicationJob
+  include Routing
+
+  def perform(user)
+    Net::HTTP.post(
+      "http://userinfoapi.com/",
+      body: {callback_to: user_url(user)})
+  end
+enda
+```
+
+
+## Why?
+
+It's better to use the URL helpers throughout your application, they're convenient and consistent. Should you change a route for any reason and fail to change the URL method, your tests will alert you to the problem. This breakage wouldn't happen if you interpolate an `id` into a hard-coded URL.
+
+As demonstrated, I typically find I need this pattern when calling out to external APIs that require a webhook to listen for a response.
+
+Another use case might be if you're writing an API for your application that includes a field describing URLs of resources in your application. However in that case you might want to build or use tooling, such as [`active_model_serializers`](https://github.com/rails-api/active_model_serializers), to better support it. API responses are more akin to views and probably deserve their own
+
+
+## Why not?
+
+The lack of the automatically included route helpers can be an indication that this might be a place you _shouldn't_ be using your routes. If you're using this technique, make sure you're not over-using it.
+
+If you're including this concern in an Active Record model, there's normally a better place to do it.
