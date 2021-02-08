@@ -68,6 +68,8 @@ The succinctness of the `||=` operator means there is only a small impact on the
 
 ## Why not?
 
+This `||=`-based technique can't be used if the result of the computation is `false` or `nil`, in that case you should use [the `defined?` method to memoize](/ruby/use-enhanced-memoization-for-false-nil-with-defined/).
+
 A piece of code can be memoized _only if_ calling the code again would have the same output as replacing that function call with its return value.
 
 If you're looking at method calls with parameters, you can create a memoized lookup table, but that's more complex than the examples in this article.
