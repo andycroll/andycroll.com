@@ -77,7 +77,7 @@ enda
 
 It's better to use the URL helpers throughout your application since they're convenient and consistent. Should you change a route for any reason and fail to update the relevant URL method, your tests will alert you to the problem. You wouldn't get this advance warning if you had interpolated an `id` into a hard-coded URL.
 
-As demonstrated, I typically find I need this pattern when calling out to external APIs that require a webhook to listen for a response.
+As demonstrated in the example above, I typically find I need this pattern when calling out to external APIs that require a webhook to listen for a response.
 
 Another use case might be if you're writing an API for your application that includes a field describing URLs of resources in your application. However in that case you might want to build or use tooling, such as [`active_model_serializers`](https://github.com/rails-api/active_model_serializers), to better support it. API responses are more akin to views and probably deserve their own
 
