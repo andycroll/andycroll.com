@@ -86,4 +86,4 @@ Another use case might be if you're writing an API for your application that inc
 
 If you're trying to use route helpers in a place where they aren't already included, this might be an indication that this is a place you _shouldn't_ be using them.
 
-If you're including this concern in an Active Record model, there's normally a better place to do it.
+Avoid using your routes within an Active Record model, there's almost certainly a better place!
