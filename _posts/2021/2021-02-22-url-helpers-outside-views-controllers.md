@@ -28,7 +28,7 @@ end
 ```
 
 
-## Include...
+## Use...
 
 ...the route helpers that Rails includes automatically in controllers.
 
