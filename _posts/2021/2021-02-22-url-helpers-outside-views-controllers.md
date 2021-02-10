@@ -44,7 +44,7 @@ class RequestUserCallBackJob < ApplicationJob
 end
 ```
 
-You'll need to ensure you specify a `host` for any URLs you generate as the URL helpers are expecting the context of an HTTP request (which is always available in the views and controllers) which sets that option.
+URL helpers are normally used in the context of a web request. The view or controller action will be provided the `host` or domain by the application. Outside of this context you'll need to ensure you specify a `host` for any helpers ending in `_url`.
 
 An enhanced version of this pattern is to use an Active Support concern and piggyback on the (probably) already set Action Mailer url options.
 
