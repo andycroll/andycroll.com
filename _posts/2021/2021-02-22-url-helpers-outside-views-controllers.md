@@ -84,6 +84,6 @@ Another use case might be if you're writing an API for your application that inc
 
 ## Why not?
 
-The lack of the automatically included route helpers can be an indication that this might be a place you _shouldn't_ be using your routes. If you're using this technique, make sure you're not over-using it.
+If you're trying to use route helpers in a place where they aren't already included, this might be an indication that this is a place you _shouldn't_ be using them.
 
 If you're including this concern in an Active Record model, there's normally a better place to do it.
