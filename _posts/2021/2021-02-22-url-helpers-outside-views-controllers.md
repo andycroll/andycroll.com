@@ -75,7 +75,7 @@ enda
 
 ## Why?
 
-It's better to use the URL helpers throughout your application, they're convenient and consistent. Should you change a route for any reason and fail to change the URL method, your tests will alert you to the problem. This breakage wouldn't happen if you interpolate an `id` into a hard-coded URL.
+It's better to use the URL helpers throughout your application since they're convenient and consistent. Should you change a route for any reason and fail to update the relevant URL method, your tests will alert you to the problem. You wouldn't get this advance warning if you had interpolated an `id` into a hard-coded URL.
 
 As demonstrated, I typically find I need this pattern when calling out to external APIs that require a webhook to listen for a response.
 
