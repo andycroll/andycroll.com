@@ -46,7 +46,7 @@ end
 
 You'll need to ensure you specify a `host` for any URLs you generate as the URL helpers are expecting the context of an HTTP request (which is always available in the views and controllers) which sets that option.
 
-An enhanced version of this pattern is to use a concern and piggyback on the (probably) already set Action Mailer url options.
+An enhanced version of this pattern is to use an Active Support concern and piggyback on the (probably) already set Action Mailer url options.
 
 ```ruby
 module Routing
