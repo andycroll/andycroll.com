@@ -10,7 +10,7 @@ image:
   credit: "Bogdan Karlenko"
 ---
 
-Occasionally you'll need to generate a URL for your own application outside views or controllers where your URL helpers are available. These helper methods are [generated form your routes](https://guides.rubyonrails.org/routing.html#path-and-url-helpers), e.g. `user_books_path(user)`.
+Occasionally you'll need to generate a URL to your own application, outside of views or controllers. In these places, URL helpers are available. These helper methods are [generated from your routes](https://guides.rubyonrails.org/routing.html#path-and-url-helpers), e.g. `user_books_path(user)`.
 
 
 ## Instead of ...
