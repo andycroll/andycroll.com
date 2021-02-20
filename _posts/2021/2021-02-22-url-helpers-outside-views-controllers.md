@@ -44,7 +44,7 @@ class RequestUserCallBackJob < ApplicationJob
 end
 ```
 
-URL helpers are normally used in the context of a web request. The view or controller action will be provided the `host` or domain by the application. Outside of this context you'll need to ensure you specify a `host` for any helpers ending in `_url`.
+URL helpers are used in the context of a web request, i.e. within a view or controller. In these cases the `host` or domain of the request is provided automatically by the application. Outside of this context you'll need to ensure you specify a `host` for any helpers ending in `_url`.
 
 An enhanced version of this pattern is to use an Active Support concern and piggyback on the (probably) already set Action Mailer url options.
 
@@ -79,7 +79,19 @@ It's better to use the URL helpers throughout your application since they're con
 
 As demonstrated in the example above, I typically find I need this pattern when calling out to external APIs that require a webhook to listen for a response.
 
-Another use case might be if you're writing an API for your application that includes a field describing URLs of resources in your application. However in that case you might want to build or use tooling, such as [`active_model_serializers`](https://github.com/rails-api/active_model_serializers), to better support it. API responses are more akin to views and probably deserve their own
+You might also use this if you're writing an API for your application that exports a field describing URLs of resources in your application.
+
+```json
+{
+  "id": 23432,
+  "name": "Nadia",
+  "links": {
+    "self": "https://yourapp.com/user/23432.json"
+  }
+}
+```
+
+However, an API response is its own thing. So you should probably use tooling for generatng API responses—such as [`active_model_serializers`](https://github.com/rails-api/active_model_serializers)—rather than be mixing URL helpers in yourself.
 
 
 ## Why not?
