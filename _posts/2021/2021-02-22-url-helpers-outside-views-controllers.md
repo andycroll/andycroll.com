@@ -1,6 +1,6 @@
 ---
-title: "Use Rails URL helpers outside view and controllers"
-description: "Sometimes useful to have in a job or model"
+title: "Use Rails URL helpers outside views and controllers"
+description: "Sometimes useful to use in other places"
 layout: article
 category: ruby
 image:
