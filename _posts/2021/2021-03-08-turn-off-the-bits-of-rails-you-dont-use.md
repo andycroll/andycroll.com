@@ -14,7 +14,7 @@ The Rails Framework consists of multiple interlocking systems that work together
 
 You can see the individual componnent gems as directories in the [`rails/rails` repo on github](https://github.com/rails/rails).
 
-There has been a continual process of adding, new, useful libraries to Rails ever since it's release. Things like Action Cable in Rails 5. Despite the addition of large new sub-frameworks there remains a focus on modularity since [Merb was merged into Rails](https://yehudakatz.com/2008/12/23/rails-and-merb-merge/) in version 3. (This was big Ruby news at the time!)
+There has been a continual process of adding new, useful libraries to Rails ever since its release. Things like Action Cable in Rails 5. Despite the addition of large new sub-frameworks there remains a focus on modularity since [Merb was merged into Rails](https://yehudakatz.com/2008/12/23/rails-and-merb-merge/) in version 3. (This was big Ruby news at the time!)
 
 
 ## Instead of ...
