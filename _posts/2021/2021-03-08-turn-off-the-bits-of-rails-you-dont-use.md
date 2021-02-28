@@ -10,7 +10,7 @@ image:
   credit: "Denisse Leon"
 ---
 
-The Rails Framework consists of multiple interlocking systems that work together. These systems typically begin with "Action" or "Active" e.g. Active Record, Active Support, Action Pack etc.
+The Rails Framework consists of multiple subsystems that work together. The names of these systems typically begin with "Action" or "Active" e.g. Active Record, Active Support, Action Pack etc.
 
 You can see the individual componnent gems as directories in the [`rails/rails` repo on github](https://github.com/rails/rails).
 
@@ -61,27 +61,27 @@ require "rails/test_unit/railtie"
 
 This is a fairly typical approach for projects that I spin up.
 
-I often am building apps that do not need email in (Action Mailbox)
-or real time WebSockets (Action Cable).
+Often apps do not need "email in" (Action Mailbox) or real time WebSockets (Action Cable).
 
-I have also tended to use other solutions for file-uploading (Active Storage) and rich text (Action Text).
+There are also other solutions for file uploading (Active Storage) and rich text (Action Text).
 
-Plus, these days, I prefer to use webpack for everything so I disable sprockets. (Although only because I generally _have_ to use webpack for JavaScript!)
+Plus, these days, you might prefer to use webpack for everything so disable sprockets. (Although only because I generally _have_ to use webpack for JavaScript!)
 
 
 ## Why?
 
-A slimmed down Rails stack will load and run more quickly because you're literally including less code. How much faster will be dependant on what features you include. The disabling of certain Rails components does allow for the addition of alternatives, e.g. [Sequel](http://sequel.jeremyevans.net) or [rom-rb](https://rom-rb.org) in place of of Active Record.
+A slimmed down Rails stack will load and run more quickly because you're literally including less code. How much faster will be dependant on what features you include.
 
 The main reason to do this is a streamlining of extra configuration and an improvement in general project tidyness.
 
-Just like I'd remove a third-party gem if I wasn't using it, I find it clearer to remove bits of Rails I'm not using.
+It's a good idea to remove a third-party gem if your aren't using it, so it is often clearer to remove bits of Rails that are not being used.
 
+Additionally, if you want to use alternatives to certain Rails subsystems, maybe [rom-rb](https://rom-rb.org) in place of of Active Record, you might want to disable that subsystem rather than use side-by-side.
 
 ## Why not?
 
 Rails is integrated. Any 'speed gains' are mostly neglibable once your app is loaded in a production environment.
 
-The components in the 'full' Rails stack are battle-tested, well maintained and nearly always a decent solution, even if your personal preferences lie elsewhere.
+The components in the 'full' Rails stack are battle-tested, well maintained, and nearly always a decent solution, even if your personal preferences lie elsewhere.
 
 If you want to add one of the missing frameworks back into your application you may need to fiddle to get the correct configuration in place.
