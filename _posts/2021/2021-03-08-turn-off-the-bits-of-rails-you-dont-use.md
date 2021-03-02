@@ -74,7 +74,7 @@ A slimmed down Rails stack will load and run more quickly because you're literal
 
 The main reason to do this is a streamlining of extra configuration and an improvement in general project tidyness.
 
-It's a good idea to remove a third-party gem if your aren't using it, so it is often clearer to remove bits of Rails that are not being used.
+It's a good idea to remove a third-party gem if you aren't using it. In the same way, it is often clearer to remove bits of Rails that are not being used.
 
 Additionally, if you want to use alternatives to certain Rails subsystems, maybe [rom-rb](https://rom-rb.org) in place of of Active Record, you might want to disable that subsystem rather than use side-by-side.
 
