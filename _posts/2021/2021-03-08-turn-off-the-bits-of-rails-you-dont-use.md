@@ -65,7 +65,7 @@ Often apps do not need "email in" (Action Mailbox) or real time WebSockets (Acti
 
 There are also other solutions for file uploading (Active Storage) and rich text (Action Text).
 
-Plus, these days, you might prefer to use webpack for everything so disable sprockets. (Although only because I generally _have_ to use webpack for JavaScript!)
+Plus, these days, you might prefer to use webpack for everything. In that case, it makes sense to disable sprockets.
 
 
 ## Why?
