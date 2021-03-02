@@ -84,4 +84,4 @@ Rails is integrated. Any 'speed gains' are mostly neglibable once your app is lo
 
 The components in the 'full' Rails stack are battle-tested, well maintained, and nearly always a decent solution, even if your personal preferences lie elsewhere.
 
-If you want to add one of the missing frameworks back into your application you may need to fiddle to get the correct configuration in place.
+If you want to add one of the missing frameworks back into your application it might be fiddly to get the correct configuration in place.
