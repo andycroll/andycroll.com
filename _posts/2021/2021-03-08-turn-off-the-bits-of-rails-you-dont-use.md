@@ -76,7 +76,7 @@ The main reason to do this is a streamlining of extra configuration and an impro
 
 It's a good idea to remove a third-party gem if you aren't using it. In the same way, it is often clearer to remove bits of Rails that are not being used.
 
-Additionally, if you want to use alternatives to certain Rails subsystems, maybe [rom-rb](https://rom-rb.org) in place of of Active Record, you might want to disable that subsystem rather than use side-by-side.
+Additionally, if you want to use alternatives to certain Rails subsystems — perhaps something like [rom-rb](https://rom-rb.org) in place of Active Record — you might want to disable Active Record rather than use them both side-by-side.
 
 ## Why not?
 
