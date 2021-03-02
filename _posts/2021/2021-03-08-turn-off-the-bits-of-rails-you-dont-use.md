@@ -12,7 +12,7 @@ image:
 
 The Rails Framework consists of multiple subsystems that work together. The names of these systems typically begin with "Action" or "Active" e.g. Active Record, Active Support, Action Pack etc.
 
-You can see the individual componnent gems as directories in the [`rails/rails` repo on github](https://github.com/rails/rails).
+You can see the individual component gems as directories in the [`rails/rails` repo on github](https://github.com/rails/rails).
 
 There has been a continual process of adding new, useful libraries to Rails ever since its release. Things like Action Cable in Rails 5. Despite the addition of large new sub-frameworks there remains a focus on modularity since [Merb was merged into Rails](https://yehudakatz.com/2008/12/23/rails-and-merb-merge/) in version 3. (This was big Ruby news at the time!)
 
