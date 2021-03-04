@@ -61,7 +61,7 @@ require "rails/test_unit/railtie"
 
 This is a fairly typical approach for projects that I spin up.
 
-Often apps do not need to receive email (Action Mailbox) or real time WebSockets (Action Cable).
+Often apps do not need to receive email (Action Mailbox) or real-time WebSockets (Action Cable).
 
 There are also other solutions for file uploading (Active Storage) and rich text (Action Text).
 
