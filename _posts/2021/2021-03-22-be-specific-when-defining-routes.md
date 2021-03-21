@@ -4,7 +4,7 @@ description: "Reduce accidental paths and be intentional"
 layout: article
 category: ruby
 image:
-  base: "2021/be-specific-when-defining-your-routes"
+  base: "2021/be-specific-when-defining-routes"
   alt: "Purple-lit urban road junction"
   source: "https://unsplash.com/photos/_QoAuZGAoPY"
   credit: "Denys Nevozhai"
