@@ -15,9 +15,9 @@ Many controllers don't need the full set of restful routes to be generated. We m
 In those cases you don't need to generate the routes or actions.
 
 
-## Instead of:
+## Instead of...
 
-...generating all the routes.
+...generating all the routes:
 
 ### `config/routes.rb`
 
@@ -28,9 +28,9 @@ end
 ```
 
 
-## Use:
+## Use...
 
-...only the routes you're actually going to use
+...only the routes you're actually going to use.
 
 ### `config/routes.rb`
 
