@@ -10,10 +10,12 @@ image:
   credit: "Denys Nevozhai"
 ---
 
-Many controllers don't need the full set of restful routes. We often have a resource that can only be created and deleted or where there's only a show action.
+Many controllers don't need the full set of restful routes to be generated. We might have models in our codebase that aren't user-deletable or are simple enough not need a full `#show` view.
+
+In those cases you don't need to generate the routes or actions.
 
 
-## Instead of ...
+## Instead of:
 
 ...generating all the routes.
 
@@ -26,7 +28,7 @@ end
 ```
 
 
-## Use...
+## Use:
 
 ...only the routes you're actually going to use
 
@@ -41,9 +43,9 @@ end
 
 ## Why?
 
-There's no value to maintaining, generating and loading routes that do not link to actions in your controllers. In fact it'll allow errors to creep into your code and unexpected behaviour to live on in your application.
+There's no value to maintaining, generating, and loading routes that do not link to actions in your controllers. I may result in errors creeping into your code and unexpected behaviour to live on in your application.
 
-If a user can't `destroy` a `Thing` in a `ThingsController, don't give them a route to try and do so.
+If a user can't `destroy` a `Thing` in a `ThingsController`, don't give them a route to try and do so.
 
 
 ## Why not?
