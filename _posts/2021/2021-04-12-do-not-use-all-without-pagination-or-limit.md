@@ -1,0 +1,63 @@
+---
+title: "Do Not Use .all without pagination or a .limit"
+description: "Reduce accidental paths and be intentional"
+layout: article
+category: ruby
+image:
+  base: "2021/do-not-use-all-without-pagination-or-limit"
+  alt: "Books on the wall of FIKA cafe in Toronto"
+  source: "https://unsplash.com/photos/Oaqk7qqNh_c"
+  credit: "Patrick Tomasso"
+---
+
+One of the first things you learn in Rails is to load all the objects of a certain model from the database and view them in an index view.
+
+## Be wary of...
+
+...ever using a "raw" `.all`:
+
+```ruby
+class MoviesController
+  def index
+    @movies = Movie.all
+  end
+end
+```
+
+
+## Use...
+
+...either a `limit` scope or pagination gem.
+
+```ruby
+class MoviesController
+  def index
+    @movies = Movie.limit(50)
+  end
+end
+
+# using pagination
+class MoviesController
+  include Pagy::Backend
+
+  def index
+    @movies = pagy(Movie.all, items: 50, page: params[:page])
+  end
+end
+```
+
+My preferred pagination gem is [`pagy`](https://github.com/ddnexus/pagy). It has an relatvely small & understandable core, works well across frameworks and is very performant.
+
+
+## Why?
+
+Lots of coding is an exercise in avoiding situations where you can shoot yourself in the foot. This is one of those times.
+
+Even if the limit is pretty large (50? 100?) it still allows you to put a cap on the outcome of any unexpected situation. At most you'll only ever load and then render a fixed number of Active Record objects.
+
+
+## Why not?
+
+You might think a quick use of `.all` might be of little harm, but it may cause a performance issue at some point.
+
+Perhaps it is a model that customers cannot create more of so you feel like you're in control. Perhaps that view isn't hit by many customers. It is still worth limiting your potential downside.
