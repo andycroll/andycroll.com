@@ -1,5 +1,5 @@
 ---
-title: "Do Not Use .all without pagination or a .limit"
+title: "Do not use .all without pagination or a .limit"
 description: "Reduce accidental paths and be intentional"
 layout: article
 category: ruby
