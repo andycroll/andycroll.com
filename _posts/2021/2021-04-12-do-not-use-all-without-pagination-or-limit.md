@@ -46,7 +46,7 @@ class MoviesController
 end
 ```
 
-My preferred pagination gem is [`pagy`](https://github.com/ddnexus/pagy). It has an relatvely small & understandable core, works well across frameworks and is very performant.
+My preferred pagination gem is [`pagy`](https://github.com/ddnexus/pagy). It has a relatively small and understandable core, works well across frameworks, and is very performant.
 
 
 ## Why?
@@ -58,6 +58,6 @@ Even if the limit is pretty large (50? 100?), having one puts a cap on the outco
 
 ## Why not?
 
-You might think a quick use of `.all` might be of little harm, but it may cause a performance issue at some point.
+You might think a quick use of `.all` will be of little harm, but it may cause a performance issue at some point.
 
-Perhaps it is a model that customers cannot create more of so you feel like you're in control. Perhaps that view isn't hit by many customers. It is still worth limiting your potential downside.
+Perhaps you feel in control because you're dealing with a model that customers cannot create more instances of. Perhaps the relevant view isn't hit by many customers. It is _still_ worth limiting your potential downside with this defensive technique.
