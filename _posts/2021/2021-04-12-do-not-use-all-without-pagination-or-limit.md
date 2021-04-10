@@ -10,7 +10,7 @@ image:
   credit: "Patrick Tomasso"
 ---
 
-One of the first things you learn in Rails is to load all the objects of a certain model from the database and view them in an index view.
+One of the first things you learn in Rails is how to load all of the objects of a certain model from the database to be displayed in an index view.
 
 ## Be wary of...
 
