@@ -53,7 +53,7 @@ My preferred pagination gem is [`pagy`](https://github.com/ddnexus/pagy). It has
 
 Lots of coding is an exercise in avoiding situations where you can shoot yourself in the foot. This is one of those times.
 
-Even if the limit is pretty large (50? 100?) it still allows you to put a cap on the outcome of any unexpected situation. At most you'll only ever load and then render a fixed number of Active Record objects.
+Even if the limit is pretty large (50? 100?), having one puts a cap on the outcome of any unexpected situation. At most you'll only ever load and then render a fixed, known, number of Active Record objects.
 
 
 ## Why not?
