@@ -1,6 +1,6 @@
 ---
 title: "Do not use .all without pagination or a .limit"
-description: "Reduce accidental paths and be intentional"
+description: "You might not regret it now, but one day, maybe?"
 layout: article
 category: ruby
 image:
