@@ -1,2 +1,7 @@
 [context.deploy-preview]
   command = "JEKYLL_ENV=development jekyll build --future"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"
