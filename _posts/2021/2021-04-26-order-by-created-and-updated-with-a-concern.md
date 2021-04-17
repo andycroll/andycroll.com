@@ -10,13 +10,13 @@ image:
   credit: "Micheile Henderson"
 ---
 
-Rails provides `scopes` as a way to encapsulate your regularly used queries. I've suggested before that it's a good idea to [keep calls to the query API within models](/ruby/only-use-named-scopes-ouside-models/).
+Rails provides `scope`s as a way to encapsulate your regularly used queries. I've suggested before that it's a good idea to [keep calls to the query API within models](/ruby/only-use-named-scopes-ouside-models/).
 
-Rails also includes [Active Support's concerns](https://api.rubyonrails.org/classes/ActiveSupport/Concern.html) as a way to group functionality that's used in multiple places. It's a wrapper around a standard Ruby `module`.
+Rails also includes [Active Support's Concerns](https://api.rubyonrails.org/classes/ActiveSupport/Concern.html) as a way to group functionality that's used in multiple places. It's a wrapper around a standard Ruby `module`.
 
-We're often sorting models in our applications by the time they are created or updated, using the [built-in timestamps](https://api.rubyonrails.org/classes/ActiveRecord/Timestamp.html).
+Something we often want to do in multiple places in our applications is sorting models by the time they are created or updated, using the [built-in timestamps](https://api.rubyonrails.org/classes/ActiveRecord/Timestamp.html).
 
-Let's see how to combine these techniques to provide a useful mini library in our application.
+Let's combine these two techniques to provide a useful mini library in our application to provide this functionality.
 
 
 ## Rather than...
@@ -92,16 +92,21 @@ class BooksController
 end
 ```
 
-And you can reuse the `OrderableByTimestamp` in multiple models, now you have the scopes extracted into a concern.
+And now that you have the scopes extracted into a concern, you can reuse `OrderableByTimestamp` in multiple models.
 
 
 ## Why?
 
 This shows the magic of the different parts of Rails working together to perform a common refactor.
 
-This refactor uses these useful features of Rails to extract regularly reused functionality into one place. You might see this referred to as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ing up your code.
+This refactor takes advantage of these useful features of the Rails framework to extract regularly reused functionality into one place. You might see this referred to as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ing up your code.
 
 
 ## Why not?
 
-Including four fairly generic scopes into multiple models, if you don't use every scope, might be expanding the model unnecessarily. This is a reason to keen any concerns you build as small as you can.
+Including four fairly generic scopes into multiple models, if you don't use every scope, might be expanding the model unnecessarily. This is a reason to keep any concerns you build as small as you can.
+
+
+## Hat Tip
+
+Dan pulled together this pattern in our applications at [CoverageBook](https://coveragebook.com) & [AnswerThePublic](https://answerthepublic.com).
