@@ -97,7 +97,7 @@ And now that you have the scopes extracted into a concern, you can reuse `Ordera
 
 ## Why?
 
-This shows the magic of the different parts of Rails working together to perform a common refactor.
+This common refactor showcases the magic of multiple parts of Rails working together
 
 This refactor takes advantage of these useful features of the Rails framework to extract regularly reused functionality into one place. You might see this referred to as [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ing up your code.
 
