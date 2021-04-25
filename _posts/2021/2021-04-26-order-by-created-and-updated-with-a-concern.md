@@ -1,6 +1,6 @@
 ---
 title: "Order by created_at and updated_at with a concern"
-description: "If you sort models by timestamps regularly, this is nice"
+description: "Refactoring smartly by using parts of Rails together"
 layout: article
 category: ruby
 image:
