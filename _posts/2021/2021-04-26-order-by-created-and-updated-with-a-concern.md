@@ -10,7 +10,7 @@ image:
   credit: "Micheile Henderson"
 ---
 
-Rails provides `scope`s as a way to encapsulate your regularly used queries. I've suggested before that it's a good idea to [keep calls to the query API within models](/ruby/only-use-named-scopes-ouside-models/).
+I've suggested before that it's a good idea to [keep calls to the query API within models](/ruby/only-use-named-scopes-ouside-models/) and Rails provides `scope`s as a way to encapsulate regularly-used queries.
 
 Rails also includes [Active Support's Concerns](https://api.rubyonrails.org/classes/ActiveSupport/Concern.html) as a way to group functionality that's used in multiple places. It's a wrapper around a standard Ruby `module`.
 
