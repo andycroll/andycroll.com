@@ -1,5 +1,5 @@
 ---
-title: "Order by created_at and updated_at with a concern"
+title: "Order by created_at and updated_at with scopes and a concern"
 description: "Refactoring smartly by using parts of Rails together"
 layout: article
 category: ruby
