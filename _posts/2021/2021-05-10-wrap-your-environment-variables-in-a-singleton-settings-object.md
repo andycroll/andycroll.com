@@ -10,7 +10,7 @@ image:
   credit: "Nick Fewings"
 ---
 
-Often in our applications we use environment variables to configure our application or to configure connections to third party services. These values are accessed through the special [`ENV` hash provided by Ruby](https://ruby-doc.org/core-3.0.1/ENV.html).
+In our applications, we often use environment variables to configure the application itself or connections to third party services. These values are then accessed through the special [`ENV` hash provided by Ruby](https://ruby-doc.org/core-3.0.1/ENV.html).
 
 
 ## Instead of...
@@ -89,4 +89,3 @@ There is the encrypted credentials functionality built into versions of Rails af
 Also as I mostly deploy to Heroku I prefer to keep configuration in the environment as argued for in the [twelve-factor app](https://12factor.net).
 
 There are also gems that provide similar wrappers around your `ENV`ironment, but I've never found one that had as clear and effective API as building your own configuration object.
-
