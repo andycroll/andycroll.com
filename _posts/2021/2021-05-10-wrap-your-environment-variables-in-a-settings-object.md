@@ -1,10 +1,10 @@
 ---
-title: "Wrap your environment variables in a singleton settings object"
+title: "Wrap your environment variables in a settings object"
 description: "It helps keep your configuration in one place"
 layout: article
 category: ruby
 image:
-  base: "2021/wrap-your-environment-variables-in-a-singleton-settings-object"
+  base: "2021/wrap-your-environment-variables-in-a-settings-object"
   alt: "A gift wrapped in pink paper"
   source: "https://unsplash.com/photos/rO20Sn1FWo4"
   credit: "Nick Fewings"
