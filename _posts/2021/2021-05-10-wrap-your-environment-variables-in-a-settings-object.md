@@ -84,6 +84,6 @@ As your environment becomes more complex you might use multiple (very similar) o
 
 This is a style and organisation improvement that'll have the most impact on slightly larger projects.
 
-There is the encrypted credentials functionality built into versions of Rails after 5.2. The documentation on that Rails feature is [brief at best](https://guides.rubyonrails.org/security.html#environmental-security)and I've never got on with it. If you mainly deploy to Heroku you might prefer to keep configuration in the environment as argued for in the [twelve-factor manifesto](https://12factor.net).
+There is the encrypted credentials functionality built into versions of Rails after 5.2. The documentation on that Rails feature is [brief at best](https://guides.rubyonrails.org/security.html#environmental-security) and I've never got on with it. If you mainly deploy to Heroku you might prefer to keep configuration in the environment as argued for in the [twelve-factor manifesto](https://12factor.net).
 
 There are also gems that provide similar wrappers around your `ENV`ironment, but I've never found one that had as clear and effective API as building your own configuration object.
