@@ -49,7 +49,7 @@ You might also might want to personally switch to Safari or Firefox or similar, 
 
 ## Why not?
 
-Maybe you don’t mind about advertising tracking your users around the internet—which is a reasonable position.
+Maybe you don’t mind about advertising tracking your users around the internet, which is a reasonable position.
 
 That said... you don't have to be a privacy absolutist to see that Google’s effective monopoly is somewhat an issue for even companies that use and pay for search or display adverts.
 
