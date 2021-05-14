@@ -40,7 +40,7 @@ end
 
 The [<abbr title="Electronic Frontier Foundation">EFF</abbr>](https://www.eff.org) has a detailed breakdown of [why FLoC is a bad idea](https://amifloced.org) as well as a way to check if you’re included in their initial roll out.
 
-In short it's not just bad because advertisers can track you around the internet (still creepy after all these years!) but also because it further entrenches Google’s advertising monopoly by leveraging their dominance in the browser market.
+In short, it's not just bad because advertisers can track you around the Internet (still creepy after all these years!) but also because Google are leveraging their dominance in the browser market to further entrench their advertising monopoly.
 
 The core Wordpress team are considering [treating FLoC like a security concern](https://make.wordpress.org/core/2021/04/18/proposal-treat-floc-as-a-security-concern/) and Wordpress powers over two fifths of the Internet, so you’ll be in good company.
 
