@@ -20,7 +20,7 @@ doing nothing...
 
 ## Add...
 
-...a custom response header to opt your application, and thus your users, out of this user-tracking.
+...a custom response header to opt your application, and thus your users, out of this user tracking.
 
 ### `config/appliction.rb`
 
