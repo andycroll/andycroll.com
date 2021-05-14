@@ -38,7 +38,7 @@ end
 
 ## Why?
 
-The [<abbr title="Electronic Frontier Foundation">EFF</abbr>](https://www.eff.org) has a detailed breakdown of [why FLoC is a bad idea](https://amifloced.org) as well as checking if you’re included in their initial roll out.
+The [<abbr title="Electronic Frontier Foundation">EFF</abbr>](https://www.eff.org) has a detailed breakdown of [why FLoC is a bad idea](https://amifloced.org) as well as a way to check if you’re included in their initial roll out.
 
 In short it's not just bad because advertisers can track you around the internet (still creepy after all these years!) but also because it further entrenches Google’s advertising monopoly by leveraging their dominance in the browser market.
 
