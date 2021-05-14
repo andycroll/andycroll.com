@@ -10,7 +10,7 @@ image:
   credit: " Ahmed Zayan"
 ---
 
-Google has recently built user-tracking directly into Chrome. This new tracking technology is named [Federated Learning of Cohorts](https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/) (shortened to <abbr title="Federated Learning of Cohorts">FLoC</abbr>).
+Google has recently built user tracking directly into Chrome. This new technology is named [Federated Learning of Cohorts](https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/) (shortened to <abbr title="Federated Learning of Cohorts">FLoC</abbr>).
 
 
 ## Instead of...
