@@ -59,7 +59,7 @@ end
 
 The `#tally` method was added to `Enumerable` in Ruby 2.7 so you might see implementations that use `inject` which will perform worse.
 
-I compared the performance of the different implementations when I wrote about [calculating the mean](/ruby/calculate-a-mean-average-from-a-ruby-array).
+I compared the performance of using native Ruby methods versus your own implementations when I wrote about [calculating the mean](/ruby/calculate-a-mean-average-from-a-ruby-array).
 
 
 ## Anything else?
