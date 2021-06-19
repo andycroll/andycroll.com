@@ -1,6 +1,6 @@
 ---
 title: "Calculate the mode & median averages of a Ruby array"
-description: "A lesson in why we use native Ruby methods"
+description: "An average isn't just a mean average."
 layout: article
 category: ruby
 image:
