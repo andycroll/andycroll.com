@@ -40,7 +40,7 @@ standard_deviation = Math.sqrt(variance)
 
 Using [the `#sum` method from `Array`](https://ruby-doc.org/core-3.0.0/Array.html#method-i-sum) is many, many times faster than using the alternative, `inject`.
 
-The `#sum` method was added to `Array` in Ruby 2.4, which is why you might see alternative implementations in other places on the Internet.
+The `#sum` method was only added to `Array` in Ruby 2.4, which is why you might see alternative implementations in other places on the Internet.
 
 I compared the performance of Ruby-native vs. implementing the algorithms yourself when I wrote about [calculating the mean](/ruby/calculate-a-mean-average-from-a-ruby-array) and the same principles apply: that native implementations (in C) are much faster.
 
