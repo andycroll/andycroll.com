@@ -42,7 +42,7 @@ Using [the `#sum` method from `Array`](https://ruby-doc.org/core-3.0.0/Array.htm
 
 The `#sum` method was only added to `Array` in Ruby 2.4, which is why you might see alternative implementations in other places on the Internet.
 
-I compared the performance of Ruby-native vs. implementing the algorithms yourself when I wrote about [calculating the mean](/ruby/calculate-a-mean-average-from-a-ruby-array) and the same principles apply: that native implementations (in C) are much faster.
+I compared the performance of Ruby-native vs. implementing the algorithms yourself when I wrote about [calculating the mean](/ruby/calculate-a-mean-average-from-a-ruby-array) and the same principles apply: native implementations (in C) are much faster.
 
 
 ## Anything else?
