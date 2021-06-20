@@ -11,7 +11,7 @@ image:
 
 ---
 
-I've previously disscussed a way [to calculate the mean of an array in Ruby](/ruby/calculate-a-mean-average-from-a-ruby-array). But there are two other averages that you might see, less commonly used but still useful.
+I've previously disscussed a way [to calculate the mean of an array in Ruby](/ruby/calculate-a-mean-average-from-a-ruby-array). But there are two other averages that you might see, less commonly used, but still useful.
 
 
 ## Calculate a median...
