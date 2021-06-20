@@ -11,7 +11,7 @@ image:
 
 ---
 
-Standard deviation is a measure of the amount of variance of group of values. A high value indicates a wide spread of values around the mean, a low value indicates tight clustering of values.
+Standard deviation is a measure of the amount of variance within a group of values. A high value indicates a wide spread of values around the mean, whereas a low value indicates tight clustering of values.
 
 The calculation is used to understand and give context to the mean value of a series of data, [wikipedia has some good examples of real-world applications](https://en.wikipedia.org/wiki/Standard_deviation#Application_examples).
 
