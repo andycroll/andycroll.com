@@ -66,4 +66,6 @@ I compared the performance of using native Ruby methods versus your own implemen
 
 It's no doubt a good idea to further encapsulate these calulations into methods.
 
-However you're doing a lot of this sort of calculation or in a situation performance is important you should look at the [`enumerable-statistics`](https://github.com/mrkn/enumerable-statistics) gem. It has natively implemented (in C, that are called from Ruby) versions of several statistical summary methods mixed in directly to `Array`s and `Enumerable`s, and thus is much faster than any version of the algorithm in Ruby.
+If you're doing a lot of this sort of calculation or in a situation where performance is important you should look at the [`enumerable-statistics`](https://github.com/mrkn/enumerable-statistics) gem. It has natively implemented versions of several statistical summary methods mixed into `Array` and `Enumerable`.
+
+The implementation in C means these methods are much faster than any version of the algorithm programmed in Ruby.
