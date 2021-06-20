@@ -49,6 +49,6 @@ I compared the performance of Ruby-native vs. implementing the algorithms yourse
 
 In all honesty, if you’re doing a lot of statistical number-crunching work you probably want to reach a little closer to “the metal”.
 
-A version of the standard deviation calculation done in Ruby is much slower than if it were done natively in C. This 'lower-level' support is why running `sum` is much faster than running `inject` in the above example, because Ruby’s `sum` method is implemented in C.
+A version of the standard deviation calculation done in Ruby is much slower than if it were done natively in C.
 
 If you're doing a lot of this sort of calculation or in a situation performance is key you might want to look at the [`enumerable-statistics`](https://github.com/mrkn/enumerable-statistics) gem. It has natively implemented (in C, called from Ruby) versions of several statistical summary methods mixed in directly to Ruby's `Array` and `Enumerable` classes.
