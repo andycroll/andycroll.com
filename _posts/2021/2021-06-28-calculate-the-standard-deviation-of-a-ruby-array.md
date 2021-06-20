@@ -13,7 +13,7 @@ image:
 
 Standard deviation is a measure of the amount of variance within a group of values. A high value indicates a wide spread of values around the mean, whereas a low value indicates tight clustering of values.
 
-The calculation is used to understand and give context to the mean value of a series of data, [wikipedia has some good examples of real-world applications](https://en.wikipedia.org/wiki/Standard_deviation#Application_examples).
+The calculation gives additional context to the range of values around the mean value of a series of data. [Wikipedia has some good examples of real-world applications](https://en.wikipedia.org/wiki/Standard_deviation#Application_examples).
 
 Ruby doesn’t provide a native method to generate the standard deviation of an array of integers. Its built-in [`Math`](https://ruby-doc.org/core-3.0.0/Math.html) library focuses on trigonometry and logarithmic calculations. Given there is no built-in way [to calculate the mean of an array in Ruby](/ruby/calculate-a-mean-average-from-a-ruby-array) there’s equally no way to calculate the standard deviation.
 
