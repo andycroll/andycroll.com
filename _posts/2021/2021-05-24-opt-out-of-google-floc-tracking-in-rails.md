@@ -22,7 +22,7 @@ doing nothing...
 
 ...a custom response header to opt your application, and thus your users, out of this user tracking.
 
-### `config/appliction.rb`
+### `config/application.rb`
 
 ```ruby
 # ...
