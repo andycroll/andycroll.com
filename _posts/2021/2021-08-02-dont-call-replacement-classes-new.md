@@ -1,5 +1,5 @@
 ---
-title: "Don't call a new verison of something new"
+title: "Don't call a new version of something 'new' when refactoring"
 description: "A opinionated naming subtlety"
 layout: article
 category: ruby
@@ -11,12 +11,16 @@ image:
 
 ---
 
-Often in long-lived applications we might want to rewrite or refactor the approach that we have previously taken.
+In long-lived applications, we often want to rewrite or refactor an approach that we have previously taken.
+
+Here's a, non-obvious, naming technique I've used during refactoring to ensure that the improved code ends up in well named classes and any old implementation is clearly marked for deletion.
+
+You might find this helps organise your work or communicate the intent of future changes with your teammates.
 
 
 ## Instead of...
 
-...using 
+...littering your codebase with the word "new":
 
 ```ruby
 class NewDoThingJob << ActiveJob
@@ -35,10 +39,10 @@ end
 
 ## Choose...
 
-to rename or namespace the existing code. And create the replacement version with the correct future naming.
+to rename or, better, namespace the existing code to mark it as deprecated. Then create the replacement version with the correct future naming.
 
 ```ruby
-module Removing
+module ToBeRemoved
   class DoThingJob << ActiveJob
     # existing implementation
   end
@@ -46,7 +50,7 @@ end
 ```
 
 ```ruby
-class DoThingJob < Removing::DoThingJob
+class DoThingJob < ToBeRemoved::DoThingJob
 ```
 
 Then change all the places the non-namespaced version is called. Then deploy and ensure that no jobs are still enqueued with the non-namespaced version.
@@ -64,24 +68,26 @@ Once you've built, tested and changed all the calls to the new version you can d
 
 ## Why?
 
-This is a habit that helps communicate intention.
+This is a habit that helps communicate intent.
 
-These refactoring projects are often large in scale and easy to make mistakes. But this methodology clearly lays out the intention to replace this existing code.
+These refactoring projects are often large in scale and it can be hard to see what's going on in the midst of a series of changes. But this methodology clearly lays out the intention to replace this existing code.
 
-If you call your new implmentation `NewSomething` it's not easy for other folks in your team (and future you) to understand the direction of development of the code. "Should I use the New version?"
+If you call your new implementation `NewSomething` it's not easy for other folks in your team (and future you) to understand the direction of development of the code. "Should I use the new version yet?"
 
-You also won't be left with lots of `NewWhatever` objects littering your code when you inevitably don't do the final renaming.
+You also won't be left with lots of `NewSomething` objects littering your code when you inevitably don't do the final renaming. :-)
 
 Picking a single namespace for this kind of refactoring also gives you one place to look for all incomplete refactorings and unused code in your application.
+
+This staggered renaming also lets you deploy changes in a series of smaller releases and avoids the creation of long running refactoring branches that can be a nightmare to rebase, merge and deploy.
 
 
 ## Why not?
 
-There's no "code based" reason to do this, as this is a personal preference, plus it adds a little addtional ceremony in exchange for reducing errors.
+This is a personal preference. There's no "code based" reason to do it.
 
-You also shouldn't blindly copy existing naming. Perhaps there's a better word choice that more accurately reflects what the new code is doing?
+Equally you shouldn't automatically copy existing naming. Take the opportunity when naming the _replacement_ implementation to better reflect what the new code is doing.
 
-If you're building an API consumed by customers/user outside your team this might not be a good solution. If you're developing a new version, you'll still likely to need to support the existing version. In this case a new `v2` namespace is a good idea.
+If you're building an API consumed by customers/users outside your team this might not be a good solution. If you're developing a new version, you'll still likely to need to support the existing version. In this case a new `v2` namespace is a good idea.
 
 
 ## Anything Else?
