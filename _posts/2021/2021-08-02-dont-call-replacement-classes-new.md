@@ -4,10 +4,10 @@ description: "A opinionated naming subtlety"
 layout: article
 category: ruby
 image:
-  base: '2020/calculate-a-mean-average-from-a-ruby-array'
-  alt: ""
-  credit: 
-  source: "https://unsplash.com/photos/3xwrg7Vv6Ts"
+  base: '2021/dont-call-replacement-classes-new'
+  alt: "New"
+  credit: Nick Fewings
+  source: "https://unsplash.com/photos/1SsUquHPNT8"
 
 ---
 
