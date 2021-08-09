@@ -43,7 +43,7 @@ to rename or, better, namespace the existing code to mark it as deprecated. Then
 
 ```ruby
 module ToBeRemoved
-  class DoThingJob << ActiveJob
+  class DoThingJob < ActiveJob
     # existing implementation
   end
 end
