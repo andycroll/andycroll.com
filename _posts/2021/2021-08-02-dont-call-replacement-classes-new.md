@@ -11,7 +11,7 @@ image:
 
 ---
 
-In long-lived applications, we often want to rewrite or refactor an approach that we have previously taken.
+In long-lived applications, we often want to rewrite or refactor an approach that we have previously taken to solving a problem.
 
 Here's a, non-obvious, naming technique I've used during refactoring to ensure that the improved code ends up in well named classes and any old implementation is clearly marked for deletion.
 
