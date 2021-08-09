@@ -70,7 +70,7 @@ Once you've built, tested and changed all the calls to the new version you can d
 
 This is a habit that helps communicate intent.
 
-These refactoring projects are often large in scale and it can be hard to see what's going on in the midst of a series of changes. But this methodology clearly lays out the intention to replace this existing code.
+These refactoring projects are often large in scale and it can be hard to see what's going on in the midst of a series of changes. This methodology clearly lays out the intention to replace existing code.
 
 If you call your new implementation `NewSomething` it's not easy for other folks in your team (and future you) to understand the direction of development of the code. "Should I use the new version yet?"
 
