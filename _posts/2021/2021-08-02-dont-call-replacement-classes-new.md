@@ -13,7 +13,7 @@ image:
 
 In long-lived applications, we often want to rewrite or refactor an approach that we have previously taken to solving a problem.
 
-Here's a, non-obvious, naming technique I've used during refactoring to ensure that the improved code ends up in well named classes and any old implementation is clearly marked for deletion.
+Here's a, non-obvious, naming technique I've used during refactoring to ensure that the improved code ends up in well-named classes and that any old implementation are clearly marked for deletion.
 
 You might find this helps organise your work or communicate the intent of future changes with your teammates.
 
