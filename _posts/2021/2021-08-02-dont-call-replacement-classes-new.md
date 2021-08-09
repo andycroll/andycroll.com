@@ -15,7 +15,7 @@ In long-lived applications, we often want to rewrite or refactor an approach tha
 
 Here's a, non-obvious, naming technique I've used during refactoring to ensure that the improved code ends up in well-named classes and that any old implementation are clearly marked for deletion.
 
-You might find this helps organise your work or communicate the intent of future changes with your teammates.
+You might find this helps to organise your work or better communicate the intent of future changes with your teammates.
 
 
 ## Instead of...
