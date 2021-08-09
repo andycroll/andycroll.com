@@ -55,7 +55,7 @@ class DoThingJob < ToBeRemoved::DoThingJob
 
 Where the non-namespace implementation is called, change it to call the implementation in the deprecated namespace. Then deploy and ensure that the application is working as expected and that the non-namespaced version of the code is not called or enqueued anywhere.
 
-Now you're free to reimplement in the correct (and future) location.
+Now you can implement the new, improved approach in the correctly named location.
 
 ```ruby
 class DoThingJob
