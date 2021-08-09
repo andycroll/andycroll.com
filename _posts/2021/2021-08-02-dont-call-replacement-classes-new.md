@@ -74,7 +74,7 @@ These refactoring projects are often large in scale and it can be hard to see wh
 
 If you call your new implementation `NewSomething` it's not easy for other folks in your team (and future you) to understand the direction of development of the code. "Should I use the new version yet?"
 
-You also won't be left with lots of `NewSomething` objects littering your code when you inevitably don't do the final renaming. :-)
+Furthermore, you don't run the risk of being left with lots of `NewSomething` objects littering your code when you inevitably don't do the final renaming. :-)
 
 Picking a single namespace for this kind of refactoring also gives you one place to look for all incomplete refactorings and unused code in your application.
 
