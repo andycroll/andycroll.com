@@ -78,7 +78,7 @@ You also won't be left with lots of `NewSomething` objects littering your code w
 
 Picking a single namespace for this kind of refactoring also gives you one place to look for all incomplete refactorings and unused code in your application.
 
-This staggered renaming also lets you deploy changes in a series of smaller releases and avoids the creation of long running refactoring branches that can be a nightmare to rebase, merge and deploy.
+This staggered renaming also lets you deploy changes in a series of smaller releases and avoids the creation of long-running refactoring branches that can be a nightmare to rebase, merge, and deploy.
 
 
 ## Why not?
