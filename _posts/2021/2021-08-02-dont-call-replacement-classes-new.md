@@ -1,5 +1,5 @@
 ---
-title: "Don't call a new version of something 'new' when refactoring"
+title: "Don’t call a new version of something ”new” when refactoring"
 description: "A opinionated naming subtlety"
 layout: article
 category: ruby
