@@ -38,7 +38,7 @@ end
 
 Compressing 'text-based' resources (i.e. the HTML or JSON your views generate) is a [standard performance recommendation from Google](https://web.dev/uses-text-compression/).
 
-In most cases text-based responses compress _really_ well. I’ve seen compression of 20x on some of our more “HTML-repetative” `#index` actions at work, but 4x is typical on smaller pages. It makes an even bigger differenceto performance on mobile, where the network is more of a bottleneck.
+In most cases, text-based responses compress _really_ well. I’ve seen compression of 20x on some of our more “HTML-repetative” `#index` actions at work, but 4x is typical on smaller pages. It makes an even bigger difference to performance on mobile, where network is more of a bottleneck.
 
 You might find _spectacular_ savings if you're using something like [TailwindCSS](https://tailwindcss.com), [Bootstrap](https://getbootstrap.com), or another framework that result in repetitive class names in the HTML.
 
