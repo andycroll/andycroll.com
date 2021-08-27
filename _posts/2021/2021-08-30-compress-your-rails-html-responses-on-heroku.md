@@ -49,4 +49,4 @@ This (sadly!) doesn't absolve you of other performance work. These compression s
 
 It is entirely possible you already serve your application from behind a CDN, like Fastly or Cloudflare, that automatically compresses your HTML and JSON responses. You won't need `Rack::Deflater` in these cases.
 
-There will be a small increase in processing time for your user's devices as they decompress the response, but this is _vastly_ outweighed by the time savings made from sending the compressed response over the Internet.
+There will be a small increase in processing time for your users’ devices as they decompress the response, but this is _vastly_ outweighed by the time savings made from sending the compressed response over the Internet.
