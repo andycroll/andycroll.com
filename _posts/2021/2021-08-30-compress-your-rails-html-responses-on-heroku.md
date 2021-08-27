@@ -42,7 +42,7 @@ In most cases, text-based responses compress _really_ well. I’ve seen compress
 
 You might find _spectacular_ savings if you're using something like [TailwindCSS](https://tailwindcss.com), [Bootstrap](https://getbootstrap.com), or another framework that results in repetitive class names in the HTML.
 
-This (sadly!) doesn't absolve you of other performance work. These compression savings only occur after the page has rendered, so if your database queries are slow or your views take a long time to generate, you’ll still need to address those issues.
+This (sadly!) doesn't absolve you of other performance work. These compression savings only occur after the page has rendered, so if your database queries are slow, or your views take a long time to generate, you’ll still need to address those issues.
 
 
 ## Why not?
