@@ -68,4 +68,4 @@ Even some of the `#reject`-based examples I use [Active Support’s long-standin
 
 Some folks resent the intrusion of the framework into the base concepts of the language.
 
-However there have definitely been cases where Ruby has adopted a “Active Support-ism”, `Hash#compact` was in Rails, long before it was in the base language.
+However, there have definitely been cases where Ruby has adopted an “Active Support-ism”. `Hash#compact` was in Rails long before it was in the base language.
