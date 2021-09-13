@@ -11,7 +11,7 @@ image:
 
 ---
 
-Active Support is a mixed library of “useful” things that’s included with Rails. This includes [extending the base Ruby classes](https://guides.rubyonrails.org/active_support_core_extensions.html) such as `Hash`, `String` and `Integer`.
+Active Support is a library of “useful” things that supports (!) the other parts of Rails. It includes ways to [extend the base Ruby classes](https://guides.rubyonrails.org/active_support_core_extensions.html), such as `Hash`, `String` and `Integer`.
 
 Even the most experienced Rails developer is constantly finding helpful methods that are new to them. And there are useful new methods being added even in recent versions.
 
