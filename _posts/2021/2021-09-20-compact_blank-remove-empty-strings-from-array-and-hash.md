@@ -15,7 +15,7 @@ Active Support is a library of “useful” things that supports (!) the other p
 
 Even the most experienced Rails developer is constantly finding helpful methods in Active Support that are new to them. And useful methods are continually being added in new versions of the library.
 
-A task I often find myself doing is cleaning up the values of`Hash`es and `Array`s. Ruby provides the `compact` method to remove `nil` values from an array and (since 2.4) has provided a [similarly named method](https://ruby-doc.org/core-2.4.0/Hash.html#method-i-compact) for Hash.
+A task I often find myself doing is cleaning up the values of`Hash`es and `Array`s. Ruby provides the `#compact` method to remove `nil` values from an array and (since 2.4) has provided a [the same `#compact` method](https://ruby-doc.org/core-2.4.0/Hash.html#method-i-compact) for Hash.
 
 But often I’m looking to remove empty strings or other “blank” objects.
 
