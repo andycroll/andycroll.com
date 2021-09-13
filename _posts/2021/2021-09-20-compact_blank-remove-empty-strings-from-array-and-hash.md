@@ -15,9 +15,9 @@ Active Support is a library of “useful” things that supports (!) the other p
 
 Even the most experienced Rails developer is constantly finding helpful methods in Active Support that are new to them. And useful methods are continually being added in new versions of the library.
 
-A task I often find myself doing is cleaning up the values of`Hash`es and `Array`s. Ruby provides the `#compact` method to remove `nil` values from an array and (since 2.4) has provided a [the same `#compact` method](https://ruby-doc.org/core-2.4.0/Hash.html#method-i-compact) for Hash.
+We often have to clean up the values of`Hash`es and `Array`s when parsing paramters, or if our code accepts complex input. Ruby provides the `#compact` method to remove `nil` values from an array and (since 2.4) has provided a [the same `#compact` method](https://ruby-doc.org/core-2.4.0/Hash.html#method-i-compact) for Hash.
 
-But often I’m looking to remove empty strings or other “blank” objects.
+In addition to `nil` often we’re looking to remove empty strings or other “blank” objects as well.
 
 ## Instead of…
 
@@ -59,9 +59,7 @@ The [#compact_blank](https://api.rubyonrails.org/classes/Enumerable.html#method-
 
 ## Why?
 
-This is one of those “useful Rails things” that feels like it’s part of Ruby once you’re used to it, something that a lot of the Active Support library core extensions have in common.
-
-Even some of the `#reject`-based examples I use [Active Support’s long-standing `#blank?`](https://api.rubyonrails.org/classes/Object.html#method-i-blank-3F) method to make the condition more readable.
+This is a “useful Rails thing” that feels like it’s part of Ruby once you’re used to it. Many of the core extensions in Active Support have that feeling in common. It reads a _lot_ better than the `#reject`-based versions.
 
 
 ## Why not?
