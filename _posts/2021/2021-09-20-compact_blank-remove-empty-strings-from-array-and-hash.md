@@ -13,7 +13,7 @@ image:
 
 Active Support is a library of “useful” things that support (!) the other parts of Rails. It includes ways to [extend the base Ruby classes](https://guides.rubyonrails.org/active_support_core_extensions.html), such as `Hash`, `String` and `Integer`.
 
-Even the most experienced Rails developer is constantly finding helpful methods in Active Support that are new to them. And useful methods are continually being added in new versions of the library.
+Even the most experienced Rails developer is constantly finding helpful methods in Active Support. And useful methods are continually being added in new versions of the library.
 
 We often have to clean up the values of`Hash`es and `Array`s when parsing paramters, or if our code accepts complex input. Ruby provides the `#compact` method to remove `nil` values from an array and (since 2.4) has provided a [the same `#compact` method](https://ruby-doc.org/core-2.4.0/Hash.html#method-i-compact) for Hash.
 
