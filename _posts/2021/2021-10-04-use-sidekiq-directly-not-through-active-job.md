@@ -51,25 +51,28 @@ end
 
 ## Why?
 
-You’re missing out on a number of advantages that you gain when you use Sidekiq directly.
+You’re missing out on a number of advantages when you don’t use Sidekiq directly.
 
-If you're doing _a lot_ of work in the background, enqueuing many small fast-running jobs—as is generally suggested—there is a [2—20x performance improvement](https://github.com/mperham/sidekiq/wiki/Active-Job#performance) if you use Sidekiq directly. The level of improvement will be dependant on your specific setup.
+If you're doing _a lot_ of work in the background, enqueuing many small fast-running jobs—as is generally suggested—leads to a [2—20x performance improvement](https://github.com/mperham/sidekiq/wiki/Active-Job#performance) if you use Sidekiq directly. The level of improvement will be dependant on your specific setup.
 
-If you are enqueing lots of jobs, you could be using [Sidekiq’s bulk enqueing functionality](https://github.com/mperham/sidekiq/wiki/Bulk-Queueing), this is hard to do performantly when using Sidekiq with Active Job.
+If you are enqueing lots of jobs, you could use [Sidekiq’s bulk enqueing functionality](https://github.com/mperham/sidekiq/wiki/Bulk-Queueing). This is hard to do when using Sidekiq with Active Job.
 
-There are, confusingly, multiple levels of retries in the event of a job failure. Active Job has its own retry mechanism, which once completed then passes down to Sidekiq’s own (seperate and different!) retry system. This is a confusing thing to debug when things go wrong.
+There are, confusingly, multiple levels of retries in the event of a job failure. Active Job has its own retry mechanism, which once completed then passes down to Sidekiq’s own (seperate and different!) retry system. This is a tricky thing to debug when things go wrong.
 
-Active Job allows passing in an Active Record object to the `#perform` method, which is then serialized to a text argument using [Global ID](https://github.com/rails/globalid). This saves doing the lookup yourself but it can raise errors if records are deleted before the job is pulled form the queue. This automatic serialization also makes the arguments to the Sidekiq jobs difficult to read in the web dashboard.
+Active Job allows passing in an Active Record object to the `#perform` method, which is then serialized to a text argument using [Global ID](https://github.com/rails/globalid). This saves doing the lookup yourself but it can raise errors if records are deleted before the job is pulled from the queue. This automatic serialization also makes the arguments to the Sidekiq jobs difficult to read in the web dashboard.
 
-There’s no real harm to “locking yourself into” a specific job framework. You are unlikely to swap to another queuing system with similarly limited Active Job functionality. When you consider replacing your asyncronous infrastructure you should assess various solutions and expect a major migration project.
+If you are concerned about locking yourself into Sidekiq as a dependancy without the wrapper of Active Job, don’t be. Although less rare than swapping your main database, you are still very unlikely change your queuing system to a similarly limited Active Job adapter.
+
+If you _are_ replacing your asynchronous infrastructure you should expect a major migration project, rather than just switching out an adapter via a single configuration line.
+
 
 ## Why not?
 
-When using Sidekiq directly you have to think more about your job arguments and perform object lookups yourself. Sidekiq only permits simple values as job arguments.
+When using Sidekiq directly you have to think more about what your job arguments should be and then perform object lookups yourself. Sidekiq only permits simple values as job arguments.
 
-You can define and use Active Job-style _and_ direct Sidekiq jobs at the same time. You don't have to switch, you can use both styles in the same application.
+There’s no need to change all your existing jobs if you are already using Sidekiq through Active Job. You don't have to use one or the other, you can define and use both at the same time. This might be a little confusing to manage, but it isn’t a terrible solution. You can just use direct Sidekiq jobs when you need the improved performance and bulk-enqueing.
 
-There is a deeper question as to why use Sidekiq at all if your workload is light, or you are early on in your project.
+If your workload is light, or you are early on in your project, you might not need Sidekiq (at least its Redis dependancy) at all.
 
 [Good Job](https://github.com/bensheldon/good_job) and [Que](https://github.com/que-rb/que) (postgres only) or [Delayed Job](https://github.com/collectiveidea/delayed_job) (any SQL database) are well-regarded Active Job adapters. When using one of these options you don’t need to run an additional piece of database infrastructure.
 
