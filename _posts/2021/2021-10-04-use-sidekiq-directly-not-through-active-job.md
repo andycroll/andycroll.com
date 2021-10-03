@@ -72,7 +72,7 @@ When using Sidekiq directly you have to think more about what your job arguments
 
 There’s no need to change all your existing jobs if you are already using Sidekiq through Active Job. You don't have to use one or the other, you can define and use both at the same time. This might be a little confusing to manage, but it isn’t a terrible solution. You can just use direct Sidekiq jobs when you need the improved performance and bulk-enqueing.
 
-If your workload is light, or you are early on in your project, you might not need Sidekiq (at least its Redis dependancy) at all.
+If your workload is light, or you are early on in your project, you might not need Sidekiq (or at least its Redis dependancy) at all.
 
 [Good Job](https://github.com/bensheldon/good_job) and [Que](https://github.com/que-rb/que) (postgres only) or [Delayed Job](https://github.com/collectiveidea/delayed_job) (any SQL database) are well-regarded Active Job adapters. When using one of these options you don’t need to run an additional piece of database infrastructure.
 
