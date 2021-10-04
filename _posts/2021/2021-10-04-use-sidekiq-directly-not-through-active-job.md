@@ -26,7 +26,7 @@ One of the most popular, battle-tested, and performant asynchronous frameworks i
 class DoThingsInBackgroundJob < ApplicationJob
   queue_as :default
 
-  def peform(an_active_record_object)
+  def perform(an_active_record_object)
     an_active_record_object.do_things
   end
 end
@@ -41,7 +41,7 @@ class DoThingsInBackgroundJob
   include Sidekiq::Worker
   Sidekiq_options queue: "default"
 
-  def peform(id)
+  def perform(id)
     an_active_record_object = ActiveRecordObject.find_by(id: id)
     an_active_record_object.do_things
   end
