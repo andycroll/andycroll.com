@@ -59,7 +59,7 @@ Firstly, _never_ use a non-floating point implementation to represent your your 
 
 Decimals solve that issue to an extent as they behave in a more intuative (and money-like) manner.
 
-However the `money` gem provides huge benefits on top of enforcing these well-worn recommendations for underlying data structures. It essentially provides a simple, but sophisticated, battle-tested ”“value object” pattern for monetary amounts and currencies. _Like all the best gems._
+The `money` gem provides additional benefits as well as enforcing the well-worn recommendations for underlying data structures. It provides a simple, yet sophisticated, battle-tested, “value object” pattern—like all the best gems—for monetary amounts and currencies.
 
 It has a sophisticated implementation of `#format` that works with the standard ruby internationalisation (i18n) backend to properly (and flexibly) display monetary amounts as strings.
 
