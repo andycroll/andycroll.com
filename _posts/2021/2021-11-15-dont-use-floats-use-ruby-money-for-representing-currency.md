@@ -57,7 +57,7 @@ product.price.format
 
 Firstly, _never_ use a non-floating point implementation to represent your your currency values. Floats can introduce rounding errors due to their [underlying representaion inside a computer](http://download.oracle.com/docs/cd/E19957-01/806-3568/ncg_goldberg.html). Just _do not_ do this.
 
-Decimals solve that issue to an extent as they behave in a more intuative (and money-like) manner.
+Decimals solve that issue to an extent as they behave in a more intuitive (and money-like) manner.
 
 The `money` gem provides additional benefits as well as enforcing the well-worn recommendations for underlying data structures. It provides a simple, yet sophisticated, battle-tested, “value object” pattern—like all the best gems—for monetary amounts and currencies.
 
