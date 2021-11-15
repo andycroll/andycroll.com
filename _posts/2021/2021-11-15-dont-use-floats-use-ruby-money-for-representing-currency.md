@@ -36,7 +36,7 @@ product.price_to_s
 
 ## Use…
 
-…the [ruby `money`](https://github.com/RubyMoney/money) gem, or in Rails the [`money-rails` gem](https://github.com/RubyMoney/money-rails):
+…the Ruby [`money`](https://github.com/RubyMoney/money) gem, or in Rails, the [`money-rails`](https://github.com/RubyMoney/money-rails) gem:
 
 ```ruby
 # In your migration
