@@ -11,7 +11,7 @@ image:
 
 ---
 
-We often have to manage monetary values in our applications. And there’s a terrific open source solution in the Ruby community that is _much_ better than rolling your own.
+We often have to manage monetary values in our applications. Guess what? There’s a terrific open source solution in the Ruby community that is _much_ better than rolling your own.
 
 
 ## Instead of…
