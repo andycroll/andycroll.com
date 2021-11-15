@@ -68,4 +68,4 @@ You can also easily convert currencies using the built-in [currency exchange](ht
 
 ## Why not?
 
-You might want to code your own your 'money' representation if your application is operating in a more detailed financial modelling world. If you are calculating fractional monetary amounts the `money` gem may not have the levels of sophistication you require.
+You might want to code your own your 'money' representation if your application is operating in a more detailed financial modelling world. If you are calculating fractional monetary amounts, the `money` gem may not have the levels of sophistication you require.
