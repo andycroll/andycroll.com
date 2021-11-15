@@ -61,7 +61,7 @@ Decimals solve that issue to an extent as they behave in a more intuative (and m
 
 The `money` gem provides additional benefits as well as enforcing the well-worn recommendations for underlying data structures. It provides a simple, yet sophisticated, battle-tested, “value object” pattern—like all the best gems—for monetary amounts and currencies.
 
-It has a sophisticated implementation of `#format` that works with the standard ruby internationalisation (i18n) backend to properly (and flexibly) display monetary amounts as strings.
+It has a sophisticated implementation of `#format` that works with the standard Ruby internationalisation (i18n) backend to properly (and flexibly) display monetary amounts as strings.
 
 You can also easily convert currencies using the built-in [currency exchange](https://github.com/RubyMoney/money#currency-exchange) functionality, for which you can provide your own rates or link to a number of regularly updated currency rate services.
 
