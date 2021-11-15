@@ -16,7 +16,7 @@ We often have to manage monetary values in our applications. And there’s a ter
 
 ## Instead of…
 
-…useing `Float`s or `BigDecimal`s to represent money
+…using `Float`s or `BigDecimal`s to represent money:
 
 ```ruby
 # In your migration
