@@ -37,7 +37,7 @@ end
 
 ## Why?
 
-This is all about clarity, tidying up and protecting against unexpected errors or security holes.
+This is all about clarity, tidying up, and protecting against unexpected errors or security holes.
 
 Primarily the issue is that in the default, unrestricted, case all seven default routes are created. If a user calls a route that is defined but not used, Rails will attempt to call the relevent controller action, even if it doesn’t exist. This can lead to errors or, worse, unexpected behaviour.
 
