@@ -39,7 +39,7 @@ end
 
 This is all about clarity, tidying up, and protecting against unexpected errors or security holes.
 
-Primarily the issue is that in the default, unrestricted, case all seven default routes are created. If a user calls a route that is defined but not used, Rails will attempt to call the relevent controller action, even if it doesn’t exist. This can lead to errors or, worse, unexpected behaviour.
+In the default, unrestricted, case all seven default routes are created. If a user calls a route that is defined but not used, Rails will attempt to call the relevent controller action, even if it doesn’t exist. This can lead to errors or, worse, unexpected behaviour.
 
 Rails’s standardised naming (while great for our code organisation and structure) means routes can be guessed. The presence of a `GET /orders/12345` route pointing to `orders#show` would imply the existance of a `GET /orders` route for `orders#index`, and more dangerously a `PUT /orders/12345` route for `orders#update`.
 
