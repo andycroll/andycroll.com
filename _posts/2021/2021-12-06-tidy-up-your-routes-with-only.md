@@ -50,4 +50,4 @@ In extremely large codebases, where there are a lot of routes with this issue, y
 
 ## Why not?
 
-This might not be a severe issue for your application. The benefits, purely from organisational perspective, means it's worth casting an eye over your `config/routes.rb` file.
+This might not be a severe issue for your application. The benefits, purely from an organisational perspective, mean it's worth casting an eye over your `config/routes.rb` file.
