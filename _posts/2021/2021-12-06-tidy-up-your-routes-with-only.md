@@ -11,7 +11,7 @@ image:
 
 ---
 
-It is easy with [Rails’ syntax for defining routes](https://guides.rubyonrails.org/routing.html) to open up more URLs in your application than you might intend.
+It is easy with [Rails’ syntax for defining routes](https://guides.rubyonrails.org/routing.html) to make more URLs in your application available than you might intend to.
 
 
 ## Instead of…
