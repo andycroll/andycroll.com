@@ -1,6 +1,6 @@
 ---
 title: "Enqueue Jobs Quickly with Sidekiq’s Bulk Features"
-description: "Active Job is great, but you might be missing out."
+description: "From thousands of network calls, to one."
 layout: article
 category: ruby
 image:
