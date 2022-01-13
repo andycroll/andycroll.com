@@ -1,5 +1,5 @@
 ---
-title: "Use Sidekiq Directly, Not Through Active Job"
+title: "Enqueue Jobs Quickly with Sidekiq’s Bulk Features"
 description: "Active Job is great, but you might be missing out."
 layout: article
 category: ruby
