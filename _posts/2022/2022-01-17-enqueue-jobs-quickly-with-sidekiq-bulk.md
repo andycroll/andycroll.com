@@ -67,7 +67,7 @@ The author of Sidekiq [recommends limiting to 1000 jobs](https://github.com/mper
 
 Typically the tasks that require many concurrent jobs are not enqueued during a web request from a customer, so you're typically doing this in a way that doesn't impact the response times of your customers directly.
 
-The pre-6.3.0 version of the bulk API is a little fiddly and leaves space for you to make a mess of the method. I've done that a few times.
+The pre-6.3.0 version of the bulk API is a little fiddly and leaves space for you to make a mess of the method. I'd recommend updating to the latest version and using the `.perform_bulk` syntax.
 
 Also, this functionality requires that you use Sidekiq directly and not via Active Job. I have previously suggested [plenty of reasons to use Sidekiq directly](/ruby/use-sidekiq-directly-not-through-active-job/).
 
