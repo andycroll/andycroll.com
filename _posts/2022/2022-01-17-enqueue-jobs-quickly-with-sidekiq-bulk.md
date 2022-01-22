@@ -65,7 +65,7 @@ The author of Sidekiq [recommends limiting to 1000 jobs](https://github.com/mper
 
 ## Why not?
 
-Typically the tasks that require many concurrent jobs are not enqueued during a web request from a customer, so you're typically doing this in a way that doesn't impact the response times of your customers directly.
+It is more usual that enqueuing lots of jobs does not occur during a web request from a customer. Thus your customers are not necessarily suffering through the much slower approach. However if you are enqueuing jobs on the command line or in scheduled tasks it’s now _your time_ you are wasting!
 
 The pre-6.3.0 version of the bulk API is a little fiddly and leaves space for you to make a mess of the method. I'd recommend updating to the latest version and using the `.perform_bulk` syntax.
 
