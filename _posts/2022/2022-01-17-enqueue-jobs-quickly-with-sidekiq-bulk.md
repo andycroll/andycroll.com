@@ -56,7 +56,7 @@ Sidekiq::Client.push_bulk('class' => DeliverEmailJob, 'args' => array_of_args)
 
 ## Why?
 
-Primarily this minimizes round trips to Redis. Instead of making an individual call for each enqueing action across the network, you make _one_. This is a big deal even when using code as well optimised for speed as Redis.
+This minimises round trips to Redis. Instead of making an individual call for each enqueing action across the network, you make _one_. This is a big deal even when using tools as well optimised for speed as Redis.
 
 This can also have the benefit (on top of passing scaler `id`s to jobs) of minimising the amount of memory used. By `pluck`ing `id`s rather than looping over arrays of Active Record models you are simply dealing with less complex objects which take up less memory.
 
