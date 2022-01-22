@@ -40,9 +40,10 @@ end
 …Sidekiq directly:
 
 ```ruby
-ids = Customer.all.pluck(:id)
-array_of_args = ids.map { |x| [x] }
-DeliverEmailJob.perform_bulk(array_of_args)
+Customer.all.in_batches do |relation|
+  array_of_args = relation.ids.map { |x| [x] }
+  DeliverEmailJob.perform_bulk(array_of_args)
+end
 ```
 
 Or, if using a Sidekiq version before 6.3.0:
