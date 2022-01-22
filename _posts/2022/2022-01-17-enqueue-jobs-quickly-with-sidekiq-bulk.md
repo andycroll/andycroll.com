@@ -26,7 +26,7 @@ Customer.all.each do |customer|
 end
 ```
 
-...or better, if you have more than a few hundred jobs to enqueue:
+...or better, using `find_in_batches`, if you have more than a few hundred jobs to enqueue:
 
 ```ruby
 Customer.find_in_batches do |customer|
