@@ -60,7 +60,7 @@ end
 
 This minimises round trips to Redis. Instead of making an individual call for each enqueing action across the network, you make _one_. This is a big deal even when using tools as well optimised for speed as Redis.
 
-This can also have the benefit (on top of passing scaler `id`s to jobs) of minimising the amount of memory used. By `pluck`ing `id`s rather than looping over arrays of Active Record models you are simply dealing with less complex objects which take up less memory.
+This can also have the benefit of minimising the amount of memory used. By `pluck`ing `id`s, or using the `ids` method as shown, rather than looping over arrays of Active Record models you are simply dealing with less complex objects which take up less memory.
 
 The author of Sidekiq [recommends limiting to 1000 jobs](https://github.com/mperham/sidekiq/wiki/Bulk-Queueing) per bulk enqueue, that's the default in the `perform_bulk` method. Even then you are saving the time of 999 round trips to Redis.
 
