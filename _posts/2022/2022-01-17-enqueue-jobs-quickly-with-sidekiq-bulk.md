@@ -11,7 +11,7 @@ image:
 
 ---
 
-We often have to enqueue lots of the same jobs at the same time. Perhaps a data migration for all of one kind of object? Or a data processing step that will run faster if it's parallelised?
+We often have to enqueue lots of the same type of job at the same time. Perhaps a data migration for all of one kind of object? Or a data processing step that will run faster if it's parallelised?
 
 Our focus is often on the potentially large queues or the elapsed time it takes to churn through all the work. There is another part of this that we have to consider: enqueuing all that work in the first place.
 
