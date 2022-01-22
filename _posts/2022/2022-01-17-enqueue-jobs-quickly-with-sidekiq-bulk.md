@@ -69,7 +69,7 @@ Typically the tasks that require many concurrent jobs are not enqueued during a 
 
 The pre-6.3.0 version of the bulk API is a little fiddly and leaves space for you to make a mess of the method. I've done that a few times.
 
-This functionality requires that you use Sidekiq directly and not via Active Job, but there are [plenty of reasons to use Sidekiq like that](/ruby/use-sidekiq-directly-not-through-active-job/).
+Also, this functionality requires that you use Sidekiq directly and not via Active Job. I have previously suggested [plenty of reasons to use Sidekiq directly](/ruby/use-sidekiq-directly-not-through-active-job/).
 
 
 #### Recommendation
