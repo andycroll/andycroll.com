@@ -11,9 +11,9 @@ image:
 
 ---
 
-Our team at CoverageBook (& AnswerThePublic) do _a lot_ with a _very_ small number of developers and designers. Over 4,000 paying customers & 600k monthly vistors (many using a free version of our product) all with a product team of five including me.
+Our team at [CoverageBook](https://coveragebook.com/) (& [AnswerThePublic](https://answerthepublic.com/)) do _a lot_ with a _very_ small number of developers and designers. Over 4,000 paying customers & 600k monthly vistors (many using a free version of our product) all with a product team of five, including me.
 
-One of the key principles we use to keep our lives calm is to buy a lot of software to support our products and thus us.
+One of the key principles we use to keep our lives calm, and reduce the stress of supporting so much with so few folks, is to buy a lot of software to support our products and reduce the burden on us.
 
 This ends up with _lots_ of paid software to augment our team in critical areas.
 
@@ -24,13 +24,12 @@ Unless I specifically mention it, you can take our usage of these products as an
 
 ## Why?
 
-Even the most expensive infrastructure bills pale in comparison to the cost of hiring a human being to build and maintain that service.
+Even the most expensive infrastructure bills pale in comparison to the cost of hiring a human being to build and maintain that code.
 
 
 ## Why not?
 
-I mean, if you’re Amazon or Google or Facebook or Apple or Twitter you might want to build to your unique scale and requirements. But then you’ll be hiring thousands of
-developers and you’re in a very different world to me.
+I mean, if you’re Amazon or Google or Facebook or Apple or Twitter you might want to build to your unique scale and requirements. But then you’ll be hiring thousands of developers and you’re in a _very different_ world to me.
 
 This approach scales surprisingly well to teams an order of magnitude (or two) bigger than our team.
 
@@ -54,9 +53,11 @@ The important Pro features for us are the enhanced reliability, the web UI searc
 
 ### Hosting & CI: [Heroku](https://heroku.com)
 
-Fundementally this means that we do not have the ability to break our own infrastructure. If I was to make one recommendation to anyone starting a software service t would be use a service like this where you have to configure nothing.
+Fundementally this means that we do not have the ability to break our own infrastructure. If I was to make one recommendation to anyone starting a software service it would be use a service like this where you have to configure nothing.
 
-The inflexibility of infrastructure choice means deployment remains simple and you have to work hard to insert complexity you don't need.
+The inflexibility of infrastructure choice means deployment remains simple and you have to work hard to insert idiosynratic complexity you don't need.
+
+You’re not totally isolated from infrastrucre concerns and you might have to architect your application in a certain way to make the most of how a Platform-as-a-Service (PaaS) Heroku works, but you are spared the overhead of managing fleets of servers or containers.
 
 They also run our PostgreSQL and Redis databases and rely on their CI & Pipelines to manage deployment.
 
@@ -66,11 +67,11 @@ Automatically scales our heroku dynos based on response time and queue backlog. 
 
 #### Testing Parallelisation: [Knapsack Pro](https://knapsackpro.com)
 
-Added to our CI to parallelise it. The integration was very easy and it cut our builds to under 5 minutes.
+Added to our Heroku CI to parallelise it. The integration was very easy and it cut our builds to under 5 minutes. Most of that time is during setup: installing a browser for our system tests.
 
 ### Performance, Errors & Uptime: [AppSignal](https://appsignal.com)
 
-Not as deep technically as some APM software, but at the right level for us and covers a bunch of infrastucture monitoring bases. Works nicely well with Heroku.
+Not as deep technically as some APM software, but at the right level for us and covers a bunch of infrastucture monitoring bases. Works nicely with Heroku. For instance the AppSignal PostgreSQL dashboard gives better insight than the (frankly poor) Heroku version.
 
 And they send out [stroopwafels](https://www.appsignal.com/waffles).
 
@@ -96,7 +97,7 @@ It has a similarly straightforward deployment approach to Heroku, which is one o
 
 ### CDN: [Fastly](https://fastly.com)
 
-Solid CDN. The main players are all much of a muchness in this arena. We're only using for our Rails assets.
+Solid CDN. The main players are all much of a muchness in this arena. We're only (currently) using it for our Rails assets.
 
 
 ### Payment Processing: [Stripe](https://stripe.com)
@@ -123,6 +124,11 @@ There’s a bunch of products that perform this task but their API is the most p
 ### Video CDN: [Mux](https://mux.com)
 
 Our video CDN of choice. Lovely product, good on site player and very nice API.
+
+
+### Video: [Wistia](https://wistia.com)
+
+We serve some of our video marketing assets through here, we also use YouTube.
 
 
 ### Cloud Storage: [AWS S3](https://aws.amazon.com)
@@ -159,7 +165,7 @@ Simple, cheap, geolocation by IP address.
 
 ### File uploading: [FileStack](https://filestack.com)
 
-Nice JS-powered uploader, we use other (better) solutions for serving the images, files & videos.
+Nice JS-powered uploader, a requirement to avoid using heroku dynos for file upload. We use other (better) solutions for serving the images, files & videos.
 
 
 ### A bunch of “not infrastructure” tools
