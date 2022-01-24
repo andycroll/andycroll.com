@@ -76,7 +76,7 @@ Also, this functionality requires that you use Sidekiq directly and not via Acti
 
 #### Recommendation
 
-If you're using Sidekiq in production you should buy a license for the Pro version. The [extra reliability](https://github.com/mperham/sidekiq/wiki/Reliability#using-super_fetch) so that jobs are not “lost” due to crashes is enough of a reason when in a production environment, but there are other additional features including job deletion (by job id and kind of job) and web dashboard enhancements.
+If you're using Sidekiq in production you should buy a license for the Pro version. The [extra reliability](https://github.com/mperham/sidekiq/wiki/Reliability#using-super_fetch) so that jobs are not “lost” due to crashes is enough of a reason, but there are other additional features including job deletion (by job id and kind of job) and web dashboard enhancements.
 
 
 #### Disclamer
