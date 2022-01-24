@@ -69,7 +69,7 @@ The author of Sidekiq [recommends a limit of 1,000 jobs](https://github.com/mper
 
 You might, very sensibly, never enqueue huge numbers of jobs during a web request from a user, so why do we need to speed this up? Your customers are not necessarily suffering through the slower approach. However you are probably enqueuing jobs on the command line or in scheduled tasks so it’s now _your time_ you are wasting!
 
-The pre-6.3.0 version of the bulk API is a little fiddly and leaves space for you to make a mess of the method. I'd recommend updating to the latest version and using the `.perform_bulk` syntax.
+The pre-6.3.0 version of the bulk API is a little fiddly and leaves space for you to make a mess of the method. I'd recommend updating to the latest version and then using the `.perform_bulk` syntax.
 
 Also, this functionality requires that you use Sidekiq directly and not via Active Job. I have previously suggested [plenty of reasons to use Sidekiq directly](/ruby/use-sidekiq-directly-not-through-active-job/).
 
