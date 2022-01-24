@@ -13,7 +13,7 @@ image:
 
 We often have to enqueue lots of the same type of job at the same time. Perhaps it’s a data migration for all of one kind of object, or a data processing step that‘ll run faster if it's parallelised.
 
-Our focus is often on the potentially large queues or the elapsed time it takes to churn through all the work. There is another part of this that we have to consider: enqueuing all that work in the first place.
+Our focus is often on the potentially large queues or the time it will take to churn through all the work. But there’s another part of this that we have to consider: enqueuing all that work in the first place.
 
 
 ## Instead of…
