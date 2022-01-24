@@ -71,7 +71,7 @@ You might, very sensibly, never enqueue huge numbers of jobs during a web reques
 
 The pre-6.3.0 version of the bulk API is a little fiddly and leaves space for you to make a mess of the method. I'd recommend updating to the latest version and then using the `.perform_bulk` syntax.
 
-Also, this functionality requires that you use Sidekiq directly and not via Active Job. I have previously suggested [plenty of reasons to use Sidekiq directly](/ruby/use-sidekiq-directly-not-through-active-job/).
+Also, this functionality requires that you use Sidekiq directly and not via Active Job. I have previously suggested [plenty of reasons to use Sidekiq directly](/ruby/use-sidekiq-directly-not-through-active-job/), primarily improved speed and flexibility.
 
 
 #### Recommendation
