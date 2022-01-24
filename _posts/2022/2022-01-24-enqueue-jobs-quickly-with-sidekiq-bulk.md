@@ -62,7 +62,7 @@ This minimises round trips to Redis. Instead of making an individual call for ea
 
 This can also have the benefit of minimising the amount of memory used. By `pluck`ing `id`s, or using the `ids` method as shown, rather than looping over arrays of Active Record models, you are using less complex Ruby objects and thus less memory.
 
-The author of Sidekiq [recommends a limit of 1,000 jobs](https://github.com/mperham/sidekiq/wiki/Bulk-Queueing) per bulk enqueue, that's the default in the `perform_bulk` method. Even then you are saving the time of 999 round trips to Redis.
+The author of Sidekiq [recommends a limit of 1,000 jobs](https://github.com/mperham/sidekiq/wiki/Bulk-Queueing) per bulk enqueue and that's the default in the `perform_bulk` method. Even then you are saving the time of 999 round trips to Redis.
 
 
 ## Why not?
