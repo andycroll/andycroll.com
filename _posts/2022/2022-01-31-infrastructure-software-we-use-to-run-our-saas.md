@@ -39,7 +39,7 @@ You do often have to make choices that may not be to your ideal aesthetic of fun
 
 ### Application Framework: [Rails](https://rubyonrails.org)
 
-It's popularity waxed (at least in the “public square”) for a couple of years, but it feels like a renaissance of sorts is happening as the JavaScript everywhere bubble is bursting.
+Its popularity waxed (at least in the “public square”) for a couple of years, but it feels like a renaissance of sorts is happening as the JavaScript everywhere bubble is bursting.
 
 _Lots_ of bigger, hairier software products use it and there is no better solution for small teams doing big, mostly web, applications while remaining happy and productive.
 
