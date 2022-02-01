@@ -136,7 +136,7 @@ We serve some of our video marketing assets through here, we also use YouTube.
 We use Amazon’s storage because it’s the industry default, we should probably look at alternatives. AWS’s dashboard terrifies me every time I open it.
 
 
-### Screenshots: [Urlbox](https//urlbox.io)
+### Screenshots: [Urlbox](https://urlbox.io)
 
 Really decent solution for taking screenshots. Not perfect (we have to do a bunch of special configuration on our end) but a nice API to getting screenshots of websites.
 
