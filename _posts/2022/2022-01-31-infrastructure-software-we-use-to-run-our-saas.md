@@ -133,7 +133,7 @@ We serve some of our video marketing assets through here. We also use YouTube, f
 
 ### Cloud Storage: [AWS S3](https://aws.amazon.com)
 
-We use Amazon’s storage because it’s the industry default, we should probably look at alternatives. AWS’s dashboard terrifies me every time I open it.
+We use Amazon’s storage because it’s the industry default. AWS’s dashboard terrifies me every time I open it.
 
 
 ### Screenshots: [Urlbox](https://urlbox.io)
