@@ -165,7 +165,7 @@ Simple, cheap, geolocation by IP address.
 
 ### File uploading: [FileStack](https://filestack.com)
 
-Nice JS-powered uploader, a requirement to avoid using heroku dynos for file upload. We use other (better) solutions for serving the images, files & videos.
+Nice JS-powered uploader, a requirement to avoid using Heroku dynos for file upload. We use other (better) solutions for serving the images, files and videos.
 
 
 ### A bunch of “not infrastructure” tools
