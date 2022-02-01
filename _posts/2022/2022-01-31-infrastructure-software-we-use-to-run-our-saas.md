@@ -107,7 +107,7 @@ Why would we use anything else to deal with our credit card transactions? Arguab
 I speak as a man who previously implemented online credit card processing directly with banks. It was horrible.
 
 
-### Code Collaboration: [Github](https://github.com)
+### Code Collaboration: [GitHub](https://github.com)
 
 Where our code is stored, reviewed and merged. Pretty standard for a modern development team.
 
