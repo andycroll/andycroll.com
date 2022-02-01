@@ -109,7 +109,7 @@ I speak as a man who previously implemented online credit card processing direct
 
 ### Code Collaboration: [GitHub](https://github.com)
 
-Where our code is stored, reviewed and merged. Pretty standard for a modern development team.
+Where our code is stored, reviewed, and merged. Pretty standard for a modern development team.
 
 We have a couple of Github Actions that we use for linting our code and compressing our images before merging.
 
