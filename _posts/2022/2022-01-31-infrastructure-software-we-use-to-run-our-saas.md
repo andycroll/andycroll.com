@@ -123,7 +123,7 @@ There’s a bunch of products that perform this task but their API is the most p
 
 ### Video CDN: [Mux](https://mux.com)
 
-Our video CDN of choice. Lovely product, good on site player and very nice API.
+Our video CDN of choice. Lovely product, good on-site player and very nice API.
 
 
 ### Video: [Wistia](https://wistia.com)
