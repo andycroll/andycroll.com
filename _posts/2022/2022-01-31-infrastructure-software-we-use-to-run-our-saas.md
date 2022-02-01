@@ -138,7 +138,7 @@ We use Amazon’s storage because it’s the industry default, we should probabl
 
 ### Screenshots: [Urlbox](https://urlbox.io)
 
-Really decent solution for taking screenshots. Not perfect (we have to do a bunch of special configuration on our end) but a nice API to getting screenshots of websites.
+Really decent solution for taking screenshots with a nice API, although we have to do a bunch of special configuration on our end to battle the Internet’s randomness.
 
 
 ### Alerting: [PagerDuty](https://pagerduty.com)
