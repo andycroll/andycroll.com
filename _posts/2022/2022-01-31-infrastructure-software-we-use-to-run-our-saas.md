@@ -113,7 +113,7 @@ Where our code is stored, reviewed, and merged. Pretty standard for a modern dev
 
 We have a couple of GitHub Actions that we use for linting our code and compressing our images before merging.
 
-We also use the [dependabot](https://github.com/dependabot) functionality Github absorbed.
+We also use the [dependabot](https://github.com/dependabot) functionality GitHub absorbed.
 
 
 ### Image CDN: [Imgix](https://imgix.com)
