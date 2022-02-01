@@ -153,7 +153,7 @@ I don't much like it, but it does what we need.
 
 ### Email: [Postmark](https://postmarkapp.com)
 
-Great software from good people, really terrific deliverability for critical, transactional email. Visibly faster than all the other transactional mail services. Also terrific support.
+Great software from good people, really terrific deliverability for critical, transactional email. Visibly faster than all the other transactional mail services and really terrific support.
 
 We haven't expanded to use their broadcast email product.
 
