@@ -63,7 +63,7 @@ They also run our PostgreSQL and Redis databases and rely on their CI & Pipeline
 
 #### Scaling: [Hirefire](https://www.hirefire.io)
 
-Automatically scales our heroku dynos based on response time and queue backlog. Solid.
+Automatically scales our Heroku dynos based on response time and queue backlog. Solid.
 
 #### Testing Parallelisation: [Knapsack Pro](https://knapsackpro.com)
 
