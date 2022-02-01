@@ -111,7 +111,7 @@ I speak as a man who previously implemented online credit card processing direct
 
 Where our code is stored, reviewed, and merged. Pretty standard for a modern development team.
 
-We have a couple of Github Actions that we use for linting our code and compressing our images before merging.
+We have a couple of GitHub Actions that we use for linting our code and compressing our images before merging.
 
 We also use the [dependabot](https://github.com/dependabot) functionality Github absorbed.
 
