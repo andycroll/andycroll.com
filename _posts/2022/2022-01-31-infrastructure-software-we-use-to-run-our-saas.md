@@ -178,4 +178,4 @@ We host our blog on Wordpress hosted by [Flywheel](https://getflywheel.com) prim
 
 [ConvertKit](https://convertkit.com) has somewhat moved away from being an ideal tool for SaaS email marketing communication, but it’ll do for now.
 
-[Intercom](https://intercom.io) used to be the best tool for support. Now it’s bloated, confused, with ironically poor support (!) and seems mostly interested in squeezing every customer for the most money while changing “account managers” every six months. If we could be bothered to move, we would.
+[Intercom](https://intercom.io) used to be the best tool for support. Now it’s bloated, confused, with ironically poor support (!), and seems mostly interested in squeezing every customer for the most money while changing “account managers” every six months. If we could be bothered to move, we would.
