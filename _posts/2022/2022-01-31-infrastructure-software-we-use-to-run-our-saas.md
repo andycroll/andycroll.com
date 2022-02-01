@@ -57,7 +57,7 @@ Fundementally this means that we do not have the ability to break our own infras
 
 The inflexibility of infrastructure choice means deployment remains simple and you have to work hard to insert idiosynratic complexity you don't need.
 
-You’re not totally isolated from infrastrucre concerns and you might have to architect your application in a certain way to make the most of how a Platform-as-a-Service (PaaS) Heroku works, but you are spared the overhead of managing fleets of servers or containers.
+You’re not totally isolated from infrastructure concerns and you might have to architect your application in a certain way to make the most of how a Platform-as-a-Service (PaaS) Heroku works, but you are spared the overhead of managing fleets of servers or containers.
 
 They also run our PostgreSQL and Redis databases and rely on their CI & Pipelines to manage deployment.
 
