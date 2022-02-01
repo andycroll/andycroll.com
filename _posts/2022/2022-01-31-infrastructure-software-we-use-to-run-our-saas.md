@@ -174,7 +174,7 @@ Nice JS-powered uploader, a requirement to avoid using heroku dynos for file upl
 
 [Fireside](https://fireside.fm) to host the podcast, but I'd probably go with [Transistor](https://transistor.fm/?via=andycroll) these days.
 
-We host our blog on Wordpress hosted by [Flywheel](https://getflywheel.com) primarily due to it's excellent development experience.
+We host our blog on Wordpress hosted by [Flywheel](https://getflywheel.com) primarily due to its excellent development experience.
 
 [ConvertKit](https://convertkit.com) has somewhat moved away from being an ideal tool for SaaS email marketing communication, but it’ll do for now.
 
