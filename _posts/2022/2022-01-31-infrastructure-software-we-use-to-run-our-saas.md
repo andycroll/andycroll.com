@@ -33,7 +33,7 @@ I mean, if you’re Amazon or Google or Facebook or Apple or Twitter you might w
 
 This approach scales surprisingly well to teams an order of magnitude (or two) bigger than our team.
 
-You do often have to make choices that may not be to your ideal aesthetic of functional choice, but even in this “paid for” software world there are plenty of alternative approaches from which you can assess and pick your favourite.
+When choosing software, rather than building it, you often have to make choices that may not be ideal functionally or aesthetically. There are generally multiple providers with alternative approaches that you can choose from.
 
 ## Our list
 
