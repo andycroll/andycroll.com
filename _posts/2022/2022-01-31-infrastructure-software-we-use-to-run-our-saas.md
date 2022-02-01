@@ -78,7 +78,7 @@ And they send out [stroopwafels](https://www.appsignal.com/waffles).
 
 ### Application Security: [Sqreen](https://sqreen.io)
 
-One piece of software that I'm especially glad to have found. It constant reviews and protects our applications from both deliberate attacks from troublemakers and our own inadvertanty security issues.
+One piece of software that I'm especially glad to have found. It constantly reviews and protects our applications from both deliberate attacks from troublemakers and our own inadvertanty security issues.
 
 Purchased by Datadog, I guess they’ll wind that into their main product at some point.
 
