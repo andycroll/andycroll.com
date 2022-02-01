@@ -19,7 +19,7 @@ This results in the augmentation of our team with _lots_ of paid software produc
 
 We resist building ourselves and pick the simplest, most pleasing-to-use software for the job. We even try, wherever possible not to configure away from the default settings!
 
-Unless I specifically mention it, you can take our usage of these products as an implicit recommendation. Not that there aren’t other alternatives, perhaps better for you, but this is what we’re mostly happy with.
+Unless I specifically mention it, you can take our usage of these products as an implicit recommendation. Although I'd love to hear if you use any great solutions that might improve on what I'm using here.
 
 
 ## Why?
