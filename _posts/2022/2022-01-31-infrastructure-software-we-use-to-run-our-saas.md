@@ -15,7 +15,7 @@ Our team at [CoverageBook](https://coveragebook.com/) (and [AnswerThePublic](htt
 
 One of the key principles we use to keep our lives calm, and reduce the stress of supporting so much with so few folks, is to buy a lot of software to support our products and reduce the burden on us.
 
-This ends up with _lots_ of paid software to augment our team in critical areas.
+This results in the augmentation of our team with _lots_ of paid software products and services.
 
 We resist building ourselves and pick the simplest, most pleasing-to-use software for the job. We even try, wherever possible not to configure away from the default settings!
 
