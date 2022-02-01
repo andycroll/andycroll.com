@@ -11,7 +11,7 @@ image:
 
 ---
 
-Our team at [CoverageBook](https://coveragebook.com/) (& [AnswerThePublic](https://answerthepublic.com/)) do _a lot_ with a _very_ small number of developers and designers. Over 4,000 paying customers & 600k monthly vistors (many using a free version of our product) all with a product team of five, including me.
+Our team at [CoverageBook](https://coveragebook.com/) (and [AnswerThePublic](https://answerthepublic.com/)) do _a lot_ with a _very_ small number of developers and designers. Over 4,000 paying customers and 600k monthly visitors (many using a free version of our product) all with a product team of five, including me.
 
 One of the key principles we use to keep our lives calm, and reduce the stress of supporting so much with so few folks, is to buy a lot of software to support our products and reduce the burden on us.
 
