@@ -97,7 +97,7 @@ It has a similarly straightforward deployment approach to Heroku, which is one o
 
 ### CDN: [Fastly](https://fastly.com)
 
-Solid CDN. The main players are all much of a muchness in this arena. We're only (currently) using it for our Rails assets.
+Solid CDN. The main players are all much of a muchness in this arena. We're (currently) only using it for our Rails assets.
 
 
 ### Payment Processing: [Stripe](https://stripe.com)
