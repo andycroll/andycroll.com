@@ -128,7 +128,7 @@ Our video CDN of choice. Lovely product, good on-site player and very nice API.
 
 ### Video: [Wistia](https://wistia.com)
 
-We serve some of our video marketing assets through here, we also use YouTube.
+We serve some of our video marketing assets through here. We also use YouTube, for tutorials and webinar recordings.
 
 
 ### Cloud Storage: [AWS S3](https://aws.amazon.com)
