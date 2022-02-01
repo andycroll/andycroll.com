@@ -90,7 +90,7 @@ A nice UI and reasonable pricing for our volume.
 
 ### Static Site Hosting: [Netlify](https://netlify.com)
 
-Our static sites are deployed here, we also make some use of a couple of very simple JavaScript “serverless” functions that are called from our applications.
+Our static marketing sites are deployed here. We also make some use of a couple of very simple JavaScript “serverless” functions that are called from our applications.
 
 It has a similarly straightforward deployment approach to Heroku, which is one of the main reasons we use it.
 
