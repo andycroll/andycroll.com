@@ -67,7 +67,7 @@ User.find_by(email: "andy@goodscary.com")
 
 Straightforward indexes on our database didn't help us as in our—more complex—case. We were querying using an index, but because we were using `.where().first` we were inadvertently doing a non-indexed scan to establish the order, which caused enormous performance problems.
 
-Additionally, we were writing many thousands of rows per second and even with a monsterously powerful database we were seeing issues because the entire table was being sorted to then pick only one record.
+Additionally, we were writing many thousands of rows per second and, even with a _monstrously_ powerful database, we were seeing issues because the entire table was being sorted to then pick only one record.
 
 
 ## Why not?
