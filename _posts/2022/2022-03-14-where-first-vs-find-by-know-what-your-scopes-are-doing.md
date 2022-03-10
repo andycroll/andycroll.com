@@ -11,7 +11,7 @@ image:
 
 ---
 
-There are numerous benefits to using an Object-Relational Mapper (ORM), such as Active Record, to generate your SQL. You gain from clear repeatable abstractions, saving time and gaining readability.
+There are numerous benefits to using an Object-Relational Mapper (ORM), such as Active Record, to generate your SQL. You gain from clear repeatable abstractions, saving time and improving readability.
 
 Unfortunately the very abstractions that make an ORM useful can also have unintended consequences.
 
