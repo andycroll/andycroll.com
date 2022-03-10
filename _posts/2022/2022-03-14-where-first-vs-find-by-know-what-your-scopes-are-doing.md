@@ -20,7 +20,7 @@ It is very easy to introduce performance problems because the _actual_ SQL that 
 We recently came across an issue at CoverageBook that highlighted this very point.
 
 
-## Instead of:
+## Instead of...
 
 ...using a `where` condition then `first`.
 
@@ -29,7 +29,7 @@ User.where(email: "andy@goodscary.com").first
 ```
 
 
-## Use:
+## Use...
 
 ...`find_by`.
 
