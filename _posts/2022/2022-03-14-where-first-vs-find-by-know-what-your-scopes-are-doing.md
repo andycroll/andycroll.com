@@ -69,12 +69,12 @@ Straightforward indexes on our database didn't help us as in ourâ€”more complexâ
 
 Additionally, we were writing many thousands of rows per second and, even with a _monstrously_ powerful database, we were seeing issues because the entire table was being sorted to then pick only one record.
 
+Debugging this issue was tricky because it is not possible to call `.to_sql` on the results of `.find_by` or `.where().first` as the query executes and you have to use logging to work out the exact SQL that is being generated.
+
+Knowing the exact SQL Active Record is generating from methods that might _seem_ the same on the surface can be _very_ important.
+
 
 ## Why not?
 
-Debugging this issue was tricky because it is not possible to call `.to_sql` on the results of `.find_by` or `.where().first` as the query executes and you have to use logging to work out the exact SQL that is being generated.
-
 In small tables, under light load, the performance impact of using `where().first` would be negligible.
-
-Knowing the exact SQL Active Record is generating from methods that might _seem_ the same on the surface can be _very_ important.
 
