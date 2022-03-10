@@ -31,7 +31,7 @@ User.where(email: "andy@goodscary.com").first
 
 ## Use:
 
-...`find_by`
+...`find_by`.
 
 ```ruby
 User.find_by(email: "andy@goodscary.com")
