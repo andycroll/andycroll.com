@@ -1,0 +1,9 @@
+/*
+  Link: <https://graceful-kangaroo.andycroll.com/>; rel=preconnect; crossorigin
+  Link: <https://graceful-kangaroo.andycroll.com/>; rel=dns-prefetch
+  Link: <https://images.andycroll.com/>; rel=preconnect; crossorigin
+  Link: <https://images.andycroll.com/>; rel=dns-prefetch
+  Link: </css/andycroll.css>; rel=preload; as=style; crossorigin
+  Link: </fonts/merriweather-regular-webfont.woff2>; rel=preload; as=font; crossorigin
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
