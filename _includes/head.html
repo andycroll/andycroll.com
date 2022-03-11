@@ -3,8 +3,14 @@
 <head>
   <meta charset=utf-8>
   <link rel="dns-prefetch" href="//graceful-kangaroo.andycroll.com">
+  <link rel="dns-prefetch" href="//images.andycroll.com">
   <link rel="preload" href="/css/andycroll.css" as="style" crossorigin>
   <link rel="preload" href="/fonts/merriweather-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  {% if jekyll.environment == "production" %}
+    <link rel="preload" href="{{ site.image_url }}/images/andycroll.jpg" as="image" crossorigin="anonymous">
+  {% else %}
+    <link rel="preload" href="/images/andycroll.jpg" as="image" crossorigin="anonymous">
+  {% endif %}
 
   <meta name="MSSmartTagsPreventParsing" content="true" />
 
