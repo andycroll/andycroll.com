@@ -1234,6 +1234,10 @@ a:hover {
   display: none;
 }
 
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .w-12 {
   width: 3rem;
 }
