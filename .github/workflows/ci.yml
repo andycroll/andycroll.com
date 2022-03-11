@@ -17,7 +17,9 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
+    - uses: bahmutov/npm-install@v1
     - name: Run Tests
       run: |
+        npm install
         npm run build
         bundle exec htmlproofer ./_site --disable-external
