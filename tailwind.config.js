@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./_site/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        '4/1': '4 / 1'
+      }
+    },
     fontFamily: {
       "serif": ["merriweatherregular", "Constantia", "Palatino", "Palatino Linotype", 'Georgia', 'serif']
     }
