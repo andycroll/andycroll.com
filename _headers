@@ -1,4 +1,5 @@
 /*
+  Content-Security-Policy: default-src 'self'; script-src 'self' *.andycroll.com ; img-src 'self' images.andycroll.com data: *.andycroll.com
   Link: <https://graceful-kangaroo.andycroll.com/>; rel=preconnect; crossorigin
   Link: <https://graceful-kangaroo.andycroll.com/>; rel=dns-prefetch
   Link: <https://images.andycroll.com/>; rel=preconnect; crossorigin
