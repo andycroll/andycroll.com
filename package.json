@@ -8,7 +8,7 @@
   "scripts": {
     "build": "npm run build-jekyll && npm run build-tailwind && npm run build-jekyll",
     "build-jekyll": "bundle exec jekyll build",
-    "build-tailwind": "npx tailwindcss -i ./_css/andycroll.css -o ./css/andycroll.css",
+    "build-tailwind": "npx tailwindcss -i ./_css/andycroll.css -o ./css/andycroll.css --minify",
     "dev": "concurrently --kill-others \"npm:watch-*\"",
     "watch-tailwind": "npx tailwindcss -i ./_css/andycroll.css -o ./css/andycroll.css --watch",
     "watch-jekyll": "bundle exec jekyll serve --incremental --watch"
