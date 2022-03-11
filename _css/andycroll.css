@@ -1,14 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-stone-800 hover:text-red-700 decoration-2 decoration-red-700 underline-offset-2 underline;
+  }
+}
+
+.amp {
+  font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
+  font-weight: normal;
+  font-style: italic;
+  display: inline-block;
+  font-size: 125%;
+  margin: -0.3em 0 0 -0.02em;
+}
+
+@font-face {
+  font-family: 'merriweatherregular';
+  src: url('/fonts/merriweather-regular-webfont.woff2') format('woff2'), url('/fonts/merriweather-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .highlighter-rouge {
   margin: 0 -1px;
 }
 /*
-
-    Name:       Base16 Tomorrow Dark
-    Author:     Chris Kempson (http://chriskempson.com)
-*/
-
-/*
-
     Name:       Base16 Tomorrow Light
     Author:     Chris Kempson (http://chriskempson.com)
 

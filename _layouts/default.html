@@ -1,18 +1,17 @@
 {% include head.html %}
 <body>
-  <div class="container pt-3 pb-2">
-    <div class="row">
-      <!-- <div class="col-sm-1 d-none d-sm-block">&nbsp;</div> -->
-      <div class="col-6">
-        <a href="/" class="btn btn-dark h2">Andy Croll</a>
+  <div class="container mx-auto p-3">
+    <div class="flex font-serif">
+      <div class="flex-1">
+        <a href="/" class="inline-block items-center px-3 py-2 border border-transparent rounded shadow-lg text-sm font-medium no-underline text-white bg-slate-800 hover:bg-red-700 hover:text-white hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-700">Andy Croll</a>
       </div>
-      <div class="col-6 text-right">
-        <a href="/now/" class="btn btn-outline btn-outline-dark h2">Now</a>
+      <div class="flex-1 text-right">
+        <a href="/now/" class="inline-block items-center px-3 py-2 border border-transparent rounded shadow-lg text-sm font-medium text-slate-800 bg-white hover:bg-slate-900 hover:text-white hover:no-underline focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-700">Now</a>
       </div>
     </div>
   </div>
 
-  <div role="main" class="main">
+  <div role="main">
     {{ content | expand_urls: root_url }}
   </div>
 

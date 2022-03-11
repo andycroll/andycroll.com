@@ -22,7 +22,7 @@ image:
 description: 'The current work of Andy Croll'
 ---
 
-Running a fortnightly Ruby techniques newsletter: One Ruby Thing. Restarted for 2021.
+Running a (mostly?) fortnightly Ruby techniques newsletter: One Ruby Thing. Restarted for 2022.
 
 <a href="https://onerubything.com" class="btn btn-outline-danger">Sign up</a>
 
@@ -32,7 +32,7 @@ I'm CTO at [CoverageBook](https://coveragebook.com) & [AnswerThePublic](https://
 
 -----
 
-Possibly running the 'little Ruby conference that could', on the south coast of the UK at [Brighton Ruby](https://brightonruby.com).
+Running the 'little Ruby conference that could', on the south coast of the UK at [Brighton Ruby](https://brightonruby.com).
 
 The Brighton Ruby User Group is currently furloughed, it’ll be back.
 
