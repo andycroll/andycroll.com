@@ -8,6 +8,8 @@ author: Andy Croll
 description: "He’s CTO at CoverageBook & AnswerThePublic, Rubyist, runs Brighton Ruby, Author, Speaker, Bootstrapper & Twin Dad."
 image_url: "https://images.andycroll.com"
 
+include: ['_headers']
+
 email: andy@goodscary.com
 
 # ----------------------- #
