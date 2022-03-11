@@ -4,6 +4,8 @@
   Link: <https://images.andycroll.com/>; rel=preconnect; crossorigin
   Link: </css/andycroll.css>; rel=preload; as=style; crossorigin
   Link: </fonts/merriweather-regular-webfont.woff2>; rel=preload; as=font; crossorigin
+  Referrer-Policy: no-referrer-when-downgrade
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
+  X-Permitted-Cross-Domain-Policies: none
   X-XSS-Protection: 1; mode=block
