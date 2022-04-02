@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; style-src 'self' app.heycheckit.com; script-src 'self' 'unsafe-eval' *.andycroll.com instant.page app.heycheckit.com; img-src 'self' images.andycroll.com data: *.andycroll.com
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' app.heycheckit.com; script-src 'self' 'unsafe-eval' *.andycroll.com instant.page app.heycheckit.com; img-src 'self' images.andycroll.com app.heycheckit.com data: *.andycroll.com
   Link: <https://graceful-kangaroo.andycroll.com/>; rel=preconnect; crossorigin
   Link: <https://images.andycroll.com/>; rel=preconnect; crossorigin
   Link: <https://app.heycheckit.com/>; rel=preconnect; crossorigin
