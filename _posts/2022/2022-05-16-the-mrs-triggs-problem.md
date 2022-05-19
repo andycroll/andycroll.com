@@ -55,6 +55,10 @@ Brotopia, Emily Chang
 
 [About Race Podcast](https://www.aboutracepodcast.com), Reni Eddo-Lodge
 
+[Lucky](https://brightonruby.com/2017/lucky-saron-yitbarek/), Saron Yitbarek
+
+[Lending Privilege](https://anjuansimmons.com/talks/lending-privilege/), Anjuan Simmons
+
 [Why do ambitious women have flat heads?](https://www.ted.com/talks/dame_stephanie_shirley_why_do_ambitious_women_have_flat_heads) Dame Stephanie Shirley
 
 [The lost history of technical women](https://vimeo.com/121500228) Megan Smith
