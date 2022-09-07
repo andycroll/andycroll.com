@@ -24,7 +24,11 @@ layout: default
     <p class="text-slate-600 text-xs">
       <small>
         image&nbsp;by
-        <a href="{{ page.image.source }}" class="text-slate-600 no-underline hover:text-slate-600 hover:underline">{{ page.image.credit }}</a>
+        {% if page.image.source %}
+          <a href="{{ page.image.source }}" class="text-slate-600 no-underline hover:text-slate-600 hover:underline">{{ page.image.credit }}</a>
+        {% else %}
+          <span class="text-slate-600 no-underline">{{ page.image.credit }}</span>
+        {% endif %}
       </small>
     </p>
     {% endif %}
