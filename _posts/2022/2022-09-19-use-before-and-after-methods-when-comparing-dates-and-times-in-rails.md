@@ -12,7 +12,7 @@ image:
 
 Active Support contains many additions to the basic classes that form the standard libraries of Ruby. There are extensions to `String`, `Hash`, `Array` and even `Date` and `Time`.
 
-In many cases if you’ve mostly been working inside Rails you might not realise that these are Rails-isms rather than Ruby-isms.
+If you’ve been working inside Rails you might not realise that these are Rails-isms rather than Ruby-isms.
 
 Some folks dislike these ”superfluous” additions. Some of these additions end up back inside the Ruby standard library itself. _Some_ of these methods help me not make mistakes when comparing times and dates.
 
