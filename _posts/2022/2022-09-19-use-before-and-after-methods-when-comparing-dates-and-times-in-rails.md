@@ -45,7 +45,7 @@ Date.new(1979, 9, 12).after?(Time.zone.now)
 
 ## Why?
 
-This is a personal stylistic choice. I find the readability of the logic to be hugely improved when using the `before?` and `after?` methods. This helps me reason about the code as I'm writing it and, more importantly, to understand my logic when I come back to it months from now.
+This is a personal stylistic choice. I find the readability to be hugely improved when using `before?` and `after?`. It helps me to reason about the code much more easily as I'm writing it and, more importantly, to quickly understand my logic when I come back to it months later.
 
 
 
