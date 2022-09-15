@@ -11,6 +11,6 @@
     "build-tailwind": "npx tailwindcss -i ./_css/andycroll.css -o ./css/andycroll.css --minify",
     "dev": "concurrently --kill-others \"npm:watch-*\"",
     "watch-tailwind": "npx tailwindcss -i ./_css/andycroll.css -o ./css/andycroll.css --watch",
-    "watch-jekyll": "bundle exec jekyll serve --incremental --watch"
+    "watch-jekyll": "bundle exec jekyll serve --incremental --watch --future"
   }
 }
