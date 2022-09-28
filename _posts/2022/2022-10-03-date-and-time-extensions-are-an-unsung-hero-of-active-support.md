@@ -13,7 +13,7 @@ image:
 
 In Active Support‘s extensions to the core Ruby classes, some of the most useful and plentiful are related to `Time`.
 
-One of Rails’ founding uses was to provide helpful methods to provide reusable methods for regularly performed tasks. In our web applications we‘re often using time periods.
+One of Rails’s founding uses was to provide helpful, reusable methods for regularly performed tasks. In our web applications we‘re often using time periods.
 
 Enter the methods from [DateAndTime::Calculations](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/core_ext/date_and_time/calculations.rb), or see the [API documentation](http://api.rubyonrails.org/classes/DateAndTime/Calculations.html) or the [`DateTime` section in the Core Extensions Rails guide](http://guides.rubyonrails.org/active_support_core_extensions.html#extensions-to-datetime).
 
