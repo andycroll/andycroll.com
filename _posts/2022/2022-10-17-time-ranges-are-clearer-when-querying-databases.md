@@ -17,7 +17,7 @@ I previously extolled the virtues of the [core extensions to `Date` and `Time`](
 
 ## Instead of...
 
-...using a text-based SQL fragments to query time fields.
+...using a text-based SQL fragments to query time fields:
 
 ```ruby
 User.where("created_at > ? AND created_at < ?", 2.weeks.ago, 1.week.ago).to_sql
