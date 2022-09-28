@@ -12,7 +12,7 @@ image:
 
 Active Record‘s query interface has _many_ different ways to turn your logic into SQL to get rows from your database.
 
-I extolled the virtues of the [core extensions to `Date` and `Time`](/ruby/date-and-time-extensions-are-an-unsung-hero-of-active-support) and in our web applications we‘re often extracting records from databases where time periods are on of our primary filters. So let’s use those extensions to query our database.
+I previously extolled the virtues of the [core extensions to `Date` and `Time`](/ruby/date-and-time-extensions-are-an-unsung-hero-of-active-support) and in our web applications we‘re often extracting records from databases where time periods are one of our primary filters. So let’s use those extensions to query our database.
 
 
 ## Instead of...
