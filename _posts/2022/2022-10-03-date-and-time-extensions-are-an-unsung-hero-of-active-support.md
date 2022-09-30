@@ -15,7 +15,7 @@ In Active Support‘s extensions to the core Ruby classes, some of the most usef
 
 One of Rails’s founding uses was to provide helpful, reusable methods for regularly performed tasks. In our web applications we‘re often using time periods.
 
-Enter the methods from [DateAndTime::Calculations](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/core_ext/date_and_time/calculations.rb), or see the [API documentation](http://api.rubyonrails.org/classes/DateAndTime/Calculations.html) or the [`DateTime` section in the Core Extensions Rails guide](http://guides.rubyonrails.org/active_support_core_extensions.html#extensions-to-datetime).
+Enter the methods from [DateAndTime::Calculations](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/core_ext/date_and_time/calculations.rb). To find out more checkout out the [API documentation](http://api.rubyonrails.org/classes/DateAndTime/Calculations.html) or the [`DateTime` section in the Core Extensions Rails guide](http://guides.rubyonrails.org/active_support_core_extensions.html#extensions-to-datetime).
 
 
 ## Familiarise yourself with...
@@ -79,40 +79,11 @@ right_now.next_occurring(:thursday)
 
 ## Why?
 
-This is one of those cases where the ORM (and the tooling around it) get in the way and introduce unforseen performance issues.
-
-The `.where` scope has an implicit `ORDER` scope on the primary key that isn't obvious at first glance.
-
-```ruby
-User.where(email: "andy@goodscary.com")
-# SELECT "users".*
-# FROM "users"
-# WHERE "users"."email" = "andy@goodscary.com"
-
-User.where(email: "andy@goodscary.com").first
-# SELECT "users".*
-# FROM "users"
-# WHERE "users"."email" = "andy@goodscary.com"
-# ORDER BY "users"."id" ASC
-# LIMIT 1
-
-User.find_by(email: "andy@goodscary.com")
-# SELECT "users".*
-# FROM "users"
-# WHERE "users"."email" = "andy@goodscary.com"
-# LIMIT 1
-```
-
-Straightforward indexes on our database didn't help us as in our—more complex—case. We were querying using an index, but because we were using `.where().first` we were inadvertently doing a non-indexed scan to establish the order, which caused enormous performance problems.
-
-Additionally, we were writing many thousands of rows per second and, even with a _monstrously_ powerful database, we were seeing issues because the entire table was being sorted to then pick only one record.
-
-Debugging this issue was tricky because it is not possible to call `.to_sql` on the results of `.find_by` or `.where().first` as the query executes and you have to use logging to work out the exact SQL that is being generated.
-
-Knowing the exact SQL Active Record is generating from methods that might _seem_ the same on the surface can be _very_ important.
+These are tremendously useful, and well-named, methods to help describe the date and time logic in your applications.
 
 
 ## Why not?
 
-In small tables, under light load, the performance impact of using `where().first` would be negligible.
+While this style of extending core Ruby classes is sometime derided by folks who dislike Rails’s ”magical” style... you’d be a bit silly to reimplment your own date calculations inside a Rails application.
+
 
