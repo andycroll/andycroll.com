@@ -1,6 +1,6 @@
 ---
 title: "Time extensions are an unsung hero of Active Support"
-description: "There’s a method for that"
+description: "Is the end of the quarter of Tuesday, a week from now, a Sunday? There’s a method for that."
 layout: article
 category: ruby
 image:
