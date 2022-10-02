@@ -84,6 +84,6 @@ These are tremendously useful, and well-named, methods to help describe the date
 
 ## Why not?
 
-While this style of extending core Ruby classes is sometime derided by folks who dislike Rails’s ”magical” style... you’d be a bit silly to reimplement your own date calculations inside a Rails application.
+While this style of extending core Ruby classes is sometimes derided by folks who dislike Rails’s ”magical” style... you’d be a bit silly to reimplement your own date calculations inside a Rails application.
 
 
