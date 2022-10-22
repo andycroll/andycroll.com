@@ -54,7 +54,7 @@ It is very easy to type `number = 0` and thus assign a variable in the condition
 
 The `== 0` syntax is how _many_ other similar languages perform comparison and is deeply ingrained in my fingers. I still struggle to apply this advice even after 15 years of Ruby programming.
 
-You might get folks pushing back for “performance” reasons.
+You might get some folks pushing back for “performance” reasons.
 
 ```ruby
 require "benchmark/ips"
