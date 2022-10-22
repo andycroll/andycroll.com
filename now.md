@@ -43,8 +43,7 @@ The Brighton Ruby User Group is currently furloughed, it’ll be back.
 
 ### Speaking
 
-* [The Mrs Triggs Problem](https://www.youtube.com/watch?v=0UcTD49KugA) Keynoted Euruko Helsinki 2022
-* [The Games Developers Play](https://brightonruby.com/2020/the-games-developers-play-andy-croll/) at RubyConf 2018
+* [The Mrs Triggs Problem](https://www.youtube.com/watch?v=0UcTD49KugA) Keynoted Euruko Helsinki 2022 & [RailsConf 2022](https://www.youtube.com/watch?v=QbcSsDUyW6s)
 * [The Games Developers Play](https://brightonruby.com/2020/the-games-developers-play-andy-croll/) at RubyConf 2018
 * [The Impermanence of Software](https://confreaks.tv/videos/rubyconf2017-keynote-the-impermanence-of-software) Keynoted at RubyConf 2017 & [GORUCO 2018](https://www.youtube.com/watch?v=YTQf2ZbUSb4), Bath Ruby 2018, Ruby on Ice 2018
 * [Your Own Images as a Service](https://confreaks.tv/videos/rubyconf2015-your-own-images-as-a-service) at RubyConf 2015
