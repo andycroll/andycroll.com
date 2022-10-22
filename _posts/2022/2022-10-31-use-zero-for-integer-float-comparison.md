@@ -52,7 +52,7 @@ It is very easy to type `number = 0` and thus assign a variable in the condition
 
 ## Why not?
 
-This is a habit I still struggle with after 15 years of Ruby programming. The `== 0` syntax is how _many_ other similar languages do comparison and is deeply ingrained in my fingers!
+The `== 0` syntax is how _many_ other similar languages perform comparison and is deeply ingrained in my fingers. I still struggle to apply this advice even after 15 years of Ruby programming.
 
 You might get folks pushing back for “performance” reasons.
 
