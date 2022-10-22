@@ -28,7 +28,11 @@ Running a (mostly?) fortnightly Ruby techniques newsletter: One Ruby Thing. Rest
 
 -----
 
-I'm CTO at [CoverageBook](https://coveragebook.com) & [AnswerThePublic](https://answerthepublic.com).
+I'm CTO at [CoverageBook](https://coveragebook.com). We sold [AnswerThePublic](https://answerthepublic.com) in early 2022.
+
+-----
+
+Kickstarted a global mentorship programme at [First #RubyFriend](https://firstrubyfriend.org), you should head there to mentor.
 
 -----
 
@@ -39,6 +43,8 @@ The Brighton Ruby User Group is currently furloughed, it’ll be back.
 
 ### Speaking
 
+* [The Mrs Triggs Problem](https://www.youtube.com/watch?v=0UcTD49KugA) Keynoted Euruko Helsinki 2022
+* [The Games Developers Play](https://brightonruby.com/2020/the-games-developers-play-andy-croll/) at RubyConf 2018
 * [The Games Developers Play](https://brightonruby.com/2020/the-games-developers-play-andy-croll/) at RubyConf 2018
 * [The Impermanence of Software](https://confreaks.tv/videos/rubyconf2017-keynote-the-impermanence-of-software) Keynoted at RubyConf 2017 & [GORUCO 2018](https://www.youtube.com/watch?v=YTQf2ZbUSb4), Bath Ruby 2018, Ruby on Ice 2018
 * [Your Own Images as a Service](https://confreaks.tv/videos/rubyconf2015-your-own-images-as-a-service) at RubyConf 2015
@@ -48,5 +54,3 @@ The Brighton Ruby User Group is currently furloughed, it’ll be back.
 ### Before...
 
 Also ran, then sold, [Life.Time.Value.](https://ltvconf.com), a conference for people looking to make the leap into internet-focussed product or Software as a Software businesses.
-
-Helping teams with their products and software engineering practises with [Good Scary](https://goodscary.com).
