@@ -12,7 +12,7 @@ image:
 
 Compared to other similar languages Ruby often prioritises readability (and joy) when it come to its syntax and methods in its standard library.
 
-An example of this is the common programming comparison of numeric variable to zero.
+An example of this is some syntactic sugar for comparing a value to zero.
 
 See the documentation of the `.zero?` method on [`Integer`](https://ruby-doc.org/core-3.1.2/Integer.html#zero-3F-method), [`Float`](https://ruby-doc.org/core-3.1.2/Float.html#zero-3F-method), [`Numeric`](https://ruby-doc.org/core-3.1.2/Numeric.html#zero-3F-method) and [`BigDecimal`](https://ruby-doc.org/stdlib-3.1.2/libdoc/bigdecimal/rdoc/BigDecimal.html#zero-3F-method).
 
