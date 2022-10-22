@@ -10,7 +10,7 @@ image:
   source: "https://unsplash.com/photos/rfpSOlH1JlQ"
 ---
 
-Ruby often takes a more “readable” approach to its syntax and standard library of included methods than other languages.
+Compared to other similar languages Ruby often prioritises readability (and joy) when it come to its syntax and methods in its standard library.
 
 An example of this is the common programming comparison of numeric variable to zero.
 
