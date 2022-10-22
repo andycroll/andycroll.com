@@ -116,4 +116,4 @@ For `Float`:
 
 The benchmark shows that for `Integer`s the `==` syntax is faster, but for `Float`s the `.zero?` syntax wins out.
 
-However the important thing to note is that in all cases (on my machine) you get about 20 million executions per second so in _your_ code consider the readability over the performance implications!
+However the important thing to note is that in all cases you get millions of executions per second so in _your_ code you should emphasise the readability over any perceived performance implications!
