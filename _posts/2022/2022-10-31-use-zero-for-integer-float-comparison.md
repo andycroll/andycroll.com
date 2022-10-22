@@ -19,7 +19,7 @@ See the documentation of the `.zero?` method on [`Integer`](https://ruby-doc.org
 
 ## Instead of...
 
-...checking whether a value is zero in a conditional, how other languages might do it:
+...checking whether a value is equal to zero in a conditional:
 
 ```ruby
 if number == 0
