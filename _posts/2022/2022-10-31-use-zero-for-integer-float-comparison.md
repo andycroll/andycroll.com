@@ -19,7 +19,7 @@ Take a look at the documentation for the `.zero?` method on [`Integer`](https://
 
 ## Instead of...
 
-...checking whether a value is equal to zero in a conditional:
+...checking whether a value is equal to `0` in a conditional:
 
 ```ruby
 if number == 0
