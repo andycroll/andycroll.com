@@ -52,7 +52,7 @@ In the first example, it is very easy to mistakenly type `number = 0` and thus a
 
 ## Why not?
 
-The `== 0` syntax is how _many_ other similar languages perform comparison and is deeply ingrained in my fingers. I still struggle to apply this advice even after 15 years of Ruby programming.
+The `== 0` syntax is how _many_ other similar languages perform comparisons and is deeply ingrained for many of us. I still struggle to apply this advice even after 15 years of Ruby programming.
 
 You might get some folks pushing back for “performance” reasons.
 
