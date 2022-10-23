@@ -47,7 +47,7 @@ end
 
 The Ruby-ish syntax is clearer and less error prone.
 
-It is very easy to type `number = 0` and thus assign a variable in the conditional rather than compare (although you might use tests to protect yourself from this particular error).
+In the first example, it is very easy to mistakenly type `number = 0` and thus assign a variable in the conditional rather than perform a comparison (although you might use tests to protect yourself from that particular error).
 
 
 ## Why not?
