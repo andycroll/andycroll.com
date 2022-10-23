@@ -10,7 +10,7 @@ image:
   source: "https://unsplash.com/photos/rfpSOlH1JlQ"
 ---
 
-Compared to other similar languages Ruby often prioritises readability (and joy) when it come to its syntax and methods in its standard library.
+Compared to other similar languages, Ruby often prioritises readability (and joy) when it comes to its syntax and the methods provided in its Standard Library.
 
 An example of this is some syntactic sugar for comparing a value to zero.
 
