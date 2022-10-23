@@ -45,7 +45,7 @@ end
 
 ## Why?
 
-The Ruby-ish syntax in this case is clearer and less error prone.
+The Ruby-ish syntax is clearer and less error prone.
 
 It is very easy to type `number = 0` and thus assign a variable in the conditional rather than compare (although you might use tests to protect yourself from this particular error).
 
