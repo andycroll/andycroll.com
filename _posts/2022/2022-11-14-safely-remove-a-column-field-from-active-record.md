@@ -1,0 +1,71 @@
+---
+title: "Safely Remove a Column from an Active Record Model"
+description: "Avoid migration-related errors when you’re tidying your database"
+layout: article
+category: ruby
+image:
+  base: "2022/safely-remove-a-column-field-from-active-record"
+  alt: "A partial column against flat background"
+  credit: "ANIRUDH"
+  source: "https://unsplash.com/photos/jtiQCAAzLYY"
+---
+
+Adding and deploying additional columns to an Active Record model is easy. Typically the deployment runs your migrations and then the new code that uses that database column is released afterward.
+
+However, when removing a column you can often have errors as the old code (that still references the column) will be running as your migration removes the column from the database. This is because Active Record caches database columns when it spins up a Rails application, without the column actually on the database table it causes exceptions until your app reboots or redeploys.
+
+To avoid this, it's worth a multi-step strategy when removing columns in your database.
+
+
+## Use...
+
+...a multi-step strategy.
+
+First tell Active Record to ignore the column.
+
+```ruby
+class Thing < ApplicationRecord
+  # ...
+  self.ignored_columns = ["old_column"]
+  # ...
+end
+```
+
+This is also a good way to use your test suite to find places you might be still using the column in your application. Once your tests are passing, deploy this code.
+
+In a seperate change you can create the migration to remove the actual database column.
+
+```ruby
+class RemoveOldColumnFromThings < ActiveRecord::Migration[7.0]
+  def change
+    remove_column :things, :old_column
+  end
+end
+```
+
+Then deploy, migrating the column into oblivion.
+
+Then in a final change you can remove the `ignored_columns` line you added in the initial step and deploy once more.
+
+
+## Why?
+
+In a larger team or application, having stable and predictable ways to change your database, without causing errors or downtime is very important.
+
+Rails gives you the tools to change your database but doing it in the production environment of a busy application often requires greater care.
+
+To a certain extent having good test coverage and a healthy process for deploying multiple times a day is a requirement of this method given that this “simple” column removal requires three seperate deployments.
+
+
+### There's a gem for that!
+
+Look into the [`strong_migrations` gem](https://github.com/ankane/strong_migrations) that was developed initially at InstaCart.
+
+It blocks and warns you, with lovely helpful instructions, if your migration has the possibility of blocking reads or writes for more than a few seconds or (like in this case) has a good chance of causing application errors.
+
+
+## Why not?
+
+In small trafficked projects, or the early stages of a Rails application this isn't strictly necessary. You might in this case put up with a handful of errors on deploy.
+
+This is, however, a good habit to begin to exercise.
