@@ -19,7 +19,7 @@ It's worth a multi-step strategy when removing columns in your database.
 
 ## Use...
 
-...a multi-step strategy.
+...this multi-step strategy.
 
 First tell Active Record to ignore the column.
 
