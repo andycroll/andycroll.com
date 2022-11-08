@@ -21,7 +21,7 @@ It's worth a multi-step strategy when removing columns in your database.
 
 ...this multi-step strategy.
 
-First tell Active Record to ignore the column.
+First tell Active Record to ignore the column. This stops the rest of your application being able to reference this column.
 
 ```ruby
 class Thing < ApplicationRecord
