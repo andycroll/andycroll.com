@@ -10,7 +10,7 @@ image:
   source: "https://unsplash.com/photos/jtiQCAAzLYY"
 ---
 
-Adding and deploying additional columns to an Active Record model is easy. Typically the deployment runs your migrations and then the new code that uses that database column is released afterward.
+Adding and deploying new columns to an existing Active Record model is often straightforward. Typically the first deployment runs your migrations and then new code that uses the new database column is released afterward.
 
 However, when removing a column you can often have errors as the old code (that still references the column) will be running as your migration removes the column from the database. This is because Active Record caches database columns when it spins up a Rails application, without the column actually on the database table it causes exceptions until your app reboots or redeploys.
 
