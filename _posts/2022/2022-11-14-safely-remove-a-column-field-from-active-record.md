@@ -54,7 +54,7 @@ In a larger team or application, having stable and predictable ways to change yo
 
 Rails gives you the tools to change your database but doing it in the production environment of a busy application often requires greater care.
 
-To a certain extent having good test coverage and a healthy process for deploying multiple times a day is a requirement of this method given that this “simple” column removal requires three seperate deployments.
+To a certain extent having good test coverage and a healthy process for deploying multiple times a day is a prerequisite of this method given that this “simple” column removal requires three seperate deployments.
 
 
 ### There's a gem for that!
