@@ -14,7 +14,7 @@ Adding and deploying new columns to an existing Active Record model is often str
 
 However, when removing a column you can often have errors as the old code (that still references the column) will be running as your migration removes the column from the database. This is because Active Record caches database columns when it spins up a Rails application, without the column actually on the database table it causes exceptions until your app reboots or redeploys.
 
-To avoid this, it's worth a multi-step strategy when removing columns in your database.
+It's worth a multi-step strategy when removing columns in your database.
 
 
 ## Use...
