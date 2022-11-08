@@ -68,4 +68,4 @@ It blocks potentially dangerous migrations and warns you, with lovely helpful in
 
 In projects with low traffic, or during the early stages of a Rails application, this isn't strictly necessary. In cases like this, you're likely fine putting up with a handful of errors on deploy.
 
-This is, however, a good habit to begin to exercise.
+Still, this is a good habit to begin to exercise as early as possible!
