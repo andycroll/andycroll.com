@@ -61,7 +61,7 @@ To a certain extent having good test coverage and a healthy process for deployin
 
 Look into the [`strong_migrations` gem](https://github.com/ankane/strong_migrations) that was initially developed at InstaCart.
 
-It blocks and warns you, with lovely helpful instructions, if your migration has the possibility of blocking reads or writes for more than a few seconds or (like in this case) has a good chance of causing application errors.
+It blocks potentially dangerous migrations and warns you, with lovely helpful instructions, if you code might block reads or writes for more than a few seconds or (like in this case) has a good chance of causing application errors.
 
 
 ## Why not?
