@@ -45,7 +45,7 @@ end
 
 Then deploy, migrating the column into oblivion.
 
-Then in a final change, remove the `ignored_columns` line you added for the initial step and deploy once more.
+After that, in a final change, remove the `ignored_columns` line you added for the initial step and deploy once more.
 
 
 ## Why?
