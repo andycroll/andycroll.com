@@ -19,7 +19,7 @@ It's also worth a multi-step strategy when removing columns in your database.
 
 ## Use...
 
-...this multi-step strategy.
+...this multi-step strategy:
 
 First tell Active Record to ignore the column. This stops the rest of your application being able to reference this column.
 
