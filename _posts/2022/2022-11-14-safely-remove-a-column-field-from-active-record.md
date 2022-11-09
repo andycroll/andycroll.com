@@ -50,7 +50,7 @@ After that, in a final change, remove the `ignored_columns` line you added for t
 
 ## Why?
 
-In a larger team or application, having stable and predictable ways to change your database, without causing errors or downtime is very important.
+In a larger team or application, having stable and predictable ways to change your database, without causing errors or downtime, is very important.
 
 Rails gives you the tools to change your database but doing it in the production environment of a busy application often requires greater care.
 
