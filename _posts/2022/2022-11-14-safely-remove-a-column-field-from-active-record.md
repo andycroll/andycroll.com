@@ -31,7 +31,7 @@ class Thing < ApplicationRecord
 end
 ```
 
-You can use your test suite to find places you might be still using the column in your application. Once your tests are passing, deploy this code.
+You can use your test suite to find places you might be still using the column, if you haven't already removed usage of it, in your application. Once your tests are passing, deploy this code.
 
 Then, create the migration to remove the actual database column:
 
