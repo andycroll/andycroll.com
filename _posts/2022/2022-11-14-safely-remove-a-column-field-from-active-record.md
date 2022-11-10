@@ -33,7 +33,7 @@ end
 
 You can use your test suite to find places you might be still using the column in your application. Once your tests are passing, deploy this code.
 
-Then, create the migration to remove the actual database column.
+Then, create the migration to remove the actual database column:
 
 ```ruby
 class RemoveOldColumnFromThings < ActiveRecord::Migration[7.0]
