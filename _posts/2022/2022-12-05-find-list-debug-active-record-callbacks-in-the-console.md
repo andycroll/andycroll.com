@@ -1,5 +1,5 @@
 ---
-title: "Fimd out what Callbacks are defined on an Active Record model in the console"
+title: "Find out what callbacks are defined on an Active Record model in the console"
 description: "Sometimes it's hars to know"
 layout: article
 category: ruby
