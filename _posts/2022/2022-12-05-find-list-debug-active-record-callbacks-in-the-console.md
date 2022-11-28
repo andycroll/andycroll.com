@@ -70,7 +70,7 @@ The code above just pulls out the "headline" methdo calls
 
 In the specific code above I’ve presumed the following:
 
-You aren't interested in seeing all the validations, like `validates_presence_of :attribute`, on a model these are stored in the callback chain as well. Hence `next if k = : validate`.
+You aren't interested in seeing all the validations: code like `validates_presence_of :attribute` creates a an entry in callback chain. We skip displaying these with `next if k == :validate`.
 
 You aren't interested in the callbacks that automatically save the values of associated models where you `have_many :related_models`. Hence `next if c.filter.to_s.include?("autosave")`.
 
