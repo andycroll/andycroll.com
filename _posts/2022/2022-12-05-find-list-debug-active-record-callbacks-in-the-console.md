@@ -10,7 +10,7 @@ image:
   source: "https://unsplash.com/photos/71CjSSB83Wo"
 ---
 
-I was recently asked by my [First #RubyFriend mentee](https://firstrubyfriend.org) how to list the callbacks present on an Active Record model. I didn't know.
+I was recently asked by my [First #RubyFriend](https://firstrubyfriend.org) mentee how to list the callbacks present on an Active Record model. I didn't know.
 
 The situation was a large legacy codebase with some large models constructed across multiple files, using various gems, custom callbacks and concerns. It was very hard to parse the callbacks by reading across multiple files.
 
