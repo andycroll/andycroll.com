@@ -86,4 +86,4 @@ I tend to limit my use of callbacks as much as possible due to the ease with whi
 
 Please don’t use this code in production. It's _only_ for debugging and helping you to understand a new codebase.
 
-I can't think of a reason to use it in application code off the top of my head, but I’m presuming this is mostly internal Rails API and is subject to change.
+I can't think of a reason to use this in application code. Furthermore, the `__` prefix in the method name indicates this is mostly based on Rails’s internal API and is subject to change.
