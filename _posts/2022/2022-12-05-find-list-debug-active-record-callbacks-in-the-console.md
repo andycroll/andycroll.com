@@ -79,7 +79,7 @@ You aren't interested in the callbacks that automatically save the values of ass
 
 When you’re new to a complex application this may be useful as a debugging tool.
 
-I tend to limit my use of callbacks as much as possible due to the ease with which I‘ve confused myself before, but if you’re in an unfamilar applicaiton that uses them a lot, I hope this code helps your investigation.
+I tend to limit my use of callbacks as much as possible due to the ease with which I‘ve confused myself before, but if you’re in a code base that uses them a lot, this might get you up to speed with the existing behaviour.
 
 
 ## Why not?
