@@ -12,7 +12,7 @@ image:
 
 I was recently asked by my [First #RubyFriend](https://firstrubyfriend.org) mentee how to list the callbacks present on an Active Record model. I didn't know.
 
-The situation was a large legacy codebase with some large models constructed across multiple files, using various gems, custom callbacks and concerns. It was very hard to parse the callbacks by reading across multiple files.
+They were looking at a vast legacy codebase with some large models defined across multiple files. The models used various gems, custom callbacks and concerns. It was very hard to parse what methods and behaviours the callbacks were causing.
 
 So I found a mention of debugging callbacks in the [Rails API documentation](https://api.rubyonrails.org/classes/ActiveRecord/Callbacks.html#module-ActiveRecord::Callbacks-label-Debugging+callbacks) and after a little digging built a simple loop you can use to find the callbacks defined on an Active Record model.
 
