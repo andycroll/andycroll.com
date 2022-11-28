@@ -26,7 +26,7 @@ Open the console.
 bin/rails console
 ```
 
-Paste this code into the console to see the user-defined callbacks on a model.
+Paste this code into the console to see the user-defined callbacks on a model:
 
 ```ruby
 YourModel.__callbacks.each_with_object(Hash.new([])) do |(k, callbacks), result|
