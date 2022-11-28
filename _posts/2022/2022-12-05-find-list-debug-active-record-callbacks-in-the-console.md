@@ -64,7 +64,7 @@ You can also see a dynamic `Proc`-based callback inserted by our use of the `mon
 
 ## How does this work?
 
-The `#__callbacks` method on a model is [defined as a Class method via Active Support](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/callbacks.rb#L68). If accessed directly (like `YourModel.__callbacks`) it contains all the details of the logic performed by an Active Record instance before or after changing its state.
+The `#__callbacks` method on a model is [defined as a class method via Active Support](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/callbacks.rb#L68). If accessed directly, like calling `YourModel.__callbacks`, it return all the details of the logic performed by an Active Record instance before or after changing its state.
 
 The code above just pulls out the "headline" methdo calls
 
