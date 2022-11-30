@@ -57,7 +57,7 @@ For the `User` object in my application, which uses [the Devise gem](https://git
 }
 ```
 
-Here you can see the callbacks inserted into the `User` model by our configuration of the `devise` gem. These aren't listed in the `app/models/user.rb` file.
+Here you can see the callbacks inserted into the `User` model based on our configuration of the `devise` gem. These aren't listed in the `app/models/user.rb` file.
 
 You can also see a dynamic `Proc`-based callback inserted by our use of the `money-rails` gem.
 
