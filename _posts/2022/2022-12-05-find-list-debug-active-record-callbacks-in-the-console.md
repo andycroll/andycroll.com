@@ -70,7 +70,7 @@ The code above only pulls out the main method calls.
 
 In the specific code above I’ve presumed the following:
 
-You aren't interested in seeing all of the validations: code like `validates_presence_of :attribute` creates an entry in the callback chain. We skip displaying these with `next if k == :validate`.
+You aren't interested in seeing all of the validations. Code like `validates_presence_of :attribute` creates an entry in the callback chain. We skip displaying these with `next if k == :validate`.
 
 You aren't interested in the callbacks that automatically save the values of associated models where you `have_many :related_models`. Hence `next if c.filter.to_s.include?("autosave")`.
 
