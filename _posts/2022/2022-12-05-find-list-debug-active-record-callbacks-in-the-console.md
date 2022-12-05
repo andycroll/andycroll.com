@@ -42,7 +42,7 @@ YourModel.__callbacks.each_with_object(Hash.new([])) do |(k, callbacks), result|
 end
 ```
 
-For the `User` object in my application, which uses [the Devise gem](https://github.com/heartcombo/devise) for authentication, the results look like:
+For the `User` object in my application, which uses [the Devise gem](https://github.com/heartcombo/devise) for authentication, the results look like this:
 
 ```ruby
 => {
