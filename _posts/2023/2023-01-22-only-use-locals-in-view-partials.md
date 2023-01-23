@@ -11,7 +11,7 @@ image:
 
 ---
 
-The Rails view layer is incredibly flexible, but can easily become tricky to manage even though it’s the main way our users and customers access our work.
+The Rails view layer, the main way our users and customers access our work, is incredibly flexible, but it can easily become tricky to manage.
 
 https://guides.rubyonrails.org/layouts_and_rendering.html#using-partials
 
