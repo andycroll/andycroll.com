@@ -76,4 +76,4 @@ If you do go down the variable route you can protect against the sort of issues 
 
 View partials, unless very well marshalled, can get disorganised and “messy” very quickly. Even when you’re using them without assuming global state.
 
-You might want to consider, on larger projects, reaching for some kind of component system. The main solution in the Rails world for this is [ViewComponent](https://viewcomponent.org/) which is used at Github. There’s also the [Phlex](https://www.phlex.fun/) library which is under very active development.
+For larger projects, you might want to consider reaching for some kind of component system. The primary solution in the Rails world for this is [ViewComponent](https://viewcomponent.org/) which is used at GitHub. There’s also the [Phlex](https://www.phlex.fun/) library, which is under very active development.
