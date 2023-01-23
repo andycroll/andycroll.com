@@ -47,7 +47,7 @@ Many Ruby teams
 
 This is primarily a good practice for better maintenance and organisation in more complex projects. Rails explicitly allows a vast global scope in its view environment, but many experienced developers (including me) have got themselves in trouble by reaching outside of a partial for a variable.
 
-Additionally, by not using instance variables or “helper-ed” methods (like `current_user` or Rails’s CurrentAttributes) within your partials you make them more reliably cache-able, because the values you’re passing into them will be all the context required to build a cache key. Without this it would be possible to accidentally serve a cached partial with incorrectly scoped data.
+Additionally, by not using instance variables or helper methods (like `current_user` or Rails’s CurrentAttributes) within your partials you make them more reliably cache-able, because the values you’re passing into them will be all the context required to build a cache key. Without this it would be possible to accidentally serve a cached partial with incorrectly-scoped data.
 
 For example:
 
