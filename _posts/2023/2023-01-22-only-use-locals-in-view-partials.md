@@ -60,6 +60,8 @@ For example:
 <%= link_to "Edit", edit_thing_path(thing) if @user.admin? %>
 ```
 
+The issue here is the user of `@user` in the partial.
+
 Multiple users will get the same partial pulled from the cache, either with the link to “Edit” or without, depending on which user rendered the page first. In addition you might not want the non-admin users to see the link, exposing a potential security hole.
 
 
