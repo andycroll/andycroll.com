@@ -69,7 +69,7 @@ Multiple users will get the same partial pulled from the cache, either with the 
 
 There’s no _harm_ in using your globally scoped powers, if you’re careful. One of the benefits of using Rails when you first learn is its flexibility and ability to just _do stuff_. However as a project continues to grow in scope this flexibility can be a source of surprising bugs. This flexibility is often referred to as one of [Rails’s "sharp knives"](https://rubyonrails.org/doctrine#provide-sharp-knives), useful but easy to hurt yourself if you are not careful.
 
-With judicious and comprehensive testing (which you might want anyway) you can protect against the sort of issues you might see above.
+If you do go down the variable route you can protect against the sort of issues you might see above with judicious and comprehensive testing.
 
 
 #### Recommendation
