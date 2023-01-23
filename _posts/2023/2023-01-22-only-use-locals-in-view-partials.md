@@ -13,9 +13,7 @@ image:
 
 The Rails view layer, the main way our users and customers access our work, is incredibly flexible, but it can easily become tricky to manage.
 
-https://guides.rubyonrails.org/layouts_and_rendering.html#using-partials
-
-Many Ruby teams 
+It is easy to introduce bugs and scoping issues when using the views and [partials](https://guides.rubyonrails.org/layouts_and_rendering.html#using-partials) in a more complex Rails application.
 
 ## Instead of…
 
