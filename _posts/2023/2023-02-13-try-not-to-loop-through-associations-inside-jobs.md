@@ -15,7 +15,7 @@ One of the downsides of using Ruby to interact with your database, rather than S
 
 This is typically referred to as an N+1 problem. they occur most often seen when you display an Active Record object in a view and show all of the associated records that `belong_to` to it. When lots of records _do_ need to be loaded or saved to the database you can putting this heavier database work in asynchronous jobs.
 
-However, it’s too easy to underestimate how different production data is from your local machine and end up with long running loops _inside_ those jobs.
+However, it’s too easy to underestimate how different production data is from your local machine and therefore it‘s easy to end up with long running loops _inside_ those jobs.
 
 
 ## Instead of…
