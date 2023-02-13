@@ -11,7 +11,7 @@ image:
 
 ---
 
-One of the downside of using an level of abstraction above your database is that it’s easy to accidentally give yourself performance headaches via running multiple very similar queries.
+One of the downsides of using Ruby to interact with your database, rather than SQL directly, is that it’s easy to accidentally give yourself performance headaches via running multiple very similar queries. Although the advantages of using Active Record (or something similar) are generally worth it!
 
 This is typically referred to as an n+1 problem, which is most often seen when you display an Active Record object in a view and show all of the associated records that `belong_to` to it. We often solve this by putting heavier database work in asynchronous jobs.
 
