@@ -35,7 +35,7 @@ end
 
 ## Use…
 
-…enqueue each update in it's own job:
+…a separate job for each update:
 
 ```ruby
 class UpdateManyCommentsJob < ApplicationJob
