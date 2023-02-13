@@ -58,7 +58,7 @@ end
 
 This is about parallelizing your work as much as possible and keeping each element of the work small.
 
-Mike Perham, the author of [sidekiq](https://sidekiq.org)—who knows a thing or two about jobs—[suggests](https://github.com/mperham/sidekiq/wiki/Best-Practices#3-embrace-concurrency) that you “design your jobs so you can run lots of them in parallel”. In the proposed solution you end up with a single parent job enqueuing lots of sub-jobs rather than one long-running job making lots of database calls. This results in multiple benefits.
+Mike Perham, the author of [sidekiq](https://sidekiq.org)—who therefore knows a thing or two about jobs—[suggests](https://github.com/mperham/sidekiq/wiki/Best-Practices#3-embrace-concurrency) that you “design your jobs so you can run lots of them in parallel”. In the proposed solution you end up with a single parent job enqueuing lots of sub-jobs rather than one long-running job making lots of database calls. This results in multiple benefits.
 
 Providing you are running multiple workers on your background queue the total time taken to do the updates will be greatly reduced as the individual updates can be done in parallel, rather than serially in the loop.
 
