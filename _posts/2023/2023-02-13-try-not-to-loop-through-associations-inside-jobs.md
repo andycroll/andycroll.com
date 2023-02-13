@@ -56,7 +56,7 @@ end
 
 ## Why?
 
-This is about parallelizing your work as much as possible and keeping each element of the work small. In this solution
+This is about parallelizing your work as much as possible and keeping each element of the work small.
 
 Mike Perham, the author of [sidekiq](https://sidekiq.org)—who knows a thing or two about jobs—[suggests](https://github.com/mperham/sidekiq/wiki/Best-Practices#3-embrace-concurrency) that you “design your jobs so you can run lots of them in parallel”. In the proposed solution you end up with a single parent job enqueuing lots of sub-jobs rather than one long-running job making lots of database calls. This results in multiple benefits.
 
