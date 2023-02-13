@@ -4,7 +4,7 @@ description: "Your local data isn’t the same as in production"
 layout: article
 category: ruby
 image:
-  base: '2022/try-not-to-loop-through-associations-inside-jobs'
+  base: '2023/try-not-to-loop-through-associations-inside-jobs'
   alt: "Roller coaster loops"
   credit: "Priscilla Du Preez"
   source: "https://unsplash.com/photos/FOsina4f7qM"
