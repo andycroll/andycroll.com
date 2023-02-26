@@ -13,7 +13,7 @@ image:
 
 If you ever needed to set a default value in an Active Record model, you probably used a callback.
 
-Since Rails 5.0 there’s [been a better way](https://edgeguides.rubyonrails.org/5_0_release_notes.html#active-record-attributes-api). I had missed it until recently.
+Since Rails 5.0 there’s [been a better way](https://edgeguides.rubyonrails.org/5_0_release_notes.html#active-record-attributes-api). I had missed it until recently (thanks [Moses](https://twitter.com/Gathukumose/status/1615298667031797760)!).
 
 
 ## Instead of…
@@ -59,8 +59,8 @@ There’s a lot more going on [in the Attributes API](https://api.rubyonrails.or
 
 ## Why not?
 
-Ideally, from a data perspective, it'd be good to set these defaults in the database schema and to disallow `NULL` values to be written to the database for that attribute (if that's the desired behaviour).
+Ideally, from a data integrity perspective, it'd be good to set these defaults in the database schema.
 
-Using a database constraint only means a call to Model.new won’t have the default value in the unsaved model, so you may wish to combine these approaches.
+Using a database default means a call to `Model.new` will have the database’s default value set in the unsaved model, so you may not need this approach.
 
-Additionally, beware that setting a default in the Active Record model will overwrite any default set in the database.
+Additionally, beware that setting a default in this way in the Active Record model will overwrite any default set in the database when you call `Model.new`.
