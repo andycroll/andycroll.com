@@ -35,7 +35,7 @@ end
 
 ```ruby
 post.comments.find_each do |comment|
-  # Do stuff with each comment: enqueue a job?
+  # Do stuff with each comment: enqueue a job
 end
 ```
 
