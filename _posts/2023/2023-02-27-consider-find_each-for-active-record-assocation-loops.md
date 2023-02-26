@@ -13,7 +13,7 @@ image:
 
 The standard method for enumerating through groups of objects, both through arrays in Ruby and through Active Record models in Rails, is `each`.
 
-However, if you are looping over all the records for a model (perhaps to backfill data) or even over a large association you can encounter severe memory and speed issues both loading and processing enormous amounts of records as you loop.
+However, if you are looping over a large amount of data, perhaps all the records for a model in order to backfill data, you can encounter severe memory and speed issues, both with loading and processing large volumes of records.
 
 You should consider the functionality provided by [Active Record’s Batches](https://api.rubyonrails.org/classes/ActiveRecord/Batches.html), we’ll demonstrate using `find_each`.
 
