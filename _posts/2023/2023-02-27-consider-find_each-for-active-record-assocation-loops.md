@@ -57,6 +57,6 @@ If you need to see the records in a particular order, `.find_each` doesn't suppo
 
 If you need to modify the records in place this sort of looping isn’t ideal. For example, if you’re running an `#update` on each record, you could consider other more appropriate methods like `#update_all`.
 
-You should also be aware that if you’re looping over all the associated records you should _not_ be doing that to send it to view. Having an unbounded loop in view code when you don't know how many records you’ll have is a recipe for enormous pages and poor user experience, even if you do use `.find_each`. Consider [using pagination](/ruby/do-not-use-all-without-pagination-or-limit).
+Don't use this to generate view code, either the `each` _or_ `find_each` version. Having an unlimited loop in view code when you don't know how many records you’ll have is a recipe for slow pages and poor user experience. Consider [using pagination](/ruby/do-not-use-all-without-pagination-or-limit) instead.
 
 On the other end of the scale the Rails guides suggest `find_each` is only for processing a large number of records that wouldn't fit in memory all at once. If you just need to loop over less than “a thousand” records the regular methods are recommended.
