@@ -46,7 +46,7 @@ Using `each` makes _one_ SQL call to the database and tries to load the entire s
 
 This is a problem in two dimensions. First the database query may take a long time to execute or may time out. Second, when (or if) it does return data, there’s likely to be significant memory usage as it loads all the records into memory in order to loop over them. 
 
-Using `.find_each` makes a series of more efficient SQL queries (with a bunch of sensible defaults) and uses a cursor-based approach to retrieve records from the database, which can be more efficient than loading all records into memory at once.
+Using `.find_each` makes a series of more efficient SQL queries (with a bunch of sensible defaults) to retrieve records from the database, which is often a lot more efficient than loading all records into memory at once.
 
 
 ## Why not?
