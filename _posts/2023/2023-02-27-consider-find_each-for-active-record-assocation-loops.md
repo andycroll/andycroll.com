@@ -15,7 +15,7 @@ The standard method for enumerating through groups of objects, both through arra
 
 However, if you are looping over a large amount of data, perhaps all the records for a model in order to backfill data, you can encounter severe memory and speed issues, both with loading and processing large volumes of records.
 
-You should consider the functionality provided by [Active Record’s Batches](https://api.rubyonrails.org/classes/ActiveRecord/Batches.html), we’ll demonstrate using `find_each`.
+You should consider the functionality provided by [Active Record’s Batches](https://api.rubyonrails.org/classes/ActiveRecord/Batches.html). We’ll demonstrate using `find_each`.
 
 
 ## Instead of…
