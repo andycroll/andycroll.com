@@ -1,0 +1,66 @@
+---
+title: "Assign a default value to an attribute in Active Record"
+description: "You’ve probably been using callbacks. Don’t."
+layout: article
+category: ruby
+image:
+  base: '2023/assign-default-to-an-attribute-active-record'
+  alt: "Blank wood"
+  credit: "Keith Misner"
+  source: "https://unsplash.com/photos/h0Vxgz5tyXA"
+
+---
+
+If you ever needed to set a default value in an Active Record model, you probably used a callback.
+
+Since Rails 5.0 there’s [been a better way](https://edgeguides.rubyonrails.org/5_0_release_notes.html#active-record-attributes-api). I had missed it until recently.
+
+
+## Instead of…
+
+…assigning a default value in a callback:
+
+```ruby
+class Message
+  before_validation :assign_delivered_at
+
+  # ...
+
+  private
+
+  def assign_delivered_at
+    delivered_at ||= Time.zone.now
+  end
+end
+```
+
+
+## Use…
+
+…the attribute API from Active Record:
+
+```ruby
+class Message
+  attribute :delivered_at, default: -> { Time.zone.now }
+
+  # ...
+end
+```
+
+
+## Why?
+
+Callbacks can be confusing to understand even when there's a good reason to use them. Generally the less you use them the less surprises you’ll have at a later date.
+
+This more recent API is terser, clearer and _the way_ Rails recommends to execute this behaviour.
+
+There’s a lot more going on [in the Attributes API](https://api.rubyonrails.org/classes/ActiveRecord/Attributes/ClassMethods.html)—Dirty tracking, type casting, attributes not backed by the database—but in this case we’re only using the default-setting capability.
+
+
+## Why not?
+
+Ideally, from a data perspective, it'd be good to set these defaults in the database schema and to disallow `NULL` values to be written to the database for that attribute (if that's the desired behaviour).
+
+Using a database constraint only means a call to Model.new won’t have the default value in the unsaved model, so you may wish to combine these approaches.
+
+Additionally, beware that setting a default in the Active Record model will overwrite any default set in the database.
