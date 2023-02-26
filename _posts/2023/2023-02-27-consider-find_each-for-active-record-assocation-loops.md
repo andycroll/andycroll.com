@@ -31,7 +31,7 @@ end
 
 ## Use…
 
-…use `.find_each` to more efficiently load records from the database:
+…`.find_each` to more efficiently load records from the database:
 
 ```ruby
 post.comments.find_each do |comment|
