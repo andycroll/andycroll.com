@@ -51,7 +51,7 @@ Using `.find_each` makes a series of more efficient SQL queries (with a bunch of
 
 ## Why not?
 
-At a certain size you’ll need to move on from looping over every record.
+At large scale you’ll need to use even more advanced techniques and you’ll have to move beyond long running loops over every record. Perhaps to reduce a high volume of read/write operations on your database, perhaps to try and get this loop to run in minutes rather than hours!
 
 If you need to see the records in a particular order, `.find_each` doesn't support that.
 
