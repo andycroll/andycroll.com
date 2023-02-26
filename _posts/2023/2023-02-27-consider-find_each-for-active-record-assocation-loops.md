@@ -42,7 +42,7 @@ end
 
 ## Why?
 
-Using `each` makes _one_ SQL call to the database and tries to load the entire set of objects into memory and then loop over them. It’s the same as calling `post.comments.all.each` in the first example.
+Using `each` makes _one_ SQL call to the database and tries to load the entire set of objects into memory and then loop over them. It’s the same as if you'd called `post.comments.all.each` instead in the first example.
 
 This is problem in two dimensions. Firstly the database query may take a long time to execute or may timeout. Secondly, when (and if) it does, there’s likely to be significant memory usage as it loads all the records into memory in order to loop over them. 
 
