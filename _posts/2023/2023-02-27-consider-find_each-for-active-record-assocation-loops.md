@@ -51,12 +51,12 @@ Using `.find_each` makes a series of more efficient SQL queries (with a bunch of
 
 ## Why not?
 
-At large scale you’ll need to use even more advanced techniques and you’ll have to move beyond long running loops over every record. Perhaps to reduce a high volume of read/write operations on your database, perhaps to try and get this loop to run in minutes rather than hours!
-
 If you need to see the records in a particular order, `.find_each` doesn't support that.
 
-If you need to modify the records in place this sort of looping isn’t ideal. For example, if you’re running an `#update` on each record, you’ll be executing _a lot_ of queries, you could consider other more appropriate methods for bulk updating methods such as `#update_all`.
+If you need to modify the records in place, this sort of looping isn’t ideal. For example, if you’re running an `#update` on each record, you’ll be executing _a lot_ of queries. Instead consider more appropriate methods for bulk updating methods, such as `#update_all`.
 
-Don't use this to generate view code, either the `each` _or_ `find_each` version. Having an unlimited loop in view code when you don't know how many records you’ll have is a recipe for slow pages and poor user experience. Consider [using pagination](/ruby/do-not-use-all-without-pagination-or-limit) instead.
+Don't use either the each or find_each version to generate view code. Having a view large collection to loop through in view code, given you don't know how many records you’ll have, is a recipe for slow pages and poor user experience. Consider [using pagination](/ruby/do-not-use-all-without-pagination-or-limit) instead.
 
 The Rails guides suggest `find_each` is only needed for processing a large number of records that wouldn't fit in memory all at once. If you only need to loop over fewer than one thousand records the regular methods are fine/recommended.
+
+At large scale you’ll need to use even more advanced techniques and you’ll have to move beyond long running loops. Perhaps you want to reduce a high volume of read/write operations on your database or you want to cut down execution time from minutes to hours!
