@@ -1,6 +1,6 @@
 ---
 title: "Consider find_each for looping through Active Record associations"
-description: "Rarely used, but protects you against foot shooting"
+description: "Protects you against looping and foot shooting"
 layout: article
 category: ruby
 image:
