@@ -51,7 +51,7 @@ Using `.find_each` makes a series of more efficient SQL queries (with a bunch of
 
 ## Why not?
 
-If you need to see the records in a particular order, `.find_each` doesn't support that, it only uses the primary key. For this reason, `find_each` doesn’t work reliably if your model has a UUID primary key, as UUIDs aren’t sequential. This means that it’s possible to skip records if new data is being added while you’re looping.
+If you need to see the records in a particular order, `.find_each` doesn't support that, it only uses the primary key to sort during the loop. Also for this reason, `find_each` doesn’t work reliably if your model has a UUID primary key, as UUIDs aren’t sequential. This means that it’s possible to skip records if new data is being added while you’re looping. (Thanks [Iain](https://ruby.social/@iainbeeston/109936096436381721))
 
 If you need to modify the records in place, this sort of looping isn’t ideal. For example, if you’re running an `#update` on each record, you’ll be executing _a lot_ of queries. Instead consider more appropriate methods for bulk updating methods, such as `#update_all`.
 
