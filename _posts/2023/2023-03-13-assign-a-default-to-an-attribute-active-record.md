@@ -63,4 +63,4 @@ Ideally, from a data integrity perspective, it'd be better to set these defaults
 
 Setting a default at the database level means Active Record will pull that value into a new, unsaved, model, so you’d be unlikely to need this approach.
 
-Additionally, beware that setting a default in this way in the Active Record model will _overwrite_ any default set in the database when you call `Model.new`. Unless you're deliberately changing the default in using Rails you don’t need to specify using the Attributes API as well.
+Additionally, beware that setting a default in the Active Record model, as shown earlier, will _overwrite_ any default set in the database when you call `Model.new`. Unless you're deliberately looking to change the default when using Rails you don’t need to specify one using the Attribute API as well.
