@@ -61,6 +61,6 @@ There’s a lot more going on [in this API](https://api.rubyonrails.org/classes/
 
 Ideally, from a data integrity perspective, it'd be better to set these defaults in the database schema.
 
-Using a database default means a call to `Model.new` will have the database’s default value set in the unsaved model, so you may not need this approach.
+Setting a default at the database level means Active Record will pull that value into a new, unsaved, model, so you may not need this approach.
 
 Additionally, beware that setting a default in this way in the Active Record model will overwrite any default set in the database when you call `Model.new`. Active Record already pulls defaults from your database schema, so you don’t need to specify here as well.
