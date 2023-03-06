@@ -37,7 +37,7 @@ end
 
 ## Use…
 
-…the attribute API from Active Record:
+…the Attribute API from Active Record:
 
 ```ruby
 class Message
