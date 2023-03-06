@@ -59,7 +59,7 @@ There’s a lot more going on [in this API](https://api.rubyonrails.org/classes/
 
 ## Why not?
 
-Ideally, from a data integrity perspective, it'd be good to set these defaults in the database schema.
+Ideally, from a data integrity perspective, it'd be better to set these defaults in the database schema.
 
 Using a database default means a call to `Model.new` will have the database’s default value set in the unsaved model, so you may not need this approach.
 
