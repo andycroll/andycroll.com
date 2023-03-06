@@ -52,7 +52,7 @@ end
 
 Callbacks can be confusing to understand even when there's a good reason to use them. Generally, the less you use them the fewer surprises you’ll have at a later date.
 
-The `attribute` API is terser, clearer and _the way_ Rails recommends to execute this behaviour.
+The `attribute` syntax is terser, clearer and _the way_ Rails recommends to execute this behaviour.
 
 There’s a lot more going on [in this API](https://api.rubyonrails.org/classes/ActiveRecord/Attributes/ClassMethods.html)—attribute changes tracking, type casting, adding attributes not backed by the database—but in this case we’re only using the default-setting capability.
 
