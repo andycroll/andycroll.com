@@ -61,6 +61,6 @@ There’s a lot more going on [in this API](https://api.rubyonrails.org/classes/
 
 Ideally, from a data integrity perspective, it'd be better to set these defaults in the database schema.
 
-Setting a default at the database level means Active Record will pull that value into a new, unsaved, model, so you may not need this approach.
+Setting a default at the database level means Active Record will pull that value into a new, unsaved, model, so you’d be unlikely to need this approach.
 
 Additionally, beware that setting a default in this way in the Active Record model will _overwrite_ any default set in the database when you call `Model.new`. Unless you're deliberately changing the default in using Rails you don’t need to specify using the Attributes API as well.
