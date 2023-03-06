@@ -50,7 +50,7 @@ end
 
 ## Why?
 
-Callbacks can be confusing to understand even when there's a good reason to use them. Generally the less you use them the less surprises you’ll have at a later date.
+Callbacks can be confusing to understand even when there's a good reason to use them. Generally, the less you use them the fewer surprises you’ll have at a later date.
 
 This more recent API is terser, clearer and _the way_ Rails recommends to execute this behaviour.
 
