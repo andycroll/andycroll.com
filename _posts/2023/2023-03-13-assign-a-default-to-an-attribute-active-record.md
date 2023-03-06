@@ -11,7 +11,7 @@ image:
 
 ---
 
-If you ever needed to set a default value in an Active Record model, you probably used a callback.
+If you ever needed to set a default value in an instance of an Active Record model, you probably used a callback.
 
 Since Rails 5.0 there’s [been a better way](https://edgeguides.rubyonrails.org/5_0_release_notes.html#active-record-attributes-api). I had missed it until recently (thanks [Moses](https://twitter.com/Gathukumose/status/1615298667031797760)!).
 
