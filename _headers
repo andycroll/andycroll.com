@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self' cdn.usefathom.com; script-src 'self' *.andycroll.com instant.page cdn.usefathom.com; img-src 'self' images.andycroll.com data: *.andycroll.com
+  Content-Security-Policy: default-src 'self' cdn.usefathom.com; script-src 'self' *.andycroll.com instant.page cdn.usefathom.com; img-src 'self' images.andycroll.com cdn.usefathom.com data: *.andycroll.com
   Link: <https://images.andycroll.com/>; rel=preconnect; crossorigin
   Link: </css/andycroll.css>; rel=preload; as=style; crossorigin
   Link: </fonts/merriweather-regular-webfont.woff2>; rel=preload; as=font; crossorigin
