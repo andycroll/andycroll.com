@@ -73,10 +73,6 @@ In most cases running a small loop of updates on a `has_many` association in a j
 
 Depending on the job you might be able to use other Rails features. You could use `update_all` to do all the updates for an association in one SQL query, but the update will likely have to be simple and no callbacks will run on the associated records.
 
-https://ruby.social/@slimdave/109857575361894630
+I was reminded by [Dave](https://ruby.social/@slimdave/109857575361894630) that it might be tricky to use this technique if you’re using counter caches. Or if your updates need to be transactional.
 
-Might be problematic in the presence of counter caches?
-
-Another thought – if it's important that the updates are transactional (either all fail or all succeed) then that might not be possible with this technique.
-
-Maybe worth noting that it's also likely to be a higher workload for the database, if multiple updates are not wrapped in a transaction, as each update's commit has to wait for data to be flushed to disk. 
+This technique is also likely to lead to a higher workload for the database as your jobs run lots of similar updates in parallel against the same table.
