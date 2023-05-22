@@ -64,9 +64,9 @@ right_now.beginning_of_year
 #=> Sat, 01 Jan 2022 00:00:00.000000000 UTC +00:00
 right_now.all_day
 #=> Mon, 03 Oct 2022 00:00:00.000000000 UTC +00:00..Mon, 03 Oct 2022 23:59:59.999999999 UTC +00:00
-today.all_week
+right_now.all_week
 #=> Mon, 03 Oct 2022 00:00:00.000000000 UTC +00:00..Sun, 09 Oct 2022 23:59:59.999999999 UTC +00:00
-today.all_month
+right_now.all_month
 #=> Sat, 01 Oct 2022 00:00:00.000000000 UTC +00:00..Mon, 31 Oct 2022 23:59:59.999999999 UTC +00:00
 right_now.all_year
 #=> Sat, 01 Jan 2022 00:00:00.000000000 UTC +00:00..Sat, 31 Dec 2022 23:59:59.999999999 UTC +00:00

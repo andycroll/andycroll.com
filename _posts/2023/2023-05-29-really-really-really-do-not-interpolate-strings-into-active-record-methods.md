@@ -1,0 +1,68 @@
+---
+title: "Really, Really, Really Don’t Interpolate Strings into Active Record Methods"
+description: "It’s risky to expose your database to SQL Injections"
+layout: article
+category: ruby
+image:
+  base: '2023/really-really-really-do-not-interpolate-strings-into-active-record-methods'
+  alt: "Tables in a courtyard"
+  credit: "Dimitra Peppa"
+  source: "https://unsplash.com/photos/-abBaVOMsBk"
+
+---
+
+Protecting yourself, and your application, against malicious users is a key responsibility as a developer. The built-in security provided by a well-maintained framework like Rails is a great reason to use one.
+
+This is particularly true of the protection afforded within Active Record for sanitizing user input before it is written to your database. However there are ways to pass strings directly to Active Record scopes, when you need to, however that power should be used _very_ carefully.
+
+
+## Instead of…
+
+…using strings in your arguments to Active Record:
+
+```ruby
+User.delete_by("id = #{params[:id]}")
+User.where("email = #{params[:email]}")
+```
+
+
+## Use…
+
+…hash-based variants of the same methods:
+
+```ruby
+User.delete_by(id: params[:id])
+User.where(email: params[:email])
+```
+
+
+## Why?
+
+Rails is a [sharp knife](https://rubyonrails.org/doctrine#provide-sharp-knives), while it does a lot for developers it also allows you the flexibility to bend the framework to your use case. In this case passing strings to Active Record methods.
+
+Using strings with interpolated (and user-provided) parameters opens you up to SQL injection attacks.
+
+```ruby
+# user-provided parameter
+params[:id] = "1) OR 1=1--"
+User.delete_by("id = #{params[:id]}")
+#=> User Delete All (4.2ms)  DELETE FROM "users" WHERE (id = 1) OR 1=1--)
+```
+
+The `1=1` part of the user-provided string is _always_ true and would run an SQL command to drop every user in your database. Not good.
+
+Interpolating values directly into the arguments can lead to unpredictable behavior and results, not just malicious destructive example like above. You might leak information you hadn't intended.
+
+```ruby
+params[:email] == 
+User.where("email = #{params[:email]}")
+```
+
+Lastly, the string-based arguments make your code harder to read and understand, the syntax for the hash-based syntax is much easier to understand.
+
+
+## Why not?
+
+These are contrived examples. And yet real weaknesses.
+
+If you’re unable to use the hash-style for the specific query you arequire and you really, really, _really,_ know what you’re doing, then use the string-based arguments. But be careful.
