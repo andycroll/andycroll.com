@@ -40,6 +40,8 @@ User.where(email: params[:email])
 
 Rails is a [sharp knife](https://rubyonrails.org/doctrine#provide-sharp-knives). While it does a lot for developers, it also allows you the flexibility to bend the framework to your use case. In this case: passing strings to Active Record methods.
 
+You’re unlikely to reach for string interpolation in the specific examples above given the breadth of support for straightforward database actions in Active Record, but when you have a long and complex SQL query, it is easy to forget to sanitize any user input.
+
 Using strings with interpolated (and user-provided) parameters opens you up to SQL injection attacks.
 
 ```ruby
