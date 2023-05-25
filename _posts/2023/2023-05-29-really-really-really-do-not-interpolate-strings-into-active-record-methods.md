@@ -58,7 +58,7 @@ params[:email] ==
 User.where("email = #{params[:email]}")
 ```
 
-Lastly, the string-based arguments make your code harder to read and understand, the syntax for the hash-based syntax is much easier to understand.
+Finally, the string-based arguments make your code harder to read and understand. The syntax for the hash-based approach is much easier to understand.
 
 
 ## Why not?
