@@ -38,7 +38,7 @@ User.where(email: params[:email])
 
 ## Why?
 
-Rails is a [sharp knife](https://rubyonrails.org/doctrine#provide-sharp-knives), while it does a lot for developers it also allows you the flexibility to bend the framework to your use case. In this case passing strings to Active Record methods.
+Rails is a [sharp knife](https://rubyonrails.org/doctrine#provide-sharp-knives). While it does a lot for developers, it also allows you the flexibility to bend the framework to your use case. In this case: passing strings to Active Record methods.
 
 Using strings with interpolated (and user-provided) parameters opens you up to SQL injection attacks.
 
