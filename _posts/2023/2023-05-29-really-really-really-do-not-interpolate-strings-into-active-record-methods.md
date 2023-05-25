@@ -18,7 +18,7 @@ This is particularly true of the protection afforded within Active Record for sa
 
 ## Instead of…
 
-…using strings in your arguments to Active Record:
+…using strings in any arguments sent to Active Record:
 
 ```ruby
 User.delete_by("id = #{params[:id]}")
