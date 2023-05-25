@@ -65,6 +65,6 @@ Finally, the string-based arguments make your code harder to read and understand
 
 ## Why not?
 
-These are contrived examples. And yet real weaknesses.
+These are contrived examples, yet demonstrate real weaknesses.
 
 If you’re unable to use the hash-style for the specific query you require and you really, really, _really,_ know what you’re doing, then use the string-based arguments. But be careful.
