@@ -51,7 +51,7 @@ User.delete_by("id = #{params[:id]}")
 
 The `1=1` part of the user-provided string above is _always_ true and so would trigger an SQL command that drops every user in your database. Not good.
 
-Interpolating values directly into the arguments can lead to unpredictable behavior and results, not just malicious destructive example like above. You might leak information you hadn't intended.
+Interpolating values directly into the arguments can lead to unpredictable behaviour and results, not just malicious destructive examples like the one above. For example, you might leak information you hadn't intended to.
 
 ```ruby
 params[:email] == 
