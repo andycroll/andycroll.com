@@ -11,7 +11,7 @@ image:
 
 ---
 
-Protecting yourself, and your application, against malicious users is a key responsibility as a developer. The built-in security provided by a well-maintained framework like Rails is a great reason to use one.
+Protecting your application against malicious users is one of your key responsibilites as a developer. The built-in security provided by a well-maintained framework, such as Rails, is an excellent reason to use one.
 
 This is particularly true of the protection afforded within Active Record for sanitizing user input before it is written to your database. However there are ways to pass strings directly to Active Record scopes, when you need to, however that power should be used _very_ carefully.
 
