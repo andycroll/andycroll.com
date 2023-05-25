@@ -65,4 +65,4 @@ Finally, the string-based arguments make your code harder to read and understand
 
 These are contrived examples. And yet real weaknesses.
 
-If you’re unable to use the hash-style for the specific query you arequire and you really, really, _really,_ know what you’re doing, then use the string-based arguments. But be careful.
+If you’re unable to use the hash-style for the specific query you require and you really, really, _really,_ know what you’re doing, then use the string-based arguments. But be careful.
