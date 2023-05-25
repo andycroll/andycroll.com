@@ -49,7 +49,7 @@ User.delete_by("id = #{params[:id]}")
 #=> User Delete All (4.2ms)  DELETE FROM "users" WHERE (id = 1) OR 1=1--)
 ```
 
-The `1=1` part of the user-provided string is _always_ true and would run an SQL command to drop every user in your database. Not good.
+The `1=1` part of the user-provided string above is _always_ true and so would trigger an SQL command that drops every user in your database. Not good.
 
 Interpolating values directly into the arguments can lead to unpredictable behavior and results, not just malicious destructive example like above. You might leak information you hadn't intended.
 
