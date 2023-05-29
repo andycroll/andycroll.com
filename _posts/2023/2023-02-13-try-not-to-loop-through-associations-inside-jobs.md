@@ -72,3 +72,7 @@ Consider loops within jobs a potential source of bugs in production and be wary.
 In most cases running a small loop of updates on a `has_many` association in a job is also fine. Until it isn’t, in production. And this is the point.
 
 Depending on the job you might be able to use other Rails features. You could use `update_all` to do all the updates for an association in one SQL query, but the update will likely have to be simple and no callbacks will run on the associated records.
+
+I was reminded by [Dave](https://ruby.social/@slimdave/109857575361894630) that it might be tricky to use this technique if you’re using counter caches. Or if your updates need to be transactional.
+
+This technique is also likely to lead to a higher workload for the database as your jobs run lots of similar updates in parallel against the same table.
