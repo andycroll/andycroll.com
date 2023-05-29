@@ -56,9 +56,12 @@ The `1=1` part of the user-provided string above is _always_ true and so would t
 Interpolating values directly into the arguments can lead to unpredictable behaviour and results, not just malicious destructive examples like the one above. For example, you might leak information you hadn't intended to.
 
 ```ruby
-params[:q] = "'' OR '1'='1';"
+params[:q] = "'' OR 1=1"
 User.where("email = #{params[:q]}")
+#=> User Load (1.1ms)  SELECT "users".* FROM "users" WHERE (email = '' OR 1=1)
 ```
+
+In this case the resulting SQL actually loads _all_ the users from your database, leaking that information, because the unsanitized `1=1` in the `WHERE` condition in the SQL is always true.
 
 Finally, the string-based arguments make your code harder to read and understand. The syntax for the hash-based approach is much easier to comprehend.
 
