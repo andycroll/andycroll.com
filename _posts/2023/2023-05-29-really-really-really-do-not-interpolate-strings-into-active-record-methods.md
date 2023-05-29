@@ -60,7 +60,7 @@ params[:q] = "'' OR '1'='1';"
 User.where("email = #{params[:q]}")
 ```
 
-Finally, the string-based arguments make your code harder to read and understand. The syntax for the hash-based approach is much easier to understand.
+Finally, the string-based arguments make your code harder to read and understand. The syntax for the hash-based approach is much easier to comprehend.
 
 
 ## Why not?
