@@ -43,7 +43,7 @@ But you can, and folks do, go around it.
 
 ## Why?
 
-This is primarily about defending your application against malicious user input. Using the `<%== something %>` ERB tags in a Rails view template is the same as writing `<%= raw(something) %>` which completely avoids the protections offered by SafeBuffer.
+This is primarily about defending your application against malicious user input. Using the `<%== something %>` ERB tags in a Rails view template is the same as writing `<%= raw(something) %>` which completely avoids the protections offered by `SafeBuffer`.
 
 If you see `<%==` or `<% raw` in your ERB, consider it a bad smell. You should carefully evaluate the context, the source of the data, and the potential security risks before deciding to bypass HTML escaping. In general, don't.
 
