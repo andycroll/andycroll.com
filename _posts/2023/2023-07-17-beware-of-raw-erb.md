@@ -15,7 +15,7 @@ XSS, which stands for Cross-Site Scripting, is a common vulnerability that allow
 
 One of the benefits of frameworks like Rails is that XSS protection is built-in and automatically applied to user-provided content. Rails uses a combination of context-aware output encoding and automatic escaping to mitigate XSS vulnerabilities.
 
-Rails automatically escapes HTML entities when rendering user input within HTML templates by default then uses a special class called `ActiveSupport::SafeBuffer` to handle string concatenation and rendering of user-generated content. `SafeBuffer` is designed to prevent inadvertent double-escaping or bypassing of encoding mechanisms.
+Rails automatically escapes HTML entities when rendering user input within HTML templates by default, and then uses a special class called `ActiveSupport::SafeBuffer` to handle string concatenation and the final rendering of the user-generated content. `SafeBuffer` is designed to prevent inadvertent double-escaping of the string or bypassing of encoding mechanisms.
 
 But you can, and folks do, go around it.
 
