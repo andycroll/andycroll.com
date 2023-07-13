@@ -56,7 +56,7 @@ As the [docs for `html_safe`](http://api.rubyonrails.org/classes/String.html#met
 
 There’s a couple of places you regularly see the use of unescaped HTML.
 
-The [`pagy` gem](https://github.com/ddnexus/pagy) recommends using the raw syntax `<%== pagy_nav(@pagy) if @pagy.pages > 1 %>`. This is safe to use because the output of the `pagy_nav` is handled by the gem and that there's very little risk to XSS as a result.
+The [`pagy` gem](https://github.com/ddnexus/pagy) recommends using the raw syntax `<%== pagy_nav(@pagy) if @pagy.pages > 1 %>`. This is safe to use because the output of `pagy_nav` is handled by the gem and there's very little risk of XSS as a result.
 
 The two reasons you might see this.
 
