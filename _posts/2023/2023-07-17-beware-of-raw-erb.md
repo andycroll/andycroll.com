@@ -29,7 +29,7 @@ But you can, and folks do, go around it.
 
 ## Use…
 
-…Rails’ sanitization methods to ensure content is sanitized before it gets to the view:
+…Rails’s sanitization methods to ensure content is made safe before it gets to the view:
 
 ```ruby
 # In the controller
