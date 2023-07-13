@@ -60,6 +60,6 @@ The [`pagy` gem](https://github.com/ddnexus/pagy) recommends using the raw synta
 
 The are two reasons where you might see this:
 
-One is for performance, because there is a small overhead to managing the sanitization of each of the strings, but if you have a large amount of text you might see a performance benefit from avoiding the escaping.
+One is for performance. There is a small overhead to managing the sanitization of each of the strings. If you have a large amount or very long strings you _may_ see a performance improvement by avoiding the escaping.
 
 The other is where managing the escaping of complicated strings is tricky, but that is _precisely_ where you need to do the work to properly manage potentially treacherous input yourself, or let the framework take the strain.
