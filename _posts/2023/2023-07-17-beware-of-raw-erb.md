@@ -58,7 +58,7 @@ There’s a couple of places you regularly see the use of unescaped HTML.
 
 The [`pagy` gem](https://github.com/ddnexus/pagy) recommends using the raw syntax `<%== pagy_nav(@pagy) if @pagy.pages > 1 %>`. This is safe to use because the output of `pagy_nav` is handled by the gem and there's very little risk of XSS as a result.
 
-The are two reasons where you might see this:
+The are two other cases where using unescaped HTML is okay:
 
 One is for performance. There is a small overhead to managing the sanitization of each string. If you have a large amount or very long strings you _may_ see a performance improvement by avoiding the escaping.
 
