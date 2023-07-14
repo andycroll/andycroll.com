@@ -47,7 +47,7 @@ This is primarily about defending your application against malicious user input.
 
 If you see `<%==` or `<% raw` in your ERB, consider it a bad smell. You should carefully evaluate the context, the source of the data, and the potential security risks before deciding to bypass HTML escaping. In general, don't.
 
-If you look inside [ActiveSupport::SafeBuffer](https://api.rubyonrails.org/classes/ActiveSupport/SafeBuffer.html) you’ll see methods like `html_safe?` which are the methods Rails uses to manage the safety of user input that you're displaying in the browser.
+If you look inside [ActiveSupport::SafeBuffer](https://api.rubyonrails.org/classes/ActiveSupport/SafeBuffer.html), you’ll see methods like `html_safe?`, which are the methods Rails uses to manage the safety of user input that you're displaying in the browser.
 
 As the [docs for `html_safe`](http://api.rubyonrails.org/classes/String.html#method-i-html_safe) say “It should never be called on user input”. You should let Rails do what it is good at.
 
