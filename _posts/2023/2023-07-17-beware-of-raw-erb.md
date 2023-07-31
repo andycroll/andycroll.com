@@ -51,6 +51,13 @@ If you look inside [ActiveSupport::SafeBuffer](https://api.rubyonrails.org/class
 
 As the [docs for `html_safe`](http://api.rubyonrails.org/classes/String.html#method-i-html_safe) say “It should never be called on user input”. You should let Rails do what it is good at.
 
+You might also find [`#safe_join`](https://api.rubyonrails.org/classes/ActionView/Helpers/OutputSafetyHelper.html%23method-i-safe_join) useful. It behaves like `Array#join` but flattens the array, escapes all the unsafe strings, and returns an HTML safe string. h/t [Dorian Marié](https://dorianmarie.fr)
+
+```ruby
+# In the controller
+@some_text_to_render = ["some text ", params[:user_text]].safe_join
+```
+
 
 ## Why not?
 
