@@ -54,6 +54,6 @@ You should be aware that if you’re calling code that enqueues jobs (perhaps us
 
 ## Why not?
 
-If you’re logging into your production application to deliberately make changes to user data then you’ll need to avoid sandbox mode. However I'd recommend seeing if you can test your changes
+If you’re logging into your production application to deliberately make changes to user data then you’ll need to avoid `sandbox` mode. However I'd recommend seeing if you can test your changes in your `sandbox` before _really_ executing them, then that's a good idea.
 
 It’s better if you _are_ making data changes to see if you can deploy well-tested code to make the required changes, rather than “wing it” in the console. It might take longer to make the changes than just spinning up the console, but the extra safety is likely worth it.
