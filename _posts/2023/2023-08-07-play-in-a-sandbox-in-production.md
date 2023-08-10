@@ -29,7 +29,7 @@ $ heroku run rails console
 
 ## Use…
 
-…sandbox flag when you spin up your Rails command line:
+…`sandbox` flag when you spin up your Rails command line:
 
 ```shell
 $ heroku run rails console --sandbox
