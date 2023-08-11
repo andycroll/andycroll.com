@@ -68,6 +68,18 @@ Finally, the string-based arguments make your code harder to read and understand
 
 ## Why not?
 
-These are contrived examples, yet demonstrate real weaknesses.
+You could make use of Active Record’s escaping by using [array conditions](https://guides.rubyonrails.org/active_record_querying.html#array-conditions).
 
-If you’re unable to use the hash-style for the specific query you require and you really, really, _really,_ know what you’re doing, then use the string-based arguments. But be careful.
+```ruby
+params[:q] = "'' OR 1=1"
+User.where("email = ?", params[:q])
+#=> User Load (13.4ms)  SELECT "users".* FROM "users" WHERE (email = ''''' OR 1=1')
+```
+
+This syntax lets the database engine do the interpolation, rather than doing the interpolation in the string yourself.
+
+This is a safer approach for queries that cannot be expressed as hashes. For example an SQL `LIKE`` query. (h/t to [ben](https://hachyderm.io/@benjamineskola/110452930849687801) on this point)
+
+The risks above are contrived examples, yet demonstrate real weaknesses.
+
+If you’re unable to use the hash-style for the specific query you require and you really, really, _really,_ know what you’re doing, then use the array-based arguments. But be careful.
