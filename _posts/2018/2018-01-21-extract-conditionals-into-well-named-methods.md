@@ -95,3 +95,7 @@ Before any refactoring it is important to ensure good test coverage of the initi
 In a simpler example, I might not even bother with this kind of refactoring, but here it serves as a nice documentation technique and clarifies the logic in the conditional.
 
 In a more complex case, where a coffee shop has much more functionality (more than just being good or not) you might further refactor each of the different coffee shops into subclasses.
+
+-----
+
+Translated into Japanese [here](https://techracho.bpsinc.jp/hachi8833/2018_06_07/57510)

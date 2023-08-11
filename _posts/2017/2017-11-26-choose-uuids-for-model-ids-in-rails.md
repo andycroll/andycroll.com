@@ -85,3 +85,5 @@ Using UUIDs is a good idea in brand new projects, but it might be wise to avoid 
 -----
 
 Translated into Japanese [here](https://techracho.bpsinc.jp/hachi8833/2018_01_04/50565)
+
+Translated into Turkish [here](https://kesk.in/2018/railsde-model-idleri-icin-uuidleri-secin/)

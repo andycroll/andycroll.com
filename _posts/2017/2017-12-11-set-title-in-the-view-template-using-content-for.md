@@ -67,3 +67,7 @@ The content for the `<title>` is not referenced or referred to when rendering JS
 ## Why not?
 
 You _are_ ignoring the framework's tools if you use the instance variable approach, but it _does_ work.
+
+-----
+
+Translated into Japanese [here](https://techracho.bpsinc.jp/hachi8833/2022_12_02/55812)
