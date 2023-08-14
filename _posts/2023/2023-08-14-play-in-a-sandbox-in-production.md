@@ -11,7 +11,7 @@ image:
 
 ---
 
-As a developer you often have privileged access to the production environment of your application. This is often required to do bug fixes or to run commands for folks in your organisation.
+As an employed developer, you often have privileged access to the production environment of the application you're working on. This is often required to do bug fixes or to run commands for folks in other departments of your organisation.
 
 However with great power comes a great ability to shoot yourself in the foot. It’s all to easy to make damaging changes to user data without meaning too.
 
