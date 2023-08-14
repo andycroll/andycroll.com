@@ -49,7 +49,7 @@ Trust me, you don’t want to break real customer data in a permanent way. Make 
 
 When you exit the console in sandbox mode all the changes you’ve made to data will be rolled back. This should prevent you from doing anything catastrophic by accident. If you’re just querying data (read only) this mode will give you added reassurance you’re not going to permanently break anything.
 
-You should be aware that if you’re calling code that enqueues jobs (perhaps using sidekiq) or sends email then that code will not be rolled back by the sandbox mechanism, so you should still be careful!
+You should be aware that if you’re calling code that enqueues jobs, perhaps using Sidekiq, or sends email, then that code will not be rolled back by the sandbox mechanism, so you should still be careful!
 
 
 ## Why not?
