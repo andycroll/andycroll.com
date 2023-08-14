@@ -54,6 +54,6 @@ You should be aware that if you’re calling code that enqueues jobs, perhaps us
 
 ## Why not?
 
-If you’re logging into your production application to deliberately make changes to user data then you’ll need to avoid `sandbox` mode. However I'd recommend seeing if you can test your changes in your `sandbox` before _really_ executing them, then that's a good idea.
+If you’re logging into your production application to deliberately make changes to user data then you’ll need to avoid `sandbox` mode. However, I'd recommend seeing if you can test your changes in your `sandbox` before _really_ executing them!
 
 In fact if you _are_ making data changes in production it is better to write, test and deploy code to make the required changes, rather than “wing it” in the console. Logging into production `rails console` should feel more scary than it does.
