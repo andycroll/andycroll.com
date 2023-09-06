@@ -11,7 +11,7 @@ image:
 
 ---
 
-Ruby, in contrast to other languages, often provides multiple ways to accomplish simple programming tasks. In pursuit of developer happiness the Standard Library offers the opportunity to make your code closer to English.
+Ruby, in contrast to other languages, often provides multiple ways to accomplish simple programming tasks. In pursuit of developer happiness, the Standard Library offers the opportunity to make your code appear more like English.
 
 In this case we’ll look at comparing numbers, I’ve previously discussed my preference for a similar comparator, `zero?`, in a [previous article](/ruby/use-zero-for-integer-float-comparison).
 
