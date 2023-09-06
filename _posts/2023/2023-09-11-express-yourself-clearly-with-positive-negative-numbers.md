@@ -13,8 +13,7 @@ image:
 
 Ruby, in contrast to other languages, often provides multiple ways to accomplish simple programming tasks. In pursuit of developer happiness, the Standard Library offers the opportunity to make your code appear more like English.
 
-In this case we’ll look at comparing numbers, I’ve previously discussed my preference for a similar comparator, `zero?`, in a [previous article](/ruby/use-zero-for-integer-float-comparison).
-
+In this case we’ll look at comparing numbers with zero.
 
 ## Instead of…
 
@@ -47,9 +46,11 @@ end
 
 ## Why?
 
-I find the “more English” version to be clearer and easier to reason about when I return to it in the future. I still, after a twenty year programming career, require a moment of concentration while I unpack the orientation of the angle bracket and how it relates to the numbers and variables.
+I’ve previously discussed my preference for a similar comparator, `zero?`, in a [previous article](/ruby/use-zero-for-integer-float-comparison).
 
-This approach to convenience methods also, for me, is one of the most delightful things about Ruby. It’s one of the reasons it provokes smiles when I write it.
+The “more English” version to be clearer and easier to reason about when you return to your code in the future. It can require a moment of concentration to unpack the orientation of the angle bracket and how it relates to the numbers and variables.
+
+This approach to convenience methods and syntactical sugar is one of the most delightful things about Ruby. “Ruby is designed to make programmers happy.”–Yukihiro “Matz” Matsumoto
 
 
 ## Why not?
