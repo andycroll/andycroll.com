@@ -31,7 +31,7 @@ end
 
 ## Use…
 
-…ruby’s convenience methods on `Numeric`, and its subclasses, to express yourself more clearly:
+…Ruby’s convenience methods on `Numeric`, and its subclasses, to express yourself more clearly:
 
 ```ruby
 if number.positive?
