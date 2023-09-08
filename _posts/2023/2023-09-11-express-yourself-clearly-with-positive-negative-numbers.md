@@ -50,7 +50,9 @@ I’ve discussed my preference for a similar comparator, `zero?`, in a [previous
 
 The “more English” version will be clearer and easier to reason about when you return to your code in the future. It can require a moment of concentration to unpack the orientation of the angle bracket and how it relates to the numbers and variables.
 
-This approach to convenience methods and syntactical sugar is one of the most delightful things about Ruby. “Ruby is designed to make programmers happy.”–Yukihiro “Matz” Matsumoto
+This approach to convenience methods and syntactical sugar is one of the most delightful things about Ruby.
+
+“Ruby is designed to make programmers happy.”–Yukihiro “Matz” Matsumoto
 
 
 ## Why not?
