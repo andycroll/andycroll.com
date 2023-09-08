@@ -46,7 +46,7 @@ end
 
 ## Why?
 
-I’ve previously discussed my preference for a similar comparator, `zero?`, in a [previous article](/ruby/use-zero-for-integer-float-comparison).
+I’ve discussed my preference for a similar comparator, `zero?`, in a [previous article](/ruby/use-zero-for-integer-float-comparison).
 
 The “more English” version to be clearer and easier to reason about when you return to your code in the future. It can require a moment of concentration to unpack the orientation of the angle bracket and how it relates to the numbers and variables.
 
