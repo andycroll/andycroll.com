@@ -59,7 +59,7 @@ This approach to convenience methods and syntactical sugar is one of the most de
 
 Some folks find this style to be too different from other languages and claim that they’ve never struggled to remember whether `<` is “less than” or “greater than’.
 
-You might get push back for “performance” reasons.
+You might get push back for “performance” reasons:
 
 ```ruby
 require "benchmark/ips"
