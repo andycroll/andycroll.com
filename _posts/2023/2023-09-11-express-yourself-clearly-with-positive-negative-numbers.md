@@ -141,4 +141,4 @@ For `Float`:
 
 The benchmark shows that, for both `Integer` and `Float`s, the _non-sugared_ syntax wins out.
 
-However, the important thing to note is that in all cases I was achieving tens of millions of executions per second on my laptop. For anything other than the most extreme performance requirements opt for the more readable version. And if performance _truly_ matters beyond this scale, then you likely have bigger issues!
+However, the important thing to note is that in all cases I was achieving tens of millions of executions per second on my laptop. For anything other than the most extreme performance requirements, opt for the more readable version. And if performance _truly_ matters beyond this scale, then you likely have bigger issues!
