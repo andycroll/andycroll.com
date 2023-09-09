@@ -56,6 +56,6 @@ You should be aware that if you’re calling code that enqueues jobs, perhaps us
 
 If you’re logging into your production application to deliberately make changes to user data then you’ll need to avoid `sandbox` mode. However, I'd recommend seeing if you can test your changes in your `sandbox` before _really_ executing them!
 
-Additionally there’s a risk, because of the way `--sandbox` is implemented, that you could lock rows or even whole tables for the rest of your regular production traffic. This is because this mode effectively puts everything in a transaction at the start of your session and rolls it back on logout, so even in `sandbox ` mode you can break things. h/t to [Will](https://twitter.com/will_j)
+Additionally there’s a risk, which is [expected behaviour of the feature](https://github.com/rails/rails/issues/28694), because of the way `--sandbox` is implemented, that you could lock rows or even whole tables for the rest of your regular production traffic. This is because this mode effectively puts everything in a transaction at the start of your session and rolls it back on logout, so even in `sandbox ` mode you can break things. h/t to [Will](https://twitter.com/will_j)
 
 In fact if you _are_ making data changes in production it is better to write, test, and deploy code to make the required changes, rather than “wing it” in the console. Logging into production `rails console` should feel more scary than it does.
