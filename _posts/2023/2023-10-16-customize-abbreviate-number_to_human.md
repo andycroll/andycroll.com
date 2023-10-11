@@ -106,7 +106,7 @@ number_to_human_short(1_234_567)
 #=> "1.2M"
 ```
 
-_Adapted from a great recommendation from [Matt Swanson]() (seen in [Chris Oliver’s](https://twitter.com/excid3) RailsWorld Talk)._
+_Adapted from a great recommendation from [Matt Swanson](https://twitter.com/_swanson/status/1694357502043869565) (seen in [Chris Oliver’s](https://twitter.com/excid3) RailsWorld Talk)._
 
 
 ## Why?
