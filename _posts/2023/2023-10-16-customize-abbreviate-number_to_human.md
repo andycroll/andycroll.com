@@ -77,7 +77,7 @@ number_to_human(1_234_567)
 
 ## Or…
 
-…a specific custom helper built on top:
+…use a specific custom-built helper:
 
 ```ruby
 def number_to_human_short(number)
