@@ -115,7 +115,7 @@ Rails provides sensible defaults, but in the same way you have your own in-house
 
 In our case we only ever display numbers in the shortened format, so we customised our helpers using the YAML locale files.
 
-If you need more flexibility, or you have multiple number styles, it is better to use a custom helper. In the example above we special case with an early `return` condition to display all numbers under ten thousand in their entirety; `"9,999"` rather than `"9.9K"`.
+If you need more flexibility, or you have multiple number styles, it is better to use a custom helper. In the example above we define a special case with an early `return` condition that displays all numbers under ten thousand in their entirety, e.g. `"9,999"` rather than `"9.9K"`.
 
 
 ## Why not?
