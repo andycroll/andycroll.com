@@ -34,7 +34,7 @@ The desired translation from numbers to formatted output is:
 
 ## Instead of…
 
-…customising whenever you use it:
+…customising `number_to_human` whenever you use it:
 
 ```erb
 <%=
