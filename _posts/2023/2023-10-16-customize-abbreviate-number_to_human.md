@@ -11,7 +11,7 @@ image:
 
 ---
 
-One of Rails’s most helpful views is `number_to_human` and it has many options to customise its output. You can read the [detailed documentation of it's many flexible options](https://api.rubyonrails.org/classes/ActiveSupport/NumberHelper.html#method-i-number_to_human).
+One of Rails’s most helpful view helpers is `number_to_human` and it has many options to customise its output. You can read the [detailed documentation of its many flexible options](https://api.rubyonrails.org/classes/ActiveSupport/NumberHelper.html#method-i-number_to_human).
 
 e.g.
 
