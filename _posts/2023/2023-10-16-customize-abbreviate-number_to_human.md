@@ -111,7 +111,7 @@ _Adapted from a great recommendation from [Matt Swanson](https://twitter.com/_sw
 
 ## Why?
 
-Rails provides sensible defaults, but in the same way you have your own in-house design language that probably extends to other elements of your application, like language or number formatting.
+Rails provides sensible defaults, but you most likely have your own in-house design conventions that probably extend to other elements of your application, like language or number formatting.
 
 In our case we only ever display numbers in the shortened format, so we customised our helpers using the YAML locale files.
 
