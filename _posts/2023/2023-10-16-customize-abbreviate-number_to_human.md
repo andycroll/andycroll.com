@@ -23,7 +23,7 @@ number_to_human(1_234_567_890) # => "1.23 Billion"
 
 At [work](https://coveragebook.com), our app displays small cards with large numbers on them and we want to display social media-style counts.
 
-So the desired translation from numbers to formatted output is:
+The desired translation from numbers to formatted output is:
 
 ```ruby
 1_234         # => "1.2K"
