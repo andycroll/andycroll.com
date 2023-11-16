@@ -5,7 +5,7 @@ layout: article
 category: ruby
 image:
   base: "2023/for-clarity-merging-hashes-use-with_defaults"
-  alt: "Two people standing of a merging hill road"
+  alt: "Two people standing on a merging hill road"
   credit: "Pine Watt"
   source: "https://unsplash.com/photos/birds-eye-view-photo-of-two-people-standing-on-gray-concrete-road-in-front-of-hill-dUbKcgu0zjw"
 
