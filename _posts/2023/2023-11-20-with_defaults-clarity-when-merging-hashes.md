@@ -54,4 +54,4 @@ The original hash's values are prioritised as you read the code, and the default
 
 Some folks object to this implicit "monkey patching" of Ruby core classes by the Rails framework. However, if you're in a Rails app, objecting to it's practical decisions (and taste) are just making things harder for yourself.
 
-In addition, previous patches from Rails have—due to their Ruby-ness—have ended up being backported into Ruby itself.
+In addition, previous patches from Rails have—due to their Ruby-ness—been made part of Ruby itself. The syntax and readability of a method like this definitely feels like it falls into that category.
