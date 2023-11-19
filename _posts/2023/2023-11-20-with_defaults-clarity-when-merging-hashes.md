@@ -11,7 +11,7 @@ image:
 
 ---  
 
-Rails is known for adding methods to existing core Ruby classes for improved readability via Active Support. One such example is the `with_defaults` method on `Hash`. This method is an alias of another added method `reverse_merge`, which should give you a clue how it works.
+Rails is known for adding methods to existing core Ruby classes for improved readability via Active Support. One such example is the `with_defaults` method on `Hash`. This method is an alias of another added method `reverse_merge`, which should give you a clue as to how it works.
 
 As you can see in [the source code](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/core_ext/hash/reverse_merge.rb#L14), the implementation is fairly straightforward.
 
