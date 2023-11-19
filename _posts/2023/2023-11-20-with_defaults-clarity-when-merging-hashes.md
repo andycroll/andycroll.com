@@ -18,7 +18,7 @@ As you can see in [the source code](https://github.com/rails/rails/blob/main/act
 
 ## Instead of…
 
-...using `Hash#merge` when adding defaults.
+...using `Hash#merge` when adding defaults...
 
 ```ruby
 user_provided = {q: "Andy", age: 44, limit: 1}
