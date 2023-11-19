@@ -49,7 +49,7 @@ Using `with_defaults`, as opposed to Ruby's `merge`, improves readability. The r
 
 Rails contains many examples of this sort of syntactic improvement, use of "idiomatic" Rails code was the rationale for adding this alias in [the initial PR](https://github.com/rails/rails/pull/28603).
 
-The original hash's values are prioritised as you read the code, and the defaults are provided but deemphasised.
+With the `with_defaults` method, it's clear that the original hash's values are prioritised, the default values are secondary and thus deemphasised.
 
 
 ## Why not?
