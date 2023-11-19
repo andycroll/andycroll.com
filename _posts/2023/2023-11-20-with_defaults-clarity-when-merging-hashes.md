@@ -45,7 +45,9 @@ listing_options = user_provided.with_defaults(order: "asc", limit: 25)
 
 This "simple" method exists because in web applications we're often dealing with configuration or optional arguments passed to methods.
 
-The beauty is in the use of the method, using `with_defaults` improves readability resulting in code that is easier to understand and maintain. The concision and clarity the change in order and method name are precisely what Rails is good at, in fact this use of "idiomatic" Rails code was the rationale for adding the alias in [the initial PR](https://github.com/rails/rails/pull/28603).
+Using `with_defaults`, as opposed to Ruby's `merge`, improves readability. The resulting code is clearer to understand and maintain as the method name is clearer as to its intention.
+
+Rails contains many examples of this sort of syntactic improvement, use of "idiomatic" Rails code was the rationale for adding this alias in [the initial PR](https://github.com/rails/rails/pull/28603).
 
 The original hash's values are prioritised as you read the code, and the defaults are provided but deemphasised.
 
