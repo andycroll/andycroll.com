@@ -61,7 +61,7 @@ bundle open activerecord
 
 ## Why not?
 
-If you experiment you might find that this doesn't work.
+While you're experimenting, you might find that this doesn't always work.
 
 ```ruby
 "Cars".method(:upcase).source_location
