@@ -72,4 +72,4 @@ Methods included as part of "core" Ruby are often implemented in C, and their de
 
 The `source_location` method only works for methods defined in gems where the source code is in Ruby. It won't work for methods that use a C extension (where Ruby code calls out to C).
 
-Also while `source_location` can be invaluable during development and debugging, it's not generally suitable for regular use in production code. 
+Also, while `source_location` can be invaluable during development and debugging, it's not generally suitable for regular use in production code. 
