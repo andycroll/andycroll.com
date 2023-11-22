@@ -11,7 +11,7 @@ image:
 
 ---  
 
-As a dynamic language it's important that Ruby provides many excellent debugging and introspection features.
+Given it's a dynamic language, it's important that Ruby comes with several excellent debugging and introspection features out of the box.
 
 Finding the place a method or block of code is defined and reading its source code is essential for effective debugging and code comprehension. In Ruby, `source_location`, provides a powerful tool for retrieving the file and line number where a particular method or block is defined.
 
