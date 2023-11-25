@@ -40,7 +40,7 @@ Use of `source_location` is invaluable when you're new to an application, re-exp
 
 Reading source code is a great way to learn. Reading battle-tested code like that of Rails itself, or other gems, even more so.
 
-Thanks to authors of the framework `source_location` works for "magic" meta-programmed methods in Rails. Methods on Active Record [associations that are generated using `class_eval`](https://github.com/rails/rails/blob/main/activerecord/lib/active_record/associations/builder/association.rb#L103) pass special syntax to enable the lookup to still work. If it weren't for this when you called `source_location` you'd just see `(eval)` as the first result.
+Thanks to the authors of the framework, `source_location` also works for "magic" meta-programmed methods in Rails. Methods on Active Record [associations that are generated using `class_eval`](https://github.com/rails/rails/blob/main/activerecord/lib/active_record/associations/builder/association.rb#L103) pass special syntax to enable the lookup to still work. If it weren't for this, when you called `source_location` on these methods, you'd always just see `(eval)` as the first result.
 
 ```ruby
 class Car < ApplicationRecord
