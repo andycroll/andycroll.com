@@ -36,7 +36,7 @@ bundle open activesupport
 
 ## Why?
 
-Use of `source_location` is invaluable when you're new to an application, re-exploring unfamiliar code, or  trying to understand which gem is providing the functionality you're using.
+Use of `source_location` is invaluable when you're new to an application, re-exploring unfamiliar code, or trying to understand which gem is providing the functionality you're using.
 
 Reading source code is a great way to learn. Reading battle-tested code like Rails, or other gems, even more so.
 
