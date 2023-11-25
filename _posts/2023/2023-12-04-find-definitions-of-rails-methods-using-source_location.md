@@ -61,14 +61,12 @@ bundle open activerecord
 
 ## Why not?
 
-While you're experimenting, you might find that this method doesn't always provide a helpful result.
+While you're experimenting, you might find `source_location` doesn't always provide a helpful result. Methods included as part of "core" Ruby are often implemented in C, and their definitions are not directly accessible from Ruby code. Therefore, calling `source_location` on a core method will typically return `nil`.
 
 ```ruby
 "Cars".method(:upcase).source_location
 #=> nil
 ```
-
-Methods included as part of "core" Ruby are often implemented in C, and their definitions are not directly accessible from Ruby code. Therefore, calling `source_location` on a core method will typically return `nil`.
 
 It also won't work for methods that use a C extension (where Ruby code calls out to C). `source_location` only works for methods defined in gems where the source code is in Ruby. 
 
