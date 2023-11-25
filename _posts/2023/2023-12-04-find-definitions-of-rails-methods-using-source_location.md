@@ -70,6 +70,6 @@ While you're experimenting, you might find that this method doesn't always provi
 
 Methods included as part of "core" Ruby are often implemented in C, and their definitions are not directly accessible from Ruby code. Therefore, calling `source_location` on a core method will typically return `nil`.
 
-The `source_location` method only works for methods defined in gems where the source code is in Ruby. It won't work for methods that use a C extension (where Ruby code calls out to C).
+It also won't work for methods that use a C extension (where Ruby code calls out to C). `source_location` only works for methods defined in gems where the source code is in Ruby. 
 
 Also, while `source_location` can be invaluable during development and debugging, it's not generally suitable for regular use in production code. 
