@@ -13,7 +13,7 @@ image:
 
 Given it's a dynamic language, it's important that Ruby comes with several excellent debugging and introspection features out of the box.
 
-Finding the exact place a method or block of code is defined and being able to read the related source code is essential for effective debugging and code comprehension. In Ruby, the `source_location` method, provides a powerful tool for retrieving the file and line number where a particular method or block is defined.
+Finding the exact place a method or block of code is defined and being able to read the related source code is essential for effective debugging and code comprehension. In Ruby, the `source_location` method, provides a powerful tool for retrieving the file and line number for where a particular method or block is defined.
 
 
 ## Explore Rails using…
