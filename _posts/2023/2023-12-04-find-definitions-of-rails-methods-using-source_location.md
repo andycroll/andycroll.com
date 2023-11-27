@@ -31,7 +31,7 @@ Then open from the command line:
 bundle open activesupport
 ```
 
-...which opens the source code of the gem in your editor of choice for you to explore.
+...which opens the source code of the gem in your editor of choice.
 
 
 ## Why?
