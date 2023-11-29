@@ -1,54 +1,68 @@
 ---
 layout: default
 ---
-{% if jekyll.environment == "production" %}
+{% if jekyll.environment == 'production' %}
   {% capture image_url_root %}{{ site.image_url }}/images/{% endcapture %}
 {% else %}
-  {% assign image_url_root = "/images/" %}
+  {% assign image_url_root = '/images/' %}
 {% endif %}
 
 {% if page.image %}
-<div class="relative">
-  <picture>
-    <img sizes="100vw"
-          alt="{{ page.image.alt }}"
-          src="{{ image_url_root }}{{ page.image.base }}.jpg?blur=80&quality=40"
-          srcset="{{ image_url_root }}{{ page.image.base }}.jpg?width=1024.jpg 1024w,
-                  {{ image_url_root }}{{ page.image.base }}.jpg?width=1536 1536w,
-                  {{ image_url_root }}{{ page.image.base }}.jpg?width=2048 2048w"
-          class="w-full aspect-4/1" />
-  </picture>
+  <div class="relative">
+    <picture>
+      <img
+        sizes="100vw"
+        alt="{{ page.image.alt }}"
+        src="{{ image_url_root }}{{ page.image.base }}.jpg?blur=80&quality=40"
+        srcset="
+          {{ image_url_root }}{{ page.image.base }}.jpg?width=1024.jpg 1024w,
+          {{ image_url_root }}{{ page.image.base }}.jpg?width=1536 1536w,
+          {{ image_url_root }}{{ page.image.base }}.jpg?width=2048 2048w
+        "
+        class="w-full aspect-4/1"
+      >
+    </picture>
 
-  <div class="absolute top-3 right-3 rounded bg-white opacity py-1 px-2 opacity-25 hover:opacity-100">
-    {% if page.image.credit %}
-    <p class="text-slate-600 text-xs">
-      <small>
-        image&nbsp;by
-        {% if page.image.source %}
-          <a href="{{ page.image.source }}" class="text-slate-600 no-underline hover:text-slate-600 hover:underline">{{ page.image.credit }}</a>
-        {% else %}
-          <span class="text-slate-600 no-underline">{{ page.image.credit }}</span>
-        {% endif %}
-      </small>
-    </p>
-    {% endif %}
+    <div class="absolute top-3 right-3 rounded bg-white opacity py-1 px-2 opacity-25 hover:opacity-100">
+      {% if page.image.credit %}
+        <p class="text-slate-600 text-xs">
+          <small>
+            image&nbsp;by
+            {% if page.image.source %}
+              <a
+                href="{{ page.image.source }}"
+                class="text-slate-600 no-underline hover:text-slate-600 hover:underline"
+              >
+                {{- page.image.credit -}}
+              </a>
+            {% else %}
+              <span class="text-slate-600 no-underline">{{ page.image.credit }}</span>
+            {% endif %}
+          </small>
+        </p>
+      {% endif %}
+    </div>
   </div>
-</div>
 {% endif %}
 
 <div class="container mx-auto bg-white rounded block z-20 relative">
   <div class="md:grid md:grid-cols-7 gap-3">
     <div class="md:col-span-7 lg:col-span-5 lg:col-start-2 mb-8 md:mb-0">
       <header class="md:-mt-8 xl:w-4/5 block">
-        <h1 class="font-serif text-2xl md:text-3xl bg-white px-3 pt-3 m-0 rounded block">{{ page.title | titlecase }}</h1>
+        <h1 class="font-serif text-2xl md:text-3xl bg-white px-3 pt-3 m-0 rounded block">
+          {{ page.title | titlecase }}
+        </h1>
       </header>
 
       <div class="p-3 prose prose-headings:font-serif prose-headings:font-normal prose-headings:mb-1">
         {{ content }}
 
         <div class="my-5">
-          <hr class="pb-2 m-0" />
-          <p class="text-xs text-right text-slate-500">Last updated on <span class="date">{{ page.date | date_to_long_string: "ordinal", "US" }}</span> by <a href="https://twitter.com/andycroll" class="text-slate-500 no-underline">@andycroll</a></p>
+          <hr class="pb-2 m-0">
+          <p class="text-xs text-right text-slate-500">
+            Last updated on <span class="date">{{ page.date | date_to_long_string: 'ordinal', 'US' }}</span> by
+            <a href="https://twitter.com/andycroll" class="text-slate-500 no-underline">@andycroll</a>
+          </p>
         </div>
       </div>
 
@@ -71,7 +85,7 @@ layout: default
 
               <form
                 method="post"
-                action="https://goodscary.mailcoach.com/mailcoach/subscribe/a1246c9e-31ea-456a-aa14-7dddfea43c10"
+                action="https://goodscary.mailcoach.app/subscribe/a1246c9e-31ea-456a-aa14-7dddfea43c10"
                 class="validate"
                 target="_blank"
                 novalidate=""

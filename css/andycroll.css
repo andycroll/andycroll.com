@@ -1130,16 +1130,16 @@ a:hover {
   position: sticky;
 }
 
-.left-\[-5000px\] {
-  left: -5000px;
-}
-
 .top-3 {
   top: 0.75rem;
 }
 
 .right-3 {
   right: 0.75rem;
+}
+
+.left-\[-5000px\] {
+  left: -5000px;
 }
 
 .isolate {
