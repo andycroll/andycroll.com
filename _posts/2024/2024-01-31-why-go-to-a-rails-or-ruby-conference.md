@@ -13,7 +13,7 @@ image:
 
 Conferences have always been a big part of my career as a developer. Attending, speaking, and running events—off the side of my desk—have played a massive part in my career, job prospects, and personal relationships.
 
-Enough about me. What about you? Why should you take a day (or two, or three!) off work, spend a bunch of money, get lectured from a stage and then have to talk to strangers in a strange town halfway across the country?
+Enough about me. What about you? Why should you take a day (or two, or three!) off work, spend a bunch of money, get lectured from a stage, and then have to talk to strangers in a strange town halfway across the country?
 
 ## Professional Development
 
