@@ -75,7 +75,7 @@ A major finding was the value of social connectedness.
 
 “...the people who stayed the healthiest and lived the longest and were happier, were the people who were the most connected to others. People who saw more people in a given week; people who had warmer connections to others. Their brains stayed healthier longer, they had less cognitive decline and their brains declined more slowly as they aged.”
 
-If “you will live, healthier, longer” doesn’t convince you to get out of you chair and meet other programmers, I don’t know what will.
+If “you will live, healthier, longer” doesn’t convince you to get out of your chair and meet other programmers, I don’t know what will.
 
 
 ## Get booking
