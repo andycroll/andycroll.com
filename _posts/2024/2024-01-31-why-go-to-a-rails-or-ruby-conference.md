@@ -70,7 +70,7 @@ Many programmers self-describe as introverted, but then that’s who is at these
 
 ## Because you’re a human being first
 
-A recent episode of the Big Ideas podcast featured the American academic Robert Waldinger: the current director of the Harvard study of Adult Development. This study, begun in 1938, is the longest running investigation into the wide-ranging causes of our individual happiness, or the opposite.
+A recent episode of the Big Ideas podcast featured the American academic Robert Waldinger, the current director of the Harvard study of Adult Development. This study, begun in 1938, is the longest running investigation into the wide-ranging causes of our individual happiness.
 
 A major finding was the value of social connectedness.
 
