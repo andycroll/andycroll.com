@@ -58,7 +58,7 @@ There’s opportunities to learn about new technologies, from other—bigger and
 
 ## It is pleasant
 
-Our jobs are increasingly remote, with our chosen career leading the charge in enabling sensible ways of working where we can work from anywhere, but that doesn’t replace the need for human connection.
+Our jobs are increasingly remote, with our chosen career leading the charge in enabling sensible ways of remote working, but that doesn’t replace the need for human connection.
 
 A programming conference can provide a place for folks on your team to enjoy time together in, in person, in a work-like environment to rebuild connections
 
