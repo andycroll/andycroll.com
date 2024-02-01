@@ -3,7 +3,7 @@ title: "Why go to a Ruby or Rails conference?"
 description: "It’ll genuinely make you live longer, amongst other things"
 layout: article
 category: ruby
-date: 2024-01-31 19:00
+date: 2024-02-02 09:00
 image:
   base: '2024/why-go-to-a-rails-or-ruby-conference'
   alt: 'The audience at Brighton Ruby 2024'
