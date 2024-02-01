@@ -60,7 +60,7 @@ There’s opportunities to learn about new technologies, from other—bigger and
 
 Our jobs are increasingly remote, with our chosen career leading the charge in enabling sensible ways of remote working, but that doesn’t replace the need for human connection.
 
-A programming conference can provide a place for folks on your team to enjoy time together in, in person, in a work-like environment to rebuild connections
+A programming conference can provide a place for folks on your team to enjoy time together in person, in a work-like environment, to rebuild connections.
 
 The finest people, that I’m lucky to call friends, have been made or we’ve had our bonds strengthened due to attending a conference. Either existing teammates seen outside the normal day-to-day or strangers becoming friends or future colleagues.
 
