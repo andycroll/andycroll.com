@@ -78,7 +78,12 @@ A major finding was the value of social connectedness.
 
 If “you will live, healthier, longer” doesn’t convince you to get out of you chair and meet other programmers, I don’t know what will.
 
-Self-interestedly I’ll recommend getting tickets to [Brighton Ruby](https://brightonruby.com) (which I run every year) and [RailsConf](https://railsconf.com), which I’m co-chairing in 2024. But there’s so many great options for events at [rubyconferences.org](https://rubyconferences.org).
+
+## Get booking
+
+Self-interestedly, I’d recommend getting tickets to [Brighton Ruby](https://brightonruby.com) (which I run every year) and [RailsConf](https://railsconf.com), which I’m co-chairing in 2024. But there’s so many other great options for events at [rubyconferences.org](https://rubyconferences.org).
+
+If this post inspires you to go to a conference, let me know!
 
 
 
