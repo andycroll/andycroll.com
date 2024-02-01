@@ -35,7 +35,7 @@ The relent from the day-to-day is a chance to pause and reflect on your everyday
 
 I think of two kinds of inspiration.
 
-One is the regular kind: a talk contains the nugget of understanding you need to take a new technique, or piece of thinking, day to your day job and solve a problem that you or your team have been facing.
+One is the regular kind: a talk contains the nugget of understanding you need to take a new technique, or piece of thinking, back to your day job and solve a problem that you or your team have been facing.
 
 The other is more intangible, and easy to scoff about.
 
