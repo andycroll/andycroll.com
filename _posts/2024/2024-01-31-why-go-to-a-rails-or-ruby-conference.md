@@ -45,7 +45,7 @@ All these things are possible if, and only if, you’re in the room where it hap
 
 ## Hiring
 
-Conferences are a great place to meet folks from other companies and many sponsors are actively trying to hire developers in the hallway track.
+Conferences are a great place to meet folks from other companies and many sponsors are actively trying to hire developers in the “hallway track”; the time and space outside the talks.
 
 Does that mean that if you send folks in your team they’re all going to leave for better places to work? No. If you are concerned that this may happen, then you have _a lot_ of work on your own organisation.
 
