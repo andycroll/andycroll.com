@@ -37,7 +37,7 @@ I think of two kinds of inspiration.
 
 One is the regular kind: a talk contains the nugget of understanding you need to take a new technique, or piece of thinking, back to your day job and solve a problem that you or your team have been facing.
 
-The other is more intangible, and easy to scoff about.
+The other is more intangible, and easy to scoff at.
 
 Meeting someone, or seeing a talk, the changes the trajectory of your career. You might choose a product company, if you’ve been in agency life. You might lean hard into open source work and make that a foundation of the next phase of your career. You might meet someone who, in three years, starts a company and remembers that great meal you had and asks you to join them.
 
