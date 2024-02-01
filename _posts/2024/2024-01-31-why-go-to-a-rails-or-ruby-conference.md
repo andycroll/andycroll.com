@@ -39,7 +39,7 @@ One is the regular kind: a talk contains the nugget of understanding you need to
 
 The other is more intangible, and easy to scoff at.
 
-Meeting someone, or seeing a talk, the changes the trajectory of your career. You might choose a product company, if you’ve been in agency life. You might lean hard into open source work and make that a foundation of the next phase of your career. You might meet someone who, in three years, starts a company and remembers that great meal you had and asks you to join them.
+Meeting someone, or seeing a talk, could change the trajectory of your career. You might choose a product company, if you’ve been in agency life. You might lean hard into open source work and make that a foundation of the next phase of your career. You might meet someone who, in three years, starts a company and remembers that great meal you had and asks you to join them.
 
 All these things are possible if, and only if, you’re in the room where it happens.
 
