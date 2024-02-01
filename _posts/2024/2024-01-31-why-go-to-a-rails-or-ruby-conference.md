@@ -54,7 +54,7 @@ Folks move jobs frequently in the world of software. If you’re not out there e
 ### Isn’t it a vacation? 
 You shouldn’t think of a conference as “time off work”. It’s not. It’s a chance for you and your team to pause, get your head up, and see how you can make a difference in your day-to-day work and the wider community.
 
-There’s opportunities to learn about new technologies, from other—bigger and smaller—teams doing things both the expected way and with within an esoteric approach that might chime with your approach to software.
+There’s opportunities to learn about new technologies, from other—bigger and smaller—teams doing things both the expected way or perhaps with an esoteric approach that chimes with your personal software philosophy.
 
 ## It is pleasant
 
