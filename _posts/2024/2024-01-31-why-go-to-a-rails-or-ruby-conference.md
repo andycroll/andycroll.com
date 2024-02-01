@@ -17,7 +17,7 @@ Enough about me. What about you? Why should you take a day (or two, or three!) o
 
 ## Professional Development
 
-A conference is _not_ training. At most a talk can impart useful syntax, or explain a concept or help to bridge where you are to _where you could be_.
+A conference is _not_ training. At most a talk can impart useful syntax, or explain a concept, or help to bridge where you are to _where you could be_.
 
 A conference is a great place to find out the latest and greatest thinking in your particular area of work or to be introduced to facets of your career that you haven’t had the chance to consider in the everyday, unrelenting, demand for features and bug fixes.
 
