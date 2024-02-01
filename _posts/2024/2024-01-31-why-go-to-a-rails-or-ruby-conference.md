@@ -49,7 +49,7 @@ Conferences are a great place to meet folks from other companies and many sponso
 
 Does that mean that if you send folks in your team they’re all going to leave for better places to work? No. If you are concerned that this may happen, then you have _a lot_ of work on your own organisation.
 
-Folks move jobs frequently in the world of software. If you’re not out there extolling the virtues and benefits of working with you, if your team are not out there doing the same, how difficult will it be for you to hire your next engineer?
+Folks move jobs frequently in the world of software. If you’re not out there extolling the virtues and benefits of working with you, and if your team are not out there doing the same, how difficult will it be for you to hire your next engineer? Very!
 
 ### Isn’t it a vacation? 
 You shouldn’t think of a conference as “time off work”. It’s not. It’s a chance for you and your team to pause, get your head up and see how you can make a difference in your day-to-day work and the wider community.
