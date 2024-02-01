@@ -47,7 +47,7 @@ All these things are possible if, and only if, you’re in the room where it hap
 
 Conferences are a great place to meet folks from other companies and many sponsors are actively trying to hire developers in the “hallway track”; the time and space outside the talks.
 
-Does that mean that if you send folks in your team they’re all going to leave for better places to work? No. If you are concerned that this may happen, then you have _a lot_ of work on your own organisation.
+Does that mean that if you send folks in your team they’re all going to leave for better places to work? No. If you are concerned that this may happen, then you have _a lot_ of work to do on your own organisation.
 
 Folks move jobs frequently in the world of software. If you’re not out there extolling the virtues and benefits of working with you, and if your team are not out there doing the same, how difficult will it be for you to hire your next engineer? Very!
 
