@@ -55,8 +55,11 @@ layout: default
       </header>
 
       <div class="p-3 prose prose-headings:font-serif prose-headings:font-normal prose-headings:mb-1">
-        {{ content }}
-
+        {{ page.excerpt }}
+        {% include railsconf.html %}
+        {{ content | remove: page.excerpt }}
+        {% include brightonruby.html %}        
+    
         <div class="my-5">
           <hr class="pb-2 m-0">
           <p class="text-xs text-right text-slate-500">

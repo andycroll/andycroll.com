@@ -8,7 +8,12 @@ module.exports = {
     },
     fontFamily: {
       "serif": ["merriweatherregular", "Constantia", "Palatino", "Palatino Linotype", 'Georgia', 'serif']
-    }
+    },
+    screens: {
+      'sm': '400px',
+      'md': '600px',
+      'lg': '800px',
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
