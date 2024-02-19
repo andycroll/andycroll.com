@@ -5,8 +5,8 @@ layout: article
 category: ruby
 date: 2024-02-02 09:00
 image:
-  base: '2024/why-go-to-a-rails-or-ruby-conference'
-  alt: 'The audience at Brighton Ruby 2024'
+  base: "2024/why-go-to-a-rails-or-ruby-conference"
+  alt: "The audience at Brighton Ruby 2024"
   credit: "Clive Andrews"
   source: "https://cliveandrews.com/"
 ---
@@ -77,12 +77,8 @@ A major finding was the value of social connectedness.
 
 If “you will live, healthier, longer” doesn’t convince you to get out of your chair and meet other programmers, I don’t know what will.
 
-
 ## Get booking
 
 Self-interestedly, I’d recommend getting tickets to [Brighton Ruby](https://brightonruby.com) (which I run every year) and [RailsConf](https://railsconf.com), which I’m co-chairing in 2024. But there’s so many other great options for events at [rubyconferences.org](https://rubyconferences.org).
 
 If this post inspires you to go to a conference, let me know!
-
-
-
