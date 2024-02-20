@@ -131,4 +131,4 @@ The different levels of strictness (and differences in the underlying regular ex
 
 However, it _might_ still be worth doing the work to make sure all your email addresses do validate with the new regular expression.
 
-If you’re starting a new app, just pick one of the decent solutions over doing your own thing, unless you have a _really_ good reason.
+If you’re starting a new app, just pick one of the decent solutions over doing your own thing, unless you have very specific email requirements that fall outside of conventional use.
