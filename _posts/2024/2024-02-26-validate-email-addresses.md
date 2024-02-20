@@ -119,7 +119,7 @@ Email formatting is a solved problem. _Re_-solving solved problems always feels 
 
 There’s various levels of strictness in the regular expressions that underpin the different options I listed above. Most of them are "healthily conventional” in comparison to the [official RFC](https://github.com/afair/email_address?tab=readme-ov-file#avoiding-the-bad-parts-of-rfc-specification) format of emails, which can allow overly unrealistic, but RFC-valid, machine generated email addresses.
 
-If I were to pick I’d choose the straightforward `URI` option, the underlying regular expression is sufficiently flexible for all regular use.
+If I were to pick, I’d choose the straightforward `URI` option. The underlying regular expression is sufficiently flexible for all regular use.
 
 However, if I was looking to use the [extra functionality](https://github.com/afair/email_address?tab=readme-ov-file#usage) of the `email_address` gem—domain extraction or detection, normalisation or deconstruction—I’d use
 
