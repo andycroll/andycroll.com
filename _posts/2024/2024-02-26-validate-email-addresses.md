@@ -58,7 +58,7 @@ class User < ApplicationRecord
 end
 ```
 
-It's been in some of the [Rails Guides examples](https://guides.rubyonrails.org/active_record_validations.html#custom-validators)
+It's been in some of the [Rails Guides examples](https://guides.rubyonrails.org/active_record_validations.html#custom-validators).
 
 ### `email_address` gem
 
