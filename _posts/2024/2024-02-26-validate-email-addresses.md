@@ -127,7 +127,7 @@ If I were validating emails in multiple other places in my application I would c
 
 ## Why not?
 
-The different levels of strictness (and differences in the underlying regular expressions) provided by the options above might cause validation issues for existing records if you’ve been using a hand-rolled option and change the specifications of email validation.
+The different levels of strictness (and differences in the underlying regular expressions) provided by the options above might cause validation issues for existing records if you’ve been using a hand-rolled option and then change the specifications of email validation.
 
 However, it _might_ still be worth doing the work to make sure all your email addresses do validate with the new regular expression.
 
