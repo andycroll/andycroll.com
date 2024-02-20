@@ -47,7 +47,7 @@ end
 
 ### `URI`
 
-There has been a regular expression built into the `URI` of Ruby‘s standard library since version 2.2. Here's the [commit adding it](https://github.com/ruby/ruby/commit/e63ab5d3ad289767eab49787e4e33390b0ce74e1)
+There has been a regular expression built into the `URI` of Ruby‘s standard library since version 2.2. Here's the [commit adding it](https://github.com/ruby/ruby/commit/e63ab5d3ad289767eab49787e4e33390b0ce74e1).
 
 ```ruby
 class User < ApplicationRecord
