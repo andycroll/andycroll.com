@@ -102,7 +102,7 @@ class User < ApplicationRecord
 
   private
 
-  # You can put this in it’s own file if you check elsewhere for email validity
+  # You can put this in its own file if you check elsewhere for email validity
   class EmailValidator < ActiveModel::EachValidator
     def validate_each(record, attribute, value)
       unless EmailAddress::Address.new(value).valid?
