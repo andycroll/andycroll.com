@@ -34,7 +34,7 @@ end
 
 ### Devise
 
-Which might be a good choice, if you’re already using it.
+A reasonable choice, if you’re already using it for user authentication.
 
 ```ruby
 class User < ApplicationRecord
