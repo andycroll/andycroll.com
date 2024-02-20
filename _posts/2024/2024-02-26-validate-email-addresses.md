@@ -17,7 +17,7 @@ Making sure you can email your users is one of the most important thing to get r
 
 ## Instead of…
 
-…inventing your own regular expression, or using this one from the [older Rails docs](https://api.rubyonrails.org/classes/ActiveModel/Validations/ClassMethods.html#method-i-validates).
+…inventing your own regular expression, or using this one from the [older Rails docs](https://api.rubyonrails.org/classes/ActiveModel/Validations/ClassMethods.html#method-i-validates):
 
 ```ruby
 class User < ApplicationRecord
