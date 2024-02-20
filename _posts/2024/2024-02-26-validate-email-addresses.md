@@ -30,7 +30,7 @@ end
 
 ## Use…
 
-…one of several decent options:
+…one of these several better options:
 
 ### Devise
 
