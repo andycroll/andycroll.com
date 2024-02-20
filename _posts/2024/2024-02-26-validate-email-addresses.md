@@ -123,7 +123,7 @@ If I were to pick, I’d choose the straightforward `URI` option. The underlying
 
 However, if I was looking to use the [extra functionality](https://github.com/afair/email_address?tab=readme-ov-file#usage) of the `email_address` gem—domain extraction or detection, normalisation or deconstruction—I’d use
 
-If I was validating emails in other places in my application I would certainly consider the custom validator approach as it can be re-used.
+If I were validating emails in multiple other places in my application I would certainly consider the—reusable—custom validator approach instead.
 
 ## Why not?
 
