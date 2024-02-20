@@ -13,7 +13,7 @@ image:
 
 Ensuring you have data that makes sense is why Rails provides [validations](https://guides.rubyonrails.org/active_record_validations.html) through the Active Model library, which underpins Active Record.
 
-Making sure you can email your users is the most important thing to get right in your application, so you probably already have validation checks around your `User#email` attribute to make your communications will get through.
+Making sure you can email your users is one of the most important thing to get right in your application, so you probably already have validation checks around your `User#email` attribute.
 
 ## Instead of…
 
