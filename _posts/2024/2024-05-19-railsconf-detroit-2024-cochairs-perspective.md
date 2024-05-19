@@ -21,13 +21,13 @@ I _was_ looking forward to just attending to hang out with RubyFriends—with th
 
 Come January, [Ufuk](https://twitter.com/paracycle)—installed as co-chair of Detroit—wanted to “pick my brains”. Specifically, the bit he wanted to pick was the bit of my brain that said “no” a couple of months previously. The other board co-chair was unable to assist and Ufuk felt he wanted some event experience to help pull things together.
 
-When I asked my spouse if it was ok, to volunteer many week’s worth of evenings and stress to put on an event in a city I’d never been too (again) the eye roll from my (smarter) better half was audible across the Atlantic.
+When I asked my spouse if it was ok, to volunteer many week’s worth of evenings and stress to put on an event in a city I’d never been near (for the second time in three years) the eye roll from my better half was audible across the Atlantic.
 
 Oops.
 
 ## In the lead up…
 
-Working with Ufuk, my god, the man is a treasure and an asset to our community both in his day job running _that team_ at Shopify that makes things better for all Rubyists and in his new role on the board of Ruby Central.
+Working with Ufuk, my god, the man is a treasure and an asset to our community in both in his day job running _that team_ at Shopify that makes things better for all Rubyists and in his new role on the board of Ruby Central.
 
 He’s astute, gentle, warm, good humoured, and insightful and we quickly aligned on a vision and tone for the event. There were things we wanted to change from earlier editions and things we wanted to continue to focus on. We didn't have a huge amount of time.
 
