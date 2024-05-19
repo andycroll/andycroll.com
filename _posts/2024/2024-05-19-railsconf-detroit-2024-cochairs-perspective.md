@@ -113,7 +113,7 @@ More talks and an early(-ish) finish after Aaron’s keynote.
 
 As for the talk tracks, I caught parts of some talks from the back of the room but wasn’t able to administratively (or honestly constitutionally) sit and take in many of them. So when the talks emerge on video over the next couple of months I’ve got multiple evenings of talk homework to do. I heard amazing things about the general level of quality and I’m the guy who genuinely does watch talk videos on YouTube. So I’ve that to look forward to.
 
-The lightning talks were wildly popular, I personally misread this and was willing to let it slide for this year’s event. It was grabbed by the programme committee, installing Drew Bragg in his sparkly jacket as host, and everyone who attended it thought it was amazing.
+The lightning talks were wildly popular, I personally misread this and was willing to let it slide for this year’s event. It was grabbed by [Mayra](https://twitter.com/DRBragg/status/1789467305472098465), installing Drew Bragg in his sparkly jacket as host, and everyone who attended it thought it was amazing.
 
 A highlight for me was how pleased Aaron was with his joke about Nadia's keynote from Day One. He'd tried it out on various people over the conference and when it came to diliver it to the wider room I was able to enjoy but the gag and _how much_ he enjoyed delivering it.
 
@@ -157,16 +157,25 @@ I hope you'll excuse the self-indulgence of collecting these here. But these are
 > "It really was the best in a while."
 > —[Josh Wood](https://twitter.com/heyjoshwood/status/1788949219052593243)
 
+> "I'm super thankful to Andy, Ufuk and the entire team that made RailsConf 2024 happen. The space, the talks, the vibes and energy were all top notch. The attention to detail was obvious. And, I know they were saying this, but Detroit was surprisingly cool!"
+> —[Jeremy Smith](https://twitter.com/jeremysmithco/status/1790441411050950897)
+
 > "After more than a decade of not attending, the past few days felt like my first RailsConf. Had so much fun."
 > —[Jon Nunemaker](https://twitter.com/jnunemaker/status/1788735371448090795)
 
-> "I'm still coming down from an amazing hashtag#RailsConf in Detroit last week. Rails and the community around it still delight and impress me, and are still innovating and teaching me new things after all these years."
+> "I'm still coming down from an amazing RailsConf in Detroit last week. Rails and the community around it still delight and impress me, and are still innovating and teaching me new things after all these years."
 > —[Mike Delassio](https://www.linkedin.com/posts/mikedalessio_railsconf-activity-7196179866898026496-WJx7)
+
+> "RailsConf 2024 was incredible! Met so many amazing people!"
+> —[Manu J](https://twitter.com/techsutra/status/1790185432803688754)
 
 > "Over the last two decades, I have attended 51 tech conferences throughout Canada, the US, and Europe.
 >
 > Without a doubt, the best tech conference I have been to is RailsConf 2024 in Detroit, United States."
 > —[Eric Brooke](https://www.linkedin.com/posts/ericbrooke_railsconf-scholarship-ruby-activity-7194766357358395394-aOCC/)
+
+> "Just wrapped up my first ever RailsConf in Detroit and I’m sad to hear 2025 will be the last one. It somehow exceeded my already high expectations - especially how consistently genuine and welcoming everyone is."
+> —[Peter Cai](https://twitter.com/pcai_/status/1789010630059397344)
 
 > "I’ve been a rails developer since 2004 yet have always felt an outsider in the community (live in rural Japan didn’t help!) attending RailsConf totally changed my perspective."
 > —[Phil Smy](https://twitter.com/psmy/status/1792039074544652385)
