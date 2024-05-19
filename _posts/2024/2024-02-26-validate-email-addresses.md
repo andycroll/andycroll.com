@@ -3,7 +3,7 @@ title: "Validate Email Addresses"
 description: "There’s a surprising number of ways to do it"
 layout: article
 category: ruby
-date: 2024-02-26 06:00
+date: 2024-02-26 01:00
 image:
   base: "2024/validate-email-addresses"
   alt: "Envelopes"
