@@ -35,6 +35,8 @@ I visited Detroit in January, to see the venue and walk the snowy streets. It wa
 
 We didn’t have a lot of wiggle room as the venue and hotel were booked by a previous Executive Director in 2022. An enormous, echo-y, car park exhibition space (of which Detroit’s conference centre has many!) was booked and we only had half the ballroom plus some confusingly located rooms.
 
+Aside from that trip, most of the work I put in for RailsConf happened on evenings and weekends (yay timezones?) meaning my day job at CoverageBook didn't take a hit, but my ability to unwind did. Am sure this is also true for lots of the folks who invested their love & energy into the various elements of the conference. So much volunteer enthusiasm is a testament to our community.
+
 Ruby Central had started working with Aryn & Sarah from [Ax3 Studios](https://www.ax3studios.com) for RubyConf last year and their attention to detail, squeezing of costs, positive supplier & venue relationships and relentless good humour are the reason everything felt so smooth during the event.
 
 Their presence the only reason I was able to actually enjoy the conference. Also Aryn made sure we got the ballroom and lost the atmosphere-free car park.
