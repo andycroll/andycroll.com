@@ -117,9 +117,9 @@ As for the talk tracks, I caught parts of some talks from the back of the room b
 
 The lightning talks were wildly popular, I personally misread this and was willing to let it slide for this year’s event. It was grabbed by [Mayra](https://twitter.com/DRBragg/status/1789467305472098465), installing Drew Bragg in his sparkly jacket as host, and everyone who attended it thought it was amazing.
 
-A highlight for me was how pleased Aaron was with his joke about Nadia's keynote from Day One. He'd tried it out on various people over the conference and when it came to diliver it to the wider room I was able to enjoy but the gag and _how much_ he enjoyed delivering it.
+A highlight for me was how pleased Aaron was with his joke about Nadia's keynote from Day One. He'd tried it out on various people over the conference and when it came to deliver it to the wider room I was able to enjoy but the gag and _how much_ he enjoyed delivering it.
 
-_I should also note that during the conference I had a change to try out an Apple Vision Pro. It's the future but it hurt my face._
+_I should also note that during the conference I had a chance to try out an Apple Vision Pro. It's the future but it hurt my face._
 
 ## Yeah! RailsConf!
 
