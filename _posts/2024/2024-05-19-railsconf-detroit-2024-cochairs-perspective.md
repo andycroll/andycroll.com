@@ -162,6 +162,13 @@ I hope you'll excuse the self-indulgence of collecting these here. But these are
 > I'm super thankful to Andy, Ufuk and the entire team that made RailsConf 2024 happen. The space, the talks, the vibes and energy were all top notch. The attention to detail was obvious. And, I know they were saying this, but Detroit was surprisingly cool!
 > —[Jeremy Smith](https://twitter.com/jeremysmithco/status/1790441411050950897)
 
+> After some years off from conferences due to phases of life, RailsConf was fantastic and energizing. There’s something so different about meeting in person and riffing with others on a bunch of interesting ideas.
+>
+> While exhausting in the moment, it’s incredibly recharging in the long run, and it’s difficult to not be excited about the people in the Ruby community and the prospects for Ruby and Rails at large.
+>
+> With Ruby Central, it feels like the community is in great hands.
+> —[Garrett Dimon](https://ruby.social/@garrettdimon/112422969998827529)
+
 > After more than a decade of not attending, the past few days felt like my first RailsConf. Had so much fun.
 > —[Jon Nunemaker](https://twitter.com/jnunemaker/status/1788735371448090795)
 
@@ -185,10 +192,14 @@ I hope you'll excuse the self-indulgence of collecting these here. But these are
 > I’ve been a rails developer since 2004 yet have always felt an outsider in the community (live in rural Japan didn’t help!) attending RailsConf totally changed my perspective.
 > —[Phil Smy](https://twitter.com/psmy/status/1792039074544652385)
 
+> It was my first time attending since 2008 and the excitement, collaboration, inclusiveness and spirit of fun was SO energizing (and exhausting too ... the conference paradox).
+> –[Kevin Lawver](https://social.lol/@kpl/112434254468828341)
+
 ## Some other write ups
 
 Drop me an email if I'm missing any.
 
+- [Adarsh Pandit](https://www.linkedin.com/posts/adarshpandit_railsconf-detroit-ruby-activity-7195212590770266112-6_X7), Executive Director
 - [Andy Atkinson](http://andyatkinson.com/blog/2024/05/17/railsconf-conference-2024-detroit), speaker
 - [Filipe Vogel](https://fpsvogel.com/posts/2024/railsconf-2024-recap-ruby-community)
 - [Garrett Dimon](https://garrettdimon.com/journal/posts/the-bright-future-of-ruby-and-rails), speaker
