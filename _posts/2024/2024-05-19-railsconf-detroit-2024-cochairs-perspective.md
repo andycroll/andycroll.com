@@ -190,6 +190,7 @@ I hope you'll excuse the self-indulgence of collecting these here. But these are
 Drop me an email if I'm missing any.
 
 - [Andy Atkinson](http://andyatkinson.com/blog/2024/05/17/railsconf-conference-2024-detroit), speaker
+- [Filipe Vogel](https://fpsvogel.com/posts/2024/railsconf-2024-recap-ruby-community)
 - [Garrett Dimon](https://garrettdimon.com/journal/posts/the-bright-future-of-ruby-and-rails), speaker
 - [Jon Nunemaker](https://www.johnnunemaker.com/railsconf-2024/), attendee
 - [Kevin Murphy](https://kevinjmurphy.com/posts/railsconf-2024-recap/), programme committee
