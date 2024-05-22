@@ -204,6 +204,7 @@ Drop me an email if I'm missing any.
 - [Filipe Vogel](https://fpsvogel.com/posts/2024/railsconf-2024-recap-ruby-community)
 - [Garrett Dimon](https://garrettdimon.com/journal/posts/the-bright-future-of-ruby-and-rails), speaker
 - [Jon Nunemaker](https://www.johnnunemaker.com/railsconf-2024/), attendee
+- [Kevin Lawver](https://medium.com/gusto-engineering/gusto-went-to-railsconf-2024-b61dbd2040f1), speaker, sponsor
 - [Kevin Murphy](https://kevinjmurphy.com/posts/railsconf-2024-recap/), programme committee
 - [Kevin Murphy again](https://kevinjmurphy.com/posts/4-things-railsconf-2024/)
 - [Robby Russell](https://blog.planetargon.com/blog/entries/recap-railsconf-2024-detroit)
