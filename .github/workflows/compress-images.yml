@@ -1,4 +1,4 @@
-name: Optimize images
+name: Compress images
 
 on:
   pull_request:
@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Compress Images
         uses: calibreapp/image-actions@main
