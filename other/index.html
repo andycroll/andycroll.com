@@ -1,0 +1,33 @@
+---
+layout: default
+description: "Other writings"
+---
+<header class="block p-3 mb-4">
+  <h1 class="font-serif text-xl sm:text-2xl md:text-3xl md:w-2/3">
+    Sometimes I write about other things. Includes yearly reviews and other thoughts.
+  </h1>
+</header>
+
+<div class="grid md:grid-cols-5">
+  <div class="p-3 md:col-span-3">
+    <h3 class="font-serif text-xl mt-3"></h3>
+
+    <ol>
+      {% for post in site.posts %}
+        {% if post.categories contains 'ruby' %}
+        {% else %}
+          <li class="mb-2">
+            <a class="block" href="{{ post.url }}">
+              {% assign titleWords = post.title | split: ' ' %}
+              {% for word in titleWords -%}
+                {%- if forloop.last %}&nbsp;{% else %}  {% endif -%}
+                {{- word -}}
+              {%- endfor %}
+            </a>
+            <small class="text-gray-400">{{ post.date | date_to_long_string: 'ordinal', 'US' }}</small>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </div>
+</div>

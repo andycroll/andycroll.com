@@ -5,10 +5,10 @@
 url: https://andycroll.com
 title: Andy Croll
 author: Andy Croll
-description: "He’s CTO at CoverageBook & AnswerThePublic, Rubyist, runs Brighton Ruby, Author, Speaker, Bootstrapper & Twin Dad."
+description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Bootstrapper & Twin Dad."
 image_url: "https://images.andycroll.com"
 
-include: ['_headers']
+include: ["_headers"]
 
 email: andy@goodscary.com
 

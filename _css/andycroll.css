@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  a {
-    @apply text-stone-800 hover:text-red-700 decoration-2 decoration-red-700 underline-offset-2 underline;
-  }
+.prose a, .prose-lg a {
+  @apply text-stone-800 hover:text-red-700 decoration-1 decoration-red-700 underline-offset-2 underline;
 }
 
 .amp {
