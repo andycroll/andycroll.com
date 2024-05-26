@@ -49,7 +49,7 @@ jobs:
 
 ## Why?
 
-Smaller images mean faster downloads for your users. This is a lovely "set and forget" tool from the lovely folks at [Calibre](https://calibreapp.com). You might be surprised how much bandwisdth you save.
+Smaller images mean faster downloads for your users. This is a lovely "set and forget" tool from the lovely folks at [Calibre](https://calibreapp.com). You might be surprised how much bandwidth you save.
 
 This works for any repository, not just Rails applications. I use it on the [jekyll](https://jekyllrb.com) site you’re currently reading.
 
