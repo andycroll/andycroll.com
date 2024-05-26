@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "What I'm Doing Now"
-date: "2020-04-26"
+date: "2024-05-26"
 redirect_from:
   - /2010/10/01/negative/
   - /startups/singapore/singapore-startup-negativity/
