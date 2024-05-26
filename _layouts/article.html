@@ -85,13 +85,15 @@ layout: default
     </div>
   </div>
 
-  <div
-    class="bg-red-50 p-3 rounded block gap-3 flex flex-col items-start mb-3"
-  >
-    <p class="text-lg m-0 leading-6">Sign up to get a nugget of Ruby knowledge every couple of weeks or so.</p>
+  {% if page.categories contains 'ruby' %}
+    <div
+      class="bg-red-50 p-3 rounded block gap-3 flex flex-col items-start mb-3"
+    >
+      <p class="text-lg m-0 leading-6">Sign up to get a nugget of Ruby knowledge every couple of weeks or so.</p>
 
-    {% include email.html %}
-  </div>
+      {% include email.html %}
+    </div>
+  {% endif %}
 
   <div class="mb-10">
     <p class="text-xs text-slate-500 px-3">
