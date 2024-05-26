@@ -61,4 +61,4 @@ There’s still some human intervention needed to to make a good initial format 
 
 The best solution to make your image downloads less of a burden for your users is to resize—reducing the dimensions of the files—and serve multiple sizes using [responsive imagery](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) with a `<picture>` element, a `srcset` attribute on an `<img>` tag, or a combination of both.
 
-Additionally this is only for image assets included in your application or site. Any user uploaded images will need resizing and compressing using an alternative technique. I’ve had great experience with [imgproxy](https://imgproxy.net) at CoverageBook.
+Note that this is only for image assets included in your application or site. Any user-uploaded images will need resizing and compressing using an alternative technique. I’ve had great experience with [imgproxy](https://imgproxy.net) at CoverageBook.
