@@ -57,7 +57,11 @@ This works for any repository, not just Rails applications. I use it on the [Jek
 
 ## Why not?
 
-Maybe you dislike free performance improvements for you users? I kid. A bit.
+Maybe you dislike free performance improvements for you users?
+
+I kid.
+
+A bit.
 
 There’s still some human intervention needed to to make a good initial format decision for your imagery. You‘ll want to use the correct kind of format for the correct kind of image e.g. JPGs or WEBP for photography will generally compress to a smaller size for the same visual result than PNG.
 
