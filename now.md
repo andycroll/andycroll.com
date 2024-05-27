@@ -42,4 +42,4 @@ What I thought of [2023](http://localhost:4000/other/year-in-review-2023/).
 
 We sold [AnswerThePublic](https://answerthepublic.com) to Neil Patel to better focus on CoverageBook in 2022.
 
-Also ran, then sold, [Life.Time.Value.](https://ltvconf.com), a conference for people looking to make the leap into internet-focussed product or Software as a Software businesses.
+Also ran, then sold, “Life.Time.Value.”, a conference for people looking to make the leap into internet-focussed product or Software as a Software businesses.
