@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/herd-of-sheep-in-grayscale-photo-cDwZ40Lj9eo"
 ---
 
-Images can form a large proportion of the total download size of pages in your Rails application.
+Images typically form a large proportion of the total download size of pages in your Rails application.
 
 Given that many image formats (both lossy and lossless) can be compressed further without visual regressions it makes sense to optimize them as much as you can without losing any visual fidelity.
 
