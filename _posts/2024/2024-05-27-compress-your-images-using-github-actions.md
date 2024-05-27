@@ -1,6 +1,6 @@
 ---
 title: "Compress Your Images"
-description: "Using a set and forget Github Action"
+description: "Using a set-and-forget GitHub Action"
 layout: article
 category: ruby
 date: 2024-05-27 01:00
