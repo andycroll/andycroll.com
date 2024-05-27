@@ -13,7 +13,7 @@ image:
 
 Images typically form a large proportion of the total download size of pages in your Rails application.
 
-Given that many image formats (both lossy and lossless) can be compressed further without visual regressions it makes sense to optimize them as much as you can without losing any visual fidelity.
+Given that many image formats (both lossy and lossless) can be compressed further without any visual regression, it makes sense to optimize them up until that point.
 
 ## Create a Github Action
 
