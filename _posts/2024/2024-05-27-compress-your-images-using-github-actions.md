@@ -20,6 +20,8 @@ Given that many image formats (both lossy and lossless) can be compressed furthe
 Add the following to your repository:
 
 ```yml
+# .github/workflows/compress-images.yml 
+
 name: Optimize Images
 
 on:
