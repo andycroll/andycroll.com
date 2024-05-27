@@ -17,7 +17,7 @@ Given that many image formats (both lossy and lossless) can be compressed furthe
 
 ## Create a Github Action
 
-Add the following `.github/workflows/compress-images.yml` to your repository.
+Add the following to your repository:
 
 ```yml
 name: Optimize Images
