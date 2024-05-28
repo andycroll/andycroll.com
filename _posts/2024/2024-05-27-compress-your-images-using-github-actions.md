@@ -63,7 +63,7 @@ I kid.
 
 A bit.
 
-There’s still some human intervention needed to to make a good initial format decision for your imagery. You‘ll want to use the correct file type for the image e.g. JPGs or WEBP offer better compression for photographic images.
+There’s still some human intervention needed to make a good initial format decision for your imagery. You‘ll want to use the correct file type for the image e.g. JPGs or WEBP offer better compression for photographic images.
 
 The best solution to make your image downloads less of a burden for your users is to resize—reducing the dimensions of the files—and serve multiple sizes using [responsive imagery](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images) with a `<picture>` element, a `srcset` attribute on an `<img>` tag, or a combination of both.
 
