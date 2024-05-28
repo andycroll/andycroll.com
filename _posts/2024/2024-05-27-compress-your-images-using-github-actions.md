@@ -57,7 +57,7 @@ This works for any repository, not just Rails applications. I use it on the [Jek
 
 ## Why not?
 
-Maybe you dislike free performance improvements for you users?
+Maybe you dislike free performance improvements for your users?
 
 I kid.
 
