@@ -3,7 +3,7 @@ title: "Compress Your Images"
 description: "Using a set-and-forget GitHub Action"
 layout: article
 category: ruby
-date: 2024-05-27 01:00
+date: 2024-06-05 01:00
 image:
   base: "2024/compress-your-images-using-github-actions"
   alt: "Sheep squeezed into a small pen"
@@ -20,7 +20,7 @@ Given that many image formats (both lossy and lossless) can be compressed furthe
 Add the following to your repository:
 
 ```yml
-# .github/workflows/compress-images.yml 
+# .github/workflows/compress-images.yml
 
 name: Optimize Images
 
