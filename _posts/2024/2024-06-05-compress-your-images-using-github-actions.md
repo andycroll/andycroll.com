@@ -46,7 +46,7 @@ jobs:
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          githubToken: ${% raw %}{{{% endraw %} secrets.GITHUB_TOKEN }}
 ```
 
 ## Why?
