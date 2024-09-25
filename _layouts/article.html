@@ -49,7 +49,7 @@ layout: default
         {% if page.categories contains 'ruby' %}
           <a class="inline-block p-3 pb-0" href="/ruby">
             <img
-              src="/images/onerubything.svg"
+              src="/images/onerubything-horizontal.svg"
               class="w-auto h-4 sm:h-5 md:h-6"
               alt="One Ruby Thing"
             >
@@ -76,7 +76,10 @@ layout: default
       {{ page.excerpt }}
     </div>
 
-    {% include brightonruby.html %}
+    <div class="grid gap-2 grid-cols-2 lg:grid-cols-1 lg:mx-0 lg:w-1/5 lg:absolute lg:top-5 lg:right-0">
+      {% include email.html %}
+      {% include brightonruby.html %}
+    </div>
 
     <div
       class="max-w-3xl lg:max-w-2xl p-3 pt-0 prose-lg prose-headings:font-serif prose-headings:font-normal prose-headings:mb-1 prose-headings:mt-4 prose-p:my-0 prose-p:mb-3 prose-h1:text-2xl prose-h1:md:text-3xl prose-h2:text-xl prose-h2:md:text-2xl"

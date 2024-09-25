@@ -1,23 +1,35 @@
-<form
-  method="post"
-  action="https://goodscary.mailcoach.app/subscribe/a1246c9e-31ea-456a-aa14-7dddfea43c10"
-  class="validate"
-  target="_blank"
-  novalidate=""
->
-  <div class="form-group">
-    <label for="email" class="sr-only">Email</label>
-    <input
-      name="email"
-      type="email"
-      class="w-full max-w-sm text-slate-800 focus:border-slate-300 ring-slate-200 rounded mb-2"
-      placeholder="yourname@email.com"
-    />
-  </div>
+<div class="block bg-gradient-to-b from-slate-200 via-transparent via-10% rounded">
+  <div class="p-3">
+    <form
+      method="post"
+      action="https://goodscary.mailcoach.app/subscribe/a1246c9e-31ea-456a-aa14-7dddfea43c10"
+      target="_blank"
+      novalidate=""
+    >
+      <label for="email" class="block mb-2"
+        >Sign up to get a nugget of Ruby knowledge every couple of weeks or so.</label
+      >
+      <input
+        id="email"
+        name="email"
+        type="email"
+        class="w-full max-w-sm placeholder:text-slate-400 text-slate-800 focus:ring-slate-100 ring-slate-100 rounded mb-2"
+        placeholder="yourname@email.com"
+      >
 
-  <input
-    type="submit"
-    value="Get Emails"
-    class="inline-block items-center px-3 py-2 border border-transparent rounded shadow-sm font-medium no-underline text-gray-100 bg-red-800 hover:bg-red-700 hover:text-white hover:no-underline hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 cursor-pointer"
-  />
-</form>
+      <input
+        type="submit"
+        value="Get Emails"
+        class="
+          inline-block items-center
+          px-3 py-2
+          text-sm
+          rounded border border-transparent
+          shadow-sm font-medium text-gray-100
+          bg-gradient-to-b from-red-700 to-red-800 hover:from-red-600 hover:to-red-700 focus:from-red-600 focus:to-red-700
+          bg-red-800 hover:bg-red-700 hover:text-white hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 cursor-pointer
+        "
+      >
+    </form>
+  </div>
+</div>

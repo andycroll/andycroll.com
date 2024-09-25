@@ -2,18 +2,18 @@
 layout: default
 description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Bootstrapper & Twin Dad."
 ---
-<header class="block p-2 mb-4">
-  <h1 class="font-serif text sm:text-lg md:text-3xl md:w-4/5 lg:w-2/3">
+<header class="block p-3 mb-4">
+  <h1 class="font-serif text sm:text-lg md:text-3xl md:w-3/4 xl:w-1/2">
     {% include bio.html %}
   </h1>
 </header>
 
-<div class="grid md:grid-cols-5">
-  <div class="p-3 md:col-span-3">
-    <a class="inline-block bg-white rounded-r" href="/ruby/">
+<div class="grid grid-flow-dense grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+  <div class="col-span-2 bg-gradient-to-b from-slate-50 via-transparent via-30% rounded p-3">
+    <a class="block" href="/ruby/">
       <img
-        src="/images/onerubything.svg"
-        class="w-auto h-6 my-1"
+        src="/images/onerubything-horizontal.svg"
+        class="w-auto h-6 mb-2"
         alt="One Ruby Thing"
       >
     </a>
@@ -48,53 +48,14 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
     >
   </div>
 
-  <div class="md:col-span-2">
-    <div
-      class="bg-slate-100 p-3 rounded block gap-3 flex flex-col items-start mb-3 md:mr-3"
-    >
-      <a class="inline-block rounded-r" href="https://brightonruby.com">
-        <img
-          src="/images/brightonruby.svg"
-          class="w-auto h-6 my-1"
-          alt="Brighton Ruby"
-          loading="lazy"
-        >
-      </a>
+  <div class="col-span-2 md:col-span-1 lg:col-span-2 grid gap-3 grid-cols-2 md:grid-cols-1 lg:grid-cols-2 grid-flow-dense">
+    {% include brightonruby.html %}
+    {% include usingrails.html %}
+    {% include firstrubyfriend.html %}
+    {% include whatthestack.html %}
 
-      <p class="">
-        The OG, one-day, <i>in-person</i>, single track conference for Rubyists on the South Coast of the UK.
-      </p>
-
-      <a
-        href="https://brightonruby.com"
-        class="inline-block items-center px-3 py-2 border border-transparent rounded shadow-sm font-medium no-underline text-gray-100 bg-red-800 hover:bg-red-700 hover:text-white hover:no-underline hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 cursor-pointer"
-        >Tickets on Sale Now</a
-      >
-    </div>
-
-    <div
-      class="bg-red-50 p-3 rounded block gap-3 flex flex-col items-start md:mr-3"
-    >
-      <a class="inline-block rounded-r" href="https://firstrubyfriend.org">
-        <img
-          src="/images/firstrubyfriend.svg"
-          class="w-auto h-6 my-1"
-          alt="First Ruby Friend"
-          loading="lazy"
-        >
-      </a>
-
-      <p class="">A mentoring programme for the Ruby community.</p>
-
-      <a
-        href="https://firstrubyfriend.org"
-        class="inline-block items-center px-3 py-2 border border-transparent rounded shadow-sm font-medium no-underline text-gray-100 bg-red-800 hover:bg-red-700 hover:text-white hover:no-underline hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 cursor-pointer"
-        >Signup to mentor or apply</a
-      >
-    </div>
-
-    <div class="p-3 gap-3 flex flex-col items-start md:mr-3">
-      <h2 class="font-serif text-lg">
+    <div class="col-span-2 md:col-span-1 lg:col-span-2 bg-gradient-to-b from-slate-50 via-transparent via-10% rounded p-3">
+      <h2 class="font-serif bold text-lg">
         <a href="/other/">Other Archives</a>
       </h2>
 
