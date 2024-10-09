@@ -8,7 +8,6 @@ image:
   alt: "A hand holding a piece of sushi with chopsticks"
   credit: "Luc Bercoth"
   source: "https://unsplash.com/photos/REPQln8St2E"
-
 ---
 
 XSS, which stands for Cross-Site Scripting, is a common vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can be used to steal sensitive information, manipulate the page's content, or perform other malicious actions on behalf of the attacker.
@@ -40,7 +39,6 @@ But you can, and folks do, go around it.
 <%= @some_text_to_render %>
 ```
 
-
 ## Why?
 
 This is primarily about defending your application against malicious user input. Using the `<%== something %>` ERB tags in a Rails view template is the same as writing `<%= raw(something) %>`, which completely avoids the protections offered by `SafeBuffer`.
@@ -49,15 +47,14 @@ If you see `<%==` or `<% raw` in your ERB, consider it a bad smell. You should c
 
 If you look inside [ActiveSupport::SafeBuffer](https://api.rubyonrails.org/classes/ActiveSupport/SafeBuffer.html), you’ll see methods like `html_safe?`, which are the methods Rails uses to manage the safety of user input that you're displaying in the browser.
 
-As the [docs for `html_safe`](http://api.rubyonrails.org/classes/String.html#method-i-html_safe) say “It should never be called on user input”. You should let Rails do what it is good at.
+As the [docs for `html_safe`](https://api.rubyonrails.org/classes/String.html#method-i-html_safe) say “It should never be called on user input”. You should let Rails do what it is good at.
 
-You might also find [`#safe_join`](https://api.rubyonrails.org/classes/ActionView/Helpers/OutputSafetyHelper.html%23method-i-safe_join) useful. It behaves like `Array#join` but flattens the array, escapes all the unsafe strings, and returns an HTML safe string. h/t [Dorian Marié](https://dorianmarie.fr)
+You might also find [`#safe_join`](https://api.rubyonrails.org/classes/ActionView/Helpers/OutputSafetyHelper.html#method-i-safe_join) useful. It behaves like `Array#join` but flattens the array, escapes all the unsafe strings, and returns an HTML safe string. h/t [Dorian Marié](https://dorianmarie.com)
 
 ```ruby
 # In the controller
 @some_text_to_render = ["some text ", params[:user_text]].safe_join
 ```
-
 
 ## Why not?
 

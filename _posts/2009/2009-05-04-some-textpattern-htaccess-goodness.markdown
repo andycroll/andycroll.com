@@ -1,15 +1,15 @@
 ---
-title: 'Some TextPattern .htaccess Goodness'
-description: 'Basics.'
+title: "Some TextPattern .htaccess Goodness"
+description: "Basics."
 layout: article
 category: development
 redirect_from:
   - /2009/05/04/some-textpattern-htaccess-goodness/
 image:
-  base: '2009/some-textpattern-htaccess-goodness'
-  alt: 'Matrix Code'
-  credit: 'Markus Spiske'
-  source: 'https://unsplash.com/photos/68ZlATaVYIo'
+  base: "2009/some-textpattern-htaccess-goodness"
+  alt: "Matrix Code"
+  credit: "Markus Spiske"
+  source: "https://unsplash.com/photos/black-and-gray-laptop-computer-turned-on-FXFz-sW0uwo"
 ---
 
 I've made a note of the little `.htaccess` niceties I've used in the setting up sites.

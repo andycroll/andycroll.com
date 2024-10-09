@@ -1,14 +1,14 @@
 ---
 title: "What Should I Buy for Twins?"
-description: 'Good things for two at once.'
+description: "Good things for two at once."
 layout: article
 category: other
 redirect_from:
   - /2013/05/18/what-should-i-buy-for-twins/
   - /life/what-should-i-buy-for-twins/
 image:
-  base: '2013/what-should-i-buy-for-twins'
-  alt: 'Twins'
+  base: "2013/what-should-i-buy-for-twins"
+  alt: "Twins"
 ---
 
 The glib answer to this is two of everything! But in truth there are a few things that are specific to getting set up for impending multiples.
@@ -35,7 +35,7 @@ Ours are still sharing a cot, now at either end, and it won’t be long before t
 
 A surprise, these, recommended by our health visitor. For a little while, propped up on their fronts on these was the only way our two would stop raging. Obviously given SIDS this was a ‘while someone is in the room’ thing, but it really helped.
 
-* [GaGa Bean Bag](https://www.rucomfybeanbags.co.uk/beanbags/baby-gaga-beanbags.html)
+- [GaGa Bean Bag](https://www.rucomfybeanbags.co.uk/beanbags/baby-gaga-beanbags.html)
 
 ## Vibrating Chairs
 
@@ -47,13 +47,13 @@ The tunes are not too annoying.
 
 We were also recommended the Baby Bjorn bouncers by a couple of other twin mums. Ours haven’t taken to them yet, but I think once they’re more aware then they’ll come into their own.
 
-* [Baby Bjorn Bouncer](https://www.babybjorn.co.uk/baby-bouncers/)
+- [Baby Bjorn Bouncer](https://www.babybjorn.co.uk/baby-bouncers/)
 
 ## Carrying
 
 We have a couple of Baby Bjorn carriers, which are pretty useful if you have to do stuff and keep a single twin happy who only wants to be ‘on’.
 
-* [Baby Bjorn Carrier](https://www.babybjorn.co.uk/baby-carriers/baby-carrier-mini/)
+- [Baby Bjorn Carrier](https://www.babybjorn.co.uk/baby-carriers/baby-carrier-mini/)
 
 ## Nappy Bins
 
@@ -61,7 +61,7 @@ Now this might seem incredibly superfluous, but with two you’ll be getting thr
 
 Also don’t bother with the third party refills, just buy a load of official ones, they hold the smell in and don’t take a half hour to put together: you’ll have better things to do with your time.
 
-* [Nappy Bins](https://angelcarebaby.com/uk_en/changing/angelcare-nappy-bin)
+- [Nappy Bins](https://www.amazon.co.uk/Angelcare-AC2200-Nappy-Disposal-System/dp/B07V7XKJ4Y)
 
 As for the nappies themselves: Pampers - good, Huggies - didn’t seem to fit well and Sainsbury’s own brand - just as good and half the price.
 

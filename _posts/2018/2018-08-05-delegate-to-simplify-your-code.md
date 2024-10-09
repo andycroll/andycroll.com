@@ -1,13 +1,13 @@
 ---
 title: Delegate to simplify your code
-description: 'There’s both a Ruby and a Rails version'
+description: "There’s both a Ruby and a Rails version"
 layout: article
 category: ruby
 image:
-  base: '2018/delegate-to-simplify-your-code'
-  alt: 'Graffiti arrows'
-  source: 'https://unsplash.com/photos/Ze3l02aRwmE'
-  credit: 'Annie Spratt'
+  base: "2018/delegate-to-simplify-your-code"
+  alt: "Graffiti arrows"
+  source: "https://unsplash.com/@anniespratt"
+  credit: "Annie Spratt"
 ---
 
 One way of thinking about object-oriented programming is as passing messages between objects.
@@ -16,8 +16,8 @@ In many cases you may want to surface a public method on a associated object as 
 
 The two main ways to do this are:
 
- * the `Forwardable` functionality in the the Ruby Standard Library, [documentation here](https://ruby-doc.org/stdlib-2.5.1/libdoc/forwardable/rdoc/Forwardable.html#method-i-def_delegator).
- * the `delegate` method, an Active Support core extension (available if you’re using Rails) [documentation here](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/module/delegation.rb).
+- the `Forwardable` functionality in the the Ruby Standard Library, [documentation here](https://ruby-doc.org/stdlib-2.5.1/libdoc/forwardable/rdoc/Forwardable.html#method-i-def_delegator).
+- the `delegate` method, an Active Support core extension (available if you’re using Rails) [documentation here](https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/module/delegation.rb).
 
 ## Instead of…
 
@@ -46,7 +46,6 @@ class Workspace < ApplicationRecord
   end
 end
 ```
-
 
 ## Use…
 
@@ -81,7 +80,6 @@ end
 If you are 'passing through' messages in Ruby or Rails either style is preferable to creating a new method. It’s a clearer expression of what you're trying to achieve in your code. The different look of the code helpfully creates a visual distiction between 'just calling methods on an associated object' and where you're actually implementing new functionality.
 
 As is typical, the Rails version is syntactically neater and provides greater flexibility and functionality. I particularly like the `prefix` and `allow_nil` options. If you're using Rails you may as well use the enhancements that Rails provides for delgation.
-
 
 ### Why not?
 

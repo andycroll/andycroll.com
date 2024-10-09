@@ -8,15 +8,13 @@ image:
   alt: "Calendar with pins"
   credit: "Towfiqu barbhuiya"
   source: "https://unsplash.com/photos/bwOAixLG0uc"
-
 ---
 
 In Active Support‘s extensions to the core Ruby classes, some of the most useful and plentiful are related to `Time`.
 
 One of Rails’s founding uses was to provide helpful, reusable methods for regularly performed tasks. In our web applications we‘re often working with times and dates.
 
-Enter the methods from [DateAndTime::Calculations](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/core_ext/date_and_time/calculations.rb). To find out more check out out the [API documentation](http://api.rubyonrails.org/classes/DateAndTime/Calculations.html) or the [`DateTime` section in the Core Extensions Rails guide](http://guides.rubyonrails.org/active_support_core_extensions.html#extensions-to-datetime).
-
+Enter the methods from [DateAndTime::Calculations](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/core_ext/date_and_time/calculations.rb). To find out more check out out the [API documentation](https://api.rubyonrails.org/classes/DateAndTime/Calculations.html) or the [`DateTime` section in the Core Extensions Rails guide](https://guides.rubyonrails.org/active_support_core_extensions.html#extensions-to-datetime).
 
 ## Familiarise yourself with...
 
@@ -76,14 +74,10 @@ right_now.next_occurring(:thursday)
 #=> Thurs, 06 Oct 2022 08:30:23.666835000 UTC +00:00
 ```
 
-
 ## Why?
 
 These are tremendously useful, and well-named, methods to help describe the date and time logic in your applications.
 
-
 ## Why not?
 
 While this style of extending core Ruby classes is sometimes derided by folks who dislike Rails’s ”magical” style... you’d be a bit silly to reimplement your own date calculations inside a Rails application.
-
-

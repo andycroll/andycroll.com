@@ -200,7 +200,7 @@ I hope you'll excuse the self-indulgence of collecting these here. But these are
 Drop me an email if I'm missing any.
 
 - [Adarsh Pandit](https://www.linkedin.com/posts/adarshpandit_railsconf-detroit-ruby-activity-7195212590770266112-6_X7), Executive Director
-- [Andy Atkinson](http://andyatkinson.com/blog/2024/05/17/railsconf-conference-2024-detroit), speaker
+- [Andy Atkinson](https://andyatkinson.com/blog/2024/05/17/railsconf-conference-2024-detroit), speaker
 - [Filipe Vogel](https://fpsvogel.com/posts/2024/railsconf-2024-recap-ruby-community)
 - [Garrett Dimon](https://garrettdimon.com/journal/posts/the-bright-future-of-ruby-and-rails), speaker
 - [Jon Nunemaker](https://www.johnnunemaker.com/railsconf-2024/), attendee
@@ -209,4 +209,4 @@ Drop me an email if I'm missing any.
 - [Kevin Murphy again](https://kevinjmurphy.com/posts/4-things-railsconf-2024/)
 - [Robby Russell](https://blog.planetargon.com/blog/entries/recap-railsconf-2024-detroit)
 - [Stefanni Brasil](https://www.hexdevs.com/posts/railsconf-2024-highlights/), speaker
-- [Talysson Oliveira](https://blog.codeminer42.com/codeminer42-at-railsconf-2024/), speaker
+- <a href="https://blog.codeminer42.com/codeminer42-at-railsconf-2024/" data-proofer-ignore="timeout">Talysson Oliveira</a>, speaker

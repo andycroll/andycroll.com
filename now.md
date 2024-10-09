@@ -26,7 +26,7 @@ I’m CTO at [CoverageBook](https://coveragebook.com).
 
 Co-chaired [RailsConf 2024](https://railsconf.com) ([by accident](/ruby/railsconf-detroit-2024-cochairs-perspective/)) in Detroit, Michigan.
 
-What I thought of [2023](http://localhost:4000/other/year-in-review-2023/).
+What I thought of [2023](/other/year-in-review-2023/).
 
 ### Past Speaking
 

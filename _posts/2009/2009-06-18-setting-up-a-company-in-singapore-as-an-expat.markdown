@@ -1,16 +1,16 @@
 ---
 title: "Setting up a Company in Singapore as an Expat"
-description: 'Diving around the bureaucracy.'
+description: "Diving around the bureaucracy."
 layout: article
 category: other
 redirect_from:
   - /2009/06/18/setting-up-a-company-in-singapore-as-an-expat/
   - /business/singapore/setting-up-a-company-in-singapore-as-an-expat/
 image:
-  base: '2009/setting-up-a-company-in-singapore-as-an-expat'
+  base: "2009/setting-up-a-company-in-singapore-as-an-expat"
   alt: Singapore
-  credit: 'Peter Nguyen'
-  source: 'https://unsplash.com/photos/CQhgno3yhv8'
+  credit: "Peter Nguyen"
+  source: "https://unsplash.com/photos/CQhgno3yhv8"
 ---
 
 _I left Singapore in late 2012, this information is likely more and more out of date._
@@ -85,7 +85,7 @@ In Singapore you can _only_ submit an application for a new business online usin
 
 Here's the trick, in order to use the website you need a [SingPass](https://www.singpass.gov.sg) an all purpose login for multiple government sites. In order to get one you must first wait _five_ days, for the data to migrate from the Ministry of Manpower into the systems of the SingPass people. Why this takes so long is beyond me. Then you can apply online, and few days later you get your SingPass and PIN in the post.
 
-You can then log into the [BizFile](https://www.bizfile.gov.sg) system and begin your registration, there's a [whole website](https://govassist.gobusiness.gov.sg) with link to PDFs and suchlike. I didn’t know of the site at the time and still managed to successfully bumble through the dreadful bizfile user interface myself.
+You can then log into the [BizFile](https://www.bizfile.gov.sg) system and begin your registration, there's a [whole website](https://gobusiness.gov.sg) with link to PDFs and suchlike. I didn’t know of the site at the time and still managed to successfully bumble through the dreadful bizfile user interface myself.
 
 You'll need to nominate a Singapore-resident secretary for the company during the process, anyone with their own SingPass will do; including employment pass holders, PRs and native Singaporeans. They don’t need any shares, so you can retain complete control of you company, don’t panic. You can use a local accountancy firm to provide company secretarial services for a few hundred bucks, but as long as you have ready access your secretary's signature I wouldn’t bother. My wife is my company secretary. If you're a massive corporation there are serious requirements of this role, but we're talking about a new small business.
 
@@ -101,7 +101,7 @@ You can run a very small business from your personal account, but don’t. Havin
 
 Having had poor experiences with Standard Chartered and pretty rubbish personal online banking with UOB I chose to go with [DBS](https://www.dbs.com.sg). I've also heard good things about HSBC.
 
-DBS provide a Visa Debit by default and they have (comparatively) reasonable online banking. They do levy a ridiculous charge ($30/month) if you want to make payments, as opposed to just view transactions. It must surely cost them more money in staff costs to process all the cheques I'll write, but nevermind. They also didn’t impress with the length of time it took to actually get my Visa card, and phoning the _help_line was next to useless as apparently they cannot talk to the card application department.
+DBS provide a Visa Debit by default and they have (comparatively) reasonable online banking. They do levy a ridiculous charge ($30/month) if you want to make payments, as opposed to just view transactions. It must surely cost them more money in staff costs to process all the cheques I'll write, but nevermind. They also didn’t impress with the length of time it took to actually get my Visa card, and phoning the \_help_line was next to useless as apparently they cannot talk to the card application department.
 
 To open the account you need passports and _in person_ signatures at the bank, for every director, company secretary and individual who needs to access the account or have a card. The forms are typically epic but the lady at the bank was very helpful. There was just a fair bit of sitting around while she filled stuff in, take a magazine or something.
 
@@ -109,7 +109,7 @@ But eventually I'm all set up.
 
 ### One last thing
 
-*Fax* your business information pack to the Ministry of Manpower, I posted mine initially and they managed to lose it so I had to fax it anyway. The process for setting up a business could take a little while, what with all the waiting times or if you need approval from another government agency, meaning you could get close to your 30 day limit on your EntrePass but I was reliably informed that if you are getting close you can always ring them to extend the deadline.
+_Fax_ your business information pack to the Ministry of Manpower, I posted mine initially and they managed to lose it so I had to fax it anyway. The process for setting up a business could take a little while, what with all the waiting times or if you need approval from another government agency, meaning you could get close to your 30 day limit on your EntrePass but I was reliably informed that if you are getting close you can always ring them to extend the deadline.
 
 ## In Summary
 

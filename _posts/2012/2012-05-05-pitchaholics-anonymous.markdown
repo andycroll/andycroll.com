@@ -1,16 +1,16 @@
 ---
-title: 'Pitchaholics Anonymous'
-description: 'Make things for customers, do not constantly pitch.'
+title: "Pitchaholics Anonymous"
+description: "Make things for customers, do not constantly pitch."
 layout: article
 category: other
 redirect_from:
   - /2012/05/05/pitchaholics-anonymous/
   - /startups/pitchaholics-anonymous/
 image:
-  base: '2012/pitchaholics-anonymous'
-  alt: 'Empty cinema chairs'
-  credit: 'Felix Mooneeram'
-  source: 'https://unsplash.com/photos/evlkOfkQ5rE'
+  base: "2012/pitchaholics-anonymous"
+  alt: "Empty cinema chairs"
+  credit: "Felix Mooneeram"
+  source: "https://unsplash.com/photos/evlkOfkQ5rE"
 ---
 
 Hello, I'm a startup founder and I am a Pitchaholic
@@ -27,14 +27,14 @@ I know this is endemic to the startup world but in particular South East Asia ha
 
 **You're pitching to the wrong people, at the wrong time.** If you are pitching, know why.
 
-You need to stop talking to other potential entrepreneurs, start pitching to rooms full of your clients and future customers. At ImpulseFlyer, we pitched to hotels and to groups of our target audience of customers, *not* to other startups.
+You need to stop talking to other potential entrepreneurs, start pitching to rooms full of your clients and future customers. At ImpulseFlyer, we pitched to hotels and to groups of our target audience of customers, _not_ to other startups.
 
-*Sidenote: Pitching at incubator demo days is worth it, if they are rammed with real investors.*
+_Sidenote: Pitching at incubator demo days is worth it, if they are rammed with real investors._
 
 Pitching to a room is an easy thing to do psychologically because when someone disagrees with you, it's because they don’t understand. Plus you can pretend that all the preparation proves that you're moving towards your goal. Right?
 
-If you go out to the market and try and sell your idea and no customers come & pay, that probably proves that its not gonna work. But that's good, because then you can work on the next thing. But then you can’t call yourself a founder anymore. Not good. Unless you want to actually *do* the tough leg work of trying to start a company.
+If you go out to the market and try and sell your idea and no customers come & pay, that probably proves that its not gonna work. But that's good, because then you can work on the next thing. But then you can’t call yourself a founder anymore. Not good. Unless you want to actually _do_ the tough leg work of trying to start a company.
 
 Even with a functional business model this stuff is hard enough, so don’t waste your time pitching at every goddamn event: spend your time finding out whether your concept, with you at the helm, can ever make money. Else it is just a lot of talk and the simulcrum of action.
 
-*Thanks to [Derrick Ko](http://derrickko.com) for reading a draft of this.*
+_Thanks to <a href="https://www.linkedin.com/in/derrickk/" data-proofer-ignore="429">Derrick Ko</a> for reading a draft of this._
