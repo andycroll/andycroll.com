@@ -1,6 +1,6 @@
 ---
 title: Running RedDotRubyConf 2011
-description: 'Details of the first year.'
+description: "Details of the first year."
 layout: article
 category: other
 redirect_from:
@@ -8,8 +8,8 @@ redirect_from:
   - /2011/05/16/running-reddotrubyconf-2011/
   - /ruby/singapore/running-reddotrubyconf-2011/
 image:
-  base: '2011/running-reddotrubyconf-2011'
-  alt: 'Final slide from RDRC'
+  base: "2011/running-reddotrubyconf-2011"
+  alt: "Final slide from RDRC"
 ---
 
 [github]: https://github.com
@@ -33,7 +33,7 @@ I asked Tom if he was willing to head over (we'd previously met at SchnitzelConf
 
 It was always in my head to expand the number of ‘known’ speakers in the event that tickets were selling well enough. So I kept Mikel and Gregg warm in the hope that I'd be able to get them across to speak. Pleasingly, and with Ian coming over as part of Pivotal's contribution, we were able to make that happen. Sadly Chad had to drop out do to a change in his circumstances but he's promised he's coming next year.
 
-[rdrc]: http://reddotrubyconf.com
+[rdrc]: https://reddotrubyconf.com
 
 I decided to use wufoo to do the ticketing, most event management sites take a percentage of every ticket on top of the credit card or paypal fees and I was concerned about the budget. With only a $29 monthly charge for their paypal integration I figured it was worth a little extra legwork with CSVs.
 
@@ -47,7 +47,7 @@ My principles for the conference were pretty simple.
 
 **Time facism.** Conferences that run over are badly run. It's important to encourage speakers to be succinct and for the audience to afford them the respect of their punctuality. Conferences are tiring social occasions, the least you can do for everyone is to be organisaed and finish on time.
 
-**Single track.** I personally *hate* multiple tracks; you always feel like you're missing out on the 'good stuff' and people tend to drift in and out of the sessions. Plus it's easier to control the quality of the content if there is less of it.
+**Single track.** I personally _hate_ multiple tracks; you always feel like you're missing out on the 'good stuff' and people tend to drift in and out of the sessions. Plus it's easier to control the quality of the content if there is less of it.
 
 My solution to a potential lack of variety was to opt for short talks, of 20 minutes, in the afternoon. This had the benefit of adapting to the shorter after lunch attention span of the audience as well as protecting against individual topics being poorly presented or simply not holding the interest of a section of the audience. Thankfully this wasn’t the case, even though some of the afternoon speakers were doing so for the first time.
 
@@ -83,18 +83,18 @@ I did try and group rough themes together but didn’t have an overall premise f
 
 ### Suppliers
 
-* **Venue:** Mary Ho at [SMU][smu]
-* **T-shirts:** Simon at [Accl Pte Ltd][accl]
-* **Printing:** Colors Alive (dead)
-* **Booklets:** [Field Notes][fnotes]
-* **Coffee:** Machines from [Coffee Bean & Tea Leaf][cbtl]
-* **Drinks:** Bought at Carrefour and moved by hand
-* **Food:** Orchid Thai Catering (dead)
+- **Venue:** Mary Ho at [SMU][smu]
+- **T-shirts:** Simon at [Accl Pte Ltd][accl]
+- **Printing:** Colors Alive (dead)
+- **Booklets:** [Field Notes][fnotes]
+- **Coffee:** Machines from [Coffee Bean & Tea Leaf][cbtl]
+- **Drinks:** Bought at Carrefour and moved by hand
+- **Food:** Orchid Thai Catering (dead)
 
 [smu]: https://www.smu.edu.sg/campus-life/facilities-booking
-[accl]: http://twear.com.sg
+[accl]: https://twear.com.sg
 [fnotes]: https://fieldnotesbrand.com
-[cbtl]: https://www.coffeebean.com.sg/order-online/cbtl-system/machines
+[cbtl]: https://www.coffeebean.com.sg/
 
 ## Mistakes
 
@@ -120,29 +120,29 @@ I may also change the timing of the conference to avoid the run up to the end of
 
 I've always been an open kind of guy, so here are the ballpark financial numbers for the conference. I figure it's got to help someone.
 
-*All numbers in Singapore Dollars.*
+_All numbers in Singapore Dollars._
 
 ### Income
 
- * *Sponsorship:*  27,000
- * *Ticket Sales:* 38,000
+- _Sponsorship:_ 27,000
+- _Ticket Sales:_ 38,000
 
 **TOTAL: 65,000 SGD**
 
 ### Costs
 
- * *Venue:*  10,000
- * *Travel:* 12,000
- * *Hotels:*  4,000
- * *Swag:*    4,000
- * *Print:*   1,000
- * *Food:*    8,000
- * *Drink:*   1,000
- * *Coffee:*  2,000
- * *Party:*  10,000
- * *Misc:*    3,000
+- _Venue:_ 10,000
+- _Travel:_ 12,000
+- _Hotels:_ 4,000
+- _Swag:_ 4,000
+- _Print:_ 1,000
+- _Food:_ 8,000
+- _Drink:_ 1,000
+- _Coffee:_ 2,000
+- _Party:_ 10,000
+- _Misc:_ 3,000
 
-**TOTAL:  55,000 SGD**
+**TOTAL: 55,000 SGD**
 
 So profitable? Yes. Wildly? No. Was that the plan? Also no. Primary motivation was to do a 'good thing' and not be financially broken. In fact in terms of day rate x days spent I'm probably about even. It seems going into event management for the money is a fools errand.
 

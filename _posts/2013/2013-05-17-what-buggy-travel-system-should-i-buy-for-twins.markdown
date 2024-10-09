@@ -1,14 +1,14 @@
 ---
 title: "What Buggy/Travel System Should I Buy For Twins?"
-description: 'The best way to push two around at once.'
+description: "The best way to push two around at once."
 layout: article
 category: other
 redirect_from:
   - /2013/05/17/what-buggy-travel-system-should-i-buy-for-twins/
   - /life/what-buggy-travel-system-should-i-buy-for-twins/
 image:
-  base: '2013/what-buggy-travel-system-should-i-buy-for-twins'
-  alt: 'Twins'
+  base: "2013/what-buggy-travel-system-should-i-buy-for-twins"
+  alt: "Twins"
 ---
 
 There's some simple advice for getting a twin buggy. Keep it narrow so that doors are not a problem. And you'll probably replace it later on as the kids get hardier, heavier and you want something that folds up a bit smaller.
@@ -25,7 +25,7 @@ And you can attach the car seats as long as you plug in the right adapters.
 
 ## Baby Jogger City Select
 
-* [Baby Jogger City Select with Twin Kit](https://www.babyjogger.com)
+- <a href="https://babyjogger.com" data-proofer-ignore="404">Baby Jogger City Select with Twin Kit</a>
 
 Very similar in style, size and weight to the iCandy.
 
@@ -39,6 +39,6 @@ The benefit is the travel systems hold their value pretty well and your local TA
 
 You'll want the Maxi-Cosi Pebble, which seems to be the de-facto car seat of choice in the UK. It's not recommended to get second hand car seats, in the same way you shouldn’t get second hand bike helmets, you'll want to know they are undamaged.
 
-* [Maxi Cosi Pebble](https://www.maxi-cosi.com/international/car-seats/pebble-pro)
+- [Maxi Cosi Pebble](https://www.maxi-cosi.com/international/car-seats/pebble-pro)
 
 Given you've got twins, you'll probably want to occupy the back of your car with a couple of bases that let you quickly drop and lock the car seats in place. These are also good for the next size car seat up, so will last about 3 years.

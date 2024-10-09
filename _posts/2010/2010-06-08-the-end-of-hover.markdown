@@ -1,16 +1,16 @@
 ---
 title: "The end of :hover?"
-description: 'As we move to fingers as a primary input device.'
+description: "As we move to fingers as a primary input device."
 layout: article
 category: development
 redirect_from:
   - /2010/06/08/the-end-of-hover/
   - /design/the-end-of-hover/
 image:
-  base: '2010/the-end-of-hover'
-  alt: 'Hummingbird'
-  credit: 'Bill Williams'
-  source: 'https://unsplash.com/photos/ozwiCDVCeiw'
+  base: "2010/the-end-of-hover"
+  alt: "Hummingbird"
+  credit: "Bill Williams"
+  source: "https://unsplash.com/photos/ozwiCDVCeiw"
 ---
 
 When I sat down to a redesign of the Gameplan admin interface I suddenly came to a realisation, `:hover` doesn’t work. It's entirely possible I'd skim read this somewhere, but somehow the implications for my design work had passed me by until I saw an iPad in use.
@@ -29,6 +29,6 @@ However, `onmouseover` and `:hover` have often been used as an excuse to tempora
 
 What we do know is Apple is well aware of this. If you look at their own sites you'll see that they've known this was coming for a long time. Look at the [trailers site](https://trailers.apple.com/). Each trailer page has a widget that requires a click (or tap) to open where a previous solution to hiding content might have been to hide until hover. You can also see their approach in the liberal use of lightboxes across their product pages.
 
-A solution for subtly altering layout on a touch based device appears to be coming based on [this commit](https://github.com/Modernizr/Modernizr/commit/59ef6d8096bd715efabda3effb707bba69b1c054) to [Modernizer](https://modernizr.com/) a clever little js library that detects support for various browser functionality, and is [well recommended](https://stuffandnonsense.co.uk/blog/about/cannybill_design_process_package_contents/).
+A solution for subtly altering layout on a touch based device appears to be coming based on [this commit](https://github.com/Modernizr/Modernizr/commit/59ef6d8096bd715efabda3effb707bba69b1c054) to [Modernizer](https://modernizr.com/) a clever little js library that detects support for various browser functionality, and is [well recommended](https://stuffandnonsense.co.uk/blog/cannybill_design_process_package_contents).
 
 I know that I'll certainly be considering 'tap to toggle' as a user interface choice ahead of hover in the future. The iPhone-ification of interaction online continues.

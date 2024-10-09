@@ -4,7 +4,7 @@ description: "A slightly odd, quasi-conference for strange times"
 layout: article
 category: ruby
 image:
-  base: '2020/alt-brighton-ruby'
+  base: "2020/alt-brighton-ruby"
   alt: "Alt::BrightonRuby logo"
 ---
 
@@ -16,13 +16,11 @@ _[Bloom & Wild](https://www.bloomandwild.com/careers) & [Consonance](https://con
 
 So what is it this year? Well I figure if we’re not gonna get all the benefits of being together and all saying the same things at the same time and sharing the same corridors. I'm going to change things up a bit.￼
 
-<a href="https://andycroll.podia.com/alt-brightonruby-2020" class="btn btn-lg btn-outline-danger">Don’t tell me your story, I’m ready to buy</a>
-
 There is a benefit, in that we can spread the Brighton Ruby love a little bit wider than it normally gets to reach. Delivering the talks over the Internet means more people can ‘come’.
 
 There’s also no time constraint now so I’m going to expand time. I'm not going to force you to sit there on a particular day, with your kids at home, or having to squeeze in a four hour wait for “no yeast” at the supermarket￼.
 
-[Alt::BrightonRuby](https://alt.brightonruby.com) is video talks, a physical book, and a podcast. Oh and a donation to Shelter a homeless charity in the UK.￼
+[Alt::BrightonRuby](https://brightonruby.com/2020) is video talks, a physical book, and a podcast. Oh and a donation to Shelter a homeless charity in the UK.￼
 
 ### Video Talks
 
@@ -47,8 +45,6 @@ After a talk I often want to hunt done the speaker and get them to expand on the
 Plus, £2 of every ticket sold will go to [Shelter](https://shelter.org.uk). A homeless charity in the UK. The most vulnerable in our society are hit hardest by all this mad shutdown, so this is a way to send some money in that direction.
 
 So all that remains is for me to ask you to buy now, and not be surprised when there isn’t much _in there_ when you get access, but I promise there will be.
-
-<a href="https://andycroll.podia.com/alt-brightonruby-2020" class="btn btn-lg btn-outline-danger">Buy Now!</a>
 
 In addition I would love for you to tweet about it, tell your friends and colleagues and generally let people know this is happening. Maybe do that multiple times.
 

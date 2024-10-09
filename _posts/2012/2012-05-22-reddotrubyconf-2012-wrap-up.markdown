@@ -1,6 +1,6 @@
 ---
 title: "RedDotRubyConf 2012: Wrap up"
-description: 'Those were the days my friends.'
+description: "Those were the days my friends."
 layout: article
 category: ruby
 redirect_from:
@@ -8,8 +8,8 @@ redirect_from:
   - /2012/05/22/reddotrubyconf-2012-wrap-up/
   - /singapore/ruby/reddotrubyconf-2012-wrap-up/
 image:
-  base: '2012/reddotrubyconf-2012-wrap-up'
-  alt: 'My back'
+  base: "2012/reddotrubyconf-2012-wrap-up"
+  alt: "My back"
 ---
 
 Thanks to all who came, and all who spoke. The feedback I've had has been mostly lovely and for that I'm really grateful.
@@ -23,27 +23,27 @@ _I'll add missing decks as they become availible._
 
 ### Day One
 
-* **Ilya Grigorik** [Building a Faster Web](https://www.igvita.com/slides/2012/reddot-building-faster-web/)
-* **Richard Schneeman** [The 12 factor app](https://speakerdeck.com/schneems/12-factor-app-red-dot-ruby-conf)
-* **Thorben Schroder** _to come_
-* **Andras Kristof** _to come_
-* **Danish Khan** Ruby Community (gone)
-* **Sau Sheong Chang** [Ruby, Rock & Roll](https://www.slideshare.net/sausheong/ruby-rock-roll)
-* **Winston Teo** CSS Can be Tested Too (gone)
-* **Hemant Kumar** [Dive Inside Ruby 1.9](https://hemant-rdrc2012.herokuapp.com/)
-* **Tim Oxley** [Benefits of Client-side Templating](https://www.slideshare.net/timoxley/benefits-of-clientside-templating-for-red-dot-ruby)
-* **Wei Lu** [A Journey in Pair Programming](https://weilu.github.com/reddot2012/)
+- **Ilya Grigorik** [Building a Faster Web](https://www.igvita.com/slides/2012/reddot-building-faster-web/)
+- **Richard Schneeman** [The 12 factor app](https://speakerdeck.com/schneems/12-factor-app-red-dot-ruby-conf)
+- **Thorben Schroder** _to come_
+- **Andras Kristof** _to come_
+- **Danish Khan** Ruby Community (gone)
+- **Sau Sheong Chang** [Ruby, Rock & Roll](https://www.slideshare.net/sausheong/ruby-rock-roll)
+- **Winston Teo** CSS Can be Tested Too (gone)
+- **Hemant Kumar** Dive Inside Ruby 1.9 (gone)
+- **Tim Oxley** [Benefits of Client-side Templating](https://www.slideshare.net/timoxley/benefits-of-clientside-templating-for-red-dot-ruby)
+- **Wei Lu** A Journey in Pair Programming (gone)
 
 ### Day Two
 
-* **Obie Fernandez** [Redis on Rails](https://blog.obiefernandez.com/content/2012/05/redis-on-rails-reddotrubyconf-2012.html)
-* **Zach Holman** [Git+Github Secrets](https://zachholman.com/talk/git-github-secrets)
-* **Terence Lee** [Bundle Y U So Slow?](https://bundle-y-u-so-slow-rdrc2012.herokuapp.com)
-* **Carl Coryell-Martin** _to come_
-* **Sebastian Burkhard** Run Ruby Run (gone)
-* **Gabe Hollombe** Level up with Coffeescript (gone)
-* **Darcy Laycock** API Driven Applications (gone)
-* **Michael Koziarski** [Lessons from the Other Side](https://speakerdeck.com/nzkoz/lessons-from-the-other-side-effectively-contributing-to-open-source)
+- **Obie Fernandez** <a href="https://blog.obiefernandez.com/content/2012/05/redis-on-rails-reddotrubyconf-2012.html" data-proofer-ignore>Redis on Rails</a>
+- **Zach Holman** [Git+Github Secrets](https://zachholman.com/talk/git-github-secrets)
+- **Terence Lee** [Bundle Y U So Slow?](https://bundle-y-u-so-slow-rdrc2012.herokuapp.com)
+- **Carl Coryell-Martin** _to come_
+- **Sebastian Burkhard** Run Ruby Run (gone)
+- **Gabe Hollombe** Level up with Coffeescript (gone)
+- **Darcy Laycock** API Driven Applications (gone)
+- **Michael Koziarski** [Lessons from the Other Side](https://speakerdeck.com/nzkoz/lessons-from-the-other-side-effectively-contributing-to-open-source)
 
 ## Attendee Information
 
@@ -67,9 +67,9 @@ Mostly food-related.
 
 I need to:
 
-* Ensure there is enough if there is yummy finger food
-* Label veggie options
-* Perhaps provide some fruit in the breaks
+- Ensure there is enough if there is yummy finger food
+- Label veggie options
+- Perhaps provide some fruit in the breaks
 
 Wifi remained a hot topic. Some loved that they couldn’t distract themselves, some felt like they'd lost a limb. Pot-a-to, Po-ta-toe.
 
@@ -81,7 +81,7 @@ See you next year. Ideas, comment, adoration, critique to [andy@goodscary.com](m
 
 ## I Want To Be Better
 
-_as performed live at the end of [RedDotRubyConf 2012](http://reddotrubyconf.com)_
+_as performed live at the end of [RedDotRubyConf 2012](https://reddotrubyconf.com)_
 
 ![Speakers](/images/2012/rdrc-2012-speakers.png)
 
@@ -94,7 +94,7 @@ And I want to build a [musical robot](https://twitter.com/sausheong) that will, 
 
 I want to [understand how my software works](https://twitter.com/gnufied). Or why [it's slow](https://twitter.com/hone02).
 I want to do things in [ways you wouldn’t think of](https://twitter.com/hasclass). Or prepare for [other people to use my work](https://twitter.com/sutto) in new and interesting ways.
-I want the world to know [what I'm *fucking* doing](https://twitter.com/walski).
+I want the world to know [what I'm _fucking_ doing](https://twitter.com/walski).
 And I [want to pair](https://twitter.com/luweidewei) with my Jedi Masters and my best friend.
 
 I want all the [tiny bits of awesome](https://twitter.com/holman) I learn to stay in my head, and not fall out like they normally do.

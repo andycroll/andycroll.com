@@ -1,16 +1,16 @@
 ---
 title: "Ubud, Bali"
-description: 'Recommendations.'
+description: "Recommendations."
 layout: article
 category: other
 redirect_from:
   - /2012/11/26/ubud-bali/
   - /travel/ubud-bali/
 image:
-  base: '2012/ubud-bali'
-  alt: 'Temple Monkey'
-  credit: 'Jared Rice'
-  source: 'https://unsplash.com/photos/O6DUoIl6NWA'
+  base: "2012/ubud-bali"
+  alt: "Temple Monkey"
+  credit: "Jared Rice"
+  source: "https://unsplash.com/photos/O6DUoIl6NWA"
 ---
 
 Ubud is probably our favourite place in Asia. We've been at least 5 times in six years.
@@ -23,7 +23,7 @@ The pavements are better than before, but I hope that the clear improvement in t
 
 ### Cafe Lotus
 
-_Jl. Raya Ubud_ • [cafelotusubud.com](https://cafelotusubud.com)
+_Jl. Raya Ubud_ • [thecafelotusubud.com](https://thecafelotusubud.com)
 
 Set against a temple, with a beautiful lily pond. You'll see it next to Starbucks on the main road through Ubud.
 
@@ -33,9 +33,13 @@ They shouldn’t have stopped selling Storm beer (dead) though.
 
 ### Tutmak
 
+<div data-proofer-ignore>
+
 _Jl. Dewi Suita_ • [tutmak.com](https://www.tripadvisor.com/Restaurant_Review-g297701-d1072349-Reviews-Tutmak-Ubud_Gianyar_Regency_Bali.html)
 
 Great coffee and a surprisingly excellent burrito. Milkshakes good too. Off the main strip but sit and watch the world go by.
+
+</div>
 
 ### Mozaic
 
@@ -47,7 +51,7 @@ Just some of the best food anywhere in Asia. Amazing tasting menu accompanied ba
 
 ### Lady Bamboo
 
-_Jl. Kajeng_ • [ladybamboo.com](https://ladybamboo.com)
+_Jl. Kajeng_ • [ladybamboo.de](https://ladybamboo.de)
 
 We always stay at Lady Bamboo, it's owned by a friendly German/Balinese couple. Very central, few rooms and tucked away from the madness on the edge of a river.
 

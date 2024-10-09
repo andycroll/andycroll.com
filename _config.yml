@@ -6,6 +6,8 @@ url: https://andycroll.com
 title: Andy Croll
 author: Andy Croll
 description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Bootstrapper & Twin Dad."
+
+base_url: ""
 image_url: "https://images.andycroll.com"
 
 include: ["_headers"]

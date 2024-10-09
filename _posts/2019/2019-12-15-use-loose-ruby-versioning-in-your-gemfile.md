@@ -4,11 +4,10 @@ description: "The tiniest little improvement to your life"
 layout: article
 category: ruby
 image:
-  base: '2019/use-loose-ruby-versioning-in-your-gemfile'
-  alt: 'Red numbered dice'
-  credit:  Terry Vlisidis
+  base: "2019/use-loose-ruby-versioning-in-your-gemfile"
+  alt: "Red numbered dice"
+  credit: Terry Vlisidis
   source: "https://unsplash.com/photos/vPQbo1D7Eco"
-
 ---
 
 Patch-level versions (e.g. 2.6.**3**) of Ruby are compatible with each other and often only include bug fixes and security patches. Significant upgrades to the Ruby language that include new syntax or features, and make bigger changes to the language, are released once a year—as a gift for us all—on Christmas Day.
@@ -17,8 +16,7 @@ Many developers ensure their application uses a specific version in development 
 
 These version managers look for a [file](https://gist.github.com/fnichol/1912050) in the root directory of each app called `.ruby-version`. The file specifies the correct version of Ruby for this application and then automatically switches the local environment to the required version.
 
-You can also [specify your Ruby version in your Gemfile](https://bundler.io/v1.12/gemfile_ruby.html) using bundler, which is more often used in your deployment environment.
-
+You can also [specify your Ruby version in your Gemfile](https://bundler.io/guides/gemfile_ruby.html) using bundler, which is more often used in your deployment environment.
 
 ## Instead of...
 
@@ -54,7 +52,6 @@ ruby "~> 2.6.0"
 2.6.5
 ```
 
-
 ## Why?
 
 Having a flexible `Gemfile` Ruby helps when deploying to environments that pre-build specific patches of Ruby and might not be as completely up to date with the latest patch versions of Ruby as soon as they are released.
@@ -68,7 +65,6 @@ The flexible constraint in the `Gemfile` prevents you from having to interrupt y
 You also only have to update your _specific_ version in one place when you do make a change.
 
 Additionally, with the flexible constraint, when there is a more secure patch-level version, your deployment environment will automatically upgrade your Ruby on the next deploy.
-
 
 ## Why not?
 

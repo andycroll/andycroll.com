@@ -8,11 +8,9 @@ image:
   alt: "Coins"
   credit: "Dan Dennis"
   source: "https://unsplash.com/photos/pZ56pVKd_6c"
-
 ---
 
 We often have to manage monetary values in our applications. Guess what? There’s a terrific open source solution in the Ruby community that is _much_ better than rolling your own.
-
 
 ## Instead of…
 
@@ -52,10 +50,9 @@ product.price.format
 #=> "$5.00"
 ```
 
-
 ## Why?
 
-Firstly, _never_ use a floating point implementation to represent your currency values. Floats can introduce rounding errors due to their [underlying representaion inside a computer](http://download.oracle.com/docs/cd/E19957-01/806-3568/ncg_goldberg.html). Just _do not_ do this.
+Firstly, _never_ use a floating point implementation to represent your currency values. Floats can introduce rounding errors due to their [underlying representaion inside a computer](https://download.oracle.com/docs/cd/E19957-01/806-3568/ncg_goldberg.html). Just _do not_ do this.
 
 Decimals solve that issue to an extent as they behave in a more intuitive (and money-like) manner.
 
@@ -64,7 +61,6 @@ The `money` gem provides additional benefits as well as enforcing the well-worn 
 It has a sophisticated implementation of `#format` that works with the standard Ruby internationalisation (i18n) backend to properly (and flexibly) display monetary amounts as strings.
 
 You can also easily convert currencies using the built-in [currency exchange](https://github.com/RubyMoney/money#currency-exchange) functionality, for which you can provide your own rates or link to a number of regularly updated currency rate services.
-
 
 ## Why not?
 
