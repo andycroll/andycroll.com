@@ -19,4 +19,9 @@ email: andy@goodscary.com
 plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
+  - jekyll-tailwind
+
+tailwind:
+  minify: true
+
 permalink: /:categories/:title/
