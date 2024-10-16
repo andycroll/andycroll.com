@@ -57,4 +57,4 @@ The site is still in its infancy, but I’m looking forward to having a side pro
 
 Been asked a couple of times about code contribution, but I'm not ready to manage other folks’ time and I'm enjoying hacking away on my own private, fun, codebase. Maybe in the future? But I am happy to hear where things could be clearer or better or more useful.
 
-I’m sure I’m only scratching the surface of the breadth and depth of our community and I am beginning to explore collecting more data and getting initial feedback and insights from visitors for the improvements I could make.
+I’m only scratching the surface of the breadth and depth of our community and am beginning to explore collecting more data. Am loving the initial feedback and insights from visitors for further improvements, so let [me know](mailto:andy@usingrails.com) if you have any suggestions.
