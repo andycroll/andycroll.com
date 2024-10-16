@@ -1,5 +1,5 @@
 ---
-title: "Launching UsingRails: A Directory of Rails-Based Organizations"
+title: "Launching UsingRails: A Directory of Rails-Based Organisations"
 description: "Why build and launch directory to celebrate Ruby on Rails"
 layout: article
 category: ruby
@@ -19,19 +19,21 @@ I've been a Rails developer for a long time. I've built a few Rails applications
 
 UsingRails is one way to address that nonsense/lie/misconception.
 
-I’d been collecting a list of Rails-based organisations (primarily their domains) for a while in the worlds most disorganised Apple Note, through reading various newsletters, job boards and Ruby mailing lists. I’d also been nudged by [Irina](https://x.com/inazarova), when we were talking earlier in the year.
+I’d been collecting a list of Rails-based organisations (primarily their domains) for a while in the world’s most disorganised Apple Note, through reading various newsletters, job boards and Ruby mailing lists. I’d also been nudged by [Irina](https://x.com/inazarova), when we were talking earlier in the year about her RailsConf keynote.
 
 ## The technical side
 
-Obviously, the site is built with Rails. It was a chance to play (pre-release) with the new Rails 8 hotness. I’d started on edge Rails, but had to drop back to 7.2 for the latter stages of the build due to some small incompatabilities. A Rails 8 upgrade is in the offing in the near future.
+Obviously, the site is built with Rails. It was a chance to play (pre-release) with the new Rails 8 hotness. I’d started on edge, but had to drop back to 7.2 for the latter stages of the build due to some small incompatabilities and minor bugs. A Rails 8 upgrade is in the offing in the near future.
 
 The app uses SQLite, incorporating the suggestions & improvements Stephen Margheim recommended in his [RailsConf workshop](https://github.com/fractaledmind/railsconf-2024/) and subsequent [talks](https://fractaledmind.github.io/2024/10/16/sqlite-supercharges-rails/) & writings.
 
-Backups via the [`litestream-ruby` gem](https://github.com/fractaledmind/litestream-ruby) and Stripe-style primary keys using the ulid SQLite extension via the `sqlpkg` gem. All remarkably straightforward thanks to the huge advances in Rails 8’s SQLite support.
+Backups are via the [`litestream-ruby` gem](https://github.com/fractaledmind/litestream-ruby) and I used Stripe-style primary keys using the ulid SQLite extension via the `sqlpkg` gem. All remarkably straightforward thanks to the huge advances in Rails 8’s SQLite support.
 
-I’ve hosted it on Digital Ocean (including using their S3-compatible file storage for Active Storage and SQLite backups) and deployed using Chris Oliver’s [Hatchbox](https://hatchbox.io). This was a chance to explore outside of Heroku and see where the current state of deployment to VPS-like solutions. Short story: it was pretty good, a good (re)learning experience and a shot across the bow of Heroku in my main usage context at work.
+I’ve hosted it (for now) on Digital Ocean (including using their S3-compatible file storage for Active Storage and SQLite backups) and deployed using Chris Oliver’s [Hatchbox](https://hatchbox.io).
 
-I was also an early adopter of [Solid Queue](https://github.com/rails/solid_queue), even finding a new way to break the complex interdependencies both in production.
+This was a chance to explore outside of the cloud providers and to see the current state of deployment to VPS-like solutions. Short story: it was pretty great, a (re)learning experience and a shot across the bow of Heroku in my main usage context at work.
+
+I was also an early adopter of [Solid Queue](https://github.com/rails/solid_queue), even finding a new way to break the complex interdependencies both in production and in development.
 
 So I did some ”contributing” to open source as a result of this living on the edge. Sort of. I posted a resonably detailed shrug of a ["I broke this, any ideas?" GitHub issue](https://github.com/rails/solid_queue/issues/324). Then the marvellous, smarter-than-me, folks of the community and showed up, discussed and then finally [solved it for everyone](https://github.com/sparklemotion/sqlite3-ruby/pull/558). Ten out of ten, would break stuff again. Thanks Mike, Rosa & Stephen.
 
