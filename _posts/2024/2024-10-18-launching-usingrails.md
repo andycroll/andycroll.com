@@ -39,7 +39,7 @@ So I did some ”contributing” to open source as a result of this living on th
 
 Given the level of data-collection I'm doing and the protected administation interfaced, I wrote minimal tests, but when I did I wrote minitest, rather than RSpec which is our day-to-day framework at CoverageBook. I quite liked it.
 
-I've also adopted a couple of gems—with exceptional Rails-level taste and author pedigree—that I hadn’t used in anger before, including [`active_job-performs`](https://github.com/kaspth/active_job-performs) from Kaspar and [`frozen_record`](https://github.com/byroot/frozen_record) from Jean. Would recommend both.
+I've also adopted a couple of gems—with exceptional Rails-level taste and author pedigree—that I hadn’t used in anger before, including [`active_job-performs`](https://github.com/kaspth/active_job-performs) from Kasper and [`frozen_record`](https://github.com/byroot/frozen_record) from Jean. Would recommend both.
 
 I used the generators from [`authentication-zero`](https://github.com/lazaronixon/authentication-zero) to enable GitHub Authentication (only) sign on for the site. Primarily I'm using that authentication to avoid spamming of the directory with fake accounts and organisations, given I'm manually reviewing all of them.
 
