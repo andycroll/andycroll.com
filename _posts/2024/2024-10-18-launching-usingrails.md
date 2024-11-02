@@ -51,7 +51,7 @@ I was pretty happy with the launch posts on social, plus the general vibe of fol
 
 [AppSignal](https://appsignal.com) is my preferred solution to monitor the site performance as I can just plug and play and I'm familiar with it form work. As I'm monitoring I can tell you that the particular combination of technologies in the Rails 8 stack (SQLite, Solid $Whatever) make the app _very_ fast and responsive.
 
-The site recently got [posted to Reddit](https://www.reddit.com/r/rails/comments/1g3dbz5/can_we_show_some_love_usingrailscom/), causing a new rash of submissions, so I could obviously do a better of letting people know this thing exists. Maybe it’s a good idea to go and see if your company or organisation is listed?
+The site recently got <a href="https://www.reddit.com/r/rails/comments/1g3dbz5/can_we_show_some_love_usingrailscom/" data-proofer-ignore="403">posted to Reddit</a>, causing a new rash of submissions, so I could obviously do a better of letting people know this thing exists. Maybe it’s a good idea to go and see if your company or organisation is listed?
 
 ## The Future
 

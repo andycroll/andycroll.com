@@ -51,7 +51,11 @@ Just some of the best food anywhere in Asia. Amazing tasting menu accompanied ba
 
 ### Lady Bamboo
 
+<div data-proofer-ignore="intermittent-fails">
+
 _Jl. Kajeng_ • [ladybamboo.de](https://ladybamboo.de)
+
+</div>
 
 We always stay at Lady Bamboo, it's owned by a friendly German/Balinese couple. Very central, few rooms and tucked away from the madness on the edge of a river.
 
