@@ -20,4 +20,4 @@ jobs:
     - name: Run Tests
       run: |
         bundle exec jekyll build --future
-        bundle exec htmlproofer ./_site --extensions .html --no-enforce-https --no-check-external-hash 
+        bundle exec htmlproofer ./_site --extensions .html --no-enforce-https --no-check-external-hash --internal-domains andycroll.com
