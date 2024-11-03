@@ -25,7 +25,7 @@ And you can attach the car seats as long as you plug in the right adapters.
 
 ## Baby Jogger City Select
 
-- <a href="https://babyjogger.com" data-proofer-ignore="404">Baby Jogger City Select with Twin Kit</a>
+- <a href="https://babyjogger.com">Baby Jogger City Select with Twin Kit</a>
 
 Very similar in style, size and weight to the iCandy.
 
