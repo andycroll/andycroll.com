@@ -52,7 +52,7 @@ end
 
 ## Why?
 
-The `blank?` and `present?` methods, consolidate multiple checks into a single, readable method call. Your code becomes more expressive and easier to understand at a glance.
+The `blank?` and `present?` methods consolidate multiple checks into a single, readable method call. Your code becomes more expressive and easier to understand at a glance.
 
 These methods are part of Active Support Core Extensions and thus work consistently across different types of objects (strings, arrays, hashes, etc.). They correctly handle cases like strings with only whitespace, which a simple `empty?` check would miss.
 
