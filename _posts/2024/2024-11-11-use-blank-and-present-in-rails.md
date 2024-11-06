@@ -87,4 +87,4 @@ For extremely performance-critical code, using `blank?` might be slightly slower
 
 ## Additional reading
 
-For the vast majority of Rails applications, using `blank?` and `present?` leads to cleaner, more idiomatic, and more maintainable code. There's a further enhancement [`presence` that can also make your code more expressive](/ruby/use-the-presence-method).
+For the vast majority of Rails applications, using `blank?` and `present?` leads to cleaner, more idiomatic, and more maintainable code. For a further enhancement, check out [`presence`](/ruby/use-the-presence-method). Use of this method can also make your code more expressive.
