@@ -29,7 +29,7 @@ end
 
 ## Use…
 
-...Rails' `blank?` and `present?` methods:
+...Rails’s `blank?` and `present?` methods:
 
 ```ruby
 def process_data(input)
