@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/white-printer-paper-WX5jK0BT5JQ"
 ---
 
-When working with Rails, you often need to check if a value is effectively empty or if it contains meaningful data. Rails provides two very useful methods that are mixed into all objects, via Active Support, for this purpose: `blank?` and `present?`.
+When working with Rails, you often need to check if a value contains meaningful data or is effectively empty. Rails, for this very purpose, provides, via Active Support, two very useful methods that are mixed into all objects: `blank?` and `present?`.
 
 ## Instead of…
 
