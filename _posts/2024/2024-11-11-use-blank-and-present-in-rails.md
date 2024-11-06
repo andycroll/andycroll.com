@@ -54,7 +54,7 @@ end
 
 The `blank?` and `present?` methods consolidate multiple checks into a single, readable method call. Your code becomes more expressive and easier to understand at a glance.
 
-These methods are part of Active Support Core Extensions and thus work consistently across different types of objects (strings, arrays, hashes, etc.). They correctly handle cases like strings with only whitespace, which a simple `empty?` check would miss.
+These methods are part of Active Support Core Extensions and thus work consistently across different types of objects (strings, arrays, hashes, etc.). They correctly handle cases such as strings containing only whitespace, which a simple `empty?` check would incorrectly classify as having meaningful content.
 
 Here's a quick rundown of how `blank?` behaves with different inputs:
 
