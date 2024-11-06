@@ -83,7 +83,7 @@ While `blank?` and `present?` are incredibly useful, there are a few situations 
 
 If you're working in a pure Ruby environment, you'd need to add the `active_support` gem to use these methods. Or if you need to distinguish between different types of "empty" (e.g., `nil` vs. empty string), more specific checks might be necessary.
 
-For extremely performance-critical code, using `blank?` might be slightly slower than a direct `nil?` or `empty?` checks, as it performs multiple checks internally. But your milage may vary and you should benchmark to determine if this is a concern for your specific usage.
+For extremely performance-critical code, using `blank?` might be slightly slower than a direct `nil?` or `empty?` check, as it can use multiple methods internally. But your mileage may vary and you should benchmark to determine if this is a concern for your specific usage.
 
 ## Additional reading
 
