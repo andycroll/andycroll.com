@@ -209,4 +209,4 @@ Drop me an email if I'm missing any.
 - [Kevin Murphy again](https://kevinjmurphy.com/posts/4-things-railsconf-2024/)
 - [Robby Russell](https://blog.planetargon.com/blog/entries/recap-railsconf-2024-detroit)
 - [Stefanni Brasil](https://www.hexdevs.com/posts/railsconf-2024-highlights/), speaker
-- <a href="https://blog.codeminer42.com/codeminer42-at-railsconf-2024/" data-proofer-ignore="timeout">Talysson Oliveira</a>, speaker
+- <a href="https://blog.codeminer42.com/codeminer42-at-railsconf-2024/">Talysson Oliveira</a>, speaker

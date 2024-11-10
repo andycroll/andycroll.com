@@ -52,7 +52,7 @@ Making this small change will make it much easier to find email templates in you
 
 ## Why not?
 
-This is a <a href="https://www.collinsdictionary.com/dictionary/english/pernickety" data-proofer-ignore="403">pernickety</a> organisational opinion.
+This is a <a href="https://www.collinsdictionary.com/dictionary/english/pernickety">pernickety</a> organisational opinion.
 
 Modern IDEs allow fuzzy-file lookup so the location of files isn’t that important.
 

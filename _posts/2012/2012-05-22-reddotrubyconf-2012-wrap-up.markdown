@@ -36,7 +36,7 @@ _I'll add missing decks as they become availible._
 
 ### Day Two
 
-- **Obie Fernandez** <a href="https://blog.obiefernandez.com/content/2012/05/redis-on-rails-reddotrubyconf-2012.html" data-proofer-ignore>Redis on Rails</a>
+- **Obie Fernandez** <a href="https://blog.obiefernandez.com/content/2012/05/redis-on-rails-reddotrubyconf-2012.html">Redis on Rails</a>
 - **Zach Holman** [Git+Github Secrets](https://zachholman.com/talk/git-github-secrets)
 - **Terence Lee** [Bundle Y U So Slow?](https://bundle-y-u-so-slow-rdrc2012.herokuapp.com)
 - **Carl Coryell-Martin** _to come_

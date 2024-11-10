@@ -27,7 +27,7 @@ arp -a
 
 Once all sorted (you might have to log back in due to aggressive timeouts), run the wizard to set your admin password and change the name of the device.
 
-Then you probably want to head get the latest firmware from your local DLink site… mine is [Singapore](https://www.dlink.com.sg/dns-320/) but you might be in the [EU](https://eu.dlink.com/uk/en/products/dns-320-2-bay-sharecenter-network-storage-enclosure#support) or somewhere else.
+Then you probably want to head get the latest firmware from your local DLink site… mine is in the [EU](https://eu.dlink.com/uk/en/products/dns-320-2-bay-sharecenter-network-storage-enclosure#support) or try somewhere else.
 
 There are dire warnings about installing the correct geographical version, how much of that is true I don’t know, best to be safe though. You might want to grab the updated manual too. You need to find the _Maintenance > Firmware Upgrade_ page.
 

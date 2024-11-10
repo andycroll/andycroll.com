@@ -15,7 +15,7 @@ image:
 
 _Disclaimer: There is a **lot** of supposition, and then extrapolation on top, in this article. It's pinch of salt time._
 
-So Tumblr is <a href="http://web.archive.org/web/20150222130932/http://www.wsj.com/articles/SB10001424127887324787004578493130789235150" data-proofer-ignore="401">worth $1.1b dollars</a> _in cash_. My god.
+So Tumblr is <a href="http://web.archive.org/web/20150222130932/http://www.wsj.com/articles/SB10001424127887324787004578493130789235150">worth $1.1b dollars</a> _in cash_. My god.
 
 The outcome for Tumblr is amazing, they closed a cash sale even though they were unable to produce significant revenue from their enormous number of users and had a large [team of 175](https://en.wikipedia.org/wiki/Tumblr) as at the date of sale. All this with the money [potentially running out in a few months](https://techcrunch.com/2013/05/17/tumblr-is-not-impressed/).
 
@@ -23,7 +23,7 @@ Now whether it is or it isn’t a good deal, or a sign of the SV apocalypse, is 
 
 Let's say Tumblr has behaved in a way typical of VC-backed companies, but has done very well in terms of valuation due to its 'hotness' (at least when valuations are talked about). Let's say they start with 1 million founding shares.
 
-A lot of my data is from <a href="https://www.crunchbase.com/organization/tumblr" data-proofer-ignore="403">Tumblr's Crunchbase</a> and various googling.
+A lot of my data is from <a href="https://www.crunchbase.com/organization/tumblr">Tumblr's Crunchbase</a> and various googling.
 
 ### Series A
 
@@ -85,7 +85,7 @@ This is where Tumblr's valuation starts being more public as they start to shop 
 
 #### Aside
 
-This <a href="https://www.sec.gov/Archives/edgar/data/1419012/000141901210000003/xslFormDX01/primary_doc.xml" data-proofer-ignore="403">SEC filing from December 2010</a> seems to show that $3m was taken off the table by C-level executives by the end of 2010.
+This <a href="https://www.sec.gov/Archives/edgar/data/1419012/000141901210000003/xslFormDX01/primary_doc.xml">SEC filing from December 2010</a> seems to show that $3m was taken off the table by C-level executives by the end of 2010.
 
 It's possible some of the founding shares were sold in the 2010 Series C/D financing, particularly if the Series C was more of a bridge.
 
@@ -129,7 +129,7 @@ The founders, if, _big if,_ they held on to all their shares during this process
 
 Incidentally, co-founder [Marco Arment](https://marco.org), [left Tumblr in September of 2010](https://marco.org/2010/09/21/job-transition) having likely completed his (standard) 4 year vesting period, but according to his [own answer on Quora](https://www.quora.com/Does-Marco-Arment-still-have-a-financial-stake-in-Tumblr) he still has a financial stake.
 
-Yet <a href="https://web.archive.org/web/20131219172933/https://twitter.com/marcoarment/status/335483318311194624" data-proofer-ignore="timeout">tweets from Marco show that he was just an employee</a>, meaning David Karp will hold the vast majority, if not all, of the founding shares: thus the $300m. Marco will have some proportion of the Employee Options or possibly some special side deal, and thus despite his contribution and risk taking won’t see the same upside. Aside: [technical people know your value!](/other/pay-equity-and-startups/)
+Yet <a href="https://web.archive.org/web/20131219172933/https://twitter.com/marcoarment/status/335483318311194624">tweets from Marco show that he was just an employee</a>, meaning David Karp will hold the vast majority, if not all, of the founding shares: thus the $300m. Marco will have some proportion of the Employee Options or possibly some special side deal, and thus despite his contribution and risk taking won’t see the same upside. Aside: [technical people know your value!](/other/pay-equity-and-startups/)
 
 ## Newsflash for budding entrepreneurs
 
