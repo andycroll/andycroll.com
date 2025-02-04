@@ -76,6 +76,6 @@ end
 
 ## Why not?
 
-If you're working in a non-Rails Ruby project, you'd need to add the `activesupport` gem to your dependencies, that patches a lot of methods into the core classes.
+If you're working in a non-Rails Ruby project, you'd need to add the `activesupport` gem to your dependencies, which patches a lot of methods into the core classes.
 
 However, for the vast majority of Rails applications, using `ordinal` and `ordinalize` is the way to go. They're battle-tested, efficient, and save you from reinventing the wheel or settling for less readable output.
