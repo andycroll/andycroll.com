@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/yellow-and-white-trophy-_XTY6lD8jgM"
 ---
 
-When developing Rails applications, you often need to present numbers in a more human-readable format. For instance, you might want to display "1st" instead of just "1" or "42nd" rather than "42". Rails provides a neat solution for this through ActiveSupport's Core extensions.
+When developing Rails applications, you often need to present numbers in a more human-readable format. For instance, you might want to display "1st" and "42nd" instead of just "1" or "42". Rails provides a neat solution for this through Active Support's Core extensions.
 
 ## Instead of…
 
