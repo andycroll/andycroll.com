@@ -53,7 +53,7 @@ position = 43
 
 Ordinal numbers make your text read more naturally, especially when dealing with rankings, dates, or lists.
 
-While the examples show English ordinals, these methods are internationalization-aware and can be localized for other languages.
+While the examples show English ordinals, these methods are internationalization-aware and can be localized (localised!) for other languages.
 
 As always, with Active Support, this is part of the extended Rails toolkit. You don't need to write and maintain your own logic for determining the correct ordinal suffix and ensure consistent handling across your entire application.
 
