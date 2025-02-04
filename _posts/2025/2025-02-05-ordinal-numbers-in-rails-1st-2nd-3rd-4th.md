@@ -28,7 +28,7 @@ position = 32
 
 ## Use…
 
-...Rails' built-in `ordinal` and `ordinalize` methods:
+...Rails’s built-in `ordinal` and `ordinalize` methods:
 
 ```ruby
 position = 1
