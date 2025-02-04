@@ -22,7 +22,7 @@ position = 1
 "You finished in position #{position}"
 # => "You finished in position 1"
 position = 32
-"You finished in position #{32}"
+"You finished in position #{position}"
 # => "You finished in position 1"
 ```
 
@@ -31,10 +31,6 @@ position = 32
 ...Rails’s built-in `ordinal` and `ordinalize` methods:
 
 ```ruby
-position = 1
-"You finished in #{position.ordinalize} place"
-# => "You finished in 1st place"
-
 position = 1
 "You finished in #{position.ordinalize} place"
 # => "You finished in 1st place"
