@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/brown-and-black-letter-b-letter-2gzfzR13DOQ"
 ---
 
-When working with potentially objects in Ruby and Rails you often need to safely call a chain of methods without acidentally raising `NoMethodError` when one of the methods in the chain returns `nil`.
+When working with objects in Ruby and Rails you often need to safely call a chain of methods without acidentally raising `NoMethodError` if one of the methods in the chain returns `nil`.
 
 Rails provides the [`try` method](https://api.rubyonrails.org/classes/Object.html#method-i-try) as a core extension to `Object`, while Ruby (since 2.3) offers the safe navigation operator: an ampersand followed by a full stop (`&.`).
 
