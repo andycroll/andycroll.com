@@ -42,7 +42,7 @@ og_andy[:hobbies]
 
 ## Use…
 
-...Rails' `deep_dup` method for comprehensive copying:
+...Rails's `deep_dup` method for comprehensive copying:
 
 ```ruby
 og_andy = {
