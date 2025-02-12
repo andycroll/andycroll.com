@@ -93,4 +93,4 @@ There _are_ performance implications to consider when using `deep_dup` with very
 
 It also doesn't create new copies of external resources like database connections or file handles, so is of limited use in those scenarios.
 
-Also if your structure contains singleton objects, you might not want to duplicate them.
+Also if your structure contains singleton objects, you might not want to duplicate them. Singleton objects, by design, are meant to be unique - there should only ever be one instance of them in your application. This is a fundamental principle of the Singleton pattern. When you try to duplicate a singleton object, you're essentially working against its intended purpose.
