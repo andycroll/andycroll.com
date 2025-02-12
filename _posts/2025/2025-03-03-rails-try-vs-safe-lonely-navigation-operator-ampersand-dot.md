@@ -65,7 +65,7 @@ Primarily, as you can see in the examples, these methods are used for clarity: t
 
 ## Why not?
 
-There may be cases where you could chain _many_ methods to together with either syntax. This is probably a sign you should consider refactoring your code.
+There may be cases where you could chain _many_ methods together with either syntax. This is probably a sign you should consider refactoring your code.
 
 ## Which to use?
 
