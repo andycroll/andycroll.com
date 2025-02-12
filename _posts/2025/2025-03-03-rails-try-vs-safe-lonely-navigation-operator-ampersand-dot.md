@@ -69,10 +69,6 @@ There may be cases where you could chain _many_ methods together with either syn
 
 ## Which to use?
 
-The choice often depends on specific project conventions and error handling strategies. For example, if you’re using Rails, you might still want to use `&.` in most cases given its native Ruby support and neater syntax. It's important to understand the differences between the two methods and choose the one that best fits your use case.
-
-### Key Differences
-
 Both `try` and the safe navigation operator (`&.`) both provide ways to safely call methods on objects that might be `nil`. However, they have some key differences.
 
 Rails’s `try` returns `nil` for non-existent methods whereas `&.` raises a `NoMethodError` for non-existent methods.
@@ -93,11 +89,11 @@ User.new.try(:email_2)
 #=> nil
 ```
 
-This is the primary difference between `try` and `&.`.
-
 You could rephrase or understand this as `#try` returns `nil` for any method (existing or not) called on Ruby’s `NilClass` and `&.` returns `nil` when the receiver is `nil`.
 
 If you want to call a method that might not exist and swallow any errors, you should use the more forgiving `#try`, if you want the 💥 of a `NoMethodError` in the case the receiving object does not define the passed method, then choose `&.`.
+
+The choice often depends on specific project conventions and error handling strategies. For example, if you’re using Rails, you might still want to use `&.` in most cases given its native Ruby support and neater syntax. It's important to understand the differences between the two methods and choose the one that best fits your use case.
 
 There are likely performance differences between the two methods, but you should benchmark your own code to determine which is faster for your use case. They're both well optimized and well tested so it would need to be a particulally "hot" code path to see a measurable difference in application code.
 
