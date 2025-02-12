@@ -72,7 +72,7 @@ new_andy[:hobbies]
 
 The `deep_dup` method, provided by Active Support, creates a fully independent copy of the original object, with all nested structures also duplicated; including nested hashes, arrays, and other objects.
 
-This prevents unintended modifications, changes to the copy don't affect the original, avoiding subtle bugs—like the above—from occurring in your code.
+This fully-duplicated structure prevents unintended modifications, as operating on the copy means changes don't affect the original, avoiding subtle bugs—like the above—from occurring in your code.
 
 Note that Rails’s implementation correctly handles custom objects that implement their own `#dup` method.
 
