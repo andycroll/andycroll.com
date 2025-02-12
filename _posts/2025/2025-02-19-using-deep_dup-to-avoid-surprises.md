@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/a-black-and-white-image-of-a-mans-face-DkU8j3N4xak"
 ---
 
-When working with complex data structures in Rails, you might need to create a copy of an object that includes all nested objects, but beware if you’re copying a complex structure.
+When working with complex data structures in Rails, you might need to create a copy of an object that includes all its nested objects. But beware if you’re copying a complex structure.
 
 Rails provides `deep_dup`, offering a powerful way to create deep copies of object structures.
 
