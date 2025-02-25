@@ -17,7 +17,7 @@ Rails provides `deep_dup`, offering a powerful way to create deep copies of obje
 
 ## Instead of…
 
-...using regular duplication methods which do not copy nested structures
+...using regular duplication methods: which do not copy nested structures
 
 ```ruby
 og_andy = {
