@@ -70,7 +70,7 @@ new_andy[:hobbies]
 
 ## Why?
 
-The `deep_dup` method, provided by Active Support, creates a fully independent copy of the original object, with all nested structures also duplicated; including nested hashes, arrays, and other objects.
+The `deep_dup` method, provided by [Active Support](https://api.rubyonrails.org/classes/ActiveSupport.html), creates a fully independent copy of the original object, with all nested structures also duplicated; including nested hashes, arrays, and other objects.
 
 This prevents unintended modifications, as operating on a copy means changes don't affect the original, avoiding subtle bugs—like the above—from occurring in your code.
 
