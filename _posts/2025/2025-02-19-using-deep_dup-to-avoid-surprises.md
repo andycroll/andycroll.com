@@ -74,7 +74,7 @@ The `deep_dup` method, provided by [Active Support](https://api.rubyonrails.org/
 
 This prevents unintended modifications, as operating on a copy means changes don't affect the original, avoiding subtle bugs—like the above—from occurring in your code.
 
-Note that Rails’s implementation correctly handles custom objects that implement their own `#dup` method.
+Most objects implement the `#dup` method as it's part of [Ruby's core method set on `Object`](https://docs.ruby-lang.org/en/master/Object.html#method-i-dup). Rails’s implementation correctly utilises any Ruby objects that implement their own `#dup` method.
 
 It's particularly valuable in scenarios where data integrity and isolation are crucial, such as in service objects, form or complex `params` processing, or any situation where you need to work with a copy of data without affecting the original.
 
