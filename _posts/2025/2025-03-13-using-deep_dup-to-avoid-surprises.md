@@ -3,9 +3,9 @@ title: "Using Deep Duplication to Avoid Surprises"
 description: "Using deep_dup for comprehensive object copying"
 layout: article
 category: ruby
-date: 2025-02-19 01:00
+date: 2025-03-13 01:00
 image:
-  base: "2024/using-deep_dup-to-avoid-surprises"
+  base: "2025/using-deep_dup-to-avoid-surprises"
   alt: "Repeated windows in a office building"
   credit: "Rex Krithiran"
   source: "https://unsplash.com/photos/a-black-and-white-image-of-a-mans-face-DkU8j3N4xak"
