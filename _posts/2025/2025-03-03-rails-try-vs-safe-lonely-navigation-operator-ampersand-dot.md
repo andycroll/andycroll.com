@@ -3,7 +3,7 @@ title: "What’s the difference between Rails’s try and the safe navigation (&
 description: "They aren't the same, so it's important to understand the difference"
 layout: article
 category: ruby
-date: 2025-03-03 04:00
+date: 2025-04-28 04:00
 image:
   base: "2024/rails-try-vs-safe-navigation-operator"
   alt: "Wooden Scrabble pieces spelling SAFE"
