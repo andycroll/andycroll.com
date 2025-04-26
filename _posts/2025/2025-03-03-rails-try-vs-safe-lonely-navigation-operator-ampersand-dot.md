@@ -15,7 +15,7 @@ When working with objects in Ruby and Rails you often need to safely call a chai
 
 Rails provides the [`try` method](https://api.rubyonrails.org/classes/Object.html#method-i-try) as a core extension to `Object`, while Ruby (since 2.3) offers the safe navigation operator: an ampersand followed by a full stop (`&.`).
 
-Understanding which to use, and what the subtle differences are between them, can lead to cleaner, more robust code.
+Understanding which to use, and what the subtle differences between them are, can lead to cleaner, more robust code.
 
 ## Instead of…
 
