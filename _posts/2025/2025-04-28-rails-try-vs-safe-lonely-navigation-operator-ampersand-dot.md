@@ -5,7 +5,7 @@ layout: article
 category: ruby
 date: 2025-04-28 04:00
 image:
-  base: "2024/rails-try-vs-safe-navigation-operator"
+  base: "2025/rails-try-vs-safe-navigation-operator"
   alt: "Wooden Scrabble pieces spelling SAFE"
   credit: "Clarissa Watson"
   source: "https://unsplash.com/photos/brown-and-black-letter-b-letter-2gzfzR13DOQ"
