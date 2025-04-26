@@ -91,7 +91,7 @@ User.new.try(:email_2)
 
 You could rephrase or understand this as `#try` returns `nil` for any method (existing or not) called on Ruby’s `NilClass` and `&.` returns `nil` when the receiver is `nil`.
 
-If you want to call a method that might not exist and swallow any errors, you should use the more forgiving `#try`, if you want the 💥 of a `NoMethodError` in the case the receiving object does not define the passed method, then choose `&.`.
+If you want to call a method that might not exist and swallow any errors, you should use the more forgiving `#try`, if you want the 💥 of a `NoMethodError` for cases where the receiving object does not define the passed method, then choose `&.`.
 
 The choice often depends on specific project conventions and error handling strategies. For example, if you’re using Rails, you might still want to use `&.` in most cases given its native Ruby support and neater syntax. It's important to understand the differences between the two methods and choose the one that best fits your use case.
 
