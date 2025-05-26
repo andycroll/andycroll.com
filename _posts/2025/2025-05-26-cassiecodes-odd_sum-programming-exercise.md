@@ -54,7 +54,15 @@ def odd_sum(a, b)
 end
 ```
 
-However, as stated, the "no results" case needs to be `false`-y and an empty array in Ruby is `true`-thy.
+After I posted this, [Xavier](https://bsky.app/profile/fxn.bsky.social/post/3lq34jgmgo22f) & [Alex](https://ruby.social/@pointlessone@status.pointless.one/114574888052999616) both pointed out that I could indeed do this in a one-liner, I'd fallen for my own trap of _not_ doing the mathematical check.
+
+```ruby
+def odd_sum(a, b)
+  a.product(b).select { (_1 + _2).odd? }
+end
+```
+
+In both cases, the "no results" case needs to be `false`-y and an empty array in Ruby is `true`-thy.
 
 ```ruby
 > !![]
@@ -69,6 +77,14 @@ require "active_support"
 def odd_sum(a, b)
   (a.select(&:odd?).product(b.select(&:even?)) +
     b.select(&:odd?).product(a.select(&:even?)))
+    .uniq
+    .presence
+end
+
+# or
+def odd_sum(a, b)
+  a.product(b)
+    .select { (_1 + _2).odd? }
     .uniq
     .presence
 end
