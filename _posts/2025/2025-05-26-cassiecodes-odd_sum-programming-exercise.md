@@ -90,7 +90,7 @@ def odd_sum(a, b)
 end
 ```
 
-There's likely performance optimizations we could execute here but that'd reduce the readability of the code. _If_ this was a hot code path—in a live application on massive datasets—it'd be worth benchmarking for improvements.
+There's likely performance optimizations we could execute here but that'd reduce the readability of the code. _If_ this was a hot code path—in a live application on massive datasets—it'd be worth benchmarking for improvements. NB: [I did some benchmarking](/ruby/cassiecodes-odd_sum-programming-exercise-performance-test)!
 
 What's lovely from a Ruby perspective is the expression of the underlying mathematical concept that underpins the solution and reads almost like English: "odd from a with even from b, plus odd from b with even from a".
 
