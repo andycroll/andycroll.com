@@ -9,6 +9,8 @@ image:
   alt: "Child playing with numbers"
   credit: "Anna Mysłowska-Kiczek"
   source: "https://unsplash.com/photos/a-child-is-playing-with-a-wooden-toy-s7nHwCnq3c8"
+redirect_from:
+  - "/ruby/cassiecodes-odd_sum-programming-exercise"
 ---
 
 I'm often nerd-sniped by the "Interview Question of the week" that [Cassidy Williams](https://cassidoo.co/) includes in her weekly newsletter. Typically it's when I see a solution that show's off Ruby's cornucopia of `Enumerable` methods. This [week's `odd_sum` was catnip](https://buttondown.com/cassidoo/archive/false-expectations-take-away-joy-sandra-bullock/).
@@ -90,7 +92,7 @@ def odd_sum(a, b)
 end
 ```
 
-There's likely performance optimizations we could execute here but that'd reduce the readability of the code. _If_ this was a hot code path—in a live application on massive datasets—it'd be worth benchmarking for improvements. NB: [I did some benchmarking](/ruby/cassiecodes-odd_sum-programming-exercise-performance-test)!
+There's likely performance optimizations we could execute here but that'd reduce the readability of the code. _If_ this was a hot code path—in a live application on massive datasets—it'd be worth benchmarking for improvements. NB: [I did some benchmarking](/ruby/benchmarking-odd_sum)!
 
 What's lovely from a Ruby perspective is the expression of the underlying mathematical concept that underpins the solution and reads almost like English: "odd from a with even from b, plus odd from b with even from a".
 

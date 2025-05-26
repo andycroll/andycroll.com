@@ -3,7 +3,7 @@ title: "Performance Testing Enumerable’s Loveliness"
 description: "Benchmarking & code golfing"
 layout: article
 category: ruby
-date: 2025-05-26 21:00
+date: 2025-05-26 20:00
 image:
   base: "2025/performance-testing-enumerables-loveliness"
   alt: "Race track"
