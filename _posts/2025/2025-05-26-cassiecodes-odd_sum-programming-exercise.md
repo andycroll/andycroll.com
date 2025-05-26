@@ -1,5 +1,5 @@
 ---
-title: "Enumerable's loveliness"
+title: "Enumerable’s loveliness"
 description: "A Ruby solution to Cassidy William's oddSum Interview Question"
 layout: article
 category: ruby
@@ -43,7 +43,7 @@ def odd_sum(a, b)
 end
 ```
 
-However, we're smarter than that. And Ruby is lovely. Knowing (from elementary arithmatic) that _only_ the sum of an odd and an even number is odd we can base our solution on the properties of the elements of the arrays and avoid the doing the mathematical check.
+However, we're smarter than that. And Ruby is lovely. Knowing (from elementary arithmatic) that _only_ the sum of an odd and an even number is odd we can base our solution on the properties of the elements of the arrays and avoid doing the mathematical check.
 
 Initially I'd hoped I could _one-liner_ it using the combination of `#select`, `#product`, `#odd?` and `#even?` methods on the two passed arrays.
 
@@ -61,7 +61,7 @@ However, as stated, the "no results" case needs to be `false`-y and an empty arr
 #=> true
 ```
 
-The complete solution includes the use of Active Support's [underused `#presence` method](/ruby/use-the-presence-method), which I've previously suggested is a lovely little enhancement within Rails applications. Plus I threw a uniqueness check in there as well.
+The complete solution includes the use of Active Support's [underused `#presence` method](/ruby/use-the-presence-method), which I've previously suggested is a lovely little enhancement within Rails applications. Plus I added a uniqueness check in there as well as that seemed to be a reasonable improvement.
 
 ```ruby
 require "active_support"
