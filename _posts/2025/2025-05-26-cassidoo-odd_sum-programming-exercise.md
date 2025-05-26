@@ -56,7 +56,7 @@ def odd_sum(a, b)
 end
 ```
 
-After I posted this, [Xavier](https://bsky.app/profile/fxn.bsky.social/post/3lq34jgmgo22f) & [Alex](https://ruby.social/@pointlessone@status.pointless.one/114574888052999616) both pointed out that I could indeed do this in a one-liner, I'd fallen for my own trap of _not_ doing the mathematical check.
+After I posted this, [Xavier](https://bsky.app/profile/fxn.bsky.social/post/3lq34jgmgo22f) & [Alex](https://ruby.social/@pointlessone@status.pointless.one/114574888052999616) both pointed out that I could indeed do this in a one-liner, I'd fallen for my own trap of overcomplicated in order _not_ to do the mathematical check.
 
 ```ruby
 def odd_sum(a, b)
