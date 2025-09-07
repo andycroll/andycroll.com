@@ -41,5 +41,5 @@ Look out for an embassy at [Brighton Ruby](htps://brightonruby.com) next year.
 
 Also, given that apparently 1999 was the peak of web development: I made a 88x31 badge.
 
-![Rails World 88x31 badge](/images/2025/rails-88x31.gif)
-![Rails World 88x31 badge alternate](/images/2025/rails-88x31-red.gif)
+![Rails 88x31 badge](/images/2025/rails-88x31.gif)
+![Rails 88x31 badge alternate](/images/2025/rails-88x31-red.gif)
