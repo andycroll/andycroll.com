@@ -15,7 +15,7 @@ Had a day mostly to myself in Amsterdam on Wednesday, drinking coffee, eating [c
 
 I even mananged a run around the city before the conference.
 
-[David](https://x.com/dhh) kicked off with a typical combative mixture of what's new in Rails, his current enthusiasms and accidental set ups for [Aaron's](https://x.com/tenderlove) punchlines in the closing keynote.
+[David](https://x.com/dhh) kicked off with a typical combative mixture of what's new in Rails, his current enthusiasms and accidental set ups for [Aaron's](https://bsky.app/profile/tenderlove.dev) punchlines in the closing keynote.
 
 Omarchy seems very appealing and I do have an urge to buy a Framework machine. The independence from exploitative gatekeepers (e.g. Apple) is a theme that I can get behind. That is the ongoing, upstart, driven, energy that an established framework like Rails really benefits from.
 
@@ -23,9 +23,9 @@ I also deleted all the system tests for CoverageBook in 2018, so I'm well ahead 
 
 He performs the stage role of "50% more DHH" incredibly well during the keynote, and then puts in an additional extraordinary amount of energy and personal human-time talking to folks in the hallways over the next couple of days. Not sure I ever saw a moment when he wasn't in intense conversation with an attendee, or likely more.
 
-I enjoyed the more "depth on new features" talks that followed David's keynote: [Rosa](https://www.linkedin.com/in/rosagutierrezescudero/) (offline) [Joe](https://x.com/joemasilotti) (Hotwire) [Adrianna](https://x.com/adriannakchang) (Events) [Mike](https://github.com/flavorjones) & [Donal](https://www.linkedin.com/in/donal-mcbreen-a8227a52/) (even more DB/SQLite). Plus [Marco's](https://bsky.app/profile/marcoroth.dev) work on the view layer is innovative and a huge upgrade. And the quality was as good as it's ever been. And the talks I wanted to see, but missed through being in a different track or getting caught up in conversation will be there for me on YouTube.
+I enjoyed the more "depth on new features" talks that followed David's keynote: [Rosa](https://bsky.app/profile/rosa.codes) (offline) [Joe](https://bsky.app/profile/joemasilotti.com) (Hotwire Native) [Adrianna](https://x.com/adriannakchang) (Events) [Mike](https://bsky.app/profile/flavorjon.es) & [Donal](https://www.linkedin.com/in/donal-mcbreen-a8227a52/) (even more DB/SQLite). Plus [Marco's](https://bsky.app/profile/marcoroth.dev) work on the view layer is innovative, super-useful, and a huge upgrade. And the quality was as good as it's ever been. And the talks I wanted to see, but missed through being in a different track or getting caught up in conversation will be there for me on YouTube.
 
-The MCs, [Harriet](https://x.com/oughtputs) and [Chris](https://x.com/typecraft_dev), made a great success of what is actually a horrible job: they barely even get to see the talks even though they're around them all day. The after party was incredibly cool, much too cool for me really but had a good time anyway. Food good. Coffee plentiful. Sponsors friendly.
+The MCs, [Harriet](https://x.com/oughtputs) and [Chris](https://x.com/typecraft_dev), made a great success of what is actually a horrible job: they're "on" all day, under huge pressure and barely even get to see the talks. The after party was incredibly cool, much too cool for me really but had a good time anyway. Food good. Coffee plentiful. Sponsors friendly.
 
 My main takeaway from this year's event was the imperceptible additional smoothness and polish where things weren't even wrong in the previous two editions.
 
