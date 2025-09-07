@@ -37,7 +37,7 @@ As always, some of the best parts of the conference were catching up with long-t
 
 I don't know how to list it really. Every conversation always seems too brief or sometimes doesn't happen because you only see someone in passing despite all being in the same three rooms. But there's always next year or another conference and now I have my Ruby Passport that I need to pack with stamps.
 
-Look out for an embassy at Brighton Ruby next year.
+Look out for an embassy at [Brighton Ruby](htps://brightonruby.com) next year.
 
 Also, given that apparently 1999 was the peak of web development: I made a 88x31 badge.
 
