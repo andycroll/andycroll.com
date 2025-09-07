@@ -9,7 +9,11 @@ image:
   alt: "Rails World passport and photos"
 ---
 
-I'm not going to spend a huge amount of time reflecting on the individual talks that I saw at the third Rails World in Amsterdam this year.
+Off I went to Amsterdam via—so incredibly civilized—Eurostar from St Pancras wearing my favourite [Ruby T-shirts](https://rubytshirts.com).
+
+Had a day mostly to myself in Amsterdam on Wednesday, drinking coffee, eating [chocolates](https://puccinibomboni.com), meeting friends, visiting the [Anne Frank House](https://www.annefrank.org/en/) and generally enjoying the vibe of the city while avoiding its insalubrious corners.
+
+I even mananged a run around the city before the conference.
 
 [David](https://x.com/dhh) kicked off with a typical combative mixture of what's new in Rails, his current enthusiasms and accidental set ups for [Aaron's](https://x.com/tenderlove) punchlines in the closing keynote.
 
