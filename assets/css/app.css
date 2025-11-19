@@ -1,6 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --font-serif: "merriweatherregular", "Constantia", "Palatino", "Palatino Linotype", "Georgia", serif;
+
+  --breakpoint-sm: 400px;
+  --breakpoint-md: 600px;
+  --breakpoint-lg: 800px;
+
+  --aspect-4/1: 4 / 1;
+}
 
 .prose a,
 .prose-lg a {
