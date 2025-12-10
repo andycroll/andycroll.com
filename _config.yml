@@ -24,6 +24,7 @@ plugins:
   - jekyll-tailwind
 
 tailwind:
+  input: assets/css/app.css
   minify: true
 
 permalink: /:categories/:title/
