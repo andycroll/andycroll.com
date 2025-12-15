@@ -113,8 +113,16 @@ layout: default
 
   <div class="mb-10">
     <p class="text-xs text-slate-500 px-3">
-      Last updated on
-      <span class="date">{{ page.date | date_to_long_string: 'ordinal', 'US' }}</span>
+      {% if page.last_modified_at and page.last_modified_at != page.date %}
+        Last updated on
+        <span class="date">{{ page.last_modified_at | date_to_long_string: 'ordinal', 'US' }}</span>
+        &middot;
+        Originally published on
+        <span class="date">{{ page.date | date_to_long_string: 'ordinal', 'US' }}</span>
+      {% else %}
+        Published on
+        <span class="date">{{ page.date | date_to_long_string: 'ordinal', 'US' }}</span>
+      {% endif %}
     </p>
   </div>
 </div>
