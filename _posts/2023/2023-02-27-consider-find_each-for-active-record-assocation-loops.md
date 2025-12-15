@@ -8,7 +8,7 @@ image:
   alt: "Light loops"
   credit: "Nareeta Martin"
   source: "https://unsplash.com/photos/za2gMSfLmzU"
-
+last_modified_at: 2023-03-01
 ---
 
 The standard method for enumerating through groups of objects, both through arrays in Ruby and through Active Record models in Rails, is `each`.

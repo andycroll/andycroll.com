@@ -7,6 +7,7 @@ image:
   base: '2018/only-use-named-scopes-outside-models'
   alt: 'San Francisco Museum of Modern Art'
   credit: 'William Bout (unsplash RkJF2BMrLJc)'
+last_modified_at: 2018-12-01
 ---
 
 Last time we discussed using the hash-style syntax in your `#where` methods but in my examples I did something I wouldn't do in my real-life code…

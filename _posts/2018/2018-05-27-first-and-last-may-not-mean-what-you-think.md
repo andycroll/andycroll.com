@@ -8,6 +8,7 @@ image:
   alt: 'Running track'
   source: 'https://unsplash.com/photos/52p1K0d0euM'
   credit: 'Austris Augusts'
+last_modified_at: 2018-12-01
 ---
 
 Each Active Record model comes with the well-used ‘get me a single record’ scopes: `.first` and `.last`.

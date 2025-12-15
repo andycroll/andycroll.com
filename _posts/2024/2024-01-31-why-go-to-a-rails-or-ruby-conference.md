@@ -9,6 +9,8 @@ image:
   alt: "The audience at Brighton Ruby 2024"
   credit: "Clive Andrews"
   source: "https://cliveandrews.com/"
+
+last_modified_at: 2024-02-19
 ---
 
 Conferences have always been a big part of my career as a developer. Attending, speaking, and running events—off the side of my desk—have played a massive part in my career, job prospects, and personal relationships.

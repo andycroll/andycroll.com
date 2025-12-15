@@ -8,7 +8,7 @@ image:
   alt: "Roller coaster loops"
   credit: "Priscilla Du Preez"
   source: "https://unsplash.com/photos/FOsina4f7qM"
-
+last_modified_at: 2023-05-22
 ---
 
 One of the downsides of using Ruby to interact with your database, rather than SQL directly, is that it’s easy to accidentally give yourself performance headaches via running multiple very similar queries. Although the advantages of using Active Record (or something similar) are generally worth it!

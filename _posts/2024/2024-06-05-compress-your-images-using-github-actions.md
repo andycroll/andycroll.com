@@ -9,6 +9,8 @@ image:
   alt: "Sheep squeezed into a small pen"
   credit: "Davide Ragusa"
   source: "https://unsplash.com/photos/herd-of-sheep-in-grayscale-photo-cDwZ40Lj9eo"
+
+last_modified_at: 2024-06-05
 ---
 
 Images typically form a large proportion of the total download size of pages in your Rails application.

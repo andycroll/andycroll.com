@@ -7,6 +7,7 @@ image:
   base: '2019/be-aware-of-nil-values-when-using-where-not'
   alt: 'Half-finished painted wall'
   credit: "Samuel Zeller (unsplash oBb-Y26PJgg)"
+last_modified_at: 2019-05-05
 ---
 
 The use of `where.not` when building Active Record scopes can help you to elegantly specify scopes for cases where an attribute does not have a specific value.

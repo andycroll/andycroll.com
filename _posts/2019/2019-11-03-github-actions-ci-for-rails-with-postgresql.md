@@ -9,6 +9,7 @@ image:
 redirect:
   - ruby/github-actions-ci-for-rails-with-specific-ruby-versions
   - ruby/github-actions-ci-for-rails-with-postgresql-11-and-structure-sql
+last_modified_at: 2021-01-01
 ---
 
 Writing tests alongside your software is strongly recommended. It helps you protect against bugs, reduces the fear of scary deploys, and can even help you develop better software.

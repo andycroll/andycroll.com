@@ -8,6 +8,7 @@ image:
   alt: "A hand holding a piece of sushi with chopsticks"
   credit: "Luc Bercoth"
   source: "https://unsplash.com/photos/REPQln8St2E"
+last_modified_at: 2024-10-09
 ---
 
 XSS, which stands for Cross-Site Scripting, is a common vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. These scripts can be used to steal sensitive information, manipulate the page's content, or perform other malicious actions on behalf of the attacker.

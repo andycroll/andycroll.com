@@ -8,7 +8,7 @@ image:
   alt: 'Clamp'
   credit: Matt Artz
   source: "https://unsplash.com/photos/7_zxKAWCDQI"
-
+last_modified_at: 2020-12-29
 ---
 
 In [my article on value objects](/ruby/consider-value-objects), the example involved constraining an integer to a minimum and maximum value in the `#initialize` method. As of Ruby 2.4, there's a handy method for that: `#clamp`. The [documentation for the method](https://ruby-doc.org/core-2.6.3/Comparable.html#method-i-clamp) is in the Comparable module.

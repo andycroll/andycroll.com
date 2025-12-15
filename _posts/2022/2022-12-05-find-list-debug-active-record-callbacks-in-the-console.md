@@ -8,6 +8,7 @@ image:
   alt: "Three old payphones"
   credit: "Pavan Trikutam"
   source: "https://unsplash.com/photos/71CjSSB83Wo"
+last_modified_at: 2022-12-05
 ---
 
 I was recently asked by my [First #RubyFriend](https://firstrubyfriend.org) mentee how to list the callbacks present on an Active Record model. I didn't know.

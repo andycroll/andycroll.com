@@ -8,6 +8,7 @@ image:
   alt: 'Books'
   credit: 'Annie Spratt'
   source: 'https://unsplash.com/photos/-9vMBjrU-RA'
+last_modified_at: 2023-08-10
 ---
 
 Rails uses `content_for` as its primary way to store content in one place for use in other views, layouts or helpers. Find out more about `content_for` in the Rails documentation in the [ActionView helpers](https://api.rubyonrails.org/classes/ActionView/Helpers/CaptureHelper.html#method-i-content_for) section.

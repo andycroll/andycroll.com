@@ -8,6 +8,7 @@ image:
   alt: 'Coding SQL'
   source: 'https://unsplash.com/photos/fPkvU7RDmCo'
   credit: 'Caspar Rubin'
+last_modified_at: 2018-12-01
 ---
 
 ActiveRelation, which powers the searching and querying engine of ActiveRecord, is a powerful and flexible tool.

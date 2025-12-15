@@ -8,6 +8,7 @@ image:
   alt: 'Coin-operated (tele)scope'
   source: 'https://unsplash.com/photos/K40awqK-hTI'
   credit: 'Laurenz Kleinheider'
+last_modified_at: 2018-12-01
 ---
 
 The more you can stay on the ‘rails’ when coding Ruby on Rails applications the easier your life will be when maintaining the apps you’re building.

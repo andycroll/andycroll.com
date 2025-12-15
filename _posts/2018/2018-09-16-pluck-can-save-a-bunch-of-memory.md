@@ -8,6 +8,7 @@ image:
   alt: 'Guitarist'
   source: 'https://unsplash.com/photos/DUrdHDn81mk'
   credit: 'Jacek Dylag'
+last_modified_at: 2018-12-01
 ---
 
 Active Record models are incredibly flexible and provide a very large amount of functionality. One consequence of providing this large API of methods is that each individual Active Record object takes up a lot of space when loaded into memory.

@@ -8,6 +8,7 @@ image:
   alt: 'Fruit loops'
   source: 'https://unsplash.com/photos/BumOnw4oEZo'
   credit: 'David Streit'
+last_modified_at: 2020-12-29
 ---
 
 Some of my favourite Ruby features are to be found in the `Enumerable` module. You can read more about it in the [Ruby documentation](https://ruby-doc.org/core-2.5.0/Enumerable.html).

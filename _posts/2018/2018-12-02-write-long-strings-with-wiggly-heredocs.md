@@ -8,6 +8,7 @@ image:
   alt: 'Ball of string'
   source: 'https://unsplash.com/photos/8VO-UxlJ-Lw'
   credit: 'Steve Johnson'
+last_modified_at: 2020-12-29
 ---
 
 There’s multiple ways to generate `String` literals in Ruby. If you are creating long, or multi-line, strings, the `HEREDOC` (or 'Here document') is your friend.

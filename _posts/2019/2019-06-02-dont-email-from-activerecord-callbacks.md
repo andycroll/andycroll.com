@@ -8,7 +8,7 @@ image:
   alt: 'Envelopes'
   credit: Joanna Kosinska
   source: "https://unsplash.com/photos/uGcDWKN91Fs"
-
+last_modified_at: 2019-06-02
 ---
 
 One of the first things you often want to do within your Rails application is send email.

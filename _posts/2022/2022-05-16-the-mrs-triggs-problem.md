@@ -10,7 +10,7 @@ image:
   alt: "The Mrs Triggs Problem"
 redirect_from:
 - /mrstriggs
-
+last_modified_at: 2022-05-19
 ---
 
 First given at RailsConf 2022 in Portland on Thursday, 18th May 2022.

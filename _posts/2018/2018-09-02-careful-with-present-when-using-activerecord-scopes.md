@@ -8,6 +8,7 @@ image:
   alt: 'Stadtbibliothek, Stuttgart, Deutschland'
   source: 'https://unsplash.com/photos/PkbZahEG2Ng'
   credit: 'Tobias Fischer'
+last_modified_at: 2018-12-01
 ---
 
 When using Rails, `#present?` is available on all Ruby objects. Therefore, we tend to use it in many places. For example, you might use it in a view to check if an array has some elements before trying to loop through it and display some data.

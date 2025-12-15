@@ -8,7 +8,7 @@ image:
   alt: "Local building sign"
   credit: "Priscilla Du Preez"
   source: "https://unsplash.com/photos/acNPOikiDRw"
-
+last_modified_at: 2023-01-23
 ---
 
 The Rails view layer, the main way our users and customers access our work, is incredibly flexible, but it can easily become tricky to manage.

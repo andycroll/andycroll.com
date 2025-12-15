@@ -6,6 +6,7 @@ category: ruby
 image:
   base: '2019/watch-out-for-nil-in-ranges'
   alt: 'Buzz Lightyear'
+last_modified_at: 2020-12-29
 ---
 
 Ruby 2.6 enhanced the syntax for `Range` to allow for infinite values at either end, therefore allowing them to be "endless". The new syntax is described in the [Ruby documentation](https://ruby-doc.org/core-2.6.3/Range.html#class-Range-label-Endless+Ranges).

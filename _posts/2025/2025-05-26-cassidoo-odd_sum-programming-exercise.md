@@ -11,6 +11,8 @@ image:
   source: "https://unsplash.com/photos/a-child-is-playing-with-a-wooden-toy-s7nHwCnq3c8"
 redirect_from:
   - "/ruby/cassiecodes-odd_sum-programming-exercise"
+
+last_modified_at: 2025-05-26
 ---
 
 I'm often nerd-sniped by the "Interview Question of the week" that [Cassidy Williams](https://cassidoo.co/) includes in her weekly newsletter. Typically it's when I see a solution that show's off Ruby's cornucopia of `Enumerable` methods. This [week's `odd_sum` was catnip](https://buttondown.com/cassidoo/archive/false-expectations-take-away-joy-sandra-bullock/).

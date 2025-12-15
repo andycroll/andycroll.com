@@ -8,7 +8,7 @@ image:
   alt: 'Old broken clocks'
   credit:  Heather Zabriskie
   source: "https://unsplash.com/photos/yBzrPGLjMQw"
-
+last_modified_at: 2020-12-29
 ---
 
 The `strftime` method appears in many languages, [all the way back to C](https://en.wikipedia.org/wiki/C_date_and_time_functions#strftime). The syntax of the (mostly impenetrable) formatting arguments haven’t changed that much in years and they're remarkably consistent across languages.

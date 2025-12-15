@@ -8,6 +8,7 @@ image:
   alt: 'BB-8'
   source: 'https://unsplash.com/photos/C8VWyZhcIIU'
   credit: 'Joseph Chan'
+last_modified_at: 2018-12-01
 ---
 
 When a Rails application can't find a record, it throws a 404 error. This is a standard HTTP code for browsers meaning 'not found'.

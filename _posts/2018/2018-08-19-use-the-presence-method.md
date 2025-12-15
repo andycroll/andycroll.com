@@ -8,6 +8,7 @@ image:
   alt: 'Ghostly'
   source: 'https://unsplash.com/photos/ZC0EbdLC8G0'
   credit: 'Stefano Pollio'
+last_modified_at: 2018-12-01
 ---
 
 Active Support takes a lot flak because it adds methods to core Ruby libraries, most notably patching a lot of functionality into Ruby's `Object` class.

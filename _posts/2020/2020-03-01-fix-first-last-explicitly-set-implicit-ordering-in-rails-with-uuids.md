@@ -8,6 +8,7 @@ image:
   alt: "Pins on a red mat"
   credit:  Jeff Frenette
   source: "https://unsplash.com/photos/Y_AWfh0kGT4"
+last_modified_at: 2020-03-08
 ---
 
 [Using UUIDs as primary keys](/ruby/choose-uuids-for-model-ids-in-rails) has many benefits. However, it causes issues with Rails's implicit ordering.

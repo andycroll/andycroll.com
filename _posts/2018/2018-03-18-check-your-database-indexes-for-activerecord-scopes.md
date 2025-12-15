@@ -8,6 +8,7 @@ image:
   alt: 'Construction Site'
   source: 'https://unsplash.com/photos/8Gg2Ne_uTcM'
   credit: '贝莉儿 NG'
+last_modified_at: 2018-12-01
 ---
 
 It is alleged that Ruby is slow. However, whether you're using Ruby, Elixir, or Go, the 'benchmarked' speed of a language is irrelevant if your web application eventually hits an unoptimised database.

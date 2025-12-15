@@ -8,7 +8,7 @@ image:
   alt: 'Zebra stripes'
   credit: David Clarke
   source: "https://unsplash.com/photos/sN6d60TySV0"
-
+last_modified_at: 2019-09-22
 ---
 
 In [my article on using validators](/ruby/use-a-custom-validator), the example was pretty simple.

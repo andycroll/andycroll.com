@@ -6,6 +6,7 @@ category: ruby
 image:
   base: "2020/alt-brighton-ruby"
   alt: "Alt::BrightonRuby logo"
+last_modified_at: 2024-10-09
 ---
 
 [Brighton Ruby](https://brightonruby.com) was a single-track, single-day conference held in July in Brighton in the UK. And I was happily plodding along in February when I started to hear about this virus... then organizing events got much, much weirder. So in mid-March I cancelled the in person event.

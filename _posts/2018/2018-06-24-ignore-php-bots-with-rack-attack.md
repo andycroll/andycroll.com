@@ -8,6 +8,7 @@ image:
   alt: 'Robots'
   source: 'https://unsplash.com/photos/xdEeLyK4iBo'
   credit: 'Jehyun Sung'
+last_modified_at: 2019-01-28
 ---
 
 If your site has been around for a long time or starts getting popular, you might see a bunch of 404 errors in your logs.

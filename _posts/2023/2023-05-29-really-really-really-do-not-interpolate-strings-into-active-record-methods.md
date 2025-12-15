@@ -8,7 +8,7 @@ image:
   alt: "Tables in a courtyard"
   credit: "Dimitra Peppa"
   source: "https://unsplash.com/photos/-abBaVOMsBk"
-
+last_modified_at: 2023-08-10
 ---
 
 Protecting your application against malicious users is one of your key responsibilites as a developer. The built-in security provided by a well-maintained framework, such as Rails, is an excellent reason to use one.

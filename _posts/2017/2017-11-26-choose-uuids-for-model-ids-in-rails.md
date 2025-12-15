@@ -6,6 +6,7 @@ category: ruby
 image:
   base: '2017/choose-uuids-for-model-ids-in-rails'
   alt: 'Rainbow UUIDs'
+last_modified_at: 2023-08-10
 ---
 
 A [universally unique identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier) (UUID) is a 128-bit number used to identify information in computer systems. Sometimes it is referred to as a ‘globally unique identifier’.

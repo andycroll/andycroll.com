@@ -8,6 +8,7 @@ image:
   alt: 'Jigsaw pieces'
   source: 'https://unsplash.com/photos/3y1zF4hIPCg'
   credit: 'Hans-Peter Gauster'
+last_modified_at: 2023-08-10
 ---
 
 One of the simplest (and most effective) ways to refactor is to [extract a method](https://refactoring.com/catalog/extractMethod.html). The naming of an extracted method is a great tool for communicating the thinking behind the code.

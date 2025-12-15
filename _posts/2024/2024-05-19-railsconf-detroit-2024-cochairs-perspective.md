@@ -9,6 +9,8 @@ image:
   alt: "The opening of RailsConf 2024"
   credit: "Alice Heart Photography"
   source: "https://www.aliceheartphotography.com/"
+
+last_modified_at: 2024-11-03
 ---
 
 When [Adarsh](https://ruby.social/@adarsh), Ruby Central’s Executive Director, first asked me in November to think about getting involved cochairing RailsConf Detroit I was surprised, flattered and immediately said "no".

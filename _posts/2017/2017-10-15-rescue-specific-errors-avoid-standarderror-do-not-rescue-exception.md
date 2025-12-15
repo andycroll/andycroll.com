@@ -6,6 +6,7 @@ category: ruby
 image:
   base: '2017/rescue-specific-errors-avoid-standarderror-do-not-rescue-exception'
   alt: 'David Hasslehoff. Smouldering.'
+last_modified_at: 2020-12-29
 ---
 
 There are many built-in error classes in Ruby and Rails. Most of these errors are subclasses of Ruby’s StandardError. You can find more information in the relevant [Ruby docs](https://ruby-doc.org/core-2.4.2/StandardError.html).

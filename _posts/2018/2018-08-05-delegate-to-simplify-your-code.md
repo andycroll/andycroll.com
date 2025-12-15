@@ -8,6 +8,7 @@ image:
   alt: "Graffiti arrows"
   source: "https://unsplash.com/@anniespratt"
   credit: "Annie Spratt"
+last_modified_at: 2024-10-09
 ---
 
 One way of thinking about object-oriented programming is as passing messages between objects.

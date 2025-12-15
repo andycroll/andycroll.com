@@ -8,6 +8,7 @@ image:
   alt: "Calendar with pins"
   credit: "Towfiqu barbhuiya"
   source: "https://unsplash.com/photos/bwOAixLG0uc"
+last_modified_at: 2024-10-09
 ---
 
 In Active Support‘s extensions to the core Ruby classes, some of the most useful and plentiful are related to `Time`.

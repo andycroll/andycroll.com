@@ -7,6 +7,7 @@ image:
   base: '2017/truthiness-in-conditionals'
   alt: 'Truth'
   credit: 'Jarrod Fitzgearlds (unsplash Aa2h3S3E47k)'
+last_modified_at: 2018-12-01
 ---
 
 Ruby’s conditional syntax is ‘truthy’, meaning that any statement in a conditional that evaluates to `nil` is considered to be equivalent to `false` and anything not-`nil` can be considered to be `true`.

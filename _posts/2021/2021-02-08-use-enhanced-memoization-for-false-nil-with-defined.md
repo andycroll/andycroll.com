@@ -6,6 +6,7 @@ category: ruby
 image:
   base: "2021/use-enhanced-memoization-for-false-nil-with-defined"
   alt: "true, false & nil word cloud"
+last_modified_at: 2021-02-20
 ---
 
 [Memoization using the `||=` operator](/ruby/memoize-expensive-code/) is a useful and straightforward performance optimisation. However, this isn't a suitable solution for cases when the expensive operation might result in `false` or `nil`.

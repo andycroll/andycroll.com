@@ -7,6 +7,8 @@ date: 2024-10-16 01:00
 image:
   base: "2024/launching-usingrails"
   alt: "UsingRails logo"
+
+last_modified_at: 2024-11-03
 ---
 
 In the week or two before Rails World (two words), I launched [UsingRails](https://usingrails.com). It’s a directory of Rails-based organisations and companies.

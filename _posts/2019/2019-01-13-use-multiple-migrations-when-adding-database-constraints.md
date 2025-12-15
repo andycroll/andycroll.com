@@ -8,6 +8,7 @@ image:
   alt: 'Locks'
   source: 'https://unsplash.com/photos/8_NI1WTqCGY'
   credit: 'Marcos Mayer'
+last_modified_at: 2019-01-23
 ---
 
 Adding constraints to your application at the database level is a good idea as it provides an extra layer of quality control on top of the data powering your application.

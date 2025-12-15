@@ -8,6 +8,7 @@ image:
   alt: 'Fruit Loops'
   source: 'https://unsplash.com/photos/chp1ITgplkA'
   credit: 'Etienne Girardet'
+last_modified_at: 2018-12-01
 ---
 
 Getting as much of the slow or non-essential work of your application into asynchronous jobs is a good idea for the overall performance of your application.

@@ -8,6 +8,7 @@ image:
   alt: "Red Floppy Disk"
   credit:  Fredy Jacob
   source: "https://unsplash.com/photos/t0SlmanfFcg"
+last_modified_at: 2021-02-08
 ---
 
 Memoization is a performance optimization where the result of a slow or non-performant piece of code is temporarily stored, and when the expensive code is called again, the stored value is returned.

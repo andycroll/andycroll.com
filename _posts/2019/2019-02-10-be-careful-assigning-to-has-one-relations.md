@@ -8,6 +8,7 @@ image:
   alt: 'Broken net'
   source: "https://unsplash.com/photos/IV--3UEiHlI"
   credit: "Ben Hershey"
+last_modified_at: 2019-02-10
 ---
 
 Most of the time, when building relationships between models, you typically use `has_many` and `belongs_to`. There are some circumstances where a `has_one` relationship is more appropriate.

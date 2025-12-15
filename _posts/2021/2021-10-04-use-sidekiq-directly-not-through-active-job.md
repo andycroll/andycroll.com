@@ -8,7 +8,7 @@ image:
   alt: "Silhouetted karate kick on the beach"
   credit: "Jason Briscoe"
   source: "https://unsplash.com/photos/HN_4K2diUWs"
-
+last_modified_at: 2021-10-04
 ---
 
 If you build a web application you should minimize the amount of time spent responding to every user; a fast website means a happy user. One way of doing that is to run long-running, parallelisable, or potentially slow, work asynchronously outside of the immediate web request. This might be sending emails, scheduled cleanups, long running calculations, or anything that uses an external API.

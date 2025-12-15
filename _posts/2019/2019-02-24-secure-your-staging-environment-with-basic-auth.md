@@ -8,6 +8,7 @@ image:
   alt: "Yellow padlock"
   source: "https://unsplash.com/@chrispanas"
   credit: "Chris Panas"
+last_modified_at: 2024-10-09
 ---
 
 A sensible approach to testing features before you ship them to customers is to use a staging environment that closely resembles your live, customer-facing, production application.

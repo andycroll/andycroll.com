@@ -8,6 +8,7 @@ image:
   alt: "V for Vendetta-style Guy Fawes masks"
   source: "https://unsplash.com/photos/RlLP5fUh2m0"
   credit: " Ahmed Zayan"
+last_modified_at: 2021-06-24
 ---
 
 Google has recently built user tracking directly into Chrome. This new technology is named [Federated Learning of Cohorts](https://blog.google/products/chrome/privacy-sustainability-and-the-importance-of-and/) (shortened to <abbr title="Federated Learning of Cohorts">FLoC</abbr>).

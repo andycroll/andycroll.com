@@ -6,6 +6,7 @@ category: ruby
 image:
   base: '2021/convert-iso-country-code-to-emoji-flag'
   alt: "Emoji flags"
+last_modified_at: 2021-02-01
 ---
 
 We often store references to countries in our applications as a two-letter code inline using the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) standard. For example, "GB" for the United Kingdom or "US" for the United States.

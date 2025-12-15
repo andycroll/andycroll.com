@@ -8,6 +8,7 @@ image:
   alt: "Coins"
   credit: "Dan Dennis"
   source: "https://unsplash.com/photos/pZ56pVKd_6c"
+last_modified_at: 2024-10-09
 ---
 
 We often have to manage monetary values in our applications. Guess what? There’s a terrific open source solution in the Ruby community that is _much_ better than rolling your own.

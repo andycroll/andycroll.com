@@ -7,6 +7,7 @@ image:
   base: "2019/consider-value-objects"
   alt: "Cubes"
   credit: Christian Fregnan
+last_modified_at: 2024-10-09
 ---
 
 In your applications, you’ll often find yourself creating a range of view helpers around the same concept, constructing complex calculation methods, or passing a value (or several) around multiple methods.

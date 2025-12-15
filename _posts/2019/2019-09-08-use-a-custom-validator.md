@@ -8,7 +8,7 @@ image:
   alt: 'Dropped Ice Cream'
   credit: Sarah Kilian
   source: "https://unsplash.com/photos/52jRtc2S_VE"
-
+last_modified_at: 2019-09-08
 ---
 
 Active Model’s validations, used by calling `validates` inside your model with various options, can be supplemented with your own custom classes. The Rails Guides contains [a section on custom validations](https://guides.rubyonrails.org/active_record_validations.html#custom-validators).

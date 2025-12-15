@@ -8,6 +8,7 @@ image:
   alt: 'dates'
   credit: 'Roman Bozhko'
   source: 'https://unsplash.com/photos/PypjzKTUqLo'
+last_modified_at: 2018-12-01
 ---
 
 Rails includes the default managed timestamps `updated_at` and `created_at` for ActiveRecord models.

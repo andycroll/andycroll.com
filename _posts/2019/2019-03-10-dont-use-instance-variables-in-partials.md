@@ -8,6 +8,7 @@ image:
   alt: 'Partial eclipse'
   source: "https://unsplash.com/photos/NbgQfUvKFE0"
   credit: "Mark Tegethoff"
+last_modified_at: 2019-03-10
 ---
 
 Rails’ view architecture is a flexible and magical place. Perhaps too much so. Some examples of ‘view magic’ include:

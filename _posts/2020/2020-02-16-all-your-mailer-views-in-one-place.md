@@ -8,6 +8,7 @@ image:
   alt: "Envelopes"
   credit: Joanna Kosinska
   source: "https://unsplash.com/photos/uGcDWKN91Fs"
+last_modified_at: 2024-11-03
 ---
 
 One of the greatest things that Rails provides to developers is a sensible set of defaults for _where stuff goes_ in the file hierarchy. The standard approach to `app/models`, `app/mailers`, `app/views`, `config`, etc., allows us to arrive at a Rails project and quickly understand where existing code is and where to place our new code.

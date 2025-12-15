@@ -8,6 +8,7 @@ image:
   alt: "Red numbered dice"
   credit: Terry Vlisidis
   source: "https://unsplash.com/photos/vPQbo1D7Eco"
+last_modified_at: 2024-10-09
 ---
 
 Patch-level versions (e.g. 2.6.**3**) of Ruby are compatible with each other and often only include bug fixes and security patches. Significant upgrades to the Ruby language that include new syntax or features, and make bigger changes to the language, are released once a year—as a gift for us all—on Christmas Day.

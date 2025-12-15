@@ -8,6 +8,7 @@ image:
   alt: Lightning
   credit: 'Breno Machado'
   source: 'https://unsplash.com/photos/in9-n0JwgZ0'
+last_modified_at: 2020-12-29
 ---
 
 Google’s [AMP Project](https://ampproject.com) is set to become _a thing_.

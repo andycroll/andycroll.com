@@ -10,6 +10,8 @@ image:
   credit:  Riho Kroll
   source: "https://unsplash.com/photos/m4sGYaHYN5o"
 
+
+last_modified_at: 2024-02-07
 ---
 
 Previously I recommended [using a loose version ruby version constraint in your Gemfile](/ruby/use-loose-ruby-versioning-in-your-gemfile/). This is still a valuable technique, but here’s another useful variation that's works well for most of us, most of the time.

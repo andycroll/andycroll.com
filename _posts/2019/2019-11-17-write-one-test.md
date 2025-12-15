@@ -8,7 +8,7 @@ image:
   alt: 'Smoke'
   credit: 'Pascal Meier'
   source: 'https://unsplash.com/photos/1uVCTVSn-2o'
-
+last_modified_at: 2019-11-26
 ---
 
 Rails comes with a built-in testing framework and many Rubyists evangelise various methods of testing: Behaviour Driven Development, 100% test coverage, Red-Green-Refactor.

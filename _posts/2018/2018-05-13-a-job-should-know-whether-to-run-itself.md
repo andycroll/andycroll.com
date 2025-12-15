@@ -8,6 +8,7 @@ image:
   alt: 'A queue'
   source: 'https://unsplash.com/photos/Nzb4LBsctyQ'
   credit: 'Hal Gatewood'
+last_modified_at: 2020-12-29
 ---
 
 It is a good idea to do as much of the ‘work’ of an application as possible in asynchronous jobs as it means doing less work in each controller action. Rails includes `ActiveJob` as a way to implement this pattern in your application.

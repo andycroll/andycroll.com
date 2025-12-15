@@ -9,6 +9,8 @@ image:
   alt: "Race track"
   credit: "Nicolas Hoizey"
   source: "https://unsplash.com/photos/people-running-on-race-track-poa-Ycw1W8U"
+
+last_modified_at: 2025-05-26
 ---
 
 After sharing my [solution to Cassidy Williams' oddSum challenge](/ruby/cassiecodes-odd_sum-programming-exercise), [Xavier](https://bsky.app/profile/fxn.bsky.social/post/3lq34jgmgo22f) & [Alex](https://ruby.social/@pointlessone@status.pointless.one/114574888052999616) suggested a simpler approach on social media. This got me curious: does avoiding the mathematical check actually improve performance?

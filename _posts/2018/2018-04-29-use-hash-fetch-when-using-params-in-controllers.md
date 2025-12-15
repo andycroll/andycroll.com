@@ -8,6 +8,7 @@ image:
   alt: 'Retriever'
   source: 'https://unsplash.com/photos/Pzu9f6Nby5w'
   credit: 'Mitchell Orr'
+last_modified_at: 2018-12-01
 ---
 
 In a URL, we often need to access parameters that aren't part of the regular Rails routes. For example, the query parameter in `/search?q=term`.
