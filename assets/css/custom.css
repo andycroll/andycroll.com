@@ -1,3 +1,19 @@
+@media (scripting: enabled) {
+  img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  img[loading="lazy"].loaded {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img[loading="lazy"] {
+    transition: none;
+  }
+}
 
 .amp {
   font-family: Baskerville, Constantia, Palatino, "Palatino Linotype", "Times New Roman", Times, serif;
