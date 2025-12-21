@@ -90,7 +90,7 @@ Previously, you'd handle this with dangerous workarounds, seperate "factory" obj
 
 Every skipped validation is a possible data integrity issue. But that's also true of the other approaches.
 
-_Real_ database constraints can act as your safety net, for true data consistancy
+_Real_ database constraints can act as your safety net for true data consistency.
 
 A form object or separate model might make more sense for your application or team but you might be fighting the framework.
 
