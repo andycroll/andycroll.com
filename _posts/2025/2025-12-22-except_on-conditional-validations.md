@@ -59,7 +59,7 @@ user.save(context: :admin_create) # => true
 user.save # => false
 ```
 
-You can also stack multiple contexts.
+You can also stack multiple contexts:
 
 ```ruby
 validates :email, 
