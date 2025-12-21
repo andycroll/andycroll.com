@@ -41,7 +41,7 @@ class User < ApplicationRecord
 end
 ```
 
-This example uses a class method on the model, but you might see similar code in a `UserFactory` or `UserCreationService` in your application.
+This example uses a class method on the model, but you might see similar code in _something like_ a `UserFactory` or `UserCreationService` in your application.
 
 
 ## Use...
