@@ -94,6 +94,6 @@ _Real_ database constraints can act as your safety net for true data consistency
 
 A form object or separate model might make more sense for your application or team but you might be fighting the framework.
 
-You also have to consider whether the validation is _really_ required if your application breaks somewhere else with that incomplete data breaks your mailer.
+If you are skipping validations (even conditionally) you should also take a moment to consider whether the validation is _really_ required. Does your application break when there's no data in that attribute or not? If it doesn't then is there a need to validate at all?
 
 *`except_on` can keep validations concise while making intent clear: "validate everywhere except here." Just remember: with great power comes great responsibility.* And some folks will hate this as much as they hate callbacks.
