@@ -83,7 +83,7 @@ Now your callbacks follow the same pattern as your validations. Consistency wins
 
 Your admin interface needs to create users without complete data. Your data import skips some business rules. Perhaps your API has different requirements than your web forms.
 
-Previously, you'd handle this with dangerous workarounds, seperate "factory" objects or repetitive code.
+Previously, you'd handle this with dangerous workarounds, seperate "factory" objects, or repetitive code.
 
 
 ## Why not?
