@@ -30,7 +30,7 @@ class Admin::UsersController < ApplicationController
 end
 ```
 
-...using methods that bypass Active Record entirely:
+...or using methods that bypass Active Record entirely:
 
 ```ruby
 class User < ApplicationRecord
