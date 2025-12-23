@@ -11,7 +11,7 @@ base_url: ""
 image_url: "https://images.andycroll.com"
 
 include: ["_headers"]
-exclude: ["scripts"]
+exclude: ["scripts", "bin"]
 
 email: andy@goodscary.com
 

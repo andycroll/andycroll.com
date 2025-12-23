@@ -1,0 +1,111 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Convert a built Jekyll post to Mailcoach email template fields.
+#
+# Usage:
+#   bin/email                       # Most recent Ruby post
+#   bin/email /ruby/post-slug/      # Specific post
+#
+# Requires: bundle exec jekyll build
+
+require "nokogiri"
+require "yaml"
+require "date"
+
+POSTS_DIR = File.expand_path("../_posts", __dir__)
+SITE_DIR = File.expand_path("../_site", __dir__)
+SITE_URL = "https://andycroll.com"
+
+def find_latest_ruby_post
+  Dir.glob(File.join(POSTS_DIR, "**/*.md")).sort.reverse.find do |filepath|
+    content = File.read(filepath)
+    next unless content.start_with?("---")
+
+    yaml = YAML.safe_load(content.split("---", 3)[1], permitted_classes: [Time, Date]) rescue next
+    yaml&.dig("category") == "ruby"
+  end
+end
+
+def post_path_from_file(filepath)
+  slug = File.basename(filepath, ".md").sub(/^\d{4}-\d{2}-\d{2}-/, "")
+  "/ruby/#{slug}/"
+end
+
+def extract_content(doc)
+  content = Nokogiri::HTML::DocumentFragment.parse("")
+
+  doc.css("div.prose").each do |div|
+    div.children.each { |child| content << child.dup }
+  end
+
+  # Remove email signup form and parent
+  content.css('form[action*="mailcoach.app"]').each { |el| el.parent&.remove }
+
+  # Remove rubytshirts promo and parent
+  content.css('a[href*="rubytshirts.com"]').each { |el| el.parent&.remove }
+
+  # Remove grid wrappers
+  content.css("div.grid").each(&:remove)
+
+  # Absolutize URLs
+  content.css("a[href^='/']").each { |el| el["href"] = "#{SITE_URL}#{el['href']}" }
+  content.css("img[src^='/']").each { |el| el["src"] = "#{SITE_URL}#{el['src']}" }
+
+  content.to_html.strip
+end
+
+# Handle help
+if ARGV.include?("-h") || ARGV.include?("--help")
+  puts "Usage: bin/email [POST_PATH]"
+  puts ""
+  puts "Convert a Jekyll post to Mailcoach email template fields."
+  puts "If POST_PATH is omitted, uses the most recent Ruby post."
+  puts ""
+  puts "Examples:"
+  puts "  bin/email"
+  puts "  bin/email /ruby/my-post/"
+  exit
+end
+
+# Determine post path
+if ARGV.empty?
+  post_file = find_latest_ruby_post
+  abort "ERROR: No Ruby posts found in #{POSTS_DIR}" unless post_file
+  post_path = post_path_from_file(post_file)
+  auto_detected = true
+else
+  post_path = ARGV[0]
+  post_path = "/#{post_path}" unless post_path.start_with?("/")
+  post_path = "#{post_path}/" unless post_path.end_with?("/")
+  auto_detected = false
+end
+
+# Read built HTML
+html_file = File.join(SITE_DIR, post_path.sub(/^\//, ""), "index.html")
+unless File.exist?(html_file)
+  abort "ERROR: Post not found at #{html_file}\nRun 'bundle exec jekyll build' first."
+end
+
+if auto_detected
+  puts "Using: #{post_path}"
+  puts
+end
+
+doc = Nokogiri::HTML(File.read(html_file))
+
+# Extract and output
+puts "--- PREVIEW ---"
+puts doc.at_css('meta[name="description"]')&.[]("content") || "[no description]"
+puts
+
+puts "--- HREF ---"
+puts "#{SITE_URL}#{post_path}"
+puts
+
+puts "--- TITLE ---"
+puts doc.at_css("header h1")&.text&.gsub(/[\u00A0\s]+/, " ")&.strip || "[no title]"
+puts
+
+puts "--- CONTENT ---"
+puts extract_content(doc)
