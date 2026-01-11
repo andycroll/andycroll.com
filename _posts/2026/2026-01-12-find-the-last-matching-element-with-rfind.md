@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/magnifying-glass-on-white-table-afW1hht0NSs"
 ---
 
-Ruby 4.0 landed at Christmas 2025 with a bunch of new features. One [small but useful addition](https://bugs.ruby-lang.org/issues/21678) is `Array#rfind`, which lets you find the last element in an array that matches a condition.
+Ruby 4.0 landed during Christmas 2025 with a bunch of new features. One [small but useful addition](https://bugs.ruby-lang.org/issues/21678) is [`Array#rfind`](https://docs.ruby-lang.org/en/4.0/Array.html#method-i-rfind), which finds the last element in an array that matches a condition.
 
 ## Instead of…
 
