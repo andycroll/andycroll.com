@@ -62,4 +62,4 @@ For very small arrays, the performance difference is negligible, so the main ben
 
 ## Did you know?
 
-In the same changeset, [Kevin Newton](https://kddnewton.com) also added a specific implmentation of `Array#find` (and its alias `#detect`) rather than relying on the `Enumerable` version. This is a performance improvement for arrays.
+In the same changeset, [Kevin Newton](https://kddnewton.com) also added a specific implementation of `Array#find` (and its alias `#detect`) rather than relying on the `Enumerable` version. This is a performance improvement for arrays.
