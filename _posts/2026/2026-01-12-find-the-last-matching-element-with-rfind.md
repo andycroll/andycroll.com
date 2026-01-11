@@ -50,7 +50,7 @@ The `rfind` method iterates backwards from the last element, returning the first
 
 This is more efficient than `reverse.find` or `reverse_each.find` because it doesn't create an intermediate reversed array or enumerator in memory. For large arrays, this _can_ make a noticeable difference.
 
-You might wonder why this was added to `Array` specifically rather than `Enumerable`. The `Enumerable` module relies on the `#each` method, which only works in the forward direction. The only way to scan backwards generically would be to convert to an array first, defeating the purpose. Arrays, however, can be traversed in either direction efficiently by their nature.
+You might wonder why this was added to `Array` specifically rather than `Enumerable`. The `Enumerable` module relies on the `#each` method, which only works in the forward direction. The only way to scan backwards generically would be to convert to an array first, defeating the purpose. However, arrays can be traversed in either direction efficiently by the nature of their implementation in the Ruby VM.
 
 
 ## Why not?
