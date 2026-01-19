@@ -16,11 +16,16 @@ bundle exec jekyll serve
 bundle exec jekyll serve --future
 
 # Build for production
-JEKYLL_ENV=production jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 
 # Build with future-dated posts (for previews)
-JEKYLL_ENV=development jekyll build --future
+JEKYLL_ENV=development bundle exec jekyll build --future
+
+# Create a new post (jekyll-compose)
+bundle exec jekyll post "Post Title"
 ```
+
+**Ruby version**: 3.4.4 (see `.ruby-version`)
 
 ## Architecture
 
@@ -60,4 +65,4 @@ image:
 
 ## Deployment
 
-Hosted on Render. Production builds automatically on push to main. Auto deploys every six hours using igthub actions to trigger a deploy hook.
+Hosted on Render. Production builds automatically on push to main. Auto deploys every six hours using GitHub Actions to trigger a deploy hook.
