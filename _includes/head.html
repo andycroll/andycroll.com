@@ -57,4 +57,69 @@
   >
 
   <link href="/index.xml" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": "{{ site.url }}/#person",
+    "name": "Andy Croll",
+    "url": "{{ site.url }}",
+    "image": "{{ site.image_url }}/images/andycroll.jpg",
+    "jobTitle": "CTO",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "CoverageBook",
+      "url": "https://coveragebook.com"
+    },
+    "sameAs": [
+      "https://twitter.com/andycroll",
+      "https://github.com/andycroll",
+      "https://ruby.social/@andycroll",
+      "https://brightonruby.com",
+      "https://rubytshirts.com"
+    ],
+    "knowsAbout": ["Ruby", "Ruby on Rails", "Software Development", "Conference Organization"]
+  }
+  </script>
+
+  {% if page.url == '/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "{{ site.url }}/#website",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}",
+    "description": "{{ site.description }}",
+    "author": { "@id": "{{ site.url }}/#person" },
+    "publisher": { "@id": "{{ site.url }}/#person" }
+  }
+  </script>
+  {% endif %}
+
+  {% if page.layout == 'article' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "{{ canonical }}#article",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page.description | jsonify }},
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% endif %}
+    "author": { "@id": "{{ site.url }}/#person" },
+    "publisher": { "@id": "{{ site.url }}/#person" },
+    "mainEntityOfPage": { "@id": "{{ canonical }}" },
+    "isPartOf": { "@id": "{{ site.url }}/#website" }
+    {% if page.image.base %},
+    "image": "{{ site.image_url }}/images/{{ page.image.base }}.jpg?width=1200"
+    {% endif %}
+    {% if page.category %},
+    "articleSection": "{{ page.category | capitalize }}"
+    {% endif %}
+  }
+  </script>
+  {% endif %}
 </head>
