@@ -1,0 +1,55 @@
+---
+layout: null
+permalink: /llms.txt
+---
+# andycroll.com
+
+> Andy Croll's personal site. CTO at CoverageBook. Ruby/Rails expert. Conference organizer.
+
+## Site Overview
+
+Personal blog focused on Ruby and Rails development. Over 100 technical articles from the "One Ruby Thing" newsletter. Published bi-weekly since 2016.
+
+## Author
+
+Andy Croll - CTO at CoverageBook, Brighton Ruby organizer, speaker, author
+
+## Key Sections
+
+- /ruby/ - One Ruby Thing articles (primary content)
+- /other/ - Non-Ruby writings, yearly reviews
+- /now/ - Current activities, speaking history, projects
+- /for-llms/ - Machine-readable site overview
+
+## Article Format
+
+Each Ruby article follows a consistent structure:
+1. **Instead of...** - Shows a common but suboptimal approach
+2. **Use...** - Demonstrates the recommended technique
+3. **Why?** - Explains the reasoning and tradeoffs
+
+Includes code examples with before/after patterns.
+
+## Topics Covered
+
+ActiveRecord, Rails patterns, Ruby idioms, testing, performance, security, background jobs, database queries, code style, date/time handling, validations, migrations
+
+## Projects
+
+- One Ruby Thing: https://andycroll.com/ruby/
+- Brighton Ruby: https://brightonruby.com
+- Using Rails: https://usingrails.com
+- Ruby T-Shirts: https://rubytshirts.com
+- First Ruby Friend: https://firstrubyfriend.org
+- What The Stack? Podcast: https://whatthestackpodcast.com
+
+## Recent Ruby Articles
+{% for post in site.categories.ruby limit: 25 %}
+- {{ post.title }}: {{ site.url }}{{ post.url }}
+{% endfor %}
+
+## Contact
+
+- Email: {{ site.email }}
+- Twitter: @andycroll
+- Mastodon: @andycroll@ruby.social
