@@ -49,7 +49,7 @@ end
 
 ## Why?
 
-The `in?` method reads like English. "Is Justin in NSYNC?" becomes `"Justin".in?(nsync)`. Compare that to `nsync.include?("Justin")` which reads as "Does NSYNC include Justin?"—grammatically correct but less intuitive.
+The `in?` method reads like English. "Is Justin in NSYNC?" becomes `"Justin".in?(nsync)`. Compare that to `nsync.include?("Justin")`, which reads as "Does NSYNC include Justin?"—grammatically correct but less intuitive.
 
 The `in?` method works with anything that responds to `include?`: arrays, ranges, sets, and strings.
 
