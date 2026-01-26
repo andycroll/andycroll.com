@@ -1,5 +1,5 @@
 ---
-title: "Prefer in? over include? for Readable Conditions"
+title: "Prefer in? Over include? for Readable Conditions"
 description: "A more natural way to check if a value is in a collection"
 layout: article
 category: ruby
