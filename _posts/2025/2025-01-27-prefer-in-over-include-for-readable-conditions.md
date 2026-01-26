@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/m1WZS5ye404"
 ---
 
-When checking if a value exists within a collection, Ruby's `include?` method works but Rails provides a more natural alternative through Active Support's [`in?` method](https://api.rubyonrails.org/classes/Object.html#method-i-in-3F).
+When checking if a value exists within a collection, Ruby's `include?` method does the job, but Rails provides a more natural alternative through Active Support's [`in?` method](https://api.rubyonrails.org/classes/Object.html#method-i-in-3F).
 
 ## Instead of…
 
