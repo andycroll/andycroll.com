@@ -15,7 +15,7 @@ Tailwind CSS 4 changed how configuration works. The JavaScript config file has b
 
 ## The Setup
 
-Changes to three files, plus one more if you want a couple of tailwind plugins.
+Changes to four files, plus one more step if you want plugins.
 
 ### Gemfile
 
@@ -42,13 +42,21 @@ Point it at your CSS file and enable minification for production builds.
 
 ### Tailwind Plugins (optional)
 
-If you want to use Tailwind plugins like Typography or Forms, install them with npm:
+If you want Tailwind plugins like Typography or Forms, install them with npm:
 
 ```bash
 npm install @tailwindcss/typography @tailwindcss/forms
 ```
 
 This requires Node.js on your system. If you're only using core Tailwind utilities, skip this step.
+
+For blogs, `@tailwindcss/typography` is particularly useful. It provides `prose` classes that style your markdown content with sensible defaults for headings, paragraphs, lists, code blocks, and blockquotes:
+
+```html
+<article class="prose prose-lg">
+  {{ content }}
+</article>
+```
 
 ### assets/css/app.css
 
@@ -69,6 +77,14 @@ This is where Tailwind 4's changes shine. The `@theme` block replaces `tailwind.
 
 Plugins use the `@plugin` directive instead of being listed in a JavaScript config.
 
+### _layouts/default.html
+
+Include the stylesheet in your [layout's](https://jekyllrb.com/docs/front-matter/) `<head>`:
+
+```html
+<link href="{{ "/assets/css/app.css" | relative_url }}" rel="stylesheet">
+```
+
 ## Why This Works
 
 The `jekyll-tailwind` gem runs Tailwind's CLI during Jekyll's build. When you run `bundle exec jekyll serve`, it:
@@ -79,18 +95,6 @@ The `jekyll-tailwind` gem runs Tailwind's CLI during Jekyll's build. When you ru
 4. Outputs to `_site/assets/css/app.css`
 
 Hot reload works. Change a class in a template, save, and the CSS rebuilds.
-
-## The Typography Plugin
-
-For blogs, `@tailwindcss/typography` is essential. It provides the `prose` classes that style your markdown content:
-
-```html
-<article class="prose prose-lg">
-  {{ content }}
-</article>
-```
-
-You get sensible defaults for headings, paragraphs, lists, code blocks, and blockquotes. Customize them with modifier classes or override in your CSS.
 
 ## Why Not?
 
