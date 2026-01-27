@@ -15,7 +15,7 @@ Tailwind CSS 4 changed how configuration works. Gone is the JavaScript config fi
 
 ## The Setup
 
-Three files, plus one more if you want plugins.
+Changes to three files, plus one more if you want a couple of tailwind plugins.
 
 ### Gemfile
 
