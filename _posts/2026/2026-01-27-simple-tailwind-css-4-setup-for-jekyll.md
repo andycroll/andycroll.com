@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/iGDg_f_mlWo"
 ---
 
-Tailwind CSS 4 changed how configuration works. Gone is the JavaScript config file, replaced by CSS-based configuration using `@theme` directives. Here's how to set it up with Jekyll.
+Tailwind CSS 4 changed how configuration works. The JavaScript config file has been replaced by CSS-based configuration using `@theme` directives and uses the `tailwind` CLI to shake down the generated tailwind classes and minify. Here's how to set it up with [Jekyll](https://jekyllrb.com).
 
 ## The Setup
 
