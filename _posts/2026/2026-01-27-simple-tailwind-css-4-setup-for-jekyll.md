@@ -54,7 +54,7 @@ For blogs, `@tailwindcss/typography` is particularly useful. It provides `prose`
 
 ```html
 <article class="prose prose-lg">
-  {{ content }}
+  <p>...</p>
 </article>
 ```
 
