@@ -1,65 +1,66 @@
 ---
 layout: default
 ---
-<header class="max-w-6xl">
-  {% if jekyll.environment == 'production' %}
-    {% capture image_url_root %}{{site.image_url }}/images/{% endcapture %}
-  {% else %}
-    {% assign image_url_root = '/images/' %}
-  {% endif %}
-  {% if page.image %}
-    <div class="relative">
-      <picture class="sm:rounded">
-        <img
-          sizes="100vw"
-          alt="{{ page.image.alt }}"
-          src="{{ image_url_root }}{{ page.image.base }}.jpg?blur=80&quality=40"
-          srcset="
-            {{ image_url_root }}{{ page.image.base }}.jpg?width=1024.jpg 1024w,
-            {{ image_url_root }}{{ page.image.base }}.jpg?width=1536 1536w,
-            {{ image_url_root }}{{ page.image.base }}.jpg?width=2048 2048w
-          "
-          class="aspect-4/1 w-full sm:rounded sm:px-3"
-          data-no-lazy
-        >
-      </picture>
+{% if jekyll.environment == 'production' %}
+  {% capture image_url_root %}{{site.image_url }}/images/{% endcapture %}
+{% else %}
+  {% assign image_url_root = '/images/' %}
+{% endif %}
 
-      {% if page.image.credit %}
-        <div
-          class="absolute top-3 right-3 sm:right-6 rounded bg-white py-1 px-2 opacity-50 hover:opacity-100"
-        >
-          <p class="text-slate-600 text-xs">
-            <small>
-              <span class="hidden md:inline">image&nbsp;by</span>
-              {% if page.image.source %}
-                <a
-                  href="{{ page.image.source }}"
-                  class="text-slate-600 no-underline hover:text-slate-600 hover:underline"
-                >
-                  {{- page.image.credit -}}
-                </a>
-              {% else %}
-                <span class="text-slate-600 no-underline">{{ page.image.credit }}</span>
-              {% endif %}
-            </small>
-          </p>
-        </div>
-      {% endif %}
+{% if page.image %}
+  <div class="relative w-screen max-w-7xl left-1/2 -translate-x-1/2">
+    <picture>
+      <img
+        sizes="100vw"
+        alt="{{ page.image.alt }}"
+        src="{{ image_url_root }}{{ page.image.base }}.jpg?blur=80&quality=40"
+        srcset="
+          {{ image_url_root }}{{ page.image.base }}.jpg?width=1024.jpg 1024w,
+          {{ image_url_root }}{{ page.image.base }}.jpg?width=1536 1536w,
+          {{ image_url_root }}{{ page.image.base }}.jpg?width=2048 2048w
+        "
+        class="aspect-4/1 w-full object-cover"
+        data-no-lazy
+      >
+    </picture>
 
-      <div class="absolute bottom-0 left-0 z-20 bg-white rounded-tr">
-        {% if page.categories contains 'ruby' %}
-          <a class="inline-block p-3 pb-0" href="/ruby">
-            <img
-              src="/images/onerubything-horizontal.svg"
-              class="w-auto h-4 sm:h-5 md:h-6"
-              alt="One Ruby Thing"
-            >
-          </a>
-        {% endif %}
+    {% if page.image.credit %}
+      <div
+        class="absolute top-3 right-3 sm:right-6 rounded bg-white py-1 px-2 opacity-50 hover:opacity-100"
+      >
+        <p class="text-slate-600 text-xs">
+          <small>
+            <span class="hidden md:inline">image&nbsp;by</span>
+            {% if page.image.source %}
+              <a
+                href="{{ page.image.source }}"
+                class="text-slate-600 no-underline hover:text-slate-600 hover:underline"
+              >
+                {{- page.image.credit -}}
+              </a>
+            {% else %}
+              <span class="text-slate-600 no-underline">{{ page.image.credit }}</span>
+            {% endif %}
+          </small>
+        </p>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
 
+    <div class="absolute bottom-0 left-[max(0px,calc((min(100vw,80rem)-48rem)/2))] z-20 bg-white rounded-tr">
+      {% if page.categories contains 'ruby' %}
+        <a class="inline-block p-3 pb-0" href="/ruby">
+          <img
+            src="/images/onerubything-horizontal.svg"
+            class="w-auto h-4 sm:h-5 md:h-6"
+            alt="One Ruby Thing"
+          >
+        </a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+<div class="max-w-3xl mx-auto">
   <h1 class="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-3 px-3">
     {% assign titleWords = page.title | split: ' ' %}
     {% for word in titleWords -%}
@@ -67,13 +68,11 @@ layout: default
       {{- word -}}
     {%- endfor %}
   </h1>
-</header>
 
-<div class="block relative max-w-6xl">
-  <div>
+  <div class="relative">
     <div
       class="
-        max-w-3xl lg:max-w-2xl p-3 pb-0
+        p-3 pb-0
         prose prose-lg
         prose-headings:font-serif prose-headings:font-normal prose-headings:mb-3 prose-headings:mt-4
         prose-p:my-0 prose-p:mb-4
@@ -86,14 +85,14 @@ layout: default
       {{ page.excerpt }}
     </div>
 
-    <div class="grid gap-2 grid-cols-2 lg:grid-cols-1 lg:mx-0 lg:w-1/5 lg:absolute lg:top-5 lg:right-0">
+    <div class="grid gap-2 grid-cols-2 p-3 lg:hidden">
       {% include email.html %}
       {% include rubytshirts.html %}
     </div>
 
     <div
       class="
-        max-w-3xl lg:max-w-2xl p-3 pt-0
+        p-3 pt-0
         prose prose-lg
         prose-headings:font-serif prose-headings:font-normal prose-headings:mb-3 prose-headings:mt-4
         prose-p:my-0 prose-p:mb-4
@@ -105,10 +104,17 @@ layout: default
     >
       {{ content | remove: page.excerpt }}
     </div>
+
+    <aside class="hidden lg:block lg:absolute lg:top-0 lg:left-full lg:ml-6 lg:w-52">
+      <div class="sticky top-4 grid gap-2">
+        {% include email.html %}
+        {% include rubytshirts.html %}
+      </div>
+    </aside>
   </div>
 
   {% if page.categories contains 'ruby' %}
-    <div class="max-w-3xl lg:max-w-2xl -mx-3 p-3 pt-0">
+    <div class="p-3 pt-0">
       {% include email.html %}
     </div>
   {% endif %}
