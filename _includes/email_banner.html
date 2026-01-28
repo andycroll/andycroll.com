@@ -13,6 +13,6 @@
 </div>
 {% endif %}
 
-{% if page.url == '/' or page.categories contains 'ruby' %}
+{% if page.url == '/' or page.url == '/ruby/' or page.categories contains 'ruby' %}
 {% include email_popover.html %}
 {% endif %}

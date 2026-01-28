@@ -38,25 +38,23 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
 
     <ol class="mt-4">
       {% for post in site.categories.ruby limit: 5 %}
-        <li class="mb-2">
-          <a class="block" href="{{ post.url }}">
+        <li class="mb-1 flex items-baseline justify-between gap-3">
+          <a href="{{ post.url }}">
             {% assign titleWords = post.title | split: ' ' %}
             {% for word in titleWords -%}
               {%- if forloop.last %}&nbsp;{% else %}  {% endif -%}
               {{- word -}}
             {%- endfor %}
           </a>
-          <small class="text-gray-400">{{ post.date | date_to_long_string: 'ordinal', 'US' }}</small>
+          <small class="flex-none text-gray-400">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
         </li>
       {% endfor %}
     </ol>
 
     <a
       href="/ruby/"
-      class="inline-block items-center px-3 py-2 border border-transparent rounded shadow-xs font-medium no-underline text-gray-100 bg-red-800 hover:bg-red-700 hover:text-white hover:no-underline hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 cursor-pointer"
-    >
-      100+ articles</a
-    >
+      class="block text-right text-stone-800 hover:text-red-800 underline decoration-2 decoration-red-700 underline-offset-4"
+    >100+ articles &rarr;</a>
   </div>
 
   <div class="grid gap-4 grid-cols-2 content-start">
@@ -93,8 +91,10 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
 
       {% endif %}
     {% endfor %}
-    <li>
-      <a href="/other/">View all &rarr;</a>
-    </li>
   </ol>
+
+  <a
+    href="/other/"
+    class="block text-right text-stone-800 hover:text-red-800 underline decoration-2 decoration-red-700 underline-offset-4"
+  >View all &rarr;</a>
 </div>
