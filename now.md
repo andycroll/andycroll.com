@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "What I'm Doing Now"
-date: "2024-05-26"
+date: "2026-01-28"
 redirect_from:
   - /2010/10/01/negative/
   - /startups/singapore/singapore-startup-negativity/
@@ -22,13 +22,17 @@ image:
 description: "The current work of Andy Croll"
 ---
 
-I’m CTO at [CoverageBook](https://coveragebook.com).
+I'm CTO at [CoverageBook](https://coveragebook.com), building new features and exploring how AI can improve our product.
 
-Co-chaired [RailsConf 2024](https://railsconf.com) ([by accident](/ruby/railsconf-detroit-2024-cochairs-perspective/)) in Detroit, Michigan.
+Running [One Ruby Thing](/ruby/), a fortnightly email newsletter about Ruby and Rails techniques.
 
-What I thought of [2023](/other/year-in-review-2023/).
+Planning [Brighton Ruby 2026](https://brightonruby.com).
 
-### Past Speaking
+Excited about Rails 8, Solid Queue, Solid Cache, Hotwire improvements, and taming the robot army now at my fingertips.
+
+What I thought of [2025](/other/year-in-review-2025/).
+
+### [Past Speaking](https://rubyevents.org/speakers/andy-croll)
 
 - [Taylor’s Guide to Big Rewrites](https://www.youtube.com/watch?v=G1QbH2QZX08) RailsConf 2023 & RailSaaS Athens 2023
 - [The Mrs Triggs Problem](https://www.youtube.com/watch?v=0UcTD49KugA) Keynoted Euruko Helsinki 2022 & [RailsConf 2022](https://www.youtube.com/watch?v=QbcSsDUyW6s)
