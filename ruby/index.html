@@ -1,47 +1,51 @@
 ---
 layout: default
-description: "An email newsletter, with one Ruby/Rails technique delivered with a ‘why?’ and a ‘how?’ every two weeks.
-It’s deliberately brief, focussed & opinionated."
+description: "An email newsletter, with one Ruby/Rails technique delivered with a 'why?' and a 'how?' every two weeks.
+It's deliberately brief, focussed & opinionated."
 redirect_from:
 - /one-ruby-thing
 ---
 
-<header class="block p-3 mb-4">
-  <a class="inline-block" href="/ruby/">
+<header class="block p-3 mb-6 max-w-3xl mx-auto">
+  <a class="inline-block mb-2" href="/ruby/">
     <img
       src="/images/onerubything-horizontal.svg"
-      class="w-auto h-4 sm:h-6 md:h-8"
+      class="w-auto h-6 mb-2"
       alt="One Ruby Thing"
     >
   </a>
 
-  <h1 class="font-serif text sm:text-lg md:text-3xl md:w-4/5 lg:w-2/3">
-    An email newsletter, with one Ruby/Rails technique delivered with a ‘why?’ and a ‘how?’ every two weeks. It’s deliberately brief, focussed
+  <p class="text-lg mb-4">
+    An email newsletter, with one Ruby/Rails technique delivered with a 'why?' and a 'how?' every two weeks. It's deliberately brief, focussed
     <span class="amp text-red-900">&amp;</span>
     opinionated.
-  </h1>
+  </p>
+
+  <div class="flex items-center justify-between gap-x-4 bg-white border border-stone-200 px-4 py-2.5 rounded-xl shadow-sm">
+    <p class="text-sm/6 text-stone-800">Ruby/Rails techniques, every two weeks</p>
+    <button
+      type="button"
+      onclick="document.getElementById('email-popover').showModal()"
+      class="flex-none rounded-md bg-red-700 px-3 py-1.5 text-sm font-semibold text-white hover:bg-red-800 cursor-pointer"
+    >
+      Subscribe
+    </button>
+  </div>
 </header>
 
-  <div class="grid md:grid-cols-5">
-    <div class="p-3 md:col-span-3">
-      <ol>
-        {% for post in site.categories.ruby %}
-          <li class="mb-2">
-            <a class="block" href="{{ post.url }}">
-              {% assign titleWords = post.title | split: ' ' %}
-              {% for word in titleWords -%}
-                {%- if forloop.last %}&nbsp;{% else %}  {% endif -%}
-                {{- word -}}
-              {%- endfor %}
-            </a>
-            <small class="text-gray-400">{{ post.date | date_to_long_string: 'ordinal', 'US' }}</small>
-          </li>
-        {% endfor %}
-      </ol>
-    </div>
-
-    <div class="md:col-span-2">
-      {% include email.html %}
-    </div>
-  </div>
+<div class="p-3 max-w-3xl mx-auto">
+  <ol>
+    {% for post in site.categories.ruby %}
+      <li class="mb-1 flex items-baseline justify-between gap-3">
+        <a href="{{ post.url }}">
+          {% assign titleWords = post.title | split: ' ' %}
+          {% for word in titleWords -%}
+            {%- if forloop.last %}&nbsp;{% else %}  {% endif -%}
+            {{- word -}}
+          {%- endfor %}
+        </a>
+        <small class="flex-none text-gray-400">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
+      </li>
+    {% endfor %}
+  </ol>
 </div>

@@ -2,14 +2,14 @@
 layout: default
 description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Bootstrapper & Twin Dad."
 ---
-<header class="block p-3 mb-4">
-  <h1 class="font-serif text sm:text-lg md:text-3xl md:w-3/4 xl:w-1/2">
+<header class="block p-3 mb-6 max-w-3xl mx-auto">
+  <h1 class="font-serif text sm:text-lg md:text-3xl">
     {% include bio.html %}
   </h1>
 </header>
 
-<div class="grid grid-flow-dense grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-  <div class="col-span-2 bg-gradient-to-b from-slate-50 via-transparent via-30% rounded p-3">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 px-3 max-w-7xl mx-auto">
+  <div class="bg-gradient-to-b from-slate-50 via-transparent via-30% rounded p-3">
     <a class="block" href="/ruby/">
       <img
         src="/images/onerubything-horizontal.svg"
@@ -18,77 +18,83 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
       >
     </a>
 
-    <p class="text-lg mb-3">
-      An email newsletter, with one Ruby/Rails technique delivered with a ‘why?’ and a ‘how?’ every two weeks. It’s
+    <p class="text-lg mb-4">
+      An email newsletter, with one Ruby/Rails technique delivered with a 'why?' and a 'how?' every two weeks. It's
       deliberately brief, focussed
       <span class="amp text-red-900">&amp;</span>
       opinionated.
     </p>
 
-    <ol>
-      {% for post in site.categories.ruby limit: 10 %}
-        <li class="mb-2">
-          <a class="block" href="{{ post.url }}">
+    <div class="flex items-center justify-between gap-x-4 bg-white border border-stone-200 px-4 py-2.5 rounded-xl shadow-sm">
+      <p class="text-sm/6 text-stone-800">Ruby/Rails techniques, every two weeks</p>
+      <button
+        type="button"
+        onclick="document.getElementById('email-popover').showModal()"
+        class="flex-none rounded-md bg-red-700 px-3 py-1.5 text-sm font-semibold text-white hover:bg-red-800 cursor-pointer"
+      >
+        Subscribe
+      </button>
+    </div>
+
+    <ol class="mt-4">
+      {% for post in site.categories.ruby limit: 5 %}
+        <li class="mb-1 flex items-baseline justify-between gap-3">
+          <a href="{{ post.url }}">
             {% assign titleWords = post.title | split: ' ' %}
             {% for word in titleWords -%}
               {%- if forloop.last %}&nbsp;{% else %}  {% endif -%}
               {{- word -}}
             {%- endfor %}
           </a>
-          <small class="text-gray-400">{{ post.date | date_to_long_string: 'ordinal', 'US' }}</small>
+          <small class="flex-none text-gray-400">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
         </li>
       {% endfor %}
     </ol>
 
     <a
       href="/ruby/"
-      class="inline-block items-center px-3 py-2 border border-transparent rounded shadow-xs font-medium no-underline text-gray-100 bg-red-800 hover:bg-red-700 hover:text-white hover:no-underline hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 cursor-pointer"
-    >
-      100+ articles</a
-    >
+      class="block text-right text-sm mt-2 text-stone-800 hover:text-red-800 underline decoration-2 decoration-red-700 underline-offset-4"
+    >100+ articles &rarr;</a>
   </div>
 
-  <div class="col-span-2 md:col-span-1 lg:col-span-2 grid gap-3 grid-cols-2 md:grid-cols-1 lg:grid-cols-2 grid-flow-dense">
+  <div class="grid gap-6 lg:gap-10 grid-cols-2 content-start">
     {% include rubytshirts.html %}
     {% include usingrails.html %}
     {% include firstrubyfriend.html %}
     {% include whatthestack.html %}
     {% include brightonruby.html %}
-
-    <div class="col-span-2 md:col-span-1 lg:col-span-2 bg-gradient-to-b from-slate-50 via-transparent via-10% rounded p-3">
-      <h2 class="font-serif bold text-lg">
-        <a href="/other/">Other Archives</a>
-      </h2>
-
-      <ol class="w-full">
-        {% assign other_post_count = 0 %}
-        {% for post in site.posts %}
-          {% if post.categories contains 'ruby' %}
-          {% elsif other_post_count < 5 %}
-            <li class="mb-1 flex items-baseline justify-between gap-3">
-              <a href="{{ post.url }}">
-                {% assign titleWords = post.title | split: ' ' %}
-                {% for word in titleWords -%}
-                  {%- if forloop.last %}&nbsp;{% else %}  {% endif -%}
-                  {{- word -}}
-                {%- endfor %}
-              </a>
-              <small class="flex-none text-gray-400"> {{ post.date | date_to_string: 'ordinal', 'US' }}</small>
-            </li>
-            {% assign other_post_count = other_post_count | plus: 1 %}
-          {% else %}
-
-          {% endif %}
-        {% endfor %}
-        <li class="mb-1 flex items-baseline justify-between gap-3">
-          <a
-            href="/other/"
-            class=""
-          >
-            &amp; more articles&hellip;</a
-          >
-        </li>
-      </ol>
-    </div>
   </div>
+</div>
+
+<div class="mt-8 p-3 max-w-3xl mx-auto">
+  <h2 class="font-serif text-lg mb-2">
+    <a href="/other/">Other Archives</a>
+  </h2>
+
+  <ol>
+    {% assign other_post_count = 0 %}
+    {% for post in site.posts %}
+      {% if post.categories contains 'ruby' %}
+      {% elsif other_post_count < 3 %}
+        <li class="mb-1 flex items-baseline justify-between gap-3">
+          <a href="{{ post.url }}">
+            {% assign titleWords = post.title | split: ' ' %}
+            {% for word in titleWords -%}
+              {%- if forloop.last %}&nbsp;{% else %}  {% endif -%}
+              {{- word -}}
+            {%- endfor %}
+          </a>
+          <small class="flex-none text-gray-400">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
+        </li>
+        {% assign other_post_count = other_post_count | plus: 1 %}
+      {% else %}
+
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+  <a
+    href="/other/"
+    class="block text-right text-sm mt-2 text-stone-800 hover:text-red-800 underline decoration-2 decoration-red-700 underline-offset-4"
+  >View all &rarr;</a>
 </div>

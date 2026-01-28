@@ -4,44 +4,44 @@
   {% assign image_url_root = '/images/' %}
 {% endif %}
 
-<footer role="contentinfo" class="block p-3 mb-10">
-  <div>
+<footer role="contentinfo" class="block mb-10">
+  <div class="p-3 max-w-3xl mx-auto mb-6 text-center">
     <img
       src="{{ image_url_root }}andycroll.jpg"
       alt="Andy Croll headshot"
-      class="aspect-square rounded-full block shadow-lg w-20 md:w-24 mb-4"
+      class="aspect-square rounded-full mx-auto block shadow-lg w-20 md:w-24 mb-4"
       loading="lazy"
     >
 
-    <p class="font-serif text text-lg sm:text-xl md:text-2xl md:w-4/5 lg:w-2/3 mb-4">
+    <p class="font-serif text-lg sm:text-xl md:text-2xl">
       {% include bio.html %}
     </p>
   </div>
 
-  <div class="gap-3 grid lg:grid-cols-5">
-    <div class="md:w-3/4 lg:w-full">
+  <div class="p-3 max-w-7xl mx-auto gap-3 grid lg:grid-cols-5">
+    <div>
       <h5 class="font-medium text-lg font-serif"><a href="https://andycroll.com/ruby">One Ruby Thing</a></h5>
       <p>An email explaining a Ruby/Rails technique every two weeks.</p>
     </div>
 
-    <div class="md:w-3/4 lg:w-full">
+    <div>
       <h5 class="font-medium text-lg font-serif"><a href="https://usingrails.com/">Using Rails</a></h5>
       <p>A community-sourced directory of organisations using and loving Ruby on Rails.</p>
     </div>
 
-    <div class="md:w-3/4 lg:w-full">
+    <div>
       <h5 class="font-medium text-lg font-serif"><a href="https://brightonruby.com/">Brighton Ruby</a></h5>
       <p>The OG, one-day, <i>in-person</i>, single track conference for Rubyists in the UK.</p>
     </div>
 
-    <div class="md:w-3/4 lg:w-full">
+    <div>
       <h5 class="font-medium text-lg font-serif">
         <a href="https://whatthestackpodcast.com/">What The Stack?</a>
       </h5>
       <p>A podcast about the software, hardware, teams & tools folks use to make amazing things.</p>
     </div>
 
-    <div class="md:w-3/4 lg:w-full">
+    <div>
       <h5 class="font-medium text-lg font-serif"><a href="https://firstrubyfriend.org/">First Ruby Friend</a></h5>
       <p>A mentoring programme for the Ruby community.</p>
     </div>
