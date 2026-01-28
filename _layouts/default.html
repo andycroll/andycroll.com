@@ -2,16 +2,16 @@
 <html class="no-js" lang="en">
   {% include head.html %}
 
-  <body class="max-w-6xl mx-auto">
-    <div id="nav" class="p-3 pt-5 flex justify-between max-w-3xl mx-auto">
-      <a class="inline-block opacity-80 hover:opacity-100" href="/">
-        <img src="/images/andycroll.svg" class="w-auto h-4 sm:h-6 md:h-8" alt="Andy Croll">
+  <body class="max-w-7xl mx-auto">
+    <nav id="nav" class="px-3 py-6 lg:py-8 flex justify-between items-center max-w-3xl mx-auto">
+      <a class="inline-block hover:opacity-80 transition-opacity" href="/">
+        <img src="/images/andycroll.svg" class="w-auto h-6 sm:h-8 lg:h-10 xl:h-12" alt="Andy Croll">
       </a>
 
-      <a class="inline-block opacity-50 hover:opacity-100" href="/now/">
-        <img src="/images/now.svg" class="w-auto h-4 sm:h-6 md:h-8 fill-current text-blue-800" alt="Now">
+      <a class="inline-block text-stone-500 hover:text-stone-800 transition-colors" href="/now/">
+        <img src="/images/now.svg" class="w-auto h-6 sm:h-8 lg:h-10 xl:h-12" alt="Now">
       </a>
-    </div>
+    </nav>
 
     <div role="main" class="">
       {{ content | expand_urls: root_url }}
@@ -19,5 +19,6 @@
 
     {% if page.url != '/' %}{% include footer.html %}{% endif %}
     {% include javascripts.html %}
+    {% include email_banner.html %}
   </body>
 </html>

@@ -85,8 +85,7 @@ layout: default
       {{ page.excerpt }}
     </div>
 
-    <div class="grid gap-2 grid-cols-2 p-3 lg:hidden">
-      {% include email.html %}
+    <div class="p-3 lg:hidden">
       {% include rubytshirts.html %}
     </div>
 
@@ -106,18 +105,11 @@ layout: default
     </div>
 
     <aside class="hidden lg:block lg:absolute lg:top-0 lg:left-full lg:ml-6 lg:w-52">
-      <div class="sticky top-4 grid gap-2">
-        {% include email.html %}
+      <div class="sticky top-4">
         {% include rubytshirts.html %}
       </div>
     </aside>
   </div>
-
-  {% if page.categories contains 'ruby' %}
-    <div class="p-3 pt-0">
-      {% include email.html %}
-    </div>
-  {% endif %}
 
   <div class="mb-10">
     <p class="text-xs text-slate-500 px-3">
