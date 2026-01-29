@@ -14,5 +14,5 @@
 
 .prose a,
 .prose-lg a {
-  @apply text-stone-800 hover:text-red-700 decoration-1 decoration-red-700 underline-offset-2 underline;
+  @apply text-stone-800 dark:text-stone-200 hover:text-red-700 dark:hover:text-red-400 decoration-1 decoration-red-700 dark:decoration-red-500 underline-offset-2 underline;
 }

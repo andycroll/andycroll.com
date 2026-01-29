@@ -8,7 +8,7 @@ layout: default
 {% endif %}
 
 {% if page.image %}
-  <div class="relative w-screen max-w-7xl left-1/2 -translate-x-1/2">
+  <div class="relative w-screen max-w-7xl left-1/2 -translate-x-1/2 xl:rounded-lg xl:overflow-hidden">
     <picture>
       <img
         sizes="100vw"
@@ -26,32 +26,32 @@ layout: default
 
     {% if page.image.credit %}
       <div
-        class="absolute top-3 right-3 sm:right-6 rounded bg-white py-1 px-2 opacity-50 hover:opacity-100"
+        class="absolute top-3 right-3 sm:right-6 rounded bg-white dark:bg-slate-800 py-1 px-2 opacity-50 hover:opacity-100"
       >
-        <p class="text-slate-600 text-xs">
+        <p class="text-slate-600 dark:text-slate-300 text-xs">
           <small>
             <span class="hidden md:inline">image&nbsp;by</span>
             {% if page.image.source %}
               <a
                 href="{{ page.image.source }}"
-                class="text-slate-600 no-underline hover:text-slate-600 hover:underline"
+                class="text-slate-600 dark:text-slate-300 no-underline hover:text-slate-600 dark:hover:text-slate-200 hover:underline"
               >
                 {{- page.image.credit -}}
               </a>
             {% else %}
-              <span class="text-slate-600 no-underline">{{ page.image.credit }}</span>
+              <span class="text-slate-600 dark:text-slate-300 no-underline">{{ page.image.credit }}</span>
             {% endif %}
           </small>
         </p>
       </div>
     {% endif %}
 
-    <div class="absolute bottom-0 left-[max(0px,calc((min(100vw,80rem)-48rem)/2))] z-20 bg-white rounded-tr">
+    <div class="absolute bottom-0 left-[max(0px,calc((min(100vw,80rem)-48rem)/2))] z-20 bg-white dark:bg-slate-900 rounded-tr">
       {% if page.categories contains 'ruby' %}
         <a class="inline-block p-3 pb-0" href="/ruby">
           <img
             src="/images/onerubything-horizontal.svg"
-            class="w-auto h-4 sm:h-5 md:h-6"
+            class="w-auto h-4 sm:h-5 md:h-6 dark:invert"
             alt="One Ruby Thing"
           >
         </a>
@@ -73,13 +73,13 @@ layout: default
     <div
       class="
         p-3 pb-0
-        prose prose-lg
+        prose prose-lg dark:prose-invert
         prose-headings:font-serif prose-headings:font-normal prose-headings:mb-3 prose-headings:mt-4
         prose-p:my-0 prose-p:mb-4
         prose-h1:text-2xl prose-h1:md:text-3xl
         prose-h2:text-xl prose-h2:md:text-2xl prose-h2:mt-10
-        prose-h3:text-base prose-h3:text-stone-600
-        prose-a:text-stone-800 hover:prose-a:text-red-800 prose-a:decoration-2 prose-a:decoration-red-700 prose-a:underline-offset-4 prose-a:underline
+        prose-h3:text-base prose-h3:text-stone-600 dark:prose-h3:text-stone-300
+        prose-a:text-stone-800 dark:prose-a:text-stone-200 hover:prose-a:text-red-800 dark:hover:prose-a:text-red-400 prose-a:decoration-2 prose-a:decoration-red-700 dark:prose-a:decoration-red-500 prose-a:underline-offset-4 prose-a:underline
       "
     >
       {{ page.excerpt }}
@@ -92,13 +92,13 @@ layout: default
     <div
       class="
         p-3 pt-0
-        prose prose-lg
+        prose prose-lg dark:prose-invert
         prose-headings:font-serif prose-headings:font-normal prose-headings:mb-3 prose-headings:mt-4
         prose-p:my-0 prose-p:mb-4
         prose-h1:text-2xl prose-h1:md:text-3xl
         prose-h2:text-xl prose-h2:md:text-2xl prose-h2:mt-10
-        prose-h3:text-base prose-h3:text-stone-600
-        prose-a:text-stone-800 hover:prose-a:text-red-800 prose-a:decoration-2 prose-a:decoration-red-700 prose-a:underline-offset-4 prose-a:underline
+        prose-h3:text-base prose-h3:text-stone-600 dark:prose-h3:text-stone-300
+        prose-a:text-stone-800 dark:prose-a:text-stone-200 hover:prose-a:text-red-800 dark:hover:prose-a:text-red-400 prose-a:decoration-2 prose-a:decoration-red-700 dark:prose-a:decoration-red-500 prose-a:underline-offset-4 prose-a:underline
       "
     >
       {{ content | remove: page.excerpt }}
@@ -112,7 +112,7 @@ layout: default
   </div>
 
   <div class="mb-10">
-    <p class="text-xs text-slate-500 px-3">
+    <p class="text-xs text-slate-500 dark:text-slate-400 px-3">
       {% if page.last_modified_at and page.last_modified_at != page.date %}
         Last updated on
         <span class="date">{{ page.last_modified_at | date_to_long_string: 'ordinal', 'US' }}</span>

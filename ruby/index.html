@@ -10,7 +10,7 @@ redirect_from:
   <a class="inline-block mb-2" href="/ruby/">
     <img
       src="/images/onerubything-horizontal.svg"
-      class="w-auto h-6 mb-2"
+      class="w-auto h-6 mb-2 dark:invert"
       alt="One Ruby Thing"
     >
   </a>
@@ -21,8 +21,8 @@ redirect_from:
     opinionated.
   </p>
 
-  <div class="flex items-center justify-between gap-x-4 bg-white border border-stone-200 px-4 py-2.5 rounded-xl shadow-sm">
-    <p class="text-sm/6 text-stone-800">Ruby/Rails techniques, every two weeks</p>
+  <div class="flex items-center justify-between gap-x-4 bg-white dark:bg-slate-800 border border-stone-200 dark:border-stone-700 px-4 py-2.5 rounded-xl shadow-sm">
+    <p class="text-sm/6 text-stone-800 dark:text-stone-200">Ruby/Rails techniques, every two weeks</p>
     <button
       type="button"
       onclick="document.getElementById('email-popover').showModal()"
@@ -44,7 +44,7 @@ redirect_from:
             {{- word -}}
           {%- endfor %}
         </a>
-        <small class="flex-none text-gray-400">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
+        <small class="flex-none text-gray-400 dark:text-gray-500">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
       </li>
     {% endfor %}
   </ol>

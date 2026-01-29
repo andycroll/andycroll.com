@@ -1,9 +1,9 @@
 <dialog id="email-popover" class="backdrop:bg-stone-900/50 bg-transparent p-0 max-w-md w-full sm:mx-auto sm:my-auto sm:inset-0">
-  <div class="bg-white rounded-xl shadow-2xl p-6 relative">
+  <div class="bg-white dark:bg-slate-800 rounded-xl shadow-2xl p-6 relative">
     <button
       type="button"
       onclick="document.getElementById('email-popover').close()"
-      class="absolute top-3 right-3 text-stone-400 hover:text-stone-600 cursor-pointer"
+      class="absolute top-3 right-3 text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 cursor-pointer"
       aria-label="Close"
     >
       <svg class="size-5" viewBox="0 0 20 20" fill="currentColor">
@@ -13,7 +13,7 @@
 
     <img
       src="/images/onerubything-horizontal.svg"
-      class="w-auto h-6 mb-4"
+      class="w-auto h-6 mb-4 dark:invert"
       alt="One Ruby Thing"
     >
 
@@ -23,14 +23,14 @@
       target="_blank"
       novalidate=""
     >
-      <label for="popover-email" class="block mb-3 text-stone-700">
+      <label for="popover-email" class="block mb-3 text-stone-700 dark:text-stone-300">
         Get a nugget of Ruby knowledge every couple of weeks.
       </label>
       <input
         id="popover-email"
         name="email"
         type="email"
-        class="w-full placeholder:text-slate-400 text-slate-800 focus:ring-red-200 ring-stone-200 rounded mb-3 border-stone-300"
+        class="w-full placeholder:text-slate-400 dark:placeholder:text-slate-500 text-slate-800 dark:text-stone-200 dark:bg-slate-700 focus:ring-red-200 dark:focus:ring-red-800 ring-stone-200 dark:ring-stone-600 rounded mb-3 border-stone-300 dark:border-stone-600"
         placeholder="yourname@email.com"
         required
       >
@@ -44,7 +44,7 @@
           rounded border border-transparent
           text-white
           bg-red-700 hover:bg-red-800
-          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700
+          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-700 dark:focus:ring-offset-slate-800
           cursor-pointer
         "
       >

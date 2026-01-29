@@ -9,11 +9,11 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
 </header>
 
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 px-3 max-w-7xl mx-auto">
-  <div class="bg-gradient-to-b from-slate-50 via-transparent via-30% rounded p-3">
+  <div class="bg-gradient-to-b from-slate-50 dark:from-slate-800 via-transparent via-30% rounded p-3">
     <a class="block" href="/ruby/">
       <img
         src="/images/onerubything-horizontal.svg"
-        class="w-auto h-6 mb-2"
+        class="w-auto h-6 mb-2 dark:invert"
         alt="One Ruby Thing"
       >
     </a>
@@ -25,8 +25,8 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
       opinionated.
     </p>
 
-    <div class="flex items-center justify-between gap-x-4 bg-white border border-stone-200 px-4 py-2.5 rounded-xl shadow-sm">
-      <p class="text-sm/6 text-stone-800">Ruby/Rails techniques, every two weeks</p>
+    <div class="flex items-center justify-between gap-x-4 bg-white dark:bg-slate-800 border border-stone-200 dark:border-stone-700 px-4 py-2.5 rounded-xl shadow-sm">
+      <p class="text-sm/6 text-stone-800 dark:text-stone-200">Ruby/Rails techniques, every two weeks</p>
       <button
         type="button"
         onclick="document.getElementById('email-popover').showModal()"
@@ -46,14 +46,14 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
               {{- word -}}
             {%- endfor %}
           </a>
-          <small class="flex-none text-gray-400">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
+          <small class="flex-none text-gray-400 dark:text-gray-500">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
         </li>
       {% endfor %}
     </ol>
 
     <a
       href="/ruby/"
-      class="block text-right text-sm mt-2 text-stone-800 hover:text-red-800 underline decoration-2 decoration-red-700 underline-offset-4"
+      class="block text-right text-sm mt-2 text-stone-800 dark:text-stone-200 hover:text-red-800 dark:hover:text-red-400 underline decoration-2 decoration-red-700 dark:decoration-red-500 underline-offset-4"
     >100+ articles &rarr;</a>
   </div>
 
@@ -84,7 +84,7 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
               {{- word -}}
             {%- endfor %}
           </a>
-          <small class="flex-none text-gray-400">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
+          <small class="flex-none text-gray-400 dark:text-gray-500">{{ post.date | date_to_string: 'ordinal', 'US' }}</small>
         </li>
         {% assign other_post_count = other_post_count | plus: 1 %}
       {% else %}
@@ -95,6 +95,6 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
 
   <a
     href="/other/"
-    class="block text-right text-sm mt-2 text-stone-800 hover:text-red-800 underline decoration-2 decoration-red-700 underline-offset-4"
+    class="block text-right text-sm mt-2 text-stone-800 dark:text-stone-200 hover:text-red-800 dark:hover:text-red-400 underline decoration-2 decoration-red-700 dark:decoration-red-500 underline-offset-4"
   >View all &rarr;</a>
 </div>
