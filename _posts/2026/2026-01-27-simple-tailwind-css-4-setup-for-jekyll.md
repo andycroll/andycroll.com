@@ -23,7 +23,7 @@ Changes to four files, plus one more step if you want plugins.
 gem "jekyll-tailwind", group: [:jekyll_plugins]
 ```
 
-Run `bundle install` to fetch the gem. The [`jekyll-tailwind`](https://github.com/vormwald/jekyll-tailwind) gem handles everything. No separate build pipeline, no PostCSS config, no watching for changes. It hooks into Jekyll's build process.
+Run `bundle install` to fetch the gem. The [`jekyll-tailwind`](https://github.com/crbelaus/jekyll-tailwind) gem handles everything. No separate build pipeline, no PostCSS config, no watching for changes. It hooks into Jekyll's build process.
 
 Under the hood, it uses [`tailwindcss-ruby`](https://github.com/flavorjones/tailwindcss-ruby)---the same gem that powers Tailwind in Rails.
 
