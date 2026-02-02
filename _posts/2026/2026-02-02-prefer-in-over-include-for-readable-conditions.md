@@ -3,7 +3,7 @@ title: "Prefer in? Over include? for Readable Conditions"
 description: "A more natural way to check if a value is in a collection"
 layout: article
 category: ruby
-date: 2026-02-02 09:00
+date: 2026-02-02 02:00
 image:
   base: "2025/prefer-in-over-include-for-readable-conditions"
   alt: "Band performing on stage in front of a crowd"
