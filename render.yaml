@@ -1,0 +1,12 @@
+services:
+  - type: web
+    runtime: static
+    name: andycroll-blog
+    repo: https://github.com/andycroll/andycroll.com
+    branch: main
+    buildCommand: ./bin/render-build.sh
+    staticPublishPath: ./_site
+    envVars:
+      - key: RUBY_VERSION
+        value: 3.4.4
+    previewsEnabled: true
