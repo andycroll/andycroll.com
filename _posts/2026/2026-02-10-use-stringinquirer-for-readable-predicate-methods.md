@@ -11,9 +11,9 @@ image:
   source: "https://unsplash.com/photos/Vq-Sqr7D_7k"
 ---
 
-You've probably seen `Rails.env.production?` in your codebase, to ensure some code only runs in production. Rails wraps the environment string in an [`ActiveSupport::StringInquirer`](https://api.rubyonrails.org/classes/ActiveSupport/StringInquirer.html), which lets you ask questions of a string value rather than comparing it directly.
+You've probably seen `Rails.env.production?` in your codebase to ensure that certain code only runs in production. Instead of having to compare strings, `Rails.env == "production"`, Rails wraps the string in an [`ActiveSupport::StringInquirer`](https://api.rubyonrails.org/classes/ActiveSupport/StringInquirer.html) so you get readable methods like `.production?` and `.development?`.
 
-Active Support adds an [`inquiry` method to `String`](https://api.rubyonrails.org/classes/String.html#method-i-inquiry) so you can use this pattern in your own code.
+Active Support also adds an [`inquiry` method to `String`](https://api.rubyonrails.org/classes/String.html#method-i-inquiry) so you can use this same pattern in your own code.
 
 ## Instead of…
 
@@ -41,23 +41,7 @@ class Writing < ApplicationRecord
 end
 ```
 
-The pattern `def category = super.to_s.inquiry` overrides the getter. It calls `super` to get the original value, converts it to a string with `to_s`, then wraps it in a `StringInquirer`.
-
-Now any predicate method you call checks if the string matches that name:
-
-```ruby
-"article".inquiry.article?      #=> true
-"article".inquiry.story?        #=> false
-"".inquiry.social_post?         #=> false
-```
-
-If you need `category` to return `nil` when the underlying value is blank, use `presence` and the [lonely operator](/ruby/rails-try-vs-safe-lonely-navigation-operator-ampersand-dot) instead:
-
-```ruby
-def category = super.presence&.inquiry
-```
-
-This requires safe navigation (`&.`) when calling predicates: `category&.news?`.
+The overridden `category` getter calls `super` to get the original value, then wraps it in a `StringInquirer` via `.to_s.inquiry`. Now calling `.article?` checks whether the string equals `"article"`.
 
 ## Why?
 
@@ -65,7 +49,7 @@ The code reads like English. "Is the category an article?" becomes `category.art
 
 This is the same pattern Rails uses internally. When you write `Rails.env.production?`, you're calling a predicate method on a `StringInquirer`. Applying the pattern to your own code feels natural.
 
-It works well with dynamic data—values from APIs, user input, or CSV imports—where defining an enum upfront isn't practical. The inquirer adapts to whatever string you give it.
+It works well with dynamic data such as API responses or CSV imports where defining an enum upfront isn't practical.
 
 ```ruby
 status = api_response["status"].to_s.inquiry
@@ -88,3 +72,13 @@ writing.song!          # and bang assignment methods
 ```
 
 Enums give you database-backed validation and automatic scopes. Use `StringInquirer` when the values are too dynamic for an enum, or when you're working with external data you don't control.
+
+## Extra nuances
+
+You might sometimes want a bare attribute call to return `nil`. With a `StringInquirer` it will always be `""`. Either adjust checks to look for `.blank?` rather than `.nil?` or modify the implementation using the [lonely operator](/ruby/rails-try-vs-safe-lonely-navigation-operator-ampersand-dot):
+
+```ruby
+def category = super.presence&.inquiry
+```
+
+However, this requires safe navigation (`&.`) when calling predicates, `category&.news?`, so you're exchanging more database-accurate nilness for ugly calls.
