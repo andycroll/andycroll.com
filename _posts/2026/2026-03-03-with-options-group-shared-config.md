@@ -66,7 +66,7 @@ end
 
 `with_options` merges the given options into every method call inside the block. In the validation example, `if: :published?` gets added to each `validates` call automatically.
 
-Groups related configurations visually—it's immediately clear these rules only apply to published articles. Change the condition once, not three times.
+This syntax groups related configuration visually—it's immediately clear these rules only apply to published articles. If you have to change the condition; it is only once, not three times.
 
 Works in routes too:
 
