@@ -68,7 +68,7 @@ end
 
 This syntax groups related configuration visually—it's immediately clear these rules only apply to published articles. If you have to change the condition; it is only once, not three times.
 
-Works in routes too:
+This also works in `routes.rb` too:
 
 ```ruby
 with_options controller: "admin/reports" do
