@@ -3,7 +3,7 @@ title: "Customize Model URLs with to_param"
 description: "Override to_param to control how your Rails models appear in URLs—use slugs, hide IDs, or combine both."
 layout: article
 category: ruby
-date: 2026-02-17 06:00
+date: 2026-03-02 06:00
 image:
   base: "2026/to-param-seo-friendly-urls"
   alt: "Wooden signposts pointing in different directions on a beach"

@@ -3,7 +3,7 @@ title: "Group Repeated Options with with_options"
 description: "Use with_options to apply shared options to validations, associations, callbacks, or routes."
 layout: article
 category: ruby
-date: 2026-03-03 06:00
+date: 2026-03-09 06:00
 image:
   base: "2026/with-options-group-shared-config"
   alt: "Organized kitchen drawer with dishes and cups neatly arranged"
