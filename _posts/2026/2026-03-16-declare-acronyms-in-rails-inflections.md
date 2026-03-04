@@ -74,6 +74,8 @@ This also works for mixed-case words like `GraphQL` or `GitHub`. `inflect.acrony
 
 See the [ActiveSupport::Inflector::Inflections documentation](https://api.rubyonrails.org/classes/ActiveSupport/Inflector/Inflections.html#method-i-acronym) for details.
 
+Note that because these changes are in an initializer, you'll need to restart your Rails server after making changes.
+
 ## Why not?
 
 Since it's an initialiser, you'll need to restart your Rails server after making changes.
