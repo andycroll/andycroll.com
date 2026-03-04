@@ -80,4 +80,4 @@ Since it's an initialiser, you'll need to restart your Rails server after making
 
 Keep the list short. Every entry changes how `camelize`, `titleize`, `humanize`, and `underscore` behave across your entire app. Only add acronyms you're actively using—whether in class names, attribute labels, or view helpers.
 
-This only affects casing, not pluralisation. For words with non-standard plurals like criterion/criteria, that's `inflect.irregular`. For words that don't pluralise at all, that's `inflect.uncountable`.
+This only affects casing, not pluralisation. For words with non-standard plurals like criterion/criteria, you'll want `inflect.irregular`. For words that don't pluralise at all, the method to look at is `inflect.uncountable`.
