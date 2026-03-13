@@ -15,7 +15,7 @@ English has plenty of irregular plurals. Criterion becomes criteria, not criteri
 
 ## Instead of...
 
-...accepting Rails' best guess at a plural:
+...accepting Rails's best guess at a plural:
 
 ```ruby
 "criterion".pluralize  #=> "criterions"
