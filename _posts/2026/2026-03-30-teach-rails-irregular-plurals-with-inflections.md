@@ -84,4 +84,4 @@ If it's already correct, adding it to your initialiser is just noise.
 
 If the word never appears as a model or resource name, there's no reason to declare it.
 
-For words that don't change between singular and plural (like "sheep" or "metadata"), that's `inflect.uncountable`. For casing issues with acronyms like API or CSV, that's `inflect.acronym`.
+For words that don't change between singular and plural (like "sheep" or "metadata"), you need `inflect.uncountable`. For casing issues with acronyms like API or CSV, look at `inflect.acronym`.
