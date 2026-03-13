@@ -60,7 +60,7 @@ Without the acronym declaration, you get `Api` instead:
 "api".camelize  #=> "Api"
 ```
 
-Unlike irregular plurals and uncountable words, Rails ships with [no built-in acronyms](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/inflections.rb)—every one you need, you have to declare yourself. Common ones worth adding: `API`, `SMS`, `CSV`, `HTML`, `PDF`. One call per term:
+Unlike irregular plurals and uncountable words, Rails ships with [no built-in acronyms](https://github.com/rails/rails/blob/main/activesupport/lib/active_support/inflections.rb)—every one you need, you have to declare yourself. Common ones worth adding: `API`, `SMS`, `CSV`, `HTML`, `PDF`. You need one call per term:
 
 ```ruby
 ActiveSupport::Inflector.inflections(:en) do |inflect|
