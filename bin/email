@@ -7,7 +7,7 @@
 #   bin/email                       # Most recent Ruby post
 #   bin/email /ruby/post-slug/      # Specific post
 #
-# Requires: bundle exec jekyll build
+# Requires: bundle exec jekyll build (will run automatically if needed)
 
 require "nokogiri"
 require "yaml"
@@ -15,6 +15,7 @@ require "date"
 
 POSTS_DIR = File.expand_path("../_posts", __dir__)
 SITE_DIR = File.expand_path("../_site", __dir__)
+PROJECT_DIR = File.expand_path("..", __dir__)
 SITE_URL = "https://andycroll.com"
 
 def find_latest_ruby_post
@@ -81,10 +82,15 @@ else
   auto_detected = false
 end
 
-# Read built HTML
+# Read built HTML, building first if needed
 html_file = File.join(SITE_DIR, post_path.sub(/^\//, ""), "index.html")
 unless File.exist?(html_file)
-  abort "ERROR: Post not found at #{html_file}\nRun 'bundle exec jekyll build' first."
+  puts "Building site..."
+  system("bundle", "exec", "jekyll", "build", "--future", chdir: PROJECT_DIR) ||
+    abort("ERROR: Jekyll build failed")
+  unless File.exist?(html_file)
+    abort "ERROR: Post not found at #{html_file} even after building."
+  end
 end
 
 if auto_detected
@@ -104,7 +110,7 @@ puts "#{SITE_URL}#{post_path}"
 puts
 
 puts "--- TITLE ---"
-puts doc.at_css("header h1")&.text&.gsub(/[\u00A0\s]+/, " ")&.strip || "[no title]"
+puts doc.at_css("h1")&.text&.gsub(/[\u00A0\s]+/, " ")&.strip || "[no title]"
 puts
 
 puts "--- CONTENT ---"
