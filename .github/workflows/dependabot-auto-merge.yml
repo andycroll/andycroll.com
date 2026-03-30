@@ -1,0 +1,33 @@
+name: Dependabot Auto-Merge
+
+on:
+  schedule:
+    - cron: "0 9 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge Dependabot PRs older than 7 days
+        run: |
+          prs=$(gh pr list --repo "$GITHUB_REPOSITORY" --author "app/dependabot" --json number,createdAt --jq '.[]')
+          echo "$prs" | while read -r line; do
+            number=$(echo "$line" | jq -r '.number')
+            created=$(echo "$line" | jq -r '.createdAt')
+            created_epoch=$(date -d "$created" +%s)
+            now_epoch=$(date +%s)
+            days_old=$(( (now_epoch - created_epoch) / 86400 ))
+            if [ "$days_old" -ge 7 ]; then
+              echo "Merging PR #$number ($days_old days old)"
+              gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --squash --auto
+            else
+              echo "Skipping PR #$number ($days_old days old, need 7)"
+            fi
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
