@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -o errexit
 
+rm -f bin/bundle
 bundle install
 
 if [[ "${IS_PULL_REQUEST}" == "true" ]]; then
