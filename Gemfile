@@ -8,4 +8,5 @@ gem "jekyll-compose", group: [:jekyll_plugins]
 gem "jekyll-redirect-from", group: [:jekyll_plugins]
 gem "jekyll-sitemap", group: [:jekyll_plugins]
 gem "jekyll-tailwind", group: [:jekyll_plugins]
+gem "logger"
 gem "webrick"

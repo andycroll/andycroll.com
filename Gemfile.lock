@@ -69,11 +69,8 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
-    mini_portile2 (2.8.9)
-    nokogiri (1.19.2)
-      mini_portile2 (~> 2.8.2)
-      racc (~> 1.4)
     nokogiri (1.19.2-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.2-x86_64-linux-gnu)
@@ -106,7 +103,6 @@ GEM
 
 PLATFORMS
   arm64-darwin
-  ruby
   x86_64-linux
 
 DEPENDENCIES
@@ -115,11 +111,12 @@ DEPENDENCIES
   jekyll-redirect-from
   jekyll-sitemap
   jekyll-tailwind
+  logger
   nokogiri
   webrick
 
 RUBY VERSION
-  ruby 3.4.4p34
+  ruby 4.0.1
 
 BUNDLED WITH
   4.0.9
