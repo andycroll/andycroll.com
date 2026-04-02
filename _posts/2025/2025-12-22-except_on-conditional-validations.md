@@ -36,6 +36,7 @@ end
 class User < ApplicationRecord
   def self.admin_create(attributes)
     user = new(attributes)
+    user.save
     user.update_columns(attributes)  # No validations, no callbacks
   end
 end
