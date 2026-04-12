@@ -17,7 +17,7 @@ Rails 8.1 fixes this.
 
 ## Instead of...
 
-...mixing ENV and credentials lookups:
+...mixing ENV and credential lookups:
 
 ```ruby
 class StripeChargeService
