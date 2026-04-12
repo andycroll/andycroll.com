@@ -70,7 +70,7 @@ Nested keys like `:stripe, :api_key` map to double-underscored ENV names (`STRIP
 
 This means you can move secrets between ENV and encrypted credentials without changing application code. Deploying to a provider that injects secrets via ENV? It just works. Want to move a key into the encrypted file instead? Remove the ENV variable and add it to your credentials. Your code stays the same.
 
-I've [previously recommended](/ruby/wrap-your-environment-variables-in-a-settings-object/) wrapping ENV in a custom Settings object. This built-in approach is better — the same clean interface with the added fallback to encrypted credentials.
+I've [previously recommended](/ruby/wrap-your-environment-variables-in-a-settings-object/) wrapping ENV in a custom Settings object. This (Rails 8+) built-in approach is better — the same clean interface with the added fallback to encrypted credentials.
 
 ## Why not?
 
