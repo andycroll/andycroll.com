@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/opened-secret-door-inside-library-HK8IoD-5zpg"
 ---
 
-To deal with secrets and credential handling most Rails apps have ended up with a hotch potch of `ENV.fetch` calls and `credentials.dig` lookups throughout the codebase, depending on where each secret lives.
+To deal with secrets and credential handling most Rails apps have ended up with a hotchpotch of `ENV.fetch` calls and `credentials.dig` lookups throughout the codebase, depending on where each secret lives.
 
 Rails 8.1 fixes this.
 
