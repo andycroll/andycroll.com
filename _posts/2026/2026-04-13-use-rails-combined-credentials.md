@@ -74,7 +74,7 @@ I've [previously recommended](/ruby/wrap-your-environment-variables-in-a-setting
 
 ## Why not?
 
-Rails 8.1+ only. If you're on an older version, a [custom Settings wrapper](/ruby/wrap-your-environment-variables-in-a-settings-object/) still works well.
+This is only available in Rails 8.1 and later. If you're on an older version, a [custom Settings wrapper](/ruby/wrap-your-environment-variables-in-a-settings-object/) still works well.
 
 You can also create `development.yml.enc` and `test.yml.enc`, but I think the shared file plus a production override is clearer — and you shouldn't be calling real APIs in your test environment anyhow.
 
