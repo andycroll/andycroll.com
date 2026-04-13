@@ -10,6 +10,9 @@ image:
   credit: "Nick Fewings"
 ---
 
+Since Rails 8.1, there's a built-in solution for this: [`Rails.app.creds`](/ruby/use-rails-combined-credentials/) unifies ENV and encrypted credentials behind a single API. If you're on 8.1+, use that instead.
+{: .bg-amber-50 .border-l-4 .border-amber-400 .p-4 .my-4 }
+
 In our applications, we often use environment variables to configure the application itself or connections to third party services. These values are then accessed through the special [`ENV` hash provided by Ruby](https://ruby-doc.org/core-3.0.1/ENV.html).
 
 
