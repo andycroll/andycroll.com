@@ -85,4 +85,4 @@ There are legitimate uses of `html_safe`. Some gems, like [`pagy`](https://githu
 
 You might also see `html_safe` on strings that are genuinely static with no user input, like `"&nbsp;".html_safe`. That's harmless, but you can include the actual Unicode character instead — `"\u00A0"` gives you a non-breaking space without needing `html_safe` at all. That is ugly as hell though, so it's your call!
 
-The key question is always: could user input end up in this string? If the answer is yes, or _even maybe_, reach for `tag`, `safe_join`, or `sanitize` instead.
+The key question is always: could user input end up in this string? If the answer is yes, or even _maybe_, reach for `tag`, `safe_join`, or `sanitize` instead.
