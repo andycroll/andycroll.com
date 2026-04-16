@@ -81,7 +81,7 @@ The mental model is simple. Need an HTML element? `tag`. Joining fragments? `saf
 
 ## Why not?
 
-There are legitimate uses of `html_safe`. Some gems, like [`pagy`](https://github.com/ddnexus/pagy), return pre-built HTML strings that are safe by construction — calling `html_safe` on their output is fine because the gem controls the content.
+There are legitimate uses of `html_safe`. Some gems, like [`pagy`](https://github.com/ddnexus/pagy), return pre-built HTML strings that are safe by construction. Calling `html_safe` on their output is fine because the gem controls the content.
 
 You might also see `html_safe` on strings that are genuinely static with no user input, like `"&nbsp;".html_safe`. That's harmless, but you can include the actual Unicode character instead — `"\u00A0"` gives you a non-breaking space without needing `html_safe` at all. That is ugly as hell though, so it's your call!
 
