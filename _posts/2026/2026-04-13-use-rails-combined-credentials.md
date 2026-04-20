@@ -1,9 +1,10 @@
 ---
 title: "Use Rails Combined Credentials"
-description: "Rails 8.1 adds Rails.app.creds to unify ENV variables and encrypted credentials behind a single API."
+description: "Rails edge (the upcoming 8.2) adds Rails.app.creds to unify ENV variables and encrypted credentials behind a single API."
 layout: article
 category: ruby
 date: 2026-04-13 06:00
+last_modified_at: 2026-04-20
 image:
   base: "2026/use-rails-combined-credentials"
   alt: "A secret door opened inside a library"
@@ -13,7 +14,7 @@ image:
 
 To deal with secrets and credential handling most Rails apps have ended up with a hotchpotch of `ENV.fetch` calls and `credentials.dig` lookups throughout the codebase, depending on where each secret lives.
 
-Rails 8.1 fixes this.
+Rails edge — and the upcoming 8.2 — fixes this.
 
 ## Instead of...
 
@@ -70,14 +71,18 @@ Nested keys like `:stripe, :api_key` map to double-underscored ENV names (`STRIP
 
 This means you can move secrets between ENV and encrypted credentials without changing application code. Deploying to a provider that injects secrets via ENV? It just works. Want to move a key into the encrypted file instead? Remove the ENV variable and add it to your credentials. Your code stays the same.
 
-I've [previously recommended](/ruby/wrap-your-environment-variables-in-a-settings-object/) wrapping ENV in a custom Settings object. This (Rails 8+) built-in approach is better — the same clean interface with the added fallback to encrypted credentials.
+I've [previously recommended](/ruby/wrap-your-environment-variables-in-a-settings-object/) wrapping ENV in a custom Settings object. This built-in approach is better — the same clean interface with the added fallback to encrypted credentials.
 
 ## Why not?
 
-This is only available in Rails 8.1 and later. If you're on an older version, a [custom Settings wrapper](/ruby/wrap-your-environment-variables-in-a-settings-object/) still works well.
+This isn't in a released version of Rails yet — you need Rails edge (`main`), and it's expected in Rails 8.2. If you're on 8.1 or older, a [custom Settings wrapper](/ruby/wrap-your-environment-variables-in-a-settings-object/) still works well.
 
 ### Other Considerations
 
 You can also create `development.yml.enc` and `test.yml.enc`, but I think the shared file plus a production override is clearer — and you shouldn't be calling real APIs in your test environment anyhow.
 
 Keep separate encryption keys for each environment. You could share one, but a leaked development key shouldn't expose production secrets.
+
+## Mea Culpa
+
+I originally published this post saying `Rails.app.creds` had shipped in Rails 8.1. It hasn't — it's on Rails `main` and is expected in 8.2. I've been running Rails edge on a couple of projects and assumed this had already been released. Apologies for the confusion, and thanks to everyone who pointed it out.
