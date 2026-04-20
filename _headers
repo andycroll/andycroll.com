@@ -2,6 +2,9 @@
   Content-Security-Policy: default-src 'self' cdn.usefathom.com; script-src 'self' *.andycroll.com instant.page cdn.usefathom.com; img-src 'self' images.andycroll.com cdn.usefathom.com data: *.andycroll.com
   Link: <https://images.andycroll.com/>; rel=preconnect; crossorigin
   Link: <https://cdn.usefathom.com/>; rel=preconnect; crossorigin
+  Link: </llms.txt>; rel="describedby"; type="text/plain"
+  Link: </index.xml>; rel="alternate"; type="application/atom+xml"; title="Atom feed"
+  Link: </sitemap.xml>; rel="sitemap"; type="application/xml"
   Referrer-Policy: no-referrer-when-downgrade
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
