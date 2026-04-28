@@ -3,7 +3,7 @@ title: "Avoid html_safe with Tag Helpers, safe_join, and sanitize"
 description: "Rails has better tools than html_safe for building HTML safely in your helpers and views."
 layout: article
 category: ruby
-date: 2026-04-20 09:00
+date: 2026-05-04 09:00
 image:
   base: "2026/avoid-html-safe"
   alt: "Yellow and black striped textile"
