@@ -102,7 +102,7 @@ If you've only got a single conditional class, plain ERB is readable enough:
 <div class="p-4 <%= 'font-bold' if @important %>">
 ```
 
-`class_names` does avoid the awkward whitespace issue when the condition is false:
+Though `class_names` does avoid the awkward whitespace issue when the condition is false:
 
 ```erb
 <%= tag.div class: class_names("p-4", "font-bold": @important) do %>
