@@ -23,8 +23,6 @@ When you're building views in Rails, you often need to apply CSS classes conditi
 </div>
 ```
 
-You end up with extra whitespace in the rendered HTML, ERB tags jammed inside an HTML tag (which I'm not a fan of visually), and it's hard to scan which classes are always present and which are conditional.
-
 ## Use...
 
 ...the `class_names` helper:
@@ -89,6 +87,8 @@ end
 ```
 
 ## Why?
+
+The unsophisticated approach ends up with extra whitespace in the rendered HTML with ERB tags inside an HTML attribute (which I'm not a fan of visually), plus it's hard to scan which classes are always present and which are conditional.
 
 `class_names` returns an HTML-safe string, so you don't need to worry about escaping. It also splits whitespace-separated tokens and deduplicates them, so `class_names("p-4", "p-4 rounded")` collapses to `"p-4 rounded"` rather than repeating `p-4`.
 
