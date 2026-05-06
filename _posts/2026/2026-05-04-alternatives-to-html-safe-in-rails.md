@@ -11,7 +11,7 @@ image:
   source: "https://unsplash.com/photos/yellow-and-black-striped-textile-KPDDc1DeP4Y"
 ---
 
-When you need to build HTML outside of a template, it's tempting to concatenate strings and call `html_safe` on the result. This bypasses Rails's built-in [XSS protection](/ruby/2023/07/17/beware-of-raw-erb/) entirely: any user input in that string goes straight to the browser unescaped.
+When you need to build HTML outside of a template, it's tempting to concatenate strings and call `html_safe` on the result. This bypasses Rails's built-in [XSS protection](/ruby/beware-of-raw-erb/) entirely: any user input in that string goes straight to the browser unescaped.
 
 The good news is you almost never need `html_safe`. Rails provides three underappreciated tools that handle escaping for you.
 
