@@ -1,12 +1,3 @@
 <script src="https://cdn.usefathom.com/script.js" data-site="HUFOLVIQ" defer></script>
 <script src="https://instant.page/5.1.0" type="module" integrity="sha384-by67kQnR+pyfy8yWP4kPO12fHKRLHZPfEsiSXR8u2IKcTdxD805MGUXBzVPnkLHw" defer></script>
-<script>
-document.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
-  if (img.complete) {
-    img.classList.add('loaded');
-  } else {
-    img.addEventListener('load', function() { img.classList.add('loaded'); }, { once: true });
-    img.addEventListener('error', function() { img.classList.add('loaded'); }, { once: true });
-  }
-});
-</script>
+<script src="/assets/js/lazy-images.js" defer></script>
