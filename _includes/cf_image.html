@@ -1,0 +1,30 @@
+{%- comment -%}
+Render an image src that, in production, is routed through Cloudflare Image
+Transformations (/cdn-cgi/image/...). In development the original path is used
+so jekyll serve can resolve it locally.
+
+Params:
+  src     (required) — path like "/images/2025/foo.jpg" or "images/2025/foo.jpg"
+  width   (optional) — pixels
+  height  (optional) — pixels
+  fit     (optional) — Cloudflare fit mode, defaults to "cover"
+  blur    (optional) — Cloudflare blur 1–250
+  quality (optional) — 1–100
+{%- endcomment -%}
+{%- assign src = include.src -%}
+{%- unless src contains "://" -%}
+{%- assign first_char = src | slice: 0 -%}
+{%- unless first_char == "/" -%}{%- assign src = "/" | append: src -%}{%- endunless -%}
+{%- endunless -%}
+{%- if jekyll.environment == "production" -%}
+{%- assign opts = "format=auto" -%}
+{%- if include.width -%}{%- assign opts = opts | append: ",width=" | append: include.width -%}{%- endif -%}
+{%- if include.height -%}{%- assign opts = opts | append: ",height=" | append: include.height -%}{%- endif -%}
+{%- assign fit = include.fit | default: "cover" -%}
+{%- if include.width or include.height -%}{%- assign opts = opts | append: ",fit=" | append: fit -%}{%- endif -%}
+{%- if include.blur -%}{%- assign opts = opts | append: ",blur=" | append: include.blur -%}{%- endif -%}
+{%- if include.quality -%}{%- assign opts = opts | append: ",quality=" | append: include.quality -%}{%- endif -%}
+/cdn-cgi/image/{{ opts }}{{ src }}
+{%- else -%}
+{{ src }}
+{%- endif -%}

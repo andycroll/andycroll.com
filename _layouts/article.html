@@ -1,23 +1,18 @@
 ---
 layout: default
 ---
-{% if jekyll.environment == 'production' %}
-  {% capture image_url_root %}{{site.image_url }}/images/{% endcapture %}
-{% else %}
-  {% assign image_url_root = '/images/' %}
-{% endif %}
-
 {% if page.image %}
+  {%- capture hero_src -%}/images/{{ page.image.base }}.jpg{%- endcapture -%}
   <div class="relative w-screen max-w-7xl left-1/2 -translate-x-1/2 xl:rounded-lg xl:overflow-hidden">
     <picture>
       <img
         sizes="100vw"
         alt="{{ page.image.alt }}"
-        src="{{ image_url_root }}{{ page.image.base }}.jpg?blur=80&quality=40"
+        src="{% include cf_image.html src=hero_src blur=100 quality=40 %}"
         srcset="
-          {{ image_url_root }}{{ page.image.base }}.jpg?width=1024.jpg 1024w,
-          {{ image_url_root }}{{ page.image.base }}.jpg?width=1536 1536w,
-          {{ image_url_root }}{{ page.image.base }}.jpg?width=2048 2048w
+          {% include cf_image.html src=hero_src width=1024 %} 1024w,
+          {% include cf_image.html src=hero_src width=1536 %} 1536w,
+          {% include cf_image.html src=hero_src width=2048 %} 2048w
         "
         class="aspect-4/1 w-full object-cover"
         data-no-lazy
