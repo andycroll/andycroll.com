@@ -2,7 +2,7 @@
   <div class="bg-white dark:bg-slate-800 rounded-xl shadow-2xl p-6 relative">
     <button
       type="button"
-      onclick="document.getElementById('email-popover').close()"
+      data-email-popover-close
       class="absolute top-3 right-3 text-stone-400 dark:text-stone-500 hover:text-stone-600 dark:hover:text-stone-300 cursor-pointer"
       aria-label="Close"
     >
@@ -51,9 +51,3 @@
     </form>
   </div>
 </dialog>
-
-<script>
-  document.getElementById('email-popover').addEventListener('click', function(e) {
-    if (e.target === this) this.close();
-  });
-</script>
