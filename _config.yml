@@ -10,7 +10,7 @@ description: "CTO at CoverageBook, Rubyist, Conference Organizer, Speaker, Boots
 base_url: ""
 
 include: ["_headers"]
-exclude: ["scripts", "bin"]
+exclude: ["scripts", "bin", "worker.js"]
 
 email: andy@goodscary.com
 
