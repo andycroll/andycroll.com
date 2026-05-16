@@ -1,0 +1,5 @@
+{
+  "setup": ["bundle install"],
+  "teardown": [],
+  "run": ["bundle exec jekyll serve --future --livereload"]
+}
