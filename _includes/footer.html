@@ -1,13 +1,7 @@
-{% if jekyll.environment == 'production' %}
-  {% capture image_url_root %}{{ site.image_url }}/images/{% endcapture %}
-{% else %}
-  {% assign image_url_root = '/images/' %}
-{% endif %}
-
 <footer role="contentinfo" class="block mb-10">
   <div class="p-3 max-w-3xl mx-auto mb-6 text-center">
     <img
-      src="{{ image_url_root }}andycroll.jpg"
+      src="{% include cf_image.html src='/images/andycroll.jpg' width=192 %}"
       alt="Andy Croll headshot"
       class="aspect-square rounded-full mx-auto block shadow-lg w-20 md:w-24 mb-4"
       loading="lazy"

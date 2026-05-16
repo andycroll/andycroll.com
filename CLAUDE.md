@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal website and blog for Andy Croll (andycroll.com), built with Jekyll and deployed to Netlify. The site features Ruby/Rails technical articles under the "One Ruby Thing" brand, plus personal/conference content.
+Personal website and blog for Andy Croll (andycroll.com), built with Jekyll and deployed to Cloudflare Workers (static assets). The site features Ruby/Rails technical articles under the "One Ruby Thing" brand, plus personal/conference content.
 
 ## Commands
 
@@ -42,7 +42,7 @@ bundle exec jekyll post "Post Title"
 - `_layouts/` - `default.html` (base) and `article.html` (blog posts)
 - `_includes/` - Reusable components (email signup, project promos, footer)
 
-**Images**: Production images served from `https://images.andycroll.com`, local `/images/` in development. Image URLs use query parameters for responsive sizing (e.g., `?width=1024`).
+**Images**: All raster images live in `/images/` in the repo and ship in `_site/`. In production they are routed through Cloudflare Image Transformations via the `_includes/cf_image.html` partial, which prepends `/cdn-cgi/image/format=auto,width=…/` to the path. In development the raw `/images/...` path is used so `jekyll serve` resolves files locally. SVGs are emitted as-is; only raster sources should go through `cf_image`.
 
 **Categories**: Posts use `category: ruby` for Ruby/Rails content. The homepage displays recent Ruby posts prominently.
 
@@ -65,4 +65,6 @@ image:
 
 ## Deployment
 
-Hosted on Render. Production builds automatically on push to main. Auto deploys every six hours using GitHub Actions to trigger a deploy hook.
+Deployed to a Cloudflare Worker named `andycroll-com` via `wrangler.jsonc` (static assets pointing at `_site`). The `.github/workflows/deploy.yml` workflow is `workflow_dispatch`-only — it runs `bundle exec jekyll build` under `LANG=C.UTF-8` and then `cloudflare/wrangler-action@v3 deploy`. Requires `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repo secrets.
+
+`render.yaml`, `bin/render-build.sh`, and `netlify.toml` remain in place until DNS cuts over to Cloudflare; remove them in a follow-up.

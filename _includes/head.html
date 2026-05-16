@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   {% assign imagebase = page.image.base %}
+  {% if imagebase %}{% capture imagebase_src %}/images/{{ imagebase }}.jpg{% endcapture %}{% endif %}
   {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 
   <title>
@@ -26,7 +27,7 @@
 
   <meta property="og:type" content="article">
   {% if imagebase %}
-    <meta property="og:image" content="{{ site.image_url }}/images/{{ imagebase }}.jpg?width=1024">
+    <meta property="og:image" content="{{ site.url }}{% include cf_image.html src=imagebase_src width=1200 %}">
   {% endif %}
   <link rel="og:url" href="{{ canonical }}">
 
@@ -37,10 +38,10 @@
 
   {% if imagebase %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.image_url }}/images/{{ imagebase }}.jpg?width=1024">
+    <meta name="twitter:image" content="{{ site.url }}{% include cf_image.html src=imagebase_src width=1200 %}">
   {% else %}
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ root_url }}/images/andycroll.jpg">
+    <meta name="twitter:image" content="{{ site.url }}{% include cf_image.html src='/images/andycroll.jpg' width=512 %}">
   {% endif %}
 
   <link rel="canonical" href="{{ canonical }}">
@@ -66,7 +67,7 @@
     "@id": "{{ site.url }}/#person",
     "name": "Andy Croll",
     "url": "{{ site.url }}",
-    "image": "{{ site.image_url }}/images/andycroll.jpg",
+    "image": "{{ site.url }}{% include cf_image.html src='/images/andycroll.jpg' width=512 %}",
     "jobTitle": "CTO",
     "worksFor": {
       "@type": "Organization",
@@ -114,7 +115,7 @@
     "mainEntityOfPage": { "@id": "{{ canonical }}" },
     "isPartOf": { "@id": "{{ site.url }}/#website" }
     {% if page.image.base %},
-    "image": "{{ site.image_url }}/images/{{ page.image.base }}.jpg?width=1200"
+    "image": "{{ site.url }}{% include cf_image.html src=imagebase_src width=1200 %}"
     {% endif %}
     {% if page.category %},
     "articleSection": "{{ page.category | capitalize }}"
