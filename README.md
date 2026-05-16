@@ -18,7 +18,7 @@ The site deploys to a Cloudflare Worker named **`andycroll-com`** via `wrangler.
 
 The job runs `bundle exec jekyll build` under `LANG=C.UTF-8` (Cloudflare's build container is otherwise ASCII-8BIT, which crashes Jekyll's URL unescape on non-ASCII filenames), then `cloudflare/wrangler-action@v3 deploy` with wrangler v4 pinned (static-assets-only Workers require v4).
 
-Smoke-test on the Worker's `*.workers.dev` URL before pointing DNS at it. After DNS cutover, add the apex + `www` custom domain to the Worker, then delete `render.yaml`, `bin/render-build.sh`, and `netlify.toml` in a follow-up PR.
+Smoke-test on the Worker's `*.workers.dev` URL before pointing DNS at it. Note: `/cdn-cgi/image/…` URLs return 404 on `*.workers.dev` because Image Transformations only runs on customer zones — that part can only be verified after DNS cutover (see below).
 
 ## Where things live
 
@@ -47,3 +47,17 @@ Repo → Settings → Secrets and variables → Actions → add:
 
 - `CLOUDFLARE_API_TOKEN` — the token from the previous step
 - `CLOUDFLARE_ACCOUNT_ID` — visible in the Cloudflare dashboard sidebar
+
+## DNS cutover
+
+Zero-downtime sequence — nothing goes live until step 4. Roll back at any point by reverting nameservers at the registrar.
+
+1. **Add `andycroll.com` to Cloudflare** ([guide](https://developers.cloudflare.com/fundamentals/manage-domains/add-site/)). Cloudflare scans your current DNS and imports what it finds. The scan isn't guaranteed to be complete — manually verify MX/SPF/DKIM/DMARC for email and any other subdomains (the existing CSP allows `*.andycroll.com`, so there may be records worth keeping). Leave the imported A/CNAME records for the apex and `www` pointing at Render for now.
+2. **Attach the Worker to the apex.** Workers & Pages → `andycroll-com` → **Settings → Domains & Routes → Add → Custom Domain** → enter `andycroll.com`. Cloudflare creates the proxied DNS record and provisions a cert. The record sits in Cloudflare's DNS but doesn't serve traffic until nameservers cut over.
+3. **Redirect `www` → apex** with a Single Redirect rule (preferred over adding `www` as a second Custom Domain — single canonical, no duplicate-content). Dashboard → `andycroll.com` zone → **Rules → Redirect Rules → Create rule**. Match `Hostname equals www.andycroll.com`; target `concat("https://andycroll.com", http.request.uri.path)` with status 301. [Single Redirects require a proxied DNS record on the source hostname](https://developers.cloudflare.com/rules/url-forwarding/single-redirects/create-dashboard/); the dashboard prompts you to create one — accept the prompt.
+4. **Cut over at the registrar.** Cloudflare's onboarding page shows two assigned nameservers. Update your domain registrar to point at those. Propagation is usually under an hour but can take longer.
+5. **Verify.** Once `dig +short andycroll.com` shows Cloudflare IPs:
+   - `https://andycroll.com/ruby/use-class-names-…/` loads and the `/cdn-cgi/image/…` URLs return AVIF/WebP (not 404).
+   - `https://www.andycroll.com/` 301s to the apex.
+   - Email still works (send a test).
+6. **Clean up.** Delete the `images.andycroll.com` DNS record (no longer needed). Decommission the Render service. Open a follow-up PR removing `render.yaml`, `bin/render-build.sh`, and `netlify.toml`.
