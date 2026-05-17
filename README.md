@@ -60,4 +60,4 @@ Zero-downtime sequence — nothing goes live until step 4. Roll back at any poin
    - `https://andycroll.com/ruby/use-class-names-…/` loads and the `/cdn-cgi/image/…` URLs return AVIF/WebP (not 404).
    - `https://www.andycroll.com/` 301s to the apex.
    - Email still works (send a test).
-6. **Clean up.** Delete the `images.andycroll.com` DNS record (no longer needed). Decommission the Render service. Open a follow-up PR removing `render.yaml`, `bin/render-build.sh`, and `netlify.toml`.
+6. **Clean up.** Delete the `images.andycroll.com` DNS record (no longer needed). Decommission the Render service.
