@@ -2,6 +2,13 @@ name: Deploy
 
 on:
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Jekyll Tests"]
+    types: [completed]
+    branches: [main]
+  schedule:
+    # 07:00 UTC daily = 08:00 GMT / 07:00 BST.
+    - cron: '0 7 * * *'
 
 concurrency:
   group: deploy-production
@@ -9,10 +16,15 @@ concurrency:
 
 jobs:
   deploy:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
       - uses: ruby/setup-ruby@v1
         with:
