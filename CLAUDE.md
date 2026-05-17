@@ -68,5 +68,3 @@ image:
 Deployed to a Cloudflare Worker named `andycroll-com` via `wrangler.jsonc` (static assets pointing at `_site`). The `.github/workflows/deploy.yml` workflow is `workflow_dispatch`-only — it runs `bundle exec jekyll build` under `LANG=C.UTF-8` and then `cloudflare/wrangler-action@v3 deploy`.
 
 Prerequisites (one-time): `andycroll.com` zone on Cloudflare with Image Transformations enabled (paid), a Worker named `andycroll-com`, and repo secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`. Full setup steps in `README.md`.
-
-`render.yaml`, `bin/render-build.sh`, and `netlify.toml` remain in place until DNS cuts over to Cloudflare; remove them in a follow-up.
