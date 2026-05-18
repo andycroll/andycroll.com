@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Run `jekyll serve` with a port derived from the current worktree path,
+# so multiple worktrees can run dev servers concurrently without collision.
+# Any extra arguments are passed through to `jekyll serve`.
+
+set -euo pipefail
+
+cd "$(dirname "$0")/.."
+
+hash=$(printf '%s' "$PWD" | cksum | awk '{print $1}')
+port=$((4000 + hash % 100))
+livereload_port=$((35729 + hash % 100))
+
+echo "jekyll serve → http://127.0.0.1:${port} (worktree: ${PWD})"
+
+exec bundle exec jekyll serve \
+  --port "$port" \
+  --livereload-port "$livereload_port" \
+  "$@"
