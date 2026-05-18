@@ -1,5 +1,5 @@
 {
   "setup": ["bundle install"],
   "teardown": [],
-  "run": ["bundle exec jekyll serve --future --livereload"]
+  "run": ["bin/serve --future --livereload"]
 }
