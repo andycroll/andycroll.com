@@ -20,6 +20,22 @@ export default {
       url.pathname.endsWith(".html") ||
       !url.pathname.split("/").pop().includes(".");
 
+    // Direct .md URL — serve as plain text so browsers display rather than download
+    if (url.pathname.endsWith(".md")) {
+      const response = await env.ASSETS.fetch(request);
+      if (response.ok) {
+        const headers = new Headers(response.headers);
+        headers.set("content-type", "text/plain; charset=utf-8");
+        headers.delete("content-disposition");
+        return new Response(response.body, {
+          status: response.status,
+          statusText: response.statusText,
+          headers,
+        });
+      }
+      return response;
+    }
+
     if (wantsMarkdown && pathLooksLikePage) {
       const mdPathname = url.pathname.replace(/\/?$/, "/") + "index.md";
       const mdUrl = new URL(mdPathname, url);
