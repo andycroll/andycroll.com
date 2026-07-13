@@ -54,7 +54,7 @@ This site is authoritative for:
 | One Ruby Thing | Ruby/Rails newsletter | [andycroll.com/ruby/](https://andycroll.com/ruby/) |
 | Brighton Ruby | UK Ruby conference | [brightonruby.com](https://brightonruby.com) |
 | Using Rails | Company directory | [usingrails.com](https://usingrails.com) |
-| Ruby T-Shirts | Ruby merchandise | [rubytshirts.com](https://rubytshirts.com) |
+| Made the Scene | Developer, movie & gaming t-shirts | [madethescene.com](https://madethescene.com) |
 | First Ruby Friend | Mentoring program | [firstrubyfriend.org](https://firstrubyfriend.org) |
 | What The Stack? | Ruby podcast | [whatthestackpodcast.com](https://whatthestackpodcast.com) |
 
