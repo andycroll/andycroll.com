@@ -13,8 +13,8 @@ Suggested cadence: weekly.
 |----------|--------|-----|
 | lograge | shipped | `railstemplates.org/lograge/template` |
 | appsignal | PR [#58](https://github.com/andycroll/railstemplates.org/pull/58) | `railstemplates.org/appsignal/template` |
-| litestream | PR open (`feat/litestream-template`) | `railstemplates.org/litestream/template` |
-| structured-logging | PR open (`feat/structured-logging-template`) | `railstemplates.org/structured-logging/template` |
+| litestream | PR [#60](https://github.com/andycroll/railstemplates.org/pull/60) | `railstemplates.org/litestream/template` |
+| structured-logging | PR [#59](https://github.com/andycroll/railstemplates.org/pull/59) | `railstemplates.org/structured-logging/template` |
 
 ## Posts (suggested order)
 
