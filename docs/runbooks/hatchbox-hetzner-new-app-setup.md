@@ -58,8 +58,12 @@ RAILS_MASTER_KEY=...              # decrypts config/credentials/production.yml.e
 RAILS_ENV=production
 SOLID_QUEUE_IN_PUMA=1             # run the Solid Queue worker inside puma (else a separate process)
 LITESTREAM_IN_PUMA=1             # start Litestream from the puma plugin (see step 5)
-# ...plus the Litestream bucket + credentials (see config/litestream.yml for the exact names)
-# ...plus every app-specific var (API keys, feature flags, etc.)
+# ...Litestream bucket + keys ONLY if litestream.yml reads them straight from ENV. If instead an
+#    initializer maps Rails.application.credentials.litestream.* into config.litestream.* (the gem
+#    then fills the $LITESTREAM_* placeholders at runtime), they're already covered by
+#    RAILS_MASTER_KEY — no separate Litestream env vars needed. Check which pattern the app uses.
+# ...plus every app-specific var (API keys, feature flags, etc.) — unless those also live in
+#    encrypted credentials, in which case RAILS_MASTER_KEY covers them too.
 ```
 
 ---
@@ -108,7 +112,12 @@ Confirm the replica bucket/endpoint/keys resolve so the watchdog doesn't crash-l
 
 ```sh
 ssh "$SRV"; cd /home/deploy/$APP/current
-RAILS_ENV=production bin/rails litestream:env    # bucket + endpoint + key id all populated
+# A login/non-interactive shell does NOT load the systemd EnvironmentFile, so source the app env
+# first — otherwise RAILS_MASTER_KEY is unset and (credentials-sourced) Litestream vars read blank:
+set -a; . /home/deploy/$APP/.hatchbox.env; set +a
+# `litestream:env` resolves the vars from whichever source the app uses (ENV or credentials) — but
+# it prints the SECRET access key, so redact before pasting anywhere shared:
+RAILS_ENV=production bin/rails litestream:env 2>/dev/null | sed -E 's/((KEY|SECRET)[A-Z_]*=).*/\1<redacted>/'
 ```
 
 > **Single-writer rule:** exactly one process may replicate to a given bucket path. One
@@ -208,13 +217,16 @@ ssh "$SRV"
 ```
 ```sh
 cd /home/deploy/$APP/current
+# source the app env — a login shell does NOT load the systemd EnvironmentFile, so without this
+# RAILS_MASTER_KEY is unset and every credentials-backed check below silently reads blank:
+set -a; . /home/deploy/$APP/.hatchbox.env; set +a
 
 # services up?
 systemctl --user list-units "$APP-*"
 systemctl --user is-active "$APP-server" "$APP-solid_queue"
 
-# credentials decrypt (RAILS_MASTER_KEY correct):
-RAILS_ENV=production bin/rails runner 'puts "boot OK"'
+# credentials actually decrypt (RAILS_MASTER_KEY correct) — not just "Rails boots":
+RAILS_ENV=production bin/rails runner 'puts "boot OK; credentials_decrypt=#{Rails.application.credentials.config.present?}"'
 
 # app serves locally (find its port from the unit or ps):
 PORT=$(ps -eo cmd | grep -oP "$APP.*tcp://127.0.0.1:\K[0-9]+" | head -1); echo "port=$PORT"
@@ -247,7 +259,9 @@ curl -sI https://example.com/ | head -1          # 200 via Cloudflare → Hetzne
 3. **Assuming unit names/ports** → they differ per app and per box. `systemctl --user list-units`
    + the SSH login banner are ground truth.
 4. **Cert after DNS flip** → 525. Add domain + issue cert (grey-cloud for HTTP-01) *before*
-   pointing the Cloudflare origin at the server.
+   pointing the Cloudflare origin at the server. The cert is issued by the box's ACME responder,
+   **independent of the app's Puma** — so you can get it even with the web unit stopped (handy when
+   migrating an app whose Puma you're deliberately keeping down until cutover).
 5. **Watchdog crash-loop** → Litestream-in-Puma with an unreachable bucket takes Puma down. Make
    the bucket resolve first, or unset the toggle while you fix it.
 6. **AppSignal silently no-ops** → a missing/unreadable push key means no data and no error.
