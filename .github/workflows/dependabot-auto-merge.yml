@@ -24,7 +24,7 @@ jobs:
             days_old=$(( (now_epoch - created_epoch) / 86400 ))
             if [ "$days_old" -ge 7 ]; then
               echo "Merging PR #$number ($days_old days old)"
-              gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --squash --auto
+              gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --merge --auto || echo "could not merge #$number"
             else
               echo "Skipping PR #$number ($days_old days old, need 7)"
             fi
