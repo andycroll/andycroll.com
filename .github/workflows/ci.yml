@@ -23,4 +23,4 @@ jobs:
     - name: Check links
       uses: untitaker/hyperlink@0.3.2
       with:
-        args: _site/ --sources _posts/ --check-anchors --github-actions
+        args: _site/ --sources _posts/ --check-anchors
