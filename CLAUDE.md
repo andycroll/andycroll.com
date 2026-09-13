@@ -65,6 +65,6 @@ image:
 
 ## Deployment
 
-Deployed to a Cloudflare Worker named `andycroll-com` via `wrangler.jsonc` (static assets pointing at `_site`). The `.github/workflows/deploy.yml` workflow is `workflow_dispatch`-only — it runs `bundle exec jekyll build` under `LANG=C.UTF-8` and then `cloudflare/wrangler-action@v3 deploy`.
+Deployed to a Cloudflare Worker named `andycroll-com` via `wrangler.jsonc` (static assets pointing at `_site`). The `.github/workflows/deploy.yml` workflow runs after `Jekyll Tests` succeeds on `main`, daily at 07:00 UTC, and on `workflow_dispatch` — it runs `bundle exec jekyll build` under `LANG=C.UTF-8` and then `cloudflare/wrangler-action@v4 deploy`.
 
 Prerequisites (one-time): `andycroll.com` zone on Cloudflare with Image Transformations enabled (paid), a Worker named `andycroll-com`, and repo secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`. Full setup steps in `README.md`.

@@ -14,9 +14,9 @@ In development, images render from raw `/images/…` paths so `jekyll serve` res
 
 ## Deployment
 
-The site deploys to a Cloudflare Worker named **`andycroll-com`** via `wrangler.jsonc`. The `.github/workflows/deploy.yml` workflow is `workflow_dispatch`-only — trigger it from **Actions → Deploy → Run workflow → main**.
+The site deploys to a Cloudflare Worker named **`andycroll-com`** via `wrangler.jsonc`. The `.github/workflows/deploy.yml` workflow runs automatically after the `Jekyll Tests` workflow succeeds on `main`, plus daily at 07:00 UTC. To deploy by hand, trigger it from **Actions → Deploy → Run workflow → main**.
 
-The job runs `bundle exec jekyll build` under `LANG=C.UTF-8` (Cloudflare's build container is otherwise ASCII-8BIT, which crashes Jekyll's URL unescape on non-ASCII filenames), then `cloudflare/wrangler-action@v3 deploy` with wrangler v4 pinned (static-assets-only Workers require v4).
+The job runs `bundle exec jekyll build` under `LANG=C.UTF-8` (Cloudflare's build container is otherwise ASCII-8BIT, which crashes Jekyll's URL unescape on non-ASCII filenames), then `cloudflare/wrangler-action@v4 deploy` with wrangler v4 pinned (static-assets-only Workers require v4).
 
 Smoke-test on the Worker's `*.workers.dev` URL before pointing DNS at it. Note: `/cdn-cgi/image/…` URLs return 404 on `*.workers.dev` because Image Transformations only runs on customer zones — that part can only be verified after DNS cutover (see below).
 
