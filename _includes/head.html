@@ -85,7 +85,6 @@
   }
   </script>
 
-  {% if page.url == '/' %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,7 +97,6 @@
     "publisher": { "@id": "{{ site.url }}/#person" }
   }
   </script>
-  {% endif %}
 
   {% if page.layout == 'article' %}
   <script type="application/ld+json">
