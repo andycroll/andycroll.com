@@ -27,4 +27,7 @@ tailwind:
   input: assets/css/app.css
   minify: true
 
+kramdown:
+  footnote_backlink: "&#8617;&#xFE0E;"
+
 permalink: /:categories/:title/
