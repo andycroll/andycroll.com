@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "What I'm Doing Now"
-date: "2026-01-28"
+date: "2026-10-11"
 redirect_from:
   - /2010/10/01/negative/
   - /startups/singapore/singapore-startup-negativity/
@@ -22,11 +22,13 @@ image:
 description: "The current work of Andy Croll"
 ---
 
-I'm CTO at [CoverageBook](https://coveragebook.com), building new features and exploring how AI can improve our product.
+I'm CTO at [CoverageBook](https://coveragebook.com), exploring the intersection of Rails and AI productivity and taking the company to new heights.
+
+[Brighton Ruby](https://brightonruby.com) is on hiatus for 2027.
+
+Exploring small tools: [Bus Timetables](https://btnbuses.andycroll.com), a [Printable Week Planner](https://weekly.andycroll.com) and [Dot Grid](https://dotgrid.andycroll.com) paper.
 
 Running [One Ruby Thing](/ruby/), a fortnightly email newsletter about Ruby and Rails techniques.
-
-Planning [Brighton Ruby 2026](https://brightonruby.com).
 
 Excited about Rails 8, Solid Queue, Solid Cache, Hotwire improvements, and taming the robot army now at my fingertips.
 
