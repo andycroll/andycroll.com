@@ -1,0 +1,103 @@
+name: Update Ruby
+
+# Source: railstemplates.org/update-ruby — weekly PR bumping Ruby to the newest
+# version ruby/setup-ruby can install (read from the @v1 manifest pinned below,
+# so it never proposes a version CI can't install yet).
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-ruby
+  cancel-in-progress: true
+
+jobs:
+  update-ruby:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Determine latest installable Ruby
+        id: detect
+        run: |
+          set -euo pipefail
+          current=$(tr -d '[:space:]' < .ruby-version)
+          latest=$(curl -fsSL "https://raw.githubusercontent.com/ruby/setup-ruby/v1/ruby-builder-versions.json" \
+            | jq -r '.ruby[]' \
+            | grep -E '^[0-9]+\.[0-9]+\.[0-9]+$' \
+            | sort -V | tail -1)
+
+          echo "Current: ${current} | Latest installable: ${latest}"
+          {
+            echo "current=${current}"
+            echo "latest=${latest}"
+          } >> "$GITHUB_OUTPUT"
+
+          newest=$(printf '%s\n%s\n' "${current}" "${latest}" | sort -V | tail -1)
+          if [ "${newest}" = "${latest}" ] && [ "${latest}" != "${current}" ]; then
+            echo "update=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::Ruby ${latest} available (current ${current}) — preparing PR."
+          else
+            echo "update=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Already on the latest installable Ruby (${current})."
+          fi
+
+      - name: Bump .ruby-version
+        if: steps.detect.outputs.update == 'true'
+        env:
+          LATEST: ${{ steps.detect.outputs.latest }}
+        run: printf '%s\n' "${LATEST}" > .ruby-version
+
+      - name: Set up the new Ruby
+        if: steps.detect.outputs.update == 'true'
+        uses: ruby/setup-ruby@v1
+
+      - name: Install gems
+        if: steps.detect.outputs.update == 'true'
+        run: |
+          set -euo pipefail
+          bundle config set --local frozen false
+          bundle install --jobs 4
+
+      - name: Build the site on the new Ruby
+        if: steps.detect.outputs.update == 'true'
+        run: bundle exec jekyll build --future
+
+      - name: Open pull request
+        id: pr
+        if: steps.detect.outputs.update == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/update-ruby
+          delete-branch: true
+          add-paths: |
+            .ruby-version
+            Gemfile.lock
+          commit-message: "Bump Ruby to ${{ steps.detect.outputs.latest }}"
+          title: "Bump Ruby ${{ steps.detect.outputs.current }} → ${{ steps.detect.outputs.latest }}"
+          labels: |
+            dependencies
+            ruby
+          body: |
+            Bumps Ruby **${{ steps.detect.outputs.current }} → ${{ steps.detect.outputs.latest }}**, the latest stable version `ruby/setup-ruby@v1` can install.
+
+            Updates `.ruby-version` and the `RUBY VERSION` in `Gemfile.lock`.
+
+            Validated in this workflow on ${{ steps.detect.outputs.latest }}: `bundle install` + `bundle exec jekyll build --future`.
+
+      # Pushes made with GITHUB_TOKEN don't trigger pull_request workflows,
+      # but workflow_dispatch does, and its checks attach to the PR's commit.
+      - name: Run CI on the pull request
+        if: steps.pr.outputs.pull-request-operation == 'created' || steps.pr.outputs.pull-request-operation == 'updated'
+        run: gh workflow run ci.yml --ref automation/update-ruby
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
