@@ -25,7 +25,7 @@ JEKYLL_ENV=development bundle exec jekyll build --future
 bundle exec jekyll post "Post Title"
 ```
 
-**Ruby version**: 4.0.1 (see `.ruby-version`)
+**Ruby version**: see `.ruby-version`
 
 ## Architecture
 
