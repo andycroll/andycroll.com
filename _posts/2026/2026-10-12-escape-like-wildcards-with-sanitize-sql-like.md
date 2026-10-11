@@ -3,7 +3,7 @@ title: "Escape LIKE Wildcards with sanitize_sql_like"
 description: "Escape % and _ in search terms so users get the results they looked for."
 layout: article
 category: ruby
-date: 2026-10-12 09:00
+date: 2026-10-12 02:00
 image:
   base: "2026/escape-like-wildcards-with-sanitize-sql-like"
   alt: "A hand in a blue rubber glove holding a spray bottle"
