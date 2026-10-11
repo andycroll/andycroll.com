@@ -1,33 +1,31 @@
-name: Dependabot Auto-Merge
-
-on:
-  schedule:
-    - cron: "0 9 * * 1-5"
-  workflow_dispatch:
-
+name: Dependabot auto-merge
+on: pull_request_target
 permissions:
   contents: write
   pull-requests: write
-
 jobs:
-  auto-merge:
+  dependabot:
     runs-on: ubuntu-latest
+    if: github.event.pull_request.user.login == 'dependabot[bot]'
     steps:
-      - name: Merge Dependabot PRs older than 7 days
-        run: |
-          prs=$(gh pr list --repo "$GITHUB_REPOSITORY" --author "app/dependabot" --json number,createdAt --jq '.[]')
-          echo "$prs" | while read -r line; do
-            number=$(echo "$line" | jq -r '.number')
-            created=$(echo "$line" | jq -r '.createdAt')
-            created_epoch=$(date -d "$created" +%s)
-            now_epoch=$(date +%s)
-            days_old=$(( (now_epoch - created_epoch) / 86400 ))
-            if [ "$days_old" -ge 7 ]; then
-              echo "Merging PR #$number ($days_old days old)"
-              gh pr merge "$number" --repo "$GITHUB_REPOSITORY" --merge --auto || echo "could not merge #$number"
-            else
-              echo "Skipping PR #$number ($days_old days old, need 7)"
-            fi
-          done
+      - name: Fetch Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v3
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Auto-merge dependency patch and minor updates
+        if: >
+          startsWith(steps.metadata.outputs.dependency-type, 'direct:') &&
+          steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --merge "$PR_URL"
         env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Auto-merge GitHub Actions patch and minor updates
+        if: >
+          steps.metadata.outputs.package-ecosystem == 'github_actions' &&
+          steps.metadata.outputs.update-type != 'version-update:semver-major'
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
