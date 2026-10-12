@@ -7,8 +7,8 @@ on:
     types: [completed]
     branches: [main]
   schedule:
-    # 07:00 UTC daily = 08:00 GMT / 07:00 BST.
-    - cron: '0 7 * * *'
+    # 02:15 UTC daily = 02:15 GMT / 03:15 BST.
+    - cron: '15 2 * * *'
 
 concurrency:
   group: deploy-production
