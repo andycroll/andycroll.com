@@ -30,12 +30,19 @@ jobs:
         with:
           bundler-cache: true
 
+      - name: Install wrangler
+        id: wrangler
+        background: true
+        run: npm install --no-save wrangler@4
+
       - name: Build site
         env:
           JEKYLL_ENV: production
           LANG: C.UTF-8
           LC_ALL: C.UTF-8
         run: bundle exec jekyll build
+
+      - wait: wrangler
 
       - name: Deploy to Cloudflare
         uses: cloudflare/wrangler-action@v4
