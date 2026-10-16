@@ -5,6 +5,7 @@
   "main": "worker.js",
   "assets": {
     "directory": "_site",
-    "binding": "ASSETS"
+    "binding": "ASSETS",
+    "run_worker_first": ["/*", "!/images/*", "!/assets/*", "!/fonts/*"]
   }
 }
