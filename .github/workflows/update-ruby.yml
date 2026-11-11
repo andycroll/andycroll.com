@@ -94,10 +94,29 @@ jobs:
 
             Validated in this workflow on ${{ steps.detect.outputs.latest }}: `bundle install` + `bundle exec jekyll build --future`.
 
-      # Pushes made with GITHUB_TOKEN don't trigger pull_request workflows,
-      # but workflow_dispatch does, and its checks attach to the PR's commit.
-      - name: Run CI on the pull request
+      # A PR opened with GITHUB_TOKEN gets a pull_request CI run that waits for
+      # approval, and only that run's `build` check counts toward the PR's
+      # required checks. Approve it, then let the PR merge itself once it passes.
+      - name: Approve CI and enable auto-merge
         if: steps.pr.outputs.pull-request-operation == 'created' || steps.pr.outputs.pull-request-operation == 'updated'
-        run: gh workflow run ci.yml --ref automation/update-ruby
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HEAD_SHA: ${{ steps.pr.outputs.pull-request-head-sha }}
+          PR_NUMBER: ${{ steps.pr.outputs.pull-request-number }}
+        run: |
+          set -euo pipefail
+          run_id=""
+          for _ in $(seq 1 30); do
+            run_id=$(gh run list --workflow ci.yml --event pull_request --commit "$HEAD_SHA" \
+              --json databaseId --jq '.[0].databaseId // empty')
+            [ -n "$run_id" ] && break
+            sleep 10
+          done
+          if [ -z "$run_id" ]; then
+            echo "::error::No pull_request CI run appeared for ${HEAD_SHA}."
+            exit 1
+          fi
+          if [ "$(gh run view "$run_id" --json conclusion --jq .conclusion)" = "action_required" ]; then
+            gh api -X POST "repos/${GITHUB_REPOSITORY}/actions/runs/${run_id}/approve"
+          fi
+          gh pr merge "$PR_NUMBER" --auto --merge
