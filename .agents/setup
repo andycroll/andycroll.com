@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$repo_root"
+export LANG=C.UTF-8
+export LC_ALL=C.UTF-8
+
+echo "==> Checking native build prerequisites"
+SECONDS=0
+packages=(build-essential pkg-config libssl-dev libyaml-dev zlib1g-dev libffi-dev)
+missing=()
+for package in "${packages[@]}"; do
+  if ! dpkg-query -W -f='${Status}' "$package" 2>/dev/null | grep -qx 'install ok installed'; then
+    missing+=("$package")
+  fi
+done
+if ((${#missing[@]})); then
+  sudo apt-get update -qq
+  sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y "${missing[@]}"
+fi
+echo "==> System packages ready (${SECONDS}s)"
+
+SECONDS=0
+if [[ ! -x "$HOME/.local/bin/mise" ]]; then
+  curl --fail --silent --show-error --location https://mise.run | sh
+fi
+mise="$HOME/.local/bin/mise"
+ruby_version="$(tr -d '[:space:]' < .ruby-version)"
+"$mise" install "ruby@$ruby_version"
+eval "$("$mise" env --shell bash "ruby@$ruby_version")"
+echo "==> Ruby ready (${SECONDS}s)"
+
+# Login shells used by Amp and supervised services must see the same Ruby.
+profile_marker="# andycroll.com orb Ruby"
+if ! grep -Fqx "$profile_marker" "$HOME/.bash_profile" 2>/dev/null; then
+  cat >> "$HOME/.bash_profile" <<EOF
+
+$profile_marker
+if [[ "\$PWD" == "$repo_root" || "\$PWD" == "$repo_root/"* ]]; then
+  export LANG=C.UTF-8 LC_ALL=C.UTF-8
+  eval "\$("$mise" env --shell bash "ruby@\$(tr -d '[:space:]' < "$repo_root/.ruby-version")")"
+fi
+EOF
+fi
+
+echo "==> Installing locked gems"
+SECONDS=0
+bundler_version="$(awk '/^BUNDLED WITH$/ { getline; gsub(/^[[:space:]]+/, ""); print }' Gemfile.lock)"
+if ! gem list --installed --exact bundler --version "$bundler_version" >/dev/null; then
+  gem install bundler --version "$bundler_version" --no-document
+fi
+export BUNDLE_FROZEN=true
+bundle "_${bundler_version}_" check || bundle "_${bundler_version}_" install --jobs 4
+echo "==> Gems ready (${SECONDS}s)"
+
+echo "==> Installing locked npm packages"
+SECONDS=0
+npm ci --prefer-offline --no-audit --no-fund
+echo "==> npm packages ready (${SECONDS}s)"

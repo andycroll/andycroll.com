@@ -7,3 +7,4 @@ _site/*
 node_modules
 .playwright-mcp/
 .playwright/
+.amp/portals/*
