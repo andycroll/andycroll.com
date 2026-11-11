@@ -12,6 +12,14 @@ bundle exec jekyll serve --future   # include future-dated drafts
 
 In development, images render from raw `/images/…` paths so `jekyll serve` resolves them locally. In production (`JEKYLL_ENV=production`), every raster `<img>` is routed through `_includes/cf_image.html` which emits `/cdn-cgi/image/format=auto,width=…/images/…`. The URL format is documented in [Transform via URL](https://developers.cloudflare.com/images/transform-images/transform-via-url/).
 
+### Amp orbs
+
+`.agents/setup` installs native build prerequisites, Ruby from `.ruby-version` via mise, Bundler from `Gemfile.lock`, and the locked gem and npm dependencies. It uses the orb's preinstalled Node.js and npm. Installed tools and dependencies are captured in Amp's project snapshot; warm setup runs reuse Ruby and gems and restore npm packages from the local cache.
+
+Setup also makes Ruby available to non-interactive login shells within this checkout and sets the UTF-8 locale needed by Jekyll. `.agents/resume` only checks Ruby and dependencies: it does not install packages, authenticate deployment services, or start a server. No database or secrets are needed to build or preview the site.
+
+After changing dependencies, rerun `.agents/setup`. Build with `bundle exec jekyll build --future` as usual. The lifecycle files must reach the project's default branch before fresh orbs can use them.
+
 ## Deployment
 
 The site deploys to a Cloudflare Worker named **`andycroll-com`** via `wrangler.jsonc`. The `.github/workflows/deploy.yml` workflow runs automatically after the `Jekyll Tests` workflow succeeds on `main`, plus daily at 02:15 UTC. To deploy by hand, trigger it from **Actions → Deploy → Run workflow → main**.

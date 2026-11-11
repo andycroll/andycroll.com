@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$repo_root"
+
+# No services or authentication need restoring for this static site.
+# Check the snapshot without installing anything on the wake-up path.
+exec /bin/bash -lc 'ruby --version && bundle check && npm ls --depth=0'
