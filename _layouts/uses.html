@@ -1,0 +1,90 @@
+---
+layout: default
+---
+{%- comment -%}
+  /uses/ and its section pages. A section page sets `uses_section` to the name of
+  its folder in _uses/; the root page leaves it out and lists every section.
+{%- endcomment -%}
+{%- assign sections = site.pages | where_exp: "p", "p.uses_section" | sort: "order" -%}
+{%- assign section = page.uses_section -%}
+
+<div class="max-w-3xl mx-auto">
+  <h1 class="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-3 px-3">
+    {% if section %}<a class="text-stone-400 dark:text-stone-500 hover:text-red-800 dark:hover:text-red-400" href="/uses/">Uses</a> / {% endif %}{{ page.title }}
+  </h1>
+
+  <div
+    class="
+      p-3 mb-6
+      prose prose-lg dark:prose-invert
+      prose-headings:font-serif prose-headings:font-normal prose-headings:mb-3 prose-headings:mt-4
+      prose-p:my-0 prose-p:mb-4
+      prose-h2:text-xl prose-h2:md:text-2xl prose-h2:mt-10
+      prose-h3:text-base prose-h3:text-stone-600 dark:prose-h3:text-stone-300
+      prose-a:text-stone-800 dark:prose-a:text-stone-200 hover:prose-a:text-red-800 dark:hover:prose-a:text-red-400 prose-a:decoration-2 prose-a:decoration-red-700 dark:prose-a:decoration-red-500 prose-a:underline-offset-4 prose-a:underline
+    "
+  >
+    {{ content }}
+
+    {% if section %}
+      {%- assign items = site.uses | where_exp: "i", "i.section == section" -%}
+      {%- assign current = items | where_exp: "i", "i.retired == nil" -%}
+      {%- assign previous = items | where_exp: "i", "i.retired" | sort: "retired" | reverse -%}
+      {%- assign affiliate = items | where: "affiliate", true | size -%}
+
+      {% for item in current %}
+        <h2 id="{{ item.slug }}">
+          {% if item.link %}<a href="{{ item.link }}"{% if item.affiliate %} rel="sponsored"{% endif %}>{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}
+          {% if item.affiliate %}<small class="text-sm text-stone-400 dark:text-stone-500">affiliate link</small>{% endif %}
+        </h2>
+        {{ item.content }}
+      {% else %}
+        <p><em>Nothing here yet.</em></p>
+      {% endfor %}
+
+      {% if previous.size > 0 %}
+        <h2>No longer using</h2>
+        {% for item in previous %}
+          <h3 id="{{ item.slug }}">
+            {{ item.title }}
+            <small class="font-sans text-stone-400 dark:text-stone-500">until {{ item.retired | date: "%B %Y" }}</small>
+          </h3>
+          {{ item.content }}
+        {% endfor %}
+      {% endif %}
+
+      {% if affiliate > 0 %}
+        <p class="text-sm text-stone-500 dark:text-stone-400">
+          Links marked &ldquo;affiliate link&rdquo; pay me a small commission if you buy through them, at no cost to you.
+          As an Amazon Associate I earn from qualifying purchases.
+        </p>
+      {% endif %}
+    {% else %}
+      {% for s in sections %}
+        {%- assign slug = s.uses_section -%}
+        {%- assign current = site.uses | where_exp: "i", "i.section == slug" | where_exp: "i", "i.retired == nil" -%}
+        <h2><a href="{{ s.url }}">{{ s.title }}</a></h2>
+        {% if current.size > 0 %}
+          <ul>
+            {% for item in current %}
+              <li><a href="{{ s.url }}#{{ item.slug }}">{{ item.title }}</a></li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+
+      {% if site.data.uses_updates.size > 0 %}
+        <h2 id="updates">Updates</h2>
+        <ul>
+          {% for update in site.data.uses_updates %}
+            <li>
+              {{ update.label }}:
+              <a href="{{ update.url }}">{{ update.name }}</a>
+              <small class="text-stone-400 dark:text-stone-500">{{ update.date | date_to_string: 'ordinal', 'US' }}</small>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+  </div>
+</div>

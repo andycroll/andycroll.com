@@ -46,6 +46,25 @@ bundle exec jekyll post "Post Title"
 
 **Categories**: Posts use `category: ruby` for Ruby/Rails content. The homepage displays recent Ruby posts prominently.
 
+## Uses
+
+`/uses/` lists the things Andy uses. Each thing is one file in `_uses/<section>/`, where `<section>` matches `uses_section` on a page in `uses/` (coffee, bags, carry, software, hardware, fun, home). Being in the folder puts it on the page. The body is a paragraph or two on why; when something changes, edit the body to say so, as with an updated post.
+
+Dates follow post conventions: date the filename (`_uses/coffee/2026-11-20-comandante-c40.md`) or set `date` when a thing is new, and set `last_modified_at` when you edit it meaningfully. Leave things undated when they were already in use before /uses/ launched.
+
+```yaml
+---
+title: "Comandante C40"
+link: "https://..."              # optional
+affiliate: true                  # optional; marks link as an affiliate link
+last_modified_at: 2027-01-10     # optional; latest meaningful edit
+retired: 2027-03-01              # optional; moves it to "No longer using"
+published: false                 # optional; draft, as with posts
+---
+```
+
+`_plugins/uses.rb` turns each `date`, `last_modified_at` and `retired` into `site.data.uses_updates`. These are listed under Updates on `/uses/` and merged into `index.xml`/`rss.xml` as entries that link to the thing on its section page and carry its current text. There are no separate pages for updates. Each edit with a new `last_modified_at` reaches the feed as its own entry; the Updates list shows only the latest edit per thing. Future dates stay hidden until that day's build, like posts.
+
 ## Post Front Matter
 
 ```yaml
