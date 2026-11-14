@@ -71,6 +71,8 @@ Photos keep their own shape (never cropped): above the text on phones (up to 14r
 
 `_plugins/uses.rb` turns each `date`, `last_modified_at` and `retired` into `site.data.uses_updates`. These are listed under Updates on `/uses/` and merged into `index.xml`/`rss.xml` as entries that link to the thing on its section page and carry its current text. There are no separate pages for updates. Each edit with a new `last_modified_at` reaches the feed as its own entry; the Updates list shows only the latest edit per thing. Future dates stay hidden until that day's build, like posts.
 
+`/now/` is in the feeds too (`_plugins/now_in_feed.rb`): bump `date` (or set `last_modified_at`) in `now.md` and the rewrite goes out as a new entry.
+
 ## Post Front Matter
 
 ```yaml
