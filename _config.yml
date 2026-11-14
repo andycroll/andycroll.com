@@ -31,3 +31,8 @@ kramdown:
   footnote_backlink: "&#8617;&#xFE0E;"
 
 permalink: /:categories/:title/
+
+# One file per thing in _uses/, rendered on the /uses/ section pages.
+collections:
+  uses:
+    output: false

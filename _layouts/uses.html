@@ -1,0 +1,137 @@
+---
+layout: default
+---
+{%- comment -%}
+  /uses/ and its section pages. A section page sets `uses_section` to the name of
+  its folder in _uses/; the root page leaves it out and lists every section.
+{%- endcomment -%}
+{%- assign sections = site.pages | where_exp: "p", "p.uses_section" | sort: "order" -%}
+{%- assign section = page.uses_section -%}
+{%- capture prose -%}
+  prose prose-lg dark:prose-invert max-w-none
+  prose-p:my-0 prose-p:mb-4
+  prose-a:text-stone-800 dark:prose-a:text-stone-200 hover:prose-a:text-red-800 dark:hover:prose-a:text-red-400 prose-a:decoration-2 prose-a:decoration-red-700 dark:prose-a:decoration-red-500 prose-a:underline-offset-4 prose-a:underline
+{%- endcapture -%}
+{%- assign link = "underline decoration-2 decoration-red-700 dark:decoration-red-500 underline-offset-4 hover:text-red-800 dark:hover:text-red-400" -%}
+
+<div class="max-w-3xl mx-auto px-3">
+  <h1 class="font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl pt-3 mb-3">{{ page.title }}</h1>
+  <div class="{{ prose }} text-stone-600 dark:text-stone-300 mb-6">{{ content }}</div>
+
+  {% if section %}
+    {%- assign items = site.uses | where_exp: "i", "i.section == section" -%}
+    {%- assign current = items | where_exp: "i", "i.retired == nil" -%}
+    {%- assign previous = items | where_exp: "i", "i.retired" | sort: "retired" | reverse -%}
+    {%- assign affiliate = items | where: "affiliate", true | size -%}
+
+    {% for item in current %}
+      <article id="{{ item.slug }}" class="flow-root py-8 border-t border-stone-200 dark:border-slate-700 scroll-mt-4">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <h2 class="font-serif text-xl md:text-2xl">{{ item.title }}</h2>
+            {% if item.since or item.last_modified_at %}
+              <p class="text-sm text-stone-500 dark:text-stone-400 mt-1">
+                {% if item.since %}Since {{ item.since | date: "%B %Y" }}{% endif %}
+                {% if item.since and item.last_modified_at %}&middot;{% endif %}
+                {% if item.last_modified_at %}Updated {{ item.last_modified_at | date: "%-d %B %Y" }}{% endif %}
+              </p>
+            {% endif %}
+          </div>
+          {% if item.image.kind == "icon" %}{% include uses_image.html item=item px=56 %}{% endif %}
+        </div>
+
+        {%- comment -%}
+          Photos keep their own shape. Phones: above the text, up to 14rem.
+          md (600px+): floated right at 40% of the column. lg (800px+): capped at 17rem.
+        {%- endcomment -%}
+        {% if item.image.kind == "photo" %}
+          {% include uses_image.html item=item class="block w-full max-w-56 mt-4 mb-4 md:float-right md:w-2/5 md:max-w-none lg:max-w-68 md:ml-8 md:mb-2" %}
+        {% endif %}
+
+        <div class="{{ prose }} mt-4">{{ item.content }}</div>
+        {% if item.link %}
+          {%- assign host = item.link | split: "/" | slice: 2 | first | remove_first: "www." -%}
+          <p class="text-base">
+            <a href="{{ item.link }}" {% if item.affiliate %}rel="sponsored"{% endif %} class="{{ link }}">{{ host }}&nbsp;&rarr;</a>
+            {% if item.affiliate %}<small class="ml-2 text-stone-500 dark:text-stone-400">affiliate link</small>{% endif %}
+          </p>
+        {% endif %}
+      </article>
+    {% else %}
+      <p class="py-8 border-t border-stone-200 dark:border-slate-700 text-stone-500"><em>Nothing here yet.</em></p>
+    {% endfor %}
+
+    {% if previous.size > 0 %}
+      <section class="pt-8 border-t border-stone-200 dark:border-slate-700">
+        <h2 class="font-serif text-xl mb-4">No longer using</h2>
+        {% for item in previous %}
+          <div id="{{ item.slug }}" class="flex items-start gap-4 mb-6 scroll-mt-4">
+            {% include uses_image.html item=item px=40 class="grayscale opacity-70" %}
+            <div>
+              <h3 class="font-serif">
+                {{ item.title }}
+                <small class="font-sans text-stone-500 dark:text-stone-400">until {{ item.retired | date: "%B %Y" }}</small>
+              </h3>
+              <div class="{{ prose }} prose-base text-stone-600 dark:text-stone-400">{{ item.content }}</div>
+            </div>
+          </div>
+        {% endfor %}
+      </section>
+    {% endif %}
+
+    <nav class="mt-10 pt-6 border-t border-stone-200 dark:border-slate-700 text-sm">
+      <span class="text-stone-500 dark:text-stone-400">More of what I use:</span>
+      {% for s in sections %}{% unless s.uses_section == section %}
+        <a class="ml-2 {{ link }}" href="{{ s.url }}">{{ s.title }}</a>
+      {%- endunless %}{% endfor %}
+    </nav>
+
+    {% if affiliate > 0 %}
+      <p class="mt-4 text-xs text-stone-500 dark:text-stone-400">
+        Links marked &ldquo;affiliate link&rdquo; pay me a small commission if you buy through them, at no cost to you.
+        As an Amazon Associate I earn from qualifying purchases.
+      </p>
+    {% endif %}
+  {% else %}
+    {% for s in sections %}
+      {%- assign slug = s.uses_section -%}
+      {%- assign current = site.uses | where_exp: "i", "i.section == slug" | where_exp: "i", "i.retired == nil" -%}
+      <section id="{{ slug }}" class="mb-10 scroll-mt-4">
+        <h2 class="font-serif text-xl md:text-2xl mb-3"><a class="{{ link }}" href="{{ s.url }}">{{ s.title }}</a></h2>
+        {% if current.size > 0 %}
+          <ul>
+            {% for item in current %}
+              <li class="flex items-center gap-3 mb-2">
+                {% if item.image %}
+                  {% include uses_image.html item=item px=40 %}
+                {% else %}
+                  <span class="shrink-0 w-10 h-10" aria-hidden="true"></span>
+                {% endif %}
+                <a class="{{ link }}" href="{{ s.url }}#{{ item.slug }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-sm text-stone-500"><em>Nothing here yet.</em></p>
+        {% endif %}
+      </section>
+    {% endfor %}
+
+    {% if site.data.uses_updates.size > 0 %}
+      <section id="updates" class="mb-6">
+        <h2 class="font-serif text-xl md:text-2xl mb-3">Updates</h2>
+        <ol>
+          {% for update in site.data.uses_updates limit: 20 %}
+            <li class="mb-1 flex items-baseline justify-between gap-3">
+              <span>
+                <span class="text-stone-500 dark:text-stone-400">{{ update.label }}:</span>
+                <a class="{{ link }}" href="{{ update.url }}">{{ update.name }}</a>
+              </span>
+              <small class="flex-none text-gray-400 dark:text-gray-500">{{ update.date | date_to_string: 'ordinal', 'US' }}</small>
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endif %}
+  {% endif %}
+</div>

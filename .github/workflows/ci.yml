@@ -25,3 +25,31 @@ jobs:
       uses: untitaker/hyperlink@0.3.2
       with:
         args: _site/ --sources _posts/ --check-anchors
+    - name: Restore share card drawings
+      uses: actions/cache/restore@v6
+      with:
+        path: .og-cards-cache
+        key: og-cards-${{ github.sha }}
+        restore-keys: og-cards-
+    - name: Draw share cards
+      env:
+        JEKYLL_ENV: production
+        LANG: C.UTF-8
+        LC_ALL: C.UTF-8
+        OG_CARDS: "1"
+      run: |
+        bundle exec jekyll build
+        bin/og-cards
+    # Keyed by the drawings themselves: when no card changed, the key already
+    # exists and nothing is saved.
+    - name: Save share card drawings
+      uses: actions/cache/save@v6
+      with:
+        path: .og-cards-cache
+        key: og-cards-${{ hashFiles('.og-cards-cache/*.jpg') }}
+    - name: Upload share cards
+      uses: actions/upload-artifact@v7
+      with:
+        name: share-cards
+        path: _site/og/
+        retention-days: 7

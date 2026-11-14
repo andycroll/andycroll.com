@@ -14,7 +14,9 @@
   </author>
   <generator uri="http://jekyllrb.com/">Jekyll</generator>
 
-  {% for post in site.posts limit: 15 %}
+  {%- comment -%} /uses/ changes and /now/ (see _plugins/) sit alongside posts. {%- endcomment -%}
+  {%- assign entries = site.posts | concat: site.data.uses_updates | concat: site.data.now_updates | sort: "date" | reverse %}
+  {% for post in entries limit: 15 %}
   <entry>
     <title type="html"><![CDATA[{{ post.title | cdata_escape }}]]></title>
     <link href="{{ site.url }}{{ post.url }}"/>
