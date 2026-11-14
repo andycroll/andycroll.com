@@ -26,7 +26,12 @@ module Uses
 
       updates = site.collections["uses"].docs.flat_map do |item|
         item.data["section"] = File.basename(File.dirname(item.relative_path))
+        item.data["since"] = item.data["date"] # `item.date` in Liquid falls back to the build time
         section = sections.fetch(item.data["section"])
+        if item.data["image"]
+          # App icons sit small in the title row; photos float beside the text.
+          item.data["image"]["kind"] ||= section.data["image_kind"] || "photo"
+        end
 
         # Read data directly: Document#date falls back to the build time.
         KINDS.keys.filter_map do |field|
