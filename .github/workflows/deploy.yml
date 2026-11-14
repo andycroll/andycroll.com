@@ -35,6 +35,13 @@ jobs:
         background: true
         run: npm install --no-save wrangler@4
 
+      - name: Restore share card drawings
+        uses: actions/cache/restore@v6
+        with:
+          path: .og-cards-cache
+          key: og-cards-${{ github.sha }}
+          restore-keys: og-cards-
+
       - name: Build site
         env:
           JEKYLL_ENV: production
@@ -45,6 +52,14 @@ jobs:
 
       - name: Draw share cards
         run: bin/og-cards
+
+      # Keyed by the drawings themselves: when no card changed, the key already
+      # exists and nothing is saved.
+      - name: Save share card drawings
+        uses: actions/cache/save@v6
+        with:
+          path: .og-cards-cache
+          key: og-cards-${{ hashFiles('.og-cards-cache/*.jpg') }}
 
       - wait: wrangler
 
