@@ -25,3 +25,18 @@ jobs:
       uses: untitaker/hyperlink@0.3.2
       with:
         args: _site/ --sources _posts/ --check-anchors
+    - name: Draw share cards
+      env:
+        JEKYLL_ENV: production
+        LANG: C.UTF-8
+        LC_ALL: C.UTF-8
+        OG_CARDS: "1"
+      run: |
+        bundle exec jekyll build
+        bin/og-cards
+    - name: Upload share cards
+      uses: actions/upload-artifact@v7
+      with:
+        name: share-cards
+        path: _site/og/
+        retention-days: 7

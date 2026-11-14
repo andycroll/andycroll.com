@@ -11,3 +11,4 @@ gem "jekyll-sitemap", group: [:jekyll_plugins]
 gem "jekyll-tailwind", group: [:jekyll_plugins]
 gem "logger"
 gem "webrick"
+gem "ferrum"

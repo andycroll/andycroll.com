@@ -1,0 +1,55 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Screenshot the share cards that an OG_CARDS=1 build renders at
+# _site/og-cards/<url>/ into _site/og/<url>.jpg, then remove the card pages.
+#
+#   OG_CARDS=1 bundle exec jekyll build && bin/og-cards
+#
+# The deploy workflow runs this. It needs Chrome or Chromium; set CHROME to its
+# binary if Ferrum doesn't find it.
+
+# Ferrum 0.21 behaviour: evaluate waits for a returned promise (fonts below).
+ENV["FERRUM_JS_API"] ||= "new"
+
+require "bundler/setup"
+require "ferrum"
+require "fileutils"
+require "webrick"
+
+SITE = File.expand_path("../_site", __dir__)
+CARDS = File.join(SITE, "og-cards")
+
+cards = Dir.glob("#{CARDS}/**/index.html").sort
+abort "No cards in #{CARDS}. Build with OG_CARDS=1 first." if cards.empty?
+
+server = WEBrick::HTTPServer.new(
+  BindAddress: "127.0.0.1", Port: 0, DocumentRoot: SITE,
+  Logger: WEBrick::Log.new(File::NULL), AccessLog: []
+)
+port = server.listeners.first.addr[1]
+Thread.new { server.start }
+
+browser = Ferrum::Browser.new(
+  browser_path: ENV["CHROME"],
+  window_size: [1200, 800],
+  timeout: 30,
+  # Our own static pages; Chrome's sandbox fails on some CI kernels.
+  browser_options: { "no-sandbox" => nil }
+)
+
+started = Time.now
+cards.each do |card|
+  url = card.delete_prefix(CARDS).delete_suffix("index.html") # "/ruby/foo/" or "/"
+  jpg = File.join(SITE, "og", "#{url == "/" ? "/index" : url.chomp("/")}.jpg")
+  FileUtils.mkdir_p(File.dirname(jpg))
+
+  browser.go_to("http://127.0.0.1:#{port}/og-cards#{url}")
+  browser.evaluate("document.fonts.ready.then(() => true)")
+  browser.screenshot(path: jpg, format: "jpeg", quality: 85, selector: "main")
+end
+
+browser.quit
+server.shutdown
+FileUtils.rm_rf(CARDS)
+puts "Drew #{cards.size} share cards in #{(Time.now - started).round(1)}s"

@@ -1,0 +1,96 @@
+{%- comment -%}
+  A 1200x630 share card, screenshotted by bin/og-cards (see _plugins/og_cards.rb).
+  Always light, whatever the system theme. Uses raw /images paths, not cf_image:
+  the screenshot is taken from the local _site.
+{%- endcomment -%}
+{%- assign kind = page.card_kind -%}
+{%- if kind == "ruby" -%}
+  {%- assign brand = "/images/onerubything-horizontal.svg" -%}
+  {%- assign brand_alt = "One Ruby Thing" -%}
+{%- elsif kind == "uses" -%}
+  {%- assign brand = "/images/uses.svg" -%}
+  {%- assign brand_alt = "Uses" -%}
+{%- else -%}
+  {%- assign brand = "/images/andycroll.svg" -%}
+  {%- assign brand_alt = "Andy Croll" -%}
+{%- endif -%}
+{%- assign title_size = "text-[60px]" -%}
+{%- if page.title.size > 70 -%}{%- assign title_size = "text-[44px]" -%}
+{%- elsif page.title.size > 40 -%}{%- assign title_size = "text-[52px]" -%}{%- endif -%}
+{%- capture address -%}andycroll.com{{ page.card_url }}{%- endcapture -%}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>{{ page.title | default: site.title }} share card</title>
+    <link href="/assets/css/app.css" rel="stylesheet">
+    <link href="/assets/css/custom.css" rel="stylesheet">
+  </head>
+  <body class="m-0 bg-white text-stone-800 font-serif">
+    {% if kind == "home" %}
+      <main class="w-[1200px] h-[630px] box-border px-[72px] py-[64px] grid grid-cols-[1fr_280px] gap-16 items-center">
+        <div>
+          <img src="/images/andycroll.svg" alt="Andy Croll" class="h-[72px] w-auto mb-10" data-no-lazy>
+          <p class="font-serif text-[40px] leading-snug text-pretty">{{ site.description }}</p>
+          <p class="mt-10 text-[26px] underline decoration-red-700 decoration-4 underline-offset-8">andycroll.com</p>
+        </div>
+        <img src="/images/andycroll.jpg" alt="" class="w-[280px] h-[280px] rounded-full object-cover shadow-lg" data-no-lazy>
+      </main>
+    {% elsif kind == "uses" %}
+      {%- assign slug = page.card_section -%}
+      {%- assign items = site.uses | where_exp: "i", "i.retired == nil" | where_exp: "i", "i.image" -%}
+      {%- if slug -%}
+        {%- assign items = items | where_exp: "i", "i.section == slug" -%}
+        {%- assign limit = 4 -%}
+      {%- else -%}
+        {%- assign limit = 6 -%}
+      {%- endif -%}
+      <main class="w-[1200px] h-[630px] box-border px-[72px] py-[64px] grid gap-14 {% if items.size > 0 %}grid-cols-[1fr_500px]{% endif %}">
+        <div class="flex flex-col min-w-0">
+          {% if slug %}<img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[52px] w-auto self-start mb-12" data-no-lazy>{% endif %}
+          <h1 class="font-serif font-normal text-[92px] leading-tight mb-5">{{ page.title }}</h1>
+          <p class="text-[32px] leading-snug text-stone-600 text-pretty">{{ page.description }}</p>
+          <p class="mt-auto text-[26px] underline decoration-red-700 decoration-4 underline-offset-8">{{ address }}</p>
+        </div>
+        {% if items.size > 0 %}
+          <div class="grid {% if slug %}grid-cols-2{% else %}grid-cols-3{% endif %} gap-5 content-center">
+            {% for item in items limit: limit %}
+              <div class="aspect-square rounded-3xl bg-stone-100 grid place-items-center overflow-hidden">
+                {% if item.image.kind == "icon" %}
+                  <img src="/images/{{ item.image.base }}.png" alt="" class="w-[56%] h-[56%] object-contain" data-no-lazy>
+                {% else %}
+                  <img src="/images/{{ item.image.base }}.jpg" alt="" class="w-full h-full object-contain" data-no-lazy>
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </main>
+    {% elsif page.image.base %}
+      {%- comment -%} Posts and pages with a 4:1 hero: the hero is the top 1200x300 band. {%- endcomment -%}
+      <main class="w-[1200px] h-[630px] flex flex-col">
+        <img src="/images/{{ page.image.base }}.jpg" alt="" class="w-[1200px] h-[300px] object-cover" data-no-lazy>
+        <div class="flex-1 min-h-0 px-[72px] pt-9 pb-11 flex flex-col">
+          <h1 class="font-serif font-normal {{ title_size }} leading-[1.2] line-clamp-3 text-balance">{{ page.title }}</h1>
+          <div class="mt-auto flex items-center justify-between gap-8">
+            <img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[40px] w-auto" data-no-lazy>
+            <span class="text-[24px] text-stone-500">{% if page.card_date %}{{ page.card_date | date: "%-d %B %Y" }}{% else %}{{ address }}{% endif %}</span>
+          </div>
+        </div>
+      </main>
+    {% else %}
+      <main class="w-[1200px] h-[630px] box-border px-[72px] py-[64px] flex flex-col">
+        {% if page.title %}
+          <img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[48px] w-auto self-start" data-no-lazy>
+          <h1 class="font-serif font-normal text-[76px] leading-[1.15] mt-auto mb-6 line-clamp-3 text-balance">{{ page.title }}</h1>
+        {% else %}
+          {%- comment -%} Untitled index pages, like /ruby/: the brand is the headline. {%- endcomment -%}
+          <img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[88px] w-auto self-start mt-auto mb-8" data-no-lazy>
+        {% endif %}
+        {% if page.description %}<p class="text-[32px] leading-snug text-stone-600 line-clamp-2 text-pretty">{{ page.description | strip_html }}</p>{% endif %}
+        <p class="mt-10 text-[26px] underline decoration-red-700 decoration-4 underline-offset-8">{{ address }}</p>
+      </main>
+    {% endif %}
+  </body>
+</html>

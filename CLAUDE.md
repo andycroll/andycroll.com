@@ -73,6 +73,16 @@ Photos keep their own shape (never cropped): above the text on phones (up to 14r
 
 `/now/` is in the feeds too (`_plugins/now_in_feed.rb`): bump `date` (or set `last_modified_at`) in `now.md` and the rewrite goes out as a new entry.
 
+## Share cards
+
+Every post and page at a directory URL has a 1200×630 share card at `/og/<url>.jpg` (`/og/index.jpg` for the home page), used as its `og:image`/`twitter:image` by `head.html`. `_plugins/og_cards.rb` sets `og_image` on each page; set `og_card: false` to opt a page out. Cards are drawn at deploy, not committed: a build with `OG_CARDS=1` also renders each card as a page at `/og-cards/<url>/` (`_layouts/og_card.html`), then `bin/og-cards` screenshots them with headless Chrome (Ferrum) into `_site/og/` and deletes the card pages. Locally:
+
+```bash
+OG_CARDS=1 bundle exec jekyll build && bin/og-cards   # CHROME=/path/to/chrome if not found
+```
+
+The card has four designs: posts and pages with a hero image (hero as the top band, title, One Ruby Thing or Andy Croll wordmark, date), the home page (bio and headshot), /uses/ pages (title, description and the section's first pictures), and text-only for everything else. All card text is Merriweather so the result doesn't depend on the machine's fonts. The `Jekyll Tests` workflow also draws the cards and uploads them as the `share-cards` artifact, so a PR's cards can be checked before deploy.
+
 ## Post Front Matter
 
 ```yaml
@@ -92,6 +102,6 @@ image:
 
 ## Deployment
 
-Deployed to a Cloudflare Worker named `andycroll-com` via `wrangler.jsonc` (static assets pointing at `_site`). The `.github/workflows/deploy.yml` workflow runs after `Jekyll Tests` succeeds on `main`, daily at 02:15 UTC, and on `workflow_dispatch` — it runs `bundle exec jekyll build` under `LANG=C.UTF-8` and then `cloudflare/wrangler-action@v4 deploy`.
+Deployed to a Cloudflare Worker named `andycroll-com` via `wrangler.jsonc` (static assets pointing at `_site`). The `.github/workflows/deploy.yml` workflow runs after `Jekyll Tests` succeeds on `main`, daily at 02:15 UTC, and on `workflow_dispatch` — it runs `bundle exec jekyll build` under `LANG=C.UTF-8` with `OG_CARDS=1`, draws the share cards with `bin/og-cards`, and then runs `cloudflare/wrangler-action@v4 deploy`.
 
 Prerequisites (one-time): `andycroll.com` zone on Cloudflare with Image Transformations enabled (paid), a Worker named `andycroll-com`, and repo secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`. Full setup steps in `README.md`.

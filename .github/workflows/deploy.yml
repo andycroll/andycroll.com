@@ -40,7 +40,11 @@ jobs:
           JEKYLL_ENV: production
           LANG: C.UTF-8
           LC_ALL: C.UTF-8
+          OG_CARDS: "1"
         run: bundle exec jekyll build
+
+      - name: Draw share cards
+        run: bin/og-cards
 
       - wait: wrangler
 
