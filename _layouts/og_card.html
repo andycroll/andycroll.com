@@ -14,9 +14,11 @@
   {%- assign brand = "/images/andycroll.svg" -%}
   {%- assign brand_alt = "Andy Croll" -%}
 {%- endif -%}
-{%- assign title_size = "text-[60px]" -%}
-{%- if page.title.size > 70 -%}{%- assign title_size = "text-[44px]" -%}
-{%- elsif page.title.size > 40 -%}{%- assign title_size = "text-[52px]" -%}{%- endif -%}
+{%- comment -%} Hero cards have room for two lines at 72px or three at 52px. {%- endcomment -%}
+{%- assign title_size = "text-[72px]" -%}
+{%- if page.title.size > 75 -%}{%- assign title_size = "text-[44px]" -%}
+{%- elsif page.title.size > 50 -%}{%- assign title_size = "text-[52px]" -%}
+{%- elsif page.title.size > 30 -%}{%- assign title_size = "text-[60px]" -%}{%- endif -%}
 {%- capture address -%}andycroll.com{{ page.card_url }}{%- endcapture -%}
 <!doctype html>
 <html lang="en">
@@ -33,7 +35,7 @@
         <div>
           <img src="/images/andycroll.svg" alt="Andy Croll" class="h-[72px] w-auto mb-10" data-no-lazy>
           <p class="font-serif text-[40px] leading-snug text-pretty">{{ site.description }}</p>
-          <p class="mt-10 text-[26px] underline decoration-red-700 decoration-4 underline-offset-8">andycroll.com</p>
+          <p class="mt-10 text-[30px] underline decoration-red-700 decoration-4 underline-offset-8">andycroll.com</p>
         </div>
         <img src="/images/andycroll.jpg" alt="" class="w-[280px] h-[280px] rounded-full object-cover shadow-lg" data-no-lazy>
       </main>
@@ -51,7 +53,7 @@
           {% if slug %}<img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[52px] w-auto self-start mb-12" data-no-lazy>{% endif %}
           <h1 class="font-serif font-normal text-[92px] leading-tight mb-5">{{ page.title }}</h1>
           <p class="text-[32px] leading-snug text-stone-600 text-pretty">{{ page.description }}</p>
-          <p class="mt-auto text-[26px] underline decoration-red-700 decoration-4 underline-offset-8">{{ address }}</p>
+          <p class="mt-auto text-[30px] underline decoration-red-700 decoration-4 underline-offset-8">{{ address }}</p>
         </div>
         {% if items.size > 0 %}
           <div class="grid {% if slug %}grid-cols-2{% else %}grid-cols-3{% endif %} gap-5 content-center">
@@ -72,10 +74,10 @@
       <main class="w-[1200px] h-[630px] flex flex-col">
         <img src="/images/{{ page.image.base }}.jpg" alt="" class="w-[1200px] h-[300px] object-cover" data-no-lazy>
         <div class="flex-1 min-h-0 px-[72px] pt-9 pb-11 flex flex-col">
-          <h1 class="font-serif font-normal {{ title_size }} leading-[1.2] line-clamp-3 text-balance">{{ page.title }}</h1>
+          <h1 class="font-serif font-normal {{ title_size }} leading-[1.2] line-clamp-3 text-pretty">{{ page.title }}</h1>
           <div class="mt-auto flex items-center justify-between gap-8">
             <img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[40px] w-auto" data-no-lazy>
-            <span class="text-[24px] text-stone-500">{% if page.card_date %}{{ page.card_date | date: "%-d %B %Y" }}{% else %}{{ address }}{% endif %}</span>
+            <span class="text-[30px] text-stone-500">{% if page.card_date %}{{ page.card_date | date: "%-d %B %Y" }}{% else %}{{ address }}{% endif %}</span>
           </div>
         </div>
       </main>
@@ -83,13 +85,13 @@
       <main class="w-[1200px] h-[630px] box-border px-[72px] py-[64px] flex flex-col">
         {% if page.title %}
           <img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[48px] w-auto self-start" data-no-lazy>
-          <h1 class="font-serif font-normal text-[76px] leading-[1.15] mt-auto mb-6 line-clamp-3 text-balance">{{ page.title }}</h1>
+          <h1 class="font-serif font-normal text-[76px] leading-[1.15] mt-auto mb-6 line-clamp-3 text-pretty">{{ page.title }}</h1>
         {% else %}
           {%- comment -%} Untitled index pages, like /ruby/: the brand is the headline. {%- endcomment -%}
           <img src="{{ brand }}" alt="{{ brand_alt }}" class="h-[88px] w-auto self-start mt-auto mb-8" data-no-lazy>
         {% endif %}
         {% if page.description %}<p class="text-[32px] leading-snug text-stone-600 line-clamp-2 text-pretty">{{ page.description | strip_html }}</p>{% endif %}
-        <p class="mt-10 text-[26px] underline decoration-red-700 decoration-4 underline-offset-8">{{ address }}</p>
+        <p class="mt-10 text-[30px] underline decoration-red-700 decoration-4 underline-offset-8">{{ address }}</p>
       </main>
     {% endif %}
   </body>
