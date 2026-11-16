@@ -99,15 +99,38 @@ layout: default
       <section id="{{ slug }}" class="mb-10 scroll-mt-4">
         <h2 class="font-serif text-xl md:text-2xl mb-3"><a class="{{ link }}" href="{{ s.url }}">{{ s.title }}</a></h2>
         {% if current.size > 0 %}
-          <ul>
+          {%- comment -%}
+            Cards in the house style of the home page promos: a stone tint that
+            fades out, no borders. Photos multiply into a square stone tile.
+          {%- endcomment -%}
+          <ul class="grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-6">
             {% for item in current %}
-              <li class="flex items-center gap-3 mb-2">
-                {% if item.image %}
-                  {% include uses_image.html item=item px=40 %}
-                {% else %}
-                  <span class="shrink-0 w-10 h-10" aria-hidden="true"></span>
-                {% endif %}
-                <a class="{{ link }}" href="{{ s.url }}#{{ item.slug }}">{{ item.title }}</a>
+              <li>
+                <a href="{{ s.url }}#{{ item.slug }}" class="group block h-full rounded-lg bg-gradient-to-b from-stone-100 dark:from-slate-800 via-transparent via-40% p-2 pb-3">
+                  <span class="block aspect-square rounded bg-stone-100 dark:bg-stone-300 overflow-hidden">
+                    {%- if item.image.base -%}
+                      {%- assign alt = item.image.alt | default: item.title -%}
+                      {%- if item.image.kind == "icon" -%}
+                        {%- capture src -%}/images/{{ item.image.base }}.png{%- endcapture -%}
+                        <img src="{% include cf_image.html src=src width=192 %}" alt="{{ alt }}" width="96" height="96" class="block w-2/5 h-2/5 m-[30%] object-contain">
+                      {%- else -%}
+                        {%- capture src -%}/images/{{ item.image.base }}.jpg{%- endcapture -%}
+                        <img
+                          src="{% include cf_image.html src=src width=480 %}"
+                          srcset="{% include cf_image.html src=src width=320 %} 320w, {% include cf_image.html src=src width=480 %} 480w, {% include cf_image.html src=src width=720 %} 720w"
+                          sizes="(min-width: 600px) 15rem, 45vw"
+                          alt="{{ alt }}"
+                          width="480" height="480"
+                          class="block w-full h-full object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
+                        >
+                      {%- endif -%}
+                    {%- else -%}
+                      <span class="grid place-items-center h-full font-serif text-5xl text-stone-400 dark:text-stone-500" aria-hidden="true">{{ item.title | slice: 0 }}</span>
+                    {%- endif -%}
+                  </span>
+                  <span class="block font-serif mt-3 leading-snug decoration-2 decoration-red-700 dark:decoration-red-500 underline-offset-4 group-hover:underline group-hover:text-red-800 dark:group-hover:text-red-400">{{ item.title }}</span>
+                  <span class="mt-1 text-sm leading-snug text-stone-500 dark:text-stone-400 line-clamp-2">{{ item.content | strip_html | truncatewords: 30 }}</span>
+                </a>
               </li>
             {% endfor %}
           </ul>

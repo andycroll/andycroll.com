@@ -62,7 +62,7 @@
                 {% if item.image.kind == "icon" %}
                   <img src="/images/{{ item.image.base }}.png" alt="" class="w-[56%] h-[56%] object-contain" data-no-lazy>
                 {% else %}
-                  <img src="/images/{{ item.image.base }}.jpg" alt="" class="w-full h-full object-contain" data-no-lazy>
+                  <img src="/images/{{ item.image.base }}.jpg" alt="" class="w-full h-full object-contain mix-blend-multiply" data-no-lazy>
                 {% endif %}
               </div>
             {% endfor %}
