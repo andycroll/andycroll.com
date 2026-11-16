@@ -1,0 +1,73 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+# Screenshot the share cards that an OG_CARDS=1 build renders at
+# _site/og-cards/<url>-<fingerprint>/ into _site/og/<url>-<fingerprint>.jpg,
+# then remove the card pages.
+#
+#   OG_CARDS=1 bundle exec jekyll build && bin/og-cards
+#
+# Drawings are kept in .og-cards-cache/<fingerprint>.jpg (OG_CARDS_CACHE to move
+# it), so a card whose fingerprint is unchanged is copied, not redrawn: its
+# bytes stay identical and the deploy doesn't upload it again. Cached drawings
+# no card uses any more are deleted. The workflows keep the cache between runs.
+#
+# Drawing needs Chrome or Chromium; set CHROME to its binary if Ferrum doesn't
+# find it.
+
+# Ferrum 0.21 behaviour: evaluate waits for a returned promise (fonts below).
+ENV["FERRUM_JS_API"] ||= "new"
+
+require "bundler/setup"
+require "ferrum"
+require "fileutils"
+require "webrick"
+
+SITE = File.expand_path("../_site", __dir__)
+CARDS = File.join(SITE, "og-cards")
+CACHE = File.expand_path(ENV.fetch("OG_CARDS_CACHE", File.expand_path("../.og-cards-cache", __dir__)))
+
+# "/ruby/foo-<fingerprint>" or "/index-<fingerprint>"
+cards = Dir.glob("#{CARDS}/**/index.html").sort.map { |page| File.dirname(page).delete_prefix(CARDS) }
+abort "No cards in #{CARDS}. Build with OG_CARDS=1 first." if cards.empty?
+
+cached = cards.to_h { |card| [card, File.join(CACHE, "#{card[-12..]}.jpg")] }
+fresh = cards.reject { |card| File.exist?(cached[card]) }
+FileUtils.mkdir_p(CACHE)
+started = Time.now
+
+if fresh.any?
+  server = WEBrick::HTTPServer.new(
+    BindAddress: "127.0.0.1", Port: 0, DocumentRoot: SITE,
+    Logger: WEBrick::Log.new(File::NULL), AccessLog: []
+  )
+  port = server.listeners.first.addr[1]
+  Thread.new { server.start }
+
+  browser = Ferrum::Browser.new(
+    browser_path: ENV["CHROME"],
+    window_size: [1200, 800],
+    timeout: 30,
+    # Our own static pages; Chrome's sandbox fails on some CI kernels.
+    browser_options: { "no-sandbox" => nil }
+  )
+
+  fresh.each do |card|
+    browser.go_to("http://127.0.0.1:#{port}/og-cards#{card}/")
+    browser.evaluate("document.fonts.ready.then(() => true)")
+    browser.screenshot(path: cached[card], format: "jpeg", quality: 85, selector: "main")
+  end
+
+  browser.quit
+  server.shutdown
+end
+
+cards.each do |card|
+  jpg = File.join(SITE, "og", "#{card}.jpg")
+  FileUtils.mkdir_p(File.dirname(jpg))
+  FileUtils.cp(cached[card], jpg)
+end
+
+FileUtils.rm_f(Dir.glob("#{CACHE}/*.jpg") - cached.values)
+FileUtils.rm_rf(CARDS)
+puts "Drew #{fresh.size} share cards and reused #{cards.size - fresh.size} in #{(Time.now - started).round(1)}s"

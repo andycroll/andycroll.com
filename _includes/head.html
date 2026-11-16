@@ -26,8 +26,18 @@
   {% endif %}
 
   <meta property="og:type" content="article">
-  {% if imagebase %}
-    <meta property="og:image" content="{{ site.url }}{% include cf_image.html src=imagebase_src width=1200 %}">
+  {%- comment -%} Share card from _plugins/og_cards.rb, drawn at deploy; else the hero image. {%- endcomment -%}
+  {% if page.og_image %}
+    {% capture share_image %}{{ site.url }}{% include cf_image.html src=page.og_image %}{% endcapture %}
+  {% elsif imagebase %}
+    {% capture share_image %}{{ site.url }}{% include cf_image.html src=imagebase_src width=1200 %}{% endcapture %}
+  {% endif %}
+  {% if share_image %}
+    <meta property="og:image" content="{{ share_image }}">
+    {% if page.og_image %}
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+    {% endif %}
   {% endif %}
   <link rel="og:url" href="{{ canonical }}">
 
@@ -36,9 +46,9 @@
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:site" content="@andycroll">
 
-  {% if imagebase %}
+  {% if share_image %}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}{% include cf_image.html src=imagebase_src width=1200 %}">
+    <meta name="twitter:image" content="{{ share_image }}">
   {% else %}
     <meta name="twitter:card" content="summary">
     <meta name="twitter:image" content="{{ site.url }}{% include cf_image.html src='/images/andycroll.jpg' width=512 %}">
