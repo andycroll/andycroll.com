@@ -67,7 +67,7 @@ published: false                 # optional; draft, as with posts
 ---
 ```
 
-Photos keep their own shape (never cropped): above the text on phones (up to 14rem), floated right at 40% of the column from `md`, capped at 17rem from `lg`. App icons are transparent PNGs shown at 56px at the end of the title row; `uses/software.md` sets `image_kind: icon`. `/uses/` lists each thing with a 40px version of its picture.
+Photos are product shots on a white background, 1200px square (`images/uses/<slug>.jpg`). They sit on a stone tile with `mix-blend-multiply`, so the white takes the tile's colour in light and dark mode. Photos keep their own shape (never cropped): above the text on phones (up to 14rem), floated right at 40% of the column from `md`, capped at 17rem from `lg`. App icons are transparent PNGs shown at 56px at the end of the title row; `uses/software.md` sets `image_kind: icon`. `/uses/` lists each section as a grid of borderless cards (picture tile, title, two-line excerpt) linking to the thing on its section page. Pictures go through `cf_image` with a `srcset`, like post heroes.
 
 `_plugins/uses.rb` turns each `date`, `last_modified_at` and `retired` into `site.data.uses_updates`. These are listed under Updates on `/uses/` and merged into `index.xml`/`rss.xml` as entries that link to the thing on its section page and carry its current text. There are no separate pages for updates. Each edit with a new `last_modified_at` reaches the feed as its own entry; the Updates list shows only the latest edit per thing. Future dates stay hidden until that day's build, like posts.
 

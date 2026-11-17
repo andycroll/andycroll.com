@@ -1,11 +1,12 @@
 {%- comment -%}
-  A thing's picture on /uses/. Photos are /images/<base>.jpg; icons are
-  /images/<base>.png with their own transparent shape, so they are never cropped
-  or put on a tint.
+  A thing's picture on /uses/. Photos are /images/<base>.jpg product shots on
+  white: they sit on a stone tile and multiply into it, so the white backdrop
+  takes the tile's colour. Icons are /images/<base>.png with their own
+  transparent shape, so they are never cropped or put on a tile.
   Params:
     item (required)
     px    — a square mark of this many px, e.g. in the title row
-    class — classes for a photo shown at its own shape (when px is not given)
+    class — classes for the photo's tile when it is shown at its own shape (when px is not given)
 {%- endcomment -%}
 {%- assign image = include.item.image -%}
 {%- if image.base -%}
@@ -15,23 +16,33 @@
     {%- capture src -%}/images/{{ image.base }}.jpg{%- endcapture -%}
   {%- endif -%}
   {%- assign alt = image.alt | default: include.item.title -%}
+  {%- assign tile = "rounded-lg bg-stone-100 dark:bg-stone-300" -%}
   {%- if include.px -%}
     {%- assign width2x = include.px | times: 2 -%}
-    <img
-      src="{% include cf_image.html src=src width=width2x %}"
-      alt="{{ alt }}"
-      width="{{ include.px }}"
-      height="{{ include.px }}"
-      class="shrink-0 object-contain {% if image.kind != 'icon' %}rounded-lg bg-stone-100 dark:bg-slate-800 p-1{% endif %} {{ include.class }}"
-      style="width: {{ include.px }}px; height: {{ include.px }}px"
-    >
+    {%- capture img -%}
+      <img
+        src="{% include cf_image.html src=src width=width2x %}"
+        alt="{{ alt }}"
+        width="{{ include.px }}"
+        height="{{ include.px }}"
+        class="object-contain {% if image.kind != 'icon' %}mix-blend-multiply{% else %}shrink-0 {{ include.class }}{% endif %}"
+        style="width: {{ include.px }}px; height: {{ include.px }}px"
+      >
+    {%- endcapture -%}
+    {%- if image.kind == "icon" -%}
+      {{ img }}
+    {%- else -%}
+      <span class="block shrink-0 {{ tile }} {{ include.class }}">{{ img }}</span>
+    {%- endif -%}
   {%- else -%}
-    <img
-      src="{% include cf_image.html src=src width=640 %}"
-      srcset="{% include cf_image.html src=src width=320 %} 320w, {% include cf_image.html src=src width=640 %} 640w"
-      sizes="(min-width: 800px) 17rem, (min-width: 600px) 40vw, 14rem"
-      alt="{{ alt }}"
-      class="h-auto max-h-96 object-contain rounded-lg bg-stone-100 dark:bg-slate-800 {{ include.class }}"
-    >
+    <span class="{{ tile }} {{ include.class }}">
+      <img
+        src="{% include cf_image.html src=src width=640 %}"
+        srcset="{% include cf_image.html src=src width=320 %} 320w, {% include cf_image.html src=src width=640 %} 640w, {% include cf_image.html src=src width=960 %} 960w"
+        sizes="(min-width: 800px) 17rem, (min-width: 600px) 40vw, 14rem"
+        alt="{{ alt }}"
+        class="block w-full h-auto max-h-96 object-contain mix-blend-multiply"
+      >
+    </span>
   {%- endif -%}
 {%- endif -%}
