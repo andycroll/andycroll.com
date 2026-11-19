@@ -48,6 +48,8 @@ if fresh.any?
     browser_path: ENV["CHROME"],
     window_size: [1200, 800],
     timeout: 30,
+    # Chrome's first start on a fresh CI runner can take longer than Ferrum's 10s default.
+    process_timeout: 30,
     # Our own static pages; Chrome's sandbox fails on some CI kernels.
     browser_options: { "no-sandbox" => nil }
   )
